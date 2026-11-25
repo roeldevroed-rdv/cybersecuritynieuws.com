@@ -44,6 +44,7 @@ tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job
 - **LIVE** sinds 25 nov 2026 op https://cybersecuritynieuws.com (GitHub Pages, repo roeldevroed-rdv/cybersecuritynieuws.com, DNS bij TransIP: 4 A-records 185.199.108-111.153 + CNAME www → roeldevroed-rdv.github.io.).
 - Google Search Console: domeinproperty geverifieerd via DNS-TXT bij TransIP (25 nov 2026). Sitemaps: sitemap.xml + news-sitemap.xml.
 - E-mail (25 nov 2026): info@ (algemeen, privacy, JSON-LD, footer), redactie@ (tips/correcties), adverteren@. ImprovMX gratis (catch-all `*` → roeldevroed@gmail.com) voor ontvangen; versturen als redactie@ via Gmail 'Verzenden als' (smtp.gmail.com + app-wachtwoord). DNS bij TransIP: MX 10 mx1.improvmx.com. / 20 mx2.improvmx.com., SPF `v=spf1 include:spf.improvmx.com include:_spf.google.com ~all`, _dmarc p=none. Zoho bleek niet meer gratis.
+- Nieuwsbrief (25 nov 2026): **Brevo** gratis (300 mails/dag). API-sleutel als netwerksecret op omgeving `cybersecuritynieuws.com` voor api.brevo.com (header api-key, proxy injecteert; curl met `-H 'api-key: proxy-injected'`). Lijst id 2 "Nieuwsbrief CyberSecurityNieuws" (map 1), afzender info@ (id 1), domein geauthenticeerd (DKIM brevo1/brevo2 CNAME, brevo-code TXT, _dmarc met rua Brevo). Aanmeldformulier maakt eigenaar in Brevo-UI → action-URL in `site.newsletter_action`.
 - 24 nov 2026: 8 nieuwsberichten + 6 startgidsen handmatig door Claude geschreven.
 - Artikeltypes: "nieuws", "gids", "partner". run.py: `--build` (alleen bouwen), `--fotos` (foto's bij bestaande artikelen).
 
@@ -67,7 +68,6 @@ tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job
 - Thema-attribuut heet `data-mode` (niet data-theme: botst met de Claude-artifactviewer).
 
 ## Eventueel later
-- Nieuwsbrief (Buttondown) – formulier staat klaar via `site.newsletter_action`.
 - Patch Tuesday-overzicht, OG-afbeeldingen per artikel.
 - RSS-URL's in `config.yaml` zijn op 24 nov 2026 getest en werken allemaal (net als de CISA KEV-feed).
 - Optioneel: `output_config.effort` in writer.py verlagen (bijv. "medium") om API-kosten te drukken.
