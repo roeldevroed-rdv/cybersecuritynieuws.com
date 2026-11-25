@@ -143,6 +143,14 @@
     <p class="sources-line">Bronnen: {% for s in a.sources %}<a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% if a.example %} (fictief){% endif %}</p>
     {% endif %}
 
+    {% if site.newsletter_action %}
+    <section class="panel panel--newsletter nb-inline" aria-labelledby="nb-art-h">
+      <h2 class="panel__title" id="nb-art-h">Elke week het belangrijkste in je inbox</h2>
+      <p class="small">De lekken die je moet patchen, de grootste incidenten en één praktische tip. Gratis, afmelden met één klik.</p>
+      {% with nb_id="artikel", nb_label="Aanmelden" %}{% include "_nb_form.html" %}{% endwith %}
+    </section>
+    {% endif %}
+
     {% if a.all_labels %}
     <div class="labels" aria-label="Labels">
       {% for l in a.all_labels %}<a class="chip" href="/label/{{ l|label_slug }}/">{{ l }}</a>{% endfor %}

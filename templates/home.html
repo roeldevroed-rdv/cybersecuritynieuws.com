@@ -117,11 +117,7 @@
         <h2 class="panel__title" id="nb-h">Elke week in je inbox</h2>
         <p class="small">Het weekoverzicht met de belangrijkste kwetsbaarheden en wat je moet doen.</p>
         {% if site.newsletter_action %}
-        <form action="{{ site.newsletter_action }}" method="post" target="_blank" class="newsletter">
-          <label class="visually-hidden" for="nb-email">E-mailadres</label>
-          <input id="nb-email" type="email" name="email" placeholder="jouw@email.nl" required>
-          <button class="btn" type="submit">Aanmelden</button>
-        </form>
+        {% with nb_id="home", nb_label="Aanmelden" %}{% include "_nb_form.html" %}{% endwith %}
         {% else %}<a class="btn" href="/nieuwsbrief/">Meer over de nieuwsbrief</a>{% endif %}
       </section>
       {% endif %}

@@ -1,0 +1,8 @@
+{# Aanmeldformulier nieuwsbrief (Brevo). Gebruik: {% with nb_id="x", nb_label="Aanmelden" %}{% include "_nb_form.html" %}{% endwith %} #}
+<form action="{{ site.newsletter_action }}" method="post" class="newsletter">
+  <label class="visually-hidden" for="nb-{{ nb_id }}">E-mailadres</label>
+  <input id="nb-{{ nb_id }}" type="email" name="EMAIL" placeholder="jouw@email.nl" autocomplete="email" required>
+  <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+  <input type="hidden" name="locale" value="nl">
+  <button class="btn" type="submit">{{ nb_label or "Aanmelden" }}</button>
+</form>

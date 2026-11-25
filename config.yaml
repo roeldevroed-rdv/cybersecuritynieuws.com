@@ -7,7 +7,7 @@ site:
   description: "Dagelijks actueel nieuws over kwetsbaarheden, datalekken, ransomware en cyberaanvallen, met per bericht concreet advies: wat moet je doen?"
   language: "nl"
   # Laat leeg om het nieuwsbriefformulier te verbergen. Bijv. een Buttondown/Mailchimp form-action URL.
-  newsletter_action: ""
+  newsletter_action: "https://73bd2c81.sibforms.com/serve/MUIFAN05maWbqZNpzmwcm_nnqMzVOj08MapRV0k_r5PUHISXfUcO6tcibfGRU3zBDuo2ktEUHAygjkNMitRLEQiH7ejjCgqptAEOG0Yel5xNWxuYQpkEkLSxvyfkXHuIGBgfGoFCyeMI0NFlzllPhl8m3rVmmrn0B96rbOc_QlOrMJZm1q92B3IFMm2POyOU22ZV_EhWWK60GMMtMA=="  # Brevo-formulier "Website"
   articles_per_page: 18
 
 ai:
