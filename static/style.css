@@ -394,6 +394,7 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .footer li { margin-bottom: 6px; }
 .footer a { text-decoration: none; color: var(--text-2); }
 .footer a:hover { color: var(--accent-ink); }
+.footer a.btn, .footer a.btn:hover { color: #fff; }
 .footer p { color: var(--text-2); max-width: 46ch; }
 .logo--footer { margin-bottom: 4px; }
 .footer__bottom { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); }
