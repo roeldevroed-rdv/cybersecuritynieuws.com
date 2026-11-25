@@ -84,17 +84,11 @@ BLUE = (10, 141, 255)
 
 
 def draw_logo(img: Image.Image, x: int, y: int, scale: float = 1.0) -> None:
-    """Merklogo: blauw schild + 'Cybersecurity' / 'nieuws.com' (twee regels, wit op donker)."""
-    size = int(52 * scale)
-    shield = Image.open(ROOT / "assets" / "logo-shield.png").convert("RGBA").resize((size, size), Image.LANCZOS)
-    img.alpha_composite(shield, (x, y))
-    d = ImageDraw.Draw(img)
-    tx = x + size + int(10 * scale)
-    bold = _font("Carlito-Bold.ttf", int(26 * scale))
-    reg = _font("Carlito-Regular.ttf", int(25 * scale))
-    d.text((tx, y + int(1 * scale)), "Cybersecurity", font=bold, fill=INK)
-    d.text((tx, y + int(26 * scale)), "nieuws", font=reg, fill=INK)
-    d.text((tx + d.textlength("nieuws", font=reg), y + int(26 * scale)), ".com", font=reg, fill=BLUE)
+    """Origineel merklogo (transparant, witte tekst) op donkere achtergrond."""
+    logo = Image.open(ROOT / "assets" / "logo-origineel.png").convert("RGBA")
+    h = int(54 * scale)
+    w = int(logo.width * h / logo.height)
+    img.alpha_composite(logo.resize((w, h), Image.LANCZOS), (x, y))
 
 
 def make_default_og(out: Path) -> None:
@@ -109,7 +103,7 @@ def make_default_og(out: Path) -> None:
     _motif(img, BLUE, "cybersecuritynieuws", 700, 480)
     d = ImageDraw.Draw(img)
     d.rectangle([0, 0, 12, H], fill=BLUE)
-    draw_logo(img, 80, 150, 2.4)
+    draw_logo(img, 72, 120, 3.3)
     d.text((84, 340), "Het belangrijkste cybersecuritynieuws in helder Nederlands,", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
     d.text((84, 384), "met wat je moet doen.", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
     img.convert("RGB").save(out, "PNG", optimize=True)
