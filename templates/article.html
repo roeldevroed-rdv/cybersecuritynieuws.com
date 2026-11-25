@@ -31,7 +31,7 @@
   "isBasedOn": a.sources|map(attribute="url")|list,
   "author": ({"@type": "Person", "name": redactie.hoofdredacteur, "url": site.url ~ "/redactie/"} if redactie.hoofdredacteur else {"@type": "Organization", "name": site.name, "url": site.url ~ "/redactie/"}),
   "publisher": {"@type": "Organization", "name": site.name, "url": site.url,
-                "logo": {"@type": "ImageObject", "url": site.url ~ "/static/favicon.svg"}}
+                "logo": {"@type": "ImageObject", "url": site.url ~ "/static/logo-512.png"}}
 }|tojson }}</script>
 <script type="application/ld+json">{{ {
   "@context": "https://schema.org",

@@ -192,6 +192,11 @@ def build(config: dict) -> None:
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(ROOT / "static", DIST / "static")
+    # Standaardlocaties waar browsers en iOS zelf naar het icoon zoeken
+    from PIL import Image as _Img
+    shutil.copy(ROOT / "static/img/icon-180.png", DIST / "apple-touch-icon.png")
+    shutil.copy(ROOT / "static/img/icon-180.png", DIST / "apple-touch-icon-precomposed.png")
+    _Img.open(ROOT / "static/logo-512.png").convert("RGBA").save(DIST / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
     site = Site(config)
     from .covers import make_cover
     for a in arts:
