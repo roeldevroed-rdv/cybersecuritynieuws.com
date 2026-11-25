@@ -52,7 +52,7 @@ tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job
 
 ## Dagelijkse nieuwsronde (Claude-sessie, zonder API-kosten)
 Geplande taak trig_01QzkdN6SJZcFzLiYDtdkmFa: elke 2 uur 07:23–23:23 (Europe/Amsterdam), 2–4 artikelen per ronde.
-Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, AG Connect, Computable, Data News) staan in config met `snapshot: true` + `filter: security`; hun hosts zijn in de Claude-omgeving geblokkeerd (update_environment werd geweigerd), dus fetch.py valt terug op branch `bronnen` (elk uur gevuld door .github/workflows/bronnen.yml via tools/bronnen_ophalen.py). Workflow gepusht met akkoord eigenaar (25 nov 2026).
+Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, Computable; AG Connect en Data News gaven 404/405) staan in config met `snapshot: true` + `filter: security`; hun hosts zijn in de Claude-omgeving geblokkeerd (update_environment werd geweigerd), dus fetch.py valt terug op branch `bronnen` (elk uur gevuld door .github/workflows/bronnen.yml via tools/bronnen_ophalen.py). Workflow gepusht met akkoord eigenaar (25 nov 2026).
 1. `python -m tools.nieuwsronde kandidaten` → top-verhalen (nog niet behandeld) + KEV-status; details in /tmp/nieuwsronde-kandidaten.json.
 2. Kies 3–6 verhalen: actief misbruikt / kritiek, Nederland & België, veel bronnen, relevant voor thuisgebruiker of mkb. Geen dubbelingen met recente artikelen.
 3. Lees de bronnen (RSS-hosts zijn toegestaan in de omgeving; aanvullen met WebSearch). Gebruik alleen bevestigde feiten; benoem tegenstrijdigheden.

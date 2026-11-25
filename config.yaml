@@ -35,9 +35,7 @@ sources:
   - { name: "NOS Tech", url: "https://feeds.nos.nl/nosnieuwstech", weight: 1.2, snapshot: true, filter: security }
   - { name: "Tweakers", url: "https://tweakers.net/feeds/nieuws.xml", weight: 1.1, snapshot: true, filter: security }
   - { name: "NCSC", url: "https://advisories.ncsc.nl/rss/advisories", weight: 1.2, snapshot: true }
-  - { name: "AG Connect", url: "https://www.agconnect.nl/rss.xml", weight: 1.0, snapshot: true, filter: security }
   - { name: "Computable", url: "https://www.computable.nl/feed", weight: 0.9, snapshot: true, filter: security }
-  - { name: "Data News", url: "https://datanews.knack.be/feed.rss", weight: 0.9, snapshot: true, filter: security }
 
 # Lijst van actief misbruikte kwetsbaarheden (CISA KEV). Wordt gebruikt voor het label "Actief misbruikt".
 kev_url: "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"

@@ -22,15 +22,21 @@ nieuwe na over hoe waarom wat wie je jouw we ons hun niet nu meer dan zegt
 # Voor algemene nieuwsbronnen (NU.nl, NOS, Tweakers): alleen berichten over beveiliging doorlaten.
 SECURITY_TERMS = (
     "cyber", "hack", "hacker", "gehackt", "datalek", "data breach", "ransomware", "malware", "phishing", "oplichting",
-    "fraude", "beveiliging", "kwetsbaarheid", "lek ", "lekken", "zero-day", "ddos", "storing door aanval", "spyware",
-    "wachtwoord", "inlog", "ncsc", "privacy", "persoonsgegevens", "spoofing", "helpdeskfraude", "trojan", "botnet",
-    "afpersing", "cybercrim", "security", "vulnerability", "exploit", "patch", "update tegen", "gestolen gegevens",
+    "fraude", "beveiliging", "kwetsbaarhe", "zero-day", "ddos", "storing door aanval", "spyware",
+    "wachtwoord", "inloggegevens", "ncsc", "persoonsgegevens", "spoofing", "helpdeskfraude", "trojan", "botnet",
+    "afpersing", "cybercrim", "vulnerability", "exploit", "beveiligingsupdate", "gestolen gegevens", "lek", "gelekt",
 )
 
 
+_SEC_RE = None
+
+
 def is_security(text: str) -> bool:
-    t = " " + text.lower() + " "
-    return any(term in t for term in SECURITY_TERMS)
+    """Woordgrens aan het begin, zodat 'plek' niet als 'lek' telt; vervoegingen (gehackt, lekken) mogen wel."""
+    global _SEC_RE
+    if _SEC_RE is None:
+        _SEC_RE = re.compile(r"\b(?:" + "|".join(re.escape(t.strip()) for t in SECURITY_TERMS) + ")", re.I)
+    return bool(_SEC_RE.search(text))
 
 
 NL_TERMS = ("nederland", "dutch", "netherlands", "belgi", "belgium", "europe", "eu ", "ncsc", "rijksoverheid")
@@ -97,7 +103,7 @@ def _snapshot(src: dict) -> bytes | None:
     try:
         if not _FETCHED:
             _FETCHED = True
-            subprocess.run(["git", "fetch", "-q", "origin", "bronnen"], cwd=root, timeout=60, check=False,
+            subprocess.run(["git", "fetch", "-q", "origin", "+bronnen:refs/remotes/origin/bronnen"], cwd=root, timeout=60, check=False,
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         out = subprocess.run(["git", "show", f"origin/bronnen:{name}"], cwd=root, capture_output=True, timeout=30)
         return out.stdout if out.returncode == 0 and out.stdout else None
