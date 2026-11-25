@@ -48,7 +48,6 @@
   <nav class="nav" aria-label="Thema's">
     <div class="wrap nav__inner">
       <a href="/" {% if path == '/' %}aria-current="page"{% endif %}>Laatste nieuws</a>
-      <a class="nav__check" href="/is-dit-oplichting/" {% if path == '/is-dit-oplichting/' %}aria-current="page"{% endif %}>Is dit oplichting?</a>
       {% for slug, name in categories.items() %}<a href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
       <a href="/gidsen/" {% if path.startswith('/gidsen/') %}aria-current="page"{% endif %}>Gidsen</a>
       <a href="/weekoverzicht/" {% if path == '/weekoverzicht/' %}aria-current="page"{% endif %}>Weekoverzicht</a>
@@ -77,7 +76,6 @@
         <li><a href="/ransomware-tracker/">Ransomware-tracker</a></li>
         <li><a href="/producten/">Per product</a></li>
         <li><a href="/gidsen/">Gidsen &amp; uitleg</a></li>
-        <li><a href="/is-dit-oplichting/">Is dit oplichting?</a></li>
         <li><a href="/weekoverzicht/">Weekoverzicht</a></li>
         <li><a href="/label/nederland/">Nederland</a> · <a href="/label/belgie/">België</a></li>
       </ul>

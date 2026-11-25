@@ -207,7 +207,7 @@ def build(config: dict) -> None:
         analytics=config.get("analytics") or {}, products=config.get("products") or [],
         zoekmachines=config.get("zoekmachines") or {})
     valid = {a["url"] for a in arts} | {f"/thema/{c}/" for c in config["categories"]} | {"/gidsen/", "/actief-misbruikt/", "/weekoverzicht/", "/over/", "/redactie/", "/contact/",
-             "/adverteren/", "/nieuwsbrief/", "/is-dit-oplichting/", "/ransomware-tracker/", "/patch-tuesday/", "/producten/",
+             "/adverteren/", "/nieuwsbrief/", "/ransomware-tracker/", "/patch-tuesday/", "/producten/",
              "/privacy/", "/cookies/", "/colofon/"} | {f"/product/{p['slug']}/" for p in config.get("products") or []}
     trusted = set(config.get("trusted_domains", []))
     totals = defaultdict(int)
@@ -258,7 +258,7 @@ def build(config: dict) -> None:
     # Vertrouwen, contact, verdienmodel
     for path, tpl in [("/redactie/", "redactie.html"), ("/contact/", "contact.html"), ("/adverteren/", "adverteren.html"),
                       ("/nieuwsbrief/", "nieuwsbrief.html"), ("/privacy/", "privacy.html"), ("/cookies/", "cookies.html"),
-                      ("/colofon/", "colofon.html"), ("/is-dit-oplichting/", "oplichting.html")]:
+                      ("/colofon/", "colofon.html")]:
         site.page(path, tpl, stats={"artikelen": len(arts), "gidsen": len(guides)})
     # Bevestigingspagina's nieuwsbrief (Brevo dubbele opt-in); niet in sitemap
     site.page("/nieuwsbrief/bijna-klaar/", "nieuwsbrief_status.html", stap="bijna", kop="Bijna klaar: bevestig je aanmelding",

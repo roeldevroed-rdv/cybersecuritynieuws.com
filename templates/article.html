@@ -102,13 +102,6 @@
     </section>
     {% endif %}
 
-    {% if a.category == 'phishing' or a.slug in ('wat-is-phishing', 'account-gehackt') %}
-    <aside class="panel panel--check check-inline">
-      <strong>Twijfel je over een bericht dat jij hebt ontvangen?</strong>
-      <span class="small">Plak het in onze gratis check en zie direct of het op oplichting lijkt.</span>
-      <a class="btn btn--small" href="/is-dit-oplichting/">Is dit oplichting?</a>
-    </aside>
-    {% endif %}
     {% include "_ad_inline.html" %}
 
     {% if a.faq %}
