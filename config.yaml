@@ -36,6 +36,20 @@ sources:
   - { name: "Tweakers", url: "https://tweakers.net/feeds/nieuws.xml", weight: 1.1, snapshot: true, filter: security }
   - { name: "NCSC", url: "https://advisories.ncsc.nl/rss/advisories", weight: 1.2, snapshot: true }
   - { name: "Computable", url: "https://www.computable.nl/feed", weight: 0.9, snapshot: true, filter: security }
+  # Markt & bedrijven: nieuws van securityleveranciers (overnames, producten, partnerships). Lage weging:
+  # maximaal één marktbericht per ronde, alleen echt nieuws (geen reclame).
+  - { name: "SecurityWeek M&A", url: "https://www.securityweek.com/category/funding-ma/feed/", weight: 0.8 }
+  - { name: "Arctic Wolf", url: "https://arcticwolf.com/feed/", weight: 0.7, snapshot: true }
+  - { name: "CrowdStrike", url: "https://www.crowdstrike.com/en-us/blog/feed", weight: 0.7, snapshot: true }
+  - { name: "SentinelOne", url: "https://www.sentinelone.com/feed/", weight: 0.7, snapshot: true }
+  - { name: "Palo Alto Networks", url: "https://www.paloaltonetworks.com/blog/feed/", weight: 0.7, snapshot: true }
+  - { name: "Check Point", url: "https://blog.checkpoint.com/feed/", weight: 0.7, snapshot: true }
+  - { name: "Sophos", url: "https://news.sophos.com/en-us/feed/", weight: 0.7, snapshot: true }
+  - { name: "ESET", url: "https://www.welivesecurity.com/en/rss/feed/", weight: 0.7, snapshot: true }
+  - { name: "Fortinet", url: "https://feeds.fortinet.com/fortinet/blog/business-and-technology", weight: 0.7, snapshot: true }
+  - { name: "Microsoft Security", url: "https://www.microsoft.com/en-us/security/blog/feed/", weight: 0.7, snapshot: true }
+  - { name: "Rapid7", url: "https://www.rapid7.com/blog/rss/", weight: 0.6, snapshot: true }
+  - { name: "HPE Newsroom", url: "https://www.hpe.com/us/en/newsroom/rss.xml", weight: 0.6, snapshot: true, filter: security }
 
 # Lijst van actief misbruikte kwetsbaarheden (CISA KEV). Wordt gebruikt voor het label "Actief misbruikt".
 kev_url: "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
@@ -51,6 +65,7 @@ categories:
   privacy: "Privacy & wetgeving"
   overheid: "Overheid & geopolitiek"
   ai: "AI & security"
+  markt: "Markt & bedrijven"
   uitgelegd: "Uitgelegd"
 
 # Labels (meerdere per artikel). De AI kiest alleen uit deze lijsten.
@@ -178,6 +193,13 @@ products:
   - { slug: mozilla,   name: "Mozilla Firefox", match: ["firefox", "mozilla", "thunderbird"] }
   - { slug: linux,     name: "Linux",       match: ["linux", "ubuntu", "debian", "red hat"] }
   - { slug: whatsapp,  name: "WhatsApp",    match: ["whatsapp"] }
+  - { slug: arctic-wolf, name: "Arctic Wolf", match: ["arctic wolf"] }
+  - { slug: crowdstrike, name: "CrowdStrike", match: ["crowdstrike", "falcon"] }
+  - { slug: sentinelone, name: "SentinelOne", match: ["sentinelone"] }
+  - { slug: check-point, name: "Check Point", match: ["check point"] }
+  - { slug: sophos,      name: "Sophos",      match: ["sophos"] }
+  - { slug: eset,        name: "ESET",        match: ["eset"] }
+  - { slug: hpe,         name: "HPE & Aruba", match: ["hpe", "hewlett packard enterprise", "aruba"] }
 
 # Zoekmachines. Vul de verificatiecodes in die Google Search Console en Bing Webmaster Tools je geven
 # (alleen de code uit content="...", niet de hele tag).
