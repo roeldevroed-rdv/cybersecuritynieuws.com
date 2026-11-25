@@ -1,0 +1,66 @@
+{
+  "id": "20261125-todoist-gehackt-wachtwoordhashes-en-e-mailadressen-gestolen",
+  "slug": "todoist-gehackt-wachtwoordhashes-en-e-mailadressen-gestolen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Todoist gehackt: wachtwoordhashes en e-mailadressen van gebruikers gestolen",
+  "tldr": "Taken-app Todoist is gehackt. Een aanvaller stal e-mailadressen en oude SHA-1-wachtwoordhashes van zes procent van de gebruikers, en bij een kleine groep ook API- en Slack-tokens. Gebruik je Todoist, verander dan je wachtwoord, zeker als je het ook elders gebruikt.",
+  "meta_description": "Todoist is gehackt: een aanvaller stal e-mailadressen en wachtwoordhashes van zes procent van de gebruikers. Wat er gebeurde en wat je nu moet doen.",
+  "body": "De populaire taken-app Todoist is gehackt. Een aanvaller kreeg toegang tot de productiesystemen en stal e-mailadressen en wachtwoordhashes van zes procent van de gebruikers. Dat heeft oprichter en ceo Amir Salihefendic bekendgemaakt, [meldt Security.NL](https://www.security.nl/posting/963142/). Om hoeveel mensen het precies gaat, zegt het bedrijf niet. De Android-app van Todoist is alleen al meer dan 50 miljoen keer gedownload.\n\n## Welke gegevens zijn gestolen?\n\nBij zes procent van de gebruikers gaat het om het e-mailadres en een gesalte SHA-1-hash van het wachtwoord. Dat is een verouderde manier om wachtwoorden op te slaan, die met moderne apparatuur relatief snel te kraken is. Bij een veel kleinere groep, 0,004 procent van de gebruikers, zijn ook Todoist-API-tokens of Slack-tokens buitgemaakt, taken met inhoud die op inloggegevens lijkt en e-mails van gekoppelde Outlook-accounts. Todoist stopt naar aanleiding van de hack met de ondersteuning voor oude wachtwoordhashes.\n\n## Hoe kon de aanvaller binnenkomen?\n\nDe aanvaller begon met een gestolen inloggegeven voor het versiebeheersysteem. Daarmee paste hij de automatische workflows van drie repositories aan om meer inloggegevens te bemachtigen. Vervolgens wijzigde hij hoe een medewerker inlogt, nam hij diens werkaccount over en logde hij zo in op de cloudomgeving. Hij maakte extra accounts aan en downloadde gegevens uit de productiedatabases. Hij had ook toegang tot de broncode, maar volgens Todoist is die niet aangepast. De aanval viel op doordat de beveiligingsmonitoring een onverwacht beheerdersaccount zag.\n\nDe aanval laat zien hoe gevaarlijk gestolen ontwikkelaarsgegevens zijn: wie de bouwstraat van een softwarebedrijf beheerst, kan van daaruit verder de organisatie in.\n\n## Wat moet je doen als Todoist-gebruiker?\n\nVerander je Todoist-wachtwoord en zet tweestapsverificatie aan. Gebruikte je hetzelfde wachtwoord ook ergens anders, verander het daar dan ook. Een [wachtwoordmanager](/artikel/wachtwoordmanager/) helpt om overal een uniek wachtwoord te gebruiken. Verwacht daarnaast phishingmails die zich voordoen als Todoist. Lees ook [wat je doet als je gegevens gelekt zijn](/artikel/datalek-wat-nu/).",
+  "actions": [
+    "Verander je Todoist-wachtwoord en gebruik een uniek wachtwoord.",
+    "Gebruikte je hetzelfde wachtwoord elders? Verander het daar ook.",
+    "Zet tweestapsverificatie aan in Todoist en op andere belangrijke accounts.",
+    "Trek koppelingen met Slack en Outlook na en vernieuw API-tokens als je die gebruikt.",
+    "Wees alert op mails die zich voordoen als Todoist en klik niet op links om in te loggen."
+  ],
+  "faq": [
+    {
+      "q": "Is mijn Todoist-wachtwoord gelekt?",
+      "a": "Niet het wachtwoord zelf, maar een SHA-1-hash ervan. Zo'n hash is relatief makkelijk te kraken, dus behandel het wachtwoord als gelekt en verander het."
+    },
+    {
+      "q": "Hoeveel gebruikers zijn getroffen?",
+      "a": "Todoist spreekt van zes procent van de gebruikers voor e-mailadressen en wachtwoordhashes. Een exact aantal is niet bekendgemaakt."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "Todoist",
+    "hack",
+    "datalek",
+    "wachtwoordhashes",
+    "SHA-1",
+    "API-tokens"
+  ],
+  "image_query": "laptop password security",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Todoist lekt wachtwoordhashes, tokens en e-mailadressen gebruikers",
+      "url": "https://www.security.nl/posting/963142/"
+    }
+  ],
+  "published": "2026-11-25T18:25:53+00:00",
+  "model": "redactie"
+}

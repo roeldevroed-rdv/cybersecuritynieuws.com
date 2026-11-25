@@ -1,0 +1,63 @@
+{
+  "id": "20261125-datalek-bij-schoenenwinkel-vanharen-klantgegevens-webshop-gestolen",
+  "slug": "datalek-bij-schoenenwinkel-vanharen-klantgegevens-webshop-gestolen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Datalek bij vanHaren: gegevens van webshopklanten gestolen",
+  "tldr": "Schoenenwinkel vanHaren waarschuwt klanten van de webshop voor een datalek. Aanvallers stalen via een beveiligingslek onder meer namen, adressen, e-mailadressen, telefoonnummers, facturen en de gebruikte betaalmethode. Hoeveel klanten zijn getroffen, is niet bekend. Wees alert op nepmails en nepbetaalverzoeken.",
+  "meta_description": "Schoenenwinkel vanHaren meldt een datalek: namen, adressen, e-mailadressen en facturen van webshopklanten zijn gestolen. Zo herken je de phishing die volgt.",
+  "body": "Schoenenwinkel vanHaren heeft klanten van zijn webshop gewaarschuwd voor een datalek. Aanvallers kregen via een beveiligingslek toegang tot klantgegevens en hebben die gestolen, [meldt Security.NL](https://www.security.nl/posting/963145/) op basis van de e-mail die klanten woensdag ontvingen.\n\n## Welke gegevens zijn gestolen?\n\nVolgens vanHaren gaat het om voor- en achternaam, factuur- en bezorgadres, facturen, e-mailadressen, telefoonnummers en de gebruikte betaalmethode. Er wordt niet gemeld dat volledige betaalgegevens, zoals rekening- of creditcardnummers, zijn buitgemaakt. Hoeveel klanten getroffen zijn, maakt het bedrijf niet bekend. Ook zegt vanHaren niet om wat voor beveiligingslek het ging.\n\nDe winkelketen zegt dat de ongeautoriseerde toegang is beëindigd en het lek is gedicht. Het bedrijf heeft de bevoegde autoriteiten ingelicht en aangifte gedaan, en kondigt extra technische en organisatorische maatregelen aan.\n\n## Waarom is dit lek riskant voor klanten?\n\nDe combinatie van naam, adres, telefoonnummer, eerdere bestellingen en betaalmethode is waardevol voor oplichters. Daarmee kunnen ze heel geloofwaardige berichten maken, bijvoorbeeld een mail of sms over een 'mislukte betaling' van een bestelling die je echt hebt gedaan, of een nepbericht over een retour. Juist rond Black Friday en de feestdagen, als veel mensen online bestellen, vallen zulke berichten minder op.\n\n## Wat moet je doen als je bij vanHaren hebt besteld?\n\nVertrouw geen betaalverzoeken of links die naar je bestelling verwijzen, ook niet als de details kloppen. Controleer je bestellingen altijd zelf door naar de website te gaan in plaats van op een link te klikken. Lees [hoe je phishing herkent](/artikel/wat-is-phishing/) en [wat je doet als je gegevens gelekt zijn](/artikel/datalek-wat-nu/).",
+  "actions": [
+    "Wees alert op mails, sms'jes en telefoontjes over bestellingen, betalingen of retouren bij vanHaren.",
+    "Klik niet op betaallinks; log zelf in via de website om een bestelling te controleren.",
+    "Gebruik je hetzelfde wachtwoord als voor je vanHaren-account elders? Verander het daar.",
+    "Twijfel je over een bericht, neem dan zelf contact op met vanHaren via de officiële website."
+  ],
+  "faq": [
+    {
+      "q": "Zijn mijn bankgegevens gestolen?",
+      "a": "vanHaren noemt de gebruikte betaalmethode, maar meldt niet dat rekening- of creditcardnummers zijn buitgemaakt. Wees wel alert op nepbetaalverzoeken."
+    },
+    {
+      "q": "Hoeveel klanten zijn getroffen?",
+      "a": "Dat heeft vanHaren niet bekendgemaakt. Het datalek gaat om klanten van de webshop."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Retail"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "vanHaren",
+    "datalek",
+    "webshop",
+    "phishing",
+    "klantgegevens"
+  ],
+  "image_query": "online shopping laptop",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Schoenenwinkel vanHaren waarschuwt klanten voor datalek",
+      "url": "https://www.security.nl/posting/963145/"
+    }
+  ],
+  "published": "2026-11-25T18:25:53+00:00",
+  "model": "redactie"
+}

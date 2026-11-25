@@ -1,0 +1,79 @@
+{
+  "id": "20261125-divd-gehackt-door-ai-agents-rapport-toont-hoe-aanvaller-binnenkwam",
+  "slug": "divd-gehackt-door-ai-agents-rapport-toont-hoe-aanvaller-binnenkwam",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "DIVD gehackt via ongepatchte helpdesksoftware, aanvaller gebruikte waarschijnlijk AI-agents",
+  "tldr": "Het Nederlandse DIVD, een stichting van ethische hackers, is gehackt. Uit het onderzoeksrapport blijkt dat de aanvaller binnenkwam via twee zerodaylekken in een helpdesksysteem dat al een jaar niet was bijgewerkt. Hij stal ruim 4.000 e-mailadressen en gebruikte waarschijnlijk het autonome AI-framework ARTEX.",
+  "meta_description": "Het DIVD is gehackt, waarschijnlijk met AI-agents. De aanvaller kwam binnen via ongepatchte Zammad-servers en stal ruim 4.000 e-mailadressen. Dit leer je ervan.",
+  "body": "Het Dutch Institute for Vulnerability Disclosure (DIVD) is gehackt door een aanvaller die vermoedelijk autonome AI-agents inzette. Dat blijkt uit het forensisch onderzoeksrapport dat de stichting woensdag openbaar maakte. De aanvaller stal ruim 4.000 e-mailadressen van vrijwilligers en contactpersonen, 34 telefoonnummers en 3 huisadressen, [meldt de NOS](https://nos.nl/l/2640968).\n\nHet DIVD is een Nederlandse stichting waarin vrijwilligers het internet afspeuren naar kwetsbare systemen, zodat de eigenaren gewaarschuwd kunnen worden. Daardoor beschikt de organisatie ook over gevoelige informatie over beveiligingslekken.\n\n## Hoe kwam de aanvaller binnen?\n\nVolgens het rapport, dat werd opgesteld door securitybedrijf Merlon, kwam de aanvaller binnen via twee zerodaylekken in Zammad, de helpdesk- en ticketsoftware van het DIVD. Twee Zammad-servers waren al een jaar niet bijgewerkt, [schrijft Security.NL](https://www.security.nl/posting/963124/). Eenmaal binnen voerde de aanvaller een ARP-spoofingaanval uit: hij plaatste zichzelf tussen Jira en Confluence en hun databaseservers. Omdat dat interne verkeer niet versleuteld was, kon hij zich toegang verschaffen tot Confluence en op grote schaal gegevens uit Confluence en Jira halen.\n\nHet DIVD vermoedt dat de aanval is uitgevoerd met ARTEX, een framework dat zelfstandig penetratietests uitvoert, [aldus Tweakers](https://tweakers.net/nieuws/254928/divd-vermoedt-dat-ai-tool-artex-werd-gebruikt-bij-hack-op-collectief.html). De onderzoekers noemen de aanval zelf niet heel geavanceerd, maar wel een waarschuwing: organisaties moeten zich voorbereiden op snelle, geautomatiseerde aanvallen.\n\n## Welke gegevens zijn buitgemaakt?\n\nNaast de contactgegevens kreeg de aanvaller toegang tot een deel van het beveiligingsonderzoek van het DIVD. Volgens het rapport ging het alleen om kwetsbaarheden waarvan de gebruikelijke termijn van 90 dagen voor openbaarmaking al ruim voorbij was. Ook werden inloggegevens buitgemaakt, waaronder die van een mailaccount. De gevoeligste systemen bleven buiten bereik doordat ze goed afgeschermd waren.\n\n## Wat kunnen organisaties hiervan leren?\n\nHet rapport bevat concrete aanbevelingen: installeer updates op tijd, zet gevoelige diensten niet direct aan het internet, versleutel ook verkeer op het interne netwerk, segmenteer het netwerk streng en draai containers niet als root. Verder adviseren de onderzoekers detectie op het interne netwerk en een apart communicatiekanaal voor het afhandelen van een incident. Het DIVD besloot het rapport volledig te publiceren, zodat anderen ervan kunnen leren.\n\nBen je via het DIVD benaderd of heb je contact met de stichting gehad? Wees dan extra alert op phishing. Lees [hoe je phishing herkent](/artikel/wat-is-phishing/) en [wat je doet als je gegevens gelekt zijn](/artikel/datalek-wat-nu/).",
+  "actions": [
+    "Controleer of helpdesk-, ticket- en andere internetgerichte systemen de nieuwste updates hebben.",
+    "Versleutel ook verkeer tussen interne servers, zoals tussen applicaties en databases.",
+    "Segmenteer je netwerk zodat een aanvaller na een inbraak niet overal bij kan.",
+    "Leg vooraf een apart communicatiekanaal vast voor als je eigen systemen zijn gehackt.",
+    "Had je contact met het DIVD? Wees alert op phishingmails die daar gebruik van maken."
+  ],
+  "faq": [
+    {
+      "q": "Wat is het DIVD?",
+      "a": "Het Dutch Institute for Vulnerability Disclosure is een Nederlandse stichting waarin vrijwilligers naar kwetsbare systemen op internet zoeken en de eigenaren waarschuwen."
+    },
+    {
+      "q": "Wat is ARP-spoofing?",
+      "a": "Bij ARP-spoofing doet een aanvaller in een lokaal netwerk alsof hij een ander apparaat is. Zo loopt verkeer via hem en kan hij het meelezen of aanpassen."
+    },
+    {
+      "q": "Is er gevoelige kwetsbaarheidsinformatie gestolen?",
+      "a": "Volgens het rapport alleen informatie over lekken waarvan de termijn van 90 dagen voor openbaarmaking al ruim verstreken was."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "DIVD",
+    "hack",
+    "AI-agents",
+    "ARTEX",
+    "Zammad",
+    "ARP-spoofing",
+    "datalek"
+  ],
+  "image_query": "server room network",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": true,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "NOS",
+      "title": "Nederlandse hackersgroep zelf gehackt, 'door autonome AI-agents'",
+      "url": "https://nos.nl/l/2640968"
+    },
+    {
+      "name": "Security.NL",
+      "title": "DIVD publiceert onderzoek naar hack: 'Aanvaller voerde ARP spoofing-aanval uit'",
+      "url": "https://www.security.nl/posting/963124/"
+    },
+    {
+      "name": "Tweakers",
+      "title": "DIVD vermoedt dat AI-tool Artex werd gebruikt bij hack op collectief",
+      "url": "https://tweakers.net/nieuws/254928/divd-vermoedt-dat-ai-tool-artex-werd-gebruikt-bij-hack-op-collectief.html"
+    }
+  ],
+  "published": "2026-11-25T18:25:53+00:00",
+  "model": "redactie"
+}
