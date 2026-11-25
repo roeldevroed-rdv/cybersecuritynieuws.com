@@ -1,0 +1,40 @@
+{
+  "slug": "voorbeeld-wat-is-multifactorauthenticatie",
+  "offset_hours": 50,
+  "title": "[Voorbeeld] Uitgelegd: wat is multifactorauthenticatie en waarom wil je het?",
+  "tldr": "Multifactorauthenticatie voegt naast je wachtwoord een tweede bewijs toe, zoals een code op je telefoon. Daarmee stop je het merendeel van de accountovernames.",
+  "body": "Bij vrijwel elk datalek of elke phishingcampagne komt hetzelfde advies terug: zet multifactorauthenticatie (MFA) aan. Maar wat is dat eigenlijk? Dit is een voorbeeldartikel in de rubriek Uitgelegd.\n\n## Iets wat je weet en iets wat je hebt\nEen wachtwoord is iets wat je *weet*. Bij MFA moet je daarnaast iets laten zien wat je *hebt*, zoals je telefoon of een beveiligingssleutel, of iets wat je *bent*, zoals je vingerafdruk.\n\n## Welke vorm is het veiligst?\nCodes per sms zijn beter dan niets, maar kunnen worden onderschept. Een authenticator-app is beter. Het veiligst zijn passkeys en fysieke beveiligingssleutels, omdat die niet in te vullen zijn op een nepsite.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Zet MFA aan op je e-mail, bank en sociale media.",
+    "Kies waar mogelijk een authenticator-app of passkey in plaats van sms.",
+    "Bewaar herstelcodes op een veilige plek."
+  ],
+  "category": "uitgelegd",
+  "labels": {
+    "regio": [],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Example Security",
+      "title": "What is MFA?",
+      "url": "https://example.com/mfa"
+    }
+  ],
+  "id": "voorbeeld-07",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "voorbeeld-browserupdate-dicht-zero-day",
+  "offset_hours": 28,
+  "title": "[Voorbeeld] Update voor fictieve browser dicht zero-day die al werd misbruikt",
+  "tldr": "De makers van de fictieve browser Voorbeeldbrowser hebben een noodupdate uitgebracht voor een lek dat al werd misbruikt voordat er een oplossing was.",
+  "body": "De makers van de fictieve Voorbeeldbrowser hebben een noodupdate uitgebracht, meldt Example Security. De update dicht onder meer CVE-2099-0002, een kwetsbaarheid in de onderdelen die webpagina's verwerken.\n\n## Zero-day\nVolgens de makers is de kwetsbaarheid al misbruikt voordat er een update was; dat heet een zero-day. Een aanvaller kon via een speciaal gemaakte webpagina code uitvoeren op de computer van het slachtoffer.\n\n## Automatische updates\nDe browser werkt zichzelf normaal automatisch bij, maar de update wordt pas actief na een herstart van de browser. Veel mensen laten hun browser dagenlang openstaan.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Herstart je browser zodat de update actief wordt.",
+    "Controleer in het menu 'Over' of je de nieuwste versie gebruikt.",
+    "Beheerders: forceer de update via het beheersysteem."
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Browsers"
+    ]
+  },
+  "severity": "hoog",
+  "zero_day": true,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2099-0002",
+    "CVE-2099-0003"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2099-0002",
+      "product": "Voorbeeld Browser"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Example Security",
+      "title": "Browser zero-day patched",
+      "url": "https://example.com/browser"
+    },
+    {
+      "name": "Example Advisories",
+      "title": "Emergency browser update",
+      "url": "https://example.com/browser-adv"
+    }
+  ],
+  "id": "voorbeeld-05",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

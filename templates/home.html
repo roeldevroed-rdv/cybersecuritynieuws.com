@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card, badges %}
+
+{% block main %}
+<div class="wrap">
+  <h1 class="visually-hidden">{{ site.name }} – {{ site.tagline }}</h1>
+
+  {% if hero %}
+  <section class="lead-grid">
+    <article class="hero cat-{{ hero.category }}">
+      <a class="hero__link" href="{{ hero.url }}">
+        <img class="hero__img" src="{{ hero.thumb }}" alt="" width="1200" height="630" decoding="async">
+        <div class="card__meta">
+          <span class="card__cat">{{ categories[hero.category] }}</span>
+          <time data-ago datetime="{{ hero.published }}">{{ hero.dt|ago }}</time>
+        </div>
+        <h2 class="hero__title">{{ hero.title }}</h2>
+        <p class="hero__tldr">{{ hero.tldr }}</p>
+        {% if hero.actions %}
+        <div class="hero__todo"><strong>Wat moet je doen?</strong> {{ hero.actions[0] }}</div>
+        {% endif %}
+      </a>
+      {{ badges(hero) }}
+    </article>
+
+    <aside class="panel panel--urgent" aria-labelledby="urgent-h">
+      <h2 class="panel__title" id="urgent-h"><span class="pulse"></span>Actief misbruikt</h2>
+      {% if exploited %}
+      <ol class="urgent-list">
+        {% for a in exploited %}
+        <li>
+          <a href="{{ a.url }}">
+            {% if a.cves %}<code>{{ a.cves[0] }}</code>{% endif %}
+            <span>{{ a.title }}</span>
+          </a>
+          <time data-ago class="small muted" datetime="{{ a.published }}">{{ a.dt|ago }}</time>
+        </li>
+        {% endfor %}
+      </ol>
+      <a class="more" href="/actief-misbruikt/">Alle actief misbruikte kwetsbaarheden →</a>
+      {% else %}
+      <p class="muted small">Op dit moment geen nieuwe meldingen van actief misbruik.</p>
+      {% endif %}
+    </aside>
+  </section>
+  {% endif %}
+
+  <div class="home-grid">
+    <section aria-labelledby="latest-h">
+      <div class="section-head">
+        <h2 id="latest-h">Laatste nieuws</h2>
+        {% if more %}<a class="more" href="/nieuws/">Al het nieuws →</a>{% endif %}
+      </div>
+      {% if items %}
+      <div class="cards">
+        {% for a in items %}{{ card(a) }}{% endfor %}
+      </div>
+      {% elif not hero %}
+      <p class="muted">Er zijn nog geen artikelen. De eerste berichten verschijnen na de volgende automatische update.</p>
+      {% endif %}
+    </section>
+
+    <aside class="sidebar">
+      <section class="panel threat threat--{{ threat.key }}" aria-labelledby="threat-h">
+        <h2 class="panel__title" id="threat-h">Dreigingsniveau</h2>
+        <div class="threat__meter" role="img" aria-label="Dreigingsniveau {{ threat.name }}">
+          {% for i in range(4) %}<span class="{{ 'on' if i <= threat.index else '' }}"></span>{% endfor %}
+        </div>
+        <p class="threat__name">{{ threat.name }}</p>
+        <p class="small">{{ threat.advice }}</p>
+        <p class="small muted">Afgelopen 7 dagen: {{ threat.exploited }} actief misbruikt, {{ threat.critical }} kritiek. <a href="/actief-misbruikt/">Bekijk</a></p>
+      </section>
+
+      {% include "_ad_sidebar.html" %}
+
+      <section class="panel panel--nl" aria-labelledby="nl-h">
+        <h2 class="panel__title" id="nl-h"><span class="flag" aria-hidden="true"></span>Nederland &amp; België</h2>
+        {% if nl_items %}
+        <ul class="plain-list">
+          {% for a in nl_items %}
+          <li><a href="{{ a.url }}">{{ a.title }}</a><time data-ago class="small muted" datetime="{{ a.published }}">{{ a.dt|ago }}</time></li>
+          {% endfor %}
+        </ul>
+        <div class="panel__links small"><a href="/label/nederland/">Nederland</a> · <a href="/label/belgie/">België</a></div>
+        {% else %}
+        <p class="muted small">Nog geen recent nieuws uit Nederland of België.</p>
+        {% endif %}
+      </section>
+
+      {% if guides %}
+      <section class="panel" aria-labelledby="guides-h">
+        <h2 class="panel__title" id="guides-h">Gidsen</h2>
+        <ul class="plain-list">
+          {% for g in guides %}<li><a href="{{ g.url }}">{{ g.title }}</a></li>{% endfor %}
+        </ul>
+        <a class="more" href="/gidsen/">Alle gidsen →</a>
+      </section>
+      {% endif %}
+
+      {% if true %}
+      <section class="panel panel--newsletter" aria-labelledby="nb-h">
+        <h2 class="panel__title" id="nb-h">Elke week in je inbox</h2>
+        <p class="small">Het weekoverzicht met de belangrijkste kwetsbaarheden en wat je moet doen.</p>
+        {% if site.newsletter_action %}
+        <form action="{{ site.newsletter_action }}" method="post" target="_blank" class="newsletter">
+          <label class="visually-hidden" for="nb-email">E-mailadres</label>
+          <input id="nb-email" type="email" name="email" placeholder="jouw@email.nl" required>
+          <button class="btn" type="submit">Aanmelden</button>
+        </form>
+        {% else %}<a class="btn" href="/nieuwsbrief/">Meer over de nieuwsbrief</a>{% endif %}
+      </section>
+      {% endif %}
+
+      <section class="panel" aria-labelledby="themes-h">
+        <h2 class="panel__title" id="themes-h">Thema's</h2>
+        <ul class="theme-list">
+          {% for slug, name in categories.items() %}
+          <li class="cat-{{ slug }}"><a href="/thema/{{ slug }}/"><span class="dot"></span>{{ name }}<span class="count">{{ cat_counts.get(slug, 0) }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  {% if by_cat %}
+  <section class="by-cat" aria-labelledby="bycat-h">
+    <h2 id="bycat-h" class="section-title">Per thema</h2>
+    <div class="by-cat__grid">
+      {% for slug, name in categories.items() if by_cat.get(slug) %}
+      <div class="by-cat__col cat-{{ slug }}">
+        <h3><a href="/thema/{{ slug }}/">{{ name }}</a></h3>
+        {% for a in by_cat[slug] %}{{ card(a, 'card--compact') }}{% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

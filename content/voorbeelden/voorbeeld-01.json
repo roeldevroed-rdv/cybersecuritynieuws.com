@@ -1,0 +1,58 @@
+{
+  "slug": "voorbeeld-kritiek-lek-in-fictivpn-gateway-actief-misbruikt",
+  "offset_hours": 3,
+  "title": "[Voorbeeld] Kritiek lek in FictiVPN-gateway wordt actief misbruikt",
+  "tldr": "Aanvallers misbruiken een kritieke kwetsbaarheid in de (fictieve) FictiVPN-gateway om zonder wachtwoord binnen te komen. Er is een update beschikbaar.",
+  "body": "Een kritieke kwetsbaarheid in de VPN-gateway van het fictieve bedrijf FictiVPN wordt actief misbruikt, meldt de voorbeeldbron Example Security. Via het lek, bekend als CVE-2099-0001, kan een aanvaller op afstand inloggen zonder geldige gebruikersnaam of wachtwoord.\n\n## Wat is er aan de hand?\nEen VPN-gateway is het apparaat waarmee medewerkers op afstand veilig verbinding maken met het bedrijfsnetwerk. Omdat zo'n apparaat direct aan internet hangt, is het een geliefd doelwit. Volgens de bronnen scannen aanvallers sinds het weekend massaal naar kwetsbare apparaten.\n\nDe fabrikant heeft een update uitgebracht en adviseert die direct te installeren. Ook het (fictieve) nationale CERT roept organisaties op om snel te handelen.\n\n## Wie lopen risico?\nVooral het MKB en grotere organisaties die de gateway gebruiken voor thuiswerken. Thuisgebruikers hebben dit product doorgaans niet.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Controleer of je organisatie FictiVPN-gateways gebruikt.",
+    "Installeer vandaag nog de beveiligingsupdate van de fabrikant.",
+    "Bekijk de inloglogboeken van de afgelopen twee weken op verdachte sessies.",
+    "Wijzig wachtwoorden van beheeraccounts als je sporen van misbruik vindt."
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Firewalls & VPN"
+    ]
+  },
+  "severity": "kritiek",
+  "zero_day": true,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2099-0001"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2099-0001",
+      "product": "FictiVPN Gateway"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Example Security",
+      "title": "Critical FictiVPN flaw exploited in the wild",
+      "url": "https://example.com/fictivpn"
+    },
+    {
+      "name": "Voorbeeldnieuws.nl",
+      "title": "Lek in VPN-gateway actief misbruikt",
+      "url": "https://example.com/fictivpn-nl"
+    }
+  ],
+  "id": "voorbeeld-01",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

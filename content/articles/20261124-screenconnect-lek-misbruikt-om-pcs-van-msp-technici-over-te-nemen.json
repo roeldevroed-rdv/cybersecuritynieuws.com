@@ -1,0 +1,85 @@
+{
+  "id": "20261124-screenconnect-lek-misbruikt-om-pcs-van-msp-technici-over-te-nemen",
+  "slug": "screenconnect-lek-misbruikt-om-pcs-van-msp-technici-over-te-nemen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "ScreenConnect-lek misbruikt om pc's van IT-dienstverleners over te nemen",
+  "tldr": "Aanvallers misbruiken een kritiek lek in de ScreenConnect-client (CVE-2026-84869) om de computers van technici bij IT-dienstverleners over te nemen. Alleen een update van de client naar 26.6.5 of nieuwer beschermt.",
+  "meta_description": "CVE-2026-84869 in ConnectWise ScreenConnect wordt misbruikt tegen IT-dienstverleners (MSP's). Waarom een server-update niet genoeg is en wat je nu moet doen.",
+  "body": "Aanvallers misbruiken een kritieke kwetsbaarheid in ConnectWise ScreenConnect om de computers van technici bij IT-dienstverleners over te nemen. Het lek, CVE-2026-84869, zit in de client waarmee technici verbinding maken met een sessie. Een kwaadwillende 'gast' kan daardoor een bestand naar de technicus sturen dat zonder waarschuwing wordt uitgevoerd, meldt [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html). De ernstscore is 9,9 op 10.\n\n## Waarom dit lek zo gevaarlijk is\n\nScreenConnect is software voor hulp op afstand, die veel wordt gebruikt door managed service providers (MSP's): IT-bedrijven die het beheer doen voor andere organisaties, vaak uit het mkb. Wie de computer van zo'n technicus overneemt, kan via diens toegang mogelijk bij tientallen klanten tegelijk binnenkomen. Juist daarom zijn IT-dienstverleners een geliefd doelwit van criminelen, bijvoorbeeld voor [ransomware-aanvallen](/artikel/wat-is-ransomware/).\n\nBeveiligingsbedrijf Huntress zag op 12 november een geval waarbij een technicus werd getroffen. Volgens één analyse duurde de overname van de werkplek ongeveer negen seconden.\n\n## Een bijgewerkte server is niet genoeg\n\nConnectWise bracht de update al op 8 september uit, en CISA zette het lek op 11 september op de lijst van actief misbruikte kwetsbaarheden. Toch wordt het nog steeds misbruikt. Een belangrijke reden: het lek zit in de **client van de technicus**, niet in de server. Cloudomgevingen zijn automatisch bijgewerkt, maar wie ScreenConnect zelf host, moet de update handmatig uitvoeren. En ook dan kan een technicus nog met een oude client werken. Onderzoekers troffen weken na de update nog clients van versies 22.x, 24.2 en 25.8 aan.\n\n## Wat als je nog niet kunt updaten?\n\nConnectWise adviseert in dat geval het recht om bestanden over te zetten (TransferFiles) weg te halen bij rollen en sessiegroepen. Dat beperkt het risico, maar is geen vervanging voor de update.\n\nBen je klant van een IT-dienstverlener? Vraag dan na of zij deze update hebben uitgevoerd. Een gecompromitteerde leverancier is een van de manieren waarop aanvallers bij het mkb binnenkomen.",
+  "actions": [
+    "Werk alle ScreenConnect-clients van technici bij naar versie 26.6.5 of nieuwer, niet alleen de server.",
+    "Controleer op elke werkplek welke clientversie daadwerkelijk is geïnstalleerd.",
+    "Kun je nog niet updaten? Haal het TransferFiles-recht weg bij rollen en sessiegroepen.",
+    "Controleer werkplekken van technici op onbekende programma's en verdachte activiteit sinds september.",
+    "Klant van een IT-dienstverlener? Vraag of zij deze update hebben uitgevoerd."
+  ],
+  "faq": [
+    {
+      "q": "Welke versie van ScreenConnect lost CVE-2026-84869 op?",
+      "a": "Versie 26.6.5 van de ScreenConnect-client. Belangrijk is dat de client van elke technicus is bijgewerkt, niet alleen de server."
+    },
+    {
+      "q": "Zijn cloudklanten van ScreenConnect veilig?",
+      "a": "Cloudinstanties zijn volgens de bronnen automatisch bijgewerkt. Controleer wel of de clients op de werkplekken van technici ook de nieuwe versie gebruiken."
+    },
+    {
+      "q": "Wat is een MSP?",
+      "a": "Een managed service provider is een IT-bedrijf dat het beheer van computers, netwerken en software voor andere organisaties verzorgt, vaak op afstand."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Microsoft"
+    ]
+  },
+  "keywords": [
+    "ScreenConnect",
+    "CVE-2026-84869",
+    "MSP",
+    "remote support beveiliging"
+  ],
+  "image_query": "it technician remote support",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2026-84869"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2026-84869",
+      "product": "ConnectWise ScreenConnect"
+    }
+  ],
+  "sources": [
+    {
+      "name": "The Hacker News",
+      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
+    },
+    {
+      "name": "SecurityWeek",
+      "title": "ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks",
+      "url": "https://www.securityweek.com/connectwise-patches-screenconnect-vulnerability-exploited-in-worm-like-attacks/"
+    },
+    {
+      "name": "Cybersecurity Dive",
+      "title": "Critical flaw in ScreenConnect exploited to run malicious files on MSP technician accounts",
+      "url": "https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/"
+    }
+  ],
+  "published": "2026-11-24T14:38:47+00:00",
+  "model": "redactie (Claude)"
+}

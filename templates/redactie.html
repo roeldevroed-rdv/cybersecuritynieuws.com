@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Redactie – {{ site.name }}{% endblock %}
+{% block description %}Wie maakt {{ site.name }}? De redactie, onze uitgangspunten en hoe je ons bereikt.{% endblock %}
+{% block meta %}<meta property="og:type" content="profile"><meta property="og:title" content="Redactie – {{ site.name }}">
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": site.name, "url": site.url,
+  "logo": site.url ~ "/static/favicon.svg", "email": redactie.email, "publishingPrinciples": site.url ~ "/over/",
+  "correctionsPolicy": site.url ~ "/redactie/#correcties", "actionableFeedbackPolicy": site.url ~ "/contact/",
+  "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "jobTitle": redactie.rol, "url": site.url ~ "/redactie/", "image": (site.url ~ redactie.foto if redactie.foto else none), "sameAs": ([redactie.linkedin] if redactie.linkedin else [])} if redactie.hoofdredacteur else none)}|tojson }}</script>{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <p class="eyebrow">Over ons</p>
+    <h1>De redactie</h1>
+    <p class="page-head__intro">{{ site.name }} brengt het belangrijkste cybersecuritynieuws in helder Nederlands, met bij elk bericht wat je moet doen.</p>
+  </header>
+
+  <section class="person">
+    {% if redactie.foto %}<img class="person__photo" src="{{ redactie.foto }}" alt="{{ redactie.hoofdredacteur }}" width="160" height="160">
+    {% else %}<div class="person__avatar" aria-hidden="true">{{ (redactie.hoofdredacteur or site.name)[:1] }}</div>{% endif %}
+    <div>
+      <h2>{{ redactie.hoofdredacteur or ('Redactie ' ~ site.name) }}</h2>
+      <p class="muted">{{ redactie.rol or 'Hoofdredacteur' }}</p>
+      {% if redactie.bio %}<p>{{ redactie.bio }}</p>{% endif %}
+      <p class="small">{% if redactie.linkedin %}<a href="{{ redactie.linkedin }}" rel="noopener me" target="_blank">LinkedIn</a> · {% endif %}<a href="/contact/">Contact</a></p>
+    </div>
+  </section>
+
+  <div class="prose">
+    <h2>Onze uitgangspunten</h2>
+    <ul>
+      <li><strong>Eerst het advies.</strong> Elk bericht vertelt wat er aan de hand is én wat je moet doen.</li>
+      <li><strong>Feiten uit betrouwbare bronnen.</strong> We baseren ons op officiële adviezen van leveranciers, overheidsinstanties zoals NCSC en CISA, en gerenommeerde vakmedia. Onder elk bericht staan de bronnen.</li>
+      <li><strong>Geen sensatie.</strong> We schrijven zakelijk en leggen vaktermen uit, zodat ook niet-specialisten het begrijpen.</li>
+      <li><strong>Onafhankelijk.</strong> Adverteerders hebben geen invloed op de redactionele inhoud. Gesponsorde inhoud is altijd duidelijk als zodanig gemarkeerd.</li>
+    </ul>
+
+    <h2 id="correcties">Correcties</h2>
+    <p>Maken we een fout, dan passen we het artikel zo snel mogelijk aan en vermelden we bovenaan wat er is veranderd en wanneer. Zie je een fout? <a href="/contact/">Laat het ons weten</a>.</p>
+
+    <h2>Verantwoordelijkheid</h2>
+    <p>De hoofdredacteur is eindverantwoordelijk voor alle gepubliceerde inhoud. Hoe we werken, lees je op de pagina <a href="/over/">werkwijze</a>.</p>
+  </div>
+</div>
+{% endblock %}

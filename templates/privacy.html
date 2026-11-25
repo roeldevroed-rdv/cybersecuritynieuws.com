@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Privacyverklaring – {{ site.name }}{% endblock %}
+{% block meta %}<meta name="robots" content="noindex,follow">{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head"><p class="eyebrow">Juridisch</p><h1>Privacyverklaring</h1>
+    <p class="page-head__intro">Een cybersecuritysite hoort zuinig te zijn met jouw gegevens. Dat zijn we ook.</p></header>
+  <div class="prose">
+    <h2>Wie zijn wij?</h2>
+    <p>{{ site.name }} ({{ site.domain }}) wordt uitgegeven door {{ redactie.hoofdredacteur or site.name }}{% if redactie.vestigingsplaats %}, gevestigd in {{ redactie.vestigingsplaats }}{% endif %}{% if redactie.kvk %}, KvK-nummer {{ redactie.kvk }}{% endif %}. Vragen over privacy stel je via <strong>{{ redactie.email }}</strong>.</p>
+
+    <h2>Welke gegevens verwerken we?</h2>
+    <ul>
+      <li><strong>Bezoek aan de site:</strong> we plaatsen geen tracking-cookies en gebruiken geen advertentienetwerken.{% if analytics.goatcounter %} We tellen bezoeken met GoatCounter, een privacyvriendelijke dienst die geen cookies plaatst en geen persoonsgegevens opslaat.{% endif %} Onze hostingpartij (GitHub) verwerkt technische gegevens zoals IP-adressen om de site veilig en bereikbaar te houden.</li>
+      <li><strong>Nieuwsbrief:</strong> als je je aanmeldt, bewaren we je e-mailadres om je de nieuwsbrief te sturen. Afmelden kan altijd met één klik.</li>
+      <li><strong>Tips en contact:</strong> als je ons mailt of een tip stuurt, gebruiken we je gegevens alleen om je bericht te behandelen. Je mag anoniem blijven.</li>
+    </ul>
+
+    <h2>Hoe lang bewaren we gegevens?</h2>
+    <p>Niet langer dan nodig. Nieuwsbriefgegevens verwijderen we zodra je je afmeldt; e-mail en tips uiterlijk twee jaar na het laatste contact, tenzij een wet anders bepaalt.</p>
+
+    <h2>Delen we gegevens?</h2>
+    <p>We verkopen nooit gegevens. We delen ze alleen met dienstverleners die we nodig hebben (zoals hosting en het verzenden van de nieuwsbrief), met wie afspraken over beveiliging en geheimhouding gelden.</p>
+
+    <h2>Jouw rechten</h2>
+    <p>Je hebt het recht je gegevens in te zien, te laten corrigeren of te laten verwijderen, en bezwaar te maken. Mail ons daarvoor. Ben je niet tevreden over hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de <a href="https://autoriteitpersoonsgegevens.nl/" rel="noopener" target="_blank">Autoriteit Persoonsgegevens</a>.</p>
+
+    <p class="small muted">Laatst bijgewerkt: {{ now|nl_date }}.</p>
+  </div>
+</div>
+{% endblock %}

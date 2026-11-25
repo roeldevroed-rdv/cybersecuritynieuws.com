@@ -1,0 +1,83 @@
+{
+  "id": "20261124-vmware-dicht-23-lekken-waaronder-kritiek-vcenter-lek",
+  "slug": "vmware-dicht-23-lekken-waaronder-kritiek-vcenter-lek",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "VMware dicht 23 lekken, waaronder kritiek inloglek in vCenter",
+  "tldr": "Broadcom heeft 23 kwetsbaarheden in VMware-producten verholpen, waaronder een kritiek lek in vCenter (CVE-2026-123903) waarmee aanvallers de inlog kunnen omzeilen. Er is nog geen misbruik bekend, maar vCenter is een geliefd doelwit: update snel.",
+  "meta_description": "VMware patcht 23 lekken in vCenter, ESX, Workstation en Fusion, waaronder kritieke CVE-2026-123903. Welke versies lossen het op en hoe snel moet je updaten?",
+  "body": "Broadcom heeft beveiligingsupdates uitgebracht voor 23 kwetsbaarheden in VMware ESX, vCenter, Workstation, Fusion, VMware Tools en Avi Load Balancer. Het ernstigste lek, CVE-2026-123903, zit in vCenter en krijgt een ernstscore van 9,8 op 10. Een aanvaller met netwerktoegang tot vCenter kan daarmee de inlog omzeilen, meldt [Security.NL](https://www.security.nl/posting/962970). De updates staan in beveiligingsadvies VMSA-2026-0011.\n\n## Waarom vCenter-lekken zo belangrijk zijn\n\nvCenter is de centrale beheeromgeving voor virtuele servers. Wie daar binnenkomt, heeft vaak in één keer toegang tot een groot deel van de servers van een organisatie. Ransomwaregroepen richten zich daarom graag op deze software. Vorige week bracht VMware nog updates uit voor een ander vCenter-lek, CVE-2026-123890, dat al sinds september als zero-day werd misbruikt. Broadcom benadrukt dat het nieuwe lek daar los van staat en meldt dat er voor de nieuwe kwetsbaarheden nog geen misbruik bekend is.\n\n## De andere kritieke lekken\n\nNaast het vCenter-lek gaat het om nog drie kritieke kwetsbaarheden:\n\n- **CVE-2026-123910 en CVE-2026-123911** in ESX (ook bekend als ESXi): een aanvaller met toegang tot ESX kan code op de server uitvoeren.\n- **CVE-2026-123912** in ESXi, Workstation en Fusion: een aanvaller met beheerdersrechten in een virtuele machine kan code uitvoeren op de onderliggende computer. Het probleem zit in de virtuele USB-controller, een onderdeel waarin vaker dit soort lekken is gevonden.\n\n## Welke versies lossen het op?\n\nVoor het vCenter-lek zijn de volgende versies uitgebracht: **9.1.2** voor de 9.1-reeks, **9.0.2.0300** voor de 9.0-reeks en **8.0 U3m** voor losse vCenter 8.0-installaties. Klanten met verlengde ondersteuning voor vCenter 7.0 moeten zich melden bij Broadcom Support. Er is geen tijdelijke oplossing: netwerktoegang beperken verkleint het risico, maar alleen updaten verhelpt het lek.\n\nGebruik je Workstation of Fusion op een eigen computer? Installeer dan ook daar de update. Meer over het snel en consequent installeren van updates lees je in onze [gids over ransomware](/artikel/wat-is-ransomware/).",
+  "actions": [
+    "Update vCenter naar 9.1.2, 9.0.2.0300 of 8.0 U3m, afhankelijk van je versie.",
+    "Installeer de ESX-updates uit VMSA-2026-0011 op al je hosts.",
+    "Zorg dat de beheerinterface van vCenter niet vanaf internet bereikbaar is.",
+    "Werk ook VMware Workstation en Fusion op werkplekken bij.",
+    "Heb je de vorige vCenter-update (CVE-2026-123890) nog niet geïnstalleerd? Doe dat dan nu ook."
+  ],
+  "faq": [
+    {
+      "q": "Wordt CVE-2026-123903 al misbruikt?",
+      "a": "Volgens Broadcom is er nog geen misbruik bekend. Omdat een eerder vCenter-lek wel als zero-day werd misbruikt, is snel updaten verstandig."
+    },
+    {
+      "q": "Is CVE-2026-123903 hetzelfde lek als vorige week?",
+      "a": "Nee. Broadcom meldt dat het een ander lek is dan CVE-2026-123890, dat sinds september werd misbruikt en vorige week werd gedicht."
+    },
+    {
+      "q": "Wat is VMSA-2026-0011?",
+      "a": "Dat is het beveiligingsadvies van Broadcom van 24 november 2026 waarin de 23 kwetsbaarheden en de oplossingen worden beschreven."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "Grote organisaties"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "VMware vCenter",
+    "CVE-2026-123903",
+    "VMSA-2026-0011",
+    "ESXi kwetsbaarheid"
+  ],
+  "image_query": "data center servers",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [
+    "CVE-2026-123903",
+    "CVE-2026-123910",
+    "CVE-2026-123911",
+    "CVE-2026-123912"
+  ],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "VMware waarschuwt voor kritieke kwetsbaarheden: 'Geven aanvaller toegang'",
+      "url": "https://www.security.nl/posting/962970"
+    },
+    {
+      "name": "The Hacker News",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+    },
+    {
+      "name": "SecurityWeek",
+      "title": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
+      "url": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/"
+    }
+  ],
+  "published": "2026-11-24T17:38:47+00:00",
+  "model": "redactie (Claude)"
+}

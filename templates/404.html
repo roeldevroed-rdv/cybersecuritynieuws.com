@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card %}
+
+{% block title %}Pagina niet gevonden – {{ site.name }}{% endblock %}
+{% block meta %}<meta name="robots" content="noindex">{% endblock %}
+
+{% block main %}
+<div class="wrap wrap--narrow notfound">
+  <p class="notfound__code" aria-hidden="true">404</p>
+  <h1>Deze pagina bestaat niet (meer)</h1>
+  <p class="muted">Misschien is de link verouderd of zit er een typfout in. Probeer te <a href="/zoeken/">zoeken</a> of ga naar de <a href="/">voorpagina</a>.</p>
+  {% if latest %}
+  <h2 class="section-title">Net binnen</h2>
+  <div class="cards">{% for a in latest[:3] %}{{ card(a, 'card--compact') }}{% endfor %}</div>
+  {% endif %}
+</div>
+{% endblock %}

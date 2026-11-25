@@ -1,0 +1,11 @@
+{% set ad = (ads.get('artikel') or [None])[0] %}
+{% if ad %}
+<aside class="ad ad--inline" aria-label="Advertentie">
+  <span class="ad__label">Advertentie · {{ ad.adverteerder }}</span>
+  <a class="ad__link" href="{{ ad.url }}" rel="sponsored noopener" target="_blank">
+    {% if ad.afbeelding %}<img src="{{ ad.afbeelding }}" alt="{{ ad.titel }}" loading="lazy">{% endif %}
+    <div><strong class="ad__title">{{ ad.titel }}</strong>{% if ad.tekst %}<span class="ad__text">{{ ad.tekst }}</span>{% endif %}</div>
+    <span class="ad__btn">{{ ad.knop or 'Lees meer' }} →</span>
+  </a>
+</aside>
+{% endif %}

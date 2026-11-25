@@ -1,0 +1,63 @@
+{
+  "id": "20261119-wachtwoordmanager",
+  "slug": "wachtwoordmanager",
+  "type": "gids",
+  "topic_id": "wachtwoordmanager",
+  "title": "Waarom je een wachtwoordmanager wilt (en hoe je kiest)",
+  "tldr": "Een wachtwoordmanager onthoudt voor jou een sterk, uniek wachtwoord per account. Zo voorkom je dat één gelekt wachtwoord toegang geeft tot al je accounts, en word je minder snel slachtoffer van phishing.",
+  "meta_description": "Wat is een wachtwoordmanager, is het veilig en hoe kies je er een? Uitleg in gewone taal, met een stappenplan om in een avond over te stappen.",
+  "body": "Een wachtwoordmanager is een programma of app die al je wachtwoorden versleuteld bewaart en ze automatisch invult wanneer je inlogt. Je hoeft zelf nog maar één sterk hoofdwachtwoord te onthouden. Daardoor kun je voor elk account een lang, willekeurig en uniek wachtwoord gebruiken, en dat is precies wat je beschermt tegen de meest voorkomende manier waarop accounts worden overgenomen.\n\n## Waarom hergebruik van wachtwoorden zo gevaarlijk is\n\nBijna iedereen heeft tientallen accounts. Omdat niemand tientallen sterke wachtwoorden kan onthouden, gebruiken veel mensen hetzelfde wachtwoord, of kleine variaties daarop, op meerdere sites. Lekt dat wachtwoord bij één dienst uit via een [datalek](/artikel/datalek-wat-nu/), dan proberen criminelen dezelfde combinatie automatisch op honderden andere websites. Dat heet credential stuffing. Eén lek bij een kleine webwinkel kan zo leiden tot een overgenomen e-mail- of bankaccount.\n\nMet een wachtwoordmanager heeft elk account een eigen wachtwoord. Lekt er één uit, dan blijft de schade beperkt tot die ene dienst.\n\n## Beschermt een wachtwoordmanager ook tegen phishing?\n\nJa, en dat is een onderschat voordeel. Een wachtwoordmanager koppelt elk wachtwoord aan het echte webadres. Kom je via een [phishingmail](/artikel/wat-is-phishing/) op een nagemaakte site met een net iets ander adres, dan vult de manager niets in. Dat is een duidelijk waarschuwingssignaal: als je wachtwoordmanager je gegevens niet aanbiedt, klopt er iets niet.\n\n## Is een wachtwoordmanager veilig?\n\nEen goede wachtwoordmanager versleutelt je kluis op je eigen apparaat, met je hoofdwachtwoord als sleutel. De aanbieder kan je wachtwoorden zelf niet lezen. Ook als de servers van de aanbieder worden gehackt, krijgen aanvallers alleen versleutelde gegevens. Het risico van een wachtwoordmanager is daardoor veel kleiner dan het risico van hergebruikte wachtwoorden.\n\nWel zijn er twee voorwaarden:\n\n- **Een sterk hoofdwachtwoord** dat je nergens anders gebruikt. Een wachtzin van vier of vijf willekeurige woorden is sterk én te onthouden.\n- **[Tweestapsverificatie](/artikel/tweestapsverificatie/)** op je wachtwoordmanager, zodat alleen het hoofdwachtwoord niet genoeg is.\n\n## Waar let je op bij het kiezen?\n\nEr zijn veel goede wachtwoordmanagers. Kijk vooral naar:\n\n- **Werkt het op al je apparaten?** Computer, telefoon en de browsers die je gebruikt.\n- **Ondersteunt het passkeys?** Dat is de opvolger van het wachtwoord en wordt steeds vaker gebruikt.\n- **Kun je wachtwoorden delen** met je partner, gezin of collega's?\n- **Heeft het een wachtwoordcontrole** die zwakke, hergebruikte of gelekte wachtwoorden laat zien?\n- **Is de beveiliging onafhankelijk getoetst** en is de aanbieder open over de werking?\n\nDe ingebouwde wachtwoordbeheerders van Apple, Google en Microsoft zijn prima voor wie binnen één ecosysteem blijft. Gebruik je apparaten van verschillende merken, dan is een losse wachtwoordmanager vaak handiger. Voor bedrijven is een zakelijke versie met centraal beheer aan te raden.\n\n## Zo stap je over in één avond\n\n1. Kies een wachtwoordmanager en installeer hem op je computer en telefoon.\n2. Bedenk een sterk hoofdwachtwoord en schrijf het eventueel op een papiertje dat je veilig thuis bewaart.\n3. Zet tweestapsverificatie aan en bewaar de herstelcodes.\n4. Importeer de wachtwoorden die in je browser zijn opgeslagen.\n5. Verander als eerste de wachtwoorden van je e-mail, bank en belangrijkste accounts in nieuwe, door de manager gemaakte wachtwoorden.\n6. Pak de rest stap voor stap aan, telkens als je ergens inlogt.\n\nWil je weten of je e-mailadres in een bekend datalek voorkomt? Controleer het op [Have I Been Pwned](https://haveibeenpwned.com/).",
+  "actions": [
+    "Kies een wachtwoordmanager die werkt op al je apparaten.",
+    "Bedenk een sterke wachtzin als hoofdwachtwoord en gebruik die nergens anders.",
+    "Zet tweestapsverificatie aan op de wachtwoordmanager.",
+    "Geef eerst je e-mail en bank een nieuw, uniek wachtwoord.",
+    "Laat de wachtwoordcontrole zwakke en hergebruikte wachtwoorden zien en vervang ze stap voor stap.",
+    "Vult de manager niets in op een inlogpagina? Vertrouw het niet."
+  ],
+  "faq": [
+    {
+      "q": "Wat gebeurt er als ik mijn hoofdwachtwoord vergeet?",
+      "a": "Bij de meeste wachtwoordmanagers kan de aanbieder het niet voor je herstellen, omdat ze het zelf niet kennen. Stel daarom een herstelmethode in en bewaar je hoofdwachtwoord eventueel op papier op een veilige plek."
+    },
+    {
+      "q": "Is het veilig om wachtwoorden in mijn browser op te slaan?",
+      "a": "De wachtwoordbeheerders van moderne browsers zijn redelijk veilig, zeker met tweestapsverificatie op je Google-, Apple- of Microsoft-account. Een losse wachtwoordmanager is handiger als je verschillende browsers of merken apparaten gebruikt."
+    },
+    {
+      "q": "Hoe lang moet een sterk wachtwoord zijn?",
+      "a": "Laat je wachtwoordmanager wachtwoorden van minimaal 16 willekeurige tekens maken. Voor wachtwoorden die je zelf moet onthouden, is een wachtzin van vier of vijf willekeurige woorden een goede keuze."
+    },
+    {
+      "q": "Wat is het verschil tussen een wachtwoord en een passkey?",
+      "a": "Een passkey vervangt het wachtwoord door een cryptografische sleutel op je apparaat, die je ontgrendelt met je vingerafdruk, gezicht of pincode. Passkeys kunnen niet worden geraden of via phishing worden gestolen."
+    }
+  ],
+  "category": "uitgelegd",
+  "labels": {
+    "regio": [],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "wachtwoordmanager",
+    "sterk wachtwoord",
+    "wachtwoorden beheren",
+    "is een wachtwoordmanager veilig"
+  ],
+  "image_query": "password security keyboard",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [],
+  "published": "2026-11-19T20:59:22+00:00",
+  "model": "redactie (Claude)"
+}

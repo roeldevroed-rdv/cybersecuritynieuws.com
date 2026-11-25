@@ -1,0 +1,65 @@
+{
+  "id": "20261120-datalek-wat-nu",
+  "slug": "datalek-wat-nu",
+  "type": "gids",
+  "topic_id": "datalek-wat-nu",
+  "title": "Je gegevens zijn gelekt: wat moet je nu doen?",
+  "tldr": "Staan je gegevens in een datalek, verander dan direct het betreffende wachtwoord en overal waar je het hergebruikt, zet tweestapsverificatie aan en wees extra alert op phishing die gebruikmaakt van de gelekte gegevens.",
+  "meta_description": "Je gegevens zijn gelekt bij een datalek. Wat nu? Stappenplan per soort gegevens: wachtwoord, e-mail, BSN, ID-bewijs of bankgegevens.",
+  "body": "Als je gegevens bij een datalek zijn buitgemaakt, is snel handelen belangrijk, maar paniek is niet nodig. Wat je moet doen, hangt af van welke gegevens zijn gelekt. Het belangrijkste in vrijwel elk geval: verander het wachtwoord van het betrokken account en van elk ander account waar je hetzelfde wachtwoord gebruikt, zet [tweestapsverificatie](/artikel/tweestapsverificatie/) aan en wees de komende maanden extra alert op oplichting.\n\n## Hoe weet je of je gegevens zijn gelekt?\n\nVaak hoor je het van de organisatie zelf: die is in veel gevallen verplicht getroffen personen te informeren als het lek een hoog risico voor hen oplevert. Daarnaast kun je zelf controleren of je e-mailadres in bekende datalekken voorkomt via [Have I Been Pwned](https://haveibeenpwned.com/). Die dienst laat zien in welke lekken je adres is gevonden en welke soorten gegevens daarbij waren betrokken.\n\nLet op: oplichters sturen ook nepberichten over datalekken, met een link om 'je account te beveiligen'. Klik daar niet op, maar ga zelf naar de website of app van de organisatie.\n\n## Wat te doen per soort gegevens\n\n**Wachtwoord gelekt**\nVerander het wachtwoord direct, ook als het versleuteld was opgeslagen. Gebruik je hetzelfde wachtwoord ergens anders? Verander het daar ook. Dit is het moment om over te stappen op een [wachtwoordmanager](/artikel/wachtwoordmanager/).\n\n**E-mailadres, naam, telefoonnummer of adres gelekt**\nDeze gegevens kun je niet veranderen, maar criminelen gebruiken ze wel om overtuigende [phishing](/artikel/wat-is-phishing/) te maken. Verwacht berichten die je naam kennen en verwijzen naar de organisatie die is gehackt, bijvoorbeeld over een 'mislukte levering' of 'terugbetaling'. Klik niet op links en bel bij twijfel zelf de organisatie.\n\n**Bankgegevens gelekt**\nHoud je rekening goed in de gaten en wees alert op incassos die je niet herkent; die kun je bij je bank terugboeken. Een IBAN alleen is niet genoeg om geld van je rekening te halen, maar wordt wel gebruikt bij oplichting. Gaat het om creditcardgegevens, neem dan contact op met je creditcardmaatschappij.\n\n**BSN of kopie van je identiteitsbewijs gelekt**\nDit is ernstiger, omdat criminelen er identiteitsfraude mee kunnen plegen, zoals leningen of abonnementen afsluiten op jouw naam. Neem contact op met het Centraal Meldpunt Identiteitsfraude van de [Rijksoverheid](https://www.rijksoverheid.nl/) voor advies. Ben je je identiteitsbewijs echt kwijt of is het misbruikt, doe dan aangifte. Maak in het vervolg bij het delen van een kopie gebruik van de KopieID-app van de overheid, waarmee je je BSN en foto kunt afschermen.\n\n**Medische gegevens gelekt**\nDeze gegevens kunnen worden gebruikt voor afpersing of gerichte oplichting. Wees extra wantrouwig bij berichten die verwijzen naar je behandeling of zorgverlener, en neem contact op met de betrokken zorgaanbieder.\n\n## Klacht indienen of schadevergoeding\n\nBen je ontevreden over hoe een organisatie met het lek omgaat, dan kun je eerst een klacht indienen bij die organisatie. Daarna kun je terecht bij de [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/), de toezichthouder op privacy. In België is dat de Gegevensbeschermingsautoriteit. Bij grote lekken worden soms collectieve claims gestart; wees kritisch op partijen die daarvoor vooraf geld vragen.\n\n## Hoe beperk je de schade bij een volgend lek?\n\nJe kunt niet voorkomen dat een organisatie wordt gehackt, maar wel dat het grote gevolgen heeft:\n\n- Gebruik overal unieke wachtwoorden via een wachtwoordmanager.\n- Zet tweestapsverificatie aan op al je belangrijke accounts.\n- Deel niet meer gegevens dan nodig, en vraag waarom een organisatie een kopie van je ID wil.\n- Gebruik bij twijfel een apart e-mailadres voor webwinkels en nieuwsbrieven.",
+  "actions": [
+    "Verander direct het wachtwoord van het gelekte account en overal waar je het hergebruikt.",
+    "Zet tweestapsverificatie aan op je e-mail en belangrijke accounts.",
+    "Controleer op Have I Been Pwned in welke andere lekken je e-mailadres voorkomt.",
+    "Wees de komende maanden extra alert op phishing die je naam of de gehackte organisatie noemt.",
+    "BSN of ID-bewijs gelekt? Vraag advies bij het Centraal Meldpunt Identiteitsfraude.",
+    "Controleer je bankrekening op onbekende afschrijvingen."
+  ],
+  "faq": [
+    {
+      "q": "Hoe controleer ik of mijn gegevens zijn gelekt?",
+      "a": "Vul je e-mailadres in op Have I Been Pwned. De site toont in welke bekende datalekken je adres voorkomt en welke gegevens daarbij zijn gelekt."
+    },
+    {
+      "q": "Kunnen criminelen geld van mijn rekening halen met alleen mijn IBAN?",
+      "a": "Niet rechtstreeks, maar ze kunnen er wel incassos mee proberen of het gebruiken om oplichting geloofwaardiger te maken. Onbekende incassos kun je laten terugboeken."
+    },
+    {
+      "q": "Moet een organisatie mij laten weten dat mijn gegevens zijn gelekt?",
+      "a": "Als een datalek waarschijnlijk een hoog risico voor je oplevert, moet de organisatie je volgens de AVG in de regel informeren. Het lek zelf moet ook worden gemeld bij de toezichthouder."
+    },
+    {
+      "q": "Wat is het gevaar van een gelekte kopie van mijn paspoort?",
+      "a": "Criminelen kunnen er identiteitsfraude mee plegen, zoals op jouw naam iets kopen of een account openen. Vraag advies bij het Centraal Meldpunt Identiteitsfraude en houd je post en bankzaken goed in de gaten."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "mijn gegevens gelekt wat nu",
+    "datalek",
+    "gegevens gelekt controleren",
+    "identiteitsfraude"
+  ],
+  "image_query": "data breach",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [],
+  "published": "2026-11-20T02:59:22+00:00",
+  "model": "redactie (Claude)"
+}

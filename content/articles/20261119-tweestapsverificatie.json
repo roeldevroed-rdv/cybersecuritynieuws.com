@@ -1,0 +1,67 @@
+{
+  "id": "20261119-tweestapsverificatie",
+  "slug": "tweestapsverificatie",
+  "type": "gids",
+  "topic_id": "tweestapsverificatie",
+  "title": "Tweestapsverificatie: wat is het en hoe zet je het aan?",
+  "tldr": "Met tweestapsverificatie log je in met je wachtwoord én een tweede bewijs, zoals een code in een app of een passkey. Zelfs als je wachtwoord uitlekt, komt een crimineel dan niet zomaar in je account.",
+  "meta_description": "Wat is tweestapsverificatie (2FA) en hoe zet je het aan? Uitleg over sms-codes, authenticator-apps en passkeys, met een stappenplan.",
+  "body": "Tweestapsverificatie (ook wel 2FA of multifactorauthenticatie, MFA) is een extra beveiligingsstap bij het inloggen. Naast je wachtwoord moet je een tweede bewijs leveren dat jij het echt bent, bijvoorbeeld een code uit een app op je telefoon of een bevestiging met je vingerafdruk. Het is een van de meest effectieve maatregelen die je zelf kunt nemen: ook als je wachtwoord in handen van criminelen valt, kunnen ze zonder die tweede stap niet inloggen.\n\n## Waarom is een wachtwoord alleen niet genoeg?\n\nWachtwoorden lekken op allerlei manieren uit: via een [datalek](/artikel/datalek-wat-nu/) bij een webwinkel, via een [phishingmail](/artikel/wat-is-phishing/) of via malware die opgeslagen wachtwoorden steelt. Veel mensen gebruiken bovendien hetzelfde wachtwoord op meerdere sites. Criminelen proberen gelekte combinaties van e-mailadres en wachtwoord automatisch uit op honderden andere diensten. Tweestapsverificatie maakt die gestolen wachtwoorden grotendeels waardeloos.\n\n## Welke vormen van tweestapsverificatie zijn er?\n\nNiet elke vorm is even sterk. Van zwak naar sterk:\n\n- **Code via sms**: beter dan niets, maar sms-berichten kunnen worden onderschept of omgeleid, bijvoorbeeld als criminelen je telefoonnummer laten overzetten naar een eigen simkaart.\n- **Code via e-mail**: alleen zo veilig als je e-mailaccount zelf.\n- **Authenticator-app**: een app zoals Microsoft Authenticator, Google Authenticator of de app van je wachtwoordmanager maakt elke 30 seconden een nieuwe code. Dit is voor de meeste mensen de beste balans tussen veiligheid en gemak.\n- **Pushmelding**: je bevestigt het inloggen met één tik in een app. Handig, maar keur nooit een melding goed als je zelf niet aan het inloggen bent.\n- **Passkey of beveiligingssleutel**: je logt in met je vingerafdruk, gezicht of een fysieke sleutel. Dit is het sterkst, omdat het technisch niet werkt op een nagemaakte website.\n\n## Welke accounts beveilig je als eerste?\n\nBegin bij de accounts waarmee een crimineel de meeste schade kan doen:\n\n1. **Je e-mail.** Wie je mail heeft, kan van bijna elk ander account het wachtwoord resetten.\n2. **Je bank** (vaak al standaard beveiligd met een app of kaartlezer).\n3. **Je Apple-, Google- of Microsoft-account**, waar je foto's, back-ups en apparaten aan gekoppeld zijn.\n4. **WhatsApp en sociale media.** Overgenomen accounts worden vaak gebruikt om je contacten op te lichten.\n5. **Je wachtwoordmanager.**\n6. **Werkaccounts**, zoals Microsoft 365 of Google Workspace.\n\n## Zo zet je tweestapsverificatie aan\n\nDe precieze stappen verschillen per dienst, maar het principe is overal hetzelfde:\n\n1. Installeer een authenticator-app op je telefoon.\n2. Ga in het account naar de beveiligingsinstellingen. Zoek naar 'tweestapsverificatie', 'verificatie in twee stappen', '2FA' of 'aanmeldbeveiliging'.\n3. Kies voor de authenticator-app (of een passkey als dat wordt aangeboden) en scan de QR-code die op het scherm verschijnt.\n4. Vul de code uit de app in om de koppeling te bevestigen.\n5. **Bewaar de herstelcodes** die je krijgt op een veilige plek, bijvoorbeeld in je wachtwoordmanager of uitgeprint thuis. Die heb je nodig als je je telefoon kwijtraakt.\n\nBij WhatsApp heet de functie 'verificatie in twee stappen': je stelt daar een pincode in die WhatsApp af en toe vraagt. Uitleg per dienst vind je ook op [Veilig Internetten](https://veiliginternetten.nl/) en in de helppagina's van [Microsoft](https://support.microsoft.com/), [Google](https://support.google.com/) en [Apple](https://support.apple.com/).\n\n## Wat als je je telefoon kwijtraakt?\n\nDaarvoor zijn de herstelcodes. Gebruik er één om in te loggen en koppel daarna je nieuwe telefoon. Heb je geen herstelcodes meer, dan moet je via de herstelprocedure van de dienst je identiteit aantonen; dat kan dagen duren. Daarom is het slim om waar mogelijk twee methodes te registreren, bijvoorbeeld een app én een passkey op een tweede apparaat.\n\n## Tweestapsverificatie in organisaties\n\nVoor bedrijven is MFA een basismaatregel. Veel succesvolle aanvallen, waaronder [ransomware](/artikel/wat-is-ransomware/), beginnen met een gestolen wachtwoord voor e-mail of een VPN zonder tweede factor. Zet MFA verplicht aan voor alle accounts met toegang van buitenaf, en zeker voor beheerders. Het [Digital Trust Center](https://www.digitaltrustcenter.nl/) heeft praktische hulpmiddelen voor het mkb.",
+  "actions": [
+    "Installeer een authenticator-app (of gebruik die van je wachtwoordmanager).",
+    "Zet tweestapsverificatie als eerste aan op je e-mailaccount.",
+    "Doe daarna je Apple-, Google- of Microsoft-account, WhatsApp en sociale media.",
+    "Kies waar mogelijk een passkey of authenticator-app in plaats van sms.",
+    "Bewaar de herstelcodes op een veilige plek.",
+    "Keur nooit een inlogmelding goed als je zelf niet aan het inloggen bent."
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen 2FA en MFA?",
+      "a": "2FA betekent twee factoren, MFA betekent meerdere factoren. In de praktijk worden de termen door elkaar gebruikt voor hetzelfde: inloggen met meer dan alleen een wachtwoord."
+    },
+    {
+      "q": "Is tweestapsverificatie via sms veilig?",
+      "a": "Het is veel veiliger dan alleen een wachtwoord, maar minder veilig dan een authenticator-app of passkey, omdat sms-berichten kunnen worden onderschept of omgeleid."
+    },
+    {
+      "q": "Wat moet ik doen als ik mijn telefoon met de authenticator-app kwijt ben?",
+      "a": "Log in met een van je herstelcodes en koppel een nieuw apparaat. Zonder herstelcodes moet je de herstelprocedure van de dienst doorlopen."
+    },
+    {
+      "q": "Moet ik elke keer een code invullen?",
+      "a": "Nee. Op een vertrouwd apparaat vragen de meeste diensten alleen af en toe of bij inloggen vanaf een nieuw apparaat om de tweede stap."
+    }
+  ],
+  "category": "uitgelegd",
+  "labels": {
+    "regio": [],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Microsoft",
+      "Google",
+      "Apple"
+    ]
+  },
+  "keywords": [
+    "tweestapsverificatie",
+    "2FA instellen",
+    "authenticator app",
+    "MFA"
+  ],
+  "image_query": "smartphone authentication",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [],
+  "published": "2026-11-19T12:59:22+00:00",
+  "model": "redactie (Claude)"
+}

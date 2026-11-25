@@ -1,0 +1,6 @@
+feedparser
+anthropic
+jinja2
+markdown
+pyyaml
+pillow

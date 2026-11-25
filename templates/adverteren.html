@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Adverteren – {{ site.name }}{% endblock %}
+{% block description %}Bereik IT-beheerders, securityprofessionals en ondernemers in Nederland en België. Advertentiemogelijkheden op {{ site.name }}.{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head page-head--ad">
+    <p class="eyebrow">Adverteren &amp; partnerships</p>
+    <h1>Bereik de mensen die beslissen over beveiliging</h1>
+    <p class="page-head__intro">{{ site.name }} wordt gelezen door IT-beheerders, securityprofessionals, mkb-ondernemers en geïnteresseerde thuisgebruikers in Nederland en België. Precies op het moment dat ze over beveiliging nadenken.</p>
+    <p><a class="btn" href="#contact">Vraag de mediakit aan</a></p>
+  </header>
+
+  <section class="ad-why">
+    <div><strong>Relevante context</strong><p>Je boodschap staat naast nieuws over de dreigingen die jouw oplossing aanpakt: ransomware, actief misbruikte lekken, datalekken.</p></div>
+    <div><strong>Nederlands en Belgisch publiek</strong><p>Geschreven voor de Benelux, met aandacht voor NCSC-adviezen, NIS2 en lokale incidenten.</p></div>
+    <div><strong>Privacyvriendelijk</strong><p>Geen tracking-cookies, geen advertentienetwerken. Jouw merk verschijnt in een schone, betrouwbare omgeving.</p></div>
+    <div><strong>Altijd actueel</strong><p>Meerdere keren per dag nieuw nieuws, plus tijdloze gidsen die maandenlang gelezen worden.</p></div>
+  </section>
+
+  <h2 class="section-title">Mogelijkheden</h2>
+  <div class="ad-formats">
+    <article class="panel"><h3>Display in de zijbalk</h3><p>Een opvallend blok naast elk artikel en op de voorpagina, met je logo, boodschap en link. Per week of per maand.</p></article>
+    <article class="panel"><h3>Advertentie in artikelen</h3><p>Direct onder "Wat moet je doen?", het meest gelezen deel van elk bericht. Ook per thema mogelijk, bijvoorbeeld alleen bij ransomware.</p></article>
+    <article class="panel"><h3>Nieuwsbriefsponsor</h3><p>Je merk bovenaan onze nieuwsbrief met het belangrijkste nieuws, rechtstreeks in de inbox van abonnees.</p></article>
+    <article class="panel"><h3>Partnerartikel</h3><p>Een inhoudelijk artikel of whitepaper over jouw expertise, duidelijk gemarkeerd als "gesponsord", blijvend vindbaar via Google.</p></article>
+    <article class="panel"><h3>Themasponsor</h3><p>"Mogelijk gemaakt door": jouw naam bij een vaste rubriek, zoals de ransomware-tracker of het Patch Tuesday-overzicht.</p></article>
+    <article class="panel"><h3>Vacatures</h3><p>Bereik securitytalent in Nederland en België met een vacature op de site en in de nieuwsbrief.</p></article>
+  </div>
+
+  <div class="prose ad-rules">
+    <h2>Onze spelregels</h2>
+    <ul>
+      <li>Advertenties en gesponsorde inhoud zijn altijd herkenbaar gemarkeerd.</li>
+      <li>Adverteerders hebben geen invloed op ons nieuws, ook niet als het over hun eigen product gaat.</li>
+      <li>We werken alleen met betrouwbare partijen uit de beveiligingswereld.</li>
+    </ul>
+  </div>
+
+  <section class="panel ad-contact" id="contact">
+    <h2>Interesse?</h2>
+    <p>Vraag de mediakit met bereikcijfers en tarieven aan via <strong class="copyable">{{ redactie.adverteren_email }}</strong>. We denken graag mee over een campagne die past bij jouw doelgroep.</p>
+    <p class="small muted">Momenteel {{ stats.artikelen }} artikelen, waarvan {{ stats.gidsen }} gidsen. Actuele bezoekcijfers op aanvraag.</p>
+  </section>
+</div>
+{% endblock %}

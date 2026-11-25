@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card %}
+{% block title %}Ransomware-tracker – {{ site.name }}{% endblock %}
+{% block description %}Overzicht van ransomware-aanvallen en -incidenten, met de nadruk op Nederland en België, en wat je ervan kunt leren.{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head"><p class="eyebrow">Tracker</p><h1>Ransomware-tracker</h1>
+    <p class="page-head__intro">Alle ransomware-incidenten en -ontwikkelingen die we hebben behandeld, de nieuwste bovenaan. Nieuw met ransomware? Lees eerst <a href="/artikel/wat-is-ransomware/">wat ransomware is en hoe je je beschermt</a>.</p></header>
+  {% if rw %}
+  <div class="table-scroll">
+    <table class="tracker">
+      <thead><tr><th scope="col">Datum</th><th scope="col">Incident</th><th scope="col">Regio</th><th scope="col">Sector</th></tr></thead>
+      <tbody>
+      {% for a in rw %}
+        <tr><td>{{ a.dt|nl_date }}</td><td><a href="{{ a.url }}">{{ a.title }}</a></td>
+          <td>{{ a.labels.regio|join(', ') or '–' }}</td><td>{{ a.labels.sector|join(', ') or '–' }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <p class="muted empty">Er zijn nog geen ransomware-incidenten in de tracker. Zodra we erover schrijven, verschijnen ze hier.</p>
+  {% endif %}
+  {% if guides_rw %}
+  <h2 class="section-title">Achtergrond</h2>
+  <div class="cards">{% for a in guides_rw %}{{ card(a) }}{% endfor %}</div>
+  {% endif %}
+</div>
+{% endblock %}

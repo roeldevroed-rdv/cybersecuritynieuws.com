@@ -1,0 +1,41 @@
+{
+  "slug": "voorbeeld-europese-regels-voor-ai-en-beveiliging",
+  "offset_hours": 34,
+  "title": "[Voorbeeld] Nieuwe Europese regels verplichten makers van slimme apparaten tot updates",
+  "tldr": "Een fictieve Europese regeling verplicht fabrikanten om slimme apparaten jarenlang van beveiligingsupdates te voorzien.",
+  "body": "In dit fictieve voorbeeldbericht hebben Europese instellingen nieuwe regels aangenomen voor de beveiliging van slimme apparaten, zoals camera's, deurbellen en routers.\n\n## Wat verandert er?\nFabrikanten moeten bekende kwetsbaarheden melden en apparaten gedurende een vaste periode van updates voorzien. Ook mogen apparaten niet meer worden geleverd met standaardwachtwoorden.\n\n## Voor wie is dit belangrijk?\nVoor consumenten betekent het op termijn veiligere producten. Voor bedrijven die zulke apparaten maken of verkopen komt er extra administratie bij.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Let bij aanschaf van slimme apparaten op hoe lang de fabrikant updates belooft.",
+    "Wijzig standaardwachtwoorden van apparaten die je nu al hebt."
+  ],
+  "category": "privacy",
+  "labels": {
+    "regio": [
+      "Europa"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Example Policy",
+      "title": "EU adopts device security rules",
+      "url": "https://example.com/eu"
+    }
+  ],
+  "id": "voorbeeld-06",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

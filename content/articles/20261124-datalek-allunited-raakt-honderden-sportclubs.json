@@ -1,0 +1,76 @@
+{
+  "id": "20261124-datalek-allunited-raakt-honderden-sportclubs",
+  "slug": "datalek-allunited-raakt-honderden-sportclubs",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Datalek bij AllUnited raakt honderden sportclubs: wees alert op nepbetaalverzoeken",
+  "tldr": "Bij een hack van ledenadministratiesysteem AllUnited zijn gegevens van leden van honderden Nederlandse sportclubs gekopieerd, waaronder namen, adressen, wachtwoorden en rekeningnummers. Meer dan 350 clubs meldden het lek bij de Autoriteit Persoonsgegevens.",
+  "meta_description": "Datalek bij AllUnited: gegevens van leden van ruim 350 sportclubs gestolen. Welke gegevens zijn gelekt, wat is het risico en wat moet je als lid nu doen?",
+  "body": "Bij AllUnited, een softwareleverancier voor de ledenadministratie van sportverenigingen, is een groot datalek ontstaan. Een onbekende aanvaller misbruikte op de avond van 9 november een fout in de software en kopieerde gegevens van leden van honderden Nederlandse sportclubs. Inmiddels hebben meer dan 350 clubs een melding gedaan bij de [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/), meldt [nieuws.nl](https://nieuws.nl/algemeen/meer-dan-350-sportclubs-melden-datalek-na-cyberaanval-allunited) op basis van persbureau ANP. De toezichthouder verwacht dat dat aantal nog oploopt.\n\n## Welke gegevens zijn gelekt?\n\nVolgens de berichtgeving gaat het om namen, adresgegevens, wachtwoorden en bankrekeningnummers van leden. Ook gegevens van jeugdleden kunnen zijn gekopieerd. Over de wachtwoorden verschillen de bronnen: volgens [Omroep Oost](https://www.oost.nl/nieuws/3717698/sporters-in-overijssel-slachtoffer-van-datalek-criminelen-hebben-persoonsgegevens) gaat het om de inloggegevens van leden met een AllUnited-account. AllUnited stelt volgens de betrokken clubs alle wachtwoorden opnieuw in en neemt extra beveiligingsmaatregelen.\n\nAllUnited ontdekte het lek op 10 november en dichtte het nog dezelfde dag. Er zijn volgens het bedrijf geen signalen dat de gegevens al zijn misbruikt.\n\n## Wat is het risico voor leden?\n\nHet grootste risico is gerichte oplichting. Met een naam, adres, rekeningnummer en de naam van je club kunnen criminelen heel overtuigende berichten sturen die van je vereniging of van AllUnited lijken te komen. Denk aan een verzoek om 'achterstallige contributie' te betalen via een link, of om 'je account te verifiëren'. Cricketbond KNCB en voetbalvereniging VV Katwijk waarschuwen hun leden daarom uitdrukkelijk voor betaalverzoeken via links en vragen om extra bedragen.\n\nGebruikte je het wachtwoord van je AllUnited-account ook ergens anders? Dan kunnen criminelen proberen daarmee in te loggen bij andere diensten. Lees in onze gids [wat je moet doen als je gegevens zijn gelekt](/artikel/datalek-wat-nu/) hoe je de schade beperkt.\n\n## Hoe herken je een nepbericht?\n\nWees extra wantrouwig bij berichten over contributie, boetes of terugbetalingen, zeker als er haast bij is of als je via een link moet betalen. Neem bij twijfel contact op met de penningmeester of het secretariaat van je club via een telefoonnummer of e-mailadres dat je zelf opzoekt. Meer tips staan in onze gids [phishing herkennen](/artikel/wat-is-phishing/).",
+  "actions": [
+    "Verander je wachtwoord als je een AllUnited-account hebt, en overal waar je hetzelfde wachtwoord gebruikt.",
+    "Betaal geen contributie of 'extra kosten' via een link in een mail of sms; vraag het na bij je club.",
+    "Controleer je bankrekening op onbekende incasso's; die kun je laten terugboeken.",
+    "Waarschuw ook ouders van jeugdleden voor nepberichten uit naam van de club.",
+    "Clubbestuur: meld het lek bij de AP als je dat nog niet hebt gedaan en informeer je leden."
+  ],
+  "faq": [
+    {
+      "q": "Is mijn sportclub getroffen door het datalek bij AllUnited?",
+      "a": "Als je club AllUnited gebruikt voor de ledenadministratie, is dat mogelijk. Clubs informeren hun leden zelf; vraag het bij twijfel na bij het secretariaat."
+    },
+    {
+      "q": "Kunnen criminelen geld van mijn rekening halen met mijn rekeningnummer?",
+      "a": "Niet rechtstreeks. Ze kunnen het wel gebruiken om nepbetaalverzoeken geloofwaardiger te maken of incasso's te proberen, die je kunt laten terugboeken."
+    },
+    {
+      "q": "Moet mijn club het datalek melden?",
+      "a": "Een vereniging die verantwoordelijk is voor ledengegevens moet een datalek in de regel binnen 72 uur melden bij de Autoriteit Persoonsgegevens. Meer dan 350 clubs hebben dat al gedaan."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "AllUnited datalek",
+    "sportclub datalek",
+    "ledenadministratie hack",
+    "datalek sportvereniging"
+  ],
+  "image_query": "sports club football field",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "nieuws.nl (ANP)",
+      "title": "Meer dan 350 sportclubs melden datalek na aanval AllUnited",
+      "url": "https://nieuws.nl/algemeen/meer-dan-350-sportclubs-melden-datalek-na-cyberaanval-allunited"
+    },
+    {
+      "name": "Omroep Oost",
+      "title": "Sporters in Overijssel slachtoffer van datalek: criminelen hebben persoonsgegevens",
+      "url": "https://www.oost.nl/nieuws/3717698/sporters-in-overijssel-slachtoffer-van-datalek-criminelen-hebben-persoonsgegevens"
+    },
+    {
+      "name": "Hart van Nederland",
+      "title": "Meer dan 350 sportclubs melden datalek na cyberaanval AllUnited",
+      "url": "https://www.hartvannederland.nl/tech/nieuws/artikelen/meer-dan-350-sportclubs-melden-datalek-na-cyberaanval-allunited"
+    }
+  ],
+  "published": "2026-11-24T09:38:47+00:00",
+  "model": "redactie (Claude)"
+}

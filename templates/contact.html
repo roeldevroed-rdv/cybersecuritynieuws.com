@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Contact en tips – {{ site.name }}{% endblock %}
+{% block description %}Neem contact op met de redactie van {{ site.name }} of tip ons over een incident, datalek of oplichting.{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <p class="eyebrow">Contact</p>
+    <h1>Contact en tips</h1>
+    <p class="page-head__intro">Weet je van een datalek, hack of nieuwe oplichtingstruc? Of zie je een fout in een artikel? Laat het ons weten.</p>
+  </header>
+
+  <div class="contact-grid">
+    <section class="panel">
+      <h2 class="panel__title">Tip de redactie</h2>
+      {% if forms.tip_action %}
+      <form class="form" action="{{ forms.tip_action }}" method="post">
+        <label for="tip-onderwerp">Waar gaat je tip over?</label>
+        <input id="tip-onderwerp" name="onderwerp" required placeholder="Bijv. datalek bij …">
+        <label for="tip-bericht">Je tip</label>
+        <textarea id="tip-bericht" name="bericht" rows="6" required placeholder="Wat is er gebeurd, wanneer, en hoe weet je dit?"></textarea>
+        <label for="tip-email">Je e-mailadres <span class="muted">(optioneel, alleen voor vragen)</span></label>
+        <input id="tip-email" name="email" type="email" placeholder="jij@voorbeeld.nl">
+        <button class="btn" type="submit">Tip versturen</button>
+        <p class="small muted">Je mag anoniem blijven. We delen je gegevens nooit met derden.</p>
+      </form>
+      {% else %}
+      <p>Stuur je tip naar <strong class="copyable">{{ redactie.email }}</strong>. Je mag anoniem blijven; we delen je gegevens nooit met derden.</p>
+      {% endif %}
+    </section>
+    <section class="panel">
+      <h2 class="panel__title">Redactie</h2>
+      <p>Vragen, reacties of correcties: <strong class="copyable">{{ redactie.email }}</strong></p>
+      <h2 class="panel__title">Adverteren</h2>
+      <p>Interesse in adverteren of een partnerschap? Bekijk <a href="/adverteren/">de mogelijkheden</a> of mail naar <strong class="copyable">{{ redactie.adverteren_email }}</strong>.</p>
+      <h2 class="panel__title">Slachtoffer van oplichting?</h2>
+      <p class="small">Wij kunnen je helaas niet persoonlijk helpen. Neem contact op met je bank, de <a href="https://www.fraudehelpdesk.nl/" rel="noopener" target="_blank">Fraudehelpdesk</a> of de <a href="https://www.politie.nl/" rel="noopener" target="_blank">politie</a>. Twijfel je over een bericht? Gebruik onze <a href="/is-dit-oplichting/">oplichtingscheck</a>.</p>
+    </section>
+  </div>
+</div>
+{% endblock %}

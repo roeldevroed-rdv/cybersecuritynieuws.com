@@ -1,0 +1,67 @@
+{
+  "id": "20261119-wat-is-ransomware",
+  "slug": "wat-is-ransomware",
+  "type": "gids",
+  "topic_id": "wat-is-ransomware",
+  "title": "Wat is ransomware en hoe bescherm je je ertegen?",
+  "tldr": "Ransomware is gijzelsoftware die je bestanden versleutelt en vaak ook steelt, waarna criminelen losgeld eisen. Goede offline back-ups, snelle updates en tweestapsverificatie zijn de belangrijkste verdediging.",
+  "meta_description": "Wat is ransomware, hoe komt het binnen en wat doe je bij een besmetting? Uitleg over gijzelsoftware, dubbele afpersing, back-ups en of je losgeld moet betalen.",
+  "body": "Ransomware, in het Nederlands ook wel gijzelsoftware genoemd, is kwaadaardige software die de bestanden en systemen van een slachtoffer versleutelt, zodat ze onbruikbaar worden. De criminelen eisen daarna losgeld, meestal in cryptovaluta, in ruil voor een sleutel om de bestanden te ontsleutelen. Tegenwoordig stelen ze vrijwel altijd eerst gegevens, waarmee ze dreigen die te publiceren als er niet wordt betaald. Dat heet dubbele afpersing.\n\n## Hoe komt ransomware binnen?\n\nEen ransomware-aanval op een organisatie is zelden een kwestie van één verkeerde klik. Meestal verloopt het in fases:\n\n- **Binnenkomen**: via een [phishingmail](/artikel/wat-is-phishing/), een gestolen wachtwoord voor een VPN of e-mailaccount zonder [tweestapsverificatie](/artikel/tweestapsverificatie/), of een kwetsbaarheid in een systeem dat aan internet hangt en niet is bijgewerkt.\n- **Rondkijken**: aanvallers verkennen het netwerk, soms dagen of weken lang, en proberen beheerdersrechten te krijgen.\n- **Stelen**: waardevolle gegevens worden gekopieerd naar servers van de aanvallers.\n- **Versleutelen**: op een moment dat het slecht uitkomt (vaak 's nachts of in het weekend) wordt de ransomware op zoveel mogelijk systemen tegelijk gestart. Back-ups die online bereikbaar zijn, worden daarbij vaak eerst gewist.\n\nThuisgebruikers worden minder vaak doelwit van gerichte aanvallen, maar ook zij kunnen via besmette downloads of bijlagen te maken krijgen met ransomware.\n\n## Wie is het doelwit?\n\nIedereen, maar criminelen richten zich vooral op organisaties die niet lang zonder hun systemen kunnen, zoals zorginstellingen, gemeenten, onderwijs, logistiek en de maakindustrie. Ook het mkb wordt vaak getroffen, juist omdat de beveiliging daar minder volwassen is. Ransomwaregroepen werken als bedrijven, met 'partners' die aanvallen uitvoeren en een deel van de opbrengst krijgen.\n\n## Moet je losgeld betalen?\n\nOverheden zoals het [NCSC](https://www.ncsc.nl/) en de politie raden betalen af. Je hebt geen garantie dat je bestanden terugkomen of dat gestolen gegevens echt worden verwijderd, en je financiert er nieuwe aanvallen mee. Ook kan betalen juridische risico's opleveren als de ontvanger op een sanctielijst staat. Uiteindelijk is het een afweging die een organisatie samen met specialisten, verzekeraar en juristen maakt. Kijk voordat je iets beslist altijd op [No More Ransom](https://www.nomoreransom.org/): voor sommige varianten bestaan gratis ontsleutelprogramma's.\n\n## Zo bescherm je je tegen ransomware\n\nDe meest effectieve maatregelen zijn niet nieuw, maar worden vaak niet consequent uitgevoerd:\n\n- **Back-ups die aanvallers niet kunnen wissen.** Volg de 3-2-1-regel: drie kopieën, op twee soorten opslag, waarvan één offline of onveranderbaar. Test regelmatig of je echt kunt terugzetten.\n- **Updates snel installeren**, vooral voor systemen die aan internet hangen, zoals VPN-servers, firewalls en mailservers. Kwetsbaarheden die actief worden misbruikt, staan bij ons gemarkeerd als [actief misbruikt](/actief-misbruikt/).\n- **Tweestapsverificatie** op alle accounts met toegang van buitenaf.\n- **Minder rechten**: geef medewerkers en beheerders alleen de toegang die ze echt nodig hebben, en gebruik aparte beheeraccounts.\n- **Detectie en monitoring**: zorg dat verdachte activiteit in het netwerk opvalt voordat de versleuteling begint.\n- **Een incidentplan**: wie bel je, wat sluit je af, hoe communiceer je? Oefen dat voordat het nodig is.\n\n## Wat doe je als je getroffen bent?\n\n1. **Isoleer** besmette systemen: haal ze van het netwerk, maar zet ze niet uit, zodat sporen bewaard blijven.\n2. **Schakel hulp in**: je IT-leverancier, een gespecialiseerd incidentresponsbedrijf en je cyberverzekeraar als je die hebt.\n3. **Doe aangifte** bij de [politie](https://www.politie.nl/).\n4. **Meld een datalek** binnen 72 uur bij de [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/) als er persoonsgegevens zijn geraakt.\n5. **Communiceer** eerlijk met klanten en medewerkers, en waarschuw voor [phishing](/artikel/wat-is-phishing/) die vaak volgt op een lek.",
+  "actions": [
+    "Maak back-ups volgens de 3-2-1-regel, met minstens één offline of onveranderbare kopie.",
+    "Test minstens twee keer per jaar of je een back-up echt kunt terugzetten.",
+    "Installeer beveiligingsupdates snel, te beginnen bij systemen die aan internet hangen.",
+    "Zet tweestapsverificatie aan op e-mail, VPN en beheeraccounts.",
+    "Leg vast wie je belt en wat je doet bij een aanval, en oefen dat.",
+    "Getroffen? Isoleer systemen, schakel hulp in en doe aangifte."
+  ],
+  "faq": [
+    {
+      "q": "Wat is het verschil tussen ransomware en ander malware?",
+      "a": "Ransomware is een soort malware die specifiek bedoeld is om af te persen: bestanden worden versleuteld en vaak gestolen, waarna losgeld wordt geëist."
+    },
+    {
+      "q": "Kun je ransomware zelf verwijderen?",
+      "a": "Je kunt de software soms verwijderen, maar daarmee krijg je versleutelde bestanden niet terug. Kijk op No More Ransom of er een gratis ontsleutelprogramma bestaat en schakel bij organisaties altijd specialisten in."
+    },
+    {
+      "q": "Helpt een virusscanner tegen ransomware?",
+      "a": "Een goede beveiligingsoplossing helpt, maar is niet genoeg. Back-ups, updates, tweestapsverificatie en beperkte rechten zijn minstens zo belangrijk."
+    },
+    {
+      "q": "Moet ik een ransomware-aanval melden?",
+      "a": "Doe aangifte bij de politie. Zijn er persoonsgegevens geraakt, dan moet een organisatie dat in de regel binnen 72 uur melden bij de Autoriteit Persoonsgegevens."
+    }
+  ],
+  "category": "ransomware",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "wat is ransomware",
+    "gijzelsoftware",
+    "ransomware voorkomen",
+    "losgeld betalen"
+  ],
+  "image_query": "locked computer screen",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [],
+  "published": "2026-11-19T16:59:22+00:00",
+  "model": "redactie (Claude)"
+}

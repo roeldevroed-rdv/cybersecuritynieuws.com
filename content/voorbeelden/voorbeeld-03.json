@@ -1,0 +1,43 @@
+{
+  "slug": "voorbeeld-datalek-bij-fictieve-webwinkel-raakt-miljoen-klanten",
+  "offset_hours": 12,
+  "title": "[Voorbeeld] Datalek bij fictieve webwinkel raakt een miljoen klanten",
+  "tldr": "Bij de fictieve webwinkel ShopVoorbeeld zijn namen, e-mailadressen en bestelgegevens van ongeveer een miljoen klanten gelekt. Wachtwoorden waren versleuteld opgeslagen.",
+  "body": "De fictieve Belgische webwinkel ShopVoorbeeld heeft een datalek gemeld. Volgens de voorbeeldbron Example Security kregen onbevoegden toegang tot een database met gegevens van ongeveer een miljoen klanten.\n\n## Welke gegevens?\nHet gaat om namen, e-mailadressen, afleveradressen en bestelgeschiedenis. Betaalgegevens zouden niet zijn buitgemaakt. Wachtwoorden waren opgeslagen als zogeheten hash, een versleutelde vorm die niet eenvoudig terug te rekenen is.\n\n## Risico op phishing\nMet deze gegevens kunnen criminelen zeer overtuigende phishingmails sturen, bijvoorbeeld over een 'mislukte levering' van een bestelling die je echt hebt gedaan.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Wijzig je wachtwoord bij de webwinkel en overal waar je hetzelfde wachtwoord gebruikt.",
+    "Wees extra alert op mails en sms'jes over bestellingen of leveringen.",
+    "Gebruik een wachtwoordmanager zodat elk account een uniek wachtwoord heeft."
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Retail"
+    ],
+    "technologie": []
+  },
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Example Security",
+      "title": "Online retailer discloses data breach",
+      "url": "https://example.com/shop"
+    }
+  ],
+  "id": "voorbeeld-03",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

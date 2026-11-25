@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Is dit oplichting? Check een verdacht bericht – {{ site.name }}{% endblock %}
+{% block description %}Twijfel je over een mail, sms of WhatsApp-bericht? Plak het hier en zie direct welke kenmerken van oplichting erin zitten. Gratis en anoniem.{% endblock %}
+{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="Is dit oplichting? – {{ site.name }}">
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebApplication", "name": "Is dit oplichting?", "url": site.url ~ "/is-dit-oplichting/",
+  "applicationCategory": "SecurityApplication", "operatingSystem": "Alle", "inLanguage": "nl", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}|tojson }}</script>{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head"><p class="eyebrow">Gratis check</p><h1>Is dit oplichting?</h1>
+    <p class="page-head__intro">Plak een verdachte e-mail, sms of WhatsApp-bericht hieronder. Je ziet direct welke bekende kenmerken van oplichting erin zitten.</p></header>
+
+  <form class="scam" id="scamForm" onsubmit="return false">
+    <label for="scamText">Het verdachte bericht</label>
+    <textarea id="scamText" rows="8" placeholder="Bijv.: Hoi mam, dit is mijn nieuwe nummer. Kun je even iets voor me betalen? Het is dringend…"></textarea>
+    <div class="scam__row">
+      <button class="btn" id="scamCheck" type="button">Controleer bericht</button>
+      <button class="btn btn--ghost" id="scamExample" type="button">Probeer een voorbeeld</button>
+    </div>
+    <p class="small muted">Deze check draait volledig in je eigen browser. Je tekst wordt niet verstuurd of opgeslagen.</p>
+  </form>
+
+  <section id="scamResult" class="scam-result" aria-live="polite" hidden></section>
+
+  <div class="prose">
+    <h2>Zo werkt de check</h2>
+    <p>De check zoekt naar kenmerken die bijna altijd terugkomen in oplichting: haast, een verzoek om te betalen of in te loggen, links, een 'nieuw nummer' of een organisatie die zich voordoet als bank of overheid. Hoe meer kenmerken, hoe groter de kans dat het oplichting is.</p>
+    <p><strong>Let op:</strong> geen enkele automatische check is waterdicht. Krijg je een groen resultaat maar twijfel je toch? Neem dan zelf contact op met de afzender via een telefoonnummer of website die je zelf opzoekt. Meer weten? Lees onze gids <a href="/artikel/wat-is-phishing/">phishing herkennen</a>.</p>
+    <h2>Bericht ontvangen en twijfel?</h2>
+    <ul>
+      <li>Stuur verdachte mails door naar de <a href="https://www.fraudehelpdesk.nl/" rel="noopener" target="_blank">Fraudehelpdesk</a> (Nederland) of naar verdacht@safeonweb.be (België).</li>
+      <li>Al betaald of gegevens ingevuld? Bel direct je bank en lees ons <a href="/artikel/account-gehackt/">stappenplan</a>.</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/oplichting.js" defer></script>{% endblock %}

@@ -1,0 +1,42 @@
+{
+  "slug": "voorbeeld-ddos-aanvallen-op-fictieve-gemeentesites",
+  "offset_hours": 60,
+  "title": "[Voorbeeld] DDoS-aanvallen maken websites van fictieve gemeenten tijdelijk onbereikbaar",
+  "tldr": "Een hacktivistische groep heeft websites van meerdere (fictieve) gemeenten met een DDoS-aanval platgelegd. Er zijn geen gegevens gestolen.",
+  "body": "Websites van meerdere fictieve gemeenten waren urenlang onbereikbaar door een DDoS-aanval, meldt Voorbeeldnieuws.nl. Bij zo'n aanval wordt een website overspoeld met zoveel verkeer dat hij bezwijkt.\n\n## Geen datalek\nEen DDoS-aanval is hinderlijk, maar er wordt niet ingebroken. Volgens de gemeenten zijn er dan ook geen gegevens gestolen. Een groep hacktivisten eiste de aanval op als reactie op een politieke kwestie.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Organisaties: controleer of je hostingpartij DDoS-bescherming biedt.",
+    "Zorg voor een alternatief communicatiekanaal als je website onbereikbaar is."
+  ],
+  "category": "cyberaanvallen",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Grote organisaties"
+    ],
+    "sector": [
+      "Overheid"
+    ],
+    "technologie": []
+  },
+  "severity": "laag",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Voorbeeldnieuws.nl",
+      "title": "Gemeentesites plat door DDoS",
+      "url": "https://example.com/ddos"
+    }
+  ],
+  "id": "voorbeeld-08",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

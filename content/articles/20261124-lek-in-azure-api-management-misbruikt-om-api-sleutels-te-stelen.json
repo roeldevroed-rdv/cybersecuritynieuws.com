@@ -1,0 +1,82 @@
+{
+  "id": "20261124-lek-in-azure-api-management-misbruikt-om-api-sleutels-te-stelen",
+  "slug": "lek-in-azure-api-management-misbruikt-om-api-sleutels-te-stelen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Lek in Azure API Management misbruikt om API-sleutels te stelen",
+  "tldr": "Aanvallers hebben een kwetsbaarheid in Microsoft Azure API Management Classic misbruikt om opgeslagen sleutels en wachtwoorden van klanten te stelen, onder meer bij Noorse energiebedrijven. Microsoft heeft het lek gedicht, maar klanten moeten zelf hun geheimen vervangen.",
+  "meta_description": "Microsoft dicht een misbruikt lek in Azure API Management Classic waarmee API-sleutels en secrets zijn gestolen. Welke tiers zijn getroffen en wat moet je nu doen?",
+  "body": "Microsoft heeft een kwetsbaarheid in Azure API Management (APIM) verholpen die door aanvallers is misbruikt om opgeslagen inloggegevens van klanten te stelen, meldt [BleepingComputer](https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/). Het lek zat in de zogeheten Classic-versie van de dienst. Microsoft ontdekte het probleem op 18 november en sloot de toegangsweg een dag later. Omdat al gestolen gegevens daarmee niet ongeldig worden, moeten klanten zelf actie ondernemen.\n\n## Wat is Azure API Management?\n\nAPI Management is een clouddienst van Microsoft waarmee organisaties hun API's beheren: de koppelingen waarmee systemen en apps gegevens met elkaar uitwisselen. In die dienst worden vaak gevoelige gegevens opgeslagen, zoals sleutels en wachtwoorden om met andere systemen te verbinden.\n\n## Welke gegevens zijn mogelijk gestolen?\n\nVolgens de berichtgeving gaat het om gegevens die in de dienst waren opgeslagen, waaronder:\n\n- geheimen die als 'Named Values' waren opgeslagen;\n- inloggegevens van identiteitsproviders en OpenID Connect-clientgeheimen;\n- abonnementssleutels voor API's;\n- tokens voor het beheer van de dienst.\n\nGetroffen zijn de Developer-, Basic-, Standard- en Premium-tiers van APIM Classic. De Consumption-tier en alle v2-tiers waren volgens Microsoft niet kwetsbaar. Er is voor zover bekend geen CVE-nummer aan het lek toegekend.\n\n## Aanvallen op Noorse energiebedrijven\n\nDe Noorse Nationale Veiligheidsdienst (NSM) meldt dat de aanvallers het voorzien hadden op energiebedrijven, waaronder Equinor en Skagerak Energi, schrijft [SC Media](https://www.scworld.com/brief/microsoft-addresses-azure-api-management-vulnerability-linked-to-energy-sector-attacks). Volgens de NSM zochten de aanvallers specifiek naar toegangstokens en opgeslagen waarden. Wie achter de aanvallen zit, is niet bekendgemaakt.\n\n## Waarom zelf actie nodig is\n\nDe oplossing van Microsoft voorkomt nieuw misbruik, maar sleutels en wachtwoorden die al zijn gestolen, blijven bruikbaar totdat je ze vervangt. Microsoft adviseert klanten daarom alle mogelijk blootgestelde geheimen handmatig te vervangen en de logbestanden te controleren op verdachte activiteit. Het advies van Microsoft vind je via het [Microsoft Security Response Center](https://msrc.microsoft.com/).",
+  "actions": [
+    "Controleer of je organisatie Azure API Management Classic gebruikt (Developer, Basic, Standard of Premium).",
+    "Vervang alle geheimen die in de dienst zijn opgeslagen: Named Values, clientgeheimen, abonnementssleutels en tokens.",
+    "Controleer de logbestanden van APIM en de gekoppelde systemen op ongebruikelijke activiteit sinds begin november.",
+    "Overweeg geheimen in Azure Key Vault op te slaan in plaats van direct in APIM.",
+    "Plan een overstap naar de v2-tiers als je nog Classic gebruikt."
+  ],
+  "faq": [
+    {
+      "q": "Welke versies van Azure API Management zijn getroffen?",
+      "a": "De Developer-, Basic-, Standard- en Premium-tiers van APIM Classic. De Consumption-tier en alle v2-tiers waren niet kwetsbaar."
+    },
+    {
+      "q": "Moet ik zelf iets doen als Microsoft het lek al heeft gedicht?",
+      "a": "Ja. De oplossing voorkomt nieuw misbruik, maar al gestolen sleutels en wachtwoorden blijven werken totdat je ze vervangt."
+    },
+    {
+      "q": "Heeft het lek een CVE-nummer?",
+      "a": "Voor zover bekend is er geen CVE-nummer toegekend, omdat het om een clouddienst gaat die Microsoft centraal heeft aangepast."
+    }
+  ],
+  "category": "cyberaanvallen",
+  "labels": {
+    "regio": [
+      "Europa",
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "Grote organisaties"
+    ],
+    "sector": [
+      "Energie"
+    ],
+    "technologie": [
+      "Microsoft",
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "Azure API Management",
+    "APIM Classic",
+    "Microsoft Azure lek",
+    "API-sleutels gestolen"
+  ],
+  "image_query": "cloud computing security",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": true,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/"
+    },
+    {
+      "name": "The Hacker News",
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html"
+    },
+    {
+      "name": "SC Media",
+      "title": "Microsoft addresses Azure API Management vulnerability linked to energy sector attacks",
+      "url": "https://www.scworld.com/brief/microsoft-addresses-azure-api-management-vulnerability-linked-to-energy-sector-attacks"
+    }
+  ],
+  "published": "2026-11-24T11:38:47+00:00",
+  "model": "redactie (Claude)"
+}

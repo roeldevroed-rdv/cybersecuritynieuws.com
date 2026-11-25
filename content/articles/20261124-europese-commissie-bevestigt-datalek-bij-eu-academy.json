@@ -1,0 +1,74 @@
+{
+  "id": "20261124-europese-commissie-bevestigt-datalek-bij-eu-academy",
+  "slug": "europese-commissie-bevestigt-datalek-bij-eu-academy",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Europese Commissie bevestigt datalek bij EU Academy na aanval met AI-tool",
+  "tldr": "Aanvallers hebben bij een cyberaanval op de Europese Commissie ook het leerplatform EU Academy gehackt en namen en e-mailadressen van gebruikers gestolen. Volgens de Commissie gebruikten de aanvallers een AI-ondersteunde tool.",
+  "meta_description": "De Europese Commissie bevestigt dat bij de EU Academy namen en e-mailadressen zijn gestolen na een aanval met een AI-tool. Wat betekent dit voor gebruikers?",
+  "body": "De Europese Commissie heeft bevestigd dat aanvallers het online leerplatform EU Academy hebben gehackt en persoonsgegevens van gebruikers hebben gestolen, meldt [BleepingComputer](https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/). Het gaat onder meer om namen en e-mailadressen. Hoeveel gebruikers zijn getroffen, is niet bekendgemaakt.\n\n## Een aanval met een AI-tool\n\nHet datalek hangt samen met een cyberaanval die de Commissie eerder meldde. Op 22 oktober drongen aanvallers de systemen van de Commissie binnen met behulp van het AI-gestuurde pentestprogramma ARTEX, wat leidde tot verstoringen, onder meer bij het interne hr-systeem Sysper. Uit voorzorg haalde de Commissie verschillende applicaties tijdelijk offline; de meeste zijn inmiddels weer beschikbaar.\n\n\"Dit is absoluut een cyberaanval, een cybercampagne die met een AI-ondersteunde tool tegen de Commissie was gericht\", zei woordvoerder Thomas Regnier. Wie erachter zit, is nog niet bekend. Volgens de Commissie is er geen losgeld geëist en is er geen bewijs van een datalek dat het personeel als geheel treft.\n\n## Wat is de EU Academy?\n\nDe EU Academy is een online platform waar iedereen cursussen kan volgen over Europees beleid. Ook veel Nederlandse en Belgische ambtenaren, studenten en professionals hebben er een account. De Commissie heeft alle gebruikers via de website geïnformeerd en de openbare toegang tot het platform voorlopig uitgeschakeld.\n\n## Pas op voor phishing\n\nDe Commissie waarschuwt gebruikers voor ongevraagde e-mails en berichten die deel kunnen uitmaken van phishingaanvallen. Met een naam en e-mailadres kunnen criminelen overtuigende berichten sturen die van de EU Academy of de Europese Commissie lijken te komen, bijvoorbeeld met een verzoek om je account te 'herstellen'. Lees in onze gids [hoe je phishing herkent](/artikel/wat-is-phishing/) waar je op let, en wat je doet [als je gegevens zijn gelekt](/artikel/datalek-wat-nu/).\n\nHet is niet het eerste incident bij de Commissie dit jaar. Eerder werden een beheersysteem voor mobiele apparaten van medewerkers en een cloudomgeving gehackt. Meer informatie over Europese cybersecurity vind je bij [ENISA](https://www.enisa.europa.eu/), het Europese agentschap voor cyberbeveiliging.",
+  "actions": [
+    "Heb je een EU Academy-account? Wees extra alert op e-mails die van de EU Academy of de Europese Commissie lijken te komen.",
+    "Klik niet op links om je account te 'herstellen'; ga zelf naar de officiële website.",
+    "Gebruikte je het wachtwoord van de EU Academy ook elders? Verander het daar.",
+    "Zet tweestapsverificatie aan op je e-mailaccount."
+  ],
+  "faq": [
+    {
+      "q": "Welke gegevens zijn bij de EU Academy gestolen?",
+      "a": "De Europese Commissie bevestigt dat in elk geval namen en e-mailadressen van gebruikers zijn buitgemaakt. Het onderzoek loopt nog."
+    },
+    {
+      "q": "Wat is ARTEX?",
+      "a": "Volgens de berichtgeving is ARTEX een AI-gestuurd programma voor penetratietests, dat bij de aanval op de Commissie door de aanvallers werd gebruikt."
+    },
+    {
+      "q": "Wie zit achter de aanval op de Europese Commissie?",
+      "a": "Dat is nog niet bekend. De Commissie wil eerst het onderzoek afronden voordat ze de aanval aan iemand toeschrijft."
+    }
+  ],
+  "category": "overheid",
+  "labels": {
+    "regio": [
+      "Europa",
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Overheid",
+      "Onderwijs"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "Europese Commissie hack",
+    "EU Academy datalek",
+    "AI-cyberaanval",
+    "datalek EU"
+  ],
+  "image_query": "european union flags",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "European Commission confirms data theft in EU Academy breach",
+      "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/"
+    },
+    {
+      "name": "SecurityWeek",
+      "title": "European Commission Uncovers Data Breach in Cyberattack Investigation",
+      "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/"
+    }
+  ],
+  "published": "2026-11-24T15:38:47+00:00",
+  "model": "redactie (Claude)"
+}

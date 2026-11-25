@@ -1,0 +1,44 @@
+{
+  "slug": "voorbeeld-nieuwe-infostealer-verspreidt-zich-via-nep-ai-apps",
+  "offset_hours": 80,
+  "title": "[Voorbeeld] Nieuwe infostealer verspreidt zich via nep-AI-apps",
+  "tldr": "Onderzoekers waarschuwen voor fictieve malware die zich voordoet als populaire AI-app en wachtwoorden en cryptowallets steelt.",
+  "body": "Beveiligingsonderzoekers hebben in dit fictieve voorbeeld een nieuwe infostealer ontdekt die zich verspreidt via advertenties voor nep-AI-apps, meldt Example Security. Een infostealer is malware die opgeslagen wachtwoorden, cookies en cryptowallets steelt.\n\n## Hoe raak je besmet?\nSlachtoffers zoeken naar een bekende AI-tool en klikken op een gesponsorde zoekresultaat. Die leidt naar een nagemaakte downloadpagina. Het installatieprogramma lijkt te werken, maar installeert op de achtergrond de malware.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Download software alleen via de officiële website of appwinkel.",
+    "Klik niet op gesponsorde zoekresultaten voor downloads.",
+    "Vermoed je besmetting? Wijzig vanaf een ander apparaat je wachtwoorden en log overal uit."
+  ],
+  "category": "malware",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [],
+    "technologie": [
+      "Microsoft",
+      "Crypto"
+    ]
+  },
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Example Security",
+      "title": "Infostealer spread via fake AI apps",
+      "url": "https://example.com/stealer"
+    }
+  ],
+  "id": "voorbeeld-09",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

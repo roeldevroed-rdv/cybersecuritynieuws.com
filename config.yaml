@@ -1,0 +1,170 @@
+# Instellingen voor cybersecuritynieuws.com
+site:
+  name: "CyberSecurityNieuws"
+  domain: "cybersecuritynieuws.com"
+  url: "https://cybersecuritynieuws.com"
+  tagline: "Het belangrijkste cybersecuritynieuws, helder uitgelegd in het Nederlands"
+  description: "Dagelijks actueel nieuws over kwetsbaarheden, datalekken, ransomware en cyberaanvallen, met per bericht concreet advies: wat moet je doen?"
+  language: "nl"
+  # Laat leeg om het nieuwsbriefformulier te verbergen. Bijv. een Buttondown/Mailchimp form-action URL.
+  newsletter_action: ""
+  articles_per_page: 18
+
+ai:
+  # Model voor het schrijven van artikelen. Haiku is goedkoper, Sonnet schrijft beter.
+  model: "claude-sonnet-5-5"
+  max_new_articles_per_run: 8
+  # Alleen nieuws uit de afgelopen X uur meenemen
+  max_age_hours: 36
+
+# Nieuwsbronnen (RSS/Atom). 'weight' bepaalt hoe zwaar een bron telt bij het kiezen van het belangrijkste nieuws.
+sources:
+  - { name: "BleepingComputer",   url: "https://www.bleepingcomputer.com/feed/",                 weight: 1.0 }
+  - { name: "The Hacker News",    url: "https://feeds.feedburner.com/TheHackersNews",            weight: 1.0 }
+  - { name: "SecurityWeek",       url: "https://www.securityweek.com/feed/",                     weight: 0.9 }
+  - { name: "Krebs on Security",  url: "https://krebsonsecurity.com/feed/",                      weight: 1.0 }
+  - { name: "Dark Reading",       url: "https://www.darkreading.com/rss.xml",                    weight: 0.8 }
+  - { name: "The Record",         url: "https://therecord.media/feed/",                          weight: 0.9 }
+  - { name: "CISA Advisories",    url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",  weight: 1.1 }
+  - { name: "Security.NL",        url: "https://www.security.nl/rss/headlines.xml",              weight: 1.2 }
+
+# Lijst van actief misbruikte kwetsbaarheden (CISA KEV). Wordt gebruikt voor het label "Actief misbruikt".
+kev_url: "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+
+# Hoofdthema's (één per artikel, staan in het menu). slug: weergavenaam
+categories:
+  kwetsbaarheden: "Kwetsbaarheden & patches"
+  ransomware: "Ransomware"
+  datalekken: "Datalekken"
+  cyberaanvallen: "Cyberaanvallen"
+  malware: "Malware & hackersgroepen"
+  phishing: "Phishing & fraude"
+  privacy: "Privacy & wetgeving"
+  overheid: "Overheid & geopolitiek"
+  ai: "AI & security"
+  uitgelegd: "Uitgelegd"
+
+# Labels (meerdere per artikel). De AI kiest alleen uit deze lijsten.
+labels:
+  regio: ["Nederland", "België", "Europa", "Wereld"]
+  doelgroep: ["Thuisgebruiker", "MKB", "Grote organisaties", "IT-beheerders"]
+  sector: ["Zorg", "Onderwijs", "Overheid", "Financieel", "Industrie & OT", "Retail", "Telecom", "Energie"]
+  technologie: ["Microsoft", "Apple", "Android", "Google", "Linux", "Cloud", "Firewalls & VPN", "Browsers", "Crypto", "Open source"]
+
+# Externe links: de AI mag alleen linken naar de bronnen van het artikel en naar deze betrouwbare sites
+# (subdomeinen tellen mee). Andere externe links worden bij het bouwen automatisch verwijderd.
+trusted_domains:
+  - ncsc.nl
+  - digitaltrustcenter.nl
+  - veiliginternetten.nl
+  - fraudehelpdesk.nl
+  - politie.nl
+  - autoriteitpersoonsgegevens.nl
+  - rijksoverheid.nl
+  - government.nl
+  - ccb.belgium.be
+  - safeonweb.be
+  - enisa.europa.eu
+  - eur-lex.europa.eu
+  - cisa.gov
+  - nvd.nist.gov
+  - cve.org
+  - nist.gov
+  - owasp.org
+  - haveibeenpwned.com
+  - nomoreransom.org
+  - msrc.microsoft.com
+  - learn.microsoft.com
+  - support.microsoft.com
+  - support.apple.com
+  - support.google.com
+  - chromereleases.googleblog.com
+  - mozilla.org
+
+# Evergreen-blogs: tijdloze uitleg- en how-to-artikelen die blijvend verkeer trekken (SEO) en
+# door AI-zoekmachines als bron worden genoemd (GEO). Elke run wordt het eerstvolgende
+# onderwerp geschreven dat nog niet bestaat, tot 'per_day' per dag.
+evergreen:
+  per_day: 1
+  topics:
+    - { id: wat-is-phishing,           category: phishing,       keyword: "wat is phishing",                    title: "Wat is phishing en hoe herken je het?" }
+    - { id: tweestapsverificatie,      category: uitgelegd,      keyword: "tweestapsverificatie instellen",     title: "Tweestapsverificatie: wat is het en hoe zet je het aan?" }
+    - { id: wat-is-ransomware,         category: ransomware,     keyword: "wat is ransomware",                  title: "Wat is ransomware en hoe bescherm je je ertegen?" }
+    - { id: wachtwoordmanager,         category: uitgelegd,      keyword: "wachtwoordmanager",                  title: "Waarom je een wachtwoordmanager wilt (en hoe je kiest)" }
+    - { id: wat-is-nis2,               category: privacy,        keyword: "NIS2 uitleg",                        title: "NIS2 uitgelegd: wat betekent het voor jouw organisatie?" }
+    - { id: datalek-wat-nu,            category: datalekken,     keyword: "mijn gegevens gelekt wat nu",        title: "Je gegevens zijn gelekt: wat moet je nu doen?" }
+    - { id: passkeys,                  category: uitgelegd,      keyword: "wat zijn passkeys",                  title: "Passkeys: de opvolger van het wachtwoord uitgelegd" }
+    - { id: wat-is-een-cve,            category: kwetsbaarheden, keyword: "wat is een CVE",                     title: "Wat is een CVE en hoe lees je een beveiligingsadvies?" }
+    - { id: zero-day,                  category: kwetsbaarheden, keyword: "wat is een zero-day",                title: "Wat is een zero-day-kwetsbaarheid?" }
+    - { id: whatsapp-fraude,           category: phishing,       keyword: "whatsapp fraude vriend in nood",     title: "WhatsApp-fraude: zo herken je 'vriend-in-nood'-oplichting" }
+    - { id: ceo-fraude,                category: phishing,       keyword: "CEO-fraude",                         title: "CEO-fraude: hoe criminelen zich voordoen als je baas" }
+    - { id: back-up-strategie,         category: ransomware,     keyword: "back-up 3-2-1 regel",                title: "De 3-2-1-back-upregel: zo raak je nooit meer alles kwijt" }
+    - { id: router-beveiligen,         category: uitgelegd,      keyword: "router beveiligen",                  title: "Zo beveilig je je wifi-router thuis in zes stappen" }
+    - { id: wat-is-malware,            category: malware,        keyword: "wat is malware",                     title: "Malware uitgelegd: virussen, trojans, infostealers en meer" }
+    - { id: infostealer,               category: malware,        keyword: "infostealer",                        title: "Infostealers: de onzichtbare dief van je wachtwoorden" }
+    - { id: ddos-aanval,               category: cyberaanvallen, keyword: "wat is een DDoS-aanval",             title: "Wat is een DDoS-aanval en wat kun je ertegen doen?" }
+    - { id: mkb-cybersecurity-basis,   category: uitgelegd,      keyword: "cybersecurity mkb",                  title: "Cybersecurity voor het mkb: de tien basismaatregelen" }
+    - { id: avg-datalek-melden,        category: privacy,        keyword: "datalek melden AP",                  title: "Een datalek melden bij de Autoriteit Persoonsgegevens: zo werkt het" }
+    - { id: software-updates,          category: kwetsbaarheden, keyword: "waarom updates installeren",         title: "Waarom updates installeren zo belangrijk is (en hoe je het automatiseert)" }
+    - { id: smishing-sms-fraude,       category: phishing,       keyword: "sms phishing smishing",              title: "Smishing: oplichting via sms herkennen en melden" }
+    - { id: qr-code-phishing,          category: phishing,       keyword: "qr code phishing quishing",          title: "Quishing: phishing via QR-codes uitgelegd" }
+    - { id: deepfake-fraude,           category: ai,             keyword: "deepfake fraude",                    title: "Deepfake-fraude: nepstemmen en -video's herkennen" }
+    - { id: ai-veilig-gebruiken,       category: ai,             keyword: "ChatGPT veilig gebruiken op werk",   title: "AI-chatbots veilig gebruiken op het werk" }
+    - { id: vpn-uitgelegd,             category: uitgelegd,      keyword: "wat doet een VPN",                   title: "Wat doet een VPN wel en niet voor je veiligheid?" }
+    - { id: openbaar-wifi,             category: uitgelegd,      keyword: "openbare wifi veilig",               title: "Is openbare wifi veilig? Zo gebruik je het verstandig" }
+    - { id: telefoon-beveiligen,       category: uitgelegd,      keyword: "telefoon beveiligen",                title: "Je smartphone beveiligen: de belangrijkste instellingen" }
+    - { id: account-gehackt,           category: uitgelegd,      keyword: "account gehackt wat nu",             title: "Account gehackt? Stappenplan om het terug te krijgen" }
+    - { id: security-awareness,        category: uitgelegd,      keyword: "security awareness medewerkers",     title: "Security awareness: zo maak je medewerkers weerbaar" }
+    - { id: incident-response-plan,    category: cyberaanvallen, keyword: "incident response plan",             title: "Een incidentresponsplan maken: wat doe je als het misgaat?" }
+    - { id: kinderen-online-veilig,    category: uitgelegd,      keyword: "kinderen veilig online",             title: "Kinderen veilig online: praktische tips voor ouders" }
+
+# Redactie en contact (verschijnt op /redactie/, /contact/, /colofon/ en bij elk artikel)
+redactie:
+  hoofdredacteur: "Roel de Vroed"   # leeg = "Redactie CyberSecurityNieuws"
+  rol: "Oprichter en hoofdredacteur"
+  foto: ""                      # bijv. /static/img/roel-de-vroed.jpg (vierkant, min. 400x400)
+  bio: ""                       # korte achtergrond van de hoofdredacteur
+  linkedin: ""                  # URL van je LinkedIn-profiel (optioneel)
+  email: "redactie@cybersecuritynieuws.com"
+  adverteren_email: "adverteren@cybersecuritynieuws.com"
+  kvk: ""                       # KvK-nummer (verplicht vermelden als je een onderneming hebt)
+  vestigingsplaats: ""
+
+# Formulieren op een statische site hebben een externe dienst nodig, bijv. Formspree (gratis tot 50/maand).
+# Leeg = het formulier toont alleen het e-mailadres.
+forms:
+  tip_action: ""                # bijv. "https://formspree.io/f/xxxxxxx"
+
+# Bezoekersstatistieken zonder cookies (GoatCounter, gratis). Vul je code in, bijv. "cybersecuritynieuws".
+analytics:
+  goatcounter: ""
+
+# Advertenties. Elk item verschijnt in het genoemde slot, duidelijk gemarkeerd als "Advertentie".
+# Slots: sidebar (voorpagina + artikelen), artikel (onder "Wat moet je doen?"), voorpagina (tussen het nieuws).
+# Zonder actieve advertentie toont de site een eigen "Adverteren op CyberSecurityNieuws?"-blok.
+ads: []
+#  - slot: sidebar
+#    adverteerder: "Naam leverancier"
+#    titel: "Korte kop van de advertentie"
+#    tekst: "Eén of twee zinnen."
+#    url: "https://www.voorbeeld.nl/landingspagina?utm_source=cybersecuritynieuws"
+#    afbeelding: ""             # optioneel: /static/ads/bestand.png (zet het bestand in static/ads/)
+#    knop: "Lees meer"
+#    van: "2026-12-01"
+#    tot: "2026-12-31"
+
+# Productpagina's (/product/<slug>/): alle artikelen over één leverancier of product, goed voor SEO.
+products:
+  - { slug: microsoft, name: "Microsoft",   match: ["microsoft", "windows", "azure", "exchange", "office", "entra", "sharepoint"] }
+  - { slug: apple,     name: "Apple",       match: ["apple", "iphone", "ipad", "macos", "ios ", "safari"] }
+  - { slug: google,    name: "Google & Chrome", match: ["google", "chrome", "android", "gmail"] }
+  - { slug: cisco,     name: "Cisco",       match: ["cisco"] }
+  - { slug: vmware,    name: "VMware",      match: ["vmware", "vcenter", "esxi", "broadcom"] }
+  - { slug: fortinet,  name: "Fortinet",    match: ["fortinet", "fortigate", "fortios"] }
+  - { slug: ivanti,    name: "Ivanti",      match: ["ivanti"] }
+  - { slug: citrix,    name: "Citrix",      match: ["citrix", "netscaler"] }
+  - { slug: palo-alto, name: "Palo Alto Networks", match: ["palo alto", "pan-os", "globalprotect"] }
+  - { slug: connectwise, name: "ConnectWise", match: ["connectwise", "screenconnect"] }
+  - { slug: mozilla,   name: "Mozilla Firefox", match: ["firefox", "mozilla", "thunderbird"] }
+  - { slug: linux,     name: "Linux",       match: ["linux", "ubuntu", "debian", "red hat"] }
+  - { slug: whatsapp,  name: "WhatsApp",    match: ["whatsapp"] }

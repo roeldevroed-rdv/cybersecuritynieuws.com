@@ -1,0 +1,70 @@
+{
+  "id": "20261124-kifid-rabobank-hoeft-betalingen-met-gestolen-telefoon-niet-te-vergoeden",
+  "slug": "kifid-rabobank-hoeft-betalingen-met-gestolen-telefoon-niet-te-vergoeden",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Kifid: Rabobank hoeft betalingen met gestolen telefoon niet te vergoeden",
+  "tldr": "Een Rabobank-klant krijgt betalingen die na diefstal van zijn telefoon werden gedaan niet vergoed. Volgens klachteninstituut Kifid handelde hij grof nalatig, omdat hij niet kon uitleggen hoe de dieven aan zijn beveiligingsgegevens kwamen.",
+  "meta_description": "Telefoon gestolen en geld van je rekening? Kifid oordeelt dat Rabobank niet hoeft te vergoeden. Wat betekent 'grof nalatig' en hoe bescherm je je bankapp?",
+  "body": "Een klant van de Rabobank krijgt betalingen die met zijn gestolen telefoon werden gedaan niet vergoed. Dat heeft het financiële klachteninstituut Kifid geoordeeld, meldt [Security.NL](https://www.security.nl/posting/962900). De telefoon werd gestolen tijdens een bezoek aan een club op Ibiza, waarna er meerdere betalingen plaatsvonden. Het bedrag is niet bekendgemaakt.\n\n## Normaal moet de bank vergoeden\n\nUitgangspunt is dat een bank niet-toegestane betalingen direct moet terugbetalen. Daar is één belangrijke uitzondering: als de klant fraude heeft gepleegd, of opzettelijk of met **grove nalatigheid** de veiligheidsregels van de bank niet heeft nageleefd. Die regels houden onder meer in dat je je pincode geheimhoudt en ervoor zorgt dat niemand anders je betaalmiddel gebruikt.\n\nVolgens de maatstaf van het Kifid ben je grof nalatig als je in ongewoon hoge mate iets doet of nalaat wat een normale, redelijke en zorgvuldige betaler nooit zou doen of nalaten.\n\n## Waarom de klant hier niets terugkrijgt\n\nDe bank moet bewijzen dat de klant grof nalatig was. Maar de klant heeft een zogeheten verzwaarde motiveringsplicht: hij moet op zijn minst enig inzicht geven in hoe de dieven met zijn telefoon konden betalen. Dat deed hij volgens het Kifid niet. \"De consument heeft geen verklaring gegeven voor hoe het kan dat degenen die zijn mobiele telefoon hebben gestolen de beschikking hebben gehad over zijn beveiligingsgegevens\", aldus het klachteninstituut. Het gaat om een niet-bindend advies; de klant kan nog bezwaar maken.\n\n## Wat leer je hiervan?\n\nDieven die je telefoon stelen, kijken vaak eerst mee terwijl je je pincode of toegangscode invoert, bijvoorbeeld in een drukke bar of club. Daarna hebben ze toegang tot je bankapp. Bescherm je telefoon daarom met een lange toegangscode die je afschermt bij het invoeren, gebruik bij voorkeur gezichts- of vingerafdrukherkenning en gebruik voor je bankapp een andere pincode dan voor je telefoon. Lees ook ons [stappenplan als je account is gehackt](/artikel/account-gehackt/) en onze uitleg over [tweestapsverificatie](/artikel/tweestapsverificatie/).",
+  "actions": [
+    "Gebruik voor je bankapp een andere pincode dan voor het ontgrendelen van je telefoon.",
+    "Scherm je toegangscode af als je die in het openbaar invoert, of gebruik gezichts- of vingerafdrukherkenning.",
+    "Bewaar geen pincodes of wachtwoorden in notities of foto's op je telefoon.",
+    "Telefoon gestolen? Bel direct je bank om de bankapp en passen te blokkeren en doe aangifte.",
+    "Noteer bij diefstal zo snel mogelijk wat er gebeurde; dat helpt als je later moet uitleggen hoe het kon."
+  ],
+  "faq": [
+    {
+      "q": "Moet de bank geld vergoeden als mijn telefoon is gestolen?",
+      "a": "In principe wel bij niet-toegestane betalingen, tenzij de bank kan aantonen dat je fraude hebt gepleegd of grof nalatig bent geweest met je beveiligingsgegevens."
+    },
+    {
+      "q": "Wat betekent grof nalatig bij bankfraude?",
+      "a": "Volgens het Kifid ben je grof nalatig als je in ongewoon hoge mate iets doet of nalaat wat een normale, redelijke en zorgvuldige betaler nooit zou doen, zoals je pincode delen."
+    },
+    {
+      "q": "Wat doe ik direct als mijn telefoon is gestolen?",
+      "a": "Bel meteen het fraudenummer van je bank om de bankapp en passen te blokkeren, laat je simkaart blokkeren en doe aangifte bij de politie."
+    }
+  ],
+  "category": "phishing",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Financieel"
+    ],
+    "technologie": [
+      "Android",
+      "Apple"
+    ]
+  },
+  "keywords": [
+    "telefoon gestolen bank vergoeding",
+    "Kifid uitspraak",
+    "grof nalatig",
+    "bankapp beveiligen"
+  ],
+  "image_query": "smartphone banking app",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Rabobank-klant krijgt betaaltransacties met gestolen telefoon niet vergoed",
+      "url": "https://www.security.nl/posting/962900"
+    }
+  ],
+  "published": "2026-11-24T13:38:47+00:00",
+  "model": "redactie (Claude)"
+}

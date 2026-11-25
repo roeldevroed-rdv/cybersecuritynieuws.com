@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Beveiligingsnieuws per product – {{ site.name }}{% endblock %}
+{% block description %}Alle kwetsbaarheden, updates en incidenten per leverancier: Microsoft, Apple, Cisco, VMware, Fortinet en meer.{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head"><p class="eyebrow">Per product</p><h1>Beveiligingsnieuws per product</h1>
+    <p class="page-head__intro">Gebruik je een van deze producten? Hier vind je alle lekken, updates en incidenten op één plek.</p></header>
+  <div class="product-grid">
+    {% for p, items in prod_items %}
+    <a class="product" href="/product/{{ p.slug }}/">
+      <strong>{{ p.name }}</strong>
+      <span class="small muted">{{ items|length }} {{ 'artikel' if items|length == 1 else 'artikelen' }}{% if items|selectattr('exploited')|list %} · <span class="product__hot">actief misbruikt</span>{% endif %}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

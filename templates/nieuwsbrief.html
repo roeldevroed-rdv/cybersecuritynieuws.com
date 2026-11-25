@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Nieuwsbrief – {{ site.name }}{% endblock %}
+{% block description %}Ontvang het belangrijkste cybersecuritynieuws in je inbox, met wat je moet doen. Gratis en op elk moment op te zeggen.{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <p class="eyebrow">Nieuwsbrief</p>
+    <h1>Het belangrijkste cybersecuritynieuws in je inbox</h1>
+    <p class="page-head__intro">Eén keer per week: de kwetsbaarheden die je moet patchen, de grootste incidenten en praktische tips. In vijf minuten bijgelezen.</p>
+  </header>
+  <section class="panel panel--newsletter">
+    {% if site.newsletter_action %}
+    <form action="{{ site.newsletter_action }}" method="post" target="_blank" class="newsletter">
+      <label class="visually-hidden" for="nb-email2">E-mailadres</label>
+      <input id="nb-email2" type="email" name="email" placeholder="jouw@email.nl" required>
+      <button class="btn" type="submit">Gratis aanmelden</button>
+    </form>
+    <p class="small muted">Geen spam. Afmelden kan met één klik onderaan elke nieuwsbrief.</p>
+    {% else %}
+    <p><strong>De nieuwsbrief start binnenkort.</strong> Volg ons in de tussentijd via de <a href="/rss.xml">RSS-feed</a> of het <a href="/weekoverzicht/">weekoverzicht</a>.</p>
+    {% endif %}
+  </section>
+  <div class="prose">
+    <h2>Wat staat erin?</h2>
+    <ul>
+      <li><strong>Eerst patchen:</strong> de lekken die nu actief worden misbruikt, met de juiste update.</li>
+      <li><strong>Nederland en België:</strong> datalekken, aanvallen en waarschuwingen van NCSC en Safeonweb.</li>
+      <li><strong>Oplichting van de week:</strong> de nieuwste trucs, zodat je ze herkent.</li>
+      <li><strong>Eén praktische tip</strong> om je thuis of op het werk beter te beveiligen.</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

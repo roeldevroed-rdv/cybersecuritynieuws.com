@@ -1,0 +1,44 @@
+{
+  "slug": "voorbeeld-nep-pakketmeldingen-via-sms-nemen-toe",
+  "offset_hours": 20,
+  "title": "[Voorbeeld] Nep-pakketmeldingen via sms nemen sterk toe voor de feestdagen",
+  "tldr": "Oplichters versturen in aanloop naar de feestdagen meer sms'jes over 'een pakket dat niet bezorgd kon worden'. De links leiden naar nepbetaalpagina's.",
+  "body": "In aanloop naar de feestdagen zien beveiligingsonderzoekers een duidelijke toename van valse pakketmeldingen per sms, meldt de voorbeeldbron Example Security. Dit is een fictief voorbeeldbericht.\n\n## Hoe werkt het?\nJe krijgt een sms dat je pakket niet kon worden bezorgd en dat je een klein bedrag moet betalen voor een nieuwe bezorgpoging. De link leidt naar een nagemaakte betaalpagina. Wie daar betaalt, geeft zijn bankgegevens aan criminelen.\n\n## Waarom werkt het zo goed?\nRond de feestdagen verwachten veel mensen pakketten. Een melding over een bezorgprobleem valt dan minder op.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Klik niet op links in onverwachte sms'jes over pakketten; open de app of site van de vervoerder zelf.",
+    "Betaal nooit 'kleine bedragen' via een link in een sms.",
+    "Heb je toch betaald? Bel direct je bank en doe aangifte."
+  ],
+  "category": "phishing",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [],
+    "technologie": [
+      "Android"
+    ]
+  },
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Example Security",
+      "title": "Package delivery smishing surges",
+      "url": "https://example.com/smishing"
+    }
+  ],
+  "id": "voorbeeld-04",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

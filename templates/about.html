@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Over &amp; werkwijze – {{ site.name }}{% endblock %}
+{% block description %}Hoe {{ site.name }} werkt: bronnen, redactie, labels en het label 'Actief misbruikt'.{% endblock %}
+
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <p class="eyebrow">Over ons</p>
+    <h1>Over {{ site.name }} &amp; onze werkwijze</h1>
+    <p class="page-head__intro">{{ site.tagline }}.</p>
+  </header>
+
+  <div class="prose">
+    <p>{{ site.name }} brengt het belangrijkste internationale en Nederlandse cybersecuritynieuws samen in helder Nederlands. Bij elk bericht staat niet alleen <em>wat</em> er is gebeurd, maar vooral <strong>wat je moet doen</strong>.</p>
+
+    <h2>Hoe een bericht tot stand komt</h2>
+    <ol>
+      <li><strong>Signaleren.</strong> We volgen doorlopend de belangrijkste beveiligingsbronnen, zoals officiële adviezen van leveranciers, NCSC, CISA, Safeonweb en gerenommeerde vakmedia.</li>
+      <li><strong>Samenvoegen.</strong> Berichten van verschillende bronnen over hetzelfde onderwerp brengen we samen in één artikel, zodat je niet vijf keer hetzelfde leest.</li>
+      <li><strong>Prioriteren.</strong> Nieuws over actief misbruikte kwetsbaarheden en over Nederland en België krijgt voorrang.</li>
+      <li><strong>Schrijven en controleren.</strong> De redactie schrijft het bericht in begrijpelijk Nederlands, met daarbij wat je moet doen. Daarbij gebruiken we ook digitale hulpmiddelen, waaronder AI. Elk bericht valt onder de verantwoordelijkheid van de <a href="/redactie/">hoofdredactie</a>.</li>
+      <li><strong>Bijwerken.</strong> Verandert de situatie, dan werken we het artikel bij en vermelden we dat bovenaan.</li>
+    </ol>
+    <p>Zie je een fout? <a href="/contact/">Laat het ons weten</a>; we corrigeren het zo snel mogelijk.</p>
+
+    <h2>Het label "Actief misbruikt"</h2>
+    <p>Komt in een bericht een CVE-nummer voor dat op de <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noopener" target="_blank">Known Exploited Vulnerabilities-lijst (KEV)</a> van het Amerikaanse CISA staat, dan krijgt het artikel automatisch het label <span class="badge badge--exploit">● Actief misbruikt</span>. Dat betekent dat aanvallers de kwetsbaarheid aantoonbaar al gebruiken. Zulke updates installeer je het best meteen.</p>
+    <p>Een <span class="badge badge--zeroday">Zero-day</span> is een kwetsbaarheid die al werd misbruikt voordat er een oplossing was.</p>
+
+    <h2>Ernst</h2>
+    <ul>
+      <li><span class="sev sev--kritiek">Kritiek</span> – direct handelen, grote kans op schade.</li>
+      <li><span class="sev sev--hoog">Hoog</span> – deze week oppakken.</li>
+      <li><span class="sev sev--middel">Middel</span> – meenemen in het normale updateritme.</li>
+      <li><span class="sev sev--laag">Laag</span> en <span class="sev sev--info">Info</span> – goed om te weten.</li>
+    </ul>
+
+    <h2>Thema's en labels</h2>
+    <p>Elk artikel valt onder precies één thema. Daarnaast krijgt het labels, zodat je snel vindt wat voor jou relevant is.</p>
+  </div>
+
+  <div class="about-labels">
+    <div>
+      <h3>Thema's</h3>
+      <div class="labels">{% for slug, name in categories.items() %}<a class="chip cat-{{ slug }}" href="/thema/{{ slug }}/"><span class="dot"></span>{{ name }}</a>{% endfor %}</div>
+    </div>
+    {% for group, values in labels.items() %}
+    <div>
+      <h3>{{ group|capitalize }}</h3>
+      <div class="labels">{% for l in values %}<a class="chip" href="/label/{{ l|label_slug }}/">{{ l }}</a>{% endfor %}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="prose">
+    <h2>Auteursrecht en bronnen</h2>
+    <p>We nemen geen teksten of afbeeldingen van bronnen over. Artikelen zijn eigen samenvattingen en duidingen, met een link naar het origineel. Onze afbeeldingen maken we zelf of komen van rechtenvrije fotobanken, met naamsvermelding van de maker.</p>
+
+    <h2>Volgen</h2>
+    <p>Volg ons via de <a href="/rss.xml">RSS-feed</a> of bekijk elke week het <a href="/weekoverzicht/">weekoverzicht</a>.</p>
+  </div>
+</div>
+{% endblock %}

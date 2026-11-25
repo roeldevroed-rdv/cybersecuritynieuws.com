@@ -1,0 +1,66 @@
+{
+  "id": "20261119-wat-is-phishing",
+  "slug": "wat-is-phishing",
+  "type": "gids",
+  "topic_id": "wat-is-phishing",
+  "title": "Wat is phishing en hoe herken je het?",
+  "tldr": "Phishing is oplichting waarbij criminelen zich voordoen als een betrouwbare partij om je inloggegevens, geld of persoonsgegevens te stelen. Je herkent het aan tijdsdruk, een afwijkende afzender of link en een verzoek om in te loggen of te betalen.",
+  "meta_description": "Wat is phishing? Leer in 5 minuten hoe je phishingmails, -sms'jes en nepwebsites herkent, wat je doet als je erin bent getrapt en hoe je het meldt.",
+  "body": "Phishing is een vorm van online oplichting waarbij criminelen zich voordoen als een bekende, betrouwbare partij, zoals je bank, de Belastingdienst, een pakketbezorger of je eigen werkgever. Het doel is je te verleiden om op een link te klikken, in te loggen op een nagemaakte website, een bijlage te openen of geld over te maken. Phishing is in Nederland en België een van de meest voorkomende vormen van cybercriminaliteit, juist omdat het niet om techniek draait maar om mensen.\n\n## Hoe werkt phishing?\n\nEen phishingaanval volgt bijna altijd hetzelfde patroon. Je ontvangt een bericht dat er echt uitziet: het logo klopt, de toon is zakelijk en het onderwerp is herkenbaar. Daarna volgt een aanleiding om snel te handelen: je rekening wordt geblokkeerd, er staat een pakket klaar, je moet een betaling bevestigen of er is 'verdachte activiteit' op je account.\n\nDe link in het bericht leidt naar een nagemaakte website. Vul je daar je gegevens in, dan komen die direct bij de criminelen terecht. Die gebruiken ze om in te loggen op je echte account, geld over te maken of je identiteit te misbruiken.\n\n## Welke soorten phishing zijn er?\n\n- **E-mailphishing**: de bekendste vorm, vaak massaal verstuurd naar duizenden adressen tegelijk.\n- **Smishing**: phishing via sms, bijvoorbeeld over een pakket dat niet bezorgd kon worden.\n- **WhatsApp-fraude**: de bekende 'vriend-in-nood'-oplichting, waarbij iemand zich voordoet als je kind of vriend met een nieuw nummer.\n- **Spearphishing**: een gerichte aanval op één persoon of organisatie, vaak met details die echt kloppen.\n- **CEO-fraude**: een medewerker krijgt een bericht dat lijkt te komen van de directeur, met het verzoek snel een betaling te doen.\n- **Quishing**: phishing via een QR-code, bijvoorbeeld op een parkeerautomaat of in een brief.\n\n## Zo herken je een phishingbericht\n\nGeen enkel kenmerk is op zichzelf een bewijs, maar hoe meer van deze signalen je ziet, hoe groter de kans op phishing:\n\n- **Tijdsdruk**: \"binnen 24 uur\", \"laatste herinnering\", \"uw account wordt vandaag geblokkeerd\".\n- **Een afwijkend afzenderadres**: de naam klopt, maar het e-mailadres erachter is vreemd of heeft een rare domeinnaam.\n- **Een link die ergens anders heen gaat**: beweeg op een computer met je muis over de link en kijk welk webadres onderin verschijnt.\n- **Een verzoek om in te loggen, te betalen of gegevens te bevestigen**: banken en overheden vragen dat nooit via een link in een mail of sms.\n- **Een onpersoonlijke aanhef** zoals \"Beste klant\", terwijl de echte organisatie je naam kent.\n- **Onverwachte bijlagen**, vooral bestanden die je moet 'inschakelen' of uitpakken.\n\nLet op: taalfouten zijn steeds minder vaak een aanwijzing. Criminelen gebruiken tegenwoordig AI om foutloze, overtuigende teksten te schrijven.\n\n## Wat doe je als je op een phishinglink hebt geklikt?\n\nAlleen klikken is meestal nog niet erg. Het gevaar zit in wat je daarna hebt gedaan.\n\n- **Gegevens ingevuld?** Verander direct het wachtwoord van dat account, en van elk ander account waar je hetzelfde wachtwoord gebruikt. Zet daarna [tweestapsverificatie](/artikel/tweestapsverificatie/) aan.\n- **Bankgegevens ingevuld of geld overgemaakt?** Bel meteen het fraudenummer van je bank. Hoe sneller je belt, hoe groter de kans dat een betaling nog tegengehouden kan worden.\n- **Bestand geopend?** Koppel het apparaat los van internet en laat het controleren. Op het werk meld je het direct bij je IT-afdeling.\n- **Account al overgenomen?** Volg ons [stappenplan voor een gehackt account](/artikel/account-gehackt/).\n\nDoe daarnaast aangifte bij de [politie](https://www.politie.nl/) als je geld bent kwijtgeraakt.\n\n## Phishing melden\n\nDoor phishing te melden, help je anderen. In Nederland kun je verdachte e-mails doorsturen naar de [Fraudehelpdesk](https://www.fraudehelpdesk.nl/), die waarschuwingen publiceert over actuele oplichting. In België stuur je verdachte berichten door naar verdacht@safeonweb.be; meer informatie vind je op [Safeonweb](https://www.safeonweb.be/). Veel banken hebben daarnaast een eigen meldadres. Gaat het om een bericht op je werk, meld het dan altijd bij je IT-afdeling, ook als je er niet op hebt geklikt.\n\n## Hoe bescherm je je structureel tegen phishing?\n\nDe beste bescherming bestaat uit een paar gewoontes en instellingen:\n\n- Gebruik een [wachtwoordmanager](/artikel/wachtwoordmanager/). Die vult je wachtwoord alleen in op de echte website, en dus niet op een nagemaakte site.\n- Zet overal waar het kan tweestapsverificatie aan. Passkeys en beveiligingssleutels zijn het sterkst, omdat die niet werken op een nepsite.\n- Ga nooit via een link naar je bank of de overheid, maar typ het adres zelf in of gebruik de officiële app.\n- Neem bij twijfel contact op via een kanaal dat je zelf opzoekt, niet via het telefoonnummer in het verdachte bericht.\n\nOrganisaties doen er goed aan medewerkers regelmatig te trainen. Phishing is vaak de eerste stap van grotere aanvallen, zoals [ransomware](/artikel/wat-is-ransomware/).",
+  "actions": [
+    "Klik nooit op links in onverwachte berichten van banken, overheid of bezorgers; ga zelf naar de website of app.",
+    "Controleer bij twijfel het afzenderadres en de echte bestemming van de link.",
+    "Gebruik een wachtwoordmanager; die vult je gegevens niet in op nagemaakte sites.",
+    "Zet tweestapsverificatie aan op je e-mail, bank en sociale media.",
+    "Ingevuld of betaald? Bel direct je bank en verander je wachtwoord.",
+    "Meld phishing bij de Fraudehelpdesk (NL) of via Safeonweb (BE)."
+  ],
+  "faq": [
+    {
+      "q": "Is het erg als ik alleen op een phishinglink heb geklikt?",
+      "a": "Meestal niet. Het risico ontstaat vooral als je daarna gegevens invult, iets downloadt of betaalt. Sluit de pagina en houd je accounts de komende dagen extra in de gaten."
+    },
+    {
+      "q": "Hoe meld ik een phishingmail in Nederland?",
+      "a": "Stuur de verdachte e-mail door naar de Fraudehelpdesk en verwijder hem daarna. Heb je schade geleden, doe dan ook aangifte bij de politie."
+    },
+    {
+      "q": "Kunnen phishingmails foutloos zijn?",
+      "a": "Ja. Criminelen gebruiken steeds vaker AI om teksten te schrijven, waardoor taalfouten geen betrouwbaar kenmerk meer zijn. Let vooral op tijdsdruk, afzender en links."
+    },
+    {
+      "q": "Wat is het verschil tussen phishing en spearphishing?",
+      "a": "Gewone phishing wordt massaal verstuurd. Spearphishing is gericht op één persoon of organisatie en gebruikt details die echt kloppen, waardoor het veel overtuigender is."
+    }
+  ],
+  "category": "phishing",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "wat is phishing",
+    "phishing herkennen",
+    "phishingmail",
+    "nepmail melden"
+  ],
+  "image_query": "phishing email laptop",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [],
+  "published": "2026-11-19T08:59:22+00:00",
+  "model": "redactie (Claude)"
+}

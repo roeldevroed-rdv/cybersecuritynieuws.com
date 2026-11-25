@@ -1,0 +1,44 @@
+{
+  "slug": "voorbeeld-ransomwaregroep-legt-fictieve-zorggroep-plat",
+  "offset_hours": 7,
+  "title": "[Voorbeeld] Ransomwaregroep legt systemen van fictieve zorggroep plat",
+  "tldr": "Een (fictieve) Nederlandse zorggroep is getroffen door ransomware. Afspraken worden verzet; onduidelijk is nog of patiëntgegevens zijn buitgemaakt.",
+  "body": "De fictieve Zorggroep Voorbeeldstad is getroffen door een ransomware-aanval, meldt Voorbeeldnieuws.nl. Bij ransomware versleutelen criminelen bestanden en eisen ze losgeld voor de sleutel. Vaak dreigen ze daarnaast gestolen gegevens te publiceren.\n\n## Gevolgen voor patiënten\nDe zorggroep laat weten dat spoedeisende zorg doorgaat, maar dat geplande afspraken de komende dagen mogelijk worden verzet. Of er patiëntgegevens zijn gestolen, wordt nog onderzocht. De organisatie heeft melding gedaan bij de toezichthouder.\n\n## Bekende werkwijze\nDe groep achter de aanval is volgens de bronnen al langer actief en richt zich vaker op zorginstellingen, omdat die onder druk staan om snel weer operationeel te zijn.\n\n*Dit is een fictief voorbeeldartikel om het ontwerp van de site te testen. Producten, bedrijven en CVE-nummers bestaan niet.*",
+  "actions": [
+    "Ben je patiënt? Wees alert op berichten die zich voordoen als de zorggroep en om gegevens of betalingen vragen.",
+    "Organisaties: controleer of offline back-ups recent en bruikbaar zijn.",
+    "Zet multifactorauthenticatie aan op alle externe toegang."
+  ],
+  "category": "ransomware",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "Grote organisaties"
+    ],
+    "sector": [
+      "Zorg"
+    ],
+    "technologie": []
+  },
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Voorbeeldnieuws.nl",
+      "title": "Zorggroep getroffen door ransomware",
+      "url": "https://example.com/zorg"
+    }
+  ],
+  "id": "voorbeeld-02",
+  "example": true,
+  "keywords": [],
+  "published": "2026-11-20T12:00:00+00:00",
+  "model": "voorbeeld (geen AI)"
+}

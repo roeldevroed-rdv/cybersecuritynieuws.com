@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Zoeken – {{ site.name }}{% endblock %}
+{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="Zoeken – {{ site.name }}"><meta name="robots" content="noindex,follow">{% endblock %}
+
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <h1>Zoeken</h1>
+    <p class="page-head__intro">Zoek op onderwerp, product, label of CVE-nummer.</p>
+  </header>
+  <form class="searchbox" role="search" action="/zoeken/" method="get" onsubmit="return false">
+    <label class="visually-hidden" for="q">Zoekterm</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" name="q" type="search" placeholder="Bijv. ransomware, Fortinet of CVE-2026-…" autocomplete="off" autofocus>
+  </form>
+  <p id="searchStatus" class="small muted" aria-live="polite"></p>
+  <ol id="searchResults" class="search-results"></ol>
+  <noscript><p class="muted">Zoeken werkt alleen met JavaScript. Bekijk anders de <a href="/">voorpagina</a> of de thema's.</p></noscript>
+</div>
+{% endblock %}

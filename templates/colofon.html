@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Colofon – {{ site.name }}{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head"><p class="eyebrow">Over ons</p><h1>Colofon</h1></header>
+  <dl class="colofon">
+    <dt>Uitgever</dt><dd>{{ site.name }} ({{ site.domain }})</dd>
+    <dt>Hoofdredactie</dt><dd><a href="/redactie/">{{ editor }}</a></dd>
+    {% if redactie.vestigingsplaats %}<dt>Vestigingsplaats</dt><dd>{{ redactie.vestigingsplaats }}</dd>{% endif %}
+    {% if redactie.kvk %}<dt>KvK-nummer</dt><dd>{{ redactie.kvk }}</dd>{% endif %}
+    <dt>Redactie</dt><dd>{{ redactie.email }}</dd>
+    <dt>Adverteren</dt><dd>{{ redactie.adverteren_email }} · <a href="/adverteren/">mogelijkheden</a></dd>
+    <dt>Werkwijze</dt><dd><a href="/over/">Hoe wij werken</a> · <a href="/redactie/#correcties">correctiebeleid</a></dd>
+  </dl>
+  <div class="prose">
+    <h2>Disclaimer</h2>
+    <p>We doen ons best om alle informatie juist en actueel te houden, maar kunnen niet garanderen dat alles altijd volledig en foutloos is. Gebruik de adviezen op deze site als hulpmiddel en volg bij twijfel altijd het officiële advies van de leverancier of een specialist. Aan de inhoud kunnen geen rechten worden ontleend.</p>
+    <h2>Auteursrecht</h2>
+    <p>De teksten op deze site zijn eigendom van {{ site.name }}. Overnemen mag met bronvermelding en een link naar het originele artikel. Afbeeldingen van derden vallen onder de licentie van de maker.</p>
+  </div>
+</div>
+{% endblock %}

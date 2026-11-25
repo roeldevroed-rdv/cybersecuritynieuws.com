@@ -1,0 +1,20 @@
+{# Advertentie in de zijbalk; zonder actieve advertentie een eigen "adverteren"-blok #}
+{% set ad = (ads.get('sidebar') or [None])[0] %}
+{% if ad %}
+<aside class="ad ad--sidebar" aria-label="Advertentie">
+  <span class="ad__label">Advertentie · {{ ad.adverteerder }}</span>
+  <a class="ad__link" href="{{ ad.url }}" rel="sponsored noopener" target="_blank">
+    {% if ad.afbeelding %}<img src="{{ ad.afbeelding }}" alt="{{ ad.titel }}" loading="lazy">{% endif %}
+    <strong class="ad__title">{{ ad.titel }}</strong>
+    {% if ad.tekst %}<span class="ad__text">{{ ad.tekst }}</span>{% endif %}
+    <span class="ad__btn">{{ ad.knop or 'Lees meer' }} →</span>
+  </a>
+</aside>
+{% else %}
+<aside class="ad ad--house" aria-label="Adverteren">
+  <span class="ad__label">Voor leveranciers</span>
+  <strong class="ad__title">Bereik IT-beslissers in Nederland en België</strong>
+  <span class="ad__text">Adverteer naast het belangrijkste cybersecuritynieuws, in onze nieuwsbrief of met een partnerartikel.</span>
+  <a class="ad__btn" href="/adverteren/">Bekijk de mogelijkheden →</a>
+</aside>
+{% endif %}

@@ -1,0 +1,69 @@
+{
+  "id": "20261120-account-gehackt",
+  "slug": "account-gehackt",
+  "type": "gids",
+  "topic_id": "account-gehackt",
+  "title": "Account gehackt? Stappenplan om het terug te krijgen",
+  "tldr": "Is je account gehackt, probeer dan direct je wachtwoord te veranderen en alle andere sessies af te melden. Lukt dat niet, gebruik dan de herstelprocedure van de dienst, waarschuw je contacten en zet daarna tweestapsverificatie aan.",
+  "meta_description": "Account gehackt? Stappenplan voor e-mail, WhatsApp, Instagram en Microsoft- of Google-accounts: toegang terugkrijgen en schade beperken.",
+  "body": "Is een van je accounts gehackt, dan telt elke minuut. De aanvaller kan je wachtwoord, e-mailadres of telefoonnummer veranderen, waardoor jij er niet meer in kunt. Het belangrijkste is daarom: zo snel mogelijk de controle terugnemen, de aanvaller eruit gooien en daarna de deur op slot doen met [tweestapsverificatie](/artikel/tweestapsverificatie/).\n\n## Hoe merk je dat je account is gehackt?\n\nVeelvoorkomende signalen zijn:\n\n- Je kunt niet meer inloggen met je bekende wachtwoord.\n- Je krijgt meldingen over inlogpogingen, wachtwoordwijzigingen of een nieuw e-mailadres die je zelf niet hebt gedaan.\n- Vrienden krijgen berichten van jou die je niet hebt verstuurd, vaak met een verzoek om geld of een link.\n- Er staan berichten, aankopen of instellingen in je account die je niet herkent.\n\n## Stap 1: kun je nog inloggen? Neem direct de controle terug\n\n1. **Verander je wachtwoord** in een nieuw, sterk en uniek wachtwoord. Doe dit vanaf een apparaat waarvan je zeker weet dat het niet besmet is.\n2. **Meld alle andere sessies en apparaten af.** Bijna elke dienst heeft in de beveiligingsinstellingen een optie als 'overal afmelden' of een lijst met actieve apparaten.\n3. **Controleer je herstelgegevens**: klopt het e-mailadres en telefoonnummer voor wachtwoordherstel nog? Aanvallers passen die vaak aan.\n4. **Zet tweestapsverificatie aan**, of controleer of de aanvaller er geen eigen telefoon aan heeft gekoppeld.\n5. **Kijk naar doorstuurregels en gekoppelde apps.** Bij e-mail stellen aanvallers vaak een regel in die je post stiekem doorstuurt. Verwijder ook apps en koppelingen die je niet herkent.\n\n## Stap 2: kun je niet meer inloggen? Gebruik de herstelprocedure\n\nElke grote dienst heeft een speciale herstelpagina voor gehackte accounts. Ga daar altijd zelf naartoe via de officiële website of app, en nooit via een link in een bericht. Je moet dan aantonen dat het account van jou is, bijvoorbeeld via je oude e-mailadres, telefoonnummer, eerder gebruikte wachtwoorden of een identiteitscontrole. Dit kan enkele dagen duren. Hulp per dienst vind je bij [Microsoft](https://support.microsoft.com/), [Google](https://support.google.com/) en [Apple](https://support.apple.com/).\n\n**WhatsApp**: registreer WhatsApp opnieuw op je telefoon met je eigen nummer. Je ontvangt dan een sms-code en de aanvaller wordt uitgelogd. Heeft de aanvaller verificatie in twee stappen ingesteld, dan kan het even duren voordat je er weer helemaal in kunt.\n\n## Stap 3: beperk de schade\n\n- **Waarschuw je contacten** via een ander kanaal dat je account is gehackt en dat ze niet moeten reageren op verzoeken om geld. Dat voorkomt [WhatsApp-fraude en phishing](/artikel/wat-is-phishing/) uit jouw naam.\n- **Verander het wachtwoord overal waar je hetzelfde wachtwoord gebruikte.** Een [wachtwoordmanager](/artikel/wachtwoordmanager/) maakt dit veel makkelijker.\n- **Was het je e-mail?** Controleer dan ook je bank, webwinkels en sociale media, want via je e-mail kan een aanvaller daar het wachtwoord resetten.\n- **Is er geld verdwenen** of heeft iemand namens jou betaald? Bel je bank en doe aangifte bij de [politie](https://www.politie.nl/).\n\n## Stap 4: zoek uit hoe het kon gebeuren\n\nWeet je hoe de aanvaller binnenkwam, dan voorkom je herhaling. Veelvoorkomende oorzaken:\n\n- Een hergebruikt wachtwoord dat uitlekte bij een [datalek](/artikel/datalek-wat-nu/).\n- Inloggegevens ingevuld op een nepsite na een phishingbericht.\n- Een inlogcode doorgegeven aan iemand die zich voordeed als een bekende of een helpdesk.\n- Malware op je computer of telefoon die wachtwoorden steelt. Scan je apparaat en installeer alle updates.\n\nTwijfel je of je apparaat besmet is, laat het dan controleren of zet het terug naar de fabrieksinstellingen nadat je een back-up van je eigen bestanden hebt gemaakt. Meer tips vind je op [Veilig Internetten](https://veiliginternetten.nl/).",
+  "actions": [
+    "Verander direct je wachtwoord vanaf een veilig apparaat.",
+    "Meld alle andere sessies en apparaten af.",
+    "Controleer je herstel-e-mail, telefoonnummer, doorstuurregels en gekoppelde apps.",
+    "Kom je er niet meer in? Gebruik de officiële herstelpagina van de dienst.",
+    "Waarschuw je contacten via een ander kanaal.",
+    "Zet tweestapsverificatie aan en verander hergebruikte wachtwoorden."
+  ],
+  "faq": [
+    {
+      "q": "Wat doe ik als mijn WhatsApp is gehackt?",
+      "a": "Registreer WhatsApp opnieuw met je eigen telefoonnummer; daarmee wordt de aanvaller uitgelogd. Waarschuw je contacten en zet daarna verificatie in twee stappen aan."
+    },
+    {
+      "q": "Hoe krijg ik mijn Instagram- of Facebookaccount terug?",
+      "a": "Gebruik de officiële herstelpagina van de app voor gehackte accounts. Je moet dan aantonen dat het account van jou is, soms met een video-selfie of een code via je oude e-mailadres."
+    },
+    {
+      "q": "Moet ik aangifte doen als mijn account is gehackt?",
+      "a": "Bij financiële schade of misbruik van je identiteit is aangifte bij de politie verstandig. Ook als je geen schade hebt, kun je een melding doen."
+    },
+    {
+      "q": "Hoe voorkom ik dat mijn account opnieuw wordt gehackt?",
+      "a": "Gebruik een uniek wachtwoord per account via een wachtwoordmanager, zet tweestapsverificatie aan en geef nooit inlogcodes door aan anderen."
+    }
+  ],
+  "category": "uitgelegd",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [],
+    "technologie": [
+      "Microsoft",
+      "Google",
+      "Apple"
+    ]
+  },
+  "keywords": [
+    "account gehackt wat nu",
+    "email gehackt",
+    "whatsapp gehackt",
+    "instagram gehackt"
+  ],
+  "image_query": "hacked smartphone",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [],
+  "published": "2026-11-20T08:59:22+00:00",
+  "model": "redactie (Claude)"
+}

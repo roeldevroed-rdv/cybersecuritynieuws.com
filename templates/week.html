@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card, badges %}
+
+{% block title %}Weekoverzicht – {{ site.name }}{% endblock %}
+{% block description %}Het belangrijkste cybersecuritynieuws van de afgelopen zeven dagen, per thema, met wat je moet doen.{% endblock %}
+
+{% block main %}
+{% set urgent = week|selectattr("exploited")|list + week|rejectattr("exploited")|selectattr("zero_day")|list %}
+<div class="wrap">
+  <header class="page-head">
+    <p class="eyebrow">Weekoverzicht</p>
+    <h1>De afgelopen zeven dagen</h1>
+    <p class="page-head__intro">Tot en met {{ now|nl_date }} ·{{ week|length }} {{ 'artikel' if week|length == 1 else 'artikelen' }}{% if urgent %}, waarvan {{ urgent|length }} over actief misbruikte kwetsbaarheden of zero-days{% endif %}.</p>
+  </header>
+
+  {% if not week %}
+  <p class="muted empty">Deze week zijn er nog geen artikelen verschenen.</p>
+  {% else %}
+
+  {% if urgent %}
+  <section class="panel panel--urgent week-urgent" aria-labelledby="wk-urgent">
+    <h2 class="panel__title" id="wk-urgent"><span class="pulse"></span>Eerst patchen</h2>
+    <ol class="week-urgent__list">
+      {% for a in urgent %}
+      <li>
+        <a href="{{ a.url }}"><strong>{{ a.title }}</strong></a>
+        {% if a.actions %}<p class="small">{{ a.actions[0] }}</p>{% endif %}
+        {% if a.cves %}<p class="small muted">{% for c in a.cves %}<code>{{ c }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  <nav class="toc small" aria-label="Thema's deze week">
+    {% for slug, items in week_by_cat.items() if items %}<a class="chip cat-{{ slug }}" href="#{{ slug }}"><span class="dot"></span>{{ categories[slug] }} ({{ items|length }})</a>{% endfor %}
+  </nav>
+
+  {% for slug, items in week_by_cat.items() if items %}
+  <section class="week-section cat-{{ slug }}" id="{{ slug }}" aria-labelledby="h-{{ slug }}">
+    <h2 class="section-title" id="h-{{ slug }}"><span class="dot"></span>{{ categories[slug] }}</h2>
+    <ul class="week-list">
+      {% for a in items %}
+      <li>
+        <div class="week-list__head">
+          <a href="{{ a.url }}">{{ a.title }}</a>
+          <time class="small muted" datetime="{{ a.published }}">{{ a.dt|nl_date }}</time>
+        </div>
+        <p>{{ a.tldr }}</p>
+        {{ badges(a, true) }}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+  {% endif %}
+</div>
+{% endblock %}

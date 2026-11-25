@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card %}
+
+{% block title %}{{ title }}{% if page_num > 1 %} – pagina {{ page_num }}{% endif %} – {{ site.name }}{% endblock %}
+{% block description %}{{ intro or (title ~ ': het laatste cybersecuritynieuws in het Nederlands, met per bericht concreet advies.') }}{% endblock %}
+{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ title }} – {{ site.name }}">{% if page_num > 1 %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
+
+{% block main %}
+<div class="wrap">
+  <header class="page-head{% if kind == 'Thema' %} cat-{{ base.split('/')[2] }}{% endif %}{% if kind == 'Urgent' %} page-head--urgent{% endif %}">
+    {% if kind %}<p class="eyebrow">{% if kind == 'Urgent' %}<span class="pulse"></span>{% endif %}{{ kind }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if intro %}<p class="page-head__intro">{{ intro }}</p>{% endif %}
+  </header>
+
+  {% if items %}
+  <div class="cards cards--wide">
+    {% for a in items %}{{ card(a) }}{% endfor %}
+  </div>
+  {% else %}
+  <p class="muted empty">Er zijn hier nog geen artikelen. Kom snel terug – de site wordt elke twee uur bijgewerkt.</p>
+  {% endif %}
+
+  {% if pages > 1 %}
+  <nav class="pager" aria-label="Paginering">
+    {% if page_num > 1 %}<a class="btn btn--ghost" rel="prev" href="{{ base if page_num == 2 else base ~ 'pagina/' ~ (page_num - 1) ~ '/' }}">← Nieuwer</a>{% endif %}
+    <span class="pager__pos small muted">Pagina {{ page_num }} van {{ pages }}</span>
+    {% if page_num < pages %}<a class="btn btn--ghost" rel="next" href="{{ base }}pagina/{{ page_num + 1 }}/">Ouder →</a>{% endif %}
+  </nav>
+  {% endif %}
+</div>
+{% endblock %}

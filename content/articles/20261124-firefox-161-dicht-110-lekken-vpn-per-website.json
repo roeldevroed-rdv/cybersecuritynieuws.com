@@ -1,0 +1,67 @@
+{
+  "id": "20261124-firefox-161-dicht-110-lekken-vpn-per-website",
+  "slug": "firefox-161-dicht-110-lekken-vpn-per-website",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Firefox 161 dicht 110 beveiligingslekken en krijgt vpn per website",
+  "tldr": "Mozilla heeft Firefox 161 uitgebracht, waarin 110 beveiligingslekken zijn gedicht. Via die lekken konden kwaadaardige websites gevoelige gegevens uit andere tabbladen stelen. Nieuw is dat je de ingebouwde vpn per website kunt aan- of uitzetten.",
+  "meta_description": "Firefox 161 verhelpt 110 lekken waarmee websites gegevens uit andere tabbladen konden stelen. Zo update je Firefox en zo werkt de nieuwe vpn-optie per website.",
+  "body": "Mozilla heeft Firefox 161 uitgebracht en daarmee 110 beveiligingslekken in de browser gedicht, meldt [Security.NL](https://www.security.nl/posting/962987). Mozilla beoordeelt de ernstigste van deze kwetsbaarheden als 'hoog'. Daarnaast is de ingebouwde vpn-functie uitgebreid: je kunt die nu per website aan- of uitzetten.\n\n## Wat konden aanvallers met deze lekken?\n\nVia dit soort kwetsbaarheden kan een kwaadaardige of gehackte website gevoelige informatie stelen van websites die je in andere tabbladen of vensters hebt openstaan. Volgens Security.NL kan het dan bijvoorbeeld gaan om wachtwoorden die je op een andere site invoert. Je hoeft daarvoor niets te downloaden: alleen het bezoeken van de verkeerde website kan genoeg zijn. Voor zover bekend worden de lekken nog niet misbruikt, maar nu ze openbaar zijn, wordt het risico groter.\n\n## Vpn per website\n\nFirefox heeft al enige tijd een ingebouwde vpn-optie, waarbij je verkeer via servers van internetbedrijf Fastly loopt. Nieuw in versie 161 is dat je die optie per website kunt in- of uitschakelen, bijvoorbeeld als je voor één site extra privacy of een andere locatie wilt. Houd er rekening mee dat een vpn je niet beschermt tegen phishing of malware; lees daarover meer in onze uitleg over [phishing herkennen](/artikel/wat-is-phishing/).\n\n## Zo update je Firefox\n\nFirefox werkt zichzelf normaal automatisch bij, maar de nieuwe versie wordt pas actief na een herstart van de browser. Veel mensen laten hun browser dagenlang openstaan. Controleer daarom zelf of je de nieuwste versie hebt:\n\n1. Klik op het menu (de drie streepjes rechtsboven).\n2. Ga naar **Help** en kies **Over Firefox**.\n3. Firefox controleert dan op updates en vraagt je om te herstarten.\n\nJe kunt Firefox ook downloaden via de website van [Mozilla](https://www.mozilla.org/). Gebruik je een wachtwoordmanager die in de browser zit? Dan is een up-to-date browser extra belangrijk. Meer over veilig omgaan met wachtwoorden lees je in onze gids over de [wachtwoordmanager](/artikel/wachtwoordmanager/).",
+  "actions": [
+    "Open in Firefox het menu, ga naar Help > Over Firefox en installeer versie 161.",
+    "Herstart je browser zodat de update echt actief wordt.",
+    "Beheerder? Rol Firefox 161 uit via je beheersysteem.",
+    "Laat updates in alle browsers automatisch installeren en herstart regelmatig."
+  ],
+  "faq": [
+    {
+      "q": "Hoe weet ik of ik Firefox 161 heb?",
+      "a": "Ga in het menu naar Help en kies Over Firefox. Daar zie je je versienummer en zoekt Firefox direct naar updates."
+    },
+    {
+      "q": "Wordt een van de 110 Firefox-lekken al misbruikt?",
+      "a": "Daarover is niets bekend gemaakt. Omdat de lekken nu openbaar zijn, is snel updaten wel verstandig."
+    },
+    {
+      "q": "Is de vpn in Firefox gratis?",
+      "a": "Firefox heeft een ingebouwde vpn-optie die verkeer via servers van Fastly laat lopen. Controleer in de instellingen van Firefox welke voorwaarden voor jouw account gelden."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Browsers"
+    ]
+  },
+  "keywords": [
+    "Firefox 161",
+    "Firefox update",
+    "Firefox vpn",
+    "browser beveiligingslek"
+  ],
+  "image_query": "web browser laptop",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Mozilla dicht ruimt honderd Firefox-lekken, biedt vpn-optie per website",
+      "url": "https://www.security.nl/posting/962987"
+    }
+  ],
+  "published": "2026-11-24T18:38:47+00:00",
+  "model": "redactie (Claude)"
+}

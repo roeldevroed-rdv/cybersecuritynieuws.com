@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site.name }} – {{ site.tagline }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+  <link rel="canonical" href="{{ site.url }}{{ path if path != '/404.html' else '/' }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:locale" content="nl_NL">
+  {% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.mode=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Naar inhoud</a>
+
+{% if ticker %}
+<div class="ticker" role="region" aria-label="Actief misbruikt">
+  <div class="wrap ticker__inner">
+    <a class="ticker__label" href="/actief-misbruikt/"><span class="pulse"></span>Actief misbruikt</a>
+    <div class="ticker__track">
+      {% for t in ticker %}<a href="{{ t.url }}">{% if t.cves %}<code>{{ t.cves[0] }}</code> {% endif %}{{ t.title }}</a>{% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="logo" href="/" aria-label="{{ site.name }} – home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7L16 2Z" fill="currentColor"/><path d="m11 16 3.5 3.5L21.5 12" stroke="var(--bg)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>CyberSecurity<b>Nieuws</b></span>
+    </a>
+    <div class="masthead__tools">
+      <a class="iconbtn" href="/zoeken/" aria-label="Zoeken"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+      <button class="iconbtn" id="themeToggle" aria-label="Donker/licht thema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <a class="btn btn--small" href="/rss.xml">RSS</a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Thema's">
+    <div class="wrap nav__inner">
+      <a href="/" {% if path == '/' %}aria-current="page"{% endif %}>Laatste nieuws</a>
+      {% for slug, name in categories.items() %}<a href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
+      <a href="/gidsen/" {% if path.startswith('/gidsen/') %}aria-current="page"{% endif %}>Gidsen</a>
+      <a href="/weekoverzicht/" {% if path == '/weekoverzicht/' %}aria-current="page"{% endif %}>Weekoverzicht</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">{% block main %}{% endblock %}</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a class="logo logo--footer" href="/"><span>CyberSecurity<b>Nieuws</b></span></a>
+      <p>{{ site.description }}</p>
+      <a class="btn btn--small" href="/nieuwsbrief/">Ontvang de nieuwsbrief</a>
+    </div>
+    <div>
+      <h4>Thema's</h4>
+      <ul>{% for slug, name in categories.items() %}<li><a href="/thema/{{ slug }}/">{{ name }}</a></li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h4>Snel naar</h4>
+      <ul>
+        <li><a href="/actief-misbruikt/">Actief misbruikt</a></li>
+        <li><a href="/patch-tuesday/">Patch Tuesday</a></li>
+        <li><a href="/ransomware-tracker/">Ransomware-tracker</a></li>
+        <li><a href="/producten/">Per product</a></li>
+        <li><a href="/gidsen/">Gidsen &amp; uitleg</a></li>
+        <li><a href="/is-dit-oplichting/">Is dit oplichting?</a></li>
+        <li><a href="/weekoverzicht/">Weekoverzicht</a></li>
+        <li><a href="/label/nederland/">Nederland</a> · <a href="/label/belgie/">België</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Over ons</h4>
+      <ul>
+        <li><a href="/redactie/">Redactie</a></li>
+        <li><a href="/over/">Werkwijze</a></li>
+        <li><a href="/contact/">Contact &amp; tips</a></li>
+        <li><a href="/adverteren/">Adverteren</a></li>
+        <li><a href="/nieuwsbrief/">Nieuwsbrief</a></li>
+        <li><a href="/rss.xml">RSS-feed</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom small muted">© {{ year }} {{ site.domain }} · <a href="/colofon/">Colofon</a> · <a href="/privacy/">Privacy</a> · <a href="/cookies/">Cookies</a></div>
+</footer>
+<script src="/static/app.js" defer></script>
+{% block scripts %}{% endblock %}
+{% if analytics.goatcounter %}<script data-goatcounter="https://{{ analytics.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
+</body>
+</html>

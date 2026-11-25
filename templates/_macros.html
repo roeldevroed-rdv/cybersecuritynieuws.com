@@ -1,0 +1,23 @@
+{% macro badges(a, small=false) -%}
+<div class="badges{% if small %} badges--sm{% endif %}">
+  {%- if a.exploited %}<span class="badge badge--exploit" title="Staat op de CISA-lijst van actief misbruikte kwetsbaarheden">● Actief misbruikt</span>{% endif -%}
+  {%- if a.zero_day %}<span class="badge badge--zeroday">Zero-day</span>{% endif -%}
+  {%- if a.severity in ['kritiek','hoog'] %}<span class="badge badge--sev-{{ a.severity }}">{{ severity_names[a.severity] }}</span>{% endif -%}
+  {%- if a.patch_available %}<span class="badge badge--patch">Patch beschikbaar</span>{% endif -%}
+</div>
+{%- endmacro %}
+
+{% macro card(a, variant='') -%}
+<article class="card {{ variant }} cat-{{ a.category }}">
+  <a class="card__link" href="{{ a.url }}">
+    {% if variant != 'card--compact' %}<img class="card__img" src="{{ a.thumb }}" alt="" width="600" height="315" loading="lazy" decoding="async">{% endif %}
+    <div class="card__meta">
+      <span class="card__cat">{% if a.type == 'partner' %}Gesponsord{% else %}{{ categories[a.category] }}{% endif %}</span>
+      <time data-ago datetime="{{ a.published }}">{{ a.dt|ago }}</time>
+    </div>
+    <h3 class="card__title">{{ a.title }}</h3>
+    {% if variant != 'card--compact' %}<p class="card__tldr">{{ a.tldr }}</p>{% endif %}
+  </a>
+  {{ badges(a, true) }}
+</article>
+{%- endmacro %}
