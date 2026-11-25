@@ -27,6 +27,17 @@ sources:
   - { name: "The Record",         url: "https://therecord.media/feed/",                          weight: 0.9 }
   - { name: "CISA Advisories",    url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",  weight: 1.1 }
   - { name: "Security.NL",        url: "https://www.security.nl/rss/headlines.xml",              weight: 1.2 }
+  # Nederlandstalige bronnen. snapshot: true = GitHub Actions haalt ze elk uur op (branch 'bronnen'),
+  # filter: security = alleen berichten over beveiliging uit algemene nieuwsfeeds.
+  - { name: "NU.nl", url: "https://www.nu.nl/rss/Algemeen", weight: 1.2, snapshot: true, filter: security }
+  - { name: "NU.nl Tech", url: "https://www.nu.nl/rss/Tech", weight: 1.2, snapshot: true, filter: security }
+  - { name: "NOS", url: "https://feeds.nos.nl/nosnieuwsalgemeen", weight: 1.2, snapshot: true, filter: security }
+  - { name: "NOS Tech", url: "https://feeds.nos.nl/nosnieuwstech", weight: 1.2, snapshot: true, filter: security }
+  - { name: "Tweakers", url: "https://tweakers.net/feeds/nieuws.xml", weight: 1.1, snapshot: true, filter: security }
+  - { name: "NCSC", url: "https://advisories.ncsc.nl/rss/advisories", weight: 1.2, snapshot: true }
+  - { name: "AG Connect", url: "https://www.agconnect.nl/rss.xml", weight: 1.0, snapshot: true, filter: security }
+  - { name: "Computable", url: "https://www.computable.nl/feed", weight: 0.9, snapshot: true, filter: security }
+  - { name: "Data News", url: "https://datanews.knack.be/feed.rss", weight: 0.9, snapshot: true, filter: security }
 
 # Lijst van actief misbruikte kwetsbaarheden (CISA KEV). Wordt gebruikt voor het label "Actief misbruikt".
 kev_url: "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"

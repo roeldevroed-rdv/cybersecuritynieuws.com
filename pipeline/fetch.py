@@ -19,6 +19,20 @@ new over after into via how why what who your you we our their not now more than
 de het een en of van in op voor met door uit aan als is zijn was waren wordt worden dit dat deze die
 nieuwe na over hoe waarom wat wie je jouw we ons hun niet nu meer dan zegt
 """.split())
+# Voor algemene nieuwsbronnen (NU.nl, NOS, Tweakers): alleen berichten over beveiliging doorlaten.
+SECURITY_TERMS = (
+    "cyber", "hack", "hacker", "gehackt", "datalek", "data breach", "ransomware", "malware", "phishing", "oplichting",
+    "fraude", "beveiliging", "kwetsbaarheid", "lek ", "lekken", "zero-day", "ddos", "storing door aanval", "spyware",
+    "wachtwoord", "inlog", "ncsc", "privacy", "persoonsgegevens", "spoofing", "helpdeskfraude", "trojan", "botnet",
+    "afpersing", "cybercrim", "security", "vulnerability", "exploit", "patch", "update tegen", "gestolen gegevens",
+)
+
+
+def is_security(text: str) -> bool:
+    t = " " + text.lower() + " "
+    return any(term in t for term in SECURITY_TERMS)
+
+
 NL_TERMS = ("nederland", "dutch", "netherlands", "belgi", "belgium", "europe", "eu ", "ncsc", "rijksoverheid")
 
 
@@ -70,12 +84,42 @@ def _get(url: str, timeout: int = 20) -> bytes:
         return r.read()
 
 
-def fetch_source(src: dict, max_age_hours: int) -> list[Item]:
+_FETCHED = False
+
+
+def _snapshot(src: dict) -> bytes | None:
+    """Feed uit de branch 'bronnen' (elk uur door GitHub Actions opgehaald), voor hosts die hier geblokkeerd zijn."""
+    import subprocess
+    from pathlib import Path
+    root = Path(__file__).resolve().parent.parent
+    name = snapshot_name(src)
+    global _FETCHED
     try:
-        feed = feedparser.parse(_get(src["url"]))
+        if not _FETCHED:
+            _FETCHED = True
+            subprocess.run(["git", "fetch", "-q", "origin", "bronnen"], cwd=root, timeout=60, check=False,
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        out = subprocess.run(["git", "show", f"origin/bronnen:{name}"], cwd=root, capture_output=True, timeout=30)
+        return out.stdout if out.returncode == 0 and out.stdout else None
+    except Exception:
+        return None
+
+
+def snapshot_name(src: dict) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", src["name"].lower()).strip("-") + ".xml"
+
+
+def fetch_source(src: dict, max_age_hours: int) -> list[Item]:
+    raw = None
+    try:
+        raw = _get(src["url"])
     except Exception as exc:  # een kapotte bron mag de rest niet stoppen
-        print(f"  ! {src['name']}: {exc}")
-        return []
+        if src.get("snapshot"):
+            raw = _snapshot(src)
+        if raw is None:
+            print(f"  ! {src['name']}: {exc}")
+            return []
+    feed = feedparser.parse(raw)
     cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
     items = []
     for e in feed.entries:
@@ -87,6 +131,8 @@ def fetch_source(src: dict, max_age_hours: int) -> list[Item]:
         summary = _clean(e.get("summary", "") or e.get("description", ""))[:1500]
         link = e.get("link", "")
         if not title or not link:
+            continue
+        if src.get("filter") == "security" and not is_security(title + " " + summary):
             continue
         items.append(Item(src["name"], float(src.get("weight", 1.0)), title, link, summary, published,
                           {c.upper() for c in CVE_RE.findall(title + " " + summary)}))
