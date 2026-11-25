@@ -46,7 +46,7 @@
     </div>
   </div>
   <nav class="nav" aria-label="Thema's">
-    {% set hoofd = [('kwetsbaarheden','Kwetsbaarheden'), ('ransomware','Ransomware'), ('datalekken','Datalekken'), ('phishing','Phishing & fraude'), ('markt','Markt & bedrijven')] %}
+    {% set hoofd = [('kwetsbaarheden','Kwetsbaarheden'), ('aanvallen','Cyberaanvallen'), ('ransomware','Ransomware'), ('datalekken','Datalekken'), ('phishing','Phishing & fraude'), ('ai','AI & security'), ('markt','Markt & bedrijven')] %}
     {% set hoofd_slugs = hoofd|map('first')|list %}
     <div class="wrap nav__inner">
       <a href="/" {% if path == '/' %}aria-current="page"{% endif %}>Laatste nieuws</a>

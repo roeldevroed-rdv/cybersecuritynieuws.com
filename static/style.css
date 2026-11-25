@@ -520,5 +520,5 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .nav__menu { position: absolute; right: 0; top: 100%; z-index: 50; min-width: 230px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 6px; display: grid; }
 .nav__menu a { border-bottom: 0 !important; padding: 9px 12px; border-radius: 6px; }
 .nav__menu a:hover { background: var(--surface-2); }
-@media (min-width: 761px) { .nav__inner { overflow: visible; } }
-@media (max-width: 760px) { .nav__more { display: none; } .nav__extra { display: inline-block; } }
+@media (min-width: 1181px) { .nav__inner { overflow: visible; } }
+@media (max-width: 1180px) { .nav__more { display: none; } .nav__extra { display: inline-block; } }
