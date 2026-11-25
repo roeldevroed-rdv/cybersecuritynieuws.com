@@ -1,0 +1,39 @@
+name: Nieuwsbronnen ophalen
+
+# Elk uur de Nederlandstalige RSS-feeds (NU.nl, NOS, Tweakers, NCSC ...) ophalen en opslaan in de
+# branch 'bronnen'. De nieuwsronde leest ze daar uit. Raakt main en de website niet.
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bronnen
+  cancel-in-progress: true
+
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Feeds ophalen
+        run: python -m tools.bronnen_ophalen /tmp/bronnen
+      - name: Opslaan in branch 'bronnen'
+        run: |
+          cd /tmp/bronnen
+          git init -q -b bronnen
+          git config user.name "csn-bronnen"
+          git config user.email "bronnen@cybersecuritynieuws.com"
+          git add -A
+          git commit -q -m "Feeds $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" bronnen
