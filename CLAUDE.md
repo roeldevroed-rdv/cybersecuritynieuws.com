@@ -17,7 +17,7 @@ Communiceer met de eigenaar in het **Nederlands**.
 - Label **"Actief misbruikt"**: CVE's worden automatisch gecontroleerd tegen de CISA KEV-lijst.
 - Dubbele berichten uit verschillende bronnen worden samengevoegd tot één artikel (clustering).
 - **Twee-lagen indeling**: één hoofdthema per artikel + labels (regio, doelgroep, sector, technologie) — zie `config.yaml`.
-- Ticker "Actief misbruikt", Nederland/België-blok op de voorpagina, weekoverzicht, client-side zoeken, RSS, sitemap, dark mode.
+- Ticker bovenaan = laatste 10 nieuwsberichten (met tijd + rood label bij actief misbruikt), Nederland/België-blok op de voorpagina, weekoverzicht, client-side zoeken, RSS, sitemap, dark mode.
 - Geen afbeeldingen van bronnen; kaarten zijn typografisch met een kleuraccent per thema.
 
 ## Structuur

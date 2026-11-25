@@ -522,3 +522,10 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .nav__menu a:hover { background: var(--surface-2); }
 @media (min-width: 1181px) { .nav__inner { overflow: visible; } }
 @media (max-width: 1180px) { .nav__more { display: none; } .nav__extra { display: inline-block; } }
+
+/* Ticker: laatste nieuws */
+.ticker__label .live { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #2fb6ff; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 0 0 rgba(47,182,255,.6); animation: live 2s infinite; }
+@keyframes live { 0% { box-shadow: 0 0 0 0 rgba(47,182,255,.55); } 70% { box-shadow: 0 0 0 8px rgba(47,182,255,0); } 100% { box-shadow: 0 0 0 0 rgba(47,182,255,0); } }
+.ticker__track time { color: #7cc4ff; margin-right: 8px; font-size: .8rem; }
+.ticker__hot { background: var(--danger); color: #fff; border-radius: 9px; padding: 1px 7px; font-size: .7rem; font-weight: 700; margin-right: 8px; vertical-align: 1px; }
+@media (prefers-reduced-motion: reduce) { .ticker__label .live { animation: none; } }

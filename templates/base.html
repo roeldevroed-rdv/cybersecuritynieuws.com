@@ -24,11 +24,11 @@
 <a class="skip" href="#main">Naar inhoud</a>
 
 {% if ticker %}
-<div class="ticker" role="region" aria-label="Actief misbruikt">
+<div class="ticker" role="region" aria-label="Laatste nieuws">
   <div class="wrap ticker__inner">
-    <a class="ticker__label" href="/actief-misbruikt/"><span class="pulse"></span>Actief misbruikt</a>
+    <a class="ticker__label" href="/nieuws/"><span class="live"></span>Laatste nieuws</a>
     <div class="ticker__track">
-      {% for t in ticker %}<a href="{{ t.url }}">{% if t.cves %}<code>{{ t.cves[0] }}</code> {% endif %}{{ t.title }}</a>{% endfor %}
+      {% for t in ticker %}<a href="{{ t.url }}"><time data-ago datetime="{{ t.published }}">{{ t.dt|ago }}</time>{% if t.exploited %}<span class="ticker__hot">Actief misbruikt</span>{% endif %}{{ t.title }}</a>{% endfor %}
     </div>
   </div>
 </div>

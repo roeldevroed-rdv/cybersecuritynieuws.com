@@ -217,7 +217,7 @@ def build(config: dict) -> None:
             totals[k] += v
     print(f"Links: {totals['intern']} intern, {totals['extern']} extern, {totals['verwijderd']} ongeldig verwijderd")
     exploited = [a for a in arts if a["exploited"] or a["zero_day"]]
-    site.env.globals.update(ticker=exploited[:6], latest=[a for a in arts if a.get("type") != "gids"][:6],
+    site.env.globals.update(ticker=[a for a in arts if a.get("type", "nieuws") == "nieuws"][:10], latest=[a for a in arts if a.get("type") != "gids"][:6],
                             guides=[a for a in arts if a.get("type") == "gids"][:6])
 
     by_cat, by_label = defaultdict(list), defaultdict(list)
