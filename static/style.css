@@ -532,3 +532,21 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .ticker__track time { color: #7cc4ff; margin-right: 8px; font-size: .8rem; }
 .ticker__hot { background: var(--danger); color: #fff; border-radius: 9px; padding: 1px 7px; font-size: .7rem; font-weight: 700; margin-right: 8px; vertical-align: 1px; }
 @media (prefers-reduced-motion: reduce) { .ticker__label .live { animation: none; } }
+
+/* Hamburgermenu op mobiel */
+.menubtn { display: none; }
+.menubtn__close { display: none; }
+.nav__mobiel { display: none !important; }
+@media (max-width: 900px) {
+  .menubtn { display: inline-grid; }
+  .masthead.menu-open .menubtn__open { display: none; }
+  .masthead.menu-open .menubtn__close { display: inline; }
+  .nav { display: none; }
+  .masthead.menu-open .nav { display: block; }
+  .masthead.menu-open .nav__inner { flex-direction: column; overflow: visible; padding-top: 6px; padding-bottom: 12px; gap: 0; }
+  .masthead.menu-open .nav a { padding: 13px 4px; font-size: 1rem; border-bottom: 1px solid var(--line); }
+  .masthead.menu-open .nav a:last-child { border-bottom: 0; }
+  .masthead.menu-open .nav a[aria-current="page"] { color: var(--accent-ink); border-bottom-color: var(--line); }
+  .masthead.menu-open .nav__mobiel { display: block !important; }
+}
+@media (max-width: 420px) { .masthead__tools { gap: 2px; } .masthead__tools .btn--small { padding: 7px 9px; } }

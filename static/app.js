@@ -123,3 +123,17 @@
     .then(function (data) { index = data; run(); })
     .catch(function () { status.textContent = "De zoekindex kon niet worden geladen."; });
 })();
+
+// Hamburgermenu (mobiel)
+(function () {
+  var btn = document.getElementById("menuToggle");
+  var head = document.querySelector(".masthead");
+  if (!btn || !head) return;
+  btn.addEventListener("click", function () {
+    var open = head.classList.toggle("menu-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && head.classList.contains("menu-open")) { head.classList.remove("menu-open"); btn.setAttribute("aria-expanded", "false"); btn.focus(); }
+  });
+})();

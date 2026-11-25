@@ -44,9 +44,10 @@
       <a class="iconbtn" href="/zoeken/" aria-label="Zoeken"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
       <button class="iconbtn" id="themeToggle" aria-label="Donker/licht thema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
       <a class="btn btn--small" href="/nieuwsbrief/">Nieuwsbrief</a>
+      <button class="iconbtn menubtn" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="hoofdmenu"><svg viewBox="0 0 24 24"><path class="menubtn__open" d="M4 7h16M4 12h16M4 17h16"/><path class="menubtn__close" d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
   </div>
-  <nav class="nav" aria-label="Thema's">
+  <nav class="nav" id="hoofdmenu" aria-label="Thema's">
     {% set hoofd = [('kwetsbaarheden','Kwetsbaarheden'), ('aanvallen','Cyberaanvallen'), ('ransomware','Ransomware'), ('datalekken','Datalekken'), ('phishing','Phishing & fraude'), ('ai','AI & security'), ('markt','Markt & bedrijven')] %}
     {% set hoofd_slugs = hoofd|map('first')|list %}
     <div class="wrap nav__inner">
@@ -55,6 +56,8 @@
       <a href="/gidsen/" {% if path.startswith('/gidsen/') %}aria-current="page"{% endif %}>Gidsen</a>
       {% for slug, name in categories.items() if slug not in hoofd_slugs %}<a class="nav__extra" href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
       <a class="nav__extra" href="/weekoverzicht/">Weekoverzicht</a>
+      <a class="nav__extra nav__mobiel" href="/producten/">Per product</a>
+      <a class="nav__extra nav__mobiel" href="/nieuwsbrief/">Nieuwsbrief</a>
       <details class="nav__more">
         <summary>Meer</summary>
         <div class="nav__menu">
