@@ -63,7 +63,7 @@ tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job
 - Dreigingsniveau op voorpagina (build.threat_level). Advertenties via config `ads` (slots sidebar/artikel; met van/tot), anders huisadvertentie naar /adverteren/. Partnerartikel: type "partner" + `sponsor: {name,url}` → label Gesponsord, links rel=sponsored.
 - Artikel-velden: `updated` (ISO) + `update_note` tonen "Bijgewerkt"/update-blok.
 - SEO: WebSite+NewsMediaOrganization JSON-LD op home; verificatiecodes Google/Bing via config `zoekmachines`; IndexNow-sleutelbestand in dist/; standaard og-afbeelding static/og-default.png (block `ogimage`).
-- Huisstijl (25 nov 2026): eigen logo van eigenaar = blauw schild met slot + 'Cybersecurity / nieuws.com'. static/logo.svg (= favicon), static/logo-512.png (JSON-LD/apple-touch), assets/logo-shield.png (covers.draw_logo). Merkkleur blauw `--accent #0a8dff` (verloop #00a8ff→#005bff); rood `--danger` alleen voor actief misbruikt/kritiek. og-default via covers.make_default_og. Redactiefoto met blauwe achtergrond.
+- Huisstijl (25 nov 2026): eigen logo van eigenaar = blauw schild met slot + 'Cybersecurity / nieuws.com'. static/logo.svg (= favicon), static/logo-512.png (JSON-LD/apple-touch), assets/logo-shield.png (covers.draw_logo). Merkkleur blauw `--accent #0a8dff` (verloop #00a8ff→#005bff); rood `--danger` alleen voor badges actief misbruikt/kritiek en dreigingsniveau; rubriek kwetsbaarheden = blauw #0a7ee8. og-default via covers.make_default_og. Redactiefoto met blauwe achtergrond.
 - Thema-attribuut heet `data-mode` (niet data-theme: botst met de Claude-artifactviewer).
 
 ## Eventueel later

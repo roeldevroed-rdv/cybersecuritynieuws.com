@@ -14,9 +14,9 @@
   --accent-ink: #0057d6;      /* leesbare variant voor tekst op licht */
   --accent-soft: #eaf4ff;
   --accent-grad: linear-gradient(135deg, #00a8ff, #005bff);
-  --danger: #e5391c;          /* actief misbruikt / kritiek */
-  --danger-ink: #b92a12;
-  --danger-soft: #fff0ec;
+  --danger: #dc2626;          /* actief misbruikt / kritiek */
+  --danger-ink: #b91c1c;
+  --danger-soft: #fef2f2;
   --ok: #157a4a;
   --ok-soft: #e6f4ec;
   --warn: #a35a00;
@@ -43,8 +43,8 @@
   --line-strong: #3a404a;
   --accent-ink: #5cb4ff;
   --accent-soft: #0f2133;
-  --danger-ink: #ff7a5f;
-  --danger-soft: #2d1914;
+  --danger-ink: #f87171;
+  --danger-soft: #2a1515;
   --ok: #4cc98a;
   --ok-soft: #13271d;
   --warn: #f0a74a;
@@ -56,15 +56,15 @@
 }
 
 /* Kleuraccent per thema */
-.cat-kwetsbaarheden { --cat: #ff4d2e; }
+.cat-kwetsbaarheden { --cat: #0a7ee8; }
 .cat-ransomware     { --cat: #d6224f; }
 .cat-datalekken     { --cat: #8b5cf6; }
-.cat-cyberaanvallen { --cat: #e8590c; }
+.cat-cyberaanvallen { --cat: #1d4ed8; }
 .cat-malware        { --cat: #16a34a; }
-.cat-phishing       { --cat: #d99a00; }
-.cat-privacy        { --cat: #2563eb; }
+.cat-phishing       { --cat: #c98a00; }
+.cat-privacy        { --cat: #0891b2; }
 .cat-overheid       { --cat: #64748b; }
-.cat-ai             { --cat: #0d9488; }
+.cat-ai             { --cat: #db2777; }
 .cat-uitgelegd      { --cat: #4f46e5; }
 
 /* Basis */
@@ -123,19 +123,19 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 @keyframes pulse { from { transform: scale(1); opacity: .7; } to { transform: scale(3); opacity: 0; } }
 
 /* Ticker */
-.ticker { background: #111317; color: #e9ebee; font-size: .85rem; border-bottom: 2px solid var(--danger); }
+.ticker { background: #111317; color: #e9ebee; font-size: .85rem; border-bottom: 2px solid var(--accent); }
 .ticker__inner { display: flex; align-items: center; gap: 16px; height: 38px; overflow: hidden; }
 .ticker__label {
   flex: none; display: inline-flex; align-items: center; font-weight: 700; text-transform: uppercase;
   letter-spacing: .06em; font-size: .72rem; color: #fff; text-decoration: none;
 }
-.ticker__label:hover { color: #ffb3a4; }
+.ticker__label:hover { color: #9fd3ff; }
 .ticker__track { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; mask-image: linear-gradient(90deg, transparent, #000 24px, #000 calc(100% - 40px), transparent); }
 .ticker__move { display: inline-flex; animation: ticker 60s linear infinite; }
 .ticker__track:hover .ticker__move, .ticker__track:focus-within .ticker__move { animation-play-state: paused; }
 .ticker__track a { color: #e9ebee; text-decoration: none; }
 .ticker__track a:hover { color: #fff; text-decoration: underline; }
-.ticker__track code { color: #ff8f78; margin-right: 4px; }
+.ticker__track code { color: #7cc4ff; margin-right: 4px; }
 .ticker__track:not(:has(.ticker__move)) { display: flex; gap: 40px; }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
@@ -229,14 +229,14 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
 .panel + .panel { margin-top: 16px; }
 .panel__title { font: 700 .78rem/1.2 var(--font); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 12px; display: flex; align-items: center; color: var(--text); }
-.panel--urgent { border-color: color-mix(in srgb, var(--danger) 45%, var(--line)); background: linear-gradient(180deg, var(--danger-soft), var(--surface) 140px); }
-.panel--urgent .panel__title { color: var(--danger-ink); }
+.panel--urgent { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: linear-gradient(180deg, var(--accent-soft), var(--surface) 140px); }
+.panel--urgent .panel__title { color: var(--accent-ink); }
 .panel__links { margin-top: 10px; }
 .urgent-list { list-style: none; margin: 0; padding: 0; }
 .urgent-list li { padding: 10px 0; border-top: 1px solid var(--line); }
 .urgent-list li:first-child { border-top: 0; padding-top: 0; }
 .urgent-list a { display: block; text-decoration: none; font-weight: 500; line-height: 1.35; }
-.urgent-list code { display: block; color: var(--danger-ink); font-size: .75rem; margin-bottom: 2px; }
+.urgent-list code { display: block; color: var(--accent-ink); font-size: .75rem; margin-bottom: 2px; }
 .more { display: inline-block; font-size: .85rem; font-weight: 600; color: var(--accent-ink); text-decoration: none; margin-top: 8px; }
 .more:hover { text-decoration: underline; }
 

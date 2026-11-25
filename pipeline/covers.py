@@ -16,12 +16,20 @@ W, H = 1200, 630
 BG = (17, 19, 23)
 INK = (236, 238, 241)
 MUTED = (150, 156, 166)
-ACCENT = (255, 77, 46)
+ACCENT = (10, 126, 232)
+DANGER = (220, 38, 38)
 
 CAT_COLORS = {
-    "kwetsbaarheden": (255, 77, 46), "ransomware": (214, 34, 79), "datalekken": (139, 92, 246),
-    "cyberaanvallen": (232, 89, 12), "malware": (22, 163, 74), "phishing": (217, 154, 0),
-    "privacy": (37, 99, 235), "overheid": (100, 116, 139), "ai": (13, 148, 136), "uitgelegd": (79, 70, 229),
+    "kwetsbaarheden": (10, 126, 232),
+    "ransomware": (214, 34, 79),
+    "datalekken": (139, 92, 246),
+    "cyberaanvallen": (29, 78, 216),
+    "malware": (22, 163, 74),
+    "phishing": (201, 138, 0),
+    "privacy": (8, 145, 178),
+    "overheid": (100, 116, 139),
+    "ai": (219, 39, 119),
+    "uitgelegd": (79, 70, 229),
 }
 
 
@@ -153,18 +161,18 @@ def make_cover(a: dict, categories: dict, out: Path, site_name: str = "CyberSecu
     small = _font("Carlito-Bold.ttf", 22)
     badges = []
     if a.get("exploited"):
-        badges.append(("● ACTIEF MISBRUIKT", ACCENT, (255, 255, 255)))
+        badges.append(("● ACTIEF MISBRUIKT", DANGER, (255, 255, 255)))
     if a.get("zero_day"):
         badges.append(("ZERO-DAY", (122, 47, 208), (255, 255, 255)))
     if a.get("severity") == "kritiek":
-        badges.append(("KRITIEK", (60, 20, 16), (255, 140, 120)))
+        badges.append(("KRITIEK", (64, 18, 18), (255, 150, 150)))
     for text, bg, fg in badges:
         tw = d.textlength(text, font=small)
         d.rounded_rectangle([bx, by, bx + tw + 28, by + 38], radius=19, fill=bg)
         d.text((bx + 14, by + 7), text, font=small, fill=fg)
         bx += tw + 40
     if a.get("cves"):
-        d.text((bx + (4 if badges else 0), by + 6), a["cves"][0], font=_font("JetBrainsMono-Bold.ttf", 22), fill=(255, 143, 120))
+        d.text((bx + (4 if badges else 0), by + 6), a["cves"][0], font=_font("JetBrainsMono-Bold.ttf", 22), fill=(124, 196, 255))
 
     draw_logo(img, x, H - 74)
 
