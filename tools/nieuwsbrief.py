@@ -49,7 +49,7 @@ def shell(inner: str, preheader: str = "", footer: str = "") -> str:
 </td></tr>
 {inner}
 <tr><td style="padding:20px 32px 28px;border-top:1px solid {LINE};font:13px/1.6 {FONT};color:{MUTED};">
-{footer}CyberSecurityNieuws.com · Het belangrijkste cybersecuritynieuws in helder Nederlands<br>
+{footer}CyberSecurityNieuws.com · Al het belangrijke cybersecuritynieuws op één plek<br>
 <a href="{SITE}/" style="color:{BLUE};">Website</a> · <a href="{SITE}/privacy/" style="color:{BLUE};">Privacy</a>
 </td></tr></table></td></tr></table></body></html>"""
 

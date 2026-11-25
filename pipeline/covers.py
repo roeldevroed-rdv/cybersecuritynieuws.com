@@ -101,8 +101,8 @@ def make_default_og(out: Path) -> None:
     d = ImageDraw.Draw(img)
     d.rectangle([0, 0, 12, H], fill=BLUE)
     draw_logo(img, 72, 120, 3.3)
-    d.text((84, 340), "Het belangrijkste cybersecuritynieuws in helder Nederlands,", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
-    d.text((84, 384), "met wat je moet doen.", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
+    d.text((84, 340), "Al het belangrijke cybersecuritynieuws op één plek.", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
+    d.text((84, 384), "Elke dag nieuw · cybersecuritynieuws.com", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
     if out.suffix == ".webp":
         img.convert("RGB").save(out, "WEBP", quality=82, method=6)
     else:
