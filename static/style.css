@@ -536,7 +536,6 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 /* Hamburgermenu op mobiel */
 .menubtn { display: none; }
 .menubtn__close { display: none; }
-.nav__mobiel { display: none !important; }
 @media (max-width: 900px) {
   .menubtn { display: inline-grid; }
   .masthead.menu-open .menubtn__open { display: none; }
@@ -547,6 +546,11 @@ main { padding: 24px 0 64px; min-height: 60vh; }
   .masthead.menu-open .nav a { padding: 13px 4px; font-size: 1rem; border-bottom: 1px solid var(--line); }
   .masthead.menu-open .nav a:last-child { border-bottom: 0; }
   .masthead.menu-open .nav a[aria-current="page"] { color: var(--accent-ink); border-bottom-color: var(--line); }
-  .masthead.menu-open .nav__mobiel { display: block !important; }
+  .masthead.menu-open .nav__extra { display: none; }
+  .masthead.menu-open .nav__more { display: block; }
+  .masthead.menu-open .nav__more summary { padding: 13px 4px; font-size: 1rem; border-bottom: 0; }
+  .masthead.menu-open .nav__menu { position: static; min-width: 0; box-shadow: none; border: 0; border-radius: 0; padding: 0 0 0 14px; background: transparent; }
+  .masthead.menu-open .nav__menu a { padding: 11px 4px !important; font-size: .95rem; border-radius: 0; border-top: 1px solid var(--line) !important; }
+  .masthead.menu-open .nav__inner > a:last-of-type { border-bottom: 1px solid var(--line); }
 }
 @media (max-width: 420px) { .masthead__tools { gap: 2px; } .masthead__tools .btn--small { padding: 7px 9px; } }

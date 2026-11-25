@@ -56,8 +56,6 @@
       <a href="/gidsen/" {% if path.startswith('/gidsen/') %}aria-current="page"{% endif %}>Gidsen</a>
       {% for slug, name in categories.items() if slug not in hoofd_slugs %}<a class="nav__extra" href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
       <a class="nav__extra" href="/weekoverzicht/">Weekoverzicht</a>
-      <a class="nav__extra nav__mobiel" href="/producten/">Per product</a>
-      <a class="nav__extra nav__mobiel" href="/nieuwsbrief/">Nieuwsbrief</a>
       <details class="nav__more">
         <summary>Meer</summary>
         <div class="nav__menu">
