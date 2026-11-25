@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Mediakit CyberSecurityNieuws.com</title>
+<style>
+@font-face { font-family: "Carlito"; src: url("../../assets/fonts/Carlito-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Carlito"; src: url("../../assets/fonts/Carlito-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Caladea"; src: url("../../assets/fonts/Caladea-Bold.ttf"); font-weight: 700; }
+@page { size: A4; margin: 0; }
+:root { --blue: #0a7ee8; --blue2: #005bff; --ink: #16171a; --muted: #5b606a; --line: #e4e1db; --soft: #eaf4ff; --red: #dc2626; --dark: #111317; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font: 400 11pt/1.5 "Carlito", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; padding: 18mm 18mm 16mm; position: relative; page-break-after: always; overflow: hidden; }
+.page:last-child { page-break-after: auto; }
+h1, h2, h3 { margin: 0; }
+h2 { font: 700 24pt/1.15 "Caladea", serif; margin-bottom: 4mm; }
+h3 { font-size: 13pt; margin-bottom: 1.5mm; }
+p { margin: 0 0 3mm; }
+.eyebrow { font-weight: 700; font-size: 9pt; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); margin-bottom: 2mm; }
+.muted { color: var(--muted); }
+.foot { position: absolute; left: 18mm; right: 18mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 8.5pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 2.5mm; }
+
+/* Cover */
+.cover { background: var(--dark); color: #eceef1; padding: 22mm 20mm; }
+.cover::before { content: ""; position: absolute; right: -60mm; top: 40mm; width: 190mm; height: 190mm; border-radius: 50%;
+  background: radial-gradient(circle, rgba(10,141,255,.35), rgba(10,141,255,0) 65%); }
+.cover .bar { position: absolute; left: 0; top: 0; bottom: 0; width: 4mm; background: linear-gradient(180deg, #00a8ff, #005bff); }
+.cover .logo { width: 95mm; position: relative; }
+.cover .net { position: absolute; right: 0; top: 70mm; width: 120mm; opacity: .9; }
+.cover h1 { font: 700 40pt/1.08 "Caladea", serif; margin-top: 70mm; max-width: 150mm; position: relative; }
+.cover h1 em { font-style: normal; color: #4db3ff; }
+.cover .lead { font-size: 14pt; color: #b9bec7; max-width: 140mm; margin-top: 6mm; position: relative; }
+.cover .tag { position: absolute; left: 20mm; bottom: 22mm; font-size: 11pt; color: #b9bec7; }
+.cover .tag strong { color: #fff; display: block; font-size: 13pt; }
+.pill { display: inline-block; background: rgba(10,141,255,.18); color: #7cc4ff; border: 1px solid rgba(124,196,255,.4); border-radius: 20px; padding: 1mm 4mm; font-size: 9.5pt; font-weight: 700; letter-spacing: .06em; margin-top: 8mm; position: relative; }
+
+/* Grids */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.card { border: 1px solid var(--line); border-radius: 3mm; padding: 4.5mm 5mm; background: #fff; }
+.card--soft { background: var(--soft); border-color: #cfe5ff; }
+.usp { border-top: 1mm solid var(--blue); padding-top: 3mm; }
+.usp strong { display: block; font-size: 12pt; margin-bottom: 1mm; }
+.shot { width: 100%; border-radius: 2.5mm; border: 1px solid var(--line); box-shadow: 0 2mm 6mm rgba(20,20,30,.12); display: block; }
+.audience { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin: 4mm 0 7mm; }
+.audience div { background: var(--soft); border-radius: 2.5mm; padding: 3.5mm; font-size: 10pt; }
+.audience strong { display: block; font-size: 11pt; color: var(--blue2); }
+
+/* Prices */
+table.prices { width: 100%; border-collapse: collapse; margin-top: 3mm; }
+.prices th { text-align: left; font-size: 8.5pt; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 0 3mm 2mm 0; border-bottom: 2px solid var(--ink); }
+.prices td { padding: 3.2mm 3mm 3.2mm 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prices td:first-child strong { display: block; font-size: 12pt; }
+.prices td:first-child span { color: var(--muted); font-size: 10pt; }
+.prices .price { white-space: nowrap; font-weight: 700; font-size: 12.5pt; text-align: right; }
+.prices .price small { display: block; font-weight: 400; font-size: 9pt; color: var(--muted); }
+.offer { margin-top: 6mm; background: linear-gradient(135deg, #00a8ff, #005bff); color: #fff; border-radius: 3mm; padding: 5mm 6mm; display: flex; gap: 6mm; align-items: center; }
+.offer .big { font: 700 26pt/1 "Caladea", serif; }
+.offer p { margin: 0; }
+
+ul.check { list-style: none; padding: 0; margin: 0; }
+ul.check li { padding-left: 6mm; position: relative; margin-bottom: 2mm; }
+ul.check li::before { content: ""; position: absolute; left: 0; top: 1.6mm; width: 3mm; height: 3mm; border-radius: 50%; background: var(--blue); }
+
+.contact { display: flex; gap: 6mm; align-items: center; margin-top: 6mm; }
+.contact img { width: 34mm; height: 34mm; border-radius: 50%; }
+.contact .name { font: 700 16pt "Caladea", serif; }
+.cta { margin-top: 8mm; background: var(--dark); color: #eceef1; border-radius: 3mm; padding: 7mm; }
+.cta h3 { font: 700 18pt "Caladea", serif; color: #fff; margin-bottom: 2mm; }
+.cta a { color: #7cc4ff; text-decoration: none; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- 1. Cover -->
+<section class="page cover">
+  <div class="bar"></div>
+  <img class="logo" src="../../assets/logo-origineel.png" alt="CyberSecurityNieuws.com">
+  <svg class="net" viewBox="0 0 400 400" aria-hidden="true">
+    <g stroke="#0a8dff" stroke-opacity=".35" stroke-width="1.2" fill="none">
+      <circle cx="300" cy="90" r="70"/><circle cx="300" cy="90" r="130"/><circle cx="300" cy="90" r="190"/>
+      <path d="M60 60 L180 120 L260 40 L330 160 L220 230 L120 200 Z M180 120 L220 230 M260 40 L330 160 M120 200 L80 300 L200 330 L220 230 M330 160 L360 280 L200 330"/>
+    </g>
+    <g fill="#0a8dff"><circle cx="60" cy="60" r="5"/><circle cx="180" cy="120" r="7"/><circle cx="260" cy="40" r="4"/><circle cx="330" cy="160" r="6"/><circle cx="220" cy="230" r="8"/><circle cx="120" cy="200" r="5"/><circle cx="80" cy="300" r="6"/><circle cx="200" cy="330" r="5"/><circle cx="360" cy="280" r="4"/></g>
+  </svg>
+  <h1>Bereik de mensen die <em>beslissen over beveiliging</em></h1>
+  <p class="lead">Mediakit voor adverteerders en partners. Het belangrijkste cybersecuritynieuws in helder Nederlands, met bij elk bericht wat je moet doen.</p>
+  <span class="pill">MEDIAKIT 2026 · 2027</span>
+  <div class="tag"><strong>cybersecuritynieuws.com</strong>adverteren@cybersecuritynieuws.com</div>
+</section>
+
+<!-- 2. Over ons -->
+<section class="page">
+  <p class="eyebrow">Over CyberSecurityNieuws</p>
+  <h2>Nederlandstalig cybersecuritynieuws, elke dag</h2>
+  <p style="font-size:12.5pt; max-width: 165mm">CyberSecurityNieuws.com brengt het belangrijkste internationale en Benelux-nieuws over cyberdreigingen samen in begrijpelijk Nederlands. Meerdere keren per dag nieuwe berichten, elk met een korte samenvatting en concrete stappen: <strong>wat moet je doen?</strong></p>
+
+  <div class="audience">
+    <div><strong>IT-beheerders</strong>die moeten weten wat ze vandaag moeten patchen</div>
+    <div><strong>Security-professionals</strong>CISO's, SOC-analisten en consultants</div>
+    <div><strong>Mkb-ondernemers</strong>die verantwoordelijk zijn voor hun eigen beveiliging</div>
+    <div><strong>Bewuste thuisgebruikers</strong>die zich willen wapenen tegen fraude</div>
+  </div>
+
+  <img class="shot" src="site-home.png" alt="Voorpagina van CyberSecurityNieuws.com">
+
+  <div class="grid3" style="margin-top:7mm">
+    <div class="usp"><strong>Label "Actief misbruikt"</strong>Elk lek wordt automatisch gecontroleerd tegen de officiële CISA-lijst van misbruikte kwetsbaarheden.</div>
+    <div class="usp"><strong>Benelux-focus</strong>Aandacht voor NCSC, Safeonweb, NIS2 en incidenten in Nederland en België.</div>
+    <div class="usp"><strong>Vindbaar in Google én AI</strong>Gebouwd voor zoekmachines en AI-assistenten, zoals ChatGPT en Google AI Overviews.</div>
+  </div>
+  <div class="foot"><span>Mediakit CyberSecurityNieuws.com</span><span>2</span></div>
+</section>
+
+<!-- 3. Mogelijkheden & tarieven -->
+<section class="page">
+  <p class="eyebrow">Mogelijkheden &amp; tarieven</p>
+  <h2>Jouw merk naast het nieuws dat ertoe doet</h2>
+  <p class="muted">Je boodschap verschijnt precies wanneer lezers nadenken over de dreigingen die jouw oplossing aanpakt. Alle tarieven zijn exclusief btw.</p>
+
+  <table class="prices">
+    <tr><th>Formaat</th><th style="text-align:right">Tarief</th></tr>
+    <tr><td><strong>Display in de zijbalk</strong><span>Logo, boodschap en link naast elk artikel en op de voorpagina.</span></td><td class="price">€ 295<small>per maand</small></td></tr>
+    <tr><td><strong>Advertentie in artikelen</strong><span>Direct onder "Wat moet je doen?", het meest gelezen deel van elk bericht. Ook per thema, bijvoorbeeld alleen bij ransomware.</span></td><td class="price">€ 395<small>per maand · per thema € 245</small></td></tr>
+    <tr><td><strong>Nieuwsbriefsponsor</strong><span>Jouw merk bovenaan de wekelijkse nieuwsbrief, rechtstreeks in de inbox van abonnees.</span></td><td class="price">€ 149<small>per editie · 4 edities € 495</small></td></tr>
+    <tr><td><strong>Partnerartikel</strong><span>Een inhoudelijk artikel over jouw expertise, gemarkeerd als "gesponsord" en blijvend vindbaar via Google.</span></td><td class="price">€ 495<small>eenmalig, blijft online</small></td></tr>
+    <tr><td><strong>Themasponsor</strong><span>"Mogelijk gemaakt door" bij een vaste rubriek, zoals de Ransomware-tracker of het Patch Tuesday-overzicht.</span></td><td class="price">€ 450<small>per maand</small></td></tr>
+    <tr><td><strong>Vacature</strong><span>Bereik securitytalent in Nederland en België, op de site én in de nieuwsbrief.</span></td><td class="price">€ 149<small>per 30 dagen</small></td></tr>
+  </table>
+
+  <div class="offer">
+    <div class="big">−25%</div>
+    <p><strong>Founding partner.</strong> De eerste vijf adverteerders krijgen 25% korting op elk formaat bij een looptijd van minimaal drie maanden, en een vaste plek in onze partnerlijst.</p>
+  </div>
+  <div class="foot"><span>Mediakit CyberSecurityNieuws.com</span><span>3</span></div>
+</section>
+
+<!-- 4. Spelregels & contact -->
+<section class="page">
+  <p class="eyebrow">Zo werken we</p>
+  <h2>Betrouwbaar, herkenbaar en zonder tracking</h2>
+  <div class="grid2" style="margin-top:3mm">
+    <div>
+      <img class="shot" style="width:72mm;margin:0 auto" src="site-artikel.png" alt="Voorbeeld van een artikel op CyberSecurityNieuws.com">
+    </div>
+    <div>
+      <ul class="check">
+        <li><strong>Altijd herkenbaar.</strong> Advertenties en gesponsorde inhoud zijn duidelijk gemarkeerd.</li>
+        <li><strong>Onafhankelijk nieuws.</strong> Adverteerders hebben geen invloed op de redactie, ook niet als het nieuws over hun eigen product gaat.</li>
+        <li><strong>Privacyvriendelijk.</strong> Geen tracking-cookies en geen advertentienetwerken: je merk staat in een schone, betrouwbare omgeving.</li>
+        <li><strong>Alleen relevante partners.</strong> We werken met betrouwbare partijen uit de beveiligingswereld.</li>
+        <li><strong>Snel live.</strong> Aanleveren via mail; we plaatsen je campagne binnen twee werkdagen.</li>
+      </ul>
+      <div class="card card--soft" style="margin-top:5mm">
+        <h3>Aanleveren</h3>
+        <p style="margin:0">Logo (SVG of PNG), titel (max. 60 tekens), korte tekst (max. 140 tekens) en de link. Een partnerartikel schrijven we samen met jou.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>Laten we kennismaken</h3>
+    <div class="contact">
+      <img src="../../static/img/roel-de-vroed.jpg" alt="Roel de Vroed">
+      <div>
+        <div class="name">Roel de Vroed</div>
+        <p style="color:#b9bec7">Oprichter en hoofdredacteur</p>
+        <p style="margin:0">Mail <a href="mailto:adverteren@cybersecuritynieuws.com">adverteren@cybersecuritynieuws.com</a><br>
+        Bekijk <a href="https://cybersecuritynieuws.com/adverteren/">cybersecuritynieuws.com/adverteren</a></p>
+      </div>
+    </div>
+    <p style="margin-top:5mm; color:#b9bec7; font-size:10pt">Actuele bezoek- en abonneecijfers sturen we je graag op aanvraag.</p>
+  </div>
+  <div class="foot"><span>Mediakit CyberSecurityNieuws.com</span><span>4</span></div>
+</section>
+</body>
+</html>
