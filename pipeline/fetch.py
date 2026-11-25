@@ -19,24 +19,39 @@ new over after into via how why what who your you we our their not now more than
 de het een en of van in op voor met door uit aan als is zijn was waren wordt worden dit dat deze die
 nieuwe na over hoe waarom wat wie je jouw we ons hun niet nu meer dan zegt
 """.split())
-# Voor algemene nieuwsbronnen (NU.nl, NOS, Tweakers): alleen berichten over beveiliging doorlaten.
-SECURITY_TERMS = (
-    "cyber", "hack", "hacker", "gehackt", "datalek", "data breach", "ransomware", "malware", "phishing", "oplichting",
-    "fraude", "beveiliging", "kwetsbaarhe", "zero-day", "ddos", "storing door aanval", "spyware",
-    "wachtwoord", "inloggegevens", "ncsc", "persoonsgegevens", "spoofing", "helpdeskfraude", "trojan", "botnet",
-    "afpersing", "cybercrim", "vulnerability", "exploit", "beveiligingsupdate", "gestolen gegevens", "lek", "gelekt",
+# Voor algemene nieuwsbronnen (NU.nl, NOS, Tweakers): alleen IT-beveiligingsnieuws doorlaten.
+# Sterke termen tellen altijd; zwakke termen (lek, fraude, ...) alleen samen met een IT-woord,
+# zodat "gelekte cijfers over de oorlog" of "fraude met subsidies" er niet door komen.
+SECURITY_STRONG = (
+    "cyber", "hack", "datalek", "ransomware", "malware", "phishing", "ddos", "kwetsbaarhe", "zero-day", "spyware",
+    "botnet", "ncsc", "inloggegevens", "exploit", "beveiligingsupdate", "beveiligingslek", "trojan", "spoofing",
+    "helpdeskfraude", "vulnerability", "infostealer", "wachtwoordmanager", "tweestapsverificatie",
 )
+SECURITY_WEAK = ("lek", "gelekt", "fraude", "oplichting", "wachtwoord", "persoonsgegevens", "beveiliging", "afpersing",
+                 "gestolen gegevens")
+IT_CONTEXT = ("computer*", "online", "internet*", "software", "systeem", "systemen", "server", "digita*",
+              "website", "e-mail", "mail", "sms", "whatsapp", "account", "it", "ict", "netwerk", "cloud", "microsoft",
+              "google", "apple", "windows", "android", "iphone", "router", "browser", "chrome", "ai", "database",
+              "app", "apps", "telefoon", "smartphone", "it-systemen", "laptop")
+_RE = {}
 
 
-_SEC_RE = None
+def _rx(name: str, terms: tuple, whole: bool = False) -> re.Pattern:
+    """whole=True: hele woorden (met meervoud), behalve termen met * (voorvoegsel)."""
+    if name not in _RE:
+        if whole:
+            parts = [re.escape(t[:-1]) + r"\w*" if t.endswith("*") else re.escape(t) + r"(?:s|en|'s)?\b" for t in terms]
+        else:
+            parts = [re.escape(t) for t in terms]
+        _RE[name] = re.compile(r"\b(?:" + "|".join(parts) + ")", re.I)
+    return _RE[name]
 
 
 def is_security(text: str) -> bool:
     """Woordgrens aan het begin, zodat 'plek' niet als 'lek' telt; vervoegingen (gehackt, lekken) mogen wel."""
-    global _SEC_RE
-    if _SEC_RE is None:
-        _SEC_RE = re.compile(r"\b(?:" + "|".join(re.escape(t.strip()) for t in SECURITY_TERMS) + ")", re.I)
-    return bool(_SEC_RE.search(text))
+    if _rx("strong", SECURITY_STRONG).search(text):
+        return True
+    return bool(_rx("weak", SECURITY_WEAK).search(text) and _rx("it", IT_CONTEXT, whole=True).search(text))
 
 
 NL_TERMS = ("nederland", "dutch", "netherlands", "belgi", "belgium", "europe", "eu ", "ncsc", "rijksoverheid")
