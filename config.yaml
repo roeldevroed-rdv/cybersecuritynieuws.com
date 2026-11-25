@@ -125,7 +125,8 @@ redactie:
   foto: "/static/img/roel-de-vroed.jpg"                      # bijv. /static/img/roel-de-vroed.jpg (vierkant, min. 400x400)
   bio: ""                       # korte achtergrond van de hoofdredacteur
   linkedin: ""                  # URL van je LinkedIn-profiel (optioneel)
-  email: "redactie@cybersecuritynieuws.com"
+  email: "redactie@cybersecuritynieuws.com"   # tips en correcties
+  info_email: "info@cybersecuritynieuws.com"  # algemene vragen, privacy, nieuwsbrief
   adverteren_email: "adverteren@cybersecuritynieuws.com"
   kvk: ""                       # KvK-nummer (verplicht vermelden als je een onderneming hebt)
   vestigingsplaats: ""

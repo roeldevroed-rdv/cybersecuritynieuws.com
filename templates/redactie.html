@@ -3,7 +3,7 @@
 {% block description %}Wie maakt {{ site.name }}? De redactie, onze uitgangspunten en hoe je ons bereikt.{% endblock %}
 {% block meta %}<meta property="og:type" content="profile"><meta property="og:title" content="Redactie – {{ site.name }}">
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": site.name, "url": site.url,
-  "logo": site.url ~ "/static/favicon.svg", "email": redactie.email, "publishingPrinciples": site.url ~ "/over/",
+  "logo": site.url ~ "/static/logo-512.png", "email": redactie.info_email, "publishingPrinciples": site.url ~ "/over/",
   "correctionsPolicy": site.url ~ "/redactie/#correcties", "actionableFeedbackPolicy": site.url ~ "/contact/",
   "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "jobTitle": redactie.rol, "url": site.url ~ "/redactie/", "image": (site.url ~ redactie.foto if redactie.foto else none), "sameAs": ([redactie.linkedin] if redactie.linkedin else [])} if redactie.hoofdredacteur else none)}|tojson }}</script>{% endblock %}
 {% block main %}
