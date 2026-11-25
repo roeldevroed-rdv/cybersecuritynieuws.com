@@ -168,3 +168,11 @@ products:
   - { slug: mozilla,   name: "Mozilla Firefox", match: ["firefox", "mozilla", "thunderbird"] }
   - { slug: linux,     name: "Linux",       match: ["linux", "ubuntu", "debian", "red hat"] }
   - { slug: whatsapp,  name: "WhatsApp",    match: ["whatsapp"] }
+
+# Zoekmachines. Vul de verificatiecodes in die Google Search Console en Bing Webmaster Tools je geven
+# (alleen de code uit content="...", niet de hele tag).
+zoekmachines:
+  google_verificatie: ""
+  bing_verificatie: ""
+  # IndexNow: meldt nieuwe artikelen direct aan bij Bing (en daarmee ChatGPT-zoeken), Yandex e.a.
+  indexnow_key: "9a5a19822adae4cdc24b0bac79dc9ae0"

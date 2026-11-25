@@ -75,3 +75,16 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Nieuwe pagina's aanmelden bij zoekmachines (IndexNow)
+        run: |
+          pip install pyyaml
+          python tools/indexnow.py

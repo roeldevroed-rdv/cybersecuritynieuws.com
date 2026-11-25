@@ -191,7 +191,8 @@ def build(config: dict) -> None:
     site.env.globals.update(
         redactie=red, editor=red.get("hoofdredacteur") or f"Redactie {config['site']['name']}",
         threat=threat_level(arts), ads=active_ads(config), forms=config.get("forms") or {},
-        analytics=config.get("analytics") or {}, products=config.get("products") or [])
+        analytics=config.get("analytics") or {}, products=config.get("products") or [],
+        zoekmachines=config.get("zoekmachines") or {})
     valid = {a["url"] for a in arts} | {f"/thema/{c}/" for c in config["categories"]} | {"/gidsen/", "/actief-misbruikt/", "/weekoverzicht/", "/over/", "/redactie/", "/contact/",
              "/adverteren/", "/nieuwsbrief/", "/is-dit-oplichting/", "/ransomware-tracker/", "/patch-tuesday/", "/producten/",
              "/privacy/", "/cookies/", "/colofon/"} | {f"/product/{p['slug']}/" for p in config.get("products") or []}
@@ -275,6 +276,9 @@ def build(config: dict) -> None:
                                                 + "</url>\n" for u in site.urls) + "</urlset>\n")
     write_llms_txt(config, arts)
     write_news_sitemap(config, arts)
+    key = (config.get("zoekmachines") or {}).get("indexnow_key")
+    if key:  # IndexNow-sleutelbestand in de hoofdmap
+        (DIST / f"{key}.txt").write_text(key)
     (DIST / "CNAME").write_text(config["site"]["domain"] + "\n")  # eigen domein op GitHub Pages
     (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {url}/sitemap.xml\nSitemap: {url}/news-sitemap.xml\n")
     print(f"Site gebouwd: {len(arts)} artikelen, {len(site.urls)} pagina's -> dist/")

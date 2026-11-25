@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 {% from "_macros.html" import card, badges %}
 
+{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }} – {{ site.tagline }}"><meta property="og:description" content="{{ site.description }}">
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "WebSite", "@id": site.url ~ "/#website", "url": site.url ~ "/", "name": site.name, "description": site.description, "inLanguage": "nl",
+     "publisher": {"@id": site.url ~ "/#org"},
+     "potentialAction": {"@type": "SearchAction", "target": site.url ~ "/zoeken/?q={search_term_string}", "query-input": "required name=search_term_string"}},
+    {"@type": "NewsMediaOrganization", "@id": site.url ~ "/#org", "name": site.name, "url": site.url ~ "/",
+     "logo": {"@type": "ImageObject", "url": site.url ~ "/static/og-default.png", "width": 1200, "height": 630},
+     "email": redactie.email, "publishingPrinciples": site.url ~ "/over/", "correctionsPolicy": site.url ~ "/redactie/#correcties",
+     "actionableFeedbackPolicy": site.url ~ "/contact/", "masthead": site.url ~ "/colofon/",
+     "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "url": site.url ~ "/redactie/"} if redactie.hoofdredacteur else none)}
+  ]
+}|tojson }}</script>{% endblock %}
+
 {% block main %}
 <div class="wrap">
   <h1 class="visually-hidden">{{ site.name }} – {{ site.tagline }}</h1>

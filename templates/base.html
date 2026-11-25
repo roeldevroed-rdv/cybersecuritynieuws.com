@@ -8,7 +8,10 @@
   <link rel="canonical" href="{{ site.url }}{{ path if path != '/404.html' else '/' }}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:locale" content="nl_NL">
+  {% if zoekmachines.google_verificatie %}<meta name="google-site-verification" content="{{ zoekmachines.google_verificatie }}">{% endif %}
+  {% if zoekmachines.bing_verificatie %}<meta name="msvalidate.01" content="{{ zoekmachines.bing_verificatie }}">{% endif %}
   {% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
+  {% block ogimage %}<meta property="og:image" content="{{ site.url }}/static/og-default.png"><meta name="twitter:card" content="summary_large_image">{% endblock %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml">
   <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

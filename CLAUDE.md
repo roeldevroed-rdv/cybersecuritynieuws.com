@@ -36,14 +36,23 @@ content/articles/*.json  # gegenereerde artikelen (1 JSON per artikel)
 content/voorbeelden/     # fictieve voorbeeldartikelen (example: true, offset_hours)
 content/seen.json        # al verwerkte bron-URL's
 README.md                # installatie: GitHub, secret, GitHub Pages, domein (DNS), kosten
+tools/nieuwsronde.py     # kandidaten zoeken + concepten valideren/opslaan voor de dagelijkse ronde
+tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job na deploy)
 ```
 
 ## Status
-- Live gaan wacht op GitHub: account van eigenaar was door GitHub 'flagged' (support aangeschreven); daarna repo (openbaar) koppelen via claude.ai/connect-github, pushen, Pages → Source: GitHub Actions, DNS instellen (zie README).
-- 24 nov 2026: 8 nieuwsberichten handmatig door Claude geschreven op basis van RSS + webzoekopdrachten.
-- 6 startgidsen zijn handmatig door Claude geschreven (content/articles/*-wat-is-phishing.json enz., type "gids"); de contentkalender slaat die onderwerpen over.
-- Artikeltypes: "nieuws" en "gids". run.py: `--build` (alleen bouwen), `--fotos` (foto's bij bestaande artikelen).
-- Alles van de oorspronkelijke takenlijst is af. Hosting: Cloudflare Pages → Netlify → nu GitHub Pages.
+- **LIVE** sinds 25 nov 2026 op https://cybersecuritynieuws.com (GitHub Pages, repo roeldevroed-rdv/cybersecuritynieuws.com, DNS bij TransIP: 4 A-records 185.199.108-111.153 + CNAME www → roeldevroed-rdv.github.io.).
+- E-mail: gekozen voor Zoho Mail gratis (EU, alleen web/app) voor redactie@cybersecuritynieuws.com; instellen (MX/SPF/DKIM bij TransIP) door eigenaar — status onbevestigd.
+- 24 nov 2026: 8 nieuwsberichten + 6 startgidsen handmatig door Claude geschreven.
+- Artikeltypes: "nieuws", "gids", "partner". run.py: `--build` (alleen bouwen), `--fotos` (foto's bij bestaande artikelen).
+
+## Dagelijkse nieuwsronde (Claude-sessie, zonder API-kosten)
+1. `python -m tools.nieuwsronde kandidaten` → top-verhalen (nog niet behandeld) + KEV-status; details in /tmp/nieuwsronde-kandidaten.json.
+2. Kies 3–6 verhalen: actief misbruikt / kritiek, Nederland & België, veel bronnen, relevant voor thuisgebruiker of mkb. Geen dubbelingen met recente artikelen.
+3. Lees de bronnen (RSS-hosts zijn toegestaan in de omgeving; aanvullen met WebSearch). Gebruik alleen bevestigde feiten; benoem tegenstrijdigheden.
+4. Schrijf concepten (JSON-lijst, velden: zie docstring van tools/nieuwsronde.py) in de stijl van bestaande artikelen: antwoord-eerst, 280–450 woorden, 2–3 vraaggerichte ##-kopjes, links naar bron(nen) + 1–3 interne links (/artikel/<slug>/ van gidsen of eerdere berichten), "Wat moet je doen?" 3–5 stappen, FAQ 2–3, meta 140–160 tekens. Geen AI-vermelding in de tekst.
+5. `python -m tools.nieuwsronde opslaan /tmp/concepten.json` (controleert en voegt KEV toe), dan `python -m pipeline.run --build` en check "0 ongeldig verwijderd".
+6. Commit (`content/`) en push naar main → GitHub bouwt, publiceert en meldt via IndexNow aan.
 
 ## Pagina's & verdienmodel (24 nov 2026)
 - Eigenaar/hoofdredacteur: Roel de Vroed (config `redactie`; foto nog toevoegen als static/img/… en `redactie.foto`).
@@ -52,6 +61,7 @@ README.md                # installatie: GitHub, secret, GitHub Pages, domein (DN
 - Nieuwe pagina's: /redactie/ /contact/ (tipformulier via forms.tip_action) /adverteren/ (mediakit) /nieuwsbrief/ /privacy/ /cookies/ /colofon/ /is-dit-oplichting/ (lokale JS-check) /producten/ + /product/<slug>/ (config `products`) /ransomware-tracker/ /patch-tuesday/ + news-sitemap.xml.
 - Dreigingsniveau op voorpagina (build.threat_level). Advertenties via config `ads` (slots sidebar/artikel; met van/tot), anders huisadvertentie naar /adverteren/. Partnerartikel: type "partner" + `sponsor: {name,url}` → label Gesponsord, links rel=sponsored.
 - Artikel-velden: `updated` (ISO) + `update_note` tonen "Bijgewerkt"/update-blok.
+- SEO: WebSite+NewsMediaOrganization JSON-LD op home; verificatiecodes Google/Bing via config `zoekmachines`; IndexNow-sleutelbestand in dist/; standaard og-afbeelding static/og-default.png (block `ogimage`).
 - Thema-attribuut heet `data-mode` (niet data-theme: botst met de Claude-artifactviewer).
 
 ## Eventueel later
