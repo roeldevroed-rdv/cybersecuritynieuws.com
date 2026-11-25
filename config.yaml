@@ -132,7 +132,7 @@ redactie:
   hoofdredacteur: "Roel de Vroed"   # leeg = "Redactie CyberSecurityNieuws"
   rol: "Oprichter en hoofdredacteur"
   foto: "/static/img/roel-de-vroed.jpg"                      # bijv. /static/img/roel-de-vroed.jpg (vierkant, min. 400x400)
-  bio: ""                       # korte achtergrond van de hoofdredacteur
+  bio: "Roel de Vroed is oprichter en hoofdredacteur van CyberSecurityNieuws.com. Hij is sinds vier jaar werkzaam in de cybersecuritysector en volgt de ontwikkelingen in het vakgebied op de voet, van nieuwe kwetsbaarheden en ransomwarecampagnes tot digitale fraude. Vanuit die ervaring bewaakt hij de kwaliteit en betrouwbaarheid van de berichtgeving. Roel is afkomstig uit Rotterdam."
   linkedin: ""                  # URL van je LinkedIn-profiel (optioneel)
   email: "redactie@cybersecuritynieuws.com"   # tips en correcties
   info_email: "info@cybersecuritynieuws.com"  # algemene vragen, privacy, nieuwsbrief

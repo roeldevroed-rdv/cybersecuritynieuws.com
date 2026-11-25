@@ -5,7 +5,7 @@
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": site.name, "url": site.url,
   "logo": site.url ~ "/static/logo-512.png", "email": redactie.info_email, "publishingPrinciples": site.url ~ "/over/",
   "correctionsPolicy": site.url ~ "/redactie/#correcties", "actionableFeedbackPolicy": site.url ~ "/contact/",
-  "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "jobTitle": redactie.rol, "url": site.url ~ "/redactie/", "image": (site.url ~ redactie.foto if redactie.foto else none), "sameAs": ([redactie.linkedin] if redactie.linkedin else [])} if redactie.hoofdredacteur else none)}|tojson }}</script>{% endblock %}
+  "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "jobTitle": redactie.rol, "description": (redactie.bio or none), "url": site.url ~ "/redactie/", "image": (site.url ~ redactie.foto if redactie.foto else none), "sameAs": ([redactie.linkedin] if redactie.linkedin else [])} if redactie.hoofdredacteur else none)}|tojson }}</script>{% endblock %}
 {% block main %}
 <div class="wrap wrap--narrow">
   <header class="page-head">
