@@ -16,6 +16,19 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
+
+
+def _asset_version() -> str:
+    """Korte hash van stijl, scripts en beeldgenerator: verandert iets, dan laden browsers meteen de nieuwe versie."""
+    import hashlib
+    h = hashlib.sha1()
+    for f in sorted([*(ROOT / "static").rglob("*"), ROOT / "pipeline" / "covers.py", *(ROOT / "assets").glob("*.png")]):
+        if f.is_file():
+            h.update(f.read_bytes())
+    return h.hexdigest()[:8]
+
+
+ASSET_V = _asset_version()
 MONTHS = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
           "september", "oktober", "november", "december"]
 SEVERITY = {"kritiek": "Kritiek", "hoog": "Hoog", "middel": "Middel", "laag": "Laag", "info": "Info"}
@@ -154,7 +167,7 @@ class Site:
         self.env.filters.update(nl_date=nl_date, ago=ago, label_slug=label_slug,
                                 faq_entity=lambda f: {"@type": "Question", "name": f["q"],
                                                       "acceptedAnswer": {"@type": "Answer", "text": f["a"]}})
-        self.env.globals.update(site=config["site"], categories=config["categories"], severity_names=SEVERITY,
+        self.env.globals.update(asset_v=ASSET_V, site=config["site"], categories=config["categories"], severity_names=SEVERITY,
                                 year=datetime.now().year, now=datetime.now(timezone.utc))
         self.urls: list[str] = []
 
@@ -184,8 +197,8 @@ def build(config: dict) -> None:
     for a in arts:
         make_cover(a, config["categories"], DIST / "og" / f"{a['slug']}.png", config["site"]["name"])
         make_cover(a, config["categories"], DIST / "beeld" / f"{a['slug']}.png", config["site"]["name"], with_title=False)
-        a["cover"] = f"/og/{a['slug']}.png"           # met titel: voor delen op sociale media
-        a["art"] = f"/beeld/{a['slug']}.png"          # zonder titel: voor op de site
+        a["cover"] = f"/og/{a['slug']}.png?v={ASSET_V}"           # met titel: voor delen op sociale media
+        a["art"] = f"/beeld/{a['slug']}.png?v={ASSET_V}"          # zonder titel: voor op de site
         a["thumb"] = a["image"]["url"] if a.get("image") else a["art"]
     red = config.get("redactie") or {}
     site.env.globals.update(
