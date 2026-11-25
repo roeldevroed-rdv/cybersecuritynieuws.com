@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Mail Filters</title>
+  <id>tag:mail.google.com,2008:filters:csn</id>
+  <updated>2026-11-25T17:00:00Z</updated>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:csn0</id>
+    <updated>2026-11-25T17:00:00Z</updated>
+    <content></content>
+    <apps:property name='to' value='info@cybersecuritynieuws.com'/>
+    <apps:property name='label' value='CSN/Info'/>
+    <apps:property name='sizeOperator' value='s_sl'/>
+    <apps:property name='sizeUnit' value='s_smb'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:csn1</id>
+    <updated>2026-11-25T17:00:00Z</updated>
+    <content></content>
+    <apps:property name='to' value='redactie@cybersecuritynieuws.com'/>
+    <apps:property name='label' value='CSN/Redactie'/>
+    <apps:property name='sizeOperator' value='s_sl'/>
+    <apps:property name='sizeUnit' value='s_smb'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:csn2</id>
+    <updated>2026-11-25T17:00:00Z</updated>
+    <content></content>
+    <apps:property name='to' value='adverteren@cybersecuritynieuws.com'/>
+    <apps:property name='label' value='CSN/Adverteren'/>
+    <apps:property name='sizeOperator' value='s_sl'/>
+    <apps:property name='sizeUnit' value='s_smb'/>
+  </entry>
+</feed>
