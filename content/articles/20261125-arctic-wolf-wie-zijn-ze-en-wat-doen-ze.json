@@ -1,0 +1,85 @@
+{
+  "id": "20261125-arctic-wolf-wie-zijn-ze-en-wat-doen-ze",
+  "slug": "arctic-wolf-wie-zijn-ze-en-wat-doen-ze",
+  "type": "gids",
+  "topic_id": null,
+  "title": "Arctic Wolf: wie zijn ze en wat doen ze?",
+  "tldr": "Arctic Wolf is een Amerikaans securitybedrijf dat organisaties dag en nacht bewaakt tegen cyberaanvallen, als dienst (MDR). Het draait op het eigen Aurora-platform, heeft volgens eigen zeggen meer dan 10.000 klanten en kocht onder meer Cylance (2025) en Sevco Security (2026).",
+  "meta_description": "Arctic Wolf uitgelegd: wat het bedrijf doet, hoe managed detection and response (MDR) werkt, het Aurora-platform en de overnames van Cylance en Sevco Security.",
+  "body": "Arctic Wolf is een Amerikaans cybersecuritybedrijf dat de beveiliging van organisaties als dienst aanbiedt. In plaats van zelf een securityteam op te bouwen, laat een organisatie haar systemen dag en nacht bewaken door de analisten en software van Arctic Wolf. Het bedrijf richt zich vooral op middelgrote organisaties, maar werkt ook voor grote ondernemingen en via IT-dienstverleners (MSP's).\n\n## Wat doet Arctic Wolf precies?\n\nDe kern is **managed detection and response (MDR)**: Arctic Wolf verzamelt signalen uit het netwerk, de cloud, e-mail en de computers van een klant, zoekt daarin naar aanwijzingen voor een aanval en grijpt in als er iets mis is. Elke klant krijgt een vast team van securityspecialisten. Daarnaast levert het bedrijf onder meer risicobeheer (welke zwakke plekken heb je?), beveiliging van endpoints en bewustwordingstrainingen voor medewerkers.\n\nAlles draait op het eigen **Aurora-platform**. In maart 2026 [presenteerde Arctic Wolf de nieuwste versie](https://arcticwolf.com/resources/press-releases/arctic-wolf-unveils-the-aurora-superintelligence-platform-to-redefine-security-for-the-age-of-ai/), die het bedrijf het Aurora Superintelligence Platform noemt. Daarin speelt AI een grotere rol bij het beoordelen van meldingen. Volgens Arctic Wolf verwerkt het platform wekelijks meer dan 10 biljoen securitygebeurtenissen.\n\n## Welke overnames deed Arctic Wolf?\n\n- **Cylance (2025)**: in februari 2025 [rondde Arctic Wolf de overname af](https://arcticwolf.com/resources/press-releases/arctic-wolf-and-blackberry-announce-closing-of-acquisition-for-cylance/) van Cylance, de endpointbeveiliging van BlackBerry. Cylance staat bekend om antivirus op basis van AI. Volgens [SC Media](https://www.scworld.com/brief/cylance-offloaded-to-arctic-wolf-for-160m) ging het om ongeveer 160 miljoen dollar, terwijl BlackBerry er zes jaar eerder 1,4 miljard voor betaalde.\n- **Sevco Security (2026)**: in februari 2026 [nam Arctic Wolf Sevco Security over](https://arcticwolf.com/resources/press-releases/arctic-wolf-acquires-exposure-assessment-platform-visionary-sevco-security/), een Amerikaanse start-up die in kaart brengt welke apparaten een organisatie heeft en waar de kwetsbaarheden zitten. Die techniek komt in het Aurora-platform. Het overnamebedrag is niet bekendgemaakt.\n\n## Voor wie is Arctic Wolf interessant?\n\nVooral voor organisaties die beveiliging serieus willen aanpakken, maar geen eigen securitycentrum (SOC) kunnen of willen bemannen. Denk aan mkb-bedrijven met een klein IT-team, scholen, zorginstellingen en gemeenten. Arctic Wolf is daarmee een concurrent van andere MDR-aanbieders, zoals CrowdStrike, SentinelOne en Sophos. Een vergelijking tussen deze partijen volgt later op deze site.\n\nWil je eerst weten wat ransomware is en waarom 24/7-bewaking helpt? Lees dan [onze uitleg over ransomware](/artikel/wat-is-ransomware/).",
+  "actions": [
+    "Overweeg MDR als je geen eigen securityteam hebt dat dag en nacht meldingen kan opvolgen.",
+    "Vraag bij elke MDR-aanbieder hoe snel ze ingrijpen bij een aanval en wat ze zelf mogen doen (bijvoorbeeld een computer isoleren).",
+    "Vergelijk meerdere aanbieders op prijs, dekking (netwerk, cloud, e-mail, endpoints) en ondersteuning in het Nederlands.",
+    "Controleer of de dienst past bij je verplichtingen, bijvoorbeeld onder NIS2."
+  ],
+  "faq": [
+    {
+      "q": "Wat is MDR?",
+      "a": "MDR staat voor managed detection and response: een externe partij bewaakt je systemen dag en nacht, ontdekt aanvallen en grijpt in. Je huurt als het ware een compleet securityteam in."
+    },
+    {
+      "q": "Is Arctic Wolf actief in Nederland?",
+      "a": "Arctic Wolf levert zijn diensten wereldwijd, ook in Europa. Vraag bij interesse na waar je gegevens worden opgeslagen en of er ondersteuning in je eigen taal is."
+    },
+    {
+      "q": "Wie zijn de concurrenten van Arctic Wolf?",
+      "a": "Bekende andere aanbieders van MDR en endpointbeveiliging zijn onder meer CrowdStrike, SentinelOne, Sophos en Microsoft. Elk heeft een eigen aanpak en prijsmodel."
+    }
+  ],
+  "category": "markt",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "Arctic Wolf",
+    "managed detection and response",
+    "MDR",
+    "Aurora",
+    "Cylance",
+    "Sevco Security"
+  ],
+  "image_query": "security operations center",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Arctic Wolf",
+      "title": "Arctic Wolf Unveils the Aurora Superintelligence Platform",
+      "url": "https://arcticwolf.com/resources/press-releases/arctic-wolf-unveils-the-aurora-superintelligence-platform-to-redefine-security-for-the-age-of-ai/"
+    },
+    {
+      "name": "Arctic Wolf",
+      "title": "Arctic Wolf and BlackBerry Announce Closing of Acquisition for Cylance",
+      "url": "https://arcticwolf.com/resources/press-releases/arctic-wolf-and-blackberry-announce-closing-of-acquisition-for-cylance/"
+    },
+    {
+      "name": "Arctic Wolf",
+      "title": "Arctic Wolf Acquires Sevco Security",
+      "url": "https://arcticwolf.com/resources/press-releases/arctic-wolf-acquires-exposure-assessment-platform-visionary-sevco-security/"
+    },
+    {
+      "name": "SC Media",
+      "title": "Cylance offloaded to Arctic Wolf for $160M",
+      "url": "https://www.scworld.com/brief/cylance-offloaded-to-arctic-wolf-for-160m"
+    }
+  ],
+  "published": "2026-11-25T18:14:22+00:00",
+  "model": "redactie"
+}

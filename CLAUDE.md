@@ -60,6 +60,11 @@ Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, Computable; AG Connect en Data 
 5. `python -m tools.nieuwsronde opslaan /tmp/concepten.json` (controleert en voegt KEV toe), dan `python -m pipeline.run --build` en check "0 ongeldig verwijderd".
 6. Commit (`content/`) en push naar main → GitHub bouwt, publiceert en meldt via IndexNow aan.
 
+### Markt & bedrijven (sinds 25 nov 2026)
+- Rubriek `markt`. Vendorfeeds (Arctic Wolf, CrowdStrike, SentinelOne, Palo Alto, Check Point, ESET, Fortinet, Microsoft Security, Rapid7, HPE) + SecurityWeek M&A. Max. 1 marktbericht per ronde; alleen echt nieuws (overnames, investeringen, grote lanceringen, partnerships, ontslagen/leiderschap), geen reclame. Neutraal, ook als vendor adverteert.
+- Bedrijfsprofielen "<Vendor>: wie zijn ze en wat doen ze?" (type gids, categorie markt, slug `<vendor>-wie-zijn-ze-en-wat-doen-ze`). Gedaan: Arctic Wolf. Nog te doen (max. 1 per dag, in een ronde zonder marktnieuws): CrowdStrike, SentinelOne, Palo Alto Networks, Fortinet, Check Point, Sophos, ESET, HPE (Aruba), Microsoft Security, Rapid7. Alleen gecontroleerde feiten (WebSearch), bronnen = persberichten/vakmedia. Later: vergelijkingen (bijv. MDR-aanbieders).
+- Interviews met mensen bij vendoren: alleen echte interviews door de eigenaar; nooit verzinnen of citaten fabriceren.
+
 ## Pagina's & verdienmodel (24 nov 2026)
 - Eigenaar/hoofdredacteur: Roel de Vroed (config `redactie`; foto nog toevoegen als static/img/… en `redactie.foto`).
 - Eigenaar wil GEEN AI-vermelding per artikel en bronnen klein (één regel `.sources-line`). AI wordt alleen algemeen genoemd op /over/; hoofdredacteur is redactioneel verantwoordelijk (EU AI-verordening art. 50: dan geen label nodig mits menselijke controle).

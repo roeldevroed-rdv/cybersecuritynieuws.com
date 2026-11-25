@@ -44,7 +44,6 @@ sources:
   - { name: "SentinelOne", url: "https://www.sentinelone.com/feed/", weight: 0.7, snapshot: true }
   - { name: "Palo Alto Networks", url: "https://www.paloaltonetworks.com/blog/feed/", weight: 0.7, snapshot: true }
   - { name: "Check Point", url: "https://blog.checkpoint.com/feed/", weight: 0.7, snapshot: true }
-  - { name: "Sophos", url: "https://news.sophos.com/en-us/feed/", weight: 0.7, snapshot: true }
   - { name: "ESET", url: "https://www.welivesecurity.com/en/rss/feed/", weight: 0.7, snapshot: true }
   - { name: "Fortinet", url: "https://feeds.fortinet.com/fortinet/blog/business-and-technology", weight: 0.7, snapshot: true }
   - { name: "Microsoft Security", url: "https://www.microsoft.com/en-us/security/blog/feed/", weight: 0.7, snapshot: true }
