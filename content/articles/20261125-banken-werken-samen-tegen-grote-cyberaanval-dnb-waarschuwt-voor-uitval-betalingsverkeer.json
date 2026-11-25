@@ -1,0 +1,80 @@
+{
+  "id": "20261125-banken-werken-samen-tegen-grote-cyberaanval-dnb-waarschuwt-voor-uitval-betalingsverkeer",
+  "slug": "banken-werken-samen-tegen-grote-cyberaanval-dnb-waarschuwt-voor-uitval-betalingsverkeer",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Banken werken samen tegen grote cyberaanval, DNB waarschuwt voor uitval betalingsverkeer",
+  "tldr": "Nederlandse banken werken intensief samen om te voorkomen dat een grote cyberaanval het betalingsverkeer platlegt; ze kopen onder meer samen verdedigingssystemen in. De aanleiding is een waarschuwing van De Nederlandsche Bank, die zegt dat AI cyberaanvallen sneller en schadelijker maakt.",
+  "meta_description": "Banken werken samen om een grote cyberaanval op het betalingsverkeer te voorkomen. DNB waarschuwt dat AI cyberaanvallen sneller en schadelijker maakt.",
+  "body": "Nederlandse banken werken intensief samen om te voorkomen dat een grote cyberaanval het betalingsverkeer ernstig verstoort. Ze kopen onder meer gezamenlijk verdedigingssystemen in, zei topman Roland Boekhout van ASN Bank tegen [NU.nl](https://www.nu.nl/economie/6417763/banken-werken-intensief-samen-om-grote-cyberaanval-te-voorkomen.html).\n\nDe uitspraken volgen op een waarschuwing van De Nederlandsche Bank (DNB). In haar halfjaarlijkse rapport over financiële stabiliteit schrijft DNB dat de risico's voor financiële instellingen toenemen, vooral door de snelle opkomst van AI, [meldt de NOS](https://nos.nl/artikel/2640847-onrustige-beurzen-en-cyberaanvallen-dnb-ziet-risico-in-snelle-groei-ai). Volgens DNB maakt AI cyberaanvallen sneller, krachtiger en schadelijker.\n\n## Wat is het risico volgens DNB?\n\nDNB houdt er rekening mee dat een zware cyberaanval het betalingsverkeer dagenlang kan verstoren. Dan zouden pinnen, online betalen en overboekingen tijdelijk niet werken. De centrale bank pleit daarom voor meer oefeningen met scenario's waarin systemen uitvallen, [schrijft Tweakers](https://tweakers.net/nieuws/254894/dnb-vreest-cyberaanvallen-op-banken-en-pleit-voor-oefeningen-voor-systeemuitval.html). Banken willen zulke noodscenario's vaker samen met andere vitale sectoren testen, onder regie van de overheid.\n\n## Wat kun je zelf doen?\n\nVoor consumenten en ondernemers komt het advies neer op voorbereid zijn op een storing. Volgens [MAX Meldpunt](https://www.maxmeldpunt.nl/geld/dnb-betalingsverkeer-kan-uitvallen-door-cyberaanvallen-dus-houd-contant-geld-achter-de-hand/) is het advies om wat contant geld achter de hand te houden, zodat je bij een storing een paar dagen boodschappen kunt doen. Voor winkeliers en andere ondernemers is het verstandig om na te gaan hoe ze klanten kunnen laten betalen als pinnen niet werkt.\n\nOplichters maken bovendien graag misbruik van nieuws over cyberaanvallen en storingen. Banken vragen je nooit via een link of telefoontje om je geld 'veilig te stellen'. Lees [hoe je phishing herkent](/artikel/wat-is-phishing/).",
+  "actions": [
+    "Houd een kleine voorraad contant geld in huis voor als pinnen een paar dagen niet werkt.",
+    "Ondernemers: bedenk vooraf hoe je klanten kunt laten betalen bij een storing in het betalingsverkeer.",
+    "Wees alert op oplichters die inspelen op nieuws over cyberaanvallen op banken.",
+    "Je bank vraagt nooit via een link, sms of telefoontje om geld over te maken naar een 'veilige rekening'."
+  ],
+  "faq": [
+    {
+      "q": "Is er nu een cyberaanval op Nederlandse banken?",
+      "a": "Nee. DNB waarschuwt voor een mogelijk scenario en banken bereiden zich daar gezamenlijk op voor."
+    },
+    {
+      "q": "Waarom speelt AI een rol?",
+      "a": "Volgens DNB maakt AI cyberaanvallen sneller, krachtiger en schadelijker, waardoor de risico's voor financiële instellingen toenemen."
+    }
+  ],
+  "category": "overheid",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [
+      "Financieel"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "DNB",
+    "banken",
+    "cyberaanval",
+    "betalingsverkeer",
+    "ASN Bank",
+    "AI"
+  ],
+  "image_query": "bank payment card",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "NU.nl",
+      "title": "Banken werken intensief samen om grote cyberaanval te voorkomen",
+      "url": "https://www.nu.nl/economie/6417763/banken-werken-intensief-samen-om-grote-cyberaanval-te-voorkomen.html"
+    },
+    {
+      "name": "NOS",
+      "title": "Onrustige beurzen en cyberaanvallen: DNB ziet risico in snelle groei AI",
+      "url": "https://nos.nl/artikel/2640847-onrustige-beurzen-en-cyberaanvallen-dnb-ziet-risico-in-snelle-groei-ai"
+    },
+    {
+      "name": "Tweakers",
+      "title": "DNB vreest cyberaanvallen op banken en pleit voor oefeningen voor systeemuitval",
+      "url": "https://tweakers.net/nieuws/254894/dnb-vreest-cyberaanvallen-op-banken-en-pleit-voor-oefeningen-voor-systeemuitval.html"
+    },
+    {
+      "name": "MAX Meldpunt",
+      "title": "DNB: betalingsverkeer kan uitvallen door cyberaanvallen, dus houd contant geld achter de hand",
+      "url": "https://www.maxmeldpunt.nl/geld/dnb-betalingsverkeer-kan-uitvallen-door-cyberaanvallen-dus-houd-contant-geld-achter-de-hand/"
+    }
+  ],
+  "published": "2026-11-25T20:26:19+00:00",
+  "model": "redactie"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "20261125-belgische-politie-schakel-admin-gebruiker-uit-op-slimme-apparaten",
+  "slug": "belgische-politie-schakel-admin-gebruiker-uit-op-slimme-apparaten",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Belgische politie: schakel de admin-gebruiker uit op je slimme apparaten",
+  "tldr": "Na aanvallen op online bereikbare koelsystemen van supermarkten in onder meer België en Nederland roept de Belgische politie op om slimme apparaten beter te beveiligen. Het advies: verander standaardwachtwoorden, schakel de standaard admin-gebruiker uit en maak een account met een andere naam.",
+  "meta_description": "De Belgische politie roept op om slimme apparaten beter te beveiligen: verander standaardwachtwoorden en schakel de admin-gebruiker uit. Zo pak je dat aan.",
+  "body": "De Belgische politie roept mensen op om hun slimme apparaten beter te beveiligen. Het belangrijkste advies: verander standaardwachtwoorden, schakel de standaardgebruiker 'admin' uit en maak een account met een andere naam aan, [meldt Security.NL](https://www.security.nl/posting/963137/).\n\nDe oproep volgt op aanvallen op online bereikbare koelsystemen van supermarkten in België, Frankrijk, Nederland, Luxemburg, Ierland, Estland en Finland. Volgens de politie laten die aanvallen zien hoe belangrijk het is om apparaten die met internet verbonden zijn goed te beveiligen. Dat geldt niet alleen voor bedrijven: ook thuis staan steeds meer van zulke apparaten, zoals slimme horloges, beveiligingscamera's, thermostaten en verlichting.\n\n## Waarom is een standaard admin-account riskant?\n\nVeel apparaten worden geleverd met een vaste gebruikersnaam zoals 'admin' en een standaardwachtwoord dat voor alle exemplaren hetzelfde is of dat in de handleiding staat. Aanvallers scannen het internet automatisch op zulke apparaten en proberen die bekende combinaties uit. Is de gebruikersnaam niet standaard, dan moeten ze zowel de naam als het wachtwoord raden, wat het een stuk lastiger maakt.\n\n\"Ik raad altijd aan om de 'admin-gebruiker' uit te schakelen en een ander account met een verschillende naam te maken\", zegt commissaris Christophe Axen, hoofd van de Regionale Computer Crime Unit in Luik. Hij adviseert ook om nooit hetzelfde wachtwoord twee keer te gebruiken en tweestapsverificatie aan te zetten.\n\n## Waar let je op bij het kopen van een slim apparaat?\n\nDe politie raadt aan om je vóór de aankoop te verdiepen in de beveiliging. Sommige heel goedkope apparaten bieden minder beveiligingsinstellingen en krijgen minder of geen updates. Kies daarom liever een merk dat aangeeft hoe lang het updates levert.\n\nMet een [wachtwoordmanager](/artikel/wachtwoordmanager/) houd je eenvoudig voor elk apparaat een uniek wachtwoord bij. Lees ook [hoe je tweestapsverificatie instelt](/artikel/tweestapsverificatie/).",
+  "actions": [
+    "Verander het standaardwachtwoord van elk slim apparaat in een uniek, sterk wachtwoord.",
+    "Schakel de standaardgebruiker 'admin' uit als dat kan, en maak een account met een andere naam.",
+    "Zet tweestapsverificatie aan in de app of het account van het apparaat.",
+    "Installeer updates voor je apparaten en vervang apparaten die geen updates meer krijgen.",
+    "Zet apparaten die niet vanaf internet bereikbaar hoeven te zijn niet open via je router."
+  ],
+  "faq": [
+    {
+      "q": "Welke apparaten lopen risico?",
+      "a": "Alle apparaten die met internet verbonden zijn, zoals camera's, thermostaten, slimme verlichting, slimme horloges en routers. De Belgische politie noemde ze naar aanleiding van aanvallen op koelsystemen van supermarkten."
+    },
+    {
+      "q": "Kan ik de admin-gebruiker altijd uitschakelen?",
+      "a": "Niet bij elk apparaat. Kan het niet, verander dan in elk geval het standaardwachtwoord en zet tweestapsverificatie aan als dat mogelijk is."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "België",
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [
+      "Retail"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "slimme apparaten",
+    "IoT",
+    "admin",
+    "standaardwachtwoord",
+    "Belgische politie",
+    "koelsystemen"
+  ],
+  "image_query": "smart home devices",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Belgische politie adviseert uitschakelen admin-gebruiker op slimme apparaten",
+      "url": "https://www.security.nl/posting/963137/"
+    }
+  ],
+  "published": "2026-11-25T20:26:19+00:00",
+  "model": "redactie"
+}
