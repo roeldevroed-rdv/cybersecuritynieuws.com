@@ -509,3 +509,16 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 /* Oplichtingscheck */
 .nb-inline { margin: 28px 0 20px; background: linear-gradient(180deg, var(--accent-soft), var(--surface) 120px); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
 
+
+/* Menu: hoofdrubrieken + "Meer" (desktop); op mobiel alles in de scrollbalk */
+.nav__extra { display: none; }
+.nav__more { position: relative; }
+.nav__more summary { list-style: none; cursor: pointer; padding: 11px 10px; font-size: .875rem; font-weight: 500; color: var(--text-2); white-space: nowrap; border-bottom: 2px solid transparent; }
+.nav__more summary::-webkit-details-marker { display: none; }
+.nav__more summary::after { content: " ▾"; font-size: .75em; }
+.nav__more[open] summary { color: var(--text); }
+.nav__menu { position: absolute; right: 0; top: 100%; z-index: 50; min-width: 230px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 6px; display: grid; }
+.nav__menu a { border-bottom: 0 !important; padding: 9px 12px; border-radius: 6px; }
+.nav__menu a:hover { background: var(--surface-2); }
+@media (min-width: 761px) { .nav__inner { overflow: visible; } }
+@media (max-width: 760px) { .nav__more { display: none; } .nav__extra { display: inline-block; } }

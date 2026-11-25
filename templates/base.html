@@ -46,11 +46,22 @@
     </div>
   </div>
   <nav class="nav" aria-label="Thema's">
+    {% set hoofd = [('kwetsbaarheden','Kwetsbaarheden'), ('ransomware','Ransomware'), ('datalekken','Datalekken'), ('phishing','Phishing & fraude'), ('markt','Markt & bedrijven')] %}
+    {% set hoofd_slugs = hoofd|map('first')|list %}
     <div class="wrap nav__inner">
       <a href="/" {% if path == '/' %}aria-current="page"{% endif %}>Laatste nieuws</a>
-      {% for slug, name in categories.items() %}<a href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
+      {% for slug, name in hoofd %}<a href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
       <a href="/gidsen/" {% if path.startswith('/gidsen/') %}aria-current="page"{% endif %}>Gidsen</a>
-      <a href="/weekoverzicht/" {% if path == '/weekoverzicht/' %}aria-current="page"{% endif %}>Weekoverzicht</a>
+      {% for slug, name in categories.items() if slug not in hoofd_slugs %}<a class="nav__extra" href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
+      <a class="nav__extra" href="/weekoverzicht/">Weekoverzicht</a>
+      <details class="nav__more">
+        <summary>Meer</summary>
+        <div class="nav__menu">
+          {% for slug, name in categories.items() if slug not in hoofd_slugs %}<a href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
+          <a href="/weekoverzicht/" {% if path == '/weekoverzicht/' %}aria-current="page"{% endif %}>Weekoverzicht</a>
+          <a href="/producten/">Per product</a>
+        </div>
+      </details>
     </div>
   </nav>
 </header>
