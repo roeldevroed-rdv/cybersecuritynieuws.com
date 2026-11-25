@@ -65,15 +65,15 @@
 
 /* Kleuraccent per thema */
 .cat-kwetsbaarheden { --cat: #0a7ee8; }
-.cat-ransomware     { --cat: #d6224f; }
-.cat-datalekken     { --cat: #8b5cf6; }
-.cat-cyberaanvallen { --cat: #1d4ed8; }
-.cat-malware        { --cat: #16a34a; }
-.cat-phishing       { --cat: #c98a00; }
-.cat-privacy        { --cat: #0891b2; }
-.cat-overheid       { --cat: #64748b; }
-.cat-ai             { --cat: #db2777; }
-.cat-uitgelegd      { --cat: #4f46e5; }
+.cat-ransomware     { --cat: #0a7ee8; }
+.cat-datalekken     { --cat: #0a7ee8; }
+.cat-cyberaanvallen { --cat: #0a7ee8; }
+.cat-malware        { --cat: #0a7ee8; }
+.cat-phishing       { --cat: #0a7ee8; }
+.cat-privacy        { --cat: #0a7ee8; }
+.cat-overheid       { --cat: #0a7ee8; }
+.cat-ai             { --cat: #0a7ee8; }
+.cat-uitgelegd      { --cat: #0a7ee8; }
 
 /* Basis */
 *, *::before, *::after { box-sizing: border-box; }

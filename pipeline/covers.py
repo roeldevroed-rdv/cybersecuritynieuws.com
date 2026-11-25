@@ -19,18 +19,7 @@ MUTED = (150, 156, 166)
 ACCENT = (10, 126, 232)
 DANGER = (220, 38, 38)
 
-CAT_COLORS = {
-    "kwetsbaarheden": (10, 126, 232),
-    "ransomware": (214, 34, 79),
-    "datalekken": (139, 92, 246),
-    "cyberaanvallen": (29, 78, 216),
-    "malware": (22, 163, 74),
-    "phishing": (201, 138, 0),
-    "privacy": (8, 145, 178),
-    "overheid": (100, 116, 139),
-    "ai": (219, 39, 119),
-    "uitgelegd": (79, 70, 229),
-}
+CAT_COLORS: dict = {}  # alle rubrieken in merkblauw (ACCENT); rood alleen voor waarschuwingen
 
 
 def _font(name: str, size: int) -> ImageFont.FreeTypeFont:
