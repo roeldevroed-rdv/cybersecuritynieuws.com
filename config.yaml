@@ -122,7 +122,7 @@ evergreen:
 redactie:
   hoofdredacteur: "Roel de Vroed"   # leeg = "Redactie CyberSecurityNieuws"
   rol: "Oprichter en hoofdredacteur"
-  foto: ""                      # bijv. /static/img/roel-de-vroed.jpg (vierkant, min. 400x400)
+  foto: "/static/img/roel-de-vroed.jpg"                      # bijv. /static/img/roel-de-vroed.jpg (vierkant, min. 400x400)
   bio: ""                       # korte achtergrond van de hoofdredacteur
   linkedin: ""                  # URL van je LinkedIn-profiel (optioneel)
   email: "redactie@cybersecuritynieuws.com"
