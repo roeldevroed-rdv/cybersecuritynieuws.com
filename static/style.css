@@ -517,3 +517,10 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .scam-result__list li { padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; display: flex; flex-direction: column; gap: 2px; }
 .scam-result__list span { color: var(--text-2); font-size: .92rem; }
 .nb-inline { margin: 28px 0 20px; background: linear-gradient(180deg, var(--accent-soft), var(--surface) 120px); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
+
+.nav a.nav__check { color: var(--accent-ink); font-weight: 600; }
+.panel--check { background: linear-gradient(180deg, var(--accent-soft), var(--surface) 120px); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
+.panel--check .btn { margin-top: 4px; }
+.check-inline { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 20px 0; }
+.check-inline strong { flex-basis: 100%; }
+.check-inline .small { flex: 1 1 260px; }

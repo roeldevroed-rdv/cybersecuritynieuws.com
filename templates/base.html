@@ -48,6 +48,7 @@
   <nav class="nav" aria-label="Thema's">
     <div class="wrap nav__inner">
       <a href="/" {% if path == '/' %}aria-current="page"{% endif %}>Laatste nieuws</a>
+      <a class="nav__check" href="/is-dit-oplichting/" {% if path == '/is-dit-oplichting/' %}aria-current="page"{% endif %}>Is dit oplichting?</a>
       {% for slug, name in categories.items() %}<a href="/thema/{{ slug }}/" {% if path.startswith('/thema/' ~ slug) %}aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}
       <a href="/gidsen/" {% if path.startswith('/gidsen/') %}aria-current="page"{% endif %}>Gidsen</a>
       <a href="/weekoverzicht/" {% if path == '/weekoverzicht/' %}aria-current="page"{% endif %}>Weekoverzicht</a>
