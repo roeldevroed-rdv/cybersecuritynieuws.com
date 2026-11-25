@@ -114,7 +114,10 @@ def make_default_og(out: Path) -> None:
     draw_logo(img, 72, 120, 3.3)
     d.text((84, 340), "Het belangrijkste cybersecuritynieuws in helder Nederlands,", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
     d.text((84, 384), "met wat je moet doen.", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
-    img.convert("RGB").save(out, "PNG", optimize=True)
+    if out.suffix == ".webp":
+        img.convert("RGB").save(out, "WEBP", quality=82, method=6)
+    else:
+        img.convert("RGB").save(out, "PNG", optimize=True)
 
 
 def make_cover(a: dict, categories: dict, out: Path, site_name: str = "CyberSecurityNieuws", with_title: bool = True) -> None:
@@ -177,4 +180,7 @@ def make_cover(a: dict, categories: dict, out: Path, site_name: str = "CyberSecu
     draw_logo(img, x, H - 74)
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    img.convert("RGB").save(out, "PNG", optimize=True)
+    if out.suffix == ".webp":
+        img.convert("RGB").save(out, "WEBP", quality=82, method=6)
+    else:
+        img.convert("RGB").save(out, "PNG", optimize=True)

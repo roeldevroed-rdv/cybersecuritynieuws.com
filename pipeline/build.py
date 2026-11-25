@@ -196,9 +196,9 @@ def build(config: dict) -> None:
     from .covers import make_cover
     for a in arts:
         make_cover(a, config["categories"], DIST / "og" / f"{a['slug']}.png", config["site"]["name"])
-        make_cover(a, config["categories"], DIST / "beeld" / f"{a['slug']}.png", config["site"]["name"], with_title=False)
+        make_cover(a, config["categories"], DIST / "beeld" / f"{a['slug']}.webp", config["site"]["name"], with_title=False)
         a["cover"] = f"/og/{a['slug']}.png?v={ASSET_V}"           # met titel: voor delen op sociale media
-        a["art"] = f"/beeld/{a['slug']}.png?v={ASSET_V}"          # zonder titel: voor op de site
+        a["art"] = f"/beeld/{a['slug']}.webp?v={ASSET_V}"          # zonder titel: voor op de site
         a["thumb"] = a["image"]["url"] if a.get("image") else a["art"]
     red = config.get("redactie") or {}
     site.env.globals.update(

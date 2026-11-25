@@ -3,7 +3,8 @@
 
 {% block title %}{{ title }}{% if page_num > 1 %} – pagina {{ page_num }}{% endif %} – {{ site.name }}{% endblock %}
 {% block description %}{{ intro or (title ~ ': het laatste cybersecuritynieuws in het Nederlands, met per bericht concreet advies.') }}{% endblock %}
-{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ title }} – {{ site.name }}">{% if page_num > 1 %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
+{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ title }} – {{ site.name }}">{% endblock %}
+{% block robots %}{% if page_num > 1 %}<meta name="robots" content="noindex,follow">{% else %}{{ super() }}{% endif %}{% endblock %}
 
 {% block main %}
 <div class="wrap">

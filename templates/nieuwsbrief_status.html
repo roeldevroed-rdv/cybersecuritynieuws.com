@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block title %}{{ kop }} – {{ site.name }}{% endblock %}
 {% block description %}{{ kop }}{% endblock %}
-{% block meta %}<meta name="robots" content="noindex"><meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
+{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+{% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
 {% block main %}
 <div class="wrap wrap--narrow">
   <header class="page-head">

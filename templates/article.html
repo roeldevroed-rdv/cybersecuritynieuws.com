@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block robots %}{% if a.example %}<meta name="robots" content="noindex">{% else %}{{ super() }}{% endif %}{% endblock %}
 {% from "_macros.html" import card, badges %}
 
 {% block title %}{{ a.title }} – {{ site.name }}{% endblock %}
@@ -15,7 +16,7 @@
 {% for l in a.all_labels %}<meta property="article:tag" content="{{ l }}">{% endfor %}
 {% if a.keywords %}<meta name="keywords" content="{{ a.keywords|join(', ') }}">{% endif %}
 <meta name="twitter:card" content="summary_large_image">
-{% if a.example %}<meta name="robots" content="noindex">{% endif %}
+
 <script type="application/ld+json">{{ {
   "@context": "https://schema.org",
   "@type": "NewsArticle" if a.type != "gids" else "Article",
@@ -68,7 +69,7 @@
     <header class="article__head">
       <h1 class="article__title">{{ a.title }}</h1>
       <div class="article__meta small muted">
-        <span class="byline">{% if redactie.foto %}<img src="{{ redactie.foto }}" alt="" width="24" height="24">{% endif %}Door <a href="/redactie/">{{ editor }}</a></span>
+        <span class="byline">{% if redactie.foto %}<img src="{{ redactie.foto }}" alt="{{ editor }}" width="24" height="24">{% endif %}Door <a href="/redactie/">{{ editor }}</a></span>
         <span aria-hidden="true">·</span> <time datetime="{{ a.published }}">{{ a.dt|nl_date(true) }}</time>
         {% if a.updated %}<span aria-hidden="true">·</span> <span class="updated">Bijgewerkt {{ a.updated_dt|nl_date(true) }}</span>{% endif %}
         <span aria-hidden="true">·</span> {{ a.reading_min }} min lezen
@@ -83,7 +84,7 @@
       <img src="{{ a.image.url }}" alt="{{ a.image.alt }}" width="1200" height="675" loading="eager" decoding="async">
       <figcaption class="small muted">Foto: <a href="{{ a.image.credit_url }}" rel="noopener nofollow" target="_blank">{{ a.image.credit }}</a> via <a href="{{ a.image.page_url }}" rel="noopener nofollow" target="_blank">{{ a.image.provider }}</a></figcaption>
       {% else %}
-      <img src="{{ a.art }}" alt="" width="1200" height="630" loading="eager" decoding="async">
+      <img src="{{ a.art }}" alt="{{ a.title }}" width="1200" height="630" loading="eager" decoding="async">
       {% endif %}
     </figure>
     {% if a.update_note %}<p class="notice notice--update"><strong>Update {{ a.updated_dt|nl_date(true) }}:</strong> {{ a.update_note }}</p>{% endif %}

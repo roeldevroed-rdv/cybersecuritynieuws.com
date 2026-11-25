@@ -10,7 +10,7 @@
 {% macro card(a, variant='') -%}
 <article class="card {{ variant }} cat-{{ a.category }}">
   <a class="card__link" href="{{ a.url }}">
-    {% if variant != 'card--compact' %}<img class="card__img" src="{{ a.thumb }}" alt="" width="600" height="315" loading="lazy" decoding="async">{% endif %}
+    {% if variant != 'card--compact' %}<img class="card__img" src="{{ a.thumb }}" alt="{{ a.title }}" width="600" height="315" loading="lazy" decoding="async">{% endif %}
     <div class="card__meta">
       <span class="card__cat">{% if a.type == 'partner' %}Gesponsord{% else %}{{ categories[a.category] }}{% endif %}</span>
       <time data-ago datetime="{{ a.published }}">{{ a.dt|ago }}</time>
