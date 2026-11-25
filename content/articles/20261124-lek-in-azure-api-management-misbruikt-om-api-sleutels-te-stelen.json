@@ -28,7 +28,7 @@
       "a": "Voor zover bekend is er geen CVE-nummer toegekend, omdat het om een clouddienst gaat die Microsoft centraal heeft aangepast."
     }
   ],
-  "category": "cyberaanvallen",
+  "category": "aanvallen",
   "labels": {
     "regio": [
       "Europa",

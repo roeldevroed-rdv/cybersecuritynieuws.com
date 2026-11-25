@@ -260,6 +260,15 @@ def build(config: dict) -> None:
                       ("/nieuwsbrief/", "nieuwsbrief.html"), ("/privacy/", "privacy.html"), ("/cookies/", "cookies.html"),
                       ("/colofon/", "colofon.html")]:
         site.page(path, tpl, stats={"artikelen": len(arts), "gidsen": len(guides)})
+    # Doorverwijzingen voor samengevoegde rubrieken (oude links blijven werken)
+    for old, new in (config.get("category_redirects") or {}).items():
+        target = "/gidsen/" if new == "gidsen" else f"/thema/{new}/"
+        out = DIST / "thema" / old / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(f'<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>Doorverwijzing</title>'
+                       f'<link rel="canonical" href="{config["site"]["url"]}{target}"><meta name="robots" content="noindex">'
+                       f'<meta http-equiv="refresh" content="0; url={target}"></head>'
+                       f'<body><p>Deze rubriek is verhuisd: <a href="{target}">ga verder</a>.</p></body></html>', encoding="utf-8")
     # Bevestigingspagina's nieuwsbrief (Brevo dubbele opt-in); niet in sitemap
     site.page("/nieuwsbrief/bijna-klaar/", "nieuwsbrief_status.html", stap="bijna", kop="Bijna klaar: bevestig je aanmelding",
               intro="We hebben je een mail gestuurd. Klik op de link daarin om je aanmelding te bevestigen.")

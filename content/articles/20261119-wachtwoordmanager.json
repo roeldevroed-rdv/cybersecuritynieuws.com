@@ -33,7 +33,7 @@
       "a": "Een passkey vervangt het wachtwoord door een cryptografische sleutel op je apparaat, die je ontgrendelt met je vingerafdruk, gezicht of pincode. Passkeys kunnen niet worden geraden of via phishing worden gestolen."
     }
   ],
-  "category": "uitgelegd",
+  "category": "phishing",
   "labels": {
     "regio": [],
     "doelgroep": [

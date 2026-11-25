@@ -58,14 +58,13 @@ categories:
   kwetsbaarheden: "Kwetsbaarheden & patches"
   ransomware: "Ransomware"
   datalekken: "Datalekken"
-  cyberaanvallen: "Cyberaanvallen"
-  malware: "Malware & hackersgroepen"
+  aanvallen: "Aanvallen & malware"
   phishing: "Phishing & fraude"
-  privacy: "Privacy & wetgeving"
-  overheid: "Overheid & geopolitiek"
+  overheid: "Overheid & wetgeving"
   ai: "AI & security"
   markt: "Markt & bedrijven"
-  uitgelegd: "Uitgelegd"
+# Oude rubrieken (samengevoegd 25 nov 2026) -> nieuwe; /thema/<oud>/ wordt doorgestuurd.
+category_redirects: { cyberaanvallen: aanvallen, malware: aanvallen, privacy: overheid, uitgelegd: gidsen }
 
 # Labels (meerdere per artikel). De AI kiest alleen uit deze lijsten.
 labels:
@@ -111,35 +110,35 @@ evergreen:
   per_day: 1
   topics:
     - { id: wat-is-phishing,           category: phishing,       keyword: "wat is phishing",                    title: "Wat is phishing en hoe herken je het?" }
-    - { id: tweestapsverificatie,      category: uitgelegd,      keyword: "tweestapsverificatie instellen",     title: "Tweestapsverificatie: wat is het en hoe zet je het aan?" }
+    - { id: tweestapsverificatie,      category: phishing,      keyword: "tweestapsverificatie instellen",     title: "Tweestapsverificatie: wat is het en hoe zet je het aan?" }
     - { id: wat-is-ransomware,         category: ransomware,     keyword: "wat is ransomware",                  title: "Wat is ransomware en hoe bescherm je je ertegen?" }
-    - { id: wachtwoordmanager,         category: uitgelegd,      keyword: "wachtwoordmanager",                  title: "Waarom je een wachtwoordmanager wilt (en hoe je kiest)" }
-    - { id: wat-is-nis2,               category: privacy,        keyword: "NIS2 uitleg",                        title: "NIS2 uitgelegd: wat betekent het voor jouw organisatie?" }
+    - { id: wachtwoordmanager,         category: phishing,      keyword: "wachtwoordmanager",                  title: "Waarom je een wachtwoordmanager wilt (en hoe je kiest)" }
+    - { id: wat-is-nis2,               category: overheid,        keyword: "NIS2 uitleg",                        title: "NIS2 uitgelegd: wat betekent het voor jouw organisatie?" }
     - { id: datalek-wat-nu,            category: datalekken,     keyword: "mijn gegevens gelekt wat nu",        title: "Je gegevens zijn gelekt: wat moet je nu doen?" }
-    - { id: passkeys,                  category: uitgelegd,      keyword: "wat zijn passkeys",                  title: "Passkeys: de opvolger van het wachtwoord uitgelegd" }
+    - { id: passkeys,                  category: phishing,      keyword: "wat zijn passkeys",                  title: "Passkeys: de opvolger van het wachtwoord uitgelegd" }
     - { id: wat-is-een-cve,            category: kwetsbaarheden, keyword: "wat is een CVE",                     title: "Wat is een CVE en hoe lees je een beveiligingsadvies?" }
     - { id: zero-day,                  category: kwetsbaarheden, keyword: "wat is een zero-day",                title: "Wat is een zero-day-kwetsbaarheid?" }
     - { id: whatsapp-fraude,           category: phishing,       keyword: "whatsapp fraude vriend in nood",     title: "WhatsApp-fraude: zo herken je 'vriend-in-nood'-oplichting" }
     - { id: ceo-fraude,                category: phishing,       keyword: "CEO-fraude",                         title: "CEO-fraude: hoe criminelen zich voordoen als je baas" }
     - { id: back-up-strategie,         category: ransomware,     keyword: "back-up 3-2-1 regel",                title: "De 3-2-1-back-upregel: zo raak je nooit meer alles kwijt" }
-    - { id: router-beveiligen,         category: uitgelegd,      keyword: "router beveiligen",                  title: "Zo beveilig je je wifi-router thuis in zes stappen" }
-    - { id: wat-is-malware,            category: malware,        keyword: "wat is malware",                     title: "Malware uitgelegd: virussen, trojans, infostealers en meer" }
-    - { id: infostealer,               category: malware,        keyword: "infostealer",                        title: "Infostealers: de onzichtbare dief van je wachtwoorden" }
-    - { id: ddos-aanval,               category: cyberaanvallen, keyword: "wat is een DDoS-aanval",             title: "Wat is een DDoS-aanval en wat kun je ertegen doen?" }
-    - { id: mkb-cybersecurity-basis,   category: uitgelegd,      keyword: "cybersecurity mkb",                  title: "Cybersecurity voor het mkb: de tien basismaatregelen" }
-    - { id: avg-datalek-melden,        category: privacy,        keyword: "datalek melden AP",                  title: "Een datalek melden bij de Autoriteit Persoonsgegevens: zo werkt het" }
+    - { id: router-beveiligen,         category: phishing,      keyword: "router beveiligen",                  title: "Zo beveilig je je wifi-router thuis in zes stappen" }
+    - { id: wat-is-malware,            category: aanvallen,        keyword: "wat is malware",                     title: "Malware uitgelegd: virussen, trojans, infostealers en meer" }
+    - { id: infostealer,               category: aanvallen,        keyword: "infostealer",                        title: "Infostealers: de onzichtbare dief van je wachtwoorden" }
+    - { id: ddos-aanval,               category: aanvallen, keyword: "wat is een DDoS-aanval",             title: "Wat is een DDoS-aanval en wat kun je ertegen doen?" }
+    - { id: mkb-cybersecurity-basis,   category: phishing,      keyword: "cybersecurity mkb",                  title: "Cybersecurity voor het mkb: de tien basismaatregelen" }
+    - { id: avg-datalek-melden,        category: overheid,        keyword: "datalek melden AP",                  title: "Een datalek melden bij de Autoriteit Persoonsgegevens: zo werkt het" }
     - { id: software-updates,          category: kwetsbaarheden, keyword: "waarom updates installeren",         title: "Waarom updates installeren zo belangrijk is (en hoe je het automatiseert)" }
     - { id: smishing-sms-fraude,       category: phishing,       keyword: "sms phishing smishing",              title: "Smishing: oplichting via sms herkennen en melden" }
     - { id: qr-code-phishing,          category: phishing,       keyword: "qr code phishing quishing",          title: "Quishing: phishing via QR-codes uitgelegd" }
     - { id: deepfake-fraude,           category: ai,             keyword: "deepfake fraude",                    title: "Deepfake-fraude: nepstemmen en -video's herkennen" }
     - { id: ai-veilig-gebruiken,       category: ai,             keyword: "ChatGPT veilig gebruiken op werk",   title: "AI-chatbots veilig gebruiken op het werk" }
-    - { id: vpn-uitgelegd,             category: uitgelegd,      keyword: "wat doet een VPN",                   title: "Wat doet een VPN wel en niet voor je veiligheid?" }
-    - { id: openbaar-wifi,             category: uitgelegd,      keyword: "openbare wifi veilig",               title: "Is openbare wifi veilig? Zo gebruik je het verstandig" }
-    - { id: telefoon-beveiligen,       category: uitgelegd,      keyword: "telefoon beveiligen",                title: "Je smartphone beveiligen: de belangrijkste instellingen" }
-    - { id: account-gehackt,           category: uitgelegd,      keyword: "account gehackt wat nu",             title: "Account gehackt? Stappenplan om het terug te krijgen" }
-    - { id: security-awareness,        category: uitgelegd,      keyword: "security awareness medewerkers",     title: "Security awareness: zo maak je medewerkers weerbaar" }
-    - { id: incident-response-plan,    category: cyberaanvallen, keyword: "incident response plan",             title: "Een incidentresponsplan maken: wat doe je als het misgaat?" }
-    - { id: kinderen-online-veilig,    category: uitgelegd,      keyword: "kinderen veilig online",             title: "Kinderen veilig online: praktische tips voor ouders" }
+    - { id: vpn-uitgelegd,             category: phishing,      keyword: "wat doet een VPN",                   title: "Wat doet een VPN wel en niet voor je veiligheid?" }
+    - { id: openbaar-wifi,             category: phishing,      keyword: "openbare wifi veilig",               title: "Is openbare wifi veilig? Zo gebruik je het verstandig" }
+    - { id: telefoon-beveiligen,       category: phishing,      keyword: "telefoon beveiligen",                title: "Je smartphone beveiligen: de belangrijkste instellingen" }
+    - { id: account-gehackt,           category: phishing,      keyword: "account gehackt wat nu",             title: "Account gehackt? Stappenplan om het terug te krijgen" }
+    - { id: security-awareness,        category: phishing,      keyword: "security awareness medewerkers",     title: "Security awareness: zo maak je medewerkers weerbaar" }
+    - { id: incident-response-plan,    category: aanvallen, keyword: "incident response plan",             title: "Een incidentresponsplan maken: wat doe je als het misgaat?" }
+    - { id: kinderen-online-veilig,    category: phishing,      keyword: "kinderen veilig online",             title: "Kinderen veilig online: praktische tips voor ouders" }
 
 # Redactie en contact (verschijnt op /redactie/, /contact/, /colofon/ en bij elk artikel)
 redactie:
