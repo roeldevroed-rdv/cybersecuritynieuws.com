@@ -9,10 +9,11 @@
   <link rel="canonical" href="{{ site.url }}{{ path if path != '/404.html' else '/' }}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:locale" content="nl_NL">
+  <meta property="og:url" content="{{ site.url }}{{ path if path != '/404.html' else '/' }}">
   {% if zoekmachines.google_verificatie %}<meta name="google-site-verification" content="{{ zoekmachines.google_verificatie }}">{% endif %}
   {% if zoekmachines.bing_verificatie %}<meta name="msvalidate.01" content="{{ zoekmachines.bing_verificatie }}">{% endif %}
   {% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
-  {% block ogimage %}<meta property="og:image" content="{{ site.url }}/static/og-default.png"><meta name="twitter:card" content="summary_large_image">{% endblock %}
+  {% block ogimage %}<meta property="og:image" content="{{ site.url }}/static/og-default.png?v={{ asset_v }}"><meta property="og:image:secure_url" content="{{ site.url }}/static/og-default.png?v={{ asset_v }}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{{ site.name }}"><meta name="twitter:card" content="summary_large_image">{% endblock %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml">
   <link rel="icon" href="/static/img/icon-32.png?v={{ asset_v }}" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/static/img/icon-180.png?v={{ asset_v }}"><meta name="theme-color" content="#0a8dff">
   <link rel="preload" href="/static/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
