@@ -13,7 +13,7 @@
   {% block meta %}<meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
   {% block ogimage %}<meta property="og:image" content="{{ site.url }}/static/og-default.png"><meta name="twitter:card" content="summary_large_image">{% endblock %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml">
-  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/static/logo-512.png"><meta name="theme-color" content="#0a8dff">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/style.css">
@@ -36,8 +36,8 @@
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="logo" href="/" aria-label="{{ site.name }} – home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7L16 2Z" fill="currentColor"/><path d="m11 16 3.5 3.5L21.5 12" stroke="var(--bg)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>CyberSecurity<b>Nieuws</b></span>
+      <img src="/static/logo.svg" alt="" width="38" height="38">
+      <span class="logo__text"><b>Cybersecurity</b><span>nieuws<em>.com</em></span></span>
     </a>
     <div class="masthead__tools">
       <a class="iconbtn" href="/zoeken/" aria-label="Zoeken"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
@@ -60,7 +60,7 @@
 <footer class="footer">
   <div class="wrap footer__grid">
     <div>
-      <a class="logo logo--footer" href="/"><span>CyberSecurity<b>Nieuws</b></span></a>
+      <a class="logo logo--footer" href="/"><img src="/static/logo.svg" alt="" width="38" height="38"><span class="logo__text"><b>Cybersecurity</b><span>nieuws<em>.com</em></span></span></a>
       <p>{{ site.description }}</p>
       <a class="btn btn--small" href="/nieuwsbrief/">Ontvang de nieuwsbrief</a>
     </div>

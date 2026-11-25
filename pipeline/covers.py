@@ -80,6 +80,41 @@ def _motif(img: Image.Image, color: tuple, seed: str, x0: int = 760, span: int =
     img.alpha_composite(layer)
 
 
+BLUE = (10, 141, 255)
+
+
+def draw_logo(img: Image.Image, x: int, y: int, scale: float = 1.0) -> None:
+    """Merklogo: blauw schild + 'Cybersecurity' / 'nieuws.com' (twee regels, wit op donker)."""
+    size = int(52 * scale)
+    shield = Image.open(ROOT / "assets" / "logo-shield.png").convert("RGBA").resize((size, size), Image.LANCZOS)
+    img.alpha_composite(shield, (x, y))
+    d = ImageDraw.Draw(img)
+    tx = x + size + int(10 * scale)
+    bold = _font("Carlito-Bold.ttf", int(26 * scale))
+    reg = _font("Carlito-Regular.ttf", int(25 * scale))
+    d.text((tx, y + int(1 * scale)), "Cybersecurity", font=bold, fill=INK)
+    d.text((tx, y + int(26 * scale)), "nieuws", font=reg, fill=INK)
+    d.text((tx + d.textlength("nieuws", font=reg), y + int(26 * scale)), ".com", font=reg, fill=BLUE)
+
+
+def make_default_og(out: Path) -> None:
+    """Standaard deelafbeelding (static/og-default.png)."""
+    img = Image.new("RGBA", (W, H), BG + (255,))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    for i in range(12):
+        r = 520 - i * 36
+        gd.ellipse([980 - r, 300 - r, 980 + r, 300 + r], fill=BLUE + (7,))
+    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(60)))
+    _motif(img, BLUE, "cybersecuritynieuws", 700, 480)
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, 12, H], fill=BLUE)
+    draw_logo(img, 80, 150, 2.4)
+    d.text((84, 340), "Het belangrijkste cybersecuritynieuws in helder Nederlands,", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
+    d.text((84, 384), "met wat je moet doen.", font=_font("Carlito-Regular.ttf", 34), fill=MUTED)
+    img.convert("RGB").save(out, "PNG", optimize=True)
+
+
 def make_cover(a: dict, categories: dict, out: Path, site_name: str = "CyberSecurityNieuws", with_title: bool = True) -> None:
     """with_title=True: deelafbeelding (og:image). False: beeldversie voor op de site (titel staat er al naast)."""
     color = CAT_COLORS.get(a["category"], ACCENT)
@@ -137,15 +172,7 @@ def make_cover(a: dict, categories: dict, out: Path, site_name: str = "CyberSecu
     if a.get("cves"):
         d.text((bx + (4 if badges else 0), by + 6), a["cves"][0], font=_font("JetBrainsMono-Bold.ttf", 22), fill=(255, 143, 120))
 
-    # logo onderaan
-    ly = H - 62
-    sx = x
-    shield = [(sx + 14, ly - 4), (sx, ly + 2), (sx, ly + 14), (sx + 14, ly + 30), (sx + 28, ly + 14), (sx + 28, ly + 2)]
-    d.polygon(shield, fill=ACCENT)
-    d.line([(sx + 8, ly + 13), (sx + 13, ly + 18), (sx + 21, ly + 8)], fill=BG, width=4)
-    name_font = _font("Carlito-Bold.ttf", 28)
-    d.text((sx + 42, ly - 2), "CyberSecurity", font=name_font, fill=INK)
-    d.text((sx + 42 + d.textlength("CyberSecurity", font=name_font), ly - 2), "Nieuws", font=name_font, fill=ACCENT)
+    draw_logo(img, x, H - 74)
 
     out.parent.mkdir(parents=True, exist_ok=True)
     img.convert("RGB").save(out, "PNG", optimize=True)

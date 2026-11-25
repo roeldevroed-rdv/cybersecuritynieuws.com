@@ -9,7 +9,7 @@
      "publisher": {"@id": site.url ~ "/#org"},
      "potentialAction": {"@type": "SearchAction", "target": site.url ~ "/zoeken/?q={search_term_string}", "query-input": "required name=search_term_string"}},
     {"@type": "NewsMediaOrganization", "@id": site.url ~ "/#org", "name": site.name, "url": site.url ~ "/",
-     "logo": {"@type": "ImageObject", "url": site.url ~ "/static/og-default.png", "width": 1200, "height": 630},
+     "logo": {"@type": "ImageObject", "url": site.url ~ "/static/logo-512.png", "width": 512, "height": 512},
      "email": redactie.email, "publishingPrinciples": site.url ~ "/over/", "correctionsPolicy": site.url ~ "/redactie/#correcties",
      "actionableFeedbackPolicy": site.url ~ "/contact/", "masthead": site.url ~ "/colofon/",
      "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "url": site.url ~ "/redactie/"} if redactie.hoofdredacteur else none)}
