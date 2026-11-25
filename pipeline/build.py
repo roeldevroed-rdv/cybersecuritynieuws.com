@@ -232,10 +232,11 @@ def build(config: dict) -> None:
             by_label[l].append(a)
     site.env.globals["cat_counts"] = {k: len(v) for k, v in by_cat.items()}
 
-    # Voorpagina: hoofdverhaal = meest urgente van de laatste 48 uur
-    recent = [a for a in arts if a["dt"] > datetime.now(timezone.utc) - timedelta(hours=48)] or arts[:1]
-    rank = {"kritiek": 4, "hoog": 3, "middel": 2, "laag": 1, "info": 0}
-    hero = max(recent, key=lambda a: (a["exploited"], rank[a["severity"]], a["dt"])) if recent else None
+    # Voorpagina: hoofdverhaal = nieuwste nieuwsbericht; alleen een actief misbruikt lek
+    # van de laatste 3 uur gaat voor (urgent nieuws blijft dan kort bovenaan staan).
+    nieuws = [a for a in arts if a.get("type", "nieuws") == "nieuws"] or arts
+    urgent = [a for a in nieuws if a["exploited"] and a["dt"] > datetime.now(timezone.utc) - timedelta(hours=3)]
+    hero = max(urgent or nieuws, key=lambda a: a["dt"]) if nieuws else None
     rest = [a for a in arts if a is not hero]
     nl = [a for a in arts if {"Nederland", "België"} & set(a["labels"].get("regio", []))]
     site.page("/", "home.html", hero=hero, items=rest[:12], nl_items=nl[:5], exploited=exploited[:5],
