@@ -260,6 +260,12 @@ def build(config: dict) -> None:
                       ("/nieuwsbrief/", "nieuwsbrief.html"), ("/privacy/", "privacy.html"), ("/cookies/", "cookies.html"),
                       ("/colofon/", "colofon.html"), ("/is-dit-oplichting/", "oplichting.html")]:
         site.page(path, tpl, stats={"artikelen": len(arts), "gidsen": len(guides)})
+    # Bevestigingspagina's nieuwsbrief (Brevo dubbele opt-in); niet in sitemap
+    site.page("/nieuwsbrief/bijna-klaar/", "nieuwsbrief_status.html", stap="bijna", kop="Bijna klaar: bevestig je aanmelding",
+              intro="We hebben je een mail gestuurd. Klik op de link daarin om je aanmelding te bevestigen.")
+    site.page("/nieuwsbrief/welkom/", "nieuwsbrief_status.html", stap="welkom", kop="Welkom! Je bent aangemeld",
+              intro="Bedankt voor het bevestigen. De eerstvolgende nieuwsbrief komt naar je toe.")
+    site.urls = [u for u in site.urls if u not in ("/nieuwsbrief/bijna-klaar/", "/nieuwsbrief/welkom/")]
     # Productpagina's
     prod_items = []
     for p in config.get("products") or []:

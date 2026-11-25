@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ kop }} – {{ site.name }}{% endblock %}
+{% block description %}{{ kop }}{% endblock %}
+{% block meta %}<meta name="robots" content="noindex"><meta property="og:type" content="website"><meta property="og:title" content="{{ site.name }}">{% endblock %}
+{% block main %}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <p class="eyebrow">Nieuwsbrief</p>
+    <h1>{{ kop }}</h1>
+    <p class="page-head__intro">{{ intro }}</p>
+  </header>
+  <div class="prose">
+    {% if stap == "bijna" %}
+    <ol>
+      <li>Open de mail van <strong>{{ redactie.info_email }}</strong> met als onderwerp een bevestigingsverzoek.</li>
+      <li>Klik op de bevestigingsknop in die mail.</li>
+      <li>Klaar: vanaf dan krijg je elke week het overzicht in je inbox.</li>
+    </ol>
+    <p class="small muted">Geen mail gezien? Kijk even in je map Spam of Reclame. De mail kan een paar minuten onderweg zijn.</p>
+    {% else %}
+    <p>Elke week krijg je de kwetsbaarheden die je moet patchen, de grootste incidenten en één praktische tip. Afmelden kan altijd met één klik onderaan de nieuwsbrief.</p>
+    <p class="small muted">Tip: zet {{ redactie.info_email }} in je contacten, dan komt de nieuwsbrief niet in je spam terecht.</p>
+    {% endif %}
+  </div>
+  {% if latest %}
+  <section class="panel" style="margin-top:24px">
+    <h2 class="panel__title">Alvast het laatste nieuws</h2>
+    <ul class="plain-list">{% for a in latest[:5] %}<li><a href="{{ a.url }}">{{ a.title }}</a></li>{% endfor %}</ul>
+    <a class="more" href="/">Naar de voorpagina →</a>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}
