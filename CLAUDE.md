@@ -42,6 +42,7 @@ tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job
 
 ## Status
 - **LIVE** sinds 25 nov 2026 op https://cybersecuritynieuws.com (GitHub Pages, repo roeldevroed-rdv/cybersecuritynieuws.com, DNS bij TransIP: 4 A-records 185.199.108-111.153 + CNAME www → roeldevroed-rdv.github.io.).
+- Google Search Console: domeinproperty geverifieerd via DNS-TXT bij TransIP (25 nov 2026). Sitemaps: sitemap.xml + news-sitemap.xml.
 - E-mail: gekozen voor Zoho Mail gratis (EU, alleen web/app) voor redactie@cybersecuritynieuws.com; instellen (MX/SPF/DKIM bij TransIP) door eigenaar — status onbevestigd.
 - 24 nov 2026: 8 nieuwsberichten + 6 startgidsen handmatig door Claude geschreven.
 - Artikeltypes: "nieuws", "gids", "partner". run.py: `--build` (alleen bouwen), `--fotos` (foto's bij bestaande artikelen).
