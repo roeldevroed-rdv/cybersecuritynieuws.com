@@ -68,7 +68,7 @@ Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, Computable; AG Connect en Data 
 
 ## Pagina's & verdienmodel (24 nov 2026)
 - Eigenaar/hoofdredacteur: Roel de Vroed (config `redactie`; foto nog toevoegen als static/img/… en `redactie.foto`).
-- Eigenaar wil GEEN AI-vermelding per artikel en bronnen klein (één regel `.sources-line`). AI wordt alleen algemeen genoemd op /over/; hoofdredacteur is redactioneel verantwoordelijk (EU AI-verordening art. 50: dan geen label nodig mits menselijke controle).
+- AI-vermelding (25 nov 2026, akkoord eigenaar): artikelen gaan zonder menselijke controle vooraf online, dus EU AI-verordening art. 50 vereist vermelding. Onder elk artikel (behalve type partner) staat `.ai-line` "Dit artikel is met behulp van AI geschreven op basis van de genoemde bronnen." /over/ en /redactie/ beschrijven dit eerlijk. Bronnen klein (één regel `.sources-line`). In de artikeltekst zelf geen AI-vermelding.
 - Afbeeldingen: pipeline/covers.py maakt per artikel /og/<slug>.png (met titel, voor delen) en /beeld/<slug>.png (zonder titel, op de site). Pexels-foto heeft voorrang als `image` gezet is. Fonts in assets/fonts (OFL).
 - Nieuwe pagina's: /redactie/ /contact/ (tipformulier via forms.tip_action) /adverteren/ (mediakit) /nieuwsbrief/ /privacy/ /cookies/ /colofon/ /producten/ + /product/<slug>/ (config `products`) /ransomware-tracker/ /patch-tuesday/ + news-sitemap.xml.
 - Dreigingsniveau op voorpagina (build.threat_level). Advertenties via config `ads` (slots sidebar/artikel; met van/tot), anders huisadvertentie naar /adverteren/. Partnerartikel: type "partner" + `sponsor: {name,url}` → label Gesponsord, links rel=sponsored.

@@ -142,6 +142,7 @@
     {% if a.sources %}
     <p class="sources-line">Bronnen: {% for s in a.sources %}<a href="{{ s.url }}" rel="noopener nofollow" target="_blank">{{ s.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% if a.example %} (fictief){% endif %}</p>
     {% endif %}
+    {% if a.type != "partner" %}<p class="ai-line">Dit artikel is met behulp van AI geschreven{% if a.sources %} op basis van de genoemde bronnen{% endif %}. <a href="/over/">Hoe we werken</a></p>{% endif %}
 
     {% if site.newsletter_action %}
     <section class="panel panel--newsletter nb-inline" aria-labelledby="nb-art-h">

@@ -428,6 +428,8 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 /* Bronnen: één kleine regel */
 .sources-line { margin: 28px 0 8px; font-size: .78rem; color: var(--muted); line-height: 1.5; }
 .sources-line a { color: inherit; }
+.ai-line { margin: 0 0 8px; font-size: .78rem; color: var(--muted); line-height: 1.5; }
+.ai-line a { color: inherit; }
 
 /* Dreigingsniveau */
 .threat { --lvl: var(--ok); }
