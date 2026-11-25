@@ -1,0 +1,69 @@
+{
+  "id": "20261125-microsoft-chinese-en-noord-koreaanse-hackers-gebruiken-ai-tool-artex",
+  "slug": "microsoft-chinese-en-noord-koreaanse-hackers-gebruiken-ai-tool-artex",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Microsoft: Chinese en Noord-Koreaanse hackers gebruiken AI-tool Artex",
+  "tldr": "Volgens Microsoft gebruiken Chinese staatshackers, waaronder Salt Typhoon, en Noord-Koreaanse groepen het AI-hackprogramma Artex. Daarmee kunnen ze in enkele minuten van verkenning tot beheerderstoegang komen. Ook bij de hack op het Nederlandse DIVD werd Artex vermoedelijk gebruikt. Herkennen kan aan het gedrag: veel verzoeken in korte tijd.",
+  "meta_description": "Microsoft: Chinese staatshackers als Salt Typhoon en Noord-Koreaanse groepen gebruiken AI-tool Artex. Zo werkt het en zo herken je een aanval met Artex.",
+  "body": "Chinese en Noord-Koreaanse hackersgroepen gebruiken het AI-hackprogramma Artex bij hun aanvallen. Dat meldt Microsoft in een nieuw rapport, [schrijft The Record](https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool). Volgens Microsoft hebben de Chinese staatsgroepen Crystal Typhoon en Salt Typhoon Artex opgenomen in hun gereedschapskist, onder meer voor het verkennen van netwerken, het kraken van inloggegevens en het misbruiken van webapplicaties.\n\nSalt Typhoon wordt door de Amerikaanse overheid verantwoordelijk gehouden voor de inbraak bij zeker negen grote telecombedrijven in 2024 en voor aanvallen op Europese overheden en vitale infrastructuur.\n\n## Wat is Artex?\n\nArtex is een programma dat in juli verscheen en waarmee aanvallers een doel opgeven, waarna AI-agents zelfstandig de aanval uitvoeren. Volgens Microsoft kan Artex in enkele minuten van verkenning naar blijvende beheerderstoegang tot een organisatie gaan. Het gebruikt geen nieuwe technieken, maar bestaande tools voor penetratietests, alleen veel sneller dan een mens. De maker haalde de broncode vorige maand van GitHub, maar er circuleren kopieën en een Chinees bedrijf biedt een versie commercieel aan.\n\nArtex wordt in verband gebracht met meerdere grote incidenten, waaronder aanvallen op Amerikaanse inlichtingendiensten. Ook bij de recente hack op het Nederlandse DIVD werd Artex [vermoedelijk gebruikt](/artikel/divd-gehackt-door-ai-agents-rapport-toont-hoe-aanvaller-binnenkwam/).\n\n## Hoe herken je een aanval met Artex?\n\nAanvallers wisselen IP-adressen en andere kenmerken, dus vaste blokkadelijsten helpen weinig. Het betrouwbaarste signaal is volgens Microsoft het gedrag: Artex stuurt in korte tijd heel veel verschillende verzoeken vanaf één bron, probeert varianten van dezelfde techniek en gaat razendsnel door naar de volgende stap. Standaard doet Artex geen moeite om zich te verbergen.\n\nVoor verdedigers betekent dit vooral: de basis op orde. Ongepatchte systemen aan internet, gelekte wachtwoorden en sleutels in openbare code zijn precies wat zulke tools in minuten vinden. Lees ook [wat ransomware is en hoe aanvallers te werk gaan](/artikel/wat-is-ransomware/).",
+  "actions": [
+    "Installeer updates voor systemen die vanaf internet bereikbaar zijn zo snel mogelijk.",
+    "Zoek in je code-opslag (zoals GitHub) naar gelekte wachtwoorden en sleutels, en vervang ze.",
+    "Stel detectie in op ongebruikelijk veel verzoeken vanaf één bron in korte tijd.",
+    "Gebruik tweestapsverificatie, zodat geraden of gelekte wachtwoorden alleen niet genoeg zijn."
+  ],
+  "faq": [
+    {
+      "q": "Is Artex een nieuw soort aanval?",
+      "a": "Nee. Volgens Microsoft gebruikt Artex bestaande technieken en tools, maar automatiseert het die met AI, waardoor aanvallen veel sneller verlopen."
+    },
+    {
+      "q": "Wie gebruikt Artex?",
+      "a": "Volgens Microsoft onder meer de Chinese staatsgroepen Salt Typhoon en Crystal Typhoon, Noord-Koreaanse groepen en cybercriminelen."
+    }
+  ],
+  "category": "ai",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "Grote organisaties",
+      "MKB"
+    ],
+    "sector": [
+      "Telecom",
+      "Overheid"
+    ],
+    "technologie": [
+      "Microsoft"
+    ]
+  },
+  "keywords": [
+    "Artex",
+    "Salt Typhoon",
+    "Microsoft",
+    "AI-agents",
+    "China",
+    "Noord-Korea"
+  ],
+  "image_query": "artificial intelligence code",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "The Record",
+      "title": "Microsoft: China's Salt Typhoon hackers are using Artex",
+      "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool"
+    }
+  ],
+  "published": "2026-11-25T22:25:09+00:00",
+  "model": "redactie"
+}

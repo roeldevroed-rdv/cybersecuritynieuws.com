@@ -1,0 +1,123 @@
+{
+  "id": "20261125-cisa-tien-actief-misbruikte-lekken-danfoss-mitel-juniper-xen-orchestra",
+  "slug": "cisa-tien-actief-misbruikte-lekken-danfoss-mitel-juniper-xen-orchestra",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Tien lekken actief misbruikt: koelregelaars van Danfoss, Mitel MiCollab en Juniper-routers",
+  "tldr": "De Amerikaanse cyberdienst CISA heeft tien kwetsbaarheden toegevoegd aan de lijst van actief misbruikte lekken. Het gaat om Danfoss-regelaars voor koelinstallaties, vijf lekken in Mitel MiCollab, een lek in Juniper Session Smart-routers van HPE en een lek in Xen Orchestra. Beheerders moeten deze systemen snel bijwerken of afschermen.",
+  "meta_description": "CISA meldt tien actief misbruikte lekken, onder meer in Danfoss-koelregelaars, Mitel MiCollab, Juniper Session Smart en Xen Orchestra. Update of scherm af.",
+  "body": "De Amerikaanse cyberdienst CISA heeft woensdag tien kwetsbaarheden toegevoegd aan zijn lijst van lekken die aantoonbaar worden misbruikt, [meldt CISA](https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog). Die lijst (Known Exploited Vulnerabilities, KEV) is een goede graadmeter voor welke lekken je als eerste moet dichten. Amerikaanse overheidsdiensten zijn verplicht ze met voorrang te verhelpen.\n\n## Om welke systemen gaat het?\n\n- **Danfoss AK-SM 800A** (CVE-2023-25914, CVE-2023-25915, CVE-2025-41450): systeemmanagers voor koel- en vriesinstallaties, onder meer in supermarkten. Het gaat om een path traversal-lek, onvoldoende invoercontrole en een zwakke authenticatie.\n- **Mitel MiCollab** (CVE-2026-133275, -133303, -133311, -133323 en -133324): vijf lekken in dit samenwerkingsplatform voor bellen en chatten, waaronder het uploaden van gevaarlijke bestanden en het uitvoeren van systeemopdrachten.\n- **HPE Juniper Session Smart Conductor en Session Smart Router** (CVE-2026-103406): een lek waarmee opdrachten op het besturingssysteem kunnen worden uitgevoerd.\n- **Vates Xen Orchestra** (CVE-2026-133469): een lek in deze beheeromgeving voor virtuele servers.\n\nDat de Danfoss-lekken uit 2023 en 2025 nu op de lijst komen, past in een bredere trend: met internet verbonden apparaten in winkels en gebouwen worden steeds vaker aangevallen. De Belgische politie [riep onlangs nog op](/artikel/belgische-politie-schakel-admin-gebruiker-uit-op-slimme-apparaten/) om zulke apparaten beter te beveiligen, na aanvallen op koelsystemen van supermarkten in onder meer België en Nederland.\n\n## Wat moeten beheerders doen?\n\nControleer of je een van deze producten gebruikt en installeer de updates van de leverancier. Apparaten zoals koelregelaars en routers horen niet direct vanaf internet bereikbaar te zijn: zet ze achter een vpn of firewall. Kun je niet meteen updaten, beperk dan de toegang en controleer de systemen op verdachte activiteit. Lees ook ons eerdere bericht over het [actief misbruikte Drupal-lek](/artikel/kritiek-drupal-lek-actief-misbruikt-om-websites-over-te-nemen/).",
+  "actions": [
+    "Inventariseer of je Danfoss AK-SM 800A, Mitel MiCollab, Juniper Session Smart of Xen Orchestra gebruikt.",
+    "Installeer de beschikbare updates van de leverancier met voorrang.",
+    "Zorg dat beheerinterfaces van koelregelaars, routers en beheersoftware niet direct vanaf internet bereikbaar zijn.",
+    "Controleer de systemen op onbekende accounts, bestanden en ongebruikelijke verbindingen.",
+    "Vraag installateurs of leveranciers van koelinstallaties hoe hun systemen zijn beveiligd."
+  ],
+  "faq": [
+    {
+      "q": "Wat is de KEV-lijst van CISA?",
+      "a": "Een lijst van kwetsbaarheden waarvan bewezen is dat ze in de praktijk worden misbruikt. Het is een goede leidraad voor welke updates het eerst moeten."
+    },
+    {
+      "q": "Waarom staan oude Danfoss-lekken nu op de lijst?",
+      "a": "Een lek komt op de lijst zodra er bewijs is van misbruik, ongeacht hoe oud het is. Ook oude lekken in apparaten die nooit zijn bijgewerkt, blijven een risico."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB",
+      "Grote organisaties"
+    ],
+    "sector": [
+      "Retail",
+      "Industrie & OT"
+    ],
+    "technologie": [
+      "Firewalls & VPN"
+    ]
+  },
+  "keywords": [
+    "CISA",
+    "KEV",
+    "Danfoss",
+    "Mitel MiCollab",
+    "Juniper",
+    "Xen Orchestra",
+    "actief misbruikt"
+  ],
+  "image_query": "network router",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2023-25914",
+    "CVE-2023-25915",
+    "CVE-2025-41450",
+    "CVE-2026-103406",
+    "CVE-2026-133275",
+    "CVE-2026-133303",
+    "CVE-2026-133311",
+    "CVE-2026-133323",
+    "CVE-2026-133324",
+    "CVE-2026-133469"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2023-25914",
+      "product": "Danfoss AK-SM 800A Series"
+    },
+    {
+      "cve": "CVE-2023-25915",
+      "product": "Danfoss AK-SM 800A Series"
+    },
+    {
+      "cve": "CVE-2025-41450",
+      "product": "Danfoss AK-SM 800A Series"
+    },
+    {
+      "cve": "CVE-2026-103406",
+      "product": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router"
+    },
+    {
+      "cve": "CVE-2026-133275",
+      "product": "Mitel MiCollab"
+    },
+    {
+      "cve": "CVE-2026-133303",
+      "product": "Mitel MiCollab"
+    },
+    {
+      "cve": "CVE-2026-133311",
+      "product": "Mitel MiCollab"
+    },
+    {
+      "cve": "CVE-2026-133323",
+      "product": "Mitel MiCollab"
+    },
+    {
+      "cve": "CVE-2026-133324",
+      "product": "Mitel MiCollab"
+    },
+    {
+      "cve": "CVE-2026-133469",
+      "product": "Vates Xen Orchestra"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CISA",
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog"
+    }
+  ],
+  "published": "2026-11-25T22:25:09+00:00",
+  "model": "redactie"
+}
