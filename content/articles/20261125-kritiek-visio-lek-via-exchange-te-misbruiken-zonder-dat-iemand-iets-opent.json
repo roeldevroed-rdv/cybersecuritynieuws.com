@@ -1,0 +1,70 @@
+{
+  "id": "20261125-kritiek-visio-lek-via-exchange-te-misbruiken-zonder-dat-iemand-iets-opent",
+  "slug": "kritiek-visio-lek-via-exchange-te-misbruiken-zonder-dat-iemand-iets-opent",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Kritiek Visio-lek via Exchange te misbruiken zonder dat iemand iets opent",
+  "tldr": "Een kritiek lek in Microsoft Visio (CVE-2026-112732) kan worden misbruikt door een e-mail met een speciale bijlage naar een Exchange-server te sturen. Niemand hoeft de mail te openen. Microsoft bracht de update al op 10 november uit, maar meldt het lek nu pas.",
+  "meta_description": "Microsoft meldt kritiek Visio-lek CVE-2026-112732 dat via een bijlage op Exchange-servers werkt, zonder dat iemand iets opent. Zo bescherm je je organisatie.",
+  "body": "Microsoft waarschuwt voor een kritieke kwetsbaarheid in Microsoft Office Visio die via Exchange-mailservers kan worden misbruikt, zonder dat een gebruiker iets hoeft te doen. Dat meldt [Security.NL](https://www.security.nl/posting/963084). Microsoft bracht de update voor het lek, CVE-2026-112732, al op 10 november uit, maar vergat destijds het lek te melden. Dat is nu alsnog gebeurd.\n\n## Hoe werkt de aanval?\n\nVolgens Microsoft kan een aanvaller zonder inloggegevens een e-mail met een speciaal geprepareerde bijlage naar een kwetsbare Exchange-server sturen. Zodra de server die bijlage **indexeert**, wordt het lek automatisch geactiveerd. De ontvanger hoeft de e-mail of de bijlage dus niet te openen. De aanvaller kan daarna code uitvoeren met de rechten van de dienst die de bijlage verwerkt.\n\nMicrosoft geeft het lek een ernstscore van 9,8 op 10. Verdere technische details heeft het bedrijf niet gegeven. Er is voor zover bekend nog geen misbruik gemeld.\n\n## Waarom is dit belangrijk?\n\nEen lek dat zonder enige handeling van de gebruiker werkt, is voor aanvallers erg aantrekkelijk: phishing-trainingen en waakzame medewerkers helpen dan niet. Mailservers zijn bovendien vaak een eerste stap bij grotere aanvallen, zoals [ransomware](/artikel/wat-is-ransomware/). Omdat het lek nu publiek bekend is, is de kans groot dat aanvallers er werk van gaan maken.\n\n## Welke updates zijn er?\n\nMicrosoft heeft updates uitgebracht voor Microsoft 365 Apps for Enterprise en Microsoft Office LTSC 2024 en 2021. Wie de beveiligingsupdates van november al heeft geïnstalleerd, is volgens Microsoft beschermd. Beheerders van een eigen Exchange-omgeving doen er goed aan te controleren of de Office-componenten op hun servers ook zijn bijgewerkt. Meer nieuws over Microsoft-lekken vind je op onze pagina over [Microsoft](/product/microsoft/).",
+  "actions": [
+    "Controleer of de Microsoft-beveiligingsupdates van november (10 november 2026) overal zijn geïnstalleerd.",
+    "Werk Microsoft 365 Apps for Enterprise en Office LTSC 2024/2021 bij, ook op servers.",
+    "Beheer je zelf Exchange? Controleer of de Office-onderdelen op je mailservers zijn bijgewerkt.",
+    "Houd de officiële Microsoft-informatie over CVE-2026-112732 in de gaten voor aanvullende maatregelen."
+  ],
+  "faq": [
+    {
+      "q": "Moet iemand de bijlage openen om het Visio-lek te misbruiken?",
+      "a": "Nee. Volgens Microsoft wordt het lek al geactiveerd wanneer een kwetsbare Exchange-server de bijlage indexeert."
+    },
+    {
+      "q": "Is er een update voor CVE-2026-112732?",
+      "a": "Ja. Microsoft bracht de update op 10 november 2026 uit voor Microsoft 365 Apps for Enterprise en Office LTSC 2024 en 2021."
+    },
+    {
+      "q": "Wordt het Visio-lek al misbruikt?",
+      "a": "Daarover is niets gemeld. Omdat het lek nu publiek bekend is, is snel updaten wel verstandig."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Microsoft"
+    ]
+  },
+  "keywords": [
+    "Visio lek",
+    "CVE-2026-112732",
+    "Exchange kwetsbaarheid",
+    "Microsoft update november"
+  ],
+  "image_query": "email server office",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [
+    "CVE-2026-112732"
+  ],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Microsoft meldt kritiek Visio-lek dat via Exchange-servers is te misbruiken",
+      "url": "https://www.security.nl/posting/963084"
+    }
+  ],
+  "published": "2026-11-25T10:55:29+00:00",
+  "model": "redactie"
+}

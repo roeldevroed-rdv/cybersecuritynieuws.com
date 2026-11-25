@@ -1,0 +1,90 @@
+{
+  "id": "20261125-kritiek-drupal-lek-actief-misbruikt-om-websites-over-te-nemen",
+  "slug": "kritiek-drupal-lek-actief-misbruikt-om-websites-over-te-nemen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Kritiek Drupal-lek actief misbruikt om websites over te nemen",
+  "tldr": "Aanvallers misbruiken sinds 19 november een kritiek lek in Drupal (CVE-2026-132165) om websites over te nemen via het installatiescript. Update naar Drupal 11.4.13, 11.3.22 of 10.6.22, of blokkeer install.php.",
+  "meta_description": "Drupal-lek CVE-2026-132165 wordt actief misbruikt om websites over te nemen. Welke versies lossen het op en wat doe je als je nog niet kunt updaten?",
+  "body": "Aanvallers maken actief misbruik van een kritieke kwetsbaarheid in Drupal om websites over te nemen. Het lek, CVE-2026-132165, wordt volgens het Drupal-beveiligingsteam al sinds 19 november misbruikt, meldt [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/). Het Amerikaanse cyberagentschap CISA heeft het lek inmiddels op zijn lijst van actief misbruikte kwetsbaarheden gezet. Drupal bracht op 18 november al updates uit.\n\n## Hoe werkt het lek?\n\nDrupal is een veelgebruikt contentmanagementsysteem (CMS) waarmee websites worden gebouwd en beheerd. Volgens [Security.NL](https://www.security.nl/posting/963060) draaien er meer dan een miljoen websites op, waaronder veel sites van overheden, universiteiten en grote organisaties.\n\nHet probleem zit in het installatiescript `install.php` dat standaard met Drupal wordt meegeleverd. Onder bepaalde omstandigheden kan een aanvaller dat script gebruiken om Drupal opnieuw te installeren. Daarmee kan hij de website overnemen of eigen code op de server uitvoeren. Er is geen account voor nodig: een anonieme bezoeker kan het lek misbruiken. \"Ga er dus niet vanuit dat je site veilig is\", waarschuwde het Drupal-team vooraf.\n\n## Hoe groot is het risico in Nederland?\n\nHet Nationaal Cyber Security Centrum (NCSC) schat de kans op misbruik in als gemiddeld, maar de mogelijke schade als groot. Volgens het NCSC kunnen aanvallers gegevens bekijken, aanpassen of verwijderen, of schadelijke inhoud op een website plaatsen. CISA meldt dat er sinds 2021 vijf Drupal-lekken bij aanvallen zijn misbruikt, waarvan twee ook door ransomwaregroepen. Lees meer over die dreiging in onze gids over [ransomware](/artikel/wat-is-ransomware/).\n\n## Welke versies zijn veilig?\n\nBeheerders moeten updaten naar **Drupal 11.4.13, 11.3.22 of 10.6.22**. Drupal 10.5 en ouder krijgen geen beveiligingsupdates meer. Kun je niet direct updaten, blokkeer dan de toegang tot `/core/install.php` in de webserverconfiguratie of in het `.htaccess`-bestand. Websites achter de betaalde Drupal Steward-firewall zijn volgens Drupal beschermd tegen de bekende aanvalsmethoden, maar ook daar is updaten het advies.",
+  "actions": [
+    "Controleer of jouw website of die van je organisatie op Drupal draait; vraag het zo nodig na bij je webbouwer.",
+    "Update naar Drupal 11.4.13, 11.3.22 of 10.6.22.",
+    "Kun je niet meteen updaten? Blokkeer de toegang tot /core/install.php.",
+    "Draai je Drupal 10.5 of ouder? Plan een overstap, want die versies krijgen geen beveiligingsupdates meer.",
+    "Controleer de website op onverwachte wijzigingen, nieuwe beheerders of onbekende bestanden sinds 19 november."
+  ],
+  "faq": [
+    {
+      "q": "Welke Drupal-versies lossen CVE-2026-132165 op?",
+      "a": "Drupal 11.4.13, 11.3.22 en 10.6.22. Drupal 10.5 en ouder krijgen geen beveiligingsupdates meer."
+    },
+    {
+      "q": "Wat doe ik als ik Drupal niet direct kan updaten?",
+      "a": "Blokkeer de toegang tot /core/install.php in de webserverconfiguratie of in het .htaccess-bestand. Dat is een noodmaatregel; updaten blijft nodig."
+    },
+    {
+      "q": "Sinds wanneer wordt het Drupal-lek misbruikt?",
+      "a": "Volgens het Drupal-beveiligingsteam sinds 19 november 2026, een dag na het verschijnen van de update."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [
+      "Overheid",
+      "Onderwijs"
+    ],
+    "technologie": [
+      "Open source"
+    ]
+  },
+  "keywords": [
+    "Drupal lek",
+    "CVE-2026-132165",
+    "Drupal update",
+    "website gehackt"
+  ],
+  "image_query": "website code server",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2026-132165"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2026-132165",
+      "product": "Drupal Core"
+    }
+  ],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/"
+    },
+    {
+      "name": "Security.NL",
+      "title": "Kritiek Drupal-lek misbruikt bij aanvallen op websites, waarschuwt VS",
+      "url": "https://www.security.nl/posting/963060"
+    },
+    {
+      "name": "CISA",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+    }
+  ],
+  "published": "2026-11-25T10:25:29+00:00",
+  "model": "redactie"
+}

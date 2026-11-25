@@ -1,0 +1,75 @@
+{
+  "id": "20261125-palo-alto-dicht-linux-lek-fragnesia-gebruikt-om-firewalls-te-rooten",
+  "slug": "palo-alto-dicht-linux-lek-fragnesia-gebruikt-om-firewalls-te-rooten",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Palo Alto dicht Linux-lek 'Fragnesia' dat werd gebruikt om firewalls over te nemen",
+  "tldr": "Palo Alto Networks heeft updates uitgebracht voor het Linux-lek Fragnesia (CVE-2026-46300). Aanvallers combineerden dat lek eind oktober met andere lekken om volledige controle over firewalls te krijgen.",
+  "meta_description": "Palo Alto Networks patcht Linux-lek Fragnesia (CVE-2026-46300), dat aanvallers gebruikten om firewalls over te nemen. Wat er speelt en wat beheerders moeten doen.",
+  "body": "Palo Alto Networks heeft beveiligingsupdates uitgebracht voor een kwetsbaarheid in de Linux-kernel die aanvallers hebben gebruikt om firewalls van de leverancier volledig over te nemen. Dat meldt [Security.NL](https://www.security.nl/posting/963063). Het gaat om CVE-2026-46300, ook bekend als **Fragnesia**.\n\n## Wat is Fragnesia?\n\nFragnesia is een lek in de Linux-kernel, het hart van het besturingssysteem waarop ook de firewalls van Palo Alto draaien. Een aanvaller die al op het systeem is, maar zonder beheerdersrechten, kan via het lek de inhoud van beveiligde bestanden aanpassen en zo **root** worden: de hoogste rechten op het systeem. Voor Linux verscheen begin mei al een oplossing.\n\n## Hoe werd het misbruikt?\n\nVolgens beveiligingsbedrijf Dream combineerden aanvallers eind oktober Fragnesia met de zogeheten PHP2Shell-lekken in PAN-OS, het besturingssysteem van de firewalls. Eerst misbruikten ze PHP2Shell via beheerinterfaces die vanaf internet bereikbaar waren. Daarna werden ze via Fragnesia root op de firewall. Vanaf de gehackte firewalls vielen ze vervolgens het achterliggende netwerk aan. Volgens Dream werden onder meer firewalls in de Verenigde Staten, Japan, Taiwan en Zuid-Korea gehackt, op 23 oktober.\n\nPalo Alto bracht eind oktober al patches uit voor de PHP2Shell-lekken. Nu volgen dus ook de updates voor Fragnesia. Eind oktober waarschuwde de Amerikaanse overheid al voor misbruik van het lek.\n\n## Wat is de les?\n\nHet grootste risico zit in beheerinterfaces die vanaf internet bereikbaar zijn. Palo Alto adviseert dan ook nadrukkelijk om de management-interface van firewalls af te schermen. Dat geldt voor alle merken: een firewall die zelf wordt overgenomen, wordt een springplank naar de rest van het netwerk. Vergelijk ook de recente aanvallen op [Check Point-beheerservers](/artikel/tientallen-check-point-beheerservers-gehackt-in-campagne-met-ai-tools/).",
+  "actions": [
+    "Installeer de nieuwe PAN-OS-updates van Palo Alto Networks voor CVE-2026-46300.",
+    "Controleer of ook de PHP2Shell-patches van eind oktober zijn geïnstalleerd.",
+    "Zorg dat de management-interface van firewalls niet vanaf internet bereikbaar is.",
+    "Controleer firewalls en het achterliggende netwerk op sporen van inbraak sinds eind oktober."
+  ],
+  "faq": [
+    {
+      "q": "Wat is Fragnesia?",
+      "a": "Fragnesia (CVE-2026-46300) is een lek in de Linux-kernel waarmee een aanvaller zonder beheerdersrechten root kan worden door beveiligde bestanden aan te passen."
+    },
+    {
+      "q": "Zijn Palo Alto-firewalls met dit lek gehackt?",
+      "a": "Ja. Volgens beveiligingsbedrijf Dream combineerden aanvallers eind oktober Fragnesia met de PHP2Shell-lekken om firewalls volledig over te nemen."
+    },
+    {
+      "q": "Hoe bescherm ik mijn firewall?",
+      "a": "Installeer de updates van Palo Alto Networks en zorg dat de beheerinterface niet vanaf internet bereikbaar is."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Firewalls & VPN",
+      "Linux"
+    ]
+  },
+  "keywords": [
+    "Palo Alto Networks",
+    "Fragnesia",
+    "CVE-2026-46300",
+    "PAN-OS update"
+  ],
+  "image_query": "firewall datacenter",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2026-46300"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2026-46300",
+      "product": "Linux Kernel"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Palo Alto Networks dicht Linux-lek gebruikt voor rooten van firewalls",
+      "url": "https://www.security.nl/posting/963063"
+    }
+  ],
+  "published": "2026-11-25T09:55:29+00:00",
+  "model": "redactie"
+}

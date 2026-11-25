@@ -1,0 +1,79 @@
+{
+  "id": "20261125-tientallen-check-point-beheerservers-gehackt-in-campagne-met-ai-tools",
+  "slug": "tientallen-check-point-beheerservers-gehackt-in-campagne-met-ai-tools",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Tientallen Check Point-beheerservers gehackt in campagne met AI-tools",
+  "tldr": "Een onbekende aanvaller heeft met AI-gestuurde aanvalstools 24 Check Point Security Management-servers bij 22 organisaties overgenomen, ook in Nederland. De campagne loopt mogelijk nog.",
+  "meta_description": "Aanvallers kaapten met AI-tools 24 Check Point-beheerservers bij 22 organisaties, ook in Nederland. Wat er gebeurde en hoe je je firewallbeheer beschermt.",
+  "body": "Een onbekende aanvaller heeft met behulp van AI-gestuurde aanvalstools beheerservers van Check Point-firewalls bij organisaties wereldwijd overgenomen, ook in Nederland. Dat meldt beveiligingsbedrijf GreyNoise, volgens [SecurityWeek](https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/). Het gaat om 24 Check Point Security Management-servers bij 22 organisaties.\n\n## Wat is er gebeurd?\n\nGreyNoise volgt de aanvaller sinds begin oktober onder de naam GT13. De aanvallen kwamen van 99 IP-adressen, deels via een vpn-dienst en deels via eerder gehackte Check Point-apparaten van slachtoffers. Getroffen organisaties zitten in de energiesector, techniek, financiële dienstverlening, overheid, maakindustrie, mijnbouw en transport, in onder meer de Verenigde Staten, het Verenigd Koninkrijk, Duitsland, Frankrijk en Nederland.\n\nVolgens GreyNoise gebruikte de aanvaller AI-systemen om kwetsbare systemen te vinden en automatisch aan te vallen, aangevuld met handwerk. Hoe de aanvaller oorspronkelijk toegang kreeg tot de Check Point-servers, kon GreyNoise niet vaststellen. Wel probeerde de aanvaller in één netwerk een reeks bekende lekken te misbruiken, onder meer in Citrix NetScaler, Ivanti, Microsoft Exchange, Windows en VMware vCenter. De campagne is volgens GreyNoise waarschijnlijk nog gaande.\n\n## Waarom zijn beheerservers zo gevoelig?\n\nEen Security Management-server beheert de instellingen van alle firewalls van een organisatie. Wie zo'n server in handen heeft, kan firewallregels aanpassen en vanaf daar verder het netwerk in. Bekende, ongepatchte lekken in andere systemen maken die volgende stap makkelijker. Dat zagen we ook bij het recente [lek in VMware vCenter](/artikel/vmware-dicht-23-lekken-waaronder-kritiek-vcenter-lek/).\n\n## Wat valt op?\n\nDat aanvallers AI inzetten om op grote schaal en snel kwetsbare systemen te vinden en aan te vallen, is een trend die steeds vaker wordt gemeld. Het tijdsvenster tussen het bekend worden van een lek en het misbruik ervan wordt daardoor kleiner. Snel updaten en beheerinterfaces afschermen van internet zijn daardoor nog belangrijker.",
+  "actions": [
+    "Zorg dat de beheerinterfaces van firewalls en Security Management-servers niet vanaf internet bereikbaar zijn.",
+    "Controleer Check Point-beheerservers op onbekende SSH-sleutels, beheerders of geplande taken.",
+    "Installeer de nieuwste updates voor Check Point en voor systemen als Citrix, Ivanti, Exchange en vCenter.",
+    "Zet tweestapsverificatie aan voor alle beheertoegang.",
+    "Vermoed je een inbraak? Schakel een incidentresponsteam in en meld het bij het NCSC als je organisatie daaronder valt."
+  ],
+  "faq": [
+    {
+      "q": "Hoeveel Check Point-servers zijn gehackt?",
+      "a": "Volgens GreyNoise gaat het om 24 Check Point Security Management-servers bij 22 organisaties wereldwijd, waaronder in Nederland."
+    },
+    {
+      "q": "Hoe kwamen de aanvallers binnen?",
+      "a": "Dat is niet bekend. GreyNoise kon niet vaststellen hoe de aanvaller oorspronkelijk toegang kreeg tot de Check Point-servers."
+    },
+    {
+      "q": "Wat is de rol van AI bij deze aanval?",
+      "a": "Volgens GreyNoise gebruikte de aanvaller AI-systemen om kwetsbare systemen te vinden en automatisch aan te vallen, aangevuld met handmatige acties."
+    }
+  ],
+  "category": "cyberaanvallen",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [
+      "Energie",
+      "Financieel",
+      "Overheid",
+      "Industrie & OT"
+    ],
+    "technologie": [
+      "Firewalls & VPN"
+    ]
+  },
+  "keywords": [
+    "Check Point gehackt",
+    "Check Point Security Management",
+    "AI-aanval",
+    "firewall beheerserver"
+  ],
+  "image_query": "firewall network security",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "SecurityWeek",
+      "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+      "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/"
+    },
+    {
+      "name": "The Hacker News",
+      "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html"
+    }
+  ],
+  "published": "2026-11-25T09:25:29+00:00",
+  "model": "redactie"
+}
