@@ -85,6 +85,11 @@ def caption(a: dict, categories: dict) -> str:
         tags.append("#nederland")
     if "België" in regio:
         tags.append("#belgië")
+    seen, uniek = set(), []
+    for t in tags:
+        if t.lower() not in seen:
+            seen.add(t.lower()); uniek.append(t)
+    tags = uniek
     acties = "\n".join(f"✅ {x}" for x in a.get("actions", [])[:3])
     return (f"{a['title']}\n\n{_short(a['tldr'], 300)}\n\nWat moet je doen?\n{acties}\n\n"
             f"👉 Lees het hele artikel via de link in onze bio ({SITE}).\n\n" + " ".join(tags))
