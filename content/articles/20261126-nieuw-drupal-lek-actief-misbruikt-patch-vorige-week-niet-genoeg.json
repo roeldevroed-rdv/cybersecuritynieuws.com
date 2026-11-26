@@ -1,0 +1,73 @@
+{
+  "id": "20261126-nieuw-drupal-lek-actief-misbruikt-patch-vorige-week-niet-genoeg",
+  "slug": "nieuw-drupal-lek-actief-misbruikt-patch-vorige-week-niet-genoeg",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Nieuw Drupal-lek actief misbruikt: patch van vorige week was niet genoeg",
+  "tldr": "Drupal waarschuwt voor een nieuw, zeer kritiek lek (CVE-2026-136716) dat al wordt misbruikt om websites over te nemen. De update van vorige week tegen het Fail2Install-lek dichtte niet alle routes via het installatiescript. Update naar Drupal 10.6.23, 11.3.23 of 11.4.14 en controleer je site op inbraak.",
+  "meta_description": "Drupal waarschuwt voor een nieuw, actief misbruikt lek (CVE-2026-136716): de patch van vorige week was niet genoeg. Update naar 10.6.23, 11.3.23 of 11.4.14.",
+  "body": "Drupal waarschuwt voor een nieuw, zeer kritiek lek in de kern van het contentmanagementsysteem dat al wordt misbruikt om websites over te nemen. Het lek, CVE-2026-136716, is een vervolg op het [Fail2Install-lek dat vorige week werd gedicht](/artikel/kritiek-drupal-lek-actief-misbruikt-om-websites-over-te-nemen/): die update sloot niet alle routes af waarlangs aanvallers via het installatiescript een site kunnen overnemen, [meldt The Hacker News](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html).\n\nHet Drupal-beveiligingsteam publiceerde op 25 november het advies [SA-CORE-2026-019](https://www.drupal.org/sa-core-2026-019) en geeft het lek de classificatie 'highly critical', de op een na hoogste.\n\n## Hoe werkt het lek?\n\nHet probleem zit opnieuw in het installatiescript van Drupal (install.php). Is dat script na de installatie nog bereikbaar, dan kan een aanvaller via een omweg de toegangscontrole omzeilen en de website overnemen. De update van 18 november tegen CVE-2026-132165 verhielp een deel van die kwetsbare situaties, maar niet alle. Aanvallers maken daar nu actief misbruik van.\n\n## Welke versies moet je installeren?\n\nDe veilige versies zijn Drupal 10.6.23, 11.3.23 en 11.4.14. Voer na de update ook update.php uit. Oudere reeksen die geen ondersteuning meer krijgen, zoals Drupal 8 en 9, krijgen volgens berichtgeving geen update; voor die sites is overstappen naar een ondersteunde versie de enige echte oplossing.\n\nBlokkeer daarnaast de toegang tot install.php via de webserver. Dat is een goede gewoonte, ook na het updaten.\n\n## Is mijn site al gehackt?\n\nWas het installatiescript van je site de afgelopen week vanaf internet bereikbaar, ga er dan niet zomaar van uit dat alles in orde is. Controleer of er onbekende beheerdersaccounts zijn, of het beheerdersaccount (gebruiker 1) is gebruikt op onverwachte momenten en of er onbekende bestanden of modules op de server staan. Laat je website door een bureau beheren? Vraag dan of zij dit al hebben gedaan. Lees ook [wat je doet als je gegevens gelekt zijn](/artikel/datalek-wat-nu/).",
+  "actions": [
+    "Update Drupal naar 10.6.23, 11.3.23 of 11.4.14 en voer daarna update.php uit.",
+    "Blokkeer de toegang tot install.php via de webserver.",
+    "Controleer op onbekende beheerdersaccounts, verdachte activiteit van gebruiker 1 en onbekende bestanden.",
+    "Draai je een Drupal-versie zonder ondersteuning (zoals 8 of 9)? Plan direct een upgrade.",
+    "Laat je site beheren door een bureau? Vraag of het lek is gedicht en de site is gecontroleerd."
+  ],
+  "faq": [
+    {
+      "q": "Ik heb vorige week al geüpdatet. Ben ik veilig?",
+      "a": "Nee, niet per se. De update van 18 november dichtte niet alle routes. Je hebt minimaal 10.6.23, 11.3.23 of 11.4.14 nodig."
+    },
+    {
+      "q": "Is mijn Drupal-site kwetsbaar als install.php niet bereikbaar is?",
+      "a": "Het lek draait om het bereikbare installatiescript. Blokkeren verkleint het risico sterk, maar updaten blijft nodig."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Open source"
+    ]
+  },
+  "keywords": [
+    "Drupal",
+    "CVE-2026-136716",
+    "SA-CORE-2026-019",
+    "Fail2Install",
+    "install.php",
+    "actief misbruikt"
+  ],
+  "image_query": "website code",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": true,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [
+    "CVE-2026-136716"
+  ],
+  "kev": [],
+  "sources": [
+    {
+      "name": "The Hacker News",
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
+    },
+    {
+      "name": "Drupal",
+      "title": "SA-CORE-2026-019",
+      "url": "https://www.drupal.org/sa-core-2026-019"
+    }
+  ],
+  "published": "2026-11-26T08:25:14+00:00",
+  "model": "redactie"
+}
