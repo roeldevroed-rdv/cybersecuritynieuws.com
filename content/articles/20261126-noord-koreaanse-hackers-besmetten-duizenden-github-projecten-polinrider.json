@@ -1,0 +1,72 @@
+{
+  "id": "20261126-noord-koreaanse-hackers-besmetten-duizenden-github-projecten-polinrider",
+  "slug": "noord-koreaanse-hackers-besmetten-duizenden-github-projecten-polinrider",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Noord-Koreaanse hackers verstoppen malware in duizenden GitHub-projecten",
+  "tldr": "Hackers die aan Noord-Korea worden gelinkt hebben via de campagne PolinRider een kwaadaardige Python-loader verstopt in GitHub-projecten. Schattingen lopen uiteen van honderden tot ruim 7.600 besmette repositories. De malware verspreidt zich met gestolen git-inloggegevens. Ontwikkelaars moeten hun code en tokens controleren.",
+  "meta_description": "Noord-Koreaanse hackers verstoppen malware in GitHub-projecten via PolinRider. Schattingen lopen op tot 7.600 repositories. Dit moeten ontwikkelaars controleren.",
+  "body": "Hackers die in verband worden gebracht met Noord-Korea verstoppen kwaadaardige code in projecten op GitHub. Dat meldt securitybedrijf [SafeDep](https://safedep.io/blog/polinrider-python-loader-ethereum-calldata) over de campagne PolinRider. Volgens [The Hacker News](https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html) loopt de activiteit mogelijk al sinds februari 2025.\n\n## Hoeveel projecten zijn besmet?\n\nDe cijfers lopen uiteen, omdat onderzoekers verschillende dingen tellen. SafeDep vond de kwaadaardige code in 375 openbare repositories van 260 accounts. StepSecurity trof haar aan in 576 van de 622 onderzochte repositories. Securitybedrijf Apiiro schat de totale omvang op ruim 7.600 repositories van zo'n 2.300 accounts. Via de pakketregisters PyPI en npm is de code volgens SafeDep niet verspreid.\n\n## Hoe werkt de aanval?\n\nDe aanvallers plaatsen een klein Python-bestand van 58 regels in een project, verstopt in een hulpmap of in het bestand conftest.py. Dat laatste is extra verraderlijk: conftest.py wordt automatisch uitgevoerd zodra een ontwikkelaar de tests draait met pytest. De loader haalt vervolgens instructies op die zijn verstopt in transacties op de Ethereum-blockchain, en start daarmee de eigenlijke malware. Die zoekt onder meer naar ontwikkeltools als VS Code, Cursor en GitHub Desktop en steelt gegevens.\n\nMet gestolen git-inloggegevens zet de malware de code daarna in andere projecten van het slachtoffer, waarbij de oorspronkelijke datum van de wijziging wordt behouden. Daardoor valt de aanpassing minder op. Volgens SafeDep is PolinRider een onderdeel van de langlopende Noord-Koreaanse campagne Contagious Interview, waarbij ontwikkelaars via nep-sollicitaties worden benaderd.\n\nAanvallen op ontwikkelaars en hun code nemen toe. Eerder deze week bleek dat ook [1Password](/artikel/1password-gehackt-klantgegevens-gestolen-kluizen-veilig/) werd gehackt via een GitHub-account.",
+  "actions": [
+    "Controleer je repositories op onbekende bestanden in hulpmappen en op wijzigingen in conftest.py.",
+    "Draai code van onbekende projecten of 'sollicitatieopdrachten' alleen in een afgeschermde omgeving.",
+    "Vervang GitHub-tokens, SSH-sleutels en andere geheimen als je twijfelt of ze veilig zijn.",
+    "Zet tweestapsverificatie aan op je GitHub-account en gebruik ondertekende commits."
+  ],
+  "faq": [
+    {
+      "q": "Ben ik getroffen als ik een besmet project heb gedownload?",
+      "a": "Het risico ontstaat vooral als je de code uitvoert, bijvoorbeeld door tests te draaien met pytest. Controleer het project en draai het niet als je twijfelt."
+    },
+    {
+      "q": "Waarom verschillen de aantallen zo?",
+      "a": "Onderzoekers tellen verschillende dingen: sommigen alleen bevestigde besmettingen, anderen een schatting van de totale omvang. De cijfers zijn daardoor niet direct vergelijkbaar."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Open source",
+      "Crypto"
+    ]
+  },
+  "keywords": [
+    "PolinRider",
+    "Noord-Korea",
+    "GitHub",
+    "Python",
+    "conftest.py",
+    "supply chain",
+    "Contagious Interview"
+  ],
+  "image_query": "code on screen",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "SafeDep",
+      "title": "PolinRider Moves to Python with an Ethereum Calldata Loader",
+      "url": "https://safedep.io/blog/polinrider-python-loader-ethereum-calldata"
+    },
+    {
+      "name": "The Hacker News",
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html"
+    }
+  ],
+  "published": "2026-11-26T16:24:58+00:00",
+  "model": "redactie"
+}

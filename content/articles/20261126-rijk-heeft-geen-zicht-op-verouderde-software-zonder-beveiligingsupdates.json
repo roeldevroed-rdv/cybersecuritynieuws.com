@@ -1,0 +1,72 @@
+{
+  "id": "20261126-rijk-heeft-geen-zicht-op-verouderde-software-zonder-beveiligingsupdates",
+  "slug": "rijk-heeft-geen-zicht-op-verouderde-software-zonder-beveiligingsupdates",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Rijk heeft geen zicht op hoeveel systemen draaien op verouderde software",
+  "tldr": "De Rijksoverheid weet niet hoeveel van haar systemen draaien op software die geen beveiligingsupdates meer krijgt. Er is geen centraal overzicht, ook niet onder de nieuwe cybersecurityregels. Dat blijkt uit antwoorden op Kamervragen over verouderde PHP-versies. Elke organisatie is zelf verantwoordelijk.",
+  "meta_description": "Het Rijk heeft geen overzicht van systemen die draaien op software zonder beveiligingsupdates. Dat blijkt uit antwoorden op Kamervragen over verouderde PHP.",
+  "body": "De Rijksoverheid heeft geen idee hoeveel van haar systemen draaien op verouderde software die geen beveiligingsupdates meer krijgt. Er bestaat geen centraal overzicht, ondanks nieuwe cybersecurityregels. Dat blijkt uit antwoorden van het ministerie van Binnenlandse Zaken op Kamervragen van D66, [meldt Computable](https://www.computable.nl/2026/11/26/overheid-mist-elk-zicht-op-omvang-van-verouderde-software/). De vragen gingen over overheidswebsites en -systemen die nog draaien op oude versies van de programmeertaal PHP.\n\n## Waarom heeft het Rijk geen overzicht?\n\nHet kabinet legt de verantwoordelijkheid voor het opsporen, beoordelen en vervangen van verouderde software bij de afzonderlijke ministeries en uitvoeringsorganisaties. Daardoor kan het ministerie niet zeggen hoeveel overheidssystemen op niet-ondersteunde software draaien. Ook cijfers over toezicht en handhaving ontbreken. Dat is geen nieuwe lijn: in een eerdere [Kamerbrief over overheids-ICT](https://www.rijksoverheid.nl/documenten/kamerstukken/2025/03/12/kamerbrief-overzicht-overheids-ict-van-de-rijksoverheid) stelde het kabinet al dat elk onderdeel zelf verantwoordelijk is voor zijn IT en dat rijksbrede overzichten niet beschikbaar zijn.\n\n## Waarom is verouderde software een risico?\n\nSoftware zonder ondersteuning krijgt geen updates meer, ook niet als er een ernstig lek wordt ontdekt. Aanvallers weten dat en zoeken gericht naar zulke systemen. Hoe snel dat gaat, zagen we deze week bij [het actief misbruikte Drupal-lek](/artikel/nieuw-drupal-lek-actief-misbruikt-patch-vorige-week-niet-genoeg/): oudere Drupal-versies krijgen daarvoor geen update. En bij de [hack op het DIVD](/artikel/divd-gehackt-door-ai-agents-rapport-toont-hoe-aanvaller-binnenkwam/) kwam de aanvaller binnen via software die een jaar niet was bijgewerkt.\n\nDe nieuwe Europese regels voor cyberbeveiliging (NIS2) verplichten organisaties juist om hun risico's te kennen en te beheersen. Een actueel overzicht van systemen en softwareversies is daarvoor de basis. Dat geldt niet alleen voor de overheid, maar voor elke organisatie.",
+  "actions": [
+    "Maak een overzicht van al je systemen, websites en de softwareversies waarop ze draaien.",
+    "Controleer welke software geen beveiligingsupdates meer krijgt, zoals oude PHP- of Windows-versies.",
+    "Maak een plan om die systemen te vervangen of af te schermen van internet.",
+    "Spreek met je webbouwer of leverancier af wie verantwoordelijk is voor updates."
+  ],
+  "faq": [
+    {
+      "q": "Wat is verouderde of niet-ondersteunde software?",
+      "a": "Software waarvoor de maker geen beveiligingsupdates meer uitbrengt. Nieuwe lekken worden dan niet meer gedicht, waardoor het systeem kwetsbaar blijft."
+    },
+    {
+      "q": "Waarom gaat het over PHP?",
+      "a": "PHP is een programmeertaal waarop veel websites draaien. Oude versies krijgen geen updates meer. De Kamervragen gingen over overheidssites die nog zulke versies gebruiken."
+    }
+  ],
+  "category": "overheid",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "Grote organisaties"
+    ],
+    "sector": [
+      "Overheid"
+    ],
+    "technologie": [
+      "Open source"
+    ]
+  },
+  "keywords": [
+    "verouderde software",
+    "Rijksoverheid",
+    "PHP",
+    "Kamervragen",
+    "NIS2",
+    "beveiligingsupdates"
+  ],
+  "image_query": "government building computer",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Computable",
+      "title": "Overheid mist elk zicht op omvang van verouderde software",
+      "url": "https://www.computable.nl/2026/11/26/overheid-mist-elk-zicht-op-omvang-van-verouderde-software/"
+    },
+    {
+      "name": "Rijksoverheid",
+      "title": "Kamerbrief over overzicht overheids-ICT van de Rijksoverheid",
+      "url": "https://www.rijksoverheid.nl/documenten/kamerstukken/2025/03/12/kamerbrief-overzicht-overheids-ict-van-de-rijksoverheid"
+    }
+  ],
+  "published": "2026-11-26T16:24:58+00:00",
+  "model": "redactie"
+}
