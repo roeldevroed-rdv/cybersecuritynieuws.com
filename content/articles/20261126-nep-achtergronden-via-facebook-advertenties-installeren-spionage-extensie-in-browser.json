@@ -1,0 +1,71 @@
+{
+  "id": "20261126-nep-achtergronden-via-facebook-advertenties-installeren-spionage-extensie-in-browser",
+  "slug": "nep-achtergronden-via-facebook-advertenties-installeren-spionage-extensie-in-browser",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Nep-achtergronden via Facebook-advertenties nemen je browser over en lezen Gmail mee",
+  "tldr": "Via advertenties op Facebook en Instagram verspreiden criminelen 'gratis bewegende achtergronden' die stiekem malware installeren. De malware, SYS010, zet je browser onder beheer van de aanvaller en installeert een extensie die Gmail- en Outlook-berichten leest en sessiecookies steelt, zelfs met tweestapsverificatie. Download geen software via advertenties.",
+  "meta_description": "Malware SYS010 verstopt zich in nep-achtergronden uit Facebook-advertenties, neemt je browser over en leest Gmail en Outlook mee. Zo herken en voorkom je het.",
+  "body": "Criminelen verspreiden via advertenties op Facebook en Instagram nepversies van populaire programma's voor bewegende bureaubladachtergronden. Wie zo'n programma installeert, krijgt een werkende achtergrond, maar ook malware die de browser overneemt en e-mail meeleest. Dat meldt [BleepingComputer](https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/) op basis van onderzoek van Bitdefender, dat de malware SYS010 noemt.\n\nDe advertenties doen zich voor als de bekende programma's Wallpaper Engine en Lively Wallpaper en leiden naar downloadsites die er officieel uitzien. Volgens Bitdefender liep de campagne half oktober al en zijn er honderden advertenties gemaakt. Eén advertentie bereikte alleen al ruim 6.000 mensen in de EU. Ook vanuit België kwamen verbindingen met de servers van de aanvallers.\n\n## Hoe neemt de malware je browser over?\n\nDe malware misbruikt functies die bedoeld zijn voor bedrijven om browsers centraal te beheren. In Chrome wordt de browser aangemeld bij een beheeromgeving van de aanvaller, in Edge kan de hele Windows-pc onder beheer van een vreemde server komen, en in Firefox wordt via een beleidsregel een extensie geforceerd. Die extensies doen zich voor als documenthulpjes, zoals 'Docs Helper' met een icoon dat lijkt op Google Docs, en zijn niet te verwijderen.\n\nVoor die wijzigingen zijn beheerdersrechten nodig. De malware laat daarom het Windows-venster 'Wilt u toestaan dat deze app wijzigingen aanbrengt?' steeds opnieuw verschijnen, elke drie seconden en tot 99 keer, tot de gebruiker toestemming geeft.\n\n## Wat steelt SYS010?\n\nDe extensie steelt sessiecookies, waardoor de aanvaller kan inloggen op accounts zonder wachtwoord en zonder [tweestapsverificatie](/artikel/tweestapsverificatie/). Ze leest recente berichten in Gmail en Outlook en kan berichten definitief verwijderen, bijvoorbeeld inlogcodes en beveiligingswaarschuwingen. Daarnaast verzamelt de malware gegevens van Facebook-pagina's en advertentieaccounts, inclusief betaalgegevens. Gestolen advertentieaccounts worden vaak gebruikt om nieuwe malafide advertenties te betalen.\n\nVoor ondernemers die via Facebook adverteren is dat extra riskant: zo'n account kan onkosten opleveren en het bedrijf zijn sociale media kosten. Lees ook [wat je doet als je account gehackt is](/artikel/account-gehackt/).",
+  "actions": [
+    "Download nooit software via een advertentie op sociale media; ga zelf naar de officiële website of app-winkel.",
+    "Geef geen toestemming als Windows steeds opnieuw om beheerdersrechten vraagt; sluit het programma en verwijder het.",
+    "Controleer in Chrome via chrome://management of Edge via edge://management of je browser onverwacht 'beheerd' wordt.",
+    "Ziet je browser er beheerd uit of staan er onbekende extensies? Laat de pc controleren en log daarna overal opnieuw in.",
+    "Adverteer je via Meta? Controleer je advertentieaccount op onbekende campagnes en uitgaven."
+  ],
+  "faq": [
+    {
+      "q": "Beschermt tweestapsverificatie tegen SYS010?",
+      "a": "Niet volledig. De malware steelt sessiecookies van accounts waarop je al bent ingelogd, waardoor een aanvaller geen wachtwoord of code nodig heeft. Na een besmetting moet je overal uitloggen en wachtwoorden veranderen."
+    },
+    {
+      "q": "Hoe zie ik of mijn browser wordt beheerd?",
+      "a": "In Chrome en Edge staat dan een melding 'Wordt beheerd door je organisatie' in het menu. Op een privécomputer hoort die melding er niet te staan."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "Wereld",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Browsers",
+      "Google",
+      "Microsoft"
+    ]
+  },
+  "keywords": [
+    "SYS010",
+    "SYS01",
+    "infostealer",
+    "malvertising",
+    "Facebook-advertenties",
+    "browserextensie",
+    "Gmail",
+    "Outlook"
+  ],
+  "image_query": "laptop browser",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+      "url": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/"
+    }
+  ],
+  "published": "2026-11-26T12:25:15+00:00",
+  "model": "redactie"
+}
