@@ -1,0 +1,69 @@
+{
+  "id": "20261126-phishing-met-nep-betaalde-expertinterviews-steelt-zakelijke-google-accounts",
+  "slug": "phishing-met-nep-betaalde-expertinterviews-steelt-zakelijke-google-accounts",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Phishing met nep-betaalde 'expertinterviews' steelt zakelijke Google- en Okta-accounts",
+  "tldr": "Criminelen sturen uitnodigingen voor betaalde expertinterviews en webinars namens bekende merken als Google, Nvidia en Accenture. Wie zich aanmeldt met een zakelijk Google- of Okta-account, geeft wachtwoord en inlogcode af aan de aanvallers. De campagne heet GoodGuys en loopt sinds half oktober.",
+  "meta_description": "Phishing met nep-uitnodigingen voor betaalde expertinterviews van Google, Nvidia en Accenture steelt zakelijke Google- en Okta-accounts. Zo herken je het.",
+  "body": "Criminelen benaderen werknemers met aanlokkelijke uitnodigingen: tot 600 dollar voor een interview van 45 minuten, of een vergoeding voor deelname aan een webinar of onderzoek. Wie ingaat op de uitnodiging, raakt zijn zakelijke Google- of Okta-account kwijt. Dat meldt [BleepingComputer](https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/) op basis van onderzoek van securitybedrijf Push Security, dat de campagne GoodGuys noemt.\n\n## Hoe werkt de oplichting?\n\nDe aanvallers doen zich voor als acht bekende bedrijven, waaronder Google Cloud, Nvidia, Accenture, American Express, Coca-Cola, SpaceX en Spotify. Ze versturen hun uitnodigingen via echte platforms voor e-mail, sollicitaties en evenementen, zoals HireVue, SendGrid en Cvent. Daardoor komen de mails minder snel in de spammap terecht en zien ze er betrouwbaar uit.\n\nDe link leidt via een CAPTCHA naar een nagemaakte website in de huisstijl van het merk. Om de uitnodiging te 'bevestigen' moet je inloggen met je Google-account. De site weigert privéadressen van Gmail, Yahoo en Outlook: de aanvallers zijn alleen uit op zakelijke accounts.\n\n## Helpt tweestapsverificatie hier niet?\n\nNiet als je de code zelf invoert. Volgens de onderzoekers loggen de aanvallers met het gestolen wachtwoord direct zelf in en laten ze op de nepsite precies de controle zien die Google of Okta op dat moment vraagt: een sms-code, een code uit een authenticator-app of het aantikken van een nummer op je telefoon. Wie dat invult of goedkeurt, geeft de aanvaller toegang. Een vergelijkbare aanpak werd eerder dit jaar gebruikt bij aanvallen op zakelijke accounts door de afpersersgroep ShinyHunters.\n\nOpvallend: de onderzoekers vermoeden dat de phishingkit met hulp van een AI-programmeerassistent is gebouwd. In de code staan verborgen labels als 'sign-in simulation', die waarschijnlijk zijn gebruikt om de AI te laten denken dat het om een oefening ging.\n\nEchte onderzoeksbureaus vragen nooit om in te loggen met je werkaccount om een uitnodiging te bevestigen. Lees [hoe je phishing herkent](/artikel/wat-is-phishing/) en [wat je doet als je account gehackt is](/artikel/account-gehackt/).",
+  "actions": [
+    "Wantrouw onverwachte uitnodigingen voor betaalde interviews, webinars of onderzoeken, ook van bekende merken.",
+    "Log nooit in met je werkaccount om een uitnodiging te 'bevestigen'.",
+    "Keur geen inlogverzoek op je telefoon goed dat je zelf niet hebt gestart.",
+    "Gebruik waar mogelijk passkeys of een beveiligingssleutel: die werken niet op nepsites.",
+    "Meld verdachte uitnodigingen bij je IT-afdeling, zodat collega's gewaarschuwd kunnen worden."
+  ],
+  "faq": [
+    {
+      "q": "Waarom alleen zakelijke accounts?",
+      "a": "Een zakelijk Google- of Okta-account geeft vaak toegang tot veel bedrijfssystemen tegelijk, zoals mail, documenten en clouddiensten. Dat is waardevoller voor aanvallers dan een privéaccount."
+    },
+    {
+      "q": "Welke bescherming werkt wel?",
+      "a": "Passkeys en fysieke beveiligingssleutels zijn gekoppeld aan de echte website en werken niet op een nepsite. Codes per sms of app kunnen wel worden doorgegeven aan aanvallers."
+    }
+  ],
+  "category": "phishing",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Google",
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "phishing",
+    "GoodGuys",
+    "expertinterview",
+    "Google",
+    "Okta",
+    "tweestapsverificatie",
+    "Push Security"
+  ],
+  "image_query": "video call laptop",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+      "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/"
+    }
+  ],
+  "published": "2026-11-26T18:25:15+00:00",
+  "model": "redactie"
+}
