@@ -1,0 +1,65 @@
+{
+  "id": "20261126-gitlab-dicht-lekken-developers-konden-eigen-wijzigingen-goedkeuren",
+  "slug": "gitlab-dicht-lekken-developers-konden-eigen-wijzigingen-goedkeuren",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "GitLab dicht lekken: developers konden eigen wijzigingen goedkeuren",
+  "tldr": "GitLab heeft meerdere kwetsbaarheden verholpen in GitLab Enterprise Edition. Daardoor konden onder meer developers hun eigen merge requests goedkeuren en zo de controle op beschermde branches omzeilen. Het NCSC adviseert te updaten naar versie 19.4.11, 19.5.9 of 19.6.2. Misbruik is niet bekend.",
+  "meta_description": "GitLab Enterprise Edition krijgt updates voor meerdere lekken, waaronder het zelf goedkeuren van merge requests. Update naar 19.4.11, 19.5.9 of 19.6.2.",
+  "body": "GitLab heeft een reeks kwetsbaarheden verholpen in GitLab Enterprise Edition, het platform waarmee veel organisaties hun broncode beheren en software bouwen. Het Nationaal Cyber Security Centrum (NCSC) waarschuwt ervoor en schat de kans op misbruik als gemiddeld en de schade als hoog in, [blijkt uit het advies](https://advisories.ncsc.nl/advisory?id=NCSC-2026-0522). Versies vóór 19.4.11, 19.5.9 en 19.6.2 zijn kwetsbaar.\n\n## Wat kunnen aanvallers met deze lekken?\n\nHet opvallendste lek laat gebruikers met de rol 'developer' hun eigen merge requests goedkeuren. Daarmee kunnen ze wijzigingen in beschermde branches zetten zonder de verplichte controle door een collega. Juist die controle is bedoeld om fouten en kwaadaardige code tegen te houden.\n\nDaarnaast verhelpt GitLab onder meer:\n\n- een lek waarmee een gebruiker met maintainer-rechten sessiecookies van andere gebruikers kon bemachtigen;\n- lekken waardoor persoonlijke toegangstokens meer konden lezen dan was toegestaan;\n- een lek in de rechten van CI-jobs waardoor gevoelige informatie van andere gebruikers kon uitlekken;\n- SSRF-lekken via OAuth en het importeren van repositories, waarmee interne netwerkbronnen bereikbaar werden;\n- meerdere lekken waarmee de dienst kon worden platgelegd.\n\n## Waarom is dit belangrijk?\n\nAanvallers richten zich steeds vaker op de systemen waar software wordt gebouwd. Wie daar binnenkomt, kan broncode stelen of kwaadaardige code in software verstoppen. Bij de recente hacks van [1Password](/artikel/1password-gehackt-klantgegevens-gestolen-kluizen-veilig/) en [Todoist](/artikel/todoist-gehackt-wachtwoordhashes-en-e-mailadressen-gestolen/) begon het ook bij code-omgevingen. Misbruik van deze GitLab-lekken is niet bekend, maar wacht niet te lang met updaten.",
+  "actions": [
+    "Update GitLab Enterprise Edition naar 19.4.11, 19.5.9 of 19.6.2.",
+    "Controleer recente merge requests op beschermde branches die zonder echte review zijn goedgekeurd.",
+    "Beperk persoonlijke toegangstokens tot het minimum en vervang tokens die je niet vertrouwt.",
+    "Gebruik je GitLab.com in de cloud? Dan werkt GitLab dat zelf bij; controleer wel je instellingen."
+  ],
+  "faq": [
+    {
+      "q": "Wordt het lek al misbruikt?",
+      "a": "Daar is niets over bekend. Het NCSC schat de kans op misbruik als gemiddeld in."
+    },
+    {
+      "q": "Geldt dit ook voor GitLab Community Edition?",
+      "a": "Het advies van het NCSC gaat over GitLab Enterprise Edition. Controleer de release-informatie van GitLab voor je eigen versie."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB",
+      "Grote organisaties"
+    ],
+    "sector": [],
+    "technologie": [
+      "Open source"
+    ]
+  },
+  "keywords": [
+    "GitLab",
+    "Enterprise Edition",
+    "merge request",
+    "NCSC",
+    "beveiligingsupdate"
+  ],
+  "image_query": "software developer code",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "NCSC",
+      "title": "NCSC-2026-0522 Kwetsbaarheden verholpen in GitLab Enterprise Edition",
+      "url": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0522"
+    }
+  ],
+  "published": "2026-11-26T14:24:38+00:00",
+  "model": "redactie"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "20261126-ransomware-ziekenhuis-guadeloupe-staakt-kankerbehandelingen",
+  "slug": "ransomware-ziekenhuis-guadeloupe-staakt-kankerbehandelingen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Ransomware legt ziekenhuis Guadeloupe plat: kankerbehandelingen gestaakt",
+  "tldr": "Het universiteitsziekenhuis van Guadeloupe heeft na een cyberaanval tijdelijk de radiotherapie voor kankerpatiënten stopgezet. Operaties worden uitgesteld en het personeel werkt met pen en papier. Volgens het Franse cyberagentschap ANSSI kwamen de aanvallers binnen via een externe IT-leverancier die maanden eerder was gehackt.",
+  "meta_description": "Het ziekenhuis van Guadeloupe staakt kankerbehandelingen na een ransomware-aanval. De aanvallers kwamen binnen via een gehackte IT-leverancier. Lessen voor de zorg.",
+  "body": "Het universiteitsziekenhuis van Guadeloupe, een Frans overzees departement in het Caribisch gebied, heeft na een cyberaanval de radiotherapiebehandelingen voor kankerpatiënten tijdelijk stopgezet, [meldt Security.NL](https://www.security.nl/posting/963260/). Ook operaties en andere behandelingen worden uitgesteld en spoedpatiënten worden naar een andere locatie gebracht.\n\nDe aanval vond zaterdag plaats; op zondag werd een crisisplan in werking gezet. Volgens een bron van de Franse krant Le Monde gaat het om ransomware: verschillende databases zijn opzettelijk versleuteld, waardoor applicaties niet meer werken en medewerkers niet bij gegevens kunnen. Het personeel is teruggevallen op pen en papier. Het ziekenhuis verwacht enkele dagen nodig te hebben voor het herstel. Het Franse openbaar ministerie is een onderzoek gestart.\n\n## Hoe kwamen de aanvallers binnen?\n\nHet Franse cyberagentschap ANSSI wijst naar een externe IT-leverancier van het ziekenhuis. Die niet bij naam genoemde partij was enkele maanden geleden gehackt. Dat is een bekend patroon: aanvallers breken in bij een leverancier en gebruiken diens toegang om bij de klanten binnen te komen. Eerder deze week zagen we hetzelfde bij [ScreenConnect, dat werd misbruikt om pc's van IT-dienstverleners over te nemen](/artikel/screenconnect-lek-misbruikt-om-pcs-van-msp-technici-over-te-nemen/).\n\n## Wat kunnen zorginstellingen hiervan leren?\n\nZiekenhuizen zijn een geliefd doelwit, omdat elke minuut stilstand directe gevolgen heeft voor patiënten en de druk om losgeld te betalen groot is. De aanval laat zien hoe belangrijk het is om ook de toegang van leveranciers te beheersen: geef ze alleen toegang tot wat ze nodig hebben, beveilig die toegang met tweestapsverificatie en houd in de gaten wat ze doen. Daarnaast is een geoefend noodplan voor werken zonder IT onmisbaar, net als back-ups die aanvallers niet kunnen versleutelen.\n\nLees ook [wat ransomware is en hoe je je ertegen beschermt](/artikel/wat-is-ransomware/).",
+  "actions": [
+    "Breng in kaart welke leveranciers toegang hebben tot je systemen en beperk die tot het noodzakelijke.",
+    "Beveilig toegang van leveranciers met tweestapsverificatie en log wat ze doen.",
+    "Zorg voor offline of onveranderbare back-ups en test regelmatig of herstel werkt.",
+    "Oefen een noodplan voor werken zonder IT, zoals met papieren formulieren.",
+    "Vraag leveranciers om direct te melden als zij zelf getroffen zijn door een incident."
+  ],
+  "faq": [
+    {
+      "q": "Is er losgeld geëist?",
+      "a": "Dat is niet bekendgemaakt. Volgens een bron van Le Monde gaat het om ransomware, waarbij databases zijn versleuteld."
+    },
+    {
+      "q": "Waarom wordt de IT-leverancier genoemd?",
+      "a": "Het Franse cyberagentschap ANSSI wijst naar een externe IT-leverancier als oorzaak. Die was maanden eerder gehackt, waarna aanvallers via die weg bij het ziekenhuis binnenkwamen."
+    }
+  ],
+  "category": "ransomware",
+  "labels": {
+    "regio": [
+      "Europa"
+    ],
+    "doelgroep": [
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [
+      "Zorg"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "ransomware",
+    "ziekenhuis",
+    "Guadeloupe",
+    "ANSSI",
+    "kankerbehandelingen",
+    "leverancier"
+  ],
+  "image_query": "hospital corridor",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Frans ziekenhuis staakt kankerbehandelingen wegens cyberaanval",
+      "url": "https://www.security.nl/posting/963260/"
+    }
+  ],
+  "published": "2026-11-26T14:24:38+00:00",
+  "model": "redactie"
+}
