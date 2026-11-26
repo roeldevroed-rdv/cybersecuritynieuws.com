@@ -27,6 +27,7 @@
 "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
 "https://www.computable.nl/2026/11/26/overheid-mist-elk-zicht-op-omvang-van-verouderde-software/",
 "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
+"https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
 "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-sgnl-to-transform-identity-security-for-ai-era/",
 "https://www.drupal.org/sa-core-2026-019",
 "https://www.maxmeldpunt.nl/geld/dnb-betalingsverkeer-kan-uitvallen-door-cyberaanvallen-dus-houd-contant-geld-achter-de-hand/",
@@ -45,5 +46,7 @@
 "https://www.security.nl/posting/963206/",
 "https://www.security.nl/posting/963260/",
 "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
-"https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability"
+"https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability",
+"https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx",
+"https://xint.io/blog/nginx2root-remote-code-execution"
 ]

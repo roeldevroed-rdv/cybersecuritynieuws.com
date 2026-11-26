@@ -1,0 +1,89 @@
+{
+  "id": "20261126-nginx2root-vijf-kritieke-lekken-in-nginx-update-naar-1-31-9-of-1-30-7",
+  "slug": "nginx2root-vijf-kritieke-lekken-in-nginx-update-naar-1-31-9-of-1-30-7",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "NGINX2Root: vijf lekken in webserver NGINX, miljoenen servers moeten updaten",
+  "tldr": "In de populaire webserver NGINX zijn vijf ernstige lekken gevonden, samen NGINX2Root genoemd. Het ergste lek (CVE-2026-123007) laat aanvallers zonder inloggen code uitvoeren via HTTP/2. Er zijn updates: NGINX 1.31.9 en 1.30.7. Gecombineerd met een nog niet gedicht Linux-lek kan een aanvaller rootrechten krijgen.",
+  "meta_description": "NGINX2Root: vijf lekken in NGINX, waaronder CVE-2026-123007 via HTTP/2. Update naar NGINX 1.31.9 of 1.30.7 en lees wat je verder moet doen.",
+  "body": "In NGINX, de webserver achter een groot deel van alle websites, zijn vijf ernstige kwetsbaarheden ontdekt. Securitybedrijf Xint, dat de lekken vond, noemt ze samen [NGINX2Root](https://xint.io/blog/nginx2root-remote-code-execution). Maker F5 heeft ze gedicht in NGINX Open Source 1.31.9 en 1.30.7. Volgens schattingen hangen miljoenen kwetsbare servers aan het internet; [Tenable](https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx) zet de belangrijkste vragen op een rij.\n\n## Hoe ernstig zijn de lekken?\n\nHet ergste lek, CVE-2026-123007, zit in de manier waarop NGINX HTTP/2-verkeer verwerkt. Door een rekenfout kan een aanvaller buiten het toegewezen geheugen schrijven en zo zonder in te loggen eigen code uitvoeren op de server. Het lek krijgt een score van 9,2 uit 10. De andere vier lekken zijn CVE-2026-123633, CVE-2026-123634, CVE-2026-121810 en CVE-2026-113425.\n\nVia NGINX zelf draait de code van de aanvaller met de beperkte rechten van het NGINX-werkproces. Volledige controle (root) vereist een tweede lek: een nog niet gedichte kwetsbaarheid in de SCTP-module van de Linux-kernel. Xint houdt de details daarvan achter tot er een kernelupdate is. Dat verklaart de naam NGINX2Root. Over misbruik in de praktijk melden de bronnen nog niets.\n\n## Wat moet je doen?\n\nUpdate NGINX naar 1.31.9 of 1.30.7, of de bijgewerkte versie van je Linux-distributie of leverancier. NGINX zit ook verwerkt in veel andere producten, zoals load balancers, Kubernetes-ingresscontrollers en apparaten; controleer daarom ook de adviezen van die leveranciers, [schrijft CrowdStrike](https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/).\n\nKun je niet direct updaten? Het uitschakelen van HTTP/2 blokkeert de twee lekken in dat onderdeel, maar niet de andere drie. Gebruikt je server geen SCTP, en dat geldt voor de meeste webservers, blokkeer dan de SCTP-kernelmodule. Daarmee haal je de route naar rootrechten weg tot de kernelupdate er is.\n\nLees ook ons bericht over [het actief misbruikte Drupal-lek](/artikel/nieuw-drupal-lek-actief-misbruikt-patch-vorige-week-niet-genoeg/), dat ook veel websites raakt.",
+  "actions": [
+    "Update NGINX naar 1.31.9 of 1.30.7, of de bijgewerkte versie van je distributie.",
+    "Controleer producten waarin NGINX is ingebouwd, zoals load balancers en Kubernetes-ingress, en installeer hun updates.",
+    "Kun je niet direct updaten? Schakel HTTP/2 tijdelijk uit als tussenoplossing.",
+    "Blokkeer de SCTP-kernelmodule op servers die SCTP niet gebruiken.",
+    "Laat je website hosten? Vraag je hostingpartij of NGINX al is bijgewerkt."
+  ],
+  "faq": [
+    {
+      "q": "Wat is NGINX?",
+      "a": "NGINX is een veelgebruikte webserver en reverse proxy. Een groot deel van alle websites draait erop, vaak zonder dat de eigenaar het weet."
+    },
+    {
+      "q": "Is mijn website kwetsbaar?",
+      "a": "Als je website op NGINX draait met een versie ouder dan 1.31.9 of 1.30.7, waarschijnlijk wel. Bij gehoste websites moet je hostingpartij de update installeren."
+    },
+    {
+      "q": "Wordt NGINX2Root al misbruikt?",
+      "a": "In de bronnen is daar nog niets over gemeld. Omdat de lekken openbaar zijn en zoveel servers raken, is snel updaten verstandig."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB",
+      "Grote organisaties"
+    ],
+    "sector": [],
+    "technologie": [
+      "Linux",
+      "Open source"
+    ]
+  },
+  "keywords": [
+    "NGINX2Root",
+    "NGINX",
+    "CVE-2026-123007",
+    "HTTP/2",
+    "F5",
+    "Linux",
+    "SCTP"
+  ],
+  "image_query": "server rack",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [
+    "CVE-2026-113425",
+    "CVE-2026-121810",
+    "CVE-2026-123007",
+    "CVE-2026-123633",
+    "CVE-2026-123634"
+  ],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Xint",
+      "title": "NGINX2Root: New Remote Code Execution Vulnerabilities in nginx Require Urgent Patching",
+      "url": "https://xint.io/blog/nginx2root-remote-code-execution"
+    },
+    {
+      "name": "Tenable",
+      "title": "NGINX2Root FAQ: Five vulnerabilities in NGINX (CVE-2026-123007)",
+      "url": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx"
+    },
+    {
+      "name": "CrowdStrike",
+      "title": "CrowdStrike Helps Identify, Patch, and Protect Against NGINX2Root",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/"
+    }
+  ],
+  "published": "2026-11-26T20:24:38+00:00",
+  "model": "redactie"
+}
