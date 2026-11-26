@@ -1,0 +1,70 @@
+{
+  "id": "20261126-hackers-stelen-klantgegevens-bij-eneco-belgie",
+  "slug": "hackers-stelen-klantgegevens-bij-eneco-belgie",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Hackers stelen klantgegevens bij Eneco België, eerst ontkende het bedrijf",
+  "tldr": "Bij de Belgische tak van energieleverancier Eneco zijn klantgegevens gestolen, bevestigt het bedrijf na een waarschuwing van het Centrum voor Cybersecurity België. Eerder ontkende Eneco nog dat het was gehackt. Een cybercrimineel claimt meer dan 100.000 klantnummers en tienduizenden rekeningnummers. Wees alert op nepmails en nepbetaalverzoeken.",
+  "meta_description": "Hackers hebben klantgegevens gestolen bij Eneco België, mogelijk ook rekeningnummers. Wat er bekend is en hoe je je beschermt tegen de oplichting die volgt.",
+  "body": "Bij de Belgische tak van energieleverancier Eneco zijn klantgegevens gestolen. Dat heeft een woordvoerder van het bedrijf bevestigd na een waarschuwing van het Centrum voor Cybersecurity België (CCB), [meldt Tweakers](https://tweakers.net/nieuws/254950/hackers-stelen-klantgegevens-van-belgische-tak-eneco.html) op basis van persbureau Belga. Eerder ontkende Eneco nog dat zijn database was gehackt.\n\n## Wat is er gestolen?\n\nDat is nog niet duidelijk. Eneco heeft niet bekendgemaakt hoeveel klanten zijn getroffen en welke gegevens precies zijn buitgemaakt. Een cybercrimineel beweert volgens [The Brussels Times](https://www.brusselstimes.com/belgium/2424015/possible-customer-data-theft-at-energy-company-eneco) meer dan 100.000 klantnummers en tienduizenden bankrekeningnummers in handen te hebben. Die claim is niet bevestigd.\n\nIn het weekend viel al op dat iemand de functie voor accountherstel van het klantportaal My Eneco gebruikte met willekeurige klantnummers. Daardoor kregen sommige klanten een echte mail van Eneco om hun wachtwoord opnieuw in te stellen, terwijl ze dat niet hadden aangevraagd. Of de diefstal via die weg plaatsvond, is niet bekend. Eneco zegt dat het beveiligingsprobleem inmiddels is opgelost en dat het klanten informeert zodra er meer bekend is.\n\n## Waarom is dit riskant voor klanten?\n\nMet klantnummers, namen en rekeningnummers kunnen oplichters heel geloofwaardige berichten maken: een 'achterstallige rekening', een 'teruggave' of een verzoek om je bankgegevens te 'bevestigen'. Eneco benadrukt dat het alleen mailt vanaf adressen die eindigen op @eneco.be, @eneco.com of @eneco.nl, nooit om je wachtwoord vraagt en wijzigingen in bankgegevens altijd per mail of brief bevestigt.\n\nBen je klant bij Eneco in België? Wees dan de komende tijd extra alert. Lees [hoe je phishing herkent](/artikel/wat-is-phishing/) en [wat je doet als je gegevens gelekt zijn](/artikel/datalek-wat-nu/).",
+  "actions": [
+    "Klik niet op betaallinks of 'bevestig je gegevens'-links in mails en sms'jes die van Eneco lijken te komen.",
+    "Controleer je rekening en contract altijd zelf via de officiële website of app van Eneco.",
+    "Kreeg je onverwacht een mail om je wachtwoord te herstellen? Negeer die en verander zelf je wachtwoord via de site.",
+    "Houd je bankafschriften in de gaten op onbekende incasso's en blokkeer die zo nodig via je bank.",
+    "Gebruik voor My Eneco een uniek wachtwoord dat je nergens anders gebruikt."
+  ],
+  "faq": [
+    {
+      "q": "Zijn ook Nederlandse Eneco-klanten getroffen?",
+      "a": "Het gaat volgens de berichtgeving om de Belgische tak van Eneco. Over Nederlandse klanten is niets gemeld."
+    },
+    {
+      "q": "Zijn mijn bankgegevens gestolen?",
+      "a": "Dat is nog niet bevestigd. Een cybercrimineel claimt tienduizenden rekeningnummers. Eneco onderzoekt de omvang en informeert klanten zodra er meer bekend is."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Energie"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "Eneco",
+    "datalek",
+    "België",
+    "CCB",
+    "phishing",
+    "klantgegevens"
+  ],
+  "image_query": "energy bill",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Tweakers",
+      "title": "Hackers stelen klantgegevens van Belgische tak Eneco",
+      "url": "https://tweakers.net/nieuws/254950/hackers-stelen-klantgegevens-van-belgische-tak-eneco.html"
+    },
+    {
+      "name": "The Brussels Times",
+      "title": "Possible customer data theft at energy company Eneco",
+      "url": "https://www.brusselstimes.com/belgium/2424015/possible-customer-data-theft-at-energy-company-eneco"
+    }
+  ],
+  "published": "2026-11-26T10:24:40+00:00",
+  "model": "redactie"
+}

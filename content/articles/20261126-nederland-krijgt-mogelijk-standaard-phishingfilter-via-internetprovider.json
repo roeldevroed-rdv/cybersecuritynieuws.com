@@ -1,0 +1,66 @@
+{
+  "id": "20261126-nederland-krijgt-mogelijk-standaard-phishingfilter-via-internetprovider",
+  "slug": "nederland-krijgt-mogelijk-standaard-phishingfilter-via-internetprovider",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Nederland krijgt mogelijk standaard phishingfilter via je internetprovider",
+  "tldr": "Het kabinet onderzoekt of het Nederlandse phishingfilter Anti Phishing Shield standaard voor iedereen kan worden aangezet, met de mogelijkheid om je af te melden. Nu moet je je er zelf voor aanmelden. Het filter stuurt bezoekers van bekende phishingsites door naar een waarschuwing. België werkt al met zo'n filter.",
+  "meta_description": "Het kabinet onderzoekt een standaard ingeschakeld phishingfilter via internetproviders. Wat het Anti Phishing Shield doet en wat het voor jou betekent.",
+  "body": "Nederlandse internetgebruikers krijgen mogelijk standaard een phishingfilter via hun internetprovider. Het kabinet onderzoekt of het Anti Phishing Shield (APS) op basis van 'opt-out' kan worden aangeboden: het filter staat dan voor iedereen aan, tenzij je je afmeldt. Dat blijkt uit antwoorden van de minister van Economische Zaken op Kamervragen, [meldt Security.NL](https://www.security.nl/posting/963206/). Wanneer het onderzoek klaar is, is niet bekend.\n\n## Hoe werkt het phishingfilter?\n\nHet APS werkt via DNS, het 'telefoonboek' van internet. Probeer je een bekende phishingsite te openen, dan stuurt het filter je door naar een waarschuwingspagina in plaats van naar de nepsite. Het filter is een samenwerking van onder meer het ministerie van Justitie en Veiligheid, het Nationaal Cyber Security Centrum (NCSC), KPN, de politie, de Nederlandse Vereniging van Banken en brancheclub NLconnect.\n\nNa een proef met 200.000 deelnemers maken volgens het kabinet inmiddels zo'n 300.000 mensen gebruik van het filter. Daarmee zijn vier miljoen bezoeken aan malafide websites voorkomen. Omdat je je nu zelf moet aanmelden bij een deelnemende provider, wordt maar een kleine groep beschermd. De Tweede Kamer stemde eerder al voor een motie om providers het filter standaard te laten inschakelen.\n\n## Wat betekent dit voor jou?\n\nVoorlopig verandert er nog niets: het gaat om een verkenning. België werkt al langer met een vergelijkbaar filter bij de grootste internetproviders. Zo'n filter is een extra vangnet, maar geen vervanging van je eigen oplettendheid: nieuwe phishingsites staan er niet meteen op, en sms'jes of telefoontjes van oplichters houdt het niet tegen.\n\nLees [hoe je phishing herkent](/artikel/wat-is-phishing/) en zet [tweestapsverificatie](/artikel/tweestapsverificatie/) aan op je belangrijkste accounts, zodat een gestolen wachtwoord alleen niet genoeg is.",
+  "actions": [
+    "Vraag je internetprovider of die meedoet aan het Anti Phishing Shield en of je je kunt aanmelden.",
+    "Blijf zelf alert: controleer altijd het webadres voordat je inlogt of betaalt.",
+    "Zet tweestapsverificatie aan op je e-mail, bank en andere belangrijke accounts.",
+    "Meld phishing bij de Fraudehelpdesk of stuur verdachte mails door naar valse@fraudehelpdesk.nl."
+  ],
+  "faq": [
+    {
+      "q": "Kan het phishingfilter meekijken met wat ik doe op internet?",
+      "a": "Het filter werkt via DNS en vergelijkt de websites die je opvraagt met een lijst van bekende phishingsites. Bij een standaard ingeschakeld filter kun je je volgens het plan afmelden."
+    },
+    {
+      "q": "Beschermt het filter tegen alle phishing?",
+      "a": "Nee. Het blokkeert alleen bekende phishingsites. Nieuwe sites, sms-fraude en telefonische oplichting houdt het niet tegen."
+    }
+  ],
+  "category": "phishing",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "België"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [
+      "Telecom"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "phishingfilter",
+    "Anti Phishing Shield",
+    "APS",
+    "NCSC",
+    "internetprovider",
+    "DNS"
+  ],
+  "image_query": "internet security warning",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Nederland krijgt mogelijk standaard ingeschakeld phishingfilter",
+      "url": "https://www.security.nl/posting/963206/"
+    }
+  ],
+  "published": "2026-11-26T10:24:40+00:00",
+  "model": "redactie"
+}
