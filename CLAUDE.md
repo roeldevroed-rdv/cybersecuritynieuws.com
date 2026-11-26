@@ -38,6 +38,7 @@ content/seen.json        # al verwerkte bron-URL's
 README.md                # installatie: GitHub, secret, GitHub Pages, domein (DNS), kosten
 tools/nieuwsronde.py     # kandidaten zoeken + concepten valideren/opslaan voor de dagelijkse ronde
 tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job na deploy)
+tools/instagram.py       # `python -m tools.instagram <slug>` → social/<slug>/: 5 carrousel-slides 1080x1350, reel.mp4 1080x1920 (±50 s, geen geluid), bijschrift.txt (social/ staat in .gitignore)
 ```
 
 ## Status
