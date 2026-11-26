@@ -1,0 +1,83 @@
+{
+  "id": "20261126-crowdstrike-wie-zijn-ze-en-wat-doen-ze",
+  "slug": "crowdstrike-wie-zijn-ze-en-wat-doen-ze",
+  "type": "gids",
+  "topic_id": null,
+  "title": "CrowdStrike: wie zijn ze en wat doen ze?",
+  "tldr": "CrowdStrike is een Amerikaans securitybedrijf dat bekend werd met beveiliging van laptops en servers vanuit de cloud. Het Falcon-platform beveiligt inmiddels ook cloud, identiteiten en AI. In 2024 legde een fout in een update wereldwijd 8,5 miljoen Windows-computers plat. Het bedrijf groeit hard en koopt veel bij.",
+  "meta_description": "CrowdStrike uitgelegd: wat het bedrijf doet, het Falcon-platform, de grote storing van juli 2024 en de recente overnames zoals SGNL, Pangea en Onum.",
+  "body": "CrowdStrike is een Amerikaans cybersecuritybedrijf, in 2011 opgericht door onder anderen George Kurtz, die nog altijd topman is. Het bedrijf werd groot met beveiliging van endpoints (laptops, pc's en servers) die vanuit de cloud wordt beheerd, in plaats van klassieke antivirus. Inmiddels is CrowdStrike een van de grootste securitybedrijven ter wereld: in het boekjaar tot eind januari 2026 had het [een omzet van ruim 4,8 miljard dollar](https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-third-quarter-fiscal-year-2026-financial/).\n\n## Wat doet CrowdStrike precies?\n\nAlles draait om het **Falcon-platform**. Op elk apparaat staat één lichte agent die gedrag in de gaten houdt en verdachte activiteit doorgeeft aan de cloud van CrowdStrike, waar het wordt geanalyseerd. Op dat platform bouwt het bedrijf modules voor onder meer:\n\n- **endpointbeveiliging** (EDR): aanvallen op apparaten ontdekken en stoppen;\n- **cloudbeveiliging**: servers en containers in de cloud beschermen;\n- **identiteitsbeveiliging**: misbruik van accounts en inloggegevens herkennen;\n- **SIEM en logbeheer**: securitygegevens uit de hele organisatie verzamelen;\n- **managed diensten**: analisten van CrowdStrike die meekijken en ingrijpen (MDR), vergelijkbaar met de dienst van [Arctic Wolf](/artikel/arctic-wolf-wie-zijn-ze-en-wat-doen-ze/).\n\nCrowdStrike staat ook bekend om zijn onderzoek naar hackersgroepen, die het namen geeft als 'Bear' voor Russische en 'Panda' voor Chinese groepen.\n\n## Wat ging er mis in juli 2024?\n\nOp 19 juli 2024 verstuurde CrowdStrike een foutieve update voor Falcon op Windows. Daardoor crashten volgens Microsoft [zo'n 8,5 miljoen Windows-computers](https://techcrunch.com/2024/07/20/microsoft-says-8-5m-windows-devices-were-affected-by-crowdstrike-outage/), wat wereldwijd onder meer luchthavens, banken en ziekenhuizen trof. Het was geen cyberaanval, maar een fout in een inhoudsupdate die door een controle was geglipt. CrowdStrike paste daarna zijn testprocessen aan.\n\n## Welke overnames deed CrowdStrike recent?\n\nHet bedrijf koopt regelmatig bij om het platform uit te breiden. In 2025 rondde het de overname af van **Onum** (verwerking van securitydata) en **Pangea** (beveiliging van AI-toepassingen). In februari 2026 volgde **SGNL**, een specialist in identiteitsbeveiliging, voor ruim 600 miljoen dollar, [aangekondigd in januari](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-sgnl-to-transform-identity-security-for-ai-era/). Ook browserbeveiliger Seraphic Security werd in 2026 overgenomen.\n\n## Voor wie is CrowdStrike interessant?\n\nCrowdStrike richt zich vooral op middelgrote en grote organisaties, maar levert via partners ook aan het mkb. Concurrenten zijn onder meer Microsoft, SentinelOne, Palo Alto Networks en Sophos. Een vergelijking volgt later op deze site.",
+  "actions": [
+    "Vergelijk endpointbeveiliging op detectie, beheer en wat de leverancier zelf mag doen bij een aanval.",
+    "Vraag hoe een leverancier updates test en gefaseerd uitrolt, een les uit de storing van juli 2024.",
+    "Ga na of je een eigen securityteam hebt of beter een managed dienst (MDR) kunt afnemen.",
+    "Controleer waar je gegevens worden opgeslagen en of dat past bij je verplichtingen, zoals de AVG en NIS2."
+  ],
+  "faq": [
+    {
+      "q": "Wat is CrowdStrike Falcon?",
+      "a": "Falcon is het beveiligingsplatform van CrowdStrike. Een kleine agent op elk apparaat bewaakt het gedrag en stuurt signalen naar de cloud, waar aanvallen worden herkend en gestopt."
+    },
+    {
+      "q": "Was de storing van juli 2024 een hack?",
+      "a": "Nee. Het was een foutieve update van CrowdStrike zelf, waardoor ongeveer 8,5 miljoen Windows-computers crashten. Mac- en Linux-systemen werden niet getroffen."
+    },
+    {
+      "q": "Wie zijn de concurrenten van CrowdStrike?",
+      "a": "Onder meer Microsoft (Defender), SentinelOne, Palo Alto Networks, Sophos en Arctic Wolf voor managed diensten."
+    }
+  ],
+  "category": "markt",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud",
+      "Microsoft"
+    ]
+  },
+  "keywords": [
+    "CrowdStrike",
+    "Falcon",
+    "EDR",
+    "George Kurtz",
+    "storing juli 2024",
+    "SGNL",
+    "Pangea",
+    "Onum"
+  ],
+  "image_query": "security operations center",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "CrowdStrike",
+      "title": "CrowdStrike Reports Third Quarter Fiscal Year 2026 Financial Results",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-third-quarter-fiscal-year-2026-financial/"
+    },
+    {
+      "name": "CrowdStrike",
+      "title": "CrowdStrike to Acquire SGNL to Transform Identity Security for the AI Era",
+      "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-sgnl-to-transform-identity-security-for-ai-era/"
+    },
+    {
+      "name": "TechCrunch",
+      "title": "Microsoft says 8.5M Windows devices were affected by CrowdStrike outage",
+      "url": "https://techcrunch.com/2024/07/20/microsoft-says-8-5m-windows-devices-were-affected-by-crowdstrike-outage/"
+    }
+  ],
+  "published": "2026-11-26T06:25:41+00:00",
+  "model": "redactie"
+}

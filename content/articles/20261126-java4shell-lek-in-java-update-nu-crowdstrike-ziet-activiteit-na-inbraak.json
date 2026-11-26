@@ -1,0 +1,90 @@
+{
+  "id": "20261126-java4shell-lek-in-java-update-nu-crowdstrike-ziet-activiteit-na-inbraak",
+  "slug": "java4shell-lek-in-java-update-nu-crowdstrike-ziet-activiteit-na-inbraak",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Java4Shell: update Java nu, CrowdStrike ziet al activiteit na inbraken",
+  "tldr": "Het lek Java4Shell (CVE-2026-114938) in Java 17, 21, 25 en 27 kan aanvallers zonder inloggen code laten uitvoeren in onder meer Jira, Jenkins en Keycloak. Sinds 17 november zijn er updates. CrowdStrike meldt nu dat het blootgestelde systemen en activiteit na misbruik ziet. Update Java en software die Java meelevert.",
+  "meta_description": "Java4Shell (CVE-2026-114938) treft Java 17 tot en met 27 en populaire software als Jira en Jenkins. CrowdStrike ziet al activiteit na misbruik. Update nu.",
+  "body": "Beheerders moeten het lek Java4Shell (CVE-2026-114938) in Java met voorrang dichten. Beveiligingsbedrijf CrowdStrike meldt dat het systemen ziet die kwetsbaar aan internet hangen, en ook [activiteit na misbruik van het lek](https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/). Oracle en het OpenJDK-project brachten op 17 november al updates uit.\n\n## Wat is Java4Shell?\n\nHet lek zit in de Base64-decoder van de HotSpot-omgeving van OpenJDK, de basis van vrijwel alle Java-versies. Stuurt een aanvaller gemanipuleerde gegevens naar een applicatie die die gegevens via de kwetsbare functie verwerkt, dan kan hij het geheugen beschadigen, gevoelige gegevens uitlezen en mogelijk code uitvoeren, zonder in te loggen, [legt Tenable uit](https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability). Volgens [The Hacker News](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html) is dat onder meer mogelijk in veelgebruikte software als Jira, Jenkins en Keycloak.\n\nHet lek treft Java 17, 21, 25 en 27. De standaardversies van Java 8 en 11 zijn niet kwetsbaar. Bovendien werkt het alleen op Intel- en AMD-processors met de AVX-512 VBMI-uitbreiding, die in veel moderne servers zit. Oracle geeft het lek een score van 8,1; de ontdekkers komen hoger uit.\n\n## Wordt het lek al misbruikt?\n\nDe berichten lopen uiteen. Er is een openbare proof-of-concept en onderzoekers zagen pogingen tot misbruik. CrowdStrike meldt nu activiteit na misbruik. Het lek staat nog niet op de lijst van actief misbruikte lekken van de Amerikaanse cyberdienst CISA. Wacht daar niet op: Java draait in veel bedrijfskritische systemen.\n\n## Welke updates zijn er?\n\nDe veilige versies van OpenJDK zijn 17.0.21.1, 21.0.13.1, 25.0.5.1 en 27.0.1.1. Ook Amazon Corretto en Azul Zulu zijn bijgewerkt. Let op software die een eigen Java-versie meelevert: [JetBrains](https://blog.jetbrains.com/security/2026/11/java4shell-vulnerability/) vraagt gebruikers bijvoorbeeld hun ontwikkeltools bij te werken. Leveranciers van Jira, Jenkins en andere Java-software brengen eigen updates uit; controleer hun adviezen. Een tijdelijke oplossing is er niet.\n\nLees ook [wat ransomware is](/artikel/wat-is-ransomware/): aanvallers gebruiken zulke lekken vaak als eerste stap.",
+  "actions": [
+    "Inventariseer welke systemen Java 17, 21, 25 of 27 draaien, ook als onderdeel van andere software.",
+    "Update naar OpenJDK 17.0.21.1, 21.0.13.1, 25.0.5.1 of 27.0.1.1, of de bijgewerkte versie van je Java-leverancier.",
+    "Installeer de updates van leveranciers van Java-software zoals Jira, Jenkins, Keycloak en JetBrains-tools.",
+    "Geef internetgerichte Java-applicaties voorrang en scherm ze waar mogelijk af.",
+    "Controleer servers op ongebruikelijke processen en verbindingen sinds half november."
+  ],
+  "faq": [
+    {
+      "q": "Is mijn computer thuis kwetsbaar?",
+      "a": "Waarschijnlijk niet direct: het lek is vooral gevaarlijk voor servers die gegevens van buitenaf verwerken. Gebruik je Java-programma's, installeer dan wel de updates."
+    },
+    {
+      "q": "Is Java 8 of 11 kwetsbaar?",
+      "a": "De standaardversies van Java 8 en 11 niet. Alleen de Java 8 Enterprise Performance Pack is volgens de beschikbare adviezen getroffen."
+    },
+    {
+      "q": "Waarom heet het Java4Shell?",
+      "a": "De naam verwijst naar Log4Shell uit 2021, een beruchte kwetsbaarheid in Java-software die op grote schaal werd misbruikt."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB",
+      "Grote organisaties"
+    ],
+    "sector": [],
+    "technologie": [
+      "Open source",
+      "Linux"
+    ]
+  },
+  "keywords": [
+    "Java4Shell",
+    "CVE-2026-114938",
+    "Java",
+    "OpenJDK",
+    "Jira",
+    "Jenkins",
+    "Keycloak"
+  ],
+  "image_query": "programming code screen",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [
+    "CVE-2026-114938"
+  ],
+  "kev": [],
+  "sources": [
+    {
+      "name": "CrowdStrike",
+      "title": "Java4Shell (CVE-2026-114938): CrowdStrike Detects Exposure and Post-Exploitation Activity",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/"
+    },
+    {
+      "name": "Tenable",
+      "title": "Java4Shell (CVE-2026-114938): OpenJDK RCE Vulnerability FAQ",
+      "url": "https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability"
+    },
+    {
+      "name": "The Hacker News",
+      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+    },
+    {
+      "name": "JetBrains",
+      "title": "Java4Shell Vulnerability: Update Your JetBrains IDEs",
+      "url": "https://blog.jetbrains.com/security/2026/11/java4shell-vulnerability/"
+    }
+  ],
+  "published": "2026-11-26T06:25:41+00:00",
+  "model": "redactie"
+}
