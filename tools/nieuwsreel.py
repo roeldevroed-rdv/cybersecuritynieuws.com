@@ -161,17 +161,6 @@ def card_frames(a: dict, kind: str, secs: float):
         d.rectangle([0, 0, int(W * p), 14], fill=BLUE)
         if kind == "open":
             # beeld valt samen met de akkoordslagen van de tune (1,5 / 2,0 / 2,5 s)
-            if t < 1.5:  # tikkende 'klok': pulserende stip + datum
-                fd = _font("Carlito-Bold.ttf", 44)
-                from datetime import datetime
-                MAAND = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
-                         "september", "oktober", "november", "december"]
-                dt = datetime.fromisoformat(a["published"])
-                txt = f"{dt.day} {MAAND[dt.month - 1]} {dt.year}".upper()
-                tw = d.textlength(txt, font=fd)
-                on = int(t / 0.125) % 2 == 0
-                d.ellipse([(W - tw) / 2 - 44, 935, (W - tw) / 2 - 18, 961], fill=(DANGER if on else BLUE) + (255,))
-                d.text(((W - tw) / 2, 922), txt, font=fd, fill=WIT + (230,))
             pl = _ease((t - 1.45) / 0.35)
             logo = Image.new("RGBA", (W, 260), (0, 0, 0, 0))
             draw_logo(logo, 0, 0, 3.2)
