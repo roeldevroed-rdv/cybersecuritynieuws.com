@@ -1,0 +1,68 @@
+{
+  "id": "20261127-pcloud-bevestigt-aanval-op-wachtwoordmanager-pcloud-pass",
+  "slug": "pcloud-bevestigt-aanval-op-wachtwoordmanager-pcloud-pass",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "pCloud bevestigt aanval op wachtwoordmanager pCloud Pass: e-mailadressen gelekt",
+  "tldr": "Het Zwitserse pCloud bevestigt een cyberaanval op zijn wachtwoordmanager pCloud Pass. Volgens het bedrijf is de aanval snel gestopt en zijn van een klein aantal gebruikers e-mailadressen buitgemaakt. Wachtwoorden en notities zouden veilig zijn dankzij versleuteling op het apparaat zelf. Niet duidelijk is of aanvallers versleutelde kluizen hebben gekopieerd.",
+  "meta_description": "pCloud bevestigt een aanval op wachtwoordmanager pCloud Pass. E-mailadressen zijn gelekt, wachtwoorden zouden veilig zijn. Gebruik je pCloud Pass? Doe dit.",
+  "body": "Het Zwitserse bedrijf pCloud heeft een cyberaanval op zijn wachtwoordmanager pCloud Pass bevestigd, [meldt BleepingComputer](https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/). Volgens pCloud werd de aanval snel gestopt. Van een klein aantal Pass-gebruikers zijn e-mailadressen buitgemaakt en er zijn inlogpogingen gedaan. De cloudopslag van pCloud is volgens het bedrijf niet geraakt.\n\nDe aanval kwam aan het licht doordat gebruikers meldingen kregen dat onbekende apparaten verbinding hadden gemaakt met hun account, soms terwijl tweestapsverificatie aanstond. Een deel van hen zei pCloud Pass nooit te hebben gebruikt. Of die meldingen direct met de bevestigde aanval te maken hebben, is niet vastgesteld.\n\n## Zijn de opgeslagen wachtwoorden veilig?\n\npCloud zegt van wel. Wachtwoorden, beveiligde notities en andere gegevens in Pass worden op het apparaat van de gebruiker versleuteld voordat ze naar pCloud gaan. Zonder het hoofdwachtwoord kan een aanvaller ze niet lezen. Wel heeft pCloud niet duidelijk gemaakt of aanvallers kopieën van versleutelde kluizen hebben gemaakt. In dat geval hangt de veiligheid volledig af van de sterkte van je hoofdwachtwoord.\n\n## Waarom zijn wachtwoordmanagers zo'n doelwit?\n\nEén kluis bevat de sleutels tot al je accounts, dus een geslaagde aanval levert veel op. Eerder deze week werd ook bekend dat bij [1Password klantgegevens zijn gestolen](/artikel/1password-gehackt-klantgegevens-gestolen-kluizen-veilig/). Toch blijft een wachtwoordmanager veel veiliger dan overal hetzelfde wachtwoord gebruiken, mits je hoofdwachtwoord sterk en uniek is. Lees in [onze gids over wachtwoordmanagers](/artikel/wachtwoordmanager/) waar je op let.",
+  "actions": [
+    "Gebruik je pCloud Pass? Wijzig je hoofdwachtwoord in een lang, uniek wachtwoord dat je nergens anders gebruikt.",
+    "Controleer in je pCloud-account welke apparaten gekoppeld zijn en verwijder onbekende apparaten.",
+    "Zet tweestapsverificatie aan voor je pCloud-account als dat nog niet zo is.",
+    "Wees alert op phishingmails die over pCloud of een 'beveiligingsincident' gaan: je e-mailadres kan gelekt zijn.",
+    "Twijfel je? Wijzig dan ook de wachtwoorden van je belangrijkste accounts, zoals e-mail en bank."
+  ],
+  "faq": [
+    {
+      "q": "Moet ik stoppen met pCloud Pass?",
+      "a": "Niet per se. Volgens pCloud zijn opgeslagen wachtwoorden veilig door versleuteling op je apparaat. Zolang niet duidelijk is of kluizen zijn gekopieerd, is een sterk en uniek hoofdwachtwoord extra belangrijk."
+    },
+    {
+      "q": "Is mijn pCloud-cloudopslag ook getroffen?",
+      "a": "Volgens pCloud niet. De aanval richtte zich op de wachtwoordmanager pCloud Pass."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Europa"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "pCloud",
+    "pCloud Pass",
+    "wachtwoordmanager",
+    "hack",
+    "datalek",
+    "hoofdwachtwoord"
+  ],
+  "image_query": "password lock laptop",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "pCloud confirms password manager hack after suspicious login alerts",
+      "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/"
+    }
+  ],
+  "published": "2026-11-27T22:24:27+00:00",
+  "model": "redactie",
+  "ig_title": "Wachtwoordmanager pCloud Pass aangevallen",
+  "ig_highlight": "pCloud Pass"
+}
