@@ -39,6 +39,12 @@ jobs:
       - name: Afhankelijkheden installeren
         run: pip install -r requirements.txt
 
+      - name: Sleutelcontrole (toont alleen of de sleutel er is)
+        run: |
+          echo "secret PIXABAY aanwezig: ${{ secrets.PIXABAY != '' }}"
+          echo "secret PIXABAY_API_KEY aanwezig: ${{ secrets.PIXABAY_API_KEY != '' }}"
+          echo "lengte in env: ${#PIXABAY_API_KEY}"
+
       - name: Foto's zoeken bij artikelen zonder foto (Pixabay, alleen met sleutel)
         if: env.PIXABAY_API_KEY != ''
         run: python -m pipeline.run --fotos
