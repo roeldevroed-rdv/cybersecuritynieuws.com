@@ -432,7 +432,7 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .ai-line a { color: inherit; }
 
 /* Dreigingsniveau */
-.threat { --lvl: var(--ok); }
+.threat { --lvl: var(--ok); border-top: 4px solid var(--lvl); background: color-mix(in srgb, var(--lvl) 5%, var(--surface)); }
 .threat--verhoogd { --lvl: #d99a00; }
 .threat--hoog { --lvl: #e8590c; }
 .threat--kritiek { --lvl: var(--danger); }

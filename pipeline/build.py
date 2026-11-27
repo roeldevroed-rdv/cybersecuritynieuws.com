@@ -138,19 +138,24 @@ def threat_level(arts: list[dict]) -> dict:
     exploited = sum(1 for a in week if a["exploited"] or a["zero_day"])
     critical = sum(1 for a in week if a["severity"] == "kritiek")
     score = exploited * 2 + critical
+    # 'Kritiek' alleen bij uitschieters: hoge score én een kritiek, actief misbruikt lek in de afgelopen 48 uur
+    recent_hot = any(a["severity"] == "kritiek" and a["exploited"]
+                     and a["dt"] > datetime.now(timezone.utc) - timedelta(hours=48) for a in week)
     # (drempel, sleutel, naam, uitleg, advies thuis, advies bedrijf)
     levels = [(0, "laag", "Laag", "Geen bijzondere dreigingen op dit moment.",
                "Laat automatische updates aanstaan.", "Houd je normale updateritme aan."),
-              (3, "verhoogd", "Verhoogd", "Er worden lekken in software actief misbruikt door hackers.",
+              (8, "verhoogd", "Verhoogd", "Er worden lekken in software actief misbruikt door hackers.",
                "Installeer deze week alle updates op je telefoon, computer en router.",
                "Controleer of je de updates uit de lijst hieronder hebt geïnstalleerd."),
-              (7, "hoog", "Hoog", "Meerdere ernstige lekken worden op dit moment actief misbruikt.",
+              (20, "hoog", "Hoog", "Meerdere ernstige lekken worden op dit moment actief misbruikt.",
                "Installeer vandaag nog alle updates op je telefoon, computer en router.",
                "Geef updates deze week voorrang. Begin met de lijst hieronder."),
-              (12, "kritiek", "Kritiek", "Hackers misbruiken op grote schaal ernstige lekken in veelgebruikte software.",
+              (45, "kritiek", "Kritiek", "Hackers misbruiken op grote schaal ernstige lekken in veelgebruikte software.",
                "Installeer nu alle openstaande updates op je telefoon, computer en router.",
                "Installeer direct de updates uit de lijst hieronder en controleer je systemen op inbraak.")]
     level = [l for l in levels if score >= l[0]][-1]
+    if level[1] == "kritiek" and not recent_hot:
+        level = levels[2]
     return {"key": level[1], "name": level[2], "advice": level[3], "thuis": level[4], "bedrijf": level[5],
             "exploited": exploited, "critical": critical, "index": levels.index(level)}
 
