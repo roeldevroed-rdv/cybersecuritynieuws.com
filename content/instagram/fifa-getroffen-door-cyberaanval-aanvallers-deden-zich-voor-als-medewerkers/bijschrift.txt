@@ -1,0 +1,12 @@
+FIFA getroffen door cyberaanval: aanvallers deden zich voor als eigen medewerkers
+
+Wereldvoetbalbond FIFA bevestigt een cyberaanval waarbij aanvallers toegang kregen tot een beperkte hoeveelheid persoonlijke en zakelijke informatie. Volgens ingewijden kwamen ze binnen via social engineering: ze deden zich voor als FIFA-medewerkers.
+
+Wat moet je doen?
+- Laat de helpdesk de identiteit van bellers altijd controleren via een tweede kanaal, bijvoorbeeld door terug te bellen op een bekend nummer.
+- Reset wachtwoorden of tweestapsverificatie nooit alleen op basis van een telefoontje of chatbericht.
+- Train medewerkers om verzoeken van 'collega's' of 'leidinggevenden' met haast of geheimhouding extra te wantrouwen.
+
+Lees het hele artikel via de link in onze bio (cybersecuritynieuws.com).
+
+#cybersecurity #cyberveiligheid #onlineveiligheid #hackers #malware #FIFA #cyberaanval #socialengineering
