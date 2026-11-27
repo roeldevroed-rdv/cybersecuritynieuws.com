@@ -1,0 +1,70 @@
+{
+  "id": "20261127-nfs2root-twaalf-jaar-oud-linux-lek-geeft-aanvallers-rootrechten",
+  "slug": "nfs2root-twaalf-jaar-oud-linux-lek-geeft-aanvallers-rootrechten",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "NFS2ROOT: twaalf jaar oud Linux-lek geeft aanvallers op afstand rootrechten",
+  "tldr": "Een kritiek lek in de NFS-server van de Linux-kernel (CVE-2026-99362) laat aanvallers op afstand en zonder inloggen rootrechten krijgen. Het lek bestaat al sinds 2014. Servers waarop NFS draait en poort 2049 vanaf internet bereikbaar is, lopen het grootste risico. Er zijn kernelupdates; herstart daarna de server.",
+  "meta_description": "NFS2ROOT (CVE-2026-99362): een twaalf jaar oud lek in de Linux NFS-server geeft aanvallers rootrechten. Installeer de kernelupdate en scherm poort 2049 af.",
+  "body": "In de Linux-kernel is een kritiek lek gevonden dat al twaalf jaar bestaat. Via de ingebouwde NFS-server, waarmee Linux bestanden deelt over het netwerk, kan een aanvaller op afstand en zonder in te loggen rootrechten krijgen, [meldt BleepingComputer](https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/). Het lek heeft het nummer CVE-2026-99362 en wordt NFS2ROOT genoemd.\n\n## Wie is kwetsbaar?\n\nHet lek zit in de kernel sinds versie 3.16 uit 2014. Kwetsbaar zijn systemen met een kernel ouder dan 6.12.117, 6.18.61 of 7.3.2, waarop de NFS-server (versie 4.1 of 4.2) actief is en TCP-poort 2049 bereikbaar is. Denk aan bestandsservers, NAS-apparaten, bouwservers en opslag voor Kubernetes. Het lek werd gevonden door een onderzoeker van het Franse cyberagentschap ANSSI; securitybedrijf OpenSec bouwde een werkende exploit en deelde die met de kernelontwikkelaars.\n\nBij een aanval stuurt de aanvaller gemanipuleerde verzoeken waardoor de NFS-server buiten het toegewezen geheugen schrijft. Daarmee omzeilt hij de geheugenbeveiliging van de kernel en laat hij een commando met rootrechten uitvoeren. Er is geen interactie van een gebruiker nodig. Misbruik in de praktijk is nog niet gemeld.\n\n## Wat moet je doen?\n\nInstalleer de kernelupdate van je Linux-distributie en **herstart** de server, want pas dan draait de nieuwe kernel. Kun je niet direct updaten, beperk dan de toegang tot poort 2049 tot vertrouwde systemen. Heb je NFS niet nodig, zet de NFS-server dan uit. Poort 2049 hoort nooit open te staan naar internet.\n\nNFS2ROOT is het zoveelste ernstige Linux-lek dit jaar. Eerder deze week schreven we over [NGINX2Root](/artikel/nginx2root-vijf-kritieke-lekken-in-nginx-update-naar-1-31-9-of-1-30-7/), waarbij ook een Linux-kernellek een rol speelt.",
+  "actions": [
+    "Installeer de kernelupdate van je Linux-distributie en herstart de server.",
+    "Controleer met een portscan of poort 2049 (NFS) vanaf internet bereikbaar is, en sluit die af.",
+    "Beperk NFS-toegang tot vertrouwde systemen of netwerken.",
+    "Zet de NFS-server uit op systemen die geen bestanden hoeven te delen.",
+    "Controleer NAS-apparaten: vraag de leverancier om een firmware-update."
+  ],
+  "faq": [
+    {
+      "q": "Is mijn NAS thuis kwetsbaar?",
+      "a": "Mogelijk, als die op Linux draait, NFS aan heeft staan en vanaf internet bereikbaar is. Zet NFS uit als je het niet gebruikt en installeer firmware-updates van de fabrikant."
+    },
+    {
+      "q": "Wordt NFS2ROOT al misbruikt?",
+      "a": "Er zijn nog geen meldingen van misbruik. Omdat de werking openbaar is, is snel updaten wel verstandig."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Linux",
+      "Open source"
+    ]
+  },
+  "keywords": [
+    "NFS2ROOT",
+    "CVE-2026-99362",
+    "Linux",
+    "kernel",
+    "NFS",
+    "poort 2049",
+    "root"
+  ],
+  "image_query": "linux server",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": false,
+  "cves": [
+    "CVE-2026-99362"
+  ],
+  "kev": [],
+  "sources": [
+    {
+      "name": "BleepingComputer",
+      "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+      "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/"
+    }
+  ],
+  "published": "2026-11-27T08:24:45+00:00",
+  "model": "redactie"
+}

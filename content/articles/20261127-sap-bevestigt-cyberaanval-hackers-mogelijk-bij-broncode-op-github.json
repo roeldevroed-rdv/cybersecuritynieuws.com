@@ -1,0 +1,71 @@
+{
+  "id": "20261127-sap-bevestigt-cyberaanval-hackers-mogelijk-bij-broncode-op-github",
+  "slug": "sap-bevestigt-cyberaanval-hackers-mogelijk-bij-broncode-op-github",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "SAP bevestigt cyberaanval: hackers mogelijk via gestolen tokens bij broncode op GitHub",
+  "tldr": "Softwarebedrijf SAP heeft verdachte activiteit ontdekt en maatregelen genomen. Volgens Der Spiegel gebruikten aanvallers gestolen tokens van medewerkers om code op GitHub te kopiëren en aan te passen. SAP zegt dat bedrijfsgegevens van klanten niet zijn ingezien. Veel details zijn nog onbevestigd.",
+  "meta_description": "SAP bevestigt een cyberaanval waarbij hackers mogelijk via gestolen tokens bij broncode op GitHub kwamen. Klantdata lijkt veilig; veel is nog onduidelijk.",
+  "body": "Het Duitse softwarebedrijf SAP heeft een cyberaanval bevestigd. Het bedrijf zegt verdachte activiteit te hebben ontdekt en beschermende maatregelen te hebben genomen, [meldt SecurityWeek](https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/). Volgens het Duitse weekblad Der Spiegel gebruikten de aanvallers gestolen tokens van medewerkers om code op GitHub te kopiëren en te wijzigen.\n\n## Wat is er bekend?\n\nSAP zegt dat bedrijfsgegevens van klanten niet zijn ingezien. Het bedrijf heeft volgens berichten zijn ondertekeningssleutels vervangen, de toegang tot GitHub beperkt en geautomatiseerde ontwikkelprocessen tijdelijk stilgelegd. Intern loopt het onderzoek onder de naam 'Project Granite'.\n\nVeel is nog onduidelijk, [schrijft Cyberpress](https://cyberpress.org/hackers-breach-sap-github-systems/). SAP heeft de diefstal van tokens en het aanpassen van code zelf niet bevestigd. Het is ook niet bekend of er niet-openbare code is gekopieerd: op GitHub staan bij SAP vooral openbare ontwikkeltools, voorbeeldapps en open-sourceprojecten. Er zijn geen aanwijzingen dat aangepaste code in software voor klanten terechtkwam, maar SAP heeft dat ook niet uitgesloten. Wie achter de aanval zit en hoe de tokens zijn gestolen, is nog niet bekend.\n\n## Waarom is dit belangrijk?\n\nSAP-software draait bij een groot deel van de grote bedrijven en overheden, ook in Nederland en België, voor onder meer financiën, inkoop en personeelszaken. Een aanval op de code van zo'n leverancier is een zogeheten supply-chainrisico: als kwaadaardige code in een update zou belanden, raakt dat alle klanten. Dat SAP de ondertekeningssleutels heeft vervangen, wijst erop dat het bedrijf dat risico serieus neemt.\n\nHet patroon is bekend van deze week: ook bij [1Password](/artikel/1password-gehackt-klantgegevens-gestolen-kluizen-veilig/) begon de aanval bij een GitHub-account van een medewerker, en Noord-Koreaanse hackers [verstoppen malware in GitHub-projecten](/artikel/noord-koreaanse-hackers-besmetten-duizenden-github-projecten-polinrider/).",
+  "actions": [
+    "SAP-klanten: volg de officiële communicatie van SAP en installeer alleen updates via de vertrouwde kanalen.",
+    "Controleer of SAP-software en -tools die je gebruikt correct ondertekend zijn.",
+    "Beperk de rechten en geldigheid van tokens voor GitHub en andere code-omgevingen in je eigen organisatie.",
+    "Zet tweestapsverificatie aan voor alle ontwikkelaarsaccounts."
+  ],
+  "faq": [
+    {
+      "q": "Zijn klantgegevens van SAP-gebruikers gestolen?",
+      "a": "Volgens SAP zijn bedrijfsgegevens van klanten niet ingezien. Het onderzoek loopt nog."
+    },
+    {
+      "q": "Moeten SAP-klanten nu iets doen?",
+      "a": "Er is geen specifiek advies van SAP gemeld. Volg de officiële berichtgeving en installeer updates alleen via de vertrouwde kanalen van SAP."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "Europa"
+    ],
+    "doelgroep": [
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "SAP",
+    "cyberaanval",
+    "GitHub",
+    "broncode",
+    "tokens",
+    "supply chain",
+    "Project Granite"
+  ],
+  "image_query": "office building data",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "SecurityWeek",
+      "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+      "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/"
+    },
+    {
+      "name": "Cyberpress",
+      "title": "Hackers Reportedly Breach SAP GitHub Systems, Stealing Access Tokens and Manipulating Source Code",
+      "url": "https://cyberpress.org/hackers-breach-sap-github-systems/"
+    }
+  ],
+  "published": "2026-11-27T08:24:45+00:00",
+  "model": "redactie"
+}
