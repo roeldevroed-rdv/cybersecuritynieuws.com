@@ -1,0 +1,12 @@
+Twee GeoServer-lekken actief misbruikt: update naar 2.27.7, 2.28.6 of 3.0.2
+
+Aanvallers misbruiken twee net gedichte lekken in GeoServer, populaire open-source software voor kaarten en geodata. De Amerikaanse cyberdienst CISA heeft ze op de lijst van actief misbruikte lekken gezet.
+
+Wat moet je doen?
+- Controleer of je organisatie of leverancier GeoServer gebruikt, bijvoorbeeld voor kaartviewers of GIS-diensten.
+- Update vandaag naar GeoServer 2.27.7, 2.28.6 of 3.0.2.
+- Kun je niet direct updaten? Haal GeoServer van het internet of zet hem achter een VPN.
+
+Lees het hele artikel via de link in onze bio (cybersecuritynieuws.com).
+
+#cybersecurity #cyberveiligheid #onlineveiligheid #beveiligingsupdate #updaten #GeoServer #CVE2026120705 #CVE2026129243 #nederland
