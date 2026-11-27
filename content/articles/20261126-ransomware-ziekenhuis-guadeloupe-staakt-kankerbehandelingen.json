@@ -47,7 +47,15 @@
     "leverancier"
   ],
   "image_query": "hospital corridor",
-  "image": null,
+  "image": {
+    "id": 5979689,
+    "file": "ransomware-ziekenhuis-guadeloupe-staakt-kankerbehandelingen.jpg",
+    "alt": "Ransomware legt ziekenhuis Guadeloupe plat: kankerbehandelingen gestaakt",
+    "credit": "mspark0",
+    "credit_url": "https://pixabay.com/users/mspark0-804746/",
+    "page_url": "https://pixabay.com/photos/hallway-hospital-clean-rooms-doors-5979689/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

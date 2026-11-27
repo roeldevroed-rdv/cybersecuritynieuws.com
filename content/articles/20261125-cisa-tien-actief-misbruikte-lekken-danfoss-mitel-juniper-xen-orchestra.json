@@ -52,7 +52,15 @@
     "actief misbruikt"
   ],
   "image_query": "network router",
-  "image": null,
+  "image": {
+    "id": 3562005,
+    "file": "cisa-tien-actief-misbruikte-lekken-danfoss-mitel-juniper-xen-orchestra.jpg",
+    "alt": "Tien lekken actief misbruikt: koelregelaars van Danfoss, Mitel MiCollab en Juniper-routers",
+    "credit": "QuinceCreative",
+    "credit_url": "https://pixabay.com/users/QuinceCreative-1031690/",
+    "page_url": "https://pixabay.com/photos/ecommerce-online-marketing-internet-3562005/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": true,

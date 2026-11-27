@@ -48,7 +48,15 @@
     "beveiligingsupdates"
   ],
   "image_query": "government building computer",
-  "image": null,
+  "image": {
+    "id": 2463236,
+    "file": "rijk-heeft-geen-zicht-op-verouderde-software-zonder-beveiligingsupdates.jpg",
+    "alt": "Rijk heeft geen zicht op hoeveel systemen draaien op verouderde software",
+    "credit": "Felix-Mittermeier",
+    "credit_url": "https://pixabay.com/users/Felix-Mittermeier-4397258/",
+    "page_url": "https://pixabay.com/photos/bundestag-german-flag-parliament-2463236/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": false,

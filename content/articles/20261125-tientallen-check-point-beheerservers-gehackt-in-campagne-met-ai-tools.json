@@ -55,7 +55,15 @@
     "firewall beheerserver"
   ],
   "image_query": "firewall network security",
-  "image": null,
+  "image": {
+    "id": 3742114,
+    "file": "tientallen-check-point-beheerservers-gehackt-in-campagne-met-ai-tools.jpg",
+    "alt": "Tientallen Check Point-beheerservers gehackt in campagne met AI-tools",
+    "credit": "axbenabdellah",
+    "credit_url": "https://pixabay.com/users/axbenabdellah-10378450/",
+    "page_url": "https://pixabay.com/photos/security-computer-science-web-3742114/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

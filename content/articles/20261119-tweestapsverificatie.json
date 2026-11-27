@@ -54,7 +54,15 @@
     "MFA"
   ],
   "image_query": "smartphone authentication",
-  "image": null,
+  "image": {
+    "id": 3938432,
+    "file": "tweestapsverificatie.jpg",
+    "alt": "Tweestapsverificatie: wat is het en hoe zet je het aan?",
+    "credit": "geralt",
+    "credit_url": "https://pixabay.com/users/geralt-9301/",
+    "page_url": "https://pixabay.com/photos/log-in-monitor-smartphone-tablet-3938432/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

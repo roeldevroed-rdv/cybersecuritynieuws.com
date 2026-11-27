@@ -51,7 +51,15 @@
     "Observo AI"
   ],
   "image_query": "security operations center",
-  "image": null,
+  "image": {
+    "id": 8004870,
+    "file": "sentinelone-wie-zijn-ze-en-wat-doen-ze.jpg",
+    "alt": "SentinelOne: wie zijn ze en wat doen ze?",
+    "credit": "cliff1126",
+    "credit_url": "https://pixabay.com/users/cliff1126-2330376/",
+    "page_url": "https://pixabay.com/photos/control-center-internet-8004870/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

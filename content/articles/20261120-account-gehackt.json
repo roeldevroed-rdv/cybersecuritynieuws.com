@@ -56,7 +56,15 @@
     "instagram gehackt"
   ],
   "image_query": "hacked smartphone",
-  "image": null,
+  "image": {
+    "id": 3346160,
+    "file": "account-gehackt.jpg",
+    "alt": "Account gehackt? Stappenplan om het terug te krijgen",
+    "credit": "prettysleepy1",
+    "credit_url": "https://pixabay.com/users/prettysleepy1-2855492/",
+    "page_url": "https://pixabay.com/photos/spying-watching-surveillance-3346160/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

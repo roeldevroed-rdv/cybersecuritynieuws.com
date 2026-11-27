@@ -50,7 +50,15 @@
     "Noord-Korea"
   ],
   "image_query": "artificial intelligence code",
-  "image": null,
+  "image": {
+    "id": 3048957,
+    "file": "microsoft-chinese-en-noord-koreaanse-hackers-gebruiken-ai-tool-artex.jpg",
+    "alt": "Microsoft: Chinese en Noord-Koreaanse hackers gebruiken AI-tool Artex",
+    "credit": "BrownMantis",
+    "credit_url": "https://pixabay.com/users/BrownMantis-5096890/",
+    "page_url": "https://pixabay.com/photos/artificial-intelligence-robot-binary-3048957/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

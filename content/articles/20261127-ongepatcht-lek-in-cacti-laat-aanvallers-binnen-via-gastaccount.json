@@ -47,7 +47,15 @@
     "gastaccount"
   ],
   "image_query": "network monitoring dashboard",
-  "image": null,
+  "image": {
+    "id": 2224603,
+    "file": "ongepatcht-lek-in-cacti-laat-aanvallers-binnen-via-gastaccount.jpg",
+    "alt": "Ongepatcht lek in netwerkmonitor Cacti: schakel het gastaccount uit",
+    "credit": "nenadbnband",
+    "credit_url": "https://pixabay.com/users/nenadbnband-5081798/",
+    "page_url": "https://pixabay.com/photos/internet-advertising-design-2224603/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": true,
   "patch_available": false,

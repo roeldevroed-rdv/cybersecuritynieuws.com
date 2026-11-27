@@ -47,7 +47,15 @@
     "Project Granite"
   ],
   "image_query": "office building data",
-  "image": null,
+  "image": {
+    "id": 1841158,
+    "file": "sap-bevestigt-cyberaanval-hackers-mogelijk-bij-broncode-op-github.jpg",
+    "alt": "SAP bevestigt cyberaanval: hackers mogelijk via gestolen tokens bij broncode op GitHub",
+    "credit": "Pexels",
+    "credit_url": "https://pixabay.com/users/Pexels-2286921/",
+    "page_url": "https://pixabay.com/photos/analysis-analytics-business-charts-1841158/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

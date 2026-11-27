@@ -50,7 +50,15 @@
     "Push Security"
   ],
   "image_query": "video call laptop",
-  "image": null,
+  "image": {
+    "id": 5962733,
+    "file": "phishing-met-nep-betaalde-expertinterviews-steelt-zakelijke-google-accounts.jpg",
+    "alt": "Phishing met nep-betaalde 'expertinterviews' steelt zakelijke Google- en Okta-accounts",
+    "credit": "Brian_Cragun",
+    "credit_url": "https://pixabay.com/users/Brian_Cragun-19680916/",
+    "page_url": "https://pixabay.com/photos/video-call-video-conference-zoom-5962733/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

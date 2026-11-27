@@ -46,7 +46,15 @@
     "klantgegevens"
   ],
   "image_query": "energy bill",
-  "image": null,
+  "image": {
+    "id": 7592322,
+    "file": "hackers-stelen-klantgegevens-bij-eneco-belgie.jpg",
+    "alt": "Hackers stelen klantgegevens bij Eneco België, eerst ontkende het bedrijf",
+    "credit": "fotoblend",
+    "credit_url": "https://pixabay.com/users/fotoblend-87167/",
+    "page_url": "https://pixabay.com/photos/money-coins-energy-electricity-7592322/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

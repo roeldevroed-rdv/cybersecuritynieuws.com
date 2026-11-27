@@ -44,7 +44,15 @@
     "klantgegevens"
   ],
   "image_query": "online shopping laptop",
-  "image": null,
+  "image": {
+    "id": 2140604,
+    "file": "datalek-bij-schoenenwinkel-vanharen-klantgegevens-webshop-gestolen.jpg",
+    "alt": "Datalek bij vanHaren: gegevens van webshopklanten gestolen",
+    "credit": "Mediamodifier",
+    "credit_url": "https://pixabay.com/users/Mediamodifier-1567646/",
+    "page_url": "https://pixabay.com/photos/ecommerce-selling-online-2140604/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": false,

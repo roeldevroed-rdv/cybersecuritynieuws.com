@@ -47,7 +47,15 @@
     "actief misbruikt"
   ],
   "image_query": "website code",
-  "image": null,
+  "image": {
+    "id": 1076536,
+    "file": "nieuw-drupal-lek-actief-misbruikt-patch-vorige-week-niet-genoeg.jpg",
+    "alt": "Nieuw Drupal-lek actief misbruikt: patch van vorige week was niet genoeg",
+    "credit": "jamesmarkosborne",
+    "credit_url": "https://pixabay.com/users/jamesmarkosborne-1640589/",
+    "page_url": "https://pixabay.com/photos/code-html-digital-coding-web-1076536/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": true,
   "patch_available": true,

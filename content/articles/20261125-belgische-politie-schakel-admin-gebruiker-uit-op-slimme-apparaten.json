@@ -48,7 +48,15 @@
     "koelsystemen"
   ],
   "image_query": "smart home devices",
-  "image": null,
+  "image": {
+    "id": 4758340,
+    "file": "belgische-politie-schakel-admin-gebruiker-uit-op-slimme-apparaten.jpg",
+    "alt": "Belgische politie: schakel de admin-gebruiker uit op je slimme apparaten",
+    "credit": "finnhart",
+    "credit_url": "https://pixabay.com/users/finnhart-11150077/",
+    "page_url": "https://pixabay.com/photos/alexa-echo-smart-home-box-jukebox-4758340/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": false,

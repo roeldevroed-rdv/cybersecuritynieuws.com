@@ -47,7 +47,15 @@
     "datalek sportvereniging"
   ],
   "image_query": "sports club football field",
-  "image": null,
+  "image": {
+    "id": 709181,
+    "file": "datalek-allunited-raakt-honderden-sportclubs.jpg",
+    "alt": "Datalek bij AllUnited raakt honderden sportclubs: wees alert op nepbetaalverzoeken",
+    "credit": "ahundt",
+    "credit_url": "https://pixabay.com/users/ahundt-663354/",
+    "page_url": "https://pixabay.com/photos/stadium-soccer-london-england-709181/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

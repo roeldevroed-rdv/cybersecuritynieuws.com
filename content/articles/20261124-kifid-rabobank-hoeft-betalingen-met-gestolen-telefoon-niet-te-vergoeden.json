@@ -51,7 +51,15 @@
     "bankapp beveiligen"
   ],
   "image_query": "smartphone banking app",
-  "image": null,
+  "image": {
+    "id": 4287684,
+    "file": "kifid-rabobank-hoeft-betalingen-met-gestolen-telefoon-niet-te-vergoeden.jpg",
+    "alt": "Kifid: Rabobank hoeft betalingen met gestolen telefoon niet te vergoeden",
+    "credit": "geralt",
+    "credit_url": "https://pixabay.com/users/geralt-9301/",
+    "page_url": "https://pixabay.com/photos/online-banking-banking-operations-4287684/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

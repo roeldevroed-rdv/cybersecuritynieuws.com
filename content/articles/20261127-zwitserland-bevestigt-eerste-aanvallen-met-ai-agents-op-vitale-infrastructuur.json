@@ -49,7 +49,15 @@
     "cyberaanval"
   ],
   "image_query": "power grid",
-  "image": null,
+  "image": {
+    "id": 7997980,
+    "file": "zwitserland-bevestigt-eerste-aanvallen-met-ai-agents-op-vitale-infrastructuur.jpg",
+    "alt": "Zwitserland bevestigt eerste geslaagde aanvallen met AI-agents, ook op vitale infrastructuur",
+    "credit": "Couleur",
+    "credit_url": "https://pixabay.com/users/Couleur-1195798/",
+    "page_url": "https://pixabay.com/photos/wires-electrical-current-electricity-7997980/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

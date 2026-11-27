@@ -54,7 +54,15 @@
     "CBS"
   ],
   "image_query": "office laptop artificial intelligence",
-  "image": null,
+  "image": {
+    "id": 6332544,
+    "file": "ncsc-ai-gebruik-bedrijven-verdubbeld-breng-je-ai-tools-in-kaart.jpg",
+    "alt": "NCSC: AI-gebruik door bedrijven verdubbeld, breng in kaart welke AI-tools je gebruikt",
+    "credit": "Riekus",
+    "credit_url": "https://pixabay.com/users/Riekus-22058758/",
+    "page_url": "https://pixabay.com/photos/laptop-desk-office-workspace-6332544/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

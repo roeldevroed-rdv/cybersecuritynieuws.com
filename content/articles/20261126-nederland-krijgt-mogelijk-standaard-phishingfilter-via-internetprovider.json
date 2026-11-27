@@ -47,7 +47,15 @@
     "DNS"
   ],
   "image_query": "internet security warning",
-  "image": null,
+  "image": {
+    "id": 2851201,
+    "file": "nederland-krijgt-mogelijk-standaard-phishingfilter-via-internetprovider.jpg",
+    "alt": "Nederland krijgt mogelijk standaard phishingfilter via je internetprovider",
+    "credit": "TheDigitalArtist",
+    "credit_url": "https://pixabay.com/users/TheDigitalArtist-202249/",
+    "page_url": "https://pixabay.com/photos/cyber-security-internet-security-2851201/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

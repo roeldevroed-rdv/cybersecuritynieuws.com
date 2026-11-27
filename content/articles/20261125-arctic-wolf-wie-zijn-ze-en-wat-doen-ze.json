@@ -51,7 +51,15 @@
     "Sevco Security"
   ],
   "image_query": "security operations center",
-  "image": null,
+  "image": {
+    "id": 1282330,
+    "file": "arctic-wolf-wie-zijn-ze-en-wat-doen-ze.jpg",
+    "alt": "Arctic Wolf: wie zijn ze en wat doen ze?",
+    "credit": "Pexels",
+    "credit_url": "https://pixabay.com/users/Pexels-2286921/",
+    "page_url": "https://pixabay.com/photos/police-helicopter-military-war-1282330/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

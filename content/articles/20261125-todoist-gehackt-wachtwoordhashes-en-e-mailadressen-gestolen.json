@@ -47,7 +47,15 @@
     "API-tokens"
   ],
   "image_query": "laptop password security",
-  "image": null,
+  "image": {
+    "id": 1590455,
+    "file": "todoist-gehackt-wachtwoordhashes-en-e-mailadressen-gestolen.jpg",
+    "alt": "Todoist gehackt: wachtwoordhashes en e-mailadressen van gebruikers gestolen",
+    "credit": "TheDigitalWay",
+    "credit_url": "https://pixabay.com/users/TheDigitalWay-3008341/",
+    "page_url": "https://pixabay.com/photos/data-security-keyboard-computer-1590455/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

@@ -50,7 +50,15 @@
     "is een wachtwoordmanager veilig"
   ],
   "image_query": "password security keyboard",
-  "image": null,
+  "image": {
+    "id": 621830,
+    "file": "wachtwoordmanager.jpg",
+    "alt": "Waarom je een wachtwoordmanager wilt (en hoe je kiest)",
+    "credit": "JeongGuHyeok",
+    "credit_url": "https://pixabay.com/users/JeongGuHyeok-645950/",
+    "page_url": "https://pixabay.com/photos/keyboard-key-success-online-621830/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

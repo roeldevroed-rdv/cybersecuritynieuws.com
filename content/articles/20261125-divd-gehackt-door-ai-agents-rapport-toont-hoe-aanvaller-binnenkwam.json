@@ -50,7 +50,15 @@
     "datalek"
   ],
   "image_query": "server room network",
-  "image": null,
+  "image": {
+    "id": 4688477,
+    "file": "divd-gehackt-door-ai-agents-rapport-toont-hoe-aanvaller-binnenkwam.jpg",
+    "alt": "DIVD gehackt via ongepatchte helpdesksoftware, aanvaller gebruikte waarschijnlijk AI-agents",
+    "credit": "11287688",
+    "credit_url": "https://pixabay.com/users/11287688-11287688/",
+    "page_url": "https://pixabay.com/photos/spatialship-future-space-travel-4688477/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": true,
   "patch_available": true,

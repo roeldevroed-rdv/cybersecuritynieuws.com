@@ -54,7 +54,15 @@
     "losgeld betalen"
   ],
   "image_query": "locked computer screen",
-  "image": null,
+  "image": {
+    "id": 2688911,
+    "file": "wat-is-ransomware.jpg",
+    "alt": "Wat is ransomware en hoe bescherm je je ertegen?",
+    "credit": "geralt",
+    "credit_url": "https://pixabay.com/users/geralt-9301/",
+    "page_url": "https://pixabay.com/photos/security-binary-binary-code-castle-2688911/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

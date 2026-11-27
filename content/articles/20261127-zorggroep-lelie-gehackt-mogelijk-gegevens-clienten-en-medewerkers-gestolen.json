@@ -49,7 +49,15 @@
     "persoonsgegevens"
   ],
   "image_query": "hospital corridor",
-  "image": null,
+  "image": {
+    "id": 10566839,
+    "file": "zorggroep-lelie-gehackt-mogelijk-gegevens-clienten-en-medewerkers-gestolen.jpg",
+    "alt": "Zorggroep Lelie gehackt: mogelijk gegevens van cliënten en medewerkers gestolen",
+    "credit": "AminRajput21",
+    "credit_url": "https://pixabay.com/users/AminRajput21-36621255/",
+    "page_url": "https://pixabay.com/photos/wheelchair-hand-wheel-hospital-10566839/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

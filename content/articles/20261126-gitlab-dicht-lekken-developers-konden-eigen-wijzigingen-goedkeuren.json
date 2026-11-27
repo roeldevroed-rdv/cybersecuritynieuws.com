@@ -46,7 +46,15 @@
     "beveiligingsupdate"
   ],
   "image_query": "software developer code",
-  "image": null,
+  "image": {
+    "id": 1853305,
+    "file": "gitlab-dicht-lekken-developers-konden-eigen-wijzigingen-goedkeuren.jpg",
+    "alt": "GitLab dicht lekken: developers konden eigen wijzigingen goedkeuren",
+    "credit": "Pexels",
+    "credit_url": "https://pixabay.com/users/Pexels-2286921/",
+    "page_url": "https://pixabay.com/photos/coding-programming-css-1853305/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": true,

@@ -54,7 +54,15 @@
     "Onum"
   ],
   "image_query": "security operations center",
-  "image": null,
+  "image": {
+    "id": 2427499,
+    "file": "crowdstrike-wie-zijn-ze-en-wat-doen-ze.jpg",
+    "alt": "CrowdStrike: wie zijn ze en wat doen ze?",
+    "credit": "edwardbrownca",
+    "credit_url": "https://pixabay.com/users/edwardbrownca-5695857/",
+    "page_url": "https://pixabay.com/photos/jobsite-security-camera-2427499/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

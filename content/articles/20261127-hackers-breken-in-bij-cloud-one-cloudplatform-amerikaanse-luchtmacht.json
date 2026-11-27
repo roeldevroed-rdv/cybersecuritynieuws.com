@@ -48,7 +48,15 @@
     "defensie"
   ],
   "image_query": "military aircraft hangar",
-  "image": null,
+  "image": {
+    "id": 81779,
+    "file": "hackers-breken-in-bij-cloud-one-cloudplatform-amerikaanse-luchtmacht.jpg",
+    "alt": "Hackers breken in bij Cloud One, het belangrijkste cloudplatform van de Amerikaanse luchtmacht",
+    "credit": "12019",
+    "credit_url": "https://pixabay.com/users/12019-12019/",
+    "page_url": "https://pixabay.com/photos/hangar-jet-aircraft-fighter-81779/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

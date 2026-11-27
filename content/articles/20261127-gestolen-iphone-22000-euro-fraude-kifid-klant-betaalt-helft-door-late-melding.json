@@ -48,7 +48,15 @@
     "grove nalatigheid"
   ],
   "image_query": "smartphone banking app",
-  "image": null,
+  "image": {
+    "id": 5513375,
+    "file": "gestolen-iphone-22000-euro-fraude-kifid-klant-betaalt-helft-door-late-melding.jpg",
+    "alt": "22.000 euro fraude met gestolen iPhone: klant betaalt helft omdat ze diefstal te laat meldde",
+    "credit": "Krasutskaya",
+    "credit_url": "https://pixabay.com/users/Krasutskaya-14346318/",
+    "page_url": "https://pixabay.com/photos/smartphone-mobile-phone-mobile-app-5513375/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": false,

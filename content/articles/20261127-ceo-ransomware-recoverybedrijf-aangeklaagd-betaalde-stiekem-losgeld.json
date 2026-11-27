@@ -48,7 +48,15 @@
     "MonsterCloud"
   ],
   "image_query": "padlock computer keyboard",
-  "image": null,
+  "image": {
+    "id": 628703,
+    "file": "ceo-ransomware-recoverybedrijf-aangeklaagd-betaalde-stiekem-losgeld.jpg",
+    "alt": "Ceo van 'ransomware-recoverybedrijf' aangeklaagd: hij betaalde stiekem losgeld en rekende het dubbele",
+    "credit": "succo",
+    "credit_url": "https://pixabay.com/users/succo-96729/",
+    "page_url": "https://pixabay.com/photos/keyboard-secure-privacy-policy-628703/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

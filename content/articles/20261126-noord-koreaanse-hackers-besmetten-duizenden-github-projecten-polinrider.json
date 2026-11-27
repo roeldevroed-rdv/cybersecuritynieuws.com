@@ -48,7 +48,15 @@
     "Contagious Interview"
   ],
   "image_query": "code on screen",
-  "image": null,
+  "image": {
+    "id": 1839406,
+    "file": "noord-koreaanse-hackers-besmetten-duizenden-github-projecten-polinrider.jpg",
+    "alt": "Noord-Koreaanse hackers verstoppen malware in duizenden GitHub-projecten",
+    "credit": "Pexels",
+    "credit_url": "https://pixabay.com/users/Pexels-2286921/",
+    "page_url": "https://pixabay.com/photos/code-coding-computer-data-1839406/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,

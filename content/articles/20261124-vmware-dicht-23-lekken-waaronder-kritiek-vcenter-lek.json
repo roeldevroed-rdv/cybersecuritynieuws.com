@@ -49,7 +49,15 @@
     "ESXi kwetsbaarheid"
   ],
   "image_query": "data center servers",
-  "image": null,
+  "image": {
+    "id": 2160321,
+    "file": "vmware-dicht-23-lekken-waaronder-kritiek-vcenter-lek.jpg",
+    "alt": "VMware dicht 23 lekken, waaronder kritiek inloglek in vCenter",
+    "credit": "Schäferle",
+    "credit_url": "https://pixabay.com/users/Schäferle-3372715/",
+    "page_url": "https://pixabay.com/photos/server-space-the-server-room-dark-2160321/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

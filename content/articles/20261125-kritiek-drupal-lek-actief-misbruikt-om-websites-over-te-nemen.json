@@ -54,7 +54,15 @@
     "website gehackt"
   ],
   "image_query": "website code server",
-  "image": null,
+  "image": {
+    "id": 1283624,
+    "file": "kritiek-drupal-lek-actief-misbruikt-om-websites-over-te-nemen.jpg",
+    "alt": "Kritiek Drupal-lek actief misbruikt om websites over te nemen",
+    "credit": "Pexels",
+    "credit_url": "https://pixabay.com/users/Pexels-2286921/",
+    "page_url": "https://pixabay.com/photos/technology-computer-code-javascript-1283624/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

@@ -46,7 +46,15 @@
     "AI"
   ],
   "image_query": "bank payment card",
-  "image": null,
+  "image": {
+    "id": 1583534,
+    "file": "banken-werken-samen-tegen-grote-cyberaanval-dnb-waarschuwt-voor-uitval-betalingsverkeer.jpg",
+    "alt": "Banken werken samen tegen grote cyberaanval, DNB waarschuwt voor uitval betalingsverkeer",
+    "credit": "TheDigitalWay",
+    "credit_url": "https://pixabay.com/users/TheDigitalWay-3008341/",
+    "page_url": "https://pixabay.com/photos/credit-cards-denim-jeans-blue-jeans-1583534/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

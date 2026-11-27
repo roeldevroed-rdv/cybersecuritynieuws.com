@@ -49,7 +49,15 @@
     "PAN-OS update"
   ],
   "image_query": "firewall datacenter",
-  "image": null,
+  "image": {
+    "id": 3759179,
+    "file": "palo-alto-dicht-linux-lek-fragnesia-gebruikt-om-firewalls-te-rooten.jpg",
+    "alt": "Palo Alto dicht Linux-lek 'Fragnesia' dat werd gebruikt om firewalls over te nemen",
+    "credit": "MasterTux",
+    "credit_url": "https://pixabay.com/users/MasterTux-470906/",
+    "page_url": "https://pixabay.com/photos/security-computer-protection-3759179/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": true,

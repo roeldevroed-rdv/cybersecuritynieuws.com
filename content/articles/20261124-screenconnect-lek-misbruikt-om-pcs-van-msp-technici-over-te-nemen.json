@@ -49,7 +49,15 @@
     "remote support beveiliging"
   ],
   "image_query": "it technician remote support",
-  "image": null,
+  "image": {
+    "id": 1235959,
+    "file": "screenconnect-lek-misbruikt-om-pcs-van-msp-technici-over-te-nemen.jpg",
+    "alt": "ScreenConnect-lek misbruikt om pc's van IT-dienstverleners over te nemen",
+    "credit": "ColossusCloud",
+    "credit_url": "https://pixabay.com/users/ColossusCloud-2086276/",
+    "page_url": "https://pixabay.com/photos/server-cloud-development-business-1235959/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

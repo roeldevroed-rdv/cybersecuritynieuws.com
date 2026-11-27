@@ -53,7 +53,15 @@
     "API-sleutels gestolen"
   ],
   "image_query": "cloud computing security",
-  "image": null,
+  "image": {
+    "id": 8598424,
+    "file": "lek-in-azure-api-management-misbruikt-om-api-sleutels-te-stelen.jpg",
+    "alt": "Lek in Azure API Management misbruikt om API-sleutels te stelen",
+    "credit": "kumar111aakashin",
+    "credit_url": "https://pixabay.com/users/kumar111aakashin-15903972/",
+    "page_url": "https://pixabay.com/photos/cloud-server-cloud-computing-secure-8598424/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": true,
   "patch_available": true,

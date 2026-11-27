@@ -49,7 +49,15 @@
     "root"
   ],
   "image_query": "linux server",
-  "image": null,
+  "image": {
+    "id": 838379,
+    "file": "nfs2root-twaalf-jaar-oud-linux-lek-geeft-aanvallers-rootrechten.jpg",
+    "alt": "NFS2ROOT: twaalf jaar oud Linux-lek geeft aanvallers op afstand rootrechten",
+    "credit": "blickpixel",
+    "credit_url": "https://pixabay.com/users/blickpixel-52945/",
+    "page_url": "https://pixabay.com/photos/it-server-server-cabinet-network-838379/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

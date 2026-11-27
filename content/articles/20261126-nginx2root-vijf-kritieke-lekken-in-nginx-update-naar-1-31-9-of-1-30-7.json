@@ -54,7 +54,15 @@
     "SCTP"
   ],
   "image_query": "server rack",
-  "image": null,
+  "image": {
+    "id": 2402637,
+    "file": "nginx2root-vijf-kritieke-lekken-in-nginx-update-naar-1-31-9-of-1-30-7.jpg",
+    "alt": "NGINX2Root: vijf lekken in webserver NGINX, miljoenen servers moeten updaten",
+    "credit": "bsdrouin",
+    "credit_url": "https://pixabay.com/users/bsdrouin-5016447/",
+    "page_url": "https://pixabay.com/photos/network-server-system-2402637/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

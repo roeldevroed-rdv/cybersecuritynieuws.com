@@ -54,7 +54,15 @@
     "Keycloak"
   ],
   "image_query": "programming code screen",
-  "image": null,
+  "image": {
+    "id": 820275,
+    "file": "java4shell-lek-in-java-update-nu-crowdstrike-ziet-activiteit-na-inbraak.jpg",
+    "alt": "Java4Shell: update Java nu, CrowdStrike ziet al activiteit na inbraken",
+    "credit": "fancycrave1",
+    "credit_url": "https://pixabay.com/users/fancycrave1-1115284/",
+    "page_url": "https://pixabay.com/photos/code-programming-hacking-html-web-820275/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

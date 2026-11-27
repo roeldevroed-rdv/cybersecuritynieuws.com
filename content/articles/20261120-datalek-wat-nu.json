@@ -52,7 +52,15 @@
     "identiteitsfraude"
   ],
   "image_query": "data breach",
-  "image": null,
+  "image": {
+    "id": 2851245,
+    "file": "datalek-wat-nu.jpg",
+    "alt": "Je gegevens zijn gelekt: wat moet je nu doen?",
+    "credit": "TheDigitalArtist",
+    "credit_url": "https://pixabay.com/users/TheDigitalArtist-202249/",
+    "page_url": "https://pixabay.com/photos/cyber-security-hacking-internet-2851245/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

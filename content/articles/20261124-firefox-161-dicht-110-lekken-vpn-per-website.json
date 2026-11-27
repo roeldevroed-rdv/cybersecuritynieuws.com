@@ -48,7 +48,15 @@
     "browser beveiligingslek"
   ],
   "image_query": "web browser laptop",
-  "image": null,
+  "image": {
+    "id": 459196,
+    "file": "firefox-161-dicht-110-lekken-vpn-per-website.jpg",
+    "alt": "Firefox 161 dicht 110 beveiligingslekken en krijgt vpn per website",
+    "credit": "377053",
+    "credit_url": "https://pixabay.com/users/377053-377053/",
+    "page_url": "https://pixabay.com/photos/macbook-laptop-google-display-459196/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": true,

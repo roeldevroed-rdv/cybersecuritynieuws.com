@@ -49,7 +49,15 @@
     "Microsoft update november"
   ],
   "image_query": "email server office",
-  "image": null,
+  "image": {
+    "id": 545394,
+    "file": "kritiek-visio-lek-via-exchange-te-misbruiken-zonder-dat-iemand-iets-opent.jpg",
+    "alt": "Kritiek Visio-lek via Exchange te misbruiken zonder dat iemand iets opent",
+    "credit": "stevepb",
+    "credit_url": "https://pixabay.com/users/stevepb-282134/",
+    "page_url": "https://pixabay.com/photos/hands-old-typing-laptop-internet-545394/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,

@@ -50,7 +50,15 @@
     "datalek EU"
   ],
   "image_query": "european union flags",
-  "image": null,
+  "image": {
+    "id": 3370970,
+    "file": "europese-commissie-bevestigt-datalek-bij-eu-academy.jpg",
+    "alt": "Europese Commissie bevestigt datalek bij EU Academy na aanval met AI-tool",
+    "credit": "Ralphs_Fotos",
+    "credit_url": "https://pixabay.com/users/Ralphs_Fotos-1767157/",
+    "page_url": "https://pixabay.com/photos/banner-flag-europe-european-flag-3370970/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": false,

@@ -53,7 +53,15 @@
     "nepmail melden"
   ],
   "image_query": "phishing email laptop",
-  "image": null,
+  "image": {
+    "id": 7102985,
+    "file": "wat-is-phishing.jpg",
+    "alt": "Wat is phishing en hoe herken je het?",
+    "credit": "geralt",
+    "credit_url": "https://pixabay.com/users/geralt-9301/",
+    "page_url": "https://pixabay.com/photos/letter-e-mail-mail-hand-write-7102985/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,
