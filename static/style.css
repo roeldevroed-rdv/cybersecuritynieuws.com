@@ -441,6 +441,12 @@ main { padding: 24px 0 64px; min-height: 60vh; }
 .threat__meter span.on { background: var(--lvl); }
 .threat__name { font: 700 1.4rem/1.1 var(--serif); color: var(--lvl); margin: 0 0 6px; }
 .threat p { margin: 0 0 6px; }
+.threat__todo { margin: 10px 0 12px; padding: 10px 12px; border-left: 3px solid var(--lvl); background: color-mix(in srgb, var(--lvl) 8%, transparent); border-radius: 0 8px 8px 0; font-size: .88rem; }
+.threat__todo p { margin: 0 0 4px; }
+.threat__todo p:last-child { margin: 0; }
+.threat__todo-title { font-weight: 700; color: var(--lvl); }
+.threat__btn { display: block; text-align: center; margin: 0 0 8px; padding: 10px 12px; border-radius: 8px; background: var(--lvl); color: #fff; font-weight: 600; font-size: .9rem; text-decoration: none; }
+.threat__btn:hover { color: #fff; filter: brightness(1.08); }
 
 /* Advertenties */
 .ad { display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }

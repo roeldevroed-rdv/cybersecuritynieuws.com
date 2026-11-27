@@ -83,7 +83,13 @@
         </div>
         <p class="threat__name">{{ threat.name }}</p>
         <p class="small">{{ threat.advice }}</p>
-        <p class="small muted">Afgelopen 7 dagen: {{ threat.exploited }} actief misbruikt, {{ threat.critical }} kritiek. <a href="/actief-misbruikt/">Bekijk</a></p>
+        <div class="threat__todo">
+          <p class="threat__todo-title">Wat moet je doen?</p>
+          <p><strong>Thuis:</strong> {{ threat.thuis }}</p>
+          <p><strong>Bedrijf:</strong> {{ threat.bedrijf }}</p>
+        </div>
+        {% if threat.exploited %}<a class="threat__btn" href="/actief-misbruikt/">Bekijk de {{ threat.exploited }} misbruikte lekken →</a>{% endif %}
+        <p class="small muted">Afgelopen 7 dagen: {{ threat.exploited }} actief misbruikt, {{ threat.critical }} kritiek.</p>
       </section>
 
       {% include "_ad_sidebar.html" %}
