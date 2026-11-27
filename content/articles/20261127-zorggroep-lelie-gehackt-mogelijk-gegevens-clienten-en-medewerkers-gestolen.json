@@ -1,0 +1,78 @@
+{
+  "id": "20261127-zorggroep-lelie-gehackt-mogelijk-gegevens-clienten-en-medewerkers-gestolen",
+  "slug": "zorggroep-lelie-gehackt-mogelijk-gegevens-clienten-en-medewerkers-gestolen",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Zorggroep Lelie gehackt: mogelijk gegevens van cliënten en medewerkers gestolen",
+  "tldr": "De Nederlandse zorgorganisatie Lelie zorggroep is gehackt. Aanvallers hebben mogelijk toegang gehad tot dossiers van cliënten, medewerkers en vrijwilligers. Welke gegevens precies zijn buitgemaakt, wordt nog onderzocht. Lelie heeft politie, NCSC en de Autoriteit Persoonsgegevens ingelicht en waarschuwt voor oplichting. De zorg gaat gewoon door.",
+  "meta_description": "Lelie zorggroep is gehackt: mogelijk zijn gegevens van cliënten, medewerkers en vrijwilligers gestolen. Wees alert op oplichting die hierop inspeelt.",
+  "body": "Lelie zorggroep, een Nederlandse zorgorganisatie met onder meer thuiszorg, is getroffen door een hack. Onbekende aanvallers hebben 'mogelijk toegang gekregen' tot dossiers van cliënten en gegevens van medewerkers, [meldt Tweakers](https://tweakers.net/nieuws/254998/nederlandse-zorginstelling-lelie-is-gehackt-mogelijk-patientgegevens-gestolen.html). Hoe groot de hack is, is nog niet bekend. Volgens [Omroep Zeeland](https://www.omroepzeeland.nl/nieuws/18983685/hackers-stelen-mogelijk-gegevens-van-clienten-lelie-zorggroep-na-datalek) werd de inbraak op maandag 23 november ontdekt.\n\n## Welke gegevens zijn mogelijk gestolen?\n\nDat is nog niet duidelijk; experts zoeken het uit, schrijft Lelie op een [eigen pagina over het datalek](https://www.leliezorggroep.nl/datalek). Het gaat mogelijk om adres- en persoonsgegevens uit dossiers van cliënten, medewerkers en vrijwilligers. Over de precieze inhoud lopen de berichten uiteen: sommige regionale media noemen ook medische gegevens, burgerservicenummers en bankgegevens van cliënten, maar dat is niet door Lelie bevestigd. Of er losgeld is geëist of een bekende hackersgroep achter de aanval zit, is niet bekendgemaakt.\n\n## Wat doet Lelie?\n\nDe zorgorganisatie heeft de hack gemeld bij de politie, het Nationaal Cyber Security Centrum en de Autoriteit Persoonsgegevens. Wat zo'n melding inhoudt, lees je in [onze gids over datalekken](/artikel/datalek-wat-nu/). Cliënten, naasten, medewerkers en vrijwilligers zijn ingelicht. De hack heeft volgens Lelie op dit moment geen gevolgen voor de zorg en ondersteuning.\n\n## Waarom moet je nu extra alert zijn?\n\nNa een datalek gebruiken criminelen gestolen gegevens vaak om geloofwaardige nepberichten te sturen. Ze noemen dan je naam, adres of zorgsituatie om vertrouwen te wekken. Lelie waarschuwt daar zelf ook voor: twijfel je over een bericht, neem dan zelf contact op via de officiële kanalen. Zorgorganisaties zijn vaker doelwit, zoals bij de grote hack op zorgsoftwareleverancier ChipSoft eerder dit jaar. Lees in [onze gids over phishing](/artikel/wat-is-phishing/) hoe je nepberichten herkent.",
+  "actions": [
+    "Ben je cliënt, naaste, medewerker of vrijwilliger van Lelie? Lees de informatie op de datalekpagina van Lelie en houd je mail en post in de gaten.",
+    "Wees extra wantrouwig bij mails, sms'jes en telefoontjes die je persoonlijke gegevens of zorgsituatie noemen, zeker als er om geld, inloggegevens of een betaling wordt gevraagd.",
+    "Bel bij twijfel zelf de organisatie via het nummer op de officiële website, niet via een nummer uit het bericht.",
+    "Controleer je bankrekening op onbekende afschrijvingen en waarschuw je bank als je iets vreemds ziet."
+  ],
+  "faq": [
+    {
+      "q": "Zijn er medische gegevens gestolen?",
+      "a": "Dat is nog niet bevestigd. Lelie zegt dat experts onderzoeken welke gegevens zijn ingezien of meegenomen. Sommige media noemen medische gegevens, maar dat heeft Lelie niet bevestigd."
+    },
+    {
+      "q": "Gaat de zorg van Lelie gewoon door?",
+      "a": "Ja. Volgens Lelie heeft de hack op dit moment geen gevolgen voor de zorg en ondersteuning aan cliënten."
+    },
+    {
+      "q": "Wat moet ik doen als ik een verdacht bericht krijg?",
+      "a": "Reageer niet, klik niet op links en geef geen gegevens. Neem zelf contact op met Lelie of je bank via de officiële kanalen en meld phishing bij de Fraudehelpdesk."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Zorg"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "Lelie zorggroep",
+    "datalek",
+    "hack",
+    "zorg",
+    "thuiszorg",
+    "persoonsgegevens"
+  ],
+  "image_query": "hospital corridor",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Tweakers",
+      "title": "Nederlandse zorginstelling Lelie is gehackt, mogelijk patiëntgegevens gestolen",
+      "url": "https://tweakers.net/nieuws/254998/nederlandse-zorginstelling-lelie-is-gehackt-mogelijk-patientgegevens-gestolen.html"
+    },
+    {
+      "name": "Omroep Zeeland",
+      "title": "Hackers stelen mogelijk gegevens van cliënten Lelie zorggroep na datalek",
+      "url": "https://www.omroepzeeland.nl/nieuws/18983685/hackers-stelen-mogelijk-gegevens-van-clienten-lelie-zorggroep-na-datalek"
+    },
+    {
+      "name": "Lelie zorggroep",
+      "title": "Veelgestelde vragen over het mogelijke datalek",
+      "url": "https://www.leliezorggroep.nl/datalek"
+    }
+  ],
+  "published": "2026-11-27T16:25:48+00:00",
+  "model": "redactie"
+}
