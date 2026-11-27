@@ -99,7 +99,7 @@ def plaatsen(slug: str, reel: bool = False) -> None:
     caption = (d / "bijschrift.txt").read_text(encoding="utf-8").strip()
     base = f"{SITE}/ig/{urllib.parse.quote(slug)}"
     if reel:
-        caption += "\n\nDeze video is gemaakt met AI (presentator en/of stem)."
+        caption += "\n\nDeze video is gemaakt met AI."
         _wait_online(f"{base}/reel.mp4")
         c = _api(f"{IG_USER}/media", {"media_type": "REELS", "video_url": f"{base}/reel.mp4",
                                        "caption": caption, "share_to_feed": "true"}, post=True)["id"]
