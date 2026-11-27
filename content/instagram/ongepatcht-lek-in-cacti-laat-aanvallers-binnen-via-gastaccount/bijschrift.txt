@@ -1,0 +1,12 @@
+Ongepatcht lek in netwerkmonitor Cacti: schakel het gastaccount uit
+
+Voor een nog niet gedicht lek in Cacti, populaire open-source software voor netwerkmonitoring, is een werkende exploit openbaar. Aanvallers kunnen in vier verzoeken commando's uitvoeren op de server, mits het gastaccount aanstaat. Er is nog geen update. Schakel het gastaccount uit.
+
+Wat moet je doen?
+- Schakel het gastaccount in Cacti uit via Console > Configuration > Users.
+- Zorg dat Cacti alleen via het interne netwerk of een vpn bereikbaar is.
+- Controleer de server op onbekende processen, gebruikers en wijzigingen.
+
+Lees het hele artikel via de link in onze bio (cybersecuritynieuws.com).
+
+#cybersecurity #cyberveiligheid #onlineveiligheid #beveiligingsupdate #updaten #Cacti #zeroday #4HTTP2ROOT

@@ -206,6 +206,8 @@ def build(config: dict) -> None:
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(ROOT / "static", DIST / "static")
+    if (ROOT / "content" / "instagram").exists():  # publieke media voor de Instagram-koppeling
+        shutil.copytree(ROOT / "content" / "instagram", DIST / "ig", ignore=shutil.ignore_patterns("*.json"))
     # Standaardlocaties waar browsers en iOS zelf naar het icoon zoeken
     from PIL import Image as _Img
     shutil.copy(ROOT / "static/img/icon-180.png", DIST / "apple-touch-icon.png")
@@ -338,7 +340,7 @@ def build(config: dict) -> None:
     if key:  # IndexNow-sleutelbestand in de hoofdmap
         (DIST / f"{key}.txt").write_text(key)
     (DIST / "CNAME").write_text(config["site"]["domain"] + "\n")  # eigen domein op GitHub Pages
-    (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {url}/sitemap.xml\nSitemap: {url}/news-sitemap.xml\n")
+    (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /ig/\nSitemap: {url}/sitemap.xml\nSitemap: {url}/news-sitemap.xml\n")
     print(f"Site gebouwd: {len(arts)} artikelen, {len(site.urls)} pagina's -> dist/")
 
 

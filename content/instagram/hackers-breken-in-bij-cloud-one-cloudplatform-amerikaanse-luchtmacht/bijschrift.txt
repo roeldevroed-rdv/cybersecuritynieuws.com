@@ -1,0 +1,12 @@
+Hackers breken in bij Cloud One, het belangrijkste cloudplatform van de Amerikaanse luchtmacht
+
+Hackers zijn binnengedrongen in Cloud One, het centrale cloudplatform van de Amerikaanse luchtmacht, meldt Reuters op basis van bronnen. Op het platform staan onder meer gegevens over radarsystemen, munitievoorraden en personeel. Volgens bronnen werkt het systeem niet meer goed.
+
+Wat moet je doen?
+- Zorg dat beheerdersaccounts van je cloudomgeving altijd met phishingbestendige tweestapsverificatie zijn beveiligd.
+- Verdeel gevoelige gegevens en systemen over gescheiden omgevingen of accounts, zodat één inbraak niet meteen alles raakt.
+- Zet logging aan voor aanmeldingen en beheerhandelingen in de cloud en laat afwijkingen automatisch melden.
+
+Lees het hele artikel via de link in onze bio (cybersecuritynieuws.com).
+
+#cybersecurity #cyberveiligheid #onlineveiligheid #hackers #malware #Amerikaanseluchtmacht #CloudOne #hack
