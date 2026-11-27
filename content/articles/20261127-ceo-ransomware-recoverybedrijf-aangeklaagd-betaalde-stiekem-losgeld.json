@@ -1,0 +1,82 @@
+{
+  "id": "20261127-ceo-ransomware-recoverybedrijf-aangeklaagd-betaalde-stiekem-losgeld",
+  "slug": "ceo-ransomware-recoverybedrijf-aangeklaagd-betaalde-stiekem-losgeld",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Ceo van 'ransomware-recoverybedrijf' aangeklaagd: hij betaalde stiekem losgeld en rekende het dubbele",
+  "tldr": "In de VS is de ceo van een bedrijf dat ransomware-slachtoffers zou helpen aangeklaagd voor fraude. Het bedrijf beweerde bestanden te kunnen ontsleutelen zonder losgeld, maar betaalde volgens justitie gewoon de criminelen en rekende klanten een veel hoger bedrag. Een undercoveractie van de FBI bracht dat aan het licht. Het is al de tweede zaak in korte tijd.",
+  "meta_description": "Een Amerikaans recoverybedrijf beloofde ransomware-slachtoffers ontsleuteling zonder losgeld, maar betaalde stiekem de criminelen. De ceo is nu aangeklaagd.",
+  "body": "De oprichter en ceo van een Amerikaans bedrijf dat ransomware-slachtoffers zou helpen, is aangeklaagd voor fraude. Het bedrijf beweerde over geavanceerde decryptietools te beschikken waarmee versleutelde bestanden terug te halen waren zonder te onderhandelen met de aanvallers of losgeld te betalen. In werkelijkheid betaalde het bedrijf volgens de Amerikaanse autoriteiten gewoon de criminelen voor de sleutel en liet het de slachtoffers een veel hoger bedrag betalen, [meldt Security.NL](https://www.security.nl/posting/963294/Ceo+recoverybedrijf+aangeklaagd+voor+oplichten+ransomware-slachtoffers).\n\n## Hoe kwam de FBI erachter?\n\nDe FBI deed zich tegelijk voor als slachtoffer en als ransomwarebende. Volgens de aanklacht, [zoals beschreven door 404 Media](https://404media.co/ransomware-fraud-attack-fbi-indictment) gaf een undercoveragent zich uit voor een medewerker van een verzonnen bedrijf. Het recoverybedrijf rekende 13.260 dollar voor de ontsleuteling, betaalde zelf ongeveer 6.000 dollar in bitcoin aan de 'aanvallers' en kreeg daarna de sleutel. Daarmee vroeg het ruim het dubbele van wat het zelf betaalde.\n\nDe 52-jarige ceo wordt beschuldigd van wire fraud, waarop maximaal twintig jaar cel staat. Het gaat om beschuldigingen: er is nog geen uitspraak.\n\n## Is dit een losstaand geval?\n\nNee. Vorige maand werd in de VS ook de eigenaar van het Floridaanse bedrijf MonsterCloud aangeklaagd. Hij zou klanten in totaal 19 miljoen dollar hebben gerekend terwijl hij zelf ongeveer 8 miljoen dollar aan losgeld betaalde, [schrijft The Record](https://therecord.media/ransomware-recovery-charges-doj). Eerder dit jaar kregen twee ransomware-onderhandelaars vier jaar cel omdat ze zelf aanvallen uitvoerden.\n\nVoor slachtoffers is de les dat je bij een aanval kritisch moet zijn op wie je inschakelt. Een bedrijf dat ontsleuteling belooft zonder te vertellen hoe, kan in werkelijkheid gewoon de criminelen betalen. Daarmee financier je ze en loop je ook juridische risico's, bijvoorbeeld bij sancties. Lees in [onze gids over ransomware](/artikel/wat-is-ransomware/) wat je beter wel kunt doen.",
+  "actions": [
+    "Kies vóór een incident al een betrouwbare incidentresponspartij, bijvoorbeeld via je cyberverzekeraar of je IT-leverancier, zodat je niet onder tijdsdruk hoeft te zoeken.",
+    "Vraag een recoverybedrijf altijd hoe het precies ontsleutelt, en of er losgeld wordt betaald. Leg dat schriftelijk vast.",
+    "Kijk eerst op nomoreransom.org of er een gratis decryptietool voor jouw ransomwarevariant bestaat.",
+    "Doe aangifte bij de politie en meld een datalek binnen 72 uur bij de Autoriteit Persoonsgegevens.",
+    "Zorg voor offline of onveranderbare back-ups, zodat je niet afhankelijk bent van een sleutel van criminelen."
+  ],
+  "faq": [
+    {
+      "q": "Bestaan er echt tools die ransomware ontsleutelen zonder losgeld?",
+      "a": "Soms wel, vooral voor oudere varianten waarbij onderzoekers of politie de sleutels in handen kregen. Ze staan gratis op nomoreransom.org. Voor de meeste moderne varianten bestaat zo'n tool niet."
+    },
+    {
+      "q": "Hoe herken je een onbetrouwbaar recoverybedrijf?",
+      "a": "Wees alert als een bedrijf garandeert dat het je bestanden terughaalt zonder uit te leggen hoe, of de werkwijze een 'bedrijfsgeheim' noemt. Vraag altijd expliciet of er losgeld aan de aanvallers wordt betaald."
+    }
+  ],
+  "category": "ransomware",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties"
+    ],
+    "sector": [],
+    "technologie": [
+      "Crypto"
+    ]
+  },
+  "keywords": [
+    "ransomware",
+    "recoverybedrijf",
+    "losgeld",
+    "FBI",
+    "fraude",
+    "decryptie",
+    "MonsterCloud"
+  ],
+  "image_query": "padlock computer keyboard",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Ceo recoverybedrijf aangeklaagd voor oplichten ransomware-slachtoffers",
+      "url": "https://www.security.nl/posting/963294/Ceo+recoverybedrijf+aangeklaagd+voor+oplichten+ransomware-slachtoffers"
+    },
+    {
+      "name": "404 Media",
+      "title": "Verslag van de FBI-undercoveractie tegen het recoverybedrijf",
+      "url": "https://404media.co/ransomware-fraud-attack-fbi-indictment"
+    },
+    {
+      "name": "The Record",
+      "title": "Aanklacht tegen eigenaar van MonsterCloud",
+      "url": "https://therecord.media/ransomware-recovery-charges-doj"
+    },
+    {
+      "name": "U.S. Department of Justice",
+      "title": "Colombian national indicted in scheme to defraud victims of ransomware attacks",
+      "url": "https://www.justice.gov/opa/pr/colombian-national-indicted-scheme-defraud-victims-ransomware-attacks"
+    }
+  ],
+  "published": "2026-11-27T12:27:27+00:00",
+  "model": "redactie"
+}

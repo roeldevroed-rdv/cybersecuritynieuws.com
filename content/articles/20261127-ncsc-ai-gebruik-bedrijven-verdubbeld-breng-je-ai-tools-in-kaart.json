@@ -1,0 +1,83 @@
+{
+  "id": "20261127-ncsc-ai-gebruik-bedrijven-verdubbeld-breng-je-ai-tools-in-kaart",
+  "slug": "ncsc-ai-gebruik-bedrijven-verdubbeld-breng-je-ai-tools-in-kaart",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "NCSC: AI-gebruik door bedrijven verdubbeld, breng in kaart welke AI-tools je gebruikt",
+  "tldr": "Nederlandse bedrijven gebruiken steeds vaker AI, en dat brengt risico's mee, waarschuwt het NCSC. Bedrijfsgegevens kunnen uitlekken via externe AI-diensten, AI kan verkeerd advies geven en AI-agents kunnen bij persoonsgegevens komen waar ze niets te zoeken hebben. Het NCSC adviseert bedrijven om alle AI-tools in kaart te brengen en per tool de risico's af te wegen.",
+  "meta_description": "Het NCSC waarschuwt nu bedrijven veel vaker AI gebruiken: data kan uitlekken en AI-agents kunnen de AVG schenden. Breng je AI-tools in kaart.",
+  "body": "Het Nationaal Cyber Security Centrum (NCSC) waarschuwt bedrijven voor de risico's van hun snel groeiende gebruik van kunstmatige intelligentie. De aanleiding zijn nieuwe cijfers van het CBS, waaruit blijkt dat bedrijven AI steeds vaker inzetten, vooral voor marketing, boekhouding en ICT-beveiliging. Wat eerst een experiment was, is volgens het NCSC inmiddels een vast onderdeel van het werk geworden, [meldt Security.NL](https://www.security.nl/posting/963395/NCSC+waarschuwt+voor+gevaren+van+toegenomen+gebruik+van+AI+door+bedrijven).\n\nVaak gebruiken bedrijven AI ook zonder dat ze het doorhebben, bijvoorbeeld in het spamfilter van de mail, in automatische rapportages van het hr-systeem of doordat medewerkers zelf AI-tools gebruiken.\n\n## Welke risico's ziet het NCSC?\n\nHet NCSC noemt vier risico's:\n\n- **Datalekken:** bedrijfsgegevens die in een externe AI-dienst worden ingevoerd, kunnen daar terechtkomen en uitlekken.\n- **Verkeerd advies:** AI kan overtuigend klinkende, maar onjuiste antwoorden geven.\n- **Privacy:** AI-agents kunnen de AVG schenden als ze bij persoonsgegevens kunnen waar ze geen toegang toe zouden moeten hebben.\n- **Afhankelijkheid:** bedrijven worden afhankelijker van AI-modellen en de leveranciers daarachter.\n\n## Wat raadt het NCSC aan?\n\nBreng eerst in kaart welke AI-tools in je organisatie worden gebruikt en welke je echt nodig hebt. Kijk per tool kritisch naar de risico's en of het gebruik wel noodzakelijk is. Wijs daarnaast verantwoordelijken aan en neem maatregelen die passen bij het risico: organisatorisch, contractueel, technisch en gericht op medewerkers. Beoordeel het beleid ten minste één keer per jaar opnieuw.\n\n## Waarom is dit nu belangrijk?\n\nAI wordt ook aan de aanvalskant snel krachtiger. Het Duitse BSI, de tegenhanger van het NCSC, [waarschuwde donderdag](https://www.security.nl/posting/963387/Duitse+cyberbeveiligingsauthoriteit+waarschuwt+voor+toenemende+dreiging+zelfstandig+opererende+AI) voor een mogelijke 'lawine' aan aanvallen met zelfstandig werkende AI-agents, zoals Artex, CAIRN en PentAGI. Dat sluit aan bij de [eerste bevestigde aanvallen met AI-agents in Zwitserland](/artikel/zwitserland-bevestigt-eerste-aanvallen-met-ai-agents-op-vitale-infrastructuur/) en het [gebruik van Artex door statelijke hackers](/artikel/microsoft-chinese-en-noord-koreaanse-hackers-gebruiken-ai-tool-artex/). Hoe meer AI-tools toegang hebben tot je systemen en gegevens, hoe belangrijker het is dat je weet welke dat zijn.",
+  "actions": [
+    "Maak een lijst van alle AI-tools in je organisatie, ook ingebouwde AI in bestaande software en tools die medewerkers zelf gebruiken.",
+    "Spreek af welke gegevens nooit in een externe AI-dienst mogen, zoals klantgegevens, persoonsgegevens en vertrouwelijke documenten.",
+    "Geef AI-agents en koppelingen alleen toegang tot de systemen en gegevens die ze echt nodig hebben.",
+    "Wijs per tool een verantwoordelijke aan en controleer de voorwaarden van de leverancier over opslag en gebruik van je data.",
+    "Zet een jaarlijkse herbeoordeling van je AI-beleid in de agenda."
+  ],
+  "faq": [
+    {
+      "q": "Gebruikt mijn bedrijf AI als we geen AI-tools hebben aangeschaft?",
+      "a": "Waarschijnlijk wel. AI zit vaak ingebouwd in bestaande software, zoals spamfilters en hr-systemen, en medewerkers gebruiken soms zelf AI-tools. Daarom raadt het NCSC aan om dat eerst in kaart te brengen."
+    },
+    {
+      "q": "Mag ik klantgegevens in een AI-chatbot zetten?",
+      "a": "Alleen als je zeker weet hoe de aanbieder die gegevens opslaat en gebruikt en dat dit past binnen de AVG. Bij twijfel: niet doen, want de gegevens kunnen bij de externe aanbieder terechtkomen."
+    },
+    {
+      "q": "Wat is het verschil met de waarschuwing van het Duitse BSI?",
+      "a": "Het NCSC gaat over de risico's van AI die bedrijven zelf gebruiken. Het BSI waarschuwt voor aanvallers die AI-agents inzetten om zelfstandig zwakke plekken te zoeken en aan te vallen."
+    }
+  ],
+  "category": "ai",
+  "labels": {
+    "regio": [
+      "Nederland",
+      "Europa"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "NCSC",
+    "AI",
+    "kunstmatige intelligentie",
+    "AVG",
+    "AI-agents",
+    "BSI",
+    "CBS"
+  ],
+  "image_query": "office laptop artificial intelligence",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "NCSC waarschuwt voor gevaren van toegenomen gebruik van AI door bedrijven",
+      "url": "https://www.security.nl/posting/963395/NCSC+waarschuwt+voor+gevaren+van+toegenomen+gebruik+van+AI+door+bedrijven"
+    },
+    {
+      "name": "Security.NL",
+      "title": "Duitse cyberbeveiligingsauthoriteit waarschuwt voor toenemende dreiging zelfstandig opererende AI",
+      "url": "https://www.security.nl/posting/963387/Duitse+cyberbeveiligingsauthoriteit+waarschuwt+voor+toenemende+dreiging+zelfstandig+opererende+AI"
+    },
+    {
+      "name": "NCSC",
+      "title": "AI-gebruik door bedrijven ruim verdubbeld",
+      "url": "https://www.ncsc.nl/nieuws/ai-gebruik-door-bedrijven-ruim-verdubbeld"
+    }
+  ],
+  "published": "2026-11-27T12:27:27+00:00",
+  "model": "redactie"
+}
