@@ -1,0 +1,80 @@
+{
+  "id": "20261127-sentinelone-wie-zijn-ze-en-wat-doen-ze",
+  "slug": "sentinelone-wie-zijn-ze-en-wat-doen-ze",
+  "type": "gids",
+  "topic_id": null,
+  "title": "SentinelOne: wie zijn ze en wat doen ze?",
+  "tldr": "SentinelOne is een Amerikaans securitybedrijf dat bekend werd met AI-gestuurde beveiliging van computers en servers. Het Singularity-platform beschermt inmiddels ook cloud, identiteiten en AI-gebruik. In het boekjaar 2026 passeerde de omzet voor het eerst 1 miljard dollar. Recente overnames zijn Prompt Security en Observo AI.",
+  "meta_description": "SentinelOne uitgelegd: wat het bedrijf doet, het Singularity-platform, Purple AI en de overnames van Prompt Security en Observo AI. Een neutraal profiel.",
+  "body": "SentinelOne is een Amerikaans cybersecuritybedrijf dat in 2013 werd opgericht in Israël, onder anderen door Tomer Weingarten, die nog altijd topman is. Het hoofdkantoor staat in Californië. Het bedrijf werd groot met beveiliging van endpoints (laptops, pc's en servers) die aanvallen herkent op basis van gedrag en AI, in plaats van met klassieke virusdefinities. In 2021 ging SentinelOne naar de beurs in New York. Over het boekjaar 2026 kwam de omzet voor het eerst boven de 1 miljard dollar, een groei van 22 procent, [blijkt uit het jaarverslag](https://www.stocktitan.net/sec-filings/S/10-k-sentinel-one-inc-files-annual-report-d97954d9b3f2.html). Het bedrijf maakte daarbij nog verlies.\n\n## Wat doet SentinelOne precies?\n\nAlles draait om het **Singularity-platform**. Een agent op elk apparaat bewaakt het gedrag van programma's, en kan bij een aanval zelfstandig ingrijpen: een proces stoppen, een apparaat isoleren of wijzigingen terugdraaien. Op het platform zitten modules voor:\n\n- **endpointbeveiliging** (EDR/XDR) voor Windows, Mac en Linux;\n- **cloudbeveiliging** voor servers en containers;\n- **identiteitsbeveiliging**, onder meer voor Active Directory;\n- **data en SIEM**, om securitygegevens centraal te doorzoeken;\n- **Purple AI**, een AI-assistent waarmee analisten in gewone taal vragen kunnen stellen over dreigingen.\n\nSentinelOne biedt ook managed diensten aan, waarbij eigen analisten meekijken, vergelijkbaar met de diensten van [Arctic Wolf](/artikel/arctic-wolf-wie-zijn-ze-en-wat-doen-ze/) en [CrowdStrike](/artikel/crowdstrike-wie-zijn-ze-en-wat-doen-ze/).\n\n## Welke overnames deed SentinelOne?\n\nHet bedrijf breidt het platform uit met overnames. In 2025 kocht het **Prompt Security**, een Israëlische start-up die het gebruik van generatieve AI binnen organisaties beveiligt, voor naar schatting 250 miljoen dollar, en **Observo AI**, dat securitydata slim verwerkt en doorstuurt, voor zo'n 225 miljoen dollar, [meldt Yahoo Finance](https://finance.yahoo.com/news/sentinelone-inc-q3-2026-earnings-050226517.html). Eerder kocht het onder meer Attivo Networks (identiteitsbeveiliging) en Scalyr (logdata).\n\n## Voor wie is SentinelOne interessant?\n\nSentinelOne richt zich op middelgrote en grote organisaties, en levert via partners en IT-dienstverleners ook aan het mkb. Belangrijke concurrenten zijn CrowdStrike, Microsoft, Palo Alto Networks en Sophos. Een vergelijking volgt later op deze site.",
+  "actions": [
+    "Vergelijk endpointbeveiliging op detectie, automatische reactie en hoe makkelijk het beheer is.",
+    "Vraag of de leverancier zelf kan ingrijpen bij een aanval en wat er gebeurt buiten kantooruren.",
+    "Test een oplossing eerst in een proefperiode op je eigen apparaten.",
+    "Controleer waar je gegevens worden opgeslagen en of dat past bij AVG en NIS2."
+  ],
+  "faq": [
+    {
+      "q": "Wat is Singularity?",
+      "a": "Singularity is het beveiligingsplatform van SentinelOne. Het beschermt apparaten, cloud en identiteiten vanuit één omgeving en kan zelfstandig ingrijpen bij een aanval."
+    },
+    {
+      "q": "Wat is Purple AI?",
+      "a": "Purple AI is de AI-assistent van SentinelOne. Securityanalisten kunnen er in gewone taal vragen aan stellen, bijvoorbeeld welke apparaten verdacht gedrag vertonen."
+    },
+    {
+      "q": "Wat is het verschil met CrowdStrike?",
+      "a": "Beide bieden vergelijkbare platforms voor endpoint-, cloud- en identiteitsbeveiliging. SentinelOne legt sterk de nadruk op automatisch ingrijpen op het apparaat zelf. Een uitgebreide vergelijking volgt later."
+    }
+  ],
+  "category": "markt",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "SentinelOne",
+    "Singularity",
+    "Purple AI",
+    "EDR",
+    "Prompt Security",
+    "Observo AI"
+  ],
+  "image_query": "security operations center",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "StockTitan (SEC 10-K)",
+      "title": "SentinelOne posts 22% revenue growth in 2026",
+      "url": "https://www.stocktitan.net/sec-filings/S/10-k-sentinel-one-inc-files-annual-report-d97954d9b3f2.html"
+    },
+    {
+      "name": "Yahoo Finance",
+      "title": "SentinelOne Inc (S) Q3 2026 Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/news/sentinelone-inc-q3-2026-earnings-050226517.html"
+    },
+    {
+      "name": "Wikipedia",
+      "title": "SentinelOne",
+      "url": "https://en.wikipedia.org/wiki/SentinelOne"
+    }
+  ],
+  "published": "2026-11-27T06:25:49+00:00",
+  "model": "redactie"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "20261127-ongepatcht-lek-in-cacti-laat-aanvallers-binnen-via-gastaccount",
+  "slug": "ongepatcht-lek-in-cacti-laat-aanvallers-binnen-via-gastaccount",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Ongepatcht lek in netwerkmonitor Cacti: schakel het gastaccount uit",
+  "tldr": "Voor een nog niet gedicht lek in Cacti, populaire open-source software voor netwerkmonitoring, is een werkende exploit openbaar. Aanvallers kunnen in vier verzoeken commando's uitvoeren op de server, mits het gastaccount aanstaat. Er is nog geen update. Schakel het gastaccount uit.",
+  "meta_description": "Voor een ongepatcht lek in Cacti 1.2.31 is een exploit openbaar. Via het gastaccount voeren aanvallers commando's uit. Schakel het gastaccount nu uit.",
+  "body": "In Cacti, veelgebruikte open-source software om netwerken en servers te monitoren, zit een ernstig lek waarvoor nog geen update bestaat. Een onderzoeker heeft een werkende exploit gepubliceerd, [meldt The Hacker News](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html). Daarmee kan een aanvaller zonder wachtwoord in vier HTTP-verzoeken commando's uitvoeren op de Cacti-server.\n\n## Wie is kwetsbaar?\n\nHet lek treft Cacti 1.2.31, de nieuwste versie, maar alleen als het **gastaccount** is ingeschakeld. Dat staat standaard uit, maar wordt soms aangezet om collega's zonder eigen account grafieken te laten bekijken. De exploit, die 4HTTP2ROOT wordt genoemd, combineert de gasttoegang met een SQL-injectie en de realtime-functie van Cacti om zo code uit te voeren. Er is nog geen CVE-nummer en geen officiële ernstscore. Misbruik in de praktijk is volgens de beschikbare berichten nog niet gezien, [schrijft SecurityOnline](https://securityonline.info/cacti-zero-day-rce-4http2root-poc/).\n\nHoe ver een aanvaller daarna komt, hangt af van de installatie. De commando's draaien in eerste instantie met de rechten van het Cacti-proces. Maar een monitoringserver heeft vaak toegang tot veel systemen in het netwerk, en dat maakt hem een aantrekkelijk doelwit.\n\n## Wat moet je doen?\n\nZet het gastaccount uit via Console > Configuration > Users. Dat blokkeert de bekende aanvalsroute, al lost het de onderliggende SQL-injectie niet op. Zet Cacti daarnaast nooit direct open op internet: alleen bereikbaar via het interne netwerk of een vpn. Houd de projectpagina van Cacti in de gaten voor een update.\n\nCacti werd eerder al vaak aangevallen: een kritiek lek uit 2022 werd op grote schaal misbruikt. Lees ook ons bericht over [NGINX2Root](/artikel/nginx2root-vijf-kritieke-lekken-in-nginx-update-naar-1-31-9-of-1-30-7/), een ander lek in veelgebruikte serversoftware.",
+  "actions": [
+    "Schakel het gastaccount in Cacti uit via Console > Configuration > Users.",
+    "Zorg dat Cacti alleen via het interne netwerk of een vpn bereikbaar is.",
+    "Controleer de server op onbekende processen, gebruikers en wijzigingen.",
+    "Installeer de update zodra het Cacti-project die uitbrengt."
+  ],
+  "faq": [
+    {
+      "q": "Is er al een update voor Cacti?",
+      "a": "Nog niet. Tot die er is, is het uitschakelen van het gastaccount de belangrijkste maatregel."
+    },
+    {
+      "q": "Ben ik kwetsbaar als het gastaccount uitstaat?",
+      "a": "De bekende exploit werkt alleen via het gastaccount. Uitschakelen blokkeert die route, maar de onderliggende fout blijft bestaan tot er een update is."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": [
+      "Open source",
+      "Linux"
+    ]
+  },
+  "keywords": [
+    "Cacti",
+    "zeroday",
+    "4HTTP2ROOT",
+    "netwerkmonitoring",
+    "SQL-injectie",
+    "gastaccount"
+  ],
+  "image_query": "network monitoring dashboard",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": true,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "The Hacker News",
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+    },
+    {
+      "name": "SecurityOnline",
+      "title": "Cacti Unauthenticated RCE Zero-Day (4HTTP2ROOT): PoC Published",
+      "url": "https://securityonline.info/cacti-zero-day-rce-4http2root-poc/"
+    }
+  ],
+  "published": "2026-11-27T06:25:49+00:00",
+  "model": "redactie"
+}

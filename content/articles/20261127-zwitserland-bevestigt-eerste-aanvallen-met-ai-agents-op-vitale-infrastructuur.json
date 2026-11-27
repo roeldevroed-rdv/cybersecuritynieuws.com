@@ -1,0 +1,68 @@
+{
+  "id": "20261127-zwitserland-bevestigt-eerste-aanvallen-met-ai-agents-op-vitale-infrastructuur",
+  "slug": "zwitserland-bevestigt-eerste-aanvallen-met-ai-agents-op-vitale-infrastructuur",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Zwitserland bevestigt eerste geslaagde aanvallen met AI-agents, ook op vitale infrastructuur",
+  "tldr": "Het Zwitserse Nationaal Cybersecuritycentrum heeft de eerste cyberaanvallen met AI-agents in het land bevestigd. Daarbij werden ook organisaties in de vitale infrastructuur getroffen. De aanvallers misbruikten geen nieuwe technieken, maar oude zwakke plekken zoals wachtwoorden in code en ontbrekende authenticatie. Er zijn geen grote verstoringen gemeld.",
+  "meta_description": "Zwitserland bevestigt de eerste geslaagde cyberaanvallen met AI-agents, ook op vitale infrastructuur. De aanvallers misbruikten bekende, oude zwakke plekken.",
+  "body": "Het Zwitserse Nationaal Cybersecuritycentrum (NCSC) heeft de eerste cyberaanvallen in het land bevestigd waarbij aanvallers AI-agents inzetten. Volgens het centrum zijn verschillende organisaties getroffen, waaronder beheerders van vitale infrastructuur in ten minste twee sectoren, [meldt The Hacker News](https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html). Om welke organisaties het gaat en wie achter de aanvallen zit, is niet bekendgemaakt. Grote verstoringen zijn niet gemeld.\n\nOver de precieze aantallen lopen de berichten uiteen. The Hacker News spreekt van vijf bevestigde aanvallen, waarvan er vier slaagden, onder meer bij twee beheerders van vitale infrastructuur. Volgens het NCSC zelf leidde de inzet van AI-agents bij alle aanvallen die het kent tot een geslaagde inbraak in de IT-systemen van het slachtoffer. Italië waarschuwde onlangs ook voor zulke autonome aanvallen.\n\n## Welke zwakke plekken misbruikten de aanvallers?\n\nOpvallend is dat het om oude, bekende problemen gaat: inloggegevens die in code-opslagplaatsen staan, verkeerd ingestelde infrastructuur-als-code, systemen met standaard of helemaal geen authenticatie, en zwakke plekken in API's. AI-agents zoeken zulke fouten razendsnel en automatisch op, waar een menselijke aanvaller er veel langer over zou doen. Volgens het NCSC is het aantal AI-agents dat voor criminelen beschikbaar is, vaak gratis, sinds oktober bijna verdubbeld.\n\n## Wat betekent dit voor Nederland en België?\n\nDezelfde tools zijn hier net zo goed beschikbaar. Bij de recente [hack op het Nederlandse DIVD](/artikel/divd-gehackt-door-ai-agents-rapport-toont-hoe-aanvaller-binnenkwam/) werd vermoedelijk ook een AI-hackprogramma gebruikt, en [Microsoft zag](/artikel/microsoft-chinese-en-noord-koreaanse-hackers-gebruiken-ai-tool-artex/) Chinese en Noord-Koreaanse groepen het programma Artex inzetten. De les: de basis op orde brengen is belangrijker dan ooit. Wat je zelf in een paar dagen vindt, vindt een AI-agent in een paar minuten.",
+  "actions": [
+    "Zoek in je code-opslag (zoals GitHub of GitLab) naar wachtwoorden en sleutels, en vervang ze direct.",
+    "Controleer of geen enkel systeem bereikbaar is met een standaardwachtwoord of zonder inloggen.",
+    "Laat je API's en infrastructuurinstellingen nalopen op fouten.",
+    "Stel detectie in op ongewoon veel verzoeken in korte tijd vanaf één bron."
+  ],
+  "faq": [
+    {
+      "q": "Wat is een AI-agent?",
+      "a": "Een AI-programma dat zelfstandig taken uitvoert. Aanvallers geven een doel op, waarna de agent zelf zoekt naar zwakke plekken en die probeert te misbruiken."
+    },
+    {
+      "q": "Gebruiken de aanvallers nieuwe technieken?",
+      "a": "Nee. Volgens de berichtgeving misbruikten ze bekende zwakke plekken, zoals gelekte wachtwoorden en ontbrekende authenticatie. Alleen het tempo is veel hoger."
+    }
+  ],
+  "category": "ai",
+  "labels": {
+    "regio": [
+      "Europa"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "Grote organisaties",
+      "MKB"
+    ],
+    "sector": [
+      "Energie",
+      "Overheid"
+    ],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "Zwitserland",
+    "NCSC",
+    "AI-agents",
+    "vitale infrastructuur",
+    "cyberaanval"
+  ],
+  "image_query": "power grid",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "The Hacker News",
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html"
+    }
+  ],
+  "published": "2026-11-27T06:25:49+00:00",
+  "model": "redactie"
+}
