@@ -1,0 +1,79 @@
+{
+  "id": "20261127-fifa-getroffen-door-cyberaanval-aanvallers-deden-zich-voor-als-medewerkers",
+  "slug": "fifa-getroffen-door-cyberaanval-aanvallers-deden-zich-voor-als-medewerkers",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "FIFA getroffen door cyberaanval: aanvallers deden zich voor als eigen medewerkers",
+  "tldr": "Wereldvoetbalbond FIFA bevestigt een cyberaanval waarbij aanvallers toegang kregen tot een beperkte hoeveelheid persoonlijke en zakelijke informatie. Volgens ingewijden kwamen ze binnen via social engineering: ze deden zich voor als FIFA-medewerkers. Hoeveel mensen getroffen zijn en wanneer het gebeurde, maakt de FIFA niet bekend.",
+  "meta_description": "FIFA bevestigt een cyberaanval: aanvallers deden zich voor als medewerkers en kregen toegang tot persoonlijke en zakelijke gegevens. Zo herken je deze truc.",
+  "body": "De wereldvoetbalbond FIFA is slachtoffer geworden van een cyberaanval. In een verklaring aan verschillende media bevestigt de bond dat aanvallers ongeautoriseerde toegang kregen tot een 'beperkte hoeveelheid persoonlijke en zakelijke informatie', [meldt Security.NL](https://www.security.nl/posting/963458/Wereldvoetbalbond+FIFA+getroffen+door+cyberaanval). Ook [AP](https://apnews.com/article/fifa-cyberattack-hack-6de93d5f8bcc655c774e2e41e2dfea1f) bericht over de aanval.\n\nDe FIFA noemt de diefstal een 'serieuze en onacceptabele inbreuk op de privacy' van de betrokkenen. Hoeveel mensen of organisaties zijn getroffen en wanneer het incident precies plaatsvond, heeft de bond niet bekendgemaakt.\n\n## Hoe kwamen de aanvallers binnen?\n\nVolgens insiders tegenover [The Athletic](https://www.nytimes.com/athletic/7813984/2026/11/26/fifa-hack-cyberattack/) gebruikten de aanvallers social engineering: ze deden zich voor als FIFA-medewerkers om toegang tot gegevens te krijgen. Bronnen van [ESPN](https://www.espn.com/soccer/story/_/id/50603612/fifa-cyber-attack) zeggen dat het om minder dan 0,1 procent van alle data van de FIFA gaat. Bij een organisatie van deze omvang kan dat nog steeds veel informatie zijn.\n\n## Waarom werkt deze truc zo vaak?\n\nSocial engineering omzeilt de techniek: in plaats van een lek te zoeken, praat de aanvaller zich naar binnen. Een telefoontje naar de helpdesk van een 'collega' die zijn wachtwoord kwijt is, of een bericht dat zogenaamd van een leidinggevende komt, is vaak genoeg. Dezelfde aanpak zagen we bij de [phishing met nep-expertinterviews](/artikel/phishing-met-nep-betaalde-expertinterviews-steelt-zakelijke-google-accounts/) waarmee zakelijke accounts worden overgenomen. ## Wat kunnen organisaties hiervan leren?\n\nDe zwakke plek zit vaak bij processen die snel en klantvriendelijk moeten zijn, zoals het resetten van wachtwoorden of het toevoegen van een nieuw apparaat voor tweestapsverificatie. Wie daar alleen op een naam, functie of personeelsnummer vertrouwt, maakt het aanvallers makkelijk: die gegevens zijn vaak via LinkedIn of eerdere datalekken te vinden. Een vaste controle via een tweede kanaal, zoals terugbellen op een bekend nummer of bevestiging door een leidinggevende, maakt zo'n aanval veel lastiger. Ook beperkte toegangsrechten helpen: een overgenomen account kan dan minder gegevens inzien. Lees in [onze gids over phishing](/artikel/wat-is-phishing/) hoe je zulke trucs herkent.",
+  "actions": [
+    "Laat de helpdesk de identiteit van bellers altijd controleren via een tweede kanaal, bijvoorbeeld door terug te bellen op een bekend nummer.",
+    "Reset wachtwoorden of tweestapsverificatie nooit alleen op basis van een telefoontje of chatbericht.",
+    "Train medewerkers om verzoeken van 'collega's' of 'leidinggevenden' met haast of geheimhouding extra te wantrouwen.",
+    "Geef medewerkers alleen toegang tot de gegevens die ze voor hun werk nodig hebben, zodat één overgenomen account minder schade doet."
+  ],
+  "faq": [
+    {
+      "q": "Wat is social engineering?",
+      "a": "Misleiding waarbij een aanvaller mensen manipuleert om toegang, wachtwoorden of gegevens te geven, bijvoorbeeld door zich voor te doen als collega, leverancier of helpdesk."
+    },
+    {
+      "q": "Zijn er gegevens van fans gelekt?",
+      "a": "Dat is niet bekend. De FIFA spreekt van een beperkte hoeveelheid persoonlijke en zakelijke informatie, maar zegt niet van wie."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Grote organisaties",
+      "MKB"
+    ],
+    "sector": [],
+    "technologie": []
+  },
+  "keywords": [
+    "FIFA",
+    "cyberaanval",
+    "social engineering",
+    "datalek",
+    "helpdesk"
+  ],
+  "image_query": "football stadium night",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Wereldvoetbalbond FIFA getroffen door cyberaanval",
+      "url": "https://www.security.nl/posting/963458/Wereldvoetbalbond+FIFA+getroffen+door+cyberaanval"
+    },
+    {
+      "name": "AP",
+      "title": "FIFA cyberattack",
+      "url": "https://apnews.com/article/fifa-cyberattack-hack-6de93d5f8bcc655c774e2e41e2dfea1f"
+    },
+    {
+      "name": "The Athletic",
+      "title": "FIFA hack cyberattack",
+      "url": "https://www.nytimes.com/athletic/7813984/2026/11/26/fifa-hack-cyberattack/"
+    },
+    {
+      "name": "ESPN",
+      "title": "FIFA cyber attack",
+      "url": "https://www.espn.com/soccer/story/_/id/50603612/fifa-cyber-attack"
+    }
+  ],
+  "published": "2026-11-27T20:25:19+00:00",
+  "model": "redactie",
+  "ig_title": "FIFA gehackt: aanvallers deden zich voor als medewerkers",
+  "ig_highlight": "FIFA gehackt:"
+}

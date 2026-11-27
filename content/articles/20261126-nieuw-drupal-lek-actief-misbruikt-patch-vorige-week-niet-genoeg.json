@@ -59,11 +59,16 @@
   "severity": "kritiek",
   "zero_day": true,
   "patch_available": true,
-  "exploited": false,
+  "exploited": true,
   "cves": [
     "CVE-2026-136716"
   ],
-  "kev": [],
+  "kev": [
+    {
+      "cve": "CVE-2026-136716",
+      "product": "Drupal Core"
+    }
+  ],
   "sources": [
     {
       "name": "The Hacker News",
@@ -74,8 +79,15 @@
       "name": "Drupal",
       "title": "SA-CORE-2026-019",
       "url": "https://www.drupal.org/sa-core-2026-019"
+    },
+    {
+      "name": "CISA",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog"
     }
   ],
   "published": "2026-11-26T08:25:14+00:00",
-  "model": "redactie"
+  "model": "redactie",
+  "updated": "2026-11-27T20:35:00+00:00",
+  "update_note": "De Amerikaanse cyberdienst CISA heeft dit lek (CVE-2026-136716) op 27 november toegevoegd aan de lijst van actief misbruikte kwetsbaarheden."
 }
