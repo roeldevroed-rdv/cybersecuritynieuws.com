@@ -43,7 +43,15 @@
     "helpdesk"
   ],
   "image_query": "football stadium night",
-  "image": null,
+  "image": {
+    "id": 931975,
+    "file": "fifa-getroffen-door-cyberaanval-aanvallers-deden-zich-voor-als-medewerkers.jpg",
+    "alt": "FIFA getroffen door cyberaanval: aanvallers deden zich voor als eigen medewerkers",
+    "credit": "tookapic",
+    "credit_url": "https://pixabay.com/users/tookapic-1386459/",
+    "page_url": "https://pixabay.com/photos/stadium-sports-fans-arena-soccer-931975/",
+    "provider": "Pixabay"
+  },
   "severity": "middel",
   "zero_day": false,
   "patch_available": false,
