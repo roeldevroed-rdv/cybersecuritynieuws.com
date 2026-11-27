@@ -1,0 +1,77 @@
+{
+  "id": "20261127-hackers-breken-in-bij-cloud-one-cloudplatform-amerikaanse-luchtmacht",
+  "slug": "hackers-breken-in-bij-cloud-one-cloudplatform-amerikaanse-luchtmacht",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Hackers breken in bij Cloud One, het belangrijkste cloudplatform van de Amerikaanse luchtmacht",
+  "tldr": "Hackers zijn binnengedrongen in Cloud One, het centrale cloudplatform van de Amerikaanse luchtmacht, meldt Reuters op basis van bronnen. Op het platform staan onder meer gegevens over radarsystemen, munitievoorraden en personeel. Volgens bronnen werkt het systeem niet meer goed. De luchtmacht bevestigt de hack niet en het is onduidelijk of er data is gestolen.",
+  "meta_description": "Hackers zijn volgens Reuters binnengedrongen in Cloud One, het cloudplatform van de Amerikaanse luchtmacht. De impact en eventuele datadiefstal zijn nog onduidelijk.",
+  "body": "Hackers hebben toegang gekregen tot Cloud One, het belangrijkste cloudplatform van de Amerikaanse luchtmacht. Dat meldt persbureau [Reuters](https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/) op basis van ingewijden. Volgens een aantal bronnen werkt het systeem door de inbraak niet meer naar behoren. Hoe groot de schade is en of er gegevens zijn gestolen, is nog niet bekend, [schrijft de NOS](https://nos.nl/l/2641242).\n\nDe inbraak werd ontdekt tijdens een software-update. Over het moment lopen de berichten iets uiteen: de NOS spreekt van eerder deze maand, [Security.NL](https://www.security.nl/posting/963426/) van vorige week. Uit voorzorg zijn sommige werkzaamheden stilgelegd, zoals het overzetten van applicaties naar de cloud.\n\n## Wat staat er op Cloud One?\n\nCloud One werd in 2017 opgezet om de IT-diensten van de luchtmacht op één plek samen te brengen. Het platform ondersteunt kritieke militaire systemen. Er worden onder meer gegevens verzameld over radarsystemen en munitievoorraden op luchtmachtbases, en er draaien personeelsadministratie, salarissen, logistiek en onderhoud op. Daardoor kunnen bij een inbraak zowel gevoelige militaire informatie als personeelsgegevens op straat komen te liggen.\n\n## Wat zegt de luchtmacht?\n\nDe luchtmacht bevestigt de hack niet. In een verklaring aan Reuters zegt ze geen mededelingen te doen over de beveiliging, kwetsbaarheden of de operationele status van specifieke netwerken en systemen. Wel benadrukt ze dat er voortdurend maatregelen worden genomen om informatie en systemen te beschermen. Wie achter de aanval zit, is niet bekend.\n\n## Is dit een losstaand incident?\n\nNee. De afgelopen maanden waren er ook inbraken bij de FBI en de CIA, en in september werd bekend dat hackers negen maanden lang toegang hadden tot persoonsgegevens van Amerikaans defensiepersoneel. Het incident laat zien hoe groot de gevolgen kunnen zijn als veel systemen en gegevens op één centraal platform samenkomen: één inbraak raakt dan meteen alles. Dat geldt ook voor bedrijven die hun IT in één cloudomgeving onderbrengen. Lees in [onze gids over tweestapsverificatie](/artikel/tweestapsverificatie/) hoe je de toegang tot zulke omgevingen beter afschermt.",
+  "actions": [
+    "Zorg dat beheerdersaccounts van je cloudomgeving altijd met phishingbestendige tweestapsverificatie zijn beveiligd.",
+    "Verdeel gevoelige gegevens en systemen over gescheiden omgevingen of accounts, zodat één inbraak niet meteen alles raakt.",
+    "Zet logging aan voor aanmeldingen en beheerhandelingen in de cloud en laat afwijkingen automatisch melden.",
+    "Controleer na elke grote software-update of migratie of er onbekende accounts, sleutels of koppelingen zijn bijgekomen."
+  ],
+  "faq": [
+    {
+      "q": "Is bevestigd dat er gegevens zijn gestolen?",
+      "a": "Nee. Reuters meldt de inbraak op basis van bronnen, maar het is onduidelijk of er data is buitgemaakt. De luchtmacht zelf bevestigt de hack niet."
+    },
+    {
+      "q": "Wie zit achter de aanval?",
+      "a": "Dat is niet bekend. In de berichtgeving wordt geen dader of land genoemd."
+    }
+  ],
+  "category": "aanvallen",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [
+      "Overheid"
+    ],
+    "technologie": [
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "Amerikaanse luchtmacht",
+    "Cloud One",
+    "hack",
+    "cloud",
+    "Reuters",
+    "defensie"
+  ],
+  "image_query": "military aircraft hangar",
+  "image": null,
+  "severity": "hoog",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Reuters",
+      "title": "Hackers breach US Air Force flagship Cloud One computing platform",
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
+    },
+    {
+      "name": "NOS",
+      "title": "'Hackers breken in bij clouddienst Amerikaanse luchtmacht'",
+      "url": "https://nos.nl/l/2641242"
+    },
+    {
+      "name": "Security.NL",
+      "title": "Reuters: 'Hackers braken in op cloudplatform Amerikaanse luchtmacht'",
+      "url": "https://www.security.nl/posting/963426/"
+    }
+  ],
+  "published": "2026-11-27T14:24:45+00:00",
+  "model": "redactie"
+}
