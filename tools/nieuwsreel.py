@@ -2,11 +2,11 @@
 
   python -m tools.nieuwsreel <video.mp4> <slug> <script.txt> [--uit pad.mp4]
 
-- Opener (±3 s): logo, rubriek, korte kop met blauw gemarkeerde woorden, jingle.
+- Opener (±4 s): logo, rubriek, korte kop met blauw gemarkeerde woorden, eigen nieuwstune (tikkende puls + akkoordslagen).
 - Ondertiteling in huisstijl (wit op merkblauw), getimed op de pauzes in de spraak: elke zin uit
   script.txt (één regel of zin per spraakblok) hoort bij één spraakblok. Klopt het aantal niet, dan wordt per tekenaantal verdeeld.
-- Label "AI-presentator" linksboven tijdens de hele presentatie (AI-verordening / Meta-regels).
-- Afsluiter (±3,5 s): logo, "Lees het hele artikel op cybersecuritynieuws.com", "Volg @cybersecuritynieuws".
+- Logo linksboven. AI-vermelding staat in het bijschrift en via het AI-label van Instagram (niet in beeld).
+- Afsluiter (±3,5 s): slotakkoorden van de tune, logo, "Lees het hele artikel op cybersecuritynieuws.com", "Volg @cybersecuritynieuws".
 Een eventueel watermerk van de videodienst blijft zichtbaar (wordt niet afgedekt).
 Uitvoer: 1080x1920, 30 fps, AAC; standaard content/instagram/<slug>/reel.mp4.
 """
@@ -109,8 +109,7 @@ def label_png(path: Path) -> None:
     d.text((34, 9), txt[0:], font=f, fill=WIT)
     big = Image.new("RGBA", (W, 200), (0, 0, 0, 0))
     draw_logo(big, 48, 60, 1.25)
-    big.alpha_composite(img, (W - img.width - 48, 64))
-    big.save(path)
+    big.save(path)  # geen AI-label in beeld (op verzoek eigenaar): vermelding in bijschrift + Instagram-AI-label
 
 
 def _ease(t: float) -> float:
@@ -158,17 +157,29 @@ def card_frames(a: dict, kind: str, secs: float):
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(layer)
         # horizontale "nieuwsbalk" die binnen schuift
-        p = _ease(t / 0.6)
+        p = _ease(t / (1.45 if kind == "open" else 0.6))
         d.rectangle([0, 0, int(W * p), 14], fill=BLUE)
         if kind == "open":
-            pl = _ease((t - 0.15) / 0.5)
+            # beeld valt samen met de akkoordslagen van de tune (1,5 / 2,0 / 2,5 s)
+            if t < 1.5:  # tikkende 'klok': pulserende stip + datum
+                fd = _font("Carlito-Bold.ttf", 44)
+                from datetime import datetime
+                MAAND = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
+                         "september", "oktober", "november", "december"]
+                dt = datetime.fromisoformat(a["published"])
+                txt = f"{dt.day} {MAAND[dt.month - 1]} {dt.year}".upper()
+                tw = d.textlength(txt, font=fd)
+                on = int(t / 0.125) % 2 == 0
+                d.ellipse([(W - tw) / 2 - 44, 935, (W - tw) / 2 - 18, 961], fill=(DANGER if on else BLUE) + (255,))
+                d.text(((W - tw) / 2, 922), txt, font=fd, fill=WIT + (230,))
+            pl = _ease((t - 1.45) / 0.35)
             logo = Image.new("RGBA", (W, 260), (0, 0, 0, 0))
             draw_logo(logo, 0, 0, 3.2)
             bb = logo.getbbox()
             logo = logo.crop(bb)
             al = logo.getchannel("A").point(lambda v: int(v * pl)); logo.putalpha(al)
             layer.alpha_composite(logo, ((W - logo.width) // 2, int(560 - 30 * (1 - pl))))
-            pc = _ease((t - 0.6) / 0.45)
+            pc = _ease((t - 1.95) / 0.3)
             cat = (cats.get(a.get("category"), "") or "").upper()
             if a.get("exploited"):
                 cat = "ACTIEF MISBRUIKT"
@@ -178,22 +189,22 @@ def card_frames(a: dict, kind: str, secs: float):
                 d.rounded_rectangle([96, 860, 96 + tw + 44, 922], radius=31,
                                     fill=(DANGER if a.get("exploited") else BLUE) + (int(255 * pc),))
                 d.text((118, 866), cat, font=fc, fill=WIT + (int(255 * pc),))
-            pk = _ease((t - 0.9) / 0.5)
+            pk = _ease((t - 2.45) / 0.4)
             if pk > 0:
                 _kop(d, words, hl, _font("Caladea-Bold.ttf", 92), 96, int(960 + 40 * (1 - pk)), W - 192, int(255 * pk))
         else:
-            pl = _ease((t - 0.1) / 0.5)
+            pl = _ease((t - 0.7) / 0.35)
             logo = Image.new("RGBA", (W, 260), (0, 0, 0, 0))
             draw_logo(logo, 0, 0, 3.2)
             logo = logo.crop(logo.getbbox())
             al = logo.getchannel("A").point(lambda v: int(v * pl)); logo.putalpha(al)
             layer.alpha_composite(logo, ((W - logo.width) // 2, 640))
-            p2 = _ease((t - 0.6) / 0.5)
+            p2 = _ease((t - 1.2) / 0.4)
             f1, f2 = _font("Caladea-Bold.ttf", 66), _font("Carlito-Regular.ttf", 46)
             for txt, f, y in (("Lees het hele artikel op", f1, 960), ("cybersecuritynieuws.com", f1, 1040)):
                 tw = d.textlength(txt, font=f)
                 d.text(((W - tw) / 2, y), txt, font=f, fill=WIT + (int(255 * p2),))
-            p3 = _ease((t - 1.1) / 0.5)
+            p3 = _ease((t - 1.6) / 0.4)
             txt = "Volg @cybersecuritynieuws"
             fv = _font("Carlito-Bold.ttf", 46)
             tw = d.textlength(txt, font=fv)
@@ -209,26 +220,120 @@ def card_frames(a: dict, kind: str, secs: float):
 
 
 # ---------- geluid ----------
+# Eigen gecomponeerde nieuwstune (synthese met numpy; geen samples of melodieën van derden).
 
-def jingle(path: Path, secs: float, notes=(587.33, 739.99, 880.0, 1174.66)) -> None:
-    """Korte, rustige nieuwsjingle (eigen synthese, geen rechten van derden)."""
-    n = int(secs * SR)
-    buf = bytearray()
-    for i in range(n):
-        t = i / SR
-        v = 0.0
-        for k, fr in enumerate(notes):
-            st = 0.12 * k
-            if t >= st:
-                tt = t - st
-                env = math.exp(-tt * 3.2) * min(1, tt / 0.01)
-                v += 0.16 * env * (math.sin(2 * math.pi * fr * tt) + 0.3 * math.sin(4 * math.pi * fr * tt))
-        pad = 0.05 * math.sin(2 * math.pi * 146.83 * t) * min(1, t / 0.3) * max(0, 1 - t / secs)
-        v = max(-1, min(1, v + pad))
-        s = int(v * 32767 * 0.8)
-        buf += s.to_bytes(2, "little", signed=True) * 2
+def _saw(f, t, n=14):
+    import numpy as np
+    out = np.zeros_like(t)
+    for k in range(1, n + 1):
+        if f * k > 12000:
+            break
+        out += np.sin(2 * np.pi * f * k * t) / k
+    return out
+
+
+def _brass(freqs, dur, sr=SR):
+    import numpy as np
+    from scipy.signal import butter, sosfilt
+    t = np.arange(int(dur * sr)) / sr
+    x = sum(_saw(f * d, t) for f in freqs for d in (0.997, 1.0, 1.004)) / (3 * len(freqs))
+    env = np.minimum(1, t / 0.012) * np.exp(-t * 2.2)
+    # filter-"blaas": helder bij de aanslag, daarna donkerder
+    a = sosfilt(butter(2, 4200, fs=sr, output="sos"), x)
+    b = sosfilt(butter(2, 900, fs=sr, output="sos"), x)
+    mix = np.exp(-t * 9)
+    return (a * mix + b * (1 - mix)) * env
+
+
+def _boom(dur, sr=SR):
+    import numpy as np
+    t = np.arange(int(dur * sr)) / sr
+    f = 38 + 70 * np.exp(-t * 18)
+    ph = 2 * np.pi * np.cumsum(f) / sr
+    noise = np.random.default_rng(1).standard_normal(len(t)) * np.exp(-t * 40) * 0.35
+    return (np.sin(ph) * np.exp(-t * 3.5) + noise)
+
+
+def _tick(dur, sr=SR, bright=7000):
+    import numpy as np
+    from scipy.signal import butter, sosfilt
+    t = np.arange(int(dur * sr)) / sr
+    n = np.random.default_rng(2).standard_normal(len(t)) * np.exp(-t * 90)
+    return sosfilt(butter(2, bright, btype="high", fs=sr, output="sos"), n)
+
+
+def _bell(f, dur, sr=SR):
+    import numpy as np
+    t = np.arange(int(dur * sr)) / sr
+    return (np.sin(2 * np.pi * f * t) + 0.4 * np.sin(2 * np.pi * f * 2.76 * t)) * np.exp(-t * 2.5) * np.minimum(1, t / 0.004)
+
+
+def _place(buf, x, at, gain=1.0):
+    i = int(at * SR)
+    n = min(len(x), len(buf) - i)
+    if n > 0:
+        buf[i:i + n] += gain * x[:n]
+
+
+def _reverb(x):
+    import numpy as np
+    from scipy.signal import fftconvolve
+    t = np.arange(int(1.6 * SR)) / SR
+    ir = np.random.default_rng(3).standard_normal(len(t)) * np.exp(-t * 3.2)
+    wet = fftconvolve(x, ir)[: len(x)]
+    return x + 0.12 * wet / (np.max(np.abs(wet)) + 1e-9) * np.max(np.abs(x))
+
+
+def _write(path, buf):
+    import numpy as np
+    buf = buf / (np.max(np.abs(buf)) + 1e-9) * 0.89
+    fade = int(0.25 * SR)
+    buf[-fade:] *= np.linspace(1, 0, fade)
+    st = np.stack([buf, buf], axis=1)
     with wave.open(str(path), "wb") as w:
-        w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(bytes(buf))
+        w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
+        w.writeframes((st * 32767).astype("<i2").tobytes())
+
+
+# akkoorden (Hz): D-mineur, Bes, C, D-mineur hoog
+DM = (146.83, 174.61, 220.00, 293.66)
+BES = (116.54, 174.61, 233.08, 293.66)
+C = (130.81, 196.00, 261.63, 329.63)
+DM2 = (146.83, 220.00, 293.66, 349.23, 440.00)
+
+
+def tune_open(path: Path, secs: float) -> None:
+    """Opener: tikkende puls (nieuws-'klok'), opbouw, vier krachtige akkoordslagen, nagalm."""
+    import numpy as np
+    buf = np.zeros(int(secs * SR))
+    beat = 0.125  # 16e noten op 120 bpm
+    for i in range(int(1.5 / beat)):
+        _place(buf, _tick(0.08), i * beat, 0.18 + (0.12 if i % 4 == 0 else 0))
+    t = np.arange(int(1.5 * SR)) / SR
+    riser = np.random.default_rng(4).standard_normal(len(t)) * (t / 1.5) ** 2
+    from scipy.signal import butter, sosfilt
+    _place(buf, sosfilt(butter(2, [800, 5000], btype="band", fs=SR, output="sos"), riser), 0, 0.35)
+    _place(buf, _saw(73.42, t, 6) * np.minimum(1, t / 0.05) * 0.25, 0, 1)  # lage D-puls eronder
+    for at, ch, g in ((1.5, DM, 1.0), (2.0, BES, 0.85), (2.5, C, 0.9), (3.0, DM2, 1.1)):
+        _place(buf, _brass(ch, secs - at + 0.2), at, g)
+        _place(buf, _boom(1.2), at, 0.9 if at in (1.5, 3.0) else 0.55)
+        _place(buf, _tick(0.15, bright=3000), at, 0.5)
+    _place(buf, _bell(587.33, 1.2), 3.0, 0.35)
+    _place(buf, _bell(880.0, 1.2), 3.06, 0.25)
+    _write(path, _reverb(buf))
+
+
+def tune_close(path: Path, secs: float) -> None:
+    """Afsluiter: kort tikken, dan C -> D-mineur slot met lange nagalm."""
+    import numpy as np
+    buf = np.zeros(int(secs * SR))
+    for i in range(6):
+        _place(buf, _tick(0.08), i * 0.125, 0.2 + (0.1 if i % 4 == 0 else 0))
+    for at, ch, g in ((0.75, C, 0.9), (1.25, DM2, 1.1)):
+        _place(buf, _brass(ch, secs - at + 0.2), at, g)
+        _place(buf, _boom(1.4), at, 0.8)
+    _place(buf, _bell(587.33, 1.6), 1.25, 0.3)
+    _write(path, _reverb(buf))
 
 
 # ---------- samenstellen ----------
@@ -251,7 +356,7 @@ def build(video: Path, slug: str, script: str, out: Path) -> None:
             cues.append((t, t + d + 0.15, p)); t += d
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        o_secs, d_secs = 3.0, 3.6
+        o_secs, d_secs = 4.2, 3.6
         for kind, secs in (("open", o_secs), ("dicht", d_secs)):
             p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                                   "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p",
@@ -259,7 +364,7 @@ def build(video: Path, slug: str, script: str, out: Path) -> None:
             for fr in card_frames(a, kind, secs):
                 p.stdin.write(fr)
             p.stdin.close(); p.wait()
-            jingle(tmp / f"{kind}.wav", secs)
+            (tune_open if kind == "open" else tune_close)(tmp / f"{kind}.wav", secs)
         label_png(tmp / "label.png")
         inputs, filt = ["-i", str(video), "-i", str(tmp / "label.png")], []
         filt.append(f"[0:v]scale={W}:{H}:flags=lanczos,fps={FPS},setsar=1[v0]")
