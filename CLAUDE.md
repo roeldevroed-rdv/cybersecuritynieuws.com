@@ -61,6 +61,7 @@ Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, Computable; AG Connect en Data 
 4. Schrijf concepten (JSON-lijst, velden: zie docstring van tools/nieuwsronde.py) in de stijl van bestaande artikelen: antwoord-eerst, 280–450 woorden, 2–3 vraaggerichte ##-kopjes, links naar bron(nen) + 1–3 interne links (/artikel/<slug>/ van gidsen of eerdere berichten), "Wat moet je doen?" 3–5 stappen, FAQ 2–3, meta 140–160 tekens. Geen AI-vermelding in de tekst.
 5. `python -m tools.nieuwsronde opslaan /tmp/concepten.json` (controleert en voegt KEV toe), dan `python -m pipeline.run --build` en check "0 ongeldig verwijderd".
 6. Commit (`content/`) en push naar main → GitHub bouwt, publiceert en meldt via IndexNow aan.
+7. Instagram (sinds 27 nov 2026, akkoord eigenaar: elk nieuwsbericht als carrousel, zoals NOS/AD): `python -m tools.instagram_post ronde` (zet slides klaar, pusht, wacht tot online, plaatst met bijschrift, logt). Geen reels tenzij de eigenaar dat vraagt. Zet bij nieuwe concepten `ig_title` (korte kop) en `ig_highlight` (max. 3 woorden).
 
 ### Markt & bedrijven (sinds 25 nov 2026)
 - Rubrieken (25 nov 2026 samengevoegd, 8 stuks): kwetsbaarheden, ransomware, datalekken, aanvallen (Aanvallen & malware), phishing, overheid (Overheid & wetgeving), ai, markt. Oude slugs → config `category_redirects` (redirectpagina's). Menu: 7 hoofdrubrieken (Kwetsbaarheden, Cyberaanvallen, Ransomware, Datalekken, Phishing, AI & security, Markt) + Gidsen + "Meer" (vanaf 1181px; 901-1180px: scrollbalk; t/m 900px: hamburgermenu #menuToggle, uitklaplijst).

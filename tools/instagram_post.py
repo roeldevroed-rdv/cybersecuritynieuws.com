@@ -4,6 +4,10 @@
       Maakt slides (JPEG), reel en bijschrift (tools.instagram) en zet ze in content/instagram/<slug>/.
       Daarna committen en pushen: de site publiceert ze op https://cybersecuritynieuws.com/ig/<slug>/...
       (Instagram haalt media op via een openbare URL).
+  python -m tools.instagram_post ronde [--uren 24]
+      Voor elk nieuwsbericht (type nieuws) van de laatste 24 uur dat nog niet op Instagram staat:
+      klaarzetten (alleen slides), committen + pushen, wachten tot het online staat, carrousel plaatsen,
+      log committen. Hoort bij elke nieuwsronde (stap 7 in CLAUDE.md).
   python -m tools.instagram_post plaatsen <slug> [--reel]
       Plaatst de carrousel (standaard) of de reel met bijschrift. Wacht tot de bestanden online staan.
       Bij een reel komt "Ingesproken met een AI-stem." in het bijschrift (AI-label kan niet via de API).
@@ -49,13 +53,15 @@ def _log() -> dict:
     return json.loads(LOG.read_text()) if LOG.exists() else {}
 
 
-def klaarzetten(slug: str) -> None:
-    subprocess.run([sys.executable, "-m", "tools.instagram", slug], check=True, cwd=ROOT)
+def klaarzetten(slug: str, video: bool = True) -> None:
+    subprocess.run([sys.executable, "-m", "tools.instagram", slug] + ([] if video else ["--geen-video"]),
+                   check=True, cwd=ROOT, stdout=subprocess.DEVNULL)
     src, dst = ROOT / "social" / slug, IG_DIR / slug
     dst.mkdir(parents=True, exist_ok=True)
     for p in sorted(src.glob("slide-*.png")):
-        Image.open(p).convert("RGB").save(dst / (p.stem + ".jpg"), quality=92)
-    shutil.copy(src / "reel.mp4", dst / "reel.mp4")
+        Image.open(p).convert("RGB").save(dst / (p.stem + ".jpg"), quality=88, optimize=True)
+    if video:
+        shutil.copy(src / "reel.mp4", dst / "reel.mp4")
     shutil.copy(src / "bijschrift.txt", dst / "bijschrift.txt")
     print(f"Klaargezet: content/instagram/{slug}/ (nu committen en pushen)")
 
@@ -115,7 +121,49 @@ def plaatsen(slug: str, reel: bool = False) -> None:
     print(f"Geplaatst: {key} -> {link}")
 
 
+def _git(*args: str) -> None:
+    subprocess.run(["git", *args], check=True, cwd=ROOT)
+
+
+def _push(msg: str) -> None:
+    _git("add", "content/instagram")
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+        return
+    _git("commit", "-q", "-m", msg)
+    for _ in range(4):
+        if subprocess.run(["git", "pull", "-q", "--rebase"], cwd=ROOT).returncode == 0 and \
+           subprocess.run(["git", "push", "-q", "origin", "HEAD:main"], cwd=ROOT).returncode == 0:
+            return
+        time.sleep(5)
+    sys.exit("Pushen mislukt")
+
+
+def ronde(uren: float = 24) -> None:
+    grens = datetime.now(timezone.utc).timestamp() - uren * 3600
+    log = _log()
+    nieuw = []
+    for p in sorted((ROOT / "content" / "articles").glob("*.json")):
+        a = json.loads(p.read_text(encoding="utf-8"))
+        if a.get("type", "nieuws") != "nieuws" or f"{a['slug']}:carrousel" in log:
+            continue
+        if datetime.fromisoformat(a["published"]).timestamp() >= grens:
+            nieuw.append(a["slug"])
+    if not nieuw:
+        print("Instagram: niets nieuws te plaatsen.")
+        return
+    for slug in nieuw:
+        if not (IG_DIR / slug / "slide-5.jpg").exists():
+            klaarzetten(slug, video=False)
+    _push(f"Instagram: media klaargezet ({len(nieuw)})")
+    for slug in nieuw:
+        plaatsen(slug)
+    _push("Instagram: geplaatste posts bijgewerkt")
+
+
 def main() -> None:
+    if sys.argv[1:2] == ["ronde"]:
+        uren = float(sys.argv[sys.argv.index("--uren") + 1]) if "--uren" in sys.argv else 24
+        return ronde(uren)
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     if len(args) < 2 or args[0] not in ("klaarzetten", "plaatsen"):
         sys.exit(__doc__)
