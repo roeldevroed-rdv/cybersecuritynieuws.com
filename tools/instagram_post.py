@@ -4,8 +4,8 @@
       Maakt slides (JPEG), reel en bijschrift (tools.instagram) en zet ze in content/instagram/<slug>/.
       Daarna committen en pushen: de site publiceert ze op https://cybersecuritynieuws.com/ig/<slug>/...
       (Instagram haalt media op via een openbare URL).
-  python -m tools.instagram_post ronde [--uren 24]
-      Voor elk nieuwsbericht (type nieuws) van de laatste 24 uur dat nog niet op Instagram staat:
+  python -m tools.instagram_post ronde [--uren 3]
+      Voor elk nieuwsbericht (type nieuws) van de laatste 3 uur (rondes zijn elke 2 uur) dat nog niet op Instagram staat:
       klaarzetten (alleen slides), committen + pushen, wachten tot het online staat, carrousel plaatsen,
       log committen. Hoort bij elke nieuwsronde (stap 7 in CLAUDE.md).
   python -m tools.instagram_post plaatsen <slug> [--reel]
@@ -138,7 +138,7 @@ def _push(msg: str) -> None:
     sys.exit("Pushen mislukt")
 
 
-def ronde(uren: float = 24) -> None:
+def ronde(uren: float = 3) -> None:
     grens = datetime.now(timezone.utc).timestamp() - uren * 3600
     log = _log()
     nieuw = []
@@ -162,7 +162,7 @@ def ronde(uren: float = 24) -> None:
 
 def main() -> None:
     if sys.argv[1:2] == ["ronde"]:
-        uren = float(sys.argv[sys.argv.index("--uren") + 1]) if "--uren" in sys.argv else 24
+        uren = float(sys.argv[sys.argv.index("--uren") + 1]) if "--uren" in sys.argv else 3
         return ronde(uren)
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     if len(args) < 2 or args[0] not in ("klaarzetten", "plaatsen"):
