@@ -10,7 +10,7 @@
       log committen. Hoort bij elke nieuwsronde (stap 7 in CLAUDE.md).
   python -m tools.instagram_post plaatsen <slug> [--reel]
       Plaatst de carrousel (standaard) of de reel met bijschrift. Wacht tot de bestanden online staan.
-      Bij een reel komt "Ingesproken met een AI-stem." in het bijschrift (AI-label kan niet via de API).
+      Bij een reel komt een AI-vermelding in het bijschrift (AI-label kan niet via de API).
 
 De token (systeemgebruiker Publisher) staat als netwerksecret voor graph.facebook.com in de
 Claude-omgeving: de proxy voegt hem toe, er staat nergens een sleutel in code of repo.
@@ -99,7 +99,7 @@ def plaatsen(slug: str, reel: bool = False) -> None:
     caption = (d / "bijschrift.txt").read_text(encoding="utf-8").strip()
     base = f"{SITE}/ig/{urllib.parse.quote(slug)}"
     if reel:
-        caption += "\n\nIngesproken met een AI-stem."
+        caption += "\n\nDeze video is gemaakt met AI (presentator en/of stem)."
         _wait_online(f"{base}/reel.mp4")
         c = _api(f"{IG_USER}/media", {"media_type": "REELS", "video_url": f"{base}/reel.mp4",
                                        "caption": caption, "share_to_feed": "true"}, post=True)["id"]
