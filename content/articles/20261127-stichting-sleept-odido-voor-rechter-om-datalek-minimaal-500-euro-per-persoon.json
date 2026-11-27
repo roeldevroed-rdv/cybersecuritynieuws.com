@@ -1,0 +1,72 @@
+{
+  "id": "20261127-stichting-sleept-odido-voor-rechter-om-datalek-minimaal-500-euro-per-persoon",
+  "slug": "stichting-sleept-odido-voor-rechter-om-datalek-minimaal-500-euro-per-persoon",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Stichting sleept Odido voor de rechter om datalek: minimaal 500 euro per gedupeerde",
+  "tldr": "Stichting CUIC heeft namens ruim 500.000 mensen telecombedrijf Odido gedagvaard vanwege de hack van afgelopen februari, waarbij gegevens van ruim 6 miljoen klanten op straat kwamen. De stichting eist minimaal 500 euro per persoon. Het gaat ook om (oud-)klanten van T-Mobile, Tele2 en Ben. Odido zegt de claim serieus te nemen; de zaak kan twee jaar duren.",
+  "meta_description": "Stichting CUIC daagt Odido namens ruim 500.000 gedupeerden voor de rechter na de hack van februari en eist minimaal 500 euro per persoon. Dit moet je weten.",
+  "body": "Stichting Consumers United in Court (CUIC) heeft telecombedrijf Odido gedagvaard vanwege de hack van afgelopen februari. De stichting treedt op namens ruim 500.000 mensen en eist een schadevergoeding van minimaal 500 euro per persoon, [meldt de NOS](https://nos.nl/l/2641291). Bij de hack kwamen de persoonsgegevens van ruim 6 miljoen klanten in de openbaarheid.\n\nDe claim geldt voor (oud-)klanten van Odido, T-Mobile, Tele2 en Ben. Hoe hoog de vergoeding per persoon uitvalt, hangt onder meer af van welke gegevens precies zijn uitgelekt, [schrijft NU.nl](https://www.nu.nl/economie/6418046/stichting-sleept-odido-voor-rechter-vanwege-datalek-en-eist-schadevergoeding.html).\n\n## Wat verwijt de stichting Odido?\n\nVolgens CUIC, opgericht door twee privacyorganisaties, is Odido op meerdere punten slordig omgegaan met klantgegevens. Zo zou het bedrijf te veel gegevens te lang hebben bewaard. De stichting zegt Odido eerst te hebben uitgenodigd voor overleg, maar dat leverde geen bevredigende uitkomst op. Daarom is begin november de dagvaarding ingediend. Naast een vergoeding wil CUIC een signaal afgeven aan andere bedrijven.\n\n## Wat zegt Odido en hoe lang duurt het?\n\nOdido laat weten de claim serieus te nemen en zorgvuldig te bestuderen. Het bedrijf benadrukt dat de rechter nog geen oordeel heeft gegeven over de aansprakelijkheid of de hoogte van de schadevergoeding. Volgens de voorzitter van CUIC kunnen zulke procedures wel twee jaar duren. Gedupeerden hoeven dus niet op snel geld te rekenen.\n\nOok na zo'n datalek blijft voorzichtigheid nodig: criminelen gebruiken gelekte gegevens nog lang voor phishing. Lees in [onze gids over datalekken](/artikel/datalek-wat-nu/) wat je kunt doen.",
+  "actions": [
+    "Was je klant bij Odido, T-Mobile, Tele2 of Ben? Kijk op de website van CUIC of je onder de claim valt en hoe je je aansluit.",
+    "Wees extra alert op sms'jes, mails en telefoontjes die je naam, adres of klantnummer noemen: gelekte gegevens worden lang misbruikt.",
+    "Geef nooit inlogcodes of betaalgegevens via een link uit een bericht; ga zelf naar de officiële website of app.",
+    "Overweeg een extra beveiliging bij je provider, zoals een pincode voor simkaartwijzigingen, tegen simswapfraude."
+  ],
+  "faq": [
+    {
+      "q": "Moet ik iets doen om mee te doen met de claim?",
+      "a": "Dat hangt af van de voorwaarden van stichting CUIC. Kijk op hun website of je je moet aanmelden en of er kosten aan verbonden zijn."
+    },
+    {
+      "q": "Krijg ik nu meteen 500 euro?",
+      "a": "Nee. De rechter moet nog oordelen en zulke procedures kunnen ongeveer twee jaar duren. Het bedrag is een eis, geen toezegging."
+    }
+  ],
+  "category": "datalekken",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Telecom"
+    ],
+    "technologie": []
+  },
+  "keywords": [
+    "Odido",
+    "datalek",
+    "CUIC",
+    "schadevergoeding",
+    "massaclaim",
+    "T-Mobile",
+    "Tele2"
+  ],
+  "image_query": "smartphone network tower",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "NOS",
+      "title": "Stichting sleept Odido voor de rechter voor schadevergoeding na hack",
+      "url": "https://nos.nl/l/2641291"
+    },
+    {
+      "name": "NU.nl",
+      "title": "Stichting sleept Odido voor rechter vanwege datalek en eist schadevergoeding",
+      "url": "https://www.nu.nl/economie/6418046/stichting-sleept-odido-voor-rechter-vanwege-datalek-en-eist-schadevergoeding.html"
+    }
+  ],
+  "published": "2026-11-27T18:25:11+00:00",
+  "model": "redactie",
+  "ig_title": "Stichting sleept Odido voor de rechter om datalek",
+  "ig_highlight": "Odido"
+}

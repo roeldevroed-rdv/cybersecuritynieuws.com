@@ -1,0 +1,99 @@
+{
+  "id": "20261127-geoserver-lekken-actief-misbruikt-update-naar-2-27-7-2-28-6-of-3-0-2",
+  "slug": "geoserver-lekken-actief-misbruikt-update-naar-2-27-7-2-28-6-of-3-0-2",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "Twee GeoServer-lekken actief misbruikt: update naar 2.27.7, 2.28.6 of 3.0.2",
+  "tldr": "Aanvallers misbruiken twee net gedichte lekken in GeoServer, populaire open-source software voor kaarten en geodata. De Amerikaanse cyberdienst CISA heeft ze op de lijst van actief misbruikte lekken gezet. Onderzoekers van het Nederlandse Eye Security lieten zien dat aanvallers in combinatie met andere lekken zonder inloggen code kunnen uitvoeren. Update naar 2.27.7, 2.28.6 of 3.0.2.",
+  "meta_description": "Twee lekken in GeoServer worden actief misbruikt en staan op de CISA-lijst. Ze geven aanvallers toegang zonder inloggen. Update naar 2.27.7, 2.28.6 of 3.0.2.",
+  "body": "Aanvallers maken misbruik van twee lekken in GeoServer, open-source serversoftware waarmee organisaties kaarten en geografische gegevens delen. Het gaat om CVE-2026-120705 en CVE-2026-129243. De Amerikaanse cyberdienst CISA heeft beide lekken op 27 november toegevoegd aan zijn lijst van actief misbruikte kwetsbaarheden. GeoServer wordt onder meer door overheden en bedrijven met GIS-toepassingen gebruikt.\n\nDe lekken zitten in een reeks van zeventien kwetsbaarheden die GeoServer onlangs dichtte, [meldt het NCSC](https://advisories.ncsc.nl/advisory?id=NCSC-2026-0526). Beveiligingsbedrijf watchTowr zag op zijn lokservers dat aanvallers de twee lekken al aftasten, [schrijft SecurityWeek](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/). Of daarbij al servers zijn overgenomen, is niet bekend.\n\n## Wat kunnen aanvallers ermee?\n\nCVE-2026-120705 (CVSS 8,6) is een XML-injectie waarvoor een aanvaller niet hoeft in te loggen. CVE-2026-129243 (CVSS 8,8) omzeilt de beveiligingsregels van diensten. Onderzoekers van het Nederlandse Eye Security toonden aan dat een combinatie van lekken, waaronder het kritieke CVE-2026-129245 met een voorspelbare 'onthoud mij'-sleutel, een aanvaller zonder inloggegevens code laat uitvoeren op de server, [aldus The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html). Daarmee kan een aanvaller de server volledig overnemen.\n\n## Welke versies zijn veilig?\n\nKwetsbaar zijn GeoServer tot en met 2.27.6, 2.28.0 tot en met 2.28.5 en 3.0.0 tot en met 3.0.1. Update naar **2.27.7, 2.28.6 of 3.0.2**. Alleen de 'onthoud mij'-sleutel wijzigen of beheerderswachtwoorden vervangen is volgens onderzoekers niet genoeg: updaten is de enige echte oplossing. Net als bij het [recente Drupal-lek](/artikel/nieuw-drupal-lek-actief-misbruikt-patch-vorige-week-niet-genoeg/) slaan aanvallers binnen enkele dagen na een update toe.",
+  "actions": [
+    "Controleer of je organisatie of leverancier GeoServer gebruikt, bijvoorbeeld voor kaartviewers of GIS-diensten.",
+    "Update vandaag naar GeoServer 2.27.7, 2.28.6 of 3.0.2.",
+    "Kun je niet direct updaten? Haal GeoServer van het internet of zet hem achter een VPN.",
+    "Controleer de server op onbekende beheerdersaccounts, nieuwe bestanden en verdachte processen.",
+    "Vervang na de update wachtwoorden en sleutels die op de server stonden."
+  ],
+  "faq": [
+    {
+      "q": "Wat is GeoServer?",
+      "a": "Open-source serversoftware om kaarten en geografische gegevens te delen via internet. Het wordt veel gebruikt door overheden, netbeheerders en bedrijven met GIS-toepassingen."
+    },
+    {
+      "q": "Is het genoeg om het beheerderswachtwoord te wijzigen?",
+      "a": "Nee. Volgens onderzoekers neutraliseert alleen updaten de twee misbruikte lekken. Wachtwoorden en sleutels vervangen is wel verstandig ná de update."
+    },
+    {
+      "q": "Hoe weet ik of mijn server al is aangevallen?",
+      "a": "Kijk in de logbestanden naar ongebruikelijke verzoeken en controleer op onbekende accounts, bestanden en processen. Twijfel je, schakel dan een incidentresponspartij in."
+    }
+  ],
+  "category": "kwetsbaarheden",
+  "labels": {
+    "regio": [
+      "Wereld",
+      "Nederland"
+    ],
+    "doelgroep": [
+      "IT-beheerders",
+      "Grote organisaties"
+    ],
+    "sector": [
+      "Overheid",
+      "Energie"
+    ],
+    "technologie": [
+      "Open source",
+      "Linux"
+    ]
+  },
+  "keywords": [
+    "GeoServer",
+    "CVE-2026-120705",
+    "CVE-2026-129243",
+    "actief misbruikt",
+    "CISA",
+    "Eye Security"
+  ],
+  "image_query": "map server data",
+  "image": null,
+  "severity": "kritiek",
+  "zero_day": false,
+  "patch_available": true,
+  "exploited": true,
+  "cves": [
+    "CVE-2026-120705",
+    "CVE-2026-129243"
+  ],
+  "kev": [
+    {
+      "cve": "CVE-2026-120705",
+      "product": "OSGeo GeoServer"
+    },
+    {
+      "cve": "CVE-2026-129243",
+      "product": "OSGeo GeoServer"
+    }
+  ],
+  "sources": [
+    {
+      "name": "SecurityWeek",
+      "title": "Two Newly Disclosed GeoServer Vulnerabilities Under Attack",
+      "url": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/"
+    },
+    {
+      "name": "The Hacker News",
+      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html"
+    },
+    {
+      "name": "NCSC",
+      "title": "NCSC-2026-0526 Kwetsbaarheden verholpen in GeoServer",
+      "url": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0526"
+    }
+  ],
+  "published": "2026-11-27T18:25:11+00:00",
+  "model": "redactie",
+  "ig_title": "GeoServer-lekken actief misbruikt: update nu",
+  "ig_highlight": "actief misbruikt"
+}
