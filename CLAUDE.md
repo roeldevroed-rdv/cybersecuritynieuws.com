@@ -26,7 +26,7 @@ config.yaml              # site-instellingen, bronnen, thema's, labels
 netlify.toml             # ongebruikt (Netlify-config, bewaard voor als)
 pipeline/fetch.py        # RSS ophalen, clusteren, scoren, KEV-check
 pipeline/writer.py       # Claude schrijft nieuws (write_article) en evergreen-gidsen (write_evergreen); GEO/SEO-regels, FAQ, image_query
-pipeline/images.py       # gratis stockfoto via Pexels (PEXELS_API_KEY, optioneel)
+pipeline/images.py       # gratis stockfoto via Pixabay (PIXABAY_API_KEY als GitHub-secret; Pexels gaf geen sleutels meer): origineel in content/fotos/<slug>.jpg, geen foto's met personen; build.py maakt /foto/<slug>.webp + /foto/og/<slug>.jpg met blauwe huisstijl-tint (covers.brand_photo). Pixabay is niet bereikbaar vanuit de Claude-omgeving: foto's worden in GitHub Actions opgehaald
 pipeline/run.py          # orkestratie: `python -m pipeline.run` (of `--build` voor alleen bouwen)
 pipeline/build.py        # statische sitegenerator → dist/; valideert links (intern bestaand, extern alleen bronnen/trusted_domains), /gidsen/, llms.txt, FAQPage/Breadcrumb JSON-LD
 templates/               # base, _macros, home, list, article, week, search, about, 404
@@ -38,7 +38,7 @@ content/seen.json        # al verwerkte bron-URL's
 README.md                # installatie: GitHub, secret, GitHub Pages, domein (DNS), kosten
 tools/nieuwsronde.py     # kandidaten zoeken + concepten valideren/opslaan voor de dagelijkse ronde
 tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job na deploy)
-tools/instagram.py       # `python -m tools.instagram <slug>` → social/<slug>/: 5 carrousel-slides 1080x1350, reel.mp4 1080x1920 met Nederlandse vrouwenstem (Piper nl-nathalie, gratis; model wordt gedownload van GitHub-release naar ~/.cache; `--geen-stem` voor stil; reel in Instagram labelen als AI), voiceover.txt, bijschrift.txt (social/ staat in .gitignore)
+tools/instagram.py       # `python -m tools.instagram <slug>` → social/<slug>/: 5 carrousel-slides 1080x1350, reel.mp4 1080x1920 met Nederlandse vrouwenstem (Piper nl-nathalie, gratis; model wordt gedownload van GitHub-release naar ~/.cache; `--geen-stem` voor stil; reel in Instagram labelen als AI), voiceover.txt; cover in vaste opmaak (foto + kop onderin, ig_title/ig_highlight optioneel), bijschrift.txt (social/ staat in .gitignore)
 ```
 
 ## Status

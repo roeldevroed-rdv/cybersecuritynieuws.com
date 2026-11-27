@@ -55,7 +55,7 @@ def internal_candidates(existing: list[dict], text: str, limit: int = 20) -> lis
 def save(art: dict, used_photos: set | None = None) -> None:
     from .images import find_photo
     if used_photos is not None and not art.get("image"):
-        art["image"] = find_photo(art.get("image_query", ""), used_photos, alt_fallback=art["title"])
+        art["image"] = find_photo(art.get("image_query", ""), used_photos, alt_fallback=art["title"], slug=art["slug"])
     (ARTICLES / f"{art['id']}.json").write_text(json.dumps(art, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -133,8 +133,8 @@ def add_missing_photos() -> None:
     used = {(a.get("image") or {}).get("id") for a in arts}
     n = 0
     for a in arts:
-        if not a.get("image"):
-            a["image"] = find_photo(a.get("image_query") or " ".join(a.get("keywords", [])[:2]), used, a["title"])
+        if not (a.get("image") or {}).get("file"):
+            a["image"] = find_photo(a.get("image_query") or " ".join(a.get("keywords", [])[:2]), used, a["title"], slug=a["slug"])
             if a["image"]:
                 (ARTICLES / f"{a['id']}.json").write_text(json.dumps(a, ensure_ascii=False, indent=2), encoding="utf-8")
                 n += 1

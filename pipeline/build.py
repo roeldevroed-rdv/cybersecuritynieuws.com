@@ -212,12 +212,22 @@ def build(config: dict) -> None:
     shutil.copy(ROOT / "static/img/icon-180.png", DIST / "apple-touch-icon-precomposed.png")
     _Img.open(ROOT / "static/logo-512.png").convert("RGBA").save(DIST / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
     site = Site(config)
-    from .covers import make_cover
+    from .covers import brand_photo, make_cover
     for a in arts:
         make_cover(a, config["categories"], DIST / "og" / f"{a['slug']}.png", config["site"]["name"])
         make_cover(a, config["categories"], DIST / "beeld" / f"{a['slug']}.webp", config["site"]["name"], with_title=False)
         a["cover"] = f"/og/{a['slug']}.png?v={ASSET_V}"           # met titel: voor delen op sociale media
         a["art"] = f"/beeld/{a['slug']}.webp?v={ASSET_V}"          # zonder titel: voor op de site
+        img = a.get("image") or {}
+        src = ROOT / "content" / "fotos" / img.get("file", "-")
+        if img.get("file") and src.exists():
+            (DIST / "foto" / "og").mkdir(parents=True, exist_ok=True)
+            brand_photo(src, (1200, 675)).save(DIST / "foto" / f"{a['slug']}.webp", quality=82, method=6)
+            brand_photo(src, (1200, 630)).save(DIST / "foto" / "og" / f"{a['slug']}.jpg", quality=85, optimize=True)
+            img["url"] = f"/foto/{a['slug']}.webp?v={ASSET_V}"
+            img["og"] = f"{config['site']['url']}/foto/og/{a['slug']}.jpg?v={ASSET_V}"
+        else:
+            a["image"] = None  # geen (eigen gehoste) foto: typografisch beeld
         a["thumb"] = a["image"]["url"] if a.get("image") else a["art"]
     red = config.get("redactie") or {}
     site.env.globals.update(

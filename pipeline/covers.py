@@ -173,3 +173,14 @@ def make_cover(a: dict, categories: dict, out: Path, site_name: str = "CyberSecu
         img.convert("RGB").save(out, "WEBP", quality=82, method=6)
     else:
         img.convert("RGB").save(out, "PNG", optimize=True)
+
+
+def brand_photo(src: Path, size: tuple[int, int]) -> Image.Image:
+    """Stockfoto in huisstijl: bijgesneden op formaat en met een blauwe kleurtint (duotoon),
+    zodat foto's van verschillende fotografen als één geheel ogen."""
+    from PIL import ImageEnhance, ImageOps
+    im = ImageOps.fit(Image.open(src).convert("RGB"), size, Image.LANCZOS, centering=(0.5, 0.45))
+    gray = ImageOps.autocontrast(ImageOps.grayscale(im), cutoff=1)
+    duo = ImageOps.colorize(gray, black=(4, 14, 34), mid=(10, 98, 200), white=(205, 232, 255))
+    out = Image.blend(im, duo, 0.62)
+    return ImageEnhance.Brightness(out).enhance(0.92)

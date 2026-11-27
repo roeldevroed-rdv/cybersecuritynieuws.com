@@ -12,7 +12,9 @@
 
 Velden per concept: slug, title, tldr, meta_description, body (Markdown), actions [..], faq [{q,a}],
 category, labels {regio, doelgroep, sector, technologie}, keywords [..], severity, zero_day,
-patch_available, cves [..], sources [{name,title,url}], image_query, optioneel hours_ago.
+patch_available, cves [..], sources [{name,title,url}], image_query (Engelse zoekterm voor Pixabay-foto,
+zonder personen, bijv. "server room"), optioneel hours_ago, ig_title (korte Instagram-kop) en ig_highlight
+(max. 3 woorden uit die kop die blauw gemarkeerd worden).
 """
 from __future__ import annotations
 

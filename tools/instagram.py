@@ -11,6 +11,9 @@ Uitvoer in social/<slug>/ (niet in git):
   voiceover.txt               de uitgesproken tekst per scène (om na te lezen)
   bijschrift.txt              tekst + hashtags
 
+Cover (slide 1 en begin reel): artikelfoto (content/fotos/, blauwe huisstijl-tint) of donkere achtergrond,
+kop onderin; optionele artikelvelden ig_title (kortere kop) en ig_highlight (max. 3 woorden in blauw).
+
 Stem: Piper-stem nl-nathalie (gratis, offline). Wordt bij eerste gebruik gedownload van de
 Piper-release op GitHub naar ~/.cache/cybersecuritynieuws/piper/. Lukt dat niet, dan wordt de video
 zonder geluid gemaakt. Let op: label de reel in Instagram als AI-gegenereerd (synthetische stem).
@@ -342,11 +345,90 @@ def _chrome(img: Image.Image, idx: int, total: int, scale: float) -> None:
     d.text((w - m, h - int(90 * scale)), f"{idx + 1}/{total}", font=f, fill=MUTED, anchor="ra")
 
 
+# ---------- cover (vaste opmaak: foto, kop onderin, kernwoorden in blauw) ----------
+
+def _highlights(a: dict, words: list[str]) -> set[int]:
+    """Max. 3 aaneengesloten woorden markeren: ig_highlight uit het artikel, anders trefwoorden."""
+    norm = lambda w: re.sub(r"[^\w-]", "", w).lower()
+    wanted = [norm(x) for x in (a.get("ig_highlight") or "").split()]
+    if not wanted:
+        keys = {norm(k) for k in a.get("keywords", []) for k in k.split()}
+        for i, w in enumerate(words):
+            if len(norm(w)) > 3 and norm(w) in keys:
+                return {j for j in range(i, min(i + 3, len(words))) if norm(words[j]) in keys}
+        return set()
+    for i in range(len(words)):
+        if [norm(w) for w in words[i:i + len(wanted)]] == wanted:
+            return set(range(i, i + min(len(wanted), 3)))
+    return set()
+
+
+def cover_image(a: dict, cats: dict, w: int, h: int, scale: float) -> Image.Image:
+    from pipeline.covers import brand_photo
+    src = ROOT / "content" / "fotos" / ((a.get("image") or {}).get("file") or "-")
+    if src.exists():
+        img = brand_photo(src, (w, h)).convert("RGBA")
+    else:
+        img = _background(w, h, a["slug"])
+    grad = Image.linear_gradient("L").resize((w, h))
+    grad = grad.point(lambda v: int(240 * max(0.0, (v / 255 - 0.3) / 0.7) ** 1.2))
+    shade = Image.new("RGBA", (w, h), BG + (255,))
+    shade.putalpha(grad)
+    img.alpha_composite(shade)
+    d = ImageDraw.Draw(img)
+    m = int(64 * scale)
+    title = a.get("ig_title") or a["title"]
+    words = title.split()
+    size = int(84 * scale)
+    while size > 40 and max(d.textlength(x, font=_font("Caladea-Bold.ttf", size)) for x in words) > w - 2 * m - 30:
+        size -= 4
+    f = _font("Caladea-Bold.ttf", size)
+    while True:
+        lines, cur = [], []
+        for i, x in enumerate(words):
+            if cur and d.textlength(" ".join(y for _, y in cur + [(i, x)]), font=f) > w - 2 * m:
+                lines.append(cur); cur = []
+            cur.append((i, x))
+        lines.append(cur)
+        if len(lines) <= 5 or size <= 44:
+            break
+        size -= 4; f = _font("Caladea-Bold.ttf", size)
+    hl = _highlights(a, words)
+    lh = int(size * 1.18)
+    y = h - int(170 * scale) - lh * len(lines)
+    badge = ("ACTIEF MISBRUIKT", DANGER) if a.get("exploited") else \
+            (("KRITIEK", DANGER) if a.get("severity") == "kritiek" else (cats.get(a.get("category"), "").upper(), BLUE))
+    if badge[0]:
+        p = _pill(badge[0], badge[1], int(30 * scale))
+        img.alpha_composite(p, (m, y - p.height - int(22 * scale)))
+    sp = d.textlength(" ", font=f)
+    for line in lines:
+        x = m
+        for i, word in line:
+            tw = d.textlength(word, font=f)
+            if i in hl:
+                ext = sp if (i + 1) in hl and line[-1][0] != i else 0
+                d.rectangle([x - 8 * scale, y + 0.12 * size, x + tw + ext + 8 * scale, y + 1.12 * size], fill=BLUE)
+            x += tw + sp
+        x = m
+        for i, word in line:
+            d.text((x, y), word, font=f, fill=(255, 255, 255))
+            x += d.textlength(word, font=f) + sp
+        y += lh
+    draw_logo(img, m, int(60 * scale), 1.5 * scale)
+    fs = _font("Carlito-Regular.ttf", int(28 * scale))
+    d.text((m, h - int(90 * scale)), SITE, font=fs, fill=(200, 206, 214))
+    return img
+
+
 # ---------- carrousel ----------
 
 def carrousel(a: dict, sc: list[dict], out: Path) -> None:
     W, H = 1080, 1350
     for i, s in enumerate(sc):
+        if s["kind"] == "cover":
+            cover_image(a, a["_cats"], W, H, 1.0).convert("RGB").save(out / f"slide-{i + 1}.png", optimize=True)
+            continue
         img = _background(W, H, a["slug"])
         _chrome(img, i, len(sc), 1.0)
         for im, pos in layout(s, W, H, 1.0):
@@ -378,9 +460,12 @@ def video(a: dict, sc: list[dict], out: Path, stem: bool = True) -> None:
         stdin=subprocess.PIPE)
     t0 = 0.0
     for i, (s, dur) in enumerate(zip(sc, durations)):
-        base = bg.copy()
-        _chrome(base, i, len(sc), scale)
-        els = layout(s, W, H, scale)
+        if s["kind"] == "cover":
+            base, els = cover_image(a, a["_cats"], W, H, scale), []
+        else:
+            base = bg.copy()
+            _chrome(base, i, len(sc), scale)
+            els = layout(s, W, H, scale)
         n = len(els)
         step = min(0.9, (dur - 2.5) / max(n, 1))
         frames = int(dur * FPS)
@@ -425,6 +510,7 @@ def main() -> None:
     a = _article(args[0])
     # KEV-status zoals op de site
     a.setdefault("exploited", bool(a.get("kev")))
+    a["_cats"] = cfg["categories"]
     sc = scenes(a, cfg["categories"])
     out = OUT / a["slug"]
     out.mkdir(parents=True, exist_ok=True)
