@@ -47,7 +47,15 @@
     "hoofdwachtwoord"
   ],
   "image_query": "password lock laptop",
-  "image": null,
+  "image": {
+    "id": 2244006,
+    "file": "pcloud-bevestigt-aanval-op-wachtwoordmanager-pcloud-pass.jpg",
+    "alt": "pCloud bevestigt aanval op wachtwoordmanager pCloud Pass: e-mailadressen gelekt",
+    "credit": "mariaenithmae",
+    "credit_url": "https://pixabay.com/users/mariaenithmae-168963/",
+    "page_url": "https://pixabay.com/photos/security-padlock-keyboard-sure-2244006/",
+    "provider": "Pixabay"
+  },
   "severity": "hoog",
   "zero_day": false,
   "patch_available": false,
