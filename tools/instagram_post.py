@@ -100,8 +100,9 @@ def plaatsen(slug: str, reel: bool = False) -> None:
     base = f"{SITE}/ig/{urllib.parse.quote(slug)}"
     if reel:
         caption += "\n\nDeze video is gemaakt met AI."
-        _wait_online(f"{base}/reel.mp4")
-        c = _api(f"{IG_USER}/media", {"media_type": "REELS", "video_url": f"{base}/reel.mp4",
+        reel_file = "reel2.mp4" if (d / "reel2.mp4").exists() else "reel.mp4"
+        _wait_online(f"{base}/{reel_file}")
+        c = _api(f"{IG_USER}/media", {"media_type": "REELS", "video_url": f"{base}/{reel_file}",
                                        "caption": caption, "share_to_feed": "true"}, post=True)["id"]
         _wait_ready(c)
     else:
