@@ -2,11 +2,18 @@
 
   python -m tools.instagram <slug>            # carrousel + video + bijschrift
   python -m tools.instagram <slug> --geen-video
+  python -m tools.instagram <slug> --geen-stem    # video zonder voice-over
 
 Uitvoer in social/<slug>/ (niet in git):
   slide-1.png … slide-5.png   1080x1350 (Instagram-carrousel, staand 4:5)
-  reel.mp4                    1080x1920, ±50 s, 30 fps, zonder geluid (muziek kies je in de Instagram-app)
+  reel.mp4                    1080x1920, 30 fps, met Nederlandse voice-over (vrouwenstem, Piper TTS);
+                              scèneduur past zich aan de gesproken tekst aan
+  voiceover.txt               de uitgesproken tekst per scène (om na te lezen)
   bijschrift.txt              tekst + hashtags
+
+Stem: Piper-stem nl-nathalie (gratis, offline). Wordt bij eerste gebruik gedownload van de
+Piper-release op GitHub naar ~/.cache/cybersecuritynieuws/piper/. Lukt dat niet, dan wordt de video
+zonder geluid gemaakt. Let op: label de reel in Instagram als AI-gegenereerd (synthetische stem).
 """
 from __future__ import annotations
 
@@ -14,6 +21,10 @@ import json
 import re
 import subprocess
 import sys
+import tarfile
+import tempfile
+import urllib.request
+import wave
 from pathlib import Path
 
 import yaml
@@ -93,6 +104,105 @@ def caption(a: dict, categories: dict) -> str:
     acties = "\n".join(f"✅ {x}" for x in a.get("actions", [])[:3])
     return (f"{a['title']}\n\n{_short(a['tldr'], 300)}\n\nWat moet je doen?\n{acties}\n\n"
             f"👉 Lees het hele artikel via de link in onze bio ({SITE}).\n\n" + " ".join(tags))
+
+
+# ---------- voice-over ----------
+
+VOICE = "nl-nathalie-x-low"
+VOICE_URL = f"https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-{VOICE}.tar.gz"
+VOICE_DIR = Path.home() / ".cache" / "cybersecuritynieuws" / "piper"
+
+# uitspraak: woorden die de stem anders verkeerd zegt
+SAY = [
+    (r"cybersecuritynieuws\.com", "cybersecuritynieuws punt com"),
+    (r"\bCVE-(\d+)-(\d+)", r"C V E \1 \2"),
+    (r"\bAI\b", "A.I."), (r"\bAVG\b", "A.V.G."), (r"\bNCSC\b", "N.C.S.C."), (r"\bCISA\b", "Cisa"),
+    (r"(?i)\bvpn\b", "V.P.N."), (r"\bIT\b", "I.T."), (r"\bmkb\b", "M.K.B."), (r"\bMKB\b", "M.K.B."),
+    (r"\bwifi\b", "waaifaai"), (r"&", " en "), (r"→", ""), (r"\s*>\s*", ", "),
+]
+
+
+def _say(text: str) -> str:
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)  # markdown-links
+    text = re.sub(r"[*_#`]", "", text)
+    for pat, rep in SAY:
+        text = re.sub(pat, rep, text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def narration(a: dict, sc: list[dict]) -> list[str]:
+    out = []
+    for s in sc:
+        if s["kind"] == "cover":
+            out.append(a["title"] + ".")
+        elif s["kind"] == "text" and s.get("heading"):
+            out.append(f"Goed om te weten. {s['heading']} {s['text']}")
+        elif s["kind"] == "text":
+            out.append(f"Wat is er aan de hand? {s['text']}")
+        elif s["kind"] == "list":
+            out.append("Wat moet je doen? " + " ".join(x.rstrip(".") + "." for x in s["items"]))
+        else:
+            out.append("Lees het hele artikel op cybersecuritynieuws.com. En volg ons voor meer.")
+    return [_say(t) for t in out]
+
+
+def _voice_model() -> Path | None:
+    model = VOICE_DIR / f"{VOICE}.onnx"
+    if model.exists():
+        return model
+    try:
+        VOICE_DIR.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory() as tmp:
+            tgz = Path(tmp) / "voice.tar.gz"
+            urllib.request.urlretrieve(VOICE_URL, tgz)
+            with tarfile.open(tgz) as tf:
+                for m in tf.getmembers():
+                    name = Path(m.name).name
+                    if m.isfile() and name in (f"{VOICE}.onnx", f"{VOICE}.onnx.json"):
+                        (VOICE_DIR / name).write_bytes(tf.extractfile(m).read())
+        return model if model.exists() else None
+    except Exception as e:  # geen netwerk e.d.
+        print(f"  ! stem niet beschikbaar ({e}); video zonder geluid")
+        return None
+
+
+def _tts(model: Path, text: str, wav: Path) -> float:
+    subprocess.run([sys.executable, "-m", "piper", "-m", str(model), "-f", str(wav),
+                    "--length-scale", "1.05", "--sentence-silence", "0.25"],
+                   input=text.encode("utf-8"), check=True, capture_output=True)
+    with wave.open(str(wav)) as w:
+        return w.getnframes() / w.getframerate()
+
+
+def voiceover(a: dict, sc: list[dict], out: Path) -> tuple[list[float], Path] | None:
+    """Spreekt elke scène in; geeft scèneduren en een audiobestand dat precies even lang is."""
+    model = _voice_model()
+    if not model:
+        return None
+    texts = narration(a, sc)
+    (out / "voiceover.txt").write_text("\n\n".join(texts) + "\n", encoding="utf-8")
+    lead, tail = 0.5, 0.9
+    durations, chunks, params = [], [], None
+    with tempfile.TemporaryDirectory() as tmp:
+        for i, t in enumerate(texts):
+            wav = Path(tmp) / f"s{i}.wav"
+            secs = _tts(model, t, wav)
+            with wave.open(str(wav)) as w:
+                params = w.getparams()
+                frames = w.readframes(w.getnframes())
+            dur = max(4.0, lead + secs + tail)
+            durations.append(dur)
+            chunks.append((frames, dur))
+    rate, width, ch = params.framerate, params.sampwidth, params.nchannels
+    path = out / "voiceover.wav"
+    with wave.open(str(path), "wb") as w:
+        w.setnchannels(ch); w.setsampwidth(width); w.setframerate(rate)
+        for frames, dur in chunks:
+            total = int(round(int(dur * FPS) / FPS * rate)) * width * ch
+            pre = int(lead * rate) * width * ch
+            buf = (b"\0" * pre + frames)[:total]
+            w.writeframes(buf + b"\0" * (total - len(buf)))
+    return durations, path
 
 
 # ---------- tekenen ----------
@@ -251,16 +361,20 @@ def _ease(t: float) -> float:
     return 1 - (1 - t) ** 3
 
 
-def video(a: dict, sc: list[dict], out: Path) -> None:
+def video(a: dict, sc: list[dict], out: Path, stem: bool = True) -> None:
     W, H = 1080, 1920
     scale = 1.32
     durations = [6.5, 11.0, 10.0, 15.0, 6.0]
-    total = sum(durations)
+    vo = voiceover(a, sc, out) if stem else None
+    if vo:
+        durations = vo[0]
+    total = sum(int(d * FPS) for d in durations) / FPS
+    target = out / ("reel-stil.mp4" if vo else "reel.mp4")
     bg = _background(W, H, a["slug"])
     proc = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
          "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium",
-         "-crf", "20", "-movflags", "+faststart", str(out / "reel.mp4")],
+         "-crf", "20", "-movflags", "+faststart", str(target)],
         stdin=subprocess.PIPE)
     t0 = 0.0
     for i, (s, dur) in enumerate(zip(sc, durations)):
@@ -295,6 +409,12 @@ def video(a: dict, sc: list[dict], out: Path) -> None:
         t0 += dur
     proc.stdin.close()
     proc.wait()
+    if vo:
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(target), "-i", str(vo[1]),
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-shortest",
+                        "-movflags", "+faststart", str(out / "reel.mp4")], check=True)
+        target.unlink()
+        vo[1].unlink()
 
 
 def main() -> None:
@@ -311,7 +431,7 @@ def main() -> None:
     carrousel(a, sc, out)
     (out / "bijschrift.txt").write_text(caption(a, cfg["categories"]), encoding="utf-8")
     if "--geen-video" not in sys.argv:
-        video(a, sc, out)
+        video(a, sc, out, stem="--geen-stem" not in sys.argv)
     print(f"Klaar: {out.relative_to(ROOT)}/")
     for p in sorted(out.iterdir()):
         print(f"  {p.name}  ({p.stat().st_size // 1024} KB)")

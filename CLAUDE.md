@@ -38,7 +38,7 @@ content/seen.json        # al verwerkte bron-URL's
 README.md                # installatie: GitHub, secret, GitHub Pages, domein (DNS), kosten
 tools/nieuwsronde.py     # kandidaten zoeken + concepten valideren/opslaan voor de dagelijkse ronde
 tools/indexnow.py        # meldt recente pagina's aan bij IndexNow (workflow-job na deploy)
-tools/instagram.py       # `python -m tools.instagram <slug>` → social/<slug>/: 5 carrousel-slides 1080x1350, reel.mp4 1080x1920 (±50 s, geen geluid), bijschrift.txt (social/ staat in .gitignore)
+tools/instagram.py       # `python -m tools.instagram <slug>` → social/<slug>/: 5 carrousel-slides 1080x1350, reel.mp4 1080x1920 met Nederlandse vrouwenstem (Piper nl-nathalie, gratis; model wordt gedownload van GitHub-release naar ~/.cache; `--geen-stem` voor stil; reel in Instagram labelen als AI), voiceover.txt, bijschrift.txt (social/ staat in .gitignore)
 ```
 
 ## Status
@@ -78,6 +78,8 @@ Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, Computable; AG Connect en Data 
 - SEO: WebSite+NewsMediaOrganization JSON-LD op home; verificatiecodes Google/Bing via config `zoekmachines`; IndexNow-sleutelbestand in dist/; standaard og-afbeelding static/og-default.png (block `ogimage`).
 - Huisstijl (25 nov 2026): ORIGINEEL logo van eigenaar (assets/logo-origineel.png, transparant, witte tekst). Site-header: static/img/logo-licht.png (tekst donker, slot blauw; afgeleid van origineel) en logo-donker.png (dark mode). Favicon static/img/icon-32.png, apple-touch icon-180.png, static/logo-512.png (JSON-LD). covers.draw_logo gebruikt het origineel. static/logo.svg = oude natekening, niet meer in gebruik. Merkkleur blauw `--accent #0a8dff` (verloop #00a8ff→#005bff); rood `--danger` alleen voor badges actief misbruikt/kritiek en dreigingsniveau; alle rubrieken één kleur: merkblauw #0a7ee8 (geen kleur per rubriek, op verzoek eigenaar). og-default via covers.make_default_og. Redactiefoto met blauwe achtergrond.
 - Thema-attribuut heet `data-mode` (niet data-theme: botst met de Claude-artifactviewer).
+
+- Eigenaar wil een eigen AI-avatar (presenteert nieuws in studio), bijv. HeyGen/Synthesia (betaald); altijd AI-label, nooit andermans gezicht/stem.
 
 ## Eventueel later
 - Patch Tuesday-overzicht, OG-afbeeldingen per artikel.
