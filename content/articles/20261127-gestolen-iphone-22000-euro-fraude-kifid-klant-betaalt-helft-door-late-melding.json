@@ -1,0 +1,67 @@
+{
+  "id": "20261127-gestolen-iphone-22000-euro-fraude-kifid-klant-betaalt-helft-door-late-melding",
+  "slug": "gestolen-iphone-22000-euro-fraude-kifid-klant-betaalt-helft-door-late-melding",
+  "type": "nieuws",
+  "topic_id": null,
+  "title": "22.000 euro fraude met gestolen iPhone: klant betaalt helft omdat ze diefstal te laat meldde",
+  "tldr": "Met een gestolen iPhone is voor ruim 22.000 euro gefraudeerd via de bank-app. Klachteninstituut Kifid oordeelt dat de Triodos-klant de helft zelf moet betalen, omdat ze de diefstal pas na ruim een week bij de bank meldde. Dat noemt het Kifid grove nalatigheid. Les: meld een gestolen telefoon direct bij je bank.",
+  "meta_description": "Met een gestolen iPhone werd ruim 22.000 euro gefraudeerd. Het Kifid oordeelt dat de klant de helft zelf betaalt door de late melding. Dit moet je meteen doen.",
+  "body": "Met een gestolen iPhone is via de bank-app voor ruim 22.000 euro aan frauduleuze betalingen gedaan. De Triodos-klant van wie de telefoon was, krijgt maar de helft vergoed. Dat heeft het financiële klachteninstituut Kifid besloten, [meldt Security.NL](https://www.security.nl/posting/963326/). De reden: ze meldde de diefstal pas na ruim een week bij haar bank.\n\n## Wat gebeurde er?\n\nDe iPhone van de vrouw werd eind vorig jaar gestolen. Op 6 en 7 november werden er via de bank-app op het toestel betalingen gedaan voor in totaal 22.561 euro. De vrouw had wel maatregelen genomen: ze deed aangifte, zette de telefoon in de verloren modus, liet Apple Pay blokkeren en probeerde het toestel op afstand te wissen. Haar toegangscode was ook niet gelijk aan de pincode van de bank-app, en ze had die codes niet opgeslagen of gedeeld.\n\nHet Kifid vond haar uitleg over hoe de fraude kon gebeuren voldoende. In principe moet een bank niet-toegestane betalingen vergoeden, tenzij de klant grof nalatig is geweest. En dat was hier volgens het Kifid wel het geval: door de bank niet direct te waarschuwen, liet ze na 'wat een redelijk, normaal en zorgvuldig handelend betaler nooit zou nalaten'.\n\n## Waarom krijgt ze toch de helft terug?\n\nHet Kifid beperkte haar aansprakelijkheid tot 11.280,50 euro. Daarbij woog mee dat ze wel stappen had gezet om de telefoon te beveiligen, en dat Triodos erkende meer onderzoek te hebben kunnen doen nadat het signalen van fraude met de bankpas had opgemerkt. Ook banken hebben de plicht ongebruikelijke activiteiten te onderzoeken. Triodos had de andere helft al vergoed.\n\nHet is niet de eerste keer: eerder oordeelde het Kifid ook al over [betalingen met een gestolen telefoon bij Rabobank](/artikel/kifid-rabobank-hoeft-betalingen-met-gestolen-telefoon-niet-te-vergoeden/). De les is steeds dezelfde: bel bij diefstal of verlies van je telefoon meteen je bank.",
+  "actions": [
+    "Bel bij diefstal of verlies van je telefoon direct je bank om de bank-app en passen te blokkeren.",
+    "Gebruik voor je bank-app een andere pincode dan de toegangscode van je telefoon.",
+    "Zet 'Zoek mijn iPhone' of 'Vind mijn apparaat' aan, zodat je het toestel op afstand kunt vergrendelen en wissen.",
+    "Sla geen pincodes of wachtwoorden op in je notities of foto's.",
+    "Doe aangifte en bewaar alle bewijs van de stappen die je hebt genomen."
+  ],
+  "faq": [
+    {
+      "q": "Vergoedt de bank fraude met een gestolen telefoon?",
+      "a": "In principe wel, tenzij je grof nalatig bent geweest. Te laat melden bij de bank kan als grove nalatigheid gelden, zoals deze uitspraak laat zien."
+    },
+    {
+      "q": "Hoe snel moet ik een gestolen telefoon melden?",
+      "a": "Zo snel mogelijk, liefst direct. Banken hebben een 24-uursnummer om je bank-app en passen te laten blokkeren."
+    }
+  ],
+  "category": "phishing",
+  "labels": {
+    "regio": [
+      "Nederland"
+    ],
+    "doelgroep": [
+      "Thuisgebruiker"
+    ],
+    "sector": [
+      "Financieel"
+    ],
+    "technologie": [
+      "Apple"
+    ]
+  },
+  "keywords": [
+    "Kifid",
+    "Triodos",
+    "gestolen iPhone",
+    "bank-app",
+    "fraude",
+    "grove nalatigheid"
+  ],
+  "image_query": "smartphone banking app",
+  "image": null,
+  "severity": "middel",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "Security.NL",
+      "title": "Dief doet voor 22.000 euro aan frauduleuze transacties met gestolen iPhone",
+      "url": "https://www.security.nl/posting/963326/"
+    }
+  ],
+  "published": "2026-11-27T10:25:03+00:00",
+  "model": "redactie"
+}
