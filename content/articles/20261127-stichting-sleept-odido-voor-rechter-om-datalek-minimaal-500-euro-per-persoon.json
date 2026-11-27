@@ -46,7 +46,15 @@
     "Tele2"
   ],
   "image_query": "smartphone network tower",
-  "image": null,
+  "image": {
+    "id": 2738407,
+    "file": "stichting-sleept-odido-voor-rechter-om-datalek-minimaal-500-euro-per-persoon.jpg",
+    "alt": "Stichting sleept Odido voor de rechter om datalek: minimaal 500 euro per gedupeerde",
+    "credit": "geralt",
+    "credit_url": "https://pixabay.com/users/geralt-9301/",
+    "page_url": "https://pixabay.com/photos/industry-industry-4-web-network-2738407/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,

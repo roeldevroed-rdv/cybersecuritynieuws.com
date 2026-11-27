@@ -56,7 +56,15 @@
     "Eye Security"
   ],
   "image_query": "map server data",
-  "image": null,
+  "image": {
+    "id": 8004999,
+    "file": "geoserver-lekken-actief-misbruikt-update-naar-2-27-7-2-28-6-of-3-0-2.jpg",
+    "alt": "Twee GeoServer-lekken actief misbruikt: update naar 2.27.7, 2.28.6 of 3.0.2",
+    "credit": "cliff1126",
+    "credit_url": "https://pixabay.com/users/cliff1126-2330376/",
+    "page_url": "https://pixabay.com/photos/control-center-internet-8004999/",
+    "provider": "Pixabay"
+  },
   "severity": "kritiek",
   "zero_day": false,
   "patch_available": true,
