@@ -131,8 +131,18 @@ def opslaan(path: str) -> None:
             "kev": [{"cve": x["cveID"], "product": f"{x.get('vendorProject','')} {x.get('product','')}".strip()} for x in k],
             "sources": d["sources"], "published": pub.isoformat(), "model": "redactie",
         }
+        for f in ("ig_title", "ig_highlight"):
+            if d.get(f):
+                art[f] = d[f].strip()
         (ARTICLES / f"{art['id']}.json").write_text(json.dumps(art, ensure_ascii=False, indent=2), encoding="utf-8")
         seen |= {s["url"] for s in d["sources"]}
+        # ook de feed-varianten van dezelfde URL's (bijv. met ?channel=rss) als behandeld markeren
+        kale = {s["url"].split("?")[0].rstrip("/") for s in d["sources"]}
+        if CANDIDATES.exists():
+            for c in json.loads(CANDIDATES.read_text()):
+                for b in c.get("bronnen", []):
+                    if b["url"].split("?")[0].rstrip("/") in kale or any(b["url"].startswith(x + "/") for x in kale):
+                        seen.add(b["url"])
         saved.append(f"{'[KEV] ' if k else ''}{art['title']}")
     SEEN.write_text(json.dumps(sorted(seen)[-5000:], indent=0))
     print(f"{len(saved)} artikelen opgeslagen:\n- " + "\n- ".join(saved))
