@@ -340,7 +340,7 @@ def build(config: dict) -> None:
     if key:  # IndexNow-sleutelbestand in de hoofdmap
         (DIST / f"{key}.txt").write_text(key)
     (DIST / "CNAME").write_text(config["site"]["domain"] + "\n")  # eigen domein op GitHub Pages
-    (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /ig/\nSitemap: {url}/sitemap.xml\nSitemap: {url}/news-sitemap.xml\n")
+    (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {url}/sitemap.xml\nSitemap: {url}/news-sitemap.xml\n")
     print(f"Site gebouwd: {len(arts)} artikelen, {len(site.urls)} pagina's -> dist/")
 
 
