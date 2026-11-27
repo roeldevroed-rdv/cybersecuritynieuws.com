@@ -1,0 +1,12 @@
+pCloud bevestigt aanval op wachtwoordmanager pCloud Pass: e-mailadressen gelekt
+
+Het Zwitserse pCloud bevestigt een cyberaanval op zijn wachtwoordmanager pCloud Pass. Volgens het bedrijf is de aanval snel gestopt en zijn van een klein aantal gebruikers e-mailadressen buitgemaakt. Wachtwoorden en notities zouden veilig zijn dankzij versleuteling op het apparaat zelf.
+
+Wat moet je doen?
+- Gebruik je pCloud Pass? Wijzig je hoofdwachtwoord in een lang, uniek wachtwoord dat je nergens anders gebruikt.
+- Controleer in je pCloud-account welke apparaten gekoppeld zijn en verwijder onbekende apparaten.
+- Zet tweestapsverificatie aan voor je pCloud-account als dat nog niet zo is.
+
+Lees het hele artikel via de link in onze bio (cybersecuritynieuws.com).
+
+#cybersecurity #cyberveiligheid #onlineveiligheid #datalek #privacy #pCloud #pCloudPass #wachtwoordmanager
