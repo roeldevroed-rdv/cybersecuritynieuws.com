@@ -53,7 +53,15 @@
     "Unit 42"
   ],
   "image_query": "network firewall server",
-  "image": null,
+  "image": {
+    "id": 4393372,
+    "file": "palo-alto-networks-wie-zijn-ze-en-wat-doen-ze.jpg",
+    "alt": "Palo Alto Networks: wie zijn ze en wat doen ze?",
+    "credit": "Bru-nO",
+    "credit_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "page_url": "https://pixabay.com/photos/network-edp-plug-patch-cord-4393372/",
+    "provider": "Pixabay"
+  },
   "severity": "info",
   "zero_day": false,
   "patch_available": false,
