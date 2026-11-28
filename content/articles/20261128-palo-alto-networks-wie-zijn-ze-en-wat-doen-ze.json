@@ -1,0 +1,92 @@
+{
+  "id": "20261128-palo-alto-networks-wie-zijn-ze-en-wat-doen-ze",
+  "slug": "palo-alto-networks-wie-zijn-ze-en-wat-doen-ze",
+  "type": "gids",
+  "topic_id": null,
+  "title": "Palo Alto Networks: wie zijn ze en wat doen ze?",
+  "tldr": "Palo Alto Networks is een Amerikaans securitybedrijf dat groot werd met de 'next-generation firewall'. Inmiddels levert het ook cloud- en netwerkbeveiliging op afstand, securityoperations met AI en, sinds de overname van CyberArk, identiteitsbeveiliging. De omzet over het boekjaar 2026 was ongeveer 11,5 miljard dollar.",
+  "meta_description": "Palo Alto Networks uitgelegd: van firewall naar platform voor netwerk, cloud, SOC en identiteit, de overnames van CyberArk en Chronosphere. Een neutraal profiel.",
+  "body": "Palo Alto Networks is een Amerikaans cybersecuritybedrijf met het hoofdkantoor in Santa Clara, Californië. Het werd in 2005 opgericht door onder anderen Nir Zuk, een voormalig engineer van Check Point en NetScreen. Zuk ging in 2025 met pensioen, [meldt het bedrijf](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-retirement-of-nir-zuk--founder-and-cto). Topman is Nikesh Arora. Het bedrijf ging in 2012 naar de beurs en staat sinds 2021 genoteerd aan de Nasdaq, [aldus Wikipedia](https://en.wikipedia.org/wiki/Palo_Alto_Networks).\n\nOver het boekjaar 2026, dat liep tot eind juli, kwam de omzet uit op ongeveer 11,5 miljard dollar, zo'n 24 procent meer dan een jaar eerder, [blijkt uit het jaarverslag](https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm). Het grootste deel daarvan komt uit abonnementen en ondersteuning.\n\n## Wat doet Palo Alto Networks precies?\n\nHet bedrijf werd bekend met de **next-generation firewall**: een firewall die niet alleen naar poorten en adressen kijkt, maar ook herkent welke applicatie en welke gebruiker verkeer veroorzaakt. Daaromheen is een breed platform gegroeid:\n\n- **netwerkbeveiliging**: firewalls als apparaat, virtueel en in de cloud;\n- **beveiliging op afstand (SASE)**: veilig internet- en netwerkverkeer voor thuiswerkers en vestigingen, zonder eigen hardware;\n- **securityoperations**: het Cortex-platform voor detectie en respons (XDR) en een door AI gestuurd SOC;\n- **cloudbeveiliging**: bescherming van cloudomgevingen en applicaties;\n- **Unit 42**: een onderzoeks- en incidentresponsteam dat organisaties helpt na een aanval.\n\n## Welke overnames deed Palo Alto Networks?\n\nDe grootste is **CyberArk**, specialist in het beheren en beveiligen van (beheerders)accounts. De overname werd in februari 2026 afgerond, [blijkt uit een kwartaalverslag](https://www.sec.gov/Archives/edgar/data/1327567/000132756726000005/panw-20260131.htm), en bracht identiteitsbeveiliging in huis. Ook nam het bedrijf **Chronosphere** over, een platform voor het monitoren van IT-systemen, voor 3,35 miljard dollar, [meldt het bedrijf](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-to-acquire-chronosphere--next-gen-observability-leader--for-the-ai-era).\n\n## Voor wie is Palo Alto Networks interessant?\n\nDe oplossingen zijn vooral gericht op middelgrote en grote organisaties, en worden via partners en IT-dienstverleners ook aan het mkb geleverd. Belangrijke concurrenten zijn onder meer Fortinet, Check Point, Cisco en Zscaler voor netwerk en SASE, en [CrowdStrike](/artikel/crowdstrike-wie-zijn-ze-en-wat-doen-ze/) en [SentinelOne](/artikel/sentinelone-wie-zijn-ze-en-wat-doen-ze/) voor endpoint- en SOC-beveiliging. Firewalls van grote merken, ook die van Palo Alto Networks, zijn geregeld doelwit van aanvallers. Snel updaten blijft dus belangrijk.",
+  "actions": [
+    "Gebruik je een firewall van Palo Alto Networks? Zorg dat PAN-OS altijd op een ondersteunde, bijgewerkte versie draait.",
+    "Maak de beheerinterface van je firewall nooit bereikbaar vanaf het internet.",
+    "Vergelijk bij een keuze voor SASE of firewall niet alleen de prijs, maar ook beheer, ondersteuning en hoe snel lekken worden gedicht.",
+    "Controleer waar je gegevens worden verwerkt en of dat past bij AVG en NIS2."
+  ],
+  "faq": [
+    {
+      "q": "Wat is een next-generation firewall?",
+      "a": "Een firewall die niet alleen poorten en adressen controleert, maar ook herkent welke applicatie en gebruiker het verkeer veroorzaakt, en daarop regels toepast."
+    },
+    {
+      "q": "Wat is CyberArk?",
+      "a": "Een specialist in het beveiligen van accounts met veel rechten, zoals beheerdersaccounts. Palo Alto Networks nam het bedrijf in februari 2026 over."
+    },
+    {
+      "q": "Wat is Unit 42?",
+      "a": "Het onderzoeks- en incidentresponsteam van Palo Alto Networks. Het publiceert dreigingsonderzoek en helpt organisaties na een aanval."
+    }
+  ],
+  "category": "markt",
+  "labels": {
+    "regio": [
+      "Wereld"
+    ],
+    "doelgroep": [
+      "MKB",
+      "Grote organisaties",
+      "IT-beheerders"
+    ],
+    "sector": [],
+    "technologie": [
+      "Firewalls & VPN",
+      "Cloud"
+    ]
+  },
+  "keywords": [
+    "Palo Alto Networks",
+    "firewall",
+    "SASE",
+    "Cortex",
+    "CyberArk",
+    "Chronosphere",
+    "Unit 42"
+  ],
+  "image_query": "network firewall server",
+  "image": null,
+  "severity": "info",
+  "zero_day": false,
+  "patch_available": false,
+  "exploited": false,
+  "cves": [],
+  "kev": [],
+  "sources": [
+    {
+      "name": "SEC (10-K Palo Alto Networks)",
+      "title": "Palo Alto Networks jaarverslag boekjaar 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm"
+    },
+    {
+      "name": "SEC (10-Q Palo Alto Networks)",
+      "title": "Kwartaalverslag januari 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000005/panw-20260131.htm"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "title": "Palo Alto Networks to Acquire Chronosphere",
+      "url": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-to-acquire-chronosphere--next-gen-observability-leader--for-the-ai-era"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "title": "Palo Alto Networks Announces Retirement of Nir Zuk, Founder and CTO",
+      "url": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-retirement-of-nir-zuk--founder-and-cto"
+    },
+    {
+      "name": "Wikipedia",
+      "title": "Palo Alto Networks",
+      "url": "https://en.wikipedia.org/wiki/Palo_Alto_Networks"
+    }
+  ],
+  "published": "2026-11-28T06:25:05+00:00",
+  "model": "redactie"
+}
