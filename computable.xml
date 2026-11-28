@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:media="http://search.yahoo.com/mrss/" >
+
+<channel>
+	<title>Computable.nl</title>
+	<atom:link href="https://www.computable.nl/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.computable.nl</link>
+	<description>Computable.nl is het platform voor ict-professionals, met ondermeer dagelijks ict-nieuws, tienduizenden ict-achtergrondartikelen en expert-opinies.</description>
+	<lastBuildDate>Sat, 28 Nov 2026 10:41:07 +0000</lastBuildDate>
+	<language>nl-NL</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://www.computable.nl/wp-content/uploads/2023/06/cropped-favicon-55x55.png</url>
+	<title>Computable.nl</title>
+	<link>https://www.computable.nl</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Kort: Groene Hart Ziekenhuis over op HiX, online-adviestool over fraude (en meer)</title>
+		<link>https://www.computable.nl/2026/11/28/kort-groene-hart-ziekenhuis-over-op-hix-online-adviestool-over-fraude-en-meer/</link>
+					<comments>https://www.computable.nl/2026/11/28/kort-groene-hart-ziekenhuis-over-op-hix-online-adviestool-over-fraude-en-meer/#respond</comments>
+		
+		<dc:creator><![CDATA[Rik Sanders]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2026 10:00:00 +0000</pubDate>
+				<category><![CDATA[Zorg]]></category>
+		<category><![CDATA[Business Applications]]></category>
+		<category><![CDATA[Financiële dienstverlening]]></category>
+		<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[Outsourcing]]></category>
+		<category><![CDATA[Software & Development]]></category>
+		<category><![CDATA[Sourcing & Vendor Management]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[EPD]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[fraude]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Kort]]></category>
+		<category><![CDATA[Nearshoring]]></category>
+		<category><![CDATA[Overname]]></category>
+		<category><![CDATA[Phishing]]></category>
+		<category><![CDATA[Software]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463390</guid>
+
+					<description><![CDATA[In dit nieuwsoverzicht: Groene Hart Ziekenhuis live met Chipsofts HiX, Worldline blaast Global Collect nieuw leven in, Monaka-server van Fujitsu komt naar Europa, YER neemt  25Friday over en Fraudehelpdesk-tool adviseert na online oplichting.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>In dit nieuwsoverzicht: Groene Hart Ziekenhuis live met Chipsofts HiX, Worldline blaast Global Collect nieuw leven in, Monaka-server van Fujitsu komt naar Europa, YER neemt  25Friday over en Fraudehelpdesk-tool adviseert na online oplichting.</strong></p>
+
+
+
+<h5 class="wp-block-heading">Groene Hart Ziekenhuis vervangt applicaties met HiX</h5>
+
+
+
+<p class="wp-block-paragraph">Het Groene Hart Ziekenhuis in Gouda heeft zijn nieuwe elektronische patiëntendossier HiX van Chipsoft in gebruik <a href="https://www.ghz.nl/nieuws/2026/11/groene-hart-ziekenhuis-overgestapt-op-nieuw-patientendossier/" data-type="link" data-id="https://www.ghz.nl/nieuws/2026/11/groene-hart-ziekenhuis-overgestapt-op-nieuw-patientendossier/" target="_blank" rel="noopener">genomen</a>. Het ziekenhuis werkte eerst met het epd van Nexus. Met de ingebruikname verdwijnen meer dan tien aanvullende applicaties, waardoor zorgprocessen en patiëntinformatie in één digitale omgeving worden samengebracht.</p>
+
+
+
+<p class="wp-block-paragraph">Door de integratie van processen binnen HiX hoeven medewerkers minder tussen systemen te schakelen. Ook wordt het applicatiebeheer eenvoudiger. Het ziekenhuis wijst erop dat meerdere ziekenhuizen in Midden-Holland eveneens met HiX werken, wat de gegevensuitwisseling en regionale samenwerking moet ondersteunen.</p>
+
+
+
+<p class="wp-block-paragraph">Tegelijkertijd is het patiëntenportaal MijnGHZ vernieuwd. Patiënten kunnen daarin onder meer medische gegevens inzien en herhaalmedicatie digitaal aanvragen.</p>
+
+
+
+<h5 class="wp-block-heading">Global Collect keert terug als merk voor internationale betaalmarkt</h5>
+
+
+
+<p class="wp-block-paragraph">Worldline brengt het merk <a href="https://www.youtube.com/watch?v=IC-3UZu2M-o" data-type="link" data-id="https://www.youtube.com/watch?v=IC-3UZu2M-o" target="_blank" rel="noopener">Global Collect</a> opnieuw op de markt. De Franse betaalverwerker wil zijn e-commerceplatform voor internationale reis- en digitale bedrijven een onderscheidender marktpositionering geven.</p>
+
+
+
+<p class="wp-block-paragraph">Global Collect werd in 1994 opgericht als spin-off van PTT Post International en is gevestigd in Hoofddorp. Volgens Worldline verwerkt het platform jaarlijks meer dan 23 miljard euro aan betalingen voor ruim zeshonderd merken.</p>
+
+
+
+<p class="wp-block-paragraph">De herlancering volgt op de modernisering en integratie van het platform binnen Worldline. Het merk krijgt daarmee een aparte positionering binnen de groep. Global Collect biedt toegang tot meer dan 150 betaalmethoden in Europa, Azië-Pacific, Latijns-Amerika en Noord-Amerika.</p>
+
+
+
+<h5 class="wp-block-heading">Fujitsu brengt Monaka-server voor ai-workloads naar Europa</h5>
+
+
+
+<p class="wp-block-paragraph">Fsas Technologies maakt de Fujitsu Monaka Server vanaf december 2026 <a href="https://eu.fsastech.com/eu/microsites/fujitsu-monaka-server-high-performance-low-power-built-for-ai/" data-type="link" data-id="https://eu.fsastech.com/eu/microsites/fujitsu-monaka-server-high-performance-low-power-built-for-ai/" target="_blank" rel="noopener">beschikbaar</a> voor Europese klanten en partners. Leveringen starten vanaf april 2027, afhankelijk van het model.</p>
+
+
+
+<p class="wp-block-paragraph">De server is ontwikkeld voor ai-inferentie en andere datacenterworkloads en is gebaseerd op de nieuwe Arm-gebaseerde Fujitsu Monaka-cpu. Die technologie is afkomstig uit de ontwikkeling van de Fugaku-supercomputer. Het aanbod bestaat uit luchtgekoelde en vloeistofgekoelde 1U- en 2U-systemen.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens Fsas Technologies kunnen kleinere taalmodellen op de server draaien zonder gpu&#8217;s. Voor grotere modellen is een combinatie met gpu&#8217;s mogelijk. De systemen ondersteunen onder meer Linux-distributies voor zakelijke toepassingen en confidential computing op basis van de Arm Confidential Compute Architecture.</p>
+
+
+
+<h5 class="wp-block-heading">YER koopt softwarebedrijf 25Friday</h5>
+
+
+
+<p class="wp-block-paragraph">Personeelsbroker YER neemt softwarebedrijf 25Friday over. Met <a href="https://www.yer.nl/blogs-en-artikelen/yer-neemt-25friday-over/" data-type="link" data-id="https://www.yer.nl/blogs-en-artikelen/yer-neemt-25friday-over/" target="_blank" rel="noopener">de overname</a> krijgt YER er circa tachtig software-engineers en een team productmanagers bij. Beide bedrijven komen uit Amsterdam.<br><br>Volgens YER breidt het bedrijf hiermee zijn dienstverlening uit. Klanten kunnen voortaan niet alleen personeel inhuren, maar ook complete softwareteams inzetten of softwareprojecten uitbesteden. De projectaansturing en het klantcontact blijven in Nederland, terwijl de softwareontwikkeling plaatsvindt vanuit de Portugese vestigingen van 25Friday in Porto, Aveiro en Braga.</p>
+
+
+
+<p class="wp-block-paragraph">25Friday werd in 2018 opgericht en levert nearshore softwareteams voor Nederlandse opdrachtgevers. Voorlopig blijft het onder eigen naam actief.</p>
+
+
+
+<h5 class="wp-block-heading">Tool helpt slachtoffers van aankoopfraude bij keuze vervolgstap</h5>
+
+
+
+<p class="wp-block-paragraph">Slachtoffers van online aankoopfraude kunnen vanaf nu een adviestool gebruiken die aangeeft welke vervolgstap in hun situatie mogelijk is. De tool helpt gebruikers bijvoorbeeld bij de keuze tussen het doen van een melding, aangifte of het inschakelen van juridische hulp.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens cijfers van het CBS werd in 2025 bijna acht procent van de Nederlanders van vijftien jaar en ouder slachtoffer van aankoopfraude.</p>
+
+
+
+<p class="wp-block-paragraph">De adviestool is ondergebracht bij de Fraudehelpdesk (gratis beschikbaar via <a href="https://www.fraudehelpdesk.nl/" data-type="link" data-id="https://www.fraudehelpdesk.nl/" target="_blank" rel="noopener">fraudehelpdesk.nl</a>) en brengt kennis en ondersteuning van meerdere organisaties samen. Aan de ontwikkeling werkten de Politie, de Fraudehelpdesk, de Nederlandse Vereniging van Banken, Stichting Achmea Rechtsbijstand, de Landelijke Associatie Van Gerechtsdeurwaarders (LAVG) en Meta mee.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/28/kort-groene-hart-ziekenhuis-over-op-hix-online-adviestool-over-fraude-en-meer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/11/Livegang-HiX-Groene-Hart-Ziekenhuis.jpg" medium="image" />	</item>
+		<item>
+		<title>Protest tegen SAP en Oracle bij softwaretender Wageningen University</title>
+		<link>https://www.computable.nl/2026/11/27/protest-tegen-sap-en-oracle-bij-softwaretender-wageningen-university/</link>
+					<comments>https://www.computable.nl/2026/11/27/protest-tegen-sap-en-oracle-bij-softwaretender-wageningen-university/#respond</comments>
+		
+		<dc:creator><![CDATA[Rik Sanders]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2026 16:00:00 +0000</pubDate>
+				<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[Business Applications]]></category>
+		<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[Onderwijs]]></category>
+		<category><![CDATA[Software & Development]]></category>
+		<category><![CDATA[Sourcing & Vendor Management]]></category>
+		<category><![CDATA[Vendor Management]]></category>
+		<category><![CDATA[Aanbesteding]]></category>
+		<category><![CDATA[ERP]]></category>
+		<category><![CDATA[ethiek]]></category>
+		<category><![CDATA[geopolitiek]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463348</guid>
+
+					<description><![CDATA[Wageningen University &#038; Research (WUR) ligt onder vuur vanwege een aanbesteding voor nieuwe software. Zo'n zevenhonderd medewerkers, studenten en alumni hebben een petitie ondertekend waarin ze de universiteit oproepen geen zaken te doen met softwareleveranciers Oracle en SAP.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>Wageningen University &amp; Research (WUR) ligt onder vuur vanwege een aanbesteding voor nieuwe hr-, inkoop- en financiële software. Zo&#8217;n zevenhonderd medewerkers, studenten en alumni hebben een petitie ondertekend waarin ze de universiteit oproepen geen zaken te doen met softwareleveranciers Oracle en SAP. <br></strong><br>Aanleiding is een aanbesteding ter waarde van naar schatting acht tot negen miljoen euro voor de vervanging van het verouderde MyHR-systeem en de huidige hr-, inkoop- en financiële applicaties. Uit marktonderzoek van de universiteit kwamen Oracle en SAP naar voren als geschikte leveranciers.</p>
+
+
+
+<p class="wp-block-paragraph">De actievoerders, onder wie onderzoeker David Katzin van Wageningen Staff for Justice, stellen dat beide bedrijven betrokken zijn bij activiteiten die volgens hen bijdragen aan mensenrechtenschendingen in relatie tot Israël. De petitie volgt op eerdere oproepen vanuit de WUR Council om in de aanbesteding eisen op te nemen rond mensenrechten. Volgens <a href="https://www.resource-online.nl/index.php/2026/11/06/wur-moet-geen-zaken-doen-met-oracle-en-sap/" data-type="link" data-id="https://www.resource-online.nl/index.php/2026/11/06/wur-moet-geen-zaken-doen-met-oracle-en-sap/" target="_blank" rel="noopener">het universiteitsblad Resource</a> heeft het bestuur die suggestie niet overgenomen en beroept het zich op de aanbestedingsregels. Bedrijven konden zich tot 12 november aanmelden voor de aanbesteding.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens een woordvoerder van de Wageningse universiteit is de petitie inmiddels aangeboden aan de medezeggenschapsraad omdat niemand van het collegebestuur beschikbaar was. De raad zal de kritiek hoogstwaarschijnlijk nog eens onder de aandacht van het bestuur brengen. &nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/27/protest-tegen-sap-en-oracle-bij-softwaretender-wageningen-university/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/02/shutterstock_2696712067.jpg" medium="image" />	</item>
+		<item>
+		<title>Black Friday: bijna 1 op 5 nieuwe ‘koop­jes­do­mei­nen’ is verdacht</title>
+		<link>https://www.computable.nl/2026/11/27/black-friday-bijna-1-op-5-nieuwe-koopjesdomeinen-is-verdacht/</link>
+					<comments>https://www.computable.nl/2026/11/27/black-friday-bijna-1-op-5-nieuwe-koopjesdomeinen-is-verdacht/#respond</comments>
+		
+		<dc:creator><![CDATA[William Visterin]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[Security & Risk]]></category>
+		<category><![CDATA[fraude]]></category>
+		<category><![CDATA[Phishing]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463363</guid>
+
+					<description><![CDATA[Naar aanleiding van Black Friday waarschuwt Check Point Research voor nepwebshops en phishing. Zo werden in oktober en begin november meer dan vierduizend nieuwe domeinnamen geregistreerd met termen als ‘Black Friday’ of de naam van grote webwinkels en koeriers.]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph"><strong>Naar aanleiding van Black Friday waarschuwt Check Point Research voor nepwebshops en <a href="https://www.computable.nl/topics/phishing/">phishing</a>. Zo werden in oktober en begin november meer dan vierduizend nieuwe domeinnamen geregistreerd met termen als ‘Black Friday’ of de naam van grote webwinkels en koeriers. Bijna een op de vijf geldt nu al als risicovol.</strong><br><br>Dat blijkt uit cijfers van securitybedrijf Check Point Research. De onderzoekers troffen onder meer een nagemaakte Walmart-webshop aan met een iPad voor 49,99 dollar, valse inlogpagina’s van Amazon, Temu en AliExpress en nepmeldingen van DHL, FedEx en UPS die gegevens moeten buitmaken.<br><br>‘Criminelen bouwen vandaag complete webshops na, met het logo, de kleuren en zelfs de klantenservice van het echte merk’, aldus Zahier Madhar, cybersecurityspecialist bij Check Point Software Technologies. ‘De tijd van overduidelijke spelfouten ligt achter ons.’</p><p class="wp-block-paragraph">Dat Black Friday en de eindejaarsperiode hoogdagen zijn voor fraudeurs, blijkt ook uit Belgische cijfers van de FOD Economie die DNS Belgium, de beheerder van .be-domeinnamen opvroeg. Vorig jaar kwamen er in totaal 7.190 meldingen over frauduleuze webshops binnen, goed voor 9,5 miljoen euro aan gerapporteerde schade. Opvallend: ruim 2.600 van die meldingen en 4,4 miljoen euro aan schade kwamen er pas in de laatste maanden van het jaar bij. Dat is meer dan een derde van alle meldingen en bijna de helft van de totale schade.</p><p class="wp-block-paragraph"></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/27/black-friday-bijna-1-op-5-nieuwe-koopjesdomeinen-is-verdacht/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/11/shutterstock_2079918817.jpg" medium="image" />	</item>
+		<item>
+		<title>Kabinet zint op harde reactie op US Match Act</title>
+		<link>https://www.computable.nl/2026/11/27/kabinet-zint-op-harde-reactie-op-us-match-act/</link>
+					<comments>https://www.computable.nl/2026/11/27/kabinet-zint-op-harde-reactie-op-us-match-act/#comments</comments>
+		
+		<dc:creator><![CDATA[Alfred Monterie]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2026 09:11:34 +0000</pubDate>
+				<category><![CDATA[Overheid]]></category>
+		<category><![CDATA[Cloud & Infrastructure]]></category>
+		<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[Chips]]></category>
+		<category><![CDATA[geopolitiek]]></category>
+		<category><![CDATA[kabinet-Jetten]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463315</guid>
+
+					<description><![CDATA[Nederland zint op forse tegenmaatregelen als de VS ons land scherpere beperkingen oplegt voor de export van ASML’s chipfabricage-machines naar China. Het aannemen van de Amerikaanse Match Act vraagt om een tegenreactie, aldus minister Sjoerd Sjoerdsma.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>Nederland zint op forse tegenmaatregelen als de VS ons land scherpere beperkingen oplegt voor de export van ASML’s chipfabricage-machines naar China. Het aannemen van de Amerikaanse Match Act vraagt om een tegenreactie, aldus minister Sjoerd Sjoerdsma (Buitenlandse Handel en Ontwikkelingssamenwerking) donderdag in de Tweede Kamer. </strong></p>
+
+
+
+<p class="wp-block-paragraph">De bewindsman wil dat het Amerikaanse Congres dit wetsvoorstel met extraterritoriale werking van tafel haalt. Het is niet acceptabel als de VS zeggenschap eisen over onze technologie. Sjoerdsma: ‘De vlag boven ASML is rood, wit, blauw en daar zitten geen sterren in.’ Mocht het niet lukken het Congres tot andere gedachten te bewegen, dan mag die wet onze chipindustrie, momenteel de enige grote gangmaker in de Nederlandse economie, niet schaden. Regering en Tweede Kamer zijn het daarover roerend met elkaar eens. Zo <a href="https://eur04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.computable.nl%2F2026%2F11%2F20%2Fgrote-zorgen-over-amerikaanse-exportcontroles-op-chipmachines%2F&amp;data=05%7C02%7Crik%40computable.nl%7Cd173fbde05da476b32dd08df4bd939c6%7C444e0d0f87a74f26a0a94111f24cf350%7C0%7C0%7C639313068530319360%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=DiIfULFea7lGVyeeSLnZ3PyI9U2o9x5rzww80OTjlrQ%3D&amp;reserved=0">bleek</a> al eerder.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Ook Duitsland dat veel belangrijke componenten levert aan ASML, en Frankrijk alsmede andere EU-lidstaten steunen Nederland. Buiten de EU ondervinden ook andere landen met belangen in de chipindustrie zoals Zuid-Korea, Taiwan en Japan zich grote zorgen over dit wetsvoorstel. Maar anders dan Nederland houden die landen zich vrij stil.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Minister Sjoerdsma vindt dat Nederland niet alle kastanjes uit het vuur moet halen. Hij is het met Michiel Hoogeveen (JA21) eens dat al deze landen baat hebben bij een gemeenschappelijk diplomatiek tegen-offensief.&nbsp;</p>
+
+
+
+<h5 class="wp-block-heading">Geopolitieke maatregelen</h5>
+
+
+
+<p class="wp-block-paragraph">Aanstaande maandag, wanneer Sjoerdsma hierover in Brussel spreekt met zijn Europese ambtgenoten, zal de minister aandringen op het inzetten van een breed instrumentarium. Hij onthulde geen details om geen slapende honden wakker te maken. Wel moet de EU in kaart brengen waar we de duim hebben op de ader van de economie van andere landen.’ Met ASML als enige maker van de meest geavanceerde chipfabricage-machines heeft Nederland een sterke troefkaart in handen.</p>
+
+
+
+<p class="wp-block-paragraph">Sjoerdsma zal de vraag aan de orde stellen of de EU zich voldoende kan verdedigen tegen geopolitieke maatregelen als de Match Act en, zo niet, welke nieuwe tegenmaatregelen erbij kunnen komen. Met wat creativiteit moet dat lukken.</p>
+
+
+
+<p class="wp-block-paragraph">Het Volt-kamerlid Dassen wees erop dat het Amerikaanse Congres alleen tot intrekking van het wetsvoorstel valt te bewegen als de VS voldoende duidelijk wordt gemaakt dat tegenmaatregelen voor hen forse consequenties kunnen hebben. De Tweede Kamer is het er over eens dat de Amerikaanse Match Act een sterke precedentwerking kan hebben. Deze wet is een symptoom van een bredere ontwikkeling, zei het Pro-kamerlid&nbsp; Suzanne Kröger.&nbsp; Sjoerdsma ziet dat ook: ‘Grote machtsblokken willen anderen de wil opleggen.’ En dat is onaanvaardbaar.</p>
+
+
+
+<p class="wp-block-paragraph">Kröger zei dat als Nederland soeverein wil zijn, strategische autonomie noodzakelijk is. Volgens Sjoerdsma moeten handelsverdragen zoals die met Indonesië en India daarom niet alleen een economisch karakter hebben maar ook een grote politieke component: namelijk de verzekering dat zeldzame grondstoffen worden geleverd. Voor de chipindustrie is dat belangrijk. De minister vindt met het oog daarop dat de EU de ‘vriendengroep’ van geopolitieke medestanders moet uitbreiden.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/27/kabinet-zint-op-harde-reactie-op-us-match-act/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/06/shutterstock_2703503679.jpg" medium="image" />	</item>
+		<item>
+		<title>Politieacademie werkt aan slimme databank voor cold cases</title>
+		<link>https://www.computable.nl/2026/11/27/politieacademie-werkt-aan-slimme-databank-voor-cold-cases/</link>
+					<comments>https://www.computable.nl/2026/11/27/politieacademie-werkt-aan-slimme-databank-voor-cold-cases/#comments</comments>
+		
+		<dc:creator><![CDATA[Pim van der Beek]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2026 06:00:00 +0000</pubDate>
+				<category><![CDATA[Data & AI]]></category>
+		<category><![CDATA[Business Intelligence]]></category>
+		<category><![CDATA[Data Analytics]]></category>
+		<category><![CDATA[Data Visualization]]></category>
+		<category><![CDATA[Insights & BI]]></category>
+		<category><![CDATA[Overheid]]></category>
+		<category><![CDATA[Security & Risk]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[politie]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463033</guid>
+
+					<description><![CDATA[Onderzoekers van de Politieacademie, Hogeschool Saxion en de Universiteit Twente werken aan een nieuwe databank die rechercheurs moet helpen bij het reconstrueren van misdrijven en het oplossen van oude moordzaken (cold cases) en zware misdrijven. Met ai moeten de scenario's worden gemaakt.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>Onderzoekers van de Politieacademie, Hogeschool Saxion en de Universiteit Twente werken aan een nieuwe databank die rechercheurs moet helpen bij het reconstrueren van misdrijven en het oplossen van oude moordzaken (cold cases). De databank moet gegevens uit politiedossiers, 3D-reconstructies van plaatsen delict, sensordata en open source intelligence combineren. Op termijn moeten met ai op basis van die gegevens automatisch de meest waarschijnlijke scenario&#8217;s van een misdrijf</strong> <strong>naar boven komen.</strong></p>
+
+
+
+<p class="wp-block-paragraph">Dat vertelde Jaap Knotter, lector aan de Politieacademie en Saxion Applied University. Hij is hoofd van het joint lectoraat Technologies for Criminal Investigations (TCI). Computable sprak hem tijdens een bijeenkomst in Deventer waar een nieuwe methode voor het digitaal vastleggen van plaatsen delict werd gedemonstreerd.</p>
+
+
+
+<p class="wp-block-paragraph">Knotter legt uit dat rechercheurs in ieder onderzoek antwoord moeten zien te vinden op de zogenoemde zeven gouden W-vragen: wie, wat, waar, waarmee, op welke wijze, wanneer en waarom. Die vragen vormen de basis voor het verhaal dat uiteindelijk door een officier van justitie wordt gepresenteerd en waarop een rechter zijn oordeel baseert.</p>
+
+
+
+<p class="wp-block-paragraph">&#8216;Het verhaal is cruciaal&#8217;, benadrukt Knotter. &#8216;Op de genoemde vragen wil je antwoord hebben. Maar je wil ook graag een goed verhaal gaan bouwen, waar de antwoorden op die w&#8217;s in versleuteld zitten, gebaseerd op bewijs of technische aanwijzingen en dat onomstotelijk is vastgesteld.&#8217;</p>
+
+
+
+<h5 class="wp-block-heading">Narrative approach</h5>
+
+
+
+<p class="wp-block-paragraph">De nieuwe databank bouwt voort op de zogeheten <em>narrative approach</em>, een methode die is ontwikkeld door prof. dr. Peter de Kock. Deze benadering gaat ervan uit dat ieder verhaal is opgebouwd uit twaalf elementaire scenario-componenten.</p>
+
+
+
+<p class="wp-block-paragraph">Voorbeelden daarvan zijn de dader (protagonist), het slachtoffer (antagonist), locatie (arena) en context. Door een databank op basis van die bouwstenen te ontwikkelen, moet het mogelijk worden automatisch nieuwe scenario&#8217;s en verhaallijnen samen te stellen.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens Knotter kent de huidige recherchepraktijk een belangrijk nadeel. Scenario&#8217;s en hypothesen worden nu grotendeels opgesteld door ervaren rechercheurs op basis van hun expertise, eerdere ervaringen en de informatie die tijdens een onderzoek beschikbaar komt.</p>
+
+
+
+<p class="wp-block-paragraph">&#8216;Waarom je dan een bepaalde verhaallijn hoger scoort of hoger prioriteert ten opzichte van een andere, is vaak heel lastig uit te leggen. Je kunt het onmogelijk kwantificeren of meetbaar maken&#8217;, aldus de lector.</p>
+
+
+
+<p class="wp-block-paragraph">De nieuwe databank moet dat proces beter onderbouwen. Knotter: &#8216;Door onderzoeken op te bouwen uit vaste scenario-elementen wordt inzichtelijker waarom een bepaald scenario waarschijnlijker is.&#8217;</p>
+
+
+
+<h5 class="wp-block-heading">Objectieve sensordata</h5>
+
+
+
+<p class="wp-block-paragraph">Een tweede belangrijke vernieuwing is het gebruik van sensordata naast verklaringen van getuigen, slachtoffers en verdachten. Veelgebruikte sensordata zijn: foto- en videobeelden, 3D-scans en beelden van 360-gradencamera&#8217;s voor het digitaal vastleggen van een plaats delict. Dat gebeurt inclusief afstanden, objecten en sporen-, gps- en locatiegegevens van smartphones, auto&#8217;s, navigatiesystemen en trackers. Ook telecomgegevens, zoals zendmastlocaties en tijdstippen van communicatie en biometrische sensoren, zoals dna-sporen, vingerafdrukken, gezichtsherkenning of stemanalyse, zijn voorbeelden van bruikbare sensordata. </p>
+
+
+
+<p class="wp-block-paragraph">&#8216;Veel opsporingsonderzoek is gebaseerd op wat mensen hebben verteld&#8217;, zegt Knotter. &#8216;Maar wij willen daarnaast een database vormen gebaseerd op wat uit sensordata komt.&#8217; Volgens hem heeft dat belangrijke voordelen. &#8216;Sensordata is kwantificeerbaar, objectief, controleerbaar en herhaalbaar. Dus alle eisen voor wetenschappelijk onderzoek zitten daarin.&#8217;</p>
+
+
+
+<p class="wp-block-paragraph">De onderzoekers willen gegevens uit verschillende typen sensoren combineren met open source intelligence. Politiegegevens kunnen daar later eventueel naast worden gelegd, maar blijven bewust gescheiden van het onderzoeksplatform. &#8216;Daar zit echt een hele harde knip. Dat doen we bewust om niet ook maar de suggestie te wekken dat onze data vermengen met politiesystemen.&#8217;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Digitale plaats delict</strong></p>
+
+
+
+<p class="wp-block-paragraph">Een belangrijke bron van data vormt de digitale vastlegging van plaatsen delict. Tijdens de demonstratie werden de sporen op de geënsceneerde plaats delict van een moordzaak getoond. Met relatief eenvoudige 360-gradencamera&#8217;s worden vanuit verschillende hoeken duizenden beelden gemaakt. Software rekent die vervolgens om naar een vrijwel fotorealistische 3D-omgeving. Een tv-ploeg van <a href="https://www.oost.nl/nieuws/3720113/nieuwe-techniek-maakt-digitaal-teruggaan-naar-plaats-delict-makkelijker" data-type="link" data-id="https://www.oost.nl/nieuws/3720113/nieuwe-techniek-maakt-digitaal-teruggaan-naar-plaats-delict-makkelijker" target="_blank" rel="noopener">RTV Oost </a>en het RTL-programma Editie NL legden de demonstratie vast.</p>
+
+
+
+<p class="wp-block-paragraph">De methode maakt gebruik van <em>gaussian splatting</em>, een beeldtechniek waarbij miljoenen meetpunten worden opgeslagen als kleine digitale puntenwolken. Daardoor ontstaat een gedetailleerde driedimensionale reconstructie die vanuit verschillende standpunten bekeken kan worden.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens Knotter is deze aanpak aanzienlijk efficiënter dan bestaande methoden. Waar onderzoekers nu soms met dure lidar- en laserscanners dagen bezig zijn om een plaats delict volledig vast te leggen, kan dat met de nieuwe methode grotendeels geautomatiseerd plaatsvinden.</p>
+
+
+
+<p class="wp-block-paragraph">&#8216;Wat wij hier laten zien is dat het een stuk sneller kan als je gebruik maakt van lowtech-varianten&#8217;. Ook wordt bestudeerd hoe robotisering kan helpen om menselijke sporen van forensisch onderzoekers op een plaats delict te voorkomen. Volgens de onderzoekers is de methode zes tot tien keer sneller en goedkoper dan vergelijkbare technieken. In 2025 wonnen ze een <a href="https://www.computable.nl/2026/03/12/digitale-misdaadbestrijding-ai-gestuurd-forensisch-onderzoekssysteem-won-computable-award-2025/" data-type="link" data-id="https://www.computable.nl/2026/03/12/digitale-misdaadbestrijding-ai-gestuurd-forensisch-onderzoekssysteem-won-computable-award-2025/">Computable Award in de categorie Onderwijs</a> voor hun ‘ai-gestuurde forensische onderzoekssysteem.</p>
+
+
+
+<p class="wp-block-paragraph">Knotter vertelt dat collega Dimitar Rangalov, die onlangs zijn PhD afrondde op dit onderwerp, op dit moment bezig is met het verbeteren van het labellen en herkennen van sporen in de 3D-animaties. De verzamelde gegevens moeten uiteindelijk rechtstreeks in de nieuwe databank terechtkomen.</p>
+
+
+
+<h5 class="wp-block-heading">Cold cases </h5>
+
+
+
+<p class="wp-block-paragraph">De ambities reiken verder dan alleen het opslaan van gegevens. Uiteindelijk moet de databank automatisch mogelijke scenario&#8217;s van een misdrijf kunnen genereren. Een rechercheur zou het systeem dan bijvoorbeeld kunnen vragen wat er op een plaats delict gebeurd zou kunnen zijn. Op basis van de beschikbare gegevens genereert het systeem vervolgens verschillende mogelijke scenario&#8217;s, legt Knotter uit</p>
+
+
+
+<p class="wp-block-paragraph">De technologie moet daarbij niet bepalen wat er daadwerkelijk heeft plaatsgevonden. De gegenereerde scenario&#8217;s dienen als hypothesen die vervolgens door onderzoekers moeten worden getoetst. &#8216;We zeggen niet dat die narratieven waar zijn, maar die worden vervolgens onderzocht om het te kunnen verifiëren en te falsifiëren&#8217;, aldus Knotter. </p>
+
+
+
+<p class="wp-block-paragraph">Het systeem moet bovendien in een rangorde kunnen aangeven waarom een bepaald scenario aannemelijker lijkt dan een alternatief. Volgens de onderzoekers kan zo transparanter worden onderbouwd hoe conclusies tot stand komen. Dat moet niet alleen rechercheurs helpen bij hun onderzoek, maar ook officieren van justitie en rechters bij het beoordelen van bewijs en alternatieve scenario&#8217;s.</p>
+
+
+
+<p class="wp-block-paragraph">Het uiteindelijke doel is om meer aanknopingspunten te vinden in complexe strafzaken en het oplossingspercentage van onopgeloste moordzaken (cold cases) teverhogen. In Nederland zijn naar schatting tussen de 1.300 en 1.700 moordzaken die jarenlang onopgelost blijven. Slechts een klein deel daarvan wordt uiteindelijk alsnog opgelost. De onderzoekers hopen dat de combinatie van 3D-reconstructies, sensordata en ai-ondersteunde scenarioanalyse in een slimme databank daar verandering in gaat brengen.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/27/politieacademie-werkt-aan-slimme-databank-voor-cold-cases/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/11/Jaap_Knotter_16-9.jpg" medium="image" />	</item>
+		<item>
+		<title>Breder palet aan it-tenders in derde kwartaal</title>
+		<link>https://www.computable.nl/2026/11/27/breder-palet-aan-it-tenders-in-derde-kwartaal/</link>
+					<comments>https://www.computable.nl/2026/11/27/breder-palet-aan-it-tenders-in-derde-kwartaal/#respond</comments>
+		
+		<dc:creator><![CDATA[Rik Sanders]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2026 06:00:00 +0000</pubDate>
+				<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[IT Strategy]]></category>
+		<category><![CDATA[IT Strategy & Transformation]]></category>
+		<category><![CDATA[Leadership & organisation]]></category>
+		<category><![CDATA[Marktbewegingen]]></category>
+		<category><![CDATA[Outsourcing]]></category>
+		<category><![CDATA[Sourcing & Vendor Management]]></category>
+		<category><![CDATA[Aanbesteding]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463258</guid>
+
+					<description><![CDATA[De Nederlandse markt voor ict-aanbestedingen laat in het derde kwartaal van 2026 een gevarieerder beeld zien dan een kwartaal eerder. Waar de grootste publieke opdrachten in het tweede kwartaal vooral betrekking hadden op personeel en brokerdiensten, is nu sprake van een bredere mix.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>De Nederlandse markt voor ict-aanbestedingen laat in het derde kwartaal van 2026 een gevarieerder beeld zien dan een kwartaal eerder. Waar de grootste publieke opdrachten in het tweede kwartaal vooral betrekking hadden op personeel en brokerdiensten, is nu sprake van een bredere mix van software-, applicatie- en staffingcontracten.</strong></p>
+
+
+
+<p class="wp-block-paragraph">Dat blijkt uit de jongste Market Pulse van marktonderzoeker VPPipeline. Het aantal nieuw geïdentificeerde contracten daalde van zeventig in het tweede kwartaal naar 62 in het derde kwartaal. Managed services en outsourcing bleef met 32 contracten de grootste categorie, gevolgd door assets en licensing met 21 contracten.</p>
+
+
+
+<p class="wp-block-paragraph">De grootste opdracht kwam van de zeven Nederlandse umc’s. Zij gunden een raamovereenkomst voor standaardsoftware en aanverwante diensten aan Protinus. Het contract heeft een looptijd van zeven jaar en een maximale waarde van vierhonderd miljoen euro. Opvallend is dat uiteindelijk slechts één inschrijving werd ontvangen. De aanbestedingsprocedure was eerder tijdelijk opgeschort na ontvangst van een klacht.</p>
+
+
+
+<h5 class="wp-block-heading">Politie en RDW</h5>
+
+
+
+<p class="wp-block-paragraph">De Nationale Politie sloot een breed opgezette raamovereenkomst voor applicatiediensten met een waarde van driehonderd miljoen euro. Zes leveranciers werden geselecteerd voor werkzaamheden rond ontwikkeling, doorontwikkeling en beheer van applicaties: Atos, Capgemini, CGI, IBM, Info Support en Sopra Steria. De overeenkomst bestrijkt zowel bestaande als toekomstige digitale platformen en communicatiekanalen, waaronder desktop-, mobiele en andere digitale omgevingen.</p>
+
+
+
+<p class="wp-block-paragraph">Een derde grote opdracht is afkomstig van de RDW. De organisatie selecteerde vier leveranciers uit zestien inschrijvers voor een raamovereenkomst voor ict-professionals met een maximale waarde van 180 miljoen euro: Cimsolutions, Get There, Seven Stars en Sogeti. Bijzonder is dat de selectie volledig plaatsvond op basis van kwaliteit. Prijsafspraken worden pas gemaakt bij afzonderlijke aanvragen via minicompetities tussen de geselecteerde leveranciers.</p>
+
+
+
+<h5 class="wp-block-heading">Schiphol en Sittard</h5>
+
+
+
+<p class="wp-block-paragraph">De veruit grootste deal in het aflopen derde kwartaal was die tussen Royal Schiphol Group en HeadFirst Group, alleen daar zitten ook niet-ict-activiteiten onder. De luchthaven selecteert dit bedrijf als zogeheten managed service provider (MSP) voor de sourcing, selectie en het contractbeheer van tijdelijke externe professionals. De samenwerking start op 1 januari 2027 en volgt op een Europese aanbestedingsprocedure. Het contract heeft een looptijd van vier jaar en kan tweemaal met twee jaar worden verlengd. De geraamde totale waarde in het bestek is 1,04 miljard euro.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/27/breder-palet-aan-it-tenders-in-derde-kwartaal/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/03/shutterstock_2595599493.jpg" medium="image" />	</item>
+		<item>
+		<title>Overheid mist elk zicht op omvang van verouderde software</title>
+		<link>https://www.computable.nl/2026/11/26/overheid-mist-elk-zicht-op-omvang-van-verouderde-software/</link>
+					<comments>https://www.computable.nl/2026/11/26/overheid-mist-elk-zicht-op-omvang-van-verouderde-software/#comments</comments>
+		
+		<dc:creator><![CDATA[Alfred Monterie]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2026 16:00:00 +0000</pubDate>
+				<category><![CDATA[Overheid]]></category>
+		<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[IT Strategy & Transformation]]></category>
+		<category><![CDATA[Leadership & organisation]]></category>
+		<category><![CDATA[Regulatory Compliance]]></category>
+		<category><![CDATA[Security & Risk]]></category>
+		<category><![CDATA[Software & Development]]></category>
+		<category><![CDATA[Sourcing & Vendor Management]]></category>
+		<category><![CDATA[Vendor Management]]></category>
+		<category><![CDATA[CRA]]></category>
+		<category><![CDATA[Legacy]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463234</guid>
+
+					<description><![CDATA[De overheid heeft totaal geen zicht op de omvang van verouderde software, ondanks nieuwe cybersecurity-regels. Het Rijk beschikt niet over een centraal overzicht van systemen die draaien op software zonder beveiligingsupdates.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>De overheid heeft totaal geen zicht op de omvang van verouderde software, ondanks nieuwe cybersecurity-regels. Het Rijk beschikt niet over een centraal overzicht van systemen die draaien op software zonder beveiligingsupdates.</strong> <strong>Dat blijkt <a href="https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23405&amp;did=2026D60640" data-type="link" data-id="https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23405&amp;did=2026D60640" target="_blank" rel="noopener">uit antwoorden</a> van staatssecretaris Eric van der Burg (Binnenlandse Zaken) op vragen van het D66-kamerlid Sarah El Boujdaini over verouderde PHP-versies.</strong></p>
+
+
+
+<p class="wp-block-paragraph">Naar schatting draait 60 tot 70 procent van de PHP-servers wereldwijd op niet langer ondersteunde software. Op 21 oktober van dit jaar bracht de PHP Foundation met spoed <a href="https://www.computable.nl/2026/10/21/kritiek-php-lek-zet-miljoenen-websites-onder-druk/" data-type="link" data-id="https://www.computable.nl/2026/10/21/kritiek-php-lek-zet-miljoenen-websites-onder-druk/">updates</a> uit voor twee kritieke kwetsbaarheden in de programmeertaal PHP.  Een dag later gingen talloze websites en online diensten offline uit vrees voor misbruik van het lek. </p>
+
+
+
+<p class="wp-block-paragraph">De overheid legt de verantwoordelijkheid voor het opsporen, beoordelen en vervangen van verouderde software nadrukkelijk bij individuele organisaties. Maar BZK heeft geen flauw benul van de omvang van het probleem, nu er geen centraal overzicht blijkt te bestaan. Dat betekent dat juist in een periode van strengere Europese cybersecurity-wetgeving onduidelijk blijft hoeveel overheidssystemen nog afhankelijk zijn van software zonder beveiliging-ondersteuning.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens de staatssecretaris verplicht de Baseline Informatiebeveiliging Overheid 2 (BIO2) overheden om systemen actueel te houden en kwetsbaarheden tijdig te verhelpen. Wanneer software het einde van de levenscyclus heeft bereikt en geen updates meer ontvangt, moeten organisaties aanvullende beveiligingsmaatregelen treffen of de software vervangen. Afwijken kan alleen via een gemotiveerde ‘comply or explain’-aanpak.</p>
+
+
+
+<h5 class="wp-block-heading">Geen centraal beeld</h5>
+
+
+
+<p class="wp-block-paragraph">Ondanks die verplichtingen kan het ministerie van Binnenlandse Zaken niet aangeven hoeveel overheidsystemen momenteel draaien op software waarvoor geen beveiligingsupdates meer beschikbaar zijn. De verantwoordelijkheid ligt volgens Van der Burg bij afzonderlijke overheidsorganisaties.</p>
+
+
+
+<p class="wp-block-paragraph">Dat gebrek aan inzicht speelt terwijl verschillende toezichthouders de afgelopen jaren juist hebben gewezen op risico&#8217;s van verouderde ict. Zo plaatste de Algemene Rekenkamer afgelopen mei ‘niet-weerbare ict, verouderde systemen en leveranciersafhankelijkheid’ op haar hoogrisicolijst.</p>
+
+
+
+<p class="wp-block-paragraph">Gemeenten leggen via Ensia (Eenduidige Normatiek Single Information Audit) vast hoe zij omgaan met risico&#8217;s rond verouderde software. Tot nu toe gebeurde dat vooral voor interne verantwoording aan college en gemeenteraad. Met de komst van de Cyberbeveiligingswet krijgt deze rapportage ook een rol in het toezicht door de Rijksinspectie Digitale Infrastructuur (RDI).</p>
+
+
+
+<p class="wp-block-paragraph">Van der Burg benadrukt dat organisaties zelf verantwoordelijk blijven voor het inventariseren van verouderde systemen en het beheersen van de risico&#8217;s daarvan.</p>
+
+
+
+<h5 class="wp-block-heading">Leveranciers blijven blinde vlek</h5>
+
+
+
+<p class="wp-block-paragraph">De staatssecretaris erkent dat overheidsorganisaties niet altijd weten welke verouderde softwarecomponenten in producten van leveranciers zijn verwerkt. Componenten zoals PHP kunnen verborgen zitten in software die door externe partijen wordt ontwikkeld en onderhouden.</p>
+
+
+
+<p class="wp-block-paragraph">Nieuwe regelgeving moet daarin verbetering brengen. De Europese Cyberbeveiligingswet verplicht organisaties rekening te houden met de digitale weerbaarheid van leveranciers en met veilige ontwikkelprocessen. Daarnaast moeten organisaties beleid voeren voor het beheer van hun bedrijfsmiddelen en software.</p>
+
+
+
+<p class="wp-block-paragraph">Toch waarschuwt Van der Burg dat normenkaders en zorgplichten niet automatisch betekenen dat alle verouderde afhankelijkheden bekend zijn. Als cruciale informatie ontbreekt, moet die volgens hem eerst worden onderzocht.</p>
+
+
+
+<h5 class="wp-block-heading">Europese regels bieden niet direct oplossing</h5>
+
+
+
+<p class="wp-block-paragraph">De Cyber Resilience Act (CRA) moet vanaf december 2027 zorgen voor strengere beveiligingseisen aan digitale producten. Volgens Van der Burg biedt de verordening dan een ‘sluitend kader’ voor de veiligheid van nieuwe digitale producten.</p>
+
+
+
+<p class="wp-block-paragraph">Voor bestaande systemen verandert dat echter weinig. De beveiliging van reeds in gebruik zijnde overheidsystemen blijft primair de verantwoordelijkheid van de organisaties zelf. Wanneer ondersteuning of beveiligingsupdates ontbreken, moeten zij op basis van een risicoanalyse bepalen of aanvullende beveiliging, beperking van gebruik of volledige vervanging noodzakelijk is.</p>
+
+
+
+<h5 class="wp-block-heading">Geen cijfers over handhaving</h5>
+
+
+
+<p class="wp-block-paragraph">Op vragen over de handhaving van cybersecurity-eisen richting leveranciers moet de staatssecretaris het antwoord schuldig blijven. Overheidsbrede cijfers over situaties waarin leveranciers zijn aangesproken omdat zij geen beveiligingsupdates meer leverden, zijn niet beschikbaar.</p>
+
+
+
+<p class="wp-block-paragraph">De ondersteuning van gemeenten bij het opsporen en vervangen van verouderde software blijft voorlopig vooral in handen van de Informatiebeveiligingsdienst (IBD), onderdeel van de Vereniging van Nederlandse Gemeenten. Zij geeft hiervoor kennisproducten uit en faciliteert kennisuitwisseling.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/26/overheid-mist-elk-zicht-op-omvang-van-verouderde-software/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/04/shutterstock_2482811801-Panchenko-Vladimir-16x9-1.jpg" medium="image" />	</item>
+		<item>
+		<title>Discussie over NS en Microsoft barst los</title>
+		<link>https://www.computable.nl/2026/11/26/discussie-over-ns-en-microsoft-barst-los/</link>
+					<comments>https://www.computable.nl/2026/11/26/discussie-over-ns-en-microsoft-barst-los/#respond</comments>
+		
+		<dc:creator><![CDATA[Pim van der Beek]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2026 14:26:25 +0000</pubDate>
+				<category><![CDATA[Cloud & Infrastructure]]></category>
+		<category><![CDATA[AWS]]></category>
+		<category><![CDATA[Cloud Native]]></category>
+		<category><![CDATA[Datacenter & Infrastructure]]></category>
+		<category><![CDATA[Overheid]]></category>
+		<category><![CDATA[Public Cloud]]></category>
+		<category><![CDATA[Security & Risk]]></category>
+		<category><![CDATA[Azure]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[Public cloud]]></category>
+		<category><![CDATA[soevereiniteit]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463156</guid>
+
+					<description><![CDATA[De beslissing van de Nederlandse Spoorwegen (NS) om applicaties naar Microsoft Azure te verplaatsen maakt een felle discussie los over cybersecurity, digitale soevereiniteit en afhankelijkheid van Amerikaanse techbedrijven.]]></description>
+										<content:encoded><![CDATA[
+<h4 class="wp-block-heading">Van ‘onacceptabel’ tot ‘zorgvuldig afgewogen’</h4>
+
+
+
+<p class="wp-block-paragraph"><strong>De beslissing van de Nederlandse Spoorwegen (NS) om applicaties naar Microsoft Azure te verplaatsen maakt een felle discussie los over cybersecurity, digitale soevereiniteit en afhankelijkheid van Amerikaanse techbedrijven. Waar critici de stap naar de cloudgigant als ‘volstrekt onacceptabel’ bestempelen, verdedigt NS-ciso Dimitri van Zantvliet de keuze juist als een zorgvuldig afgewogen maatregel om de cyberweerbaarheid en beheersbaarheid van het ict-landschap van de spoorvervoerder te versterken.</strong></p>
+
+
+
+<p class="wp-block-paragraph">NS-ciso Dimitri van Zantvliet heeft in een <a href="https://lnkd.in/p/e4PGkUZC" target="_blank" rel="noopener">uitgebreid artikel gereageerd op de kritiek</a> die de spoorvervoerder krijgt op de keuze om applicaties te verplaatsen naar de Microsoft-cloud Azure. Hij verdedigt daarin de keuze van het spoorvervoerbedrijf om op dit moment <a href="https://www.computable.nl/2026/11/19/ns-europees-alternatief-voor-azure-nog-niet-veilig-genoeg/" target="_blank" rel="noopener">nog niet te kiezen voor een Europees alternatief</a>, omdat beveiliging en continuïteit volgens hem zwaarder wegen dan digitale soevereiniteit.</p>
+
+
+
+<p class="wp-block-paragraph">Bovendien plaatst hij de nodige nuances bij begrippen als soevereiniteit en legt hij uit waarom de keuze voor Microsoft volgens hem voor bepaalde processen, applicaties en gegevensbeveiliging gerechtvaardigd is.</p>
+
+
+
+<p class="wp-block-paragraph">Het spoorvervoerbedrijf maakte onlangs bekend ongeveer dertig van zijn 350 applicaties naar Azure te verplaatsen. Die beslissing leidde op fora en LinkedIn tot stevige kritiek. Onder meer van Simon Besteman, belangenbehartiger voor soevereine datacenters. Hij noemde de keuze om applicaties naar Microsoft Azure te brengen <a href="https://lnkd.in/p/ewXwsQRV" target="_blank" rel="noopener">‘volstrekt onacceptabel’.</a></p>
+
+
+
+<p class="wp-block-paragraph">Besteman, die deze zomer overstapte van belangenorganisatie Dutch Cloud Community naar de Nederlandse Soevereine Datacenter Coöperatie, stelt: ‘Hun argumenten zijn ongeloofwaardig: er zou geen Europees alternatief zijn, terwijl links en rechts grote bedrijven en overheden, zoals de Belastingdienst, wel degelijk goede alternatieven vinden en grote leveranciers inschakelen om die te beheren.’ Hij vervolgt: ‘En dan komen ze, nog geen week nadat alle Microsoft-diensten er wereldwijd een hele dag uit hebben gelegen, met het argument van betrouwbaarheid. Jongens, als je vorige week al in die cloud had gezeten, had er anderhalve dag geen trein kunnen rijden in Nederland.’</p>
+
+
+
+<p class="wp-block-paragraph">Besteman hoopt dat NS vanuit het ministerie en de politiek wordt gedwongen transparant te communiceren over hoe dit proces is verlopen en uiteindelijk van koers verandert. Ook vanuit de eigen organisatie klinkt kritiek. Op Tweakers, dat naar aanleiding van een Computable-artikel publiceerde over de verhuizing van NS-applicaties naar de Microsoft-cloud, reageert een anonieme ict&#8217;er van NS instemmend op de keuze voor Microsoft. Een andere collega <a href="https://tweakers.net/nieuws/254742/ns-wil-storingen-verminderen-door-software-naar-microsoft-cloud-te-verplaatsen.html" target="_blank" rel="noopener">haalt dat betoog echter onderuit.</a></p>
+
+
+
+<p class="wp-block-paragraph">Van Zantvliet reageert op LinkedIn met een uitgebreid betoog waarin hij naar eigen zeggen ‘de praktijk achter de keuzes van NS’ uiteenzet. Hij is door media en vakgenoten meermaals gevraagd om zijn visie op de cloudstrategie van de spoorvervoerder te geven.</p>
+
+
+
+<p class="wp-block-paragraph">Hij benadrukt dat NS al jarenlang een hybride en divers it-landschap heeft. Een aanzienlijk deel van de websites draait op AWS, terwijl daarnaast uiteenlopende SaaS-oplossingen en Nederlandse datacenters worden gebruikt. Die diversiteit biedt keuzevrijheid en concurrentie, maar zorgt ook voor extra complexiteit op het gebied van beheer, beveiliging, expertise en architectuur. Daarom ziet NS voordelen in verdere standaardisatie op Azure, omdat beveiligingsmaatregelen, beheerprocessen en kennisontwikkeling dan eenvoudiger en consistenter kunnen worden georganiseerd.</p>
+
+
+
+<h5 class="wp-block-heading">Security</h5>
+
+
+
+<p class="wp-block-paragraph">Van Zantvliet maakt duidelijk dat NS wordt geconfronteerd met een snel groeiend cyberdreigingslandschap, &#8217;terwijl kwetsbaarheden steeds sneller worden misbruikt en gespecialiseerde securitycapaciteit schaars is&#8217;. Tegen die achtergrond kiest NS voorlopig voor de cloudomgeving die volgens het bedrijf de meest volwassen beveiligingsmogelijkheden, dreigingsinformatie en operationele ervaring biedt.</p>
+
+
+
+<p class="wp-block-paragraph">‘Onze samenwerking met Microsoft is intensief en kritisch. Na de ernstige beveiligingsincidenten bij Microsoft volgen we hun Secure Future Initiative nauwgezet. Daarnaast is er periodiek overleg met de ciso van Microsoft en zijn team in Redmond, soms gezamenlijk via de CISO Circle of Trust, waarbij we ook stevige gesprekken voeren over de voortgang, beveiligingsprestaties en noodzakelijke verbeteringen. Vertrouwen in een strategische leverancier vraagt om transparantie, aanspreekbaarheid en aantoonbare resultaten’, stelt Van Zantvliet.</p>
+
+
+
+<h5 class="wp-block-heading">StackIT</h5>
+
+
+
+<p class="wp-block-paragraph">Over Europese cloudalternatieven zegt hij dat deze technisch gezien steeds volwassener worden en op sommige onderdelen al serieuze opties bieden. Toch acht hij de ecosystemen van hyperscalers als Microsoft op dit moment verder ontwikkeld dankzij jarenlange investeringen in cloudplatformen, beveiliging, automatisering en integraties. Volgens Van Zantvliet moet daarom per toepassing objectief worden beoordeeld of een Europees alternatief dezelfde functionaliteit, operationele volwassenheid en continuïteit kan bieden. NS onderzoekt die mogelijkheden onder meer met een proof of concept van het Duitse StackIT-platform.</p>
+
+
+
+<p class="wp-block-paragraph">Tegelijkertijd onderstreept hij dat digitale soevereiniteit een legitiem en belangrijk thema is. NS erkent de zorgen over afhankelijkheid van Amerikaanse technologiebedrijven en ziet voordelen in meer Europese zeggenschap over data en infrastructuur. Hij waarschuwt echter dat ook Europese aanbieders afhankelijk zijn van internationale technologieketens en dat volledige soevereiniteit niet eenvoudig te realiseren is. Daarom kiest NS voor een pragmatische langetermijnstrategie: Europese alternatieven actief onderzoeken, kennis opbouwen, open standaarden ondersteunen en architecturen zo ontwerpen dat overstappen naar andere leveranciers mogelijk blijft.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens Simon Besteman zal de druk op partijen als NS en andere grote (semi-)publieke organisaties toenemen om op zijn minst hun keuze voor Amerikaanse big tech beter te onderbouwen.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/26/discussie-over-ns-en-microsoft-barst-los/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/11/shutterstock_2767889519.jpg" medium="image" />	</item>
+		<item>
+		<title>Kort: Ai-gebruik onder NL-bedrijven verdubbelt, Nederland hekkensluiter ai-verzekering (en meer)</title>
+		<link>https://www.computable.nl/2026/11/26/kort-ai-gebruik-onder-nl-bedrijven-verdubbelt-nederland-hekkensluiter-ai-verzekering-en-meer/</link>
+					<comments>https://www.computable.nl/2026/11/26/kort-ai-gebruik-onder-nl-bedrijven-verdubbelt-nederland-hekkensluiter-ai-verzekering-en-meer/#respond</comments>
+		
+		<dc:creator><![CDATA[Rik Sanders]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2026 11:00:00 +0000</pubDate>
+				<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[Cloud & Infrastructure]]></category>
+		<category><![CDATA[Data & AI]]></category>
+		<category><![CDATA[Data & AI Governance]]></category>
+		<category><![CDATA[Data Operations]]></category>
+		<category><![CDATA[Digitale werkplek]]></category>
+		<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Cyberverzekering]]></category>
+		<category><![CDATA[Data engineering]]></category>
+		<category><![CDATA[Kort]]></category>
+		<category><![CDATA[Overname]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463072</guid>
+
+					<description><![CDATA[In dit nieuwsoverzicht: AI-gebruik bedrijven ruim verdubbeld, NDI en Overhoff fuseren, Breda in teken van technologie en cultuur, QSBN neemt data &#038; ai-specialist Wave5 over en slechts kwart Nederlandse bedrijven verzekerd voor ai-incidenten.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>In dit nieuwsoverzicht: AI-gebruik bedrijven ruim verdubbeld, NDI en Overhoff fuseren, Breda in teken van technologie en cultuur, QSBN neemt data &amp; ai-specialist Wave5 over en slechts kwart Nederlandse bedrijven verzekerd voor ai-incidenten.</strong></p>
+
+
+
+<h5 class="wp-block-heading">Ai-gebruik bedrijven ruim verdubbeld, sterkste toename in mkb</h5>
+
+
+
+<p class="wp-block-paragraph">Vier op de tien Nederlandse bedrijven gebruiken inmiddels een of meer ai-technologieën. Dat blijkt <a href="https://www.cbs.nl/nl-nl/nieuws/2026/48/ai-gebruik-bedrijven-ruim-verdubbeld-sterkste-toename-in-mkb" data-type="link" data-id="https://www.cbs.nl/nl-nl/nieuws/2026/48/ai-gebruik-bedrijven-ruim-verdubbeld-sterkste-toename-in-mkb" target="_blank" rel="noopener">uit nieuwe cijfers</a> van het Centraal Bureau voor de Statistiek (CBS). In 2026 zet 41 procent van de bedrijven ai in, tegenover 18 procent een jaar eerder.</p>
+
+
+
+<p class="wp-block-paragraph">De sterkste groei is zichtbaar bij midden- en kleinbedrijven met twee tot 250 werknemers. Grote bedrijven lopen voorop: 89 procent maakt gebruik van ai. Bedrijven zetten ai het vaakst in voor marketing en verkoop. Het gebruik voor boekhouding, controle en financieel beheer nam het sterkst toe.</p>
+
+
+
+<p class="wp-block-paragraph">De populairste toepassing is het genereren van tekst, gesproken tekst of code. Het gebruik daarvan steeg van 8 naar 28 procent. De ict-sector kent met 80 procent het hoogste ai-gebruik, gevolgd door uitgeverijen en mediaorganisaties met 75 procent. In de bouw, horeca en transport wordt ai het minst toegepast, maar de toename is met een verviervoudiging wél het sterkst bij bedrijven in de horeca en in vervoer en opslag.</p>
+
+
+
+<h5 class="wp-block-heading">NDI en Overhoff bundelen krachten onder nieuwe naam</h5>
+
+
+
+<p class="wp-block-paragraph">NDI ICT Solutions uit Amsterdam en Overhoff Telecom &amp; ICT uit Harderwijk gaan <a href="https://ndi.nl/nl/ndi-ict-solutions-en-overhoff-telecom-ict-gaan-samen-verder-en-versterken-hun-positie-in-de-nederlandse-it-en-telecommarkt/" data-type="link" data-id="https://ndi.nl/nl/ndi-ict-solutions-en-overhoff-telecom-ict-gaan-samen-verder-en-versterken-hun-positie-in-de-nederlandse-it-en-telecommarkt/" target="_blank" rel="noopener">samen verder</a> onder de naam NDI Overhoff. De twee dienstverleners willen daarmee hun positie in de Nederlandse markt voor it-, telecom- en connectiviteitsdiensten versterken.</p>
+
+
+
+<p class="wp-block-paragraph">De nieuwe organisatie telt honderd medewerkers en heeft vestigingen in Amsterdam en Harderwijk. NDI brengt expertise mee op het gebied van managed it, Microsoft 365, cloud, cybersecurity en it-infrastructuur. Overhoff voegt kennis toe van vaste en mobiele telefonie, connectiviteit en ict-dienstverlening. Beide bedrijven zijn beide partner van KPN.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens de bedrijven groeit de vraag naar gecombineerde it- en telecomdiensten. Klanten houden hun bestaande contactpersonen en de huidige dienstverlening blijft behouden. Robert Wolthuis wordt ceo van NDI Overhoff. Jan-Erik Issing en Henk Bijker blijven betrokken bij de leiding van de voormalige Overhoff-organisatie. Ook wil NDI Overhoff groeien via overnames.</p>
+
+
+
+<h5 class="wp-block-heading">Breda zet technologie en cultuur drie dagen op de kaart met Turf</h5>
+
+
+
+<p class="wp-block-paragraph">Breda staat van 26 tot en met 28 november in het teken van de derde editie van Turf. Het <a href="https://www.turf-event.nl/" data-type="link" data-id="https://www.turf-event.nl/" target="_blank" rel="noopener">festival</a> spreidt zich uit over meer dan dertig locaties in de stad en combineert technologie, muziek en cultuur in één programma.</p>
+
+
+
+<p class="wp-block-paragraph">Een belangrijk onderdeel is Turf Tech Thursday, waar aandacht is voor onderwerpen als ai, cybersecurity, digitalisering en de toekomst van werk. Sprekers uit wetenschap, technologiesector en bedrijfsleven gaan daarbij in op de impact van technologie op organisaties. Ai-expert Remy Gieling opent het programma in de Grote Kerk.</p>
+
+
+
+<p class="wp-block-paragraph">Daarnaast biedt Turf optredens van onder meer Prins S. en De Geit, Weval en Ploegendienst. Ook zijn verspreid door Breda kunstprojecten, interactieve installaties en lezingen te bezoeken. Volgens de organisatie draait het festival om het verbinden van technologie, creativiteit en nieuwe ideeën.</p>
+
+
+
+<h5 class="wp-block-heading">QSBN haalt data &amp; ai-specialist Wave5 binnen</h5>
+
+
+
+<p class="wp-block-paragraph">QSBN uit Amersfoort neemt data- &amp; ai-specialist Wave5 over. Met de acquisitie wil de technologiepartner zijn positie op het gebied van data en ai uitbreiden en extra kennis toevoegen rond Microsoft Fabric en data-engineering.</p>
+
+
+
+<p class="wp-block-paragraph">Volgens <a href="https://qsbn.com/" data-type="link" data-id="https://qsbn.com/" target="_blank" rel="noopener">QSBN</a> (ruim dertig jaar ervaring, bijna driehonderd man) sluit de overname aan op de ambitie om klanten breder te ondersteunen bij digitale transformatie. Door de activiteiten van beide bedrijven te combineren, wil de organisatie data- en ai-projecten uitvoeren van strategie en architectuur tot implementatie en beheer.</p>
+
+
+
+<p class="wp-block-paragraph">Het Amsterdamse Wave5 richt zich op dataplatformen, data-engineering, businessanalyse en managed services op basis van Microsoft-technologie, waaronder Microsoft Fabric en Azure.</p>
+
+
+
+<h5 class="wp-block-heading">Nederland loopt achter met verzekering tegen ai-risico&#8217;s</h5>
+
+
+
+<p class="wp-block-paragraph">Nederlandse bedrijven zijn van negen onderzochte Europese landen het minst vaak verzekerd tegen ai-risico’s. Volgens het &#8216;<a href="https://adviseur.hiscox.nl/hiscox-ai-report-2026" data-type="link" data-id="https://adviseur.hiscox.nl/hiscox-ai-report-2026" target="_blank" rel="noopener">Hiscox AI-report 2026</a>&#8216; zegt slechts 25 procent van de Nederlandse professionals dat hun organisatie hiervoor een verzekering heeft. Het Europese gemiddelde ligt op 34 procent.</p>
+
+
+
+<p class="wp-block-paragraph">Tegelijkertijd verwacht 63 procent van de Nederlandse respondenten dat hun organisatie de investeringen in ai het komende jaar opvoert. Toch weet een op de vijf niet dat ai-risico’s verzekerbaar zijn. Bij bijna een vijfde is zelfs onbekend of de eigen organisatie verzekerd is.</p>
+
+
+
+<p class="wp-block-paragraph">Uit het onderzoek, uitgevoerd door Statista in opdracht van Hiscox, blijkt verder dat ruim een kwart van de Europese organisaties al een ai-incident heeft meegemaakt. Zes procent meldt daarbij directe financiële schade. Het onderzoek is gedaan onder 4.520 professionals in negen Europese landen.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/26/kort-ai-gebruik-onder-nl-bedrijven-verdubbelt-nederland-hekkensluiter-ai-verzekering-en-meer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2024/07/shutterstock_2244549565-e1720623937852.jpg" medium="image" />	</item>
+		<item>
+		<title>Hack bij 1Password legt klantgegevens en broncode bloot</title>
+		<link>https://www.computable.nl/2026/11/26/hack-bij-1password-legt-klantgegevens-en-broncode-bloot/</link>
+					<comments>https://www.computable.nl/2026/11/26/hack-bij-1password-legt-klantgegevens-en-broncode-bloot/#respond</comments>
+		
+		<dc:creator><![CDATA[Rik Sanders]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2026 10:45:00 +0000</pubDate>
+				<category><![CDATA[IT Strategy & Governance]]></category>
+		<category><![CDATA[IT Industry news]]></category>
+		<category><![CDATA[Security & Risk]]></category>
+		<category><![CDATA[Cyberaanval]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[Wachtwoordbeheer]]></category>
+		<guid isPermaLink="false">https://www.computable.nl/?p=463093</guid>
+
+					<description><![CDATA[Wachtwoordbeheerder 1Password is getroffen door een cyberaanval waarbij een onbekende aanvaller toegang kreeg tot interne systemen, broncode wist te bemachtigen en klantgegevens van een deel van de gebruikers heeft gedownload.]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>De Canadese wachtwoordbeheerder 1Password is getroffen door een cyberaanval waarbij een onbekende aanvaller toegang kreeg tot interne systemen, broncode wist te bemachtigen en klantgegevens van een deel van de gebruikers heeft gedownload. Volgens het bedrijf zijn de versleutelde digitale kluizen met wachtwoorden, sleutels en andere gevoelige gegevens echter niet geraakt.</strong></p>
+
+
+
+<p class="wp-block-paragraph">De beveiligingsleverancier <a href="https://1password.com/blog/update-on-nov-2026-security-incident" data-type="link" data-id="https://1password.com/blog/update-on-nov-2026-security-incident" target="_blank" rel="noopener">ontdekte op 19 november</a> verdachte activiteiten rond het GitHub-account van een medewerker. De aanvaller gebruikte die toegang om broncode uit privé-repositories te bekijken en kwaadaardige code naar backendsystemen te pushen. Daardoor kon administratieve klantinformatie worden buitgemaakt. Het gaat onder meer om namen, e-mailadressen, accountidentificaties, aanmaakdata van accounts en tijdstippen van laatste aanmeldingen. Ook werden enkele tokens uit uitnodigings- en herstelmails onderschept.</p>
+
+
+
+<p class="wp-block-paragraph">Daarnaast kreeg de aanvaller <a href="https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html" target="_blank" rel="noopener">toegang</a> tot het ci/cd-platform van het bedrijf, de omgeving waarmee software automatisch wordt gebouwd en uitgerold. 1Password meldt dat alle mogelijk blootgestelde interne toegangsgegevens inmiddels zijn vervangen en dat getroffen systemen zijn opgeschoond.</p>
+
+
+
+<h5 class="wp-block-heading">Wees alert</h5>
+
+
+
+<p class="wp-block-paragraph">Volgens het bedrijf zijn de cryptografische sleutels waarmee wachtwoordkluizen worden beveiligd niet in handen van de leverancier zelf en daardoor ook niet buitgemaakt. Gebruikers hoeven hun accounts niet aan te passen, maar worden wel gewaarschuwd alert te zijn op phishingmails die misbruik maken van de gestolen contactgegevens.</p>
+
+
+
+<p class="wp-block-paragraph">Het is vooralsnog onduidelijk hoeveel klanten wereldwijd zijn getroffen en of daar Nederlandse of Belgische gebruikers tussen zitten. 1Password heeft hierover geen nadere cijfers bekendgemaakt.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.computable.nl/2026/11/26/hack-bij-1password-legt-klantgegevens-en-broncode-bloot/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://www.computable.nl/wp-content/uploads/2026/04/shutterstock_2669823709.jpg" medium="image" />	</item>
+	</channel>
+</rss>

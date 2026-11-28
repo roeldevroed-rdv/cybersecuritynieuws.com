@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Check Point Blog</title>
+	<atom:link href="https://blog.checkpoint.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.checkpoint.com/</link>
+	<description>Blog</description>
+	<lastBuildDate>Wed, 25 Nov 2026 14:44:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.4</generator>
+
+<image>
+	<url>https://blog.checkpoint.com/wp-content/uploads/2023/10/cropped-favicon-512x512-1-32x32.png</url>
+	<title>Check Point Blog</title>
+	<link>https://blog.checkpoint.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Check Point Named a Leader in the 2026 Gartner® Magic Quadrant&#x2122; for Email Security</title>
+		<link>https://blog.checkpoint.com/security/check-point-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/</link>
+		
+		<dc:creator><![CDATA[matthewsu@checkpoint.com]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2026 14:32:32 +0000</pubDate>
+				<category><![CDATA[Email Security]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249962</guid>
+
+					<description><![CDATA[<img width="2000" height="700" src="https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c.jpg" class="webfeedsFeaturedVisual default-featured-img" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" srcset="https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c.jpg 2000w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-300x105.jpg 300w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-1024x358.jpg 1024w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-768x269.jpg 768w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-1536x538.jpg 1536w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-400x140.jpg 400w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-1320x462.jpg 1320w" sizes="(max-width: 2000px) 100vw, 2000px" /><p>We are excited to share that Check Point has been named a Leader in the 2026 Gartner® Magic Quadrant&#x2122; for Email Security for the third consecutive year. Check back for a complimentary copy of the full report soon!  We believe this recognition reflects our continued investment in prevention-first email security, protecting both employees and the AI assistants that now read and act on email. What we believe sets Check Point apart Powerful email threat protection: AI-powered security helps prevent phishing, ransomware, account takeover, BEC, and zero-day attacks. Platform consolidation and operational simplicity: A unified platform secures email, collaboration tools, endpoints, [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/check-point-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/">Check Point Named a Leader in the 2026 Gartner® Magic Quadrant&#x2122; for Email Security</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Darknet Forums Are Fragmenting as Observed Breach Activity Rises</title>
+		<link>https://blog.checkpoint.com/security/darknet-forums-are-fragmenting-as-observed-breach-activity-rises/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2026 13:00:10 +0000</pubDate>
+				<category><![CDATA[Exposure Management]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249910</guid>
+
+					<description><![CDATA[<img width="1350" height="675" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1.png 1350w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-300x150.png 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-1024x512.png 1024w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-768x384.png 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-400x200.png 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-600x300.png 600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-800x400.png 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-1200x600.png 1200w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-Banners-1-1320x660.png 1320w" sizes="(max-width: 1350px) 100vw, 1350px" /><p>Repeated takedowns have disrupted some of the cybercrime underground’s established gathering places. The communities around them have continued to reorganize. BreachForums revivals compete with clones and alternative platforms. Russian-speaking forums have struggled to replace the relationships built around XSS and RAMP. Activity moves between venues, and a platform that gains attention after one disruption may lose it after the next. Check Point Exposure Management researchers examined two years of forum activity to understand how that disruption has changed the underground. The analysis found a more fragmented ecosystem, with observed breach and data-leak activity remaining substantial even as established forums lost [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/darknet-forums-are-fragmenting-as-observed-breach-activity-rises/">Darknet Forums Are Fragmenting as Observed Breach Activity Rises</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Volant Manticore: New Iranian Threat Group Expands Cyber Espionage Across Europe and the Middle East</title>
+		<link>https://blog.checkpoint.com/security/volant-manticore-new-iranian-threat-group-expands-cyber-espionage-across-europe-and-the-middle-east/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2026 13:00:07 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[research]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249952</guid>
+
+					<description><![CDATA[<img width="800" height="400" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/CPR-Volant-Manticore-1.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/CPR-Volant-Manticore-1.jpg 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/CPR-Volant-Manticore-1-300x150.jpg 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/CPR-Volant-Manticore-1-768x384.jpg 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/CPR-Volant-Manticore-1-400x200.jpg 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/CPR-Volant-Manticore-1-600x300.jpg 600w" sizes="auto, (max-width: 800px) 100vw, 800px" /><p>Check Point Research has uncovered Volant Manticore, a previously undocumented Iran-nexus threat group that made Cyprus a primary espionage target before recently expanding its operations also to Saudi Arabia. This group&#8217;s focus provides another indication that Iranian cyber activity is becoming more geographically distributed, with targeting increasingly shaped by changing geopolitical priorities across the Middle East and Europe. That change in focus is one of the most important parts of the discovery. It shows how quickly Volant Manticore’s targeting can respond to geopolitical developments and adds to evidence that Iranian cyber interests are extending beyond their traditional focus. Key Findings [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/volant-manticore-new-iranian-threat-group-expands-cyber-espionage-across-europe-and-the-middle-east/">Volant Manticore: New Iranian Threat Group Expands Cyber Espionage Across Europe and the Middle East</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Got the next big thing in AI security? Pitch it at CPX and win!</title>
+		<link>https://blog.checkpoint.com/security/got-the-next-big-thing-in-ai-security-pitch-it-at-cpx-and-win/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 16:15:15 +0000</pubDate>
+				<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249954</guid>
+
+					<description><![CDATA[<img width="2000" height="700" src="https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c.jpg" class="webfeedsFeaturedVisual default-featured-img" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c.jpg 2000w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-300x105.jpg 300w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-1024x358.jpg 1024w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-768x269.jpg 768w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-1536x538.jpg 1536w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-400x140.jpg 400w, https://blog.checkpoint.com/wp-content/uploads/2023/12/featured-image-default-c-1320x462.jpg 1320w" sizes="auto, (max-width: 2000px) 100vw, 2000px" /><p>Cyber security startups, do you think you have the next big thing in AI? We want to see it. Check Point Software kicks off our fifth global Innovation Sandbox Competition, in Las Vegas and Vienna, in February 2027. Innovation has been part of Check Point&#8217;s DNA for more than 30 years. Today we&#8217;re continuing that with our fifth global Innovation Sandbox Competition, held at our CPX events in Las Vegas and Vienna in February 2027. Compete for the chance to give a five-minute pitch on our main stage, in front of thousands of Check Point customers and partners, and to [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/got-the-next-big-thing-in-ai-security-pitch-it-at-cpx-and-win/">Got the next big thing in AI security? Pitch it at CPX and win!</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New PHP Vulnerabilities: What Organizations Need to Know and How Check Point Customers Are Protected</title>
+		<link>https://blog.checkpoint.com/security/new-php-vulnerabilities-what-organizations-need-to-know-and-how-check-point-customers-are-protected/</link>
+		
+		<dc:creator><![CDATA[anap@checkpoint.com]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2026 19:12:07 +0000</pubDate>
+				<category><![CDATA[Security]]></category>
+		<category><![CDATA[Check Point Research]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249928</guid>
+
+					<description><![CDATA[<img width="1500" height="750" src="https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px.jpg 1500w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-300x150.jpg 300w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-1024x512.jpg 1024w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-768x384.jpg 768w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-400x200.jpg 400w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-600x300.jpg 600w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-800x400.jpg 800w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-1200x600.jpg 1200w, https://blog.checkpoint.com/wp-content/uploads/2026/10/php2shell-800x400px-1320x660.jpg 1320w" sizes="auto, (max-width: 1500px) 100vw, 1500px" /><p>On November 19, 2026, A series of recently disclosed vulnerabilities in PHP has put one of the world’s most widely deployed web technologies under renewed scrutiny.  The most significant issues, CVE-2026-109618 and CVE-2026-109619, are critical remote code execution vulnerabilities that can allow an unauthenticated attacker to execute code on vulnerable PHP systems. CVE-2026-109618 carries a CVSS 4.0 score of 9.2 and has since been added to the CISA Known Exploited Vulnerabilities catalog.   A third issue, CVE-2026-115560, was disclosed shortly afterward. It involves a more specific PHP configuration and should be considered separately from the two original PHP2Shell vulnerabilities. Public reporting [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/new-php-vulnerabilities-what-organizations-need-to-know-and-how-check-point-customers-are-protected/">New PHP Vulnerabilities: What Organizations Need to Know and How Check Point Customers Are Protected</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Two Critical NGINX HTTP/2 Flaws: What to Patch First</title>
+		<link>https://blog.checkpoint.com/security/two-critical-nginx-http-2-flaws-what-to-patch-first/</link>
+		
+		<dc:creator><![CDATA[anap@checkpoint.com]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2026 17:41:16 +0000</pubDate>
+				<category><![CDATA[Exposure Management]]></category>
+		<category><![CDATA[Hybrid Mesh]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Threat Intelligence]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249920</guid>
+
+					<description><![CDATA[<img width="800" height="400" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/nginx-featured-image.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/nginx-featured-image.png 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/nginx-featured-image-300x150.png 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/nginx-featured-image-768x384.png 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/nginx-featured-image-400x200.png 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/nginx-featured-image-600x300.png 600w" sizes="auto, (max-width: 800px) 100vw, 800px" /><p>The web server in front of your applications can now be taken over by someone with no login and no help from your own code. Two critical NGINX flaws, CVE-2026-123007 and CVE-2026-123633, make that possible when HTTP/2 is on. F5 and the NGINX project released fixes on November 18, 2026. Our research team published a full advisory on the NGINX HTTP/2 flaws with version tables, mitigations, and hunting guidance. Check Point WAF SaaS, Not Vulnerable &#8211; Our R&#38;D team assessed these critical NGINX vulnerabilities and found that Check Point WAF as a Service (SaaS) is not vulnerable to them. The [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/two-critical-nginx-http-2-flaws-what-to-patch-first/">Two Critical NGINX HTTP/2 Flaws: What to Patch First</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>The Kill Switch Is the Last Resort. Agentic Steering Is the First Move.</title>
+		<link>https://blog.checkpoint.com/ai-security/ai-agent-kill-switch-agentic-steering/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2026 13:00:39 +0000</pubDate>
+				<category><![CDATA[AI Security]]></category>
+		<category><![CDATA[AI security]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249876</guid>
+
+					<description><![CDATA[<img width="1600" height="800" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1.png 1600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-300x150.png 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-1024x512.png 1024w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-768x384.png 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-1536x768.png 1536w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-400x200.png 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-600x300.png 600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-800x400.png 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-1200x600.png 1200w, https://blog.checkpoint.com/wp-content/uploads/2026/11/kill-switch-agentic-steering-featured-banner-1-1320x660.png 1320w" sizes="auto, (max-width: 1600px) 100vw, 1600px" /><p>Key takeaways Every AI agent deployment needs a way to stop an agent, and Check Point AI Security does it automatically. Most risky agent behavior has no attacker behind it, though, which is why we keep the kill switch as the last resort and make steering the first move. →Two problems get lumped together. An agent hijacked by an attacker should be stopped. An agent that takes a risky shortcut to finish its job is the more common case, and it needs a different answer →Switching off has a cost. It stops the risk and the work together, and a [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/ai-security/ai-agent-kill-switch-agentic-steering/">The Kill Switch Is the Last Resort. Agentic Steering Is the First Move.</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Resilience is Security: What a week of Global Outages teaches us</title>
+		<link>https://blog.checkpoint.com/security/cyber-or-not-the-lesson-is-the-same-what-a-week-of-global-outages-teaches-us-about-security-posture/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Wed, 18 Nov 2026 13:52:01 +0000</pubDate>
+				<category><![CDATA[AI Security]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Posture]]></category>
+		<category><![CDATA[Resilience]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249885</guid>
+
+					<description><![CDATA[<img width="1600" height="800" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog.png 1600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-300x150.png 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-1024x512.png 1024w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-768x384.png 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-1536x768.png 1536w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-400x200.png 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-600x300.png 600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-800x400.png 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-1200x600.png 1200w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-1320x660.png 1320w" sizes="auto, (max-width: 1600px) 100vw, 1600px" /><p>In this article Six major outages in eight days hit email, air traffic control, airline operations, banking and consumer cloud services across North America and beyond Most were attributed to technical faults, not attackers, and that is exactly why they&#8217;re of importance to security leaders Resilience and security posture are one discipline, not two Outages create the confusion, urgency and workarounds that attackers look for, and Google warns that attackers now move at machine speed In the past eight days, people across North America lost access to their work email, their flights and their bank accounts. This morning, it was [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/cyber-or-not-the-lesson-is-the-same-what-a-week-of-global-outages-teaches-us-about-security-posture/">Resilience is Security: What a week of Global Outages teaches us</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Ransomware Reaches Record Highs in Q3 2026 as the Threat Landscape Fragments</title>
+		<link>https://blog.checkpoint.com/security/ransomware-reaches-record-highs-in-q3-2026-as-the-threat-landscape-fragments/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Wed, 18 Nov 2026 13:00:18 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Threat Intelligence]]></category>
+		<category><![CDATA[AI security]]></category>
+		<category><![CDATA[research]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249842</guid>
+
+					<description><![CDATA[<img width="1600" height="800" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400.png 1600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-300x150.png 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-1024x512.png 1024w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-768x384.png 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-1536x768.png 1536w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-400x200.png 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-600x300.png 600w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-800x400.png 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-1200x600.png 1200w, https://blog.checkpoint.com/wp-content/uploads/2026/11/Blog-banner_Q3-2026-The-State-of-Ransomware-Report_800x400-1320x660.png 1320w" sizes="auto, (max-width: 1600px) 100vw, 1600px" /><p>The State of Ransomware Q3 2026 reveals a combination the ransomware market has not seen before: record victim numbers alongside record-low concentration among its leading groups. More ransomware brands claimed victims, the top ten fell below half of observed activity, and several high-profile organizations rejected major extortion demands. Together, these shifts reveal a ransomware ecosystem growing in volume, spreading across more operators, and facing changes in how victims respond to extortion. Key takeaways Q3 reached a record 2,830 victims, including 964 in July, 1,042 in August and 824 in September. 117 ransomware brands claimed victims, up from 91 in Q2, [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/ransomware-reaches-record-highs-in-q3-2026-as-the-threat-landscape-fragments/">Ransomware Reaches Record Highs in Q3 2026 as the Threat Landscape Fragments</a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Java4Shell (CVE-2026-114938): Check Your Java Services Now </title>
+		<link>https://blog.checkpoint.com/security/java4shell-cve-2026-114938-check-your-java-services-now/</link>
+		
+		<dc:creator><![CDATA[raphaelge@checkpoint.com]]></dc:creator>
+		<pubDate>Wed, 18 Nov 2026 09:19:33 +0000</pubDate>
+				<category><![CDATA[Security]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://blog.checkpoint.com/?p=249870</guid>
+
+					<description><![CDATA[<img width="800" height="400" src="https://blog.checkpoint.com/wp-content/uploads/2026/11/4.8-3-2.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin-bottom: 5px; clear:both;max-width: 100%;" link_thumbnail="" decoding="async" loading="lazy" srcset="https://blog.checkpoint.com/wp-content/uploads/2026/11/4.8-3-2.png 800w, https://blog.checkpoint.com/wp-content/uploads/2026/11/4.8-3-2-300x150.png 300w, https://blog.checkpoint.com/wp-content/uploads/2026/11/4.8-3-2-768x384.png 768w, https://blog.checkpoint.com/wp-content/uploads/2026/11/4.8-3-2-400x200.png 400w, https://blog.checkpoint.com/wp-content/uploads/2026/11/4.8-3-2-600x300.png 600w" sizes="auto, (max-width: 800px) 100vw, 800px" /><p>What we see   The flaw: On recent Intel and AMD x86-64 processors with AVX-512 VBMI, Java&#8217;s hand-tuned Base64 decoder miscalculates the output length for the padded tail of a short malformed input. The result is a write of 62 or 63 bytes past the end of its buffer, depending on the padding. Java rejects the input, but only after the write.   The impact: The bytes written are fixed, so on its own the overflow usually crashes Java. Calif, the firm that found the flaw, reports shaping server memory so the overflow enlarges a neighboring array, which gives read and write [&#8230;]</p>
+<p>The post <a href="https://blog.checkpoint.com/security/java4shell-cve-2026-114938-check-your-java-services-now/">Java4Shell (CVE-2026-114938): Check Your Java Services Now </a> appeared first on <a href="https://blog.checkpoint.com">Check Point Blog</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+<channel>
+  <title>SentinelOne</title>
+  <atom:link href="https://www.sentinelone.com/feed/" rel="self" type="application/rss+xml" />
+  <link>https://www.sentinelone.com/</link>
+  <description>Next Generation Endpoint Security</description>
+  <lastBuildDate>Fri, 27 Nov 2026 14:00:00 +0000</lastBuildDate>
+  <language>en-US</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+  <generator>SentinelOne Next.js RSS Generator</generator>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 48 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-48-8</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 27 Nov 2026 14:00:00 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">blteb4e5e915f19347b</guid>
+    <description><![CDATA[Police disrupt 57 illegal streaming services, Com affiliates hijack cloud accounts via vishing, and ARTEX AI is reportedly used to breach a CIA system.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blta21f7208f09d150b/6b091c46afd7864d2db3d557/GBU_week48_2026.jpg" length="984519" type="image/jpeg" />
+  </item>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 47 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-47-8</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 20 Nov 2026 16:14:03 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">blt99808f9c96525aaa</guid>
+    <description><![CDATA[Alleged 8-Digits Team affiliate faces 27 years, FBI warns of AI-driven ARTEX intrusions, and Java4Shell flaw opens Java apps to pre-auth RCE.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltbbbb47c8813f68e3/6affdc8394cb82031f781be7/GBU_week47_2026.jpg" length="1168705" type="image/jpeg" />
+  </item>
+  <item>
+    <title>The New Analyst Learning Curve: Training and Retaining Talent in the Autonomous SOC</title>
+    <link>https://www.sentinelone.com/blog/the-new-analyst-learning-curve-training-and-retaining-talent-in-the-autonomous-soc/</link>
+    <dc:creator><![CDATA[Arijeet Ghatak]]></dc:creator>
+    <pubDate>Fri, 20 Nov 2026 14:00:03 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <category><![CDATA[autonomous soc]]></category>
+    <category><![CDATA[senior analyst]]></category>
+    <category><![CDATA[agentic investigation]]></category>
+    <category><![CDATA[soc]]></category>
+    <category><![CDATA[security analyst]]></category>
+    <guid isPermaLink="false">blt8d1d3289d964a79e</guid>
+    <description><![CDATA[Explore how SOC leaders can rebuild the analyst learning curve as agentic AI automates triage, preserving critical investigative judgment and bench talent.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt10793b507a2b9b70/6affef42447474cb86000b39/Blog_New_Analyst_Learning_Curve.jpg" length="358306" type="image/jpeg" />
+  </item>
+  <item>
+    <title>LABScon26 Replay | Governing Just-in-Time Intelligence: AI, Dual-Use Capabilities, and the Limits of Guardrails</title>
+    <link>https://www.sentinelone.com/labs/labscon26-replay-governing-just-in-time-intelligence-ai-dual-use-capabilities-and-the-limits-of-guardrails/</link>
+    <dc:creator><![CDATA[LABScon]]></dc:creator>
+    <pubDate>Wed, 18 Nov 2026 14:00:00 +0000</pubDate>
+    <category><![CDATA[SentinelLabs]]></category>
+    <category><![CDATA[LABScon]]></category>
+    <category><![CDATA[ai]]></category>
+    <category><![CDATA[governance]]></category>
+    <guid isPermaLink="false">bltdf4d8210842e3e18</guid>
+    <description><![CDATA[ICRC’s Mauro Vignati argues AI guardrails can’t fix a deeper problem: a 70-year-old distribution model now applied to dual-use cognitive capabilities.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltf0d6eb4fdce2acfe/6afc8dac99559c1960e0acc8/labscon_mauro_ftr.jpg" length="437951" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Defending Against Java4Shell: Vulnerability in OpenJDK Enables RCE on AVX-512 CPUs</title>
+    <link>https://www.sentinelone.com/blog/java4shell-vulnerability-in-openjdk-enables-rce-on-avx-512-cpus/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Tue, 17 Nov 2026 22:19:19 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <guid isPermaLink="false">bltb4318d7fe61b09c7</guid>
+    <description><![CDATA[On November 17, 2026, security researchers at Calif disclosed Java4Shell (CVE-2026-114938, CVSS 4.0: 9.2 Critical), a memory-corruption vulnerability in OpenJDK’s Base64 decoder that allows malformed Base64 input to trigger remote code execution (RCE).]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltbb11a1187f77c544/6afcbf89671008fdd7cf2236/Blog_Java4Shell_1680x520.png" length="6187349" type="image/png" />
+  </item>
+  <item>
+    <title>ARTEX Unmasked | The Rise of AI-Powered ARTEX in Cybercrime &amp; Espionage</title>
+    <link>https://www.sentinelone.com/blog/artex-unmasked-the-rise-of-ai-powered-artex-in-cybercrime-espionage/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 13 Nov 2026 21:23:19 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <category><![CDATA[artex]]></category>
+    <category><![CDATA[pentesting]]></category>
+    <category><![CDATA[ai agent]]></category>
+    <category><![CDATA[cyberespionage]]></category>
+    <guid isPermaLink="false">bltd938faa88c8aa251</guid>
+    <description><![CDATA[Learn how SentinelOne Behavioral AI, Singularity AI SIEM, and Purple AI detect and stop autonomous ARTEX attacks across cloud, identity, and endpoints.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltde1054de554304f0/6afcbe9ba2c08e2e90706f47/blog-artex-unmasked.webp" length="2355486" type="image/webp" />
+  </item>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 46 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 13 Nov 2026 17:46:55 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">bltb22db5ad057c72e8</guid>
+    <description><![CDATA[Authorities dismantle crypto scams and seize malware ops, Turla deploys Cereal to spy on governments, and attackers breach Railway to steal AI secrets.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blta12d80f8121fef98/6af74c72956eb6b1fc88c3c8/GBU_week46_2026.jpg" length="796689" type="image/jpeg" />
+  </item>
+  <item>
+    <title>LABScon26 Replay | Let’s Get Physical: Why Cybersecurity Needs Hardware-Based Security to Survive AI</title>
+    <link>https://www.sentinelone.com/labs/labscon26-replay-let-s-get-physical-why-cybersecurity-needs-hardware-based-security-to-survive-ai/</link>
+    <dc:creator><![CDATA[LABScon]]></dc:creator>
+    <pubDate>Thu, 12 Nov 2026 14:00:02 +0000</pubDate>
+    <category><![CDATA[SentinelLabs]]></category>
+    <category><![CDATA[LABScon]]></category>
+    <category><![CDATA[labscon]]></category>
+    <category><![CDATA[ai security]]></category>
+    <category><![CDATA[hardware]]></category>
+    <guid isPermaLink="false">bltde65705bf43b6d96</guid>
+    <description><![CDATA[Adyen’s Dino Dai Zovi shows how hardware security proven in payments can contain AI-driven attacks, even when vulnerabilities cannot be patched.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltc882b9af6329a5a4/6af43ef1ebc5745b33ac3aab/labscon26_dino_ftr.jpg" length="516304" type="image/jpeg" />
+  </item>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 45 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-8</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 06 Nov 2026 18:30:54 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">bltbb7ca0944fca1e28</guid>
+    <description><![CDATA[Authorities dismantle investment scams and cybercrime networks, scammers abuse Teams and AD CS, and cyberattacks disrupt European refrigeration systems.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltdd61c072953b418c/6aed70e7cc7e9fb026ce0fa5/GBU_week45_2026.jpg" length="758729" type="image/jpeg" />
+  </item>
+  <item>
+    <title>VerifiedIDA | Making LLM-Driven Reverse Engineering Inspectable, Continuable and Reusable</title>
+    <link>https://www.sentinelone.com/labs/verifiedida-making-llm-driven-reverse-engineering-inspectable-continuable-and-reusable/</link>
+    <dc:creator><![CDATA[Gabriel Bernadett-Shapiro]]></dc:creator>
+    <pubDate>Wed, 04 Nov 2026 14:00:03 +0000</pubDate>
+    <category><![CDATA[SentinelLabs]]></category>
+    <category><![CDATA[AI Research]]></category>
+    <category><![CDATA[llm]]></category>
+    <category><![CDATA[reverse engineering]]></category>
+    <guid isPermaLink="false">bltffd49ffaf3ad58ae</guid>
+    <description><![CDATA[LLM reverse engineering scales only if analysis stays inspectable. A new standard and its open-source IDA Pro implementation tie annotations to evidence.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt4e4c2045bbed6ccc/6aea3c57ee4b673d923e9951/VerifiedIDA_ftr.jpg" length="556628" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Defrost and Disrupt | An Assessment of Europe’s Refrigeration Attacks</title>
+    <link>https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/</link>
+    <dc:creator><![CDATA[Tom Hegel]]></dc:creator>
+    <pubDate>Tue, 03 Nov 2026 14:57:27 +0000</pubDate>
+    <category><![CDATA[SentinelLabs]]></category>
+    <category><![CDATA[Security & Intelligence]]></category>
+    <category><![CDATA[disruption]]></category>
+    <guid isPermaLink="false">bltf375f8221ebc389d</guid>
+    <description><![CDATA[Store fridges and freezers warmed overnight in six countries on November 2-3. Russian-aligned groups are credible suspects, but attribution remains open.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltc4b8416b7c48392e/6ae9eec4d1a90d6a4c3f9fc2/2.jpg" length="716436" type="image/jpeg" />
+  </item>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 44 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-44-8/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 30 Oct 2026 17:29:33 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">bltc5f7e28959d751e3</guid>
+    <description><![CDATA[PHP2SHELL’s complexity stalls mass exploitation, attackers chain it with Fragnesia to root firewalls, and a silent Brotli fix leaves Node2Shell exposed.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt4f4cff1c329a76ed/6ae43a14aaf3517a5b2d99b5/GBU_week44_2026.jpg" length="1147565" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Stopping Node2Shell: How SentinelOne Protects Customers From Brotli-Based Remote Code Execution</title>
+    <link>https://www.sentinelone.com/blog/stopping-node2shell-sentinelone-protects-customers-from-brotli-based-RCE/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 30 Oct 2026 15:06:45 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <category><![CDATA[node2shell]]></category>
+    <category><![CDATA[brotli]]></category>
+    <category><![CDATA[remote code execution]]></category>
+    <category><![CDATA[rce]]></category>
+    <guid isPermaLink="false">blte1d3f547106b6040</guid>
+    <description><![CDATA[Read the breakdown on how the Node2Shell vulnerability in Google's Brotli decoder enables remote code execution across Node.js, Bun, and .NET, and how to mitigate the risk.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt64fd9825f4d7eed3/6a836cb42f00b28518f06d6c/threat_intel_banner.jpg" length="166810" type="image/jpeg" />
+  </item>
+  <item>
+    <title>LABScon26 Replay | Keynote: A Sober Analysis of AI Impact</title>
+    <link>https://www.sentinelone.com/labs/labscon26-replay-keynote-a-sober-analysis-of-ai-impact/</link>
+    <dc:creator><![CDATA[LABScon]]></dc:creator>
+    <pubDate>Wed, 28 Oct 2026 13:00:00 +0000</pubDate>
+    <category><![CDATA[SentinelLabs]]></category>
+    <category><![CDATA[LABScon]]></category>
+    <category><![CDATA[labscon]]></category>
+    <guid isPermaLink="false">blte335fc9d68c63285</guid>
+    <description><![CDATA[Harvard Professor James Mickens weighs the promises of AI against its potential harms, arguing for hardware-based mechanisms to isolate frontier models.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt5d6819e0d8c2deed/6ae0da4db76aba605c5c1ba3/LC26_Mickens_ftr.jpg" length="467843" type="image/jpeg" />
+  </item>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 43 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 23 Oct 2026 17:18:43 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">bltbe443987608df0c0</guid>
+    <description><![CDATA[U.S. courts sentence tax fraudster, Chinese-linked actors use agentic AI in cloud supply chain attack, and PHP issues warning of two critical-level RCE flaws.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltf4fce6d9de118b43/6adafdcd1a8b5a2ffb770176/GBU_week43_2026.jpg" length="764366" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Stopping PHP2SHELL: How SentinelOne Protects Customers From This Attack Technique</title>
+    <link>https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Wed, 21 Oct 2026 19:21:11 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <category><![CDATA[php2shell]]></category>
+    <category><![CDATA[cve-2026-109618]]></category>
+    <category><![CDATA[cve-2026-109619]]></category>
+    <category><![CDATA[php]]></category>
+    <guid isPermaLink="false">bltc015df39e1d1e4a4</guid>
+    <description><![CDATA[Stop PHP2Shell with SentinelOne. Learn how Singularity Agent stops web worker post-exploitation, kills process trees, and hunts threats.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt64fd9825f4d7eed3/6a836cb42f00b28518f06d6c/threat_intel_banner.jpg" length="166810" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Bring Your Own Vulnerable Driver: What Detection Teams Should Actually Hunt</title>
+    <link>https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-what-detection-teams-should-actually-hunt/</link>
+    <dc:creator><![CDATA[Matt Berry]]></dc:creator>
+    <pubDate>Mon, 19 Oct 2026 13:00:01 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <guid isPermaLink="false">blted252cfee98a2e93</guid>
+    <description><![CDATA[Discover how detection teams can split EDR-killer attacks into four distinct behavior hunts to catch BYOVD and driverless threats before ransomware fires.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt7417f3903aaccd4c/6ab6b32b60452d450f56c648/BYOVD_series.jpg" length="251857" type="image/jpeg" />
+  </item>
+  <item>
+    <title>How SentinelOne Blocked APT29&apos;s CaptiveCrunch Campaign</title>
+    <link>https://www.sentinelone.com/blog/how-sentinelone-blocked-apt29-s-captivecrunch-campaign/</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 16 Oct 2026 18:01:06 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[SentinelOne Insider]]></category>
+    <category><![CDATA[sentinelone insider]]></category>
+    <category><![CDATA[dns poisoning]]></category>
+    <category><![CDATA[apt29]]></category>
+    <category><![CDATA[captivecrunch]]></category>
+    <category><![CDATA[static ai]]></category>
+    <guid isPermaLink="false">blta02e19f7137b952a</guid>
+    <description><![CDATA[Learn how SentinelOne's Static AI blocked APT29's CaptiveCrunch campaign on the endpoint, stopping local DNS poisoning and captive portal network lures.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt5336520867e82224/6a836cebe02fac5efa5de56a/Sentinel_Insider_hero.jpg" length="194507" type="image/jpeg" />
+  </item>
+  <item>
+    <title>The Good, the Bad and the Ugly in Cybersecurity - Week 42 (2026)</title>
+    <link>https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8</link>
+    <dc:creator><![CDATA[SentinelOne]]></dc:creator>
+    <pubDate>Fri, 16 Oct 2026 17:31:01 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[The Good, the Bad and the Ugly]]></category>
+    <category><![CDATA[cyber]]></category>
+    <category><![CDATA[cyber news]]></category>
+    <category><![CDATA[weekly]]></category>
+    <guid isPermaLink="false">blt620beb176282650f</guid>
+    <description><![CDATA[Authorities arrest cyber exec for extortion, cellular implant in Ledger wallets leaks seed phrases, and hackers heat French supermarket fridges to 50°C.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt4fec15f5c2a34098/6ad25f247963af6eee6ce35e/GBU_week42_2026.jpg" length="913447" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Bring Your Own Vulnerable Driver: The Trust Gap Attackers Operate Inside</title>
+    <link>https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-the-trust-gap-attackers-operate-inside/</link>
+    <dc:creator><![CDATA[Matt Berry]]></dc:creator>
+    <pubDate>Tue, 13 Oct 2026 16:40:50 +0000</pubDate>
+    <category><![CDATA[Blog]]></category>
+    <category><![CDATA[Company]]></category>
+    <category><![CDATA[bring your own vulnerable driver]]></category>
+    <category><![CDATA[byovd]]></category>
+    <category><![CDATA[loldriver]]></category>
+    <guid isPermaLink="false">blt8a2846a72692dc3c</guid>
+    <description><![CDATA[Uncover how BYOVD attacks exploit signing trust over disposable drivers, and why enforcing certificate revocation is essential for modern endpoint defense.]]></description>
+    <enclosure url="https://images.contentstack.io/v3/assets/blt53c99b43892c2378/blt7417f3903aaccd4c/6ab6b32b60452d450f56c648/BYOVD_series.jpg" length="251857" type="image/jpeg" />
+  </item>
+</channel>
+</rss>

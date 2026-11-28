@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/public/style.xsl" type="text/xsl"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dcterms="http://purl.org/dc/terms/" version="2.0">
+  <channel>
+    <title><![CDATA[NOS Tech]]></title>
+    <link><![CDATA[https://nos.nl]]></link>
+    <description><![CDATA[NOS Tech]]></description>
+    <language>nl</language>
+    <copyright>Copyright NOS</copyright>
+    <pubDate>Sat, 28 Nov 2026 15:50:45 +0100</pubDate>
+    <webMaster>digitalemediatechniek@nos.nl (NOS Digitale Media)</webMaster>
+    <item>
+      <title><![CDATA['Hackers breken in bij clouddienst Amerikaanse luchtmacht']]></title>
+      <link>https://nos.nl/l/2641242</link>
+      <description><![CDATA[
+        <p>Hackers hebben toegang gekregen tot het belangrijkste cloudplatform van de Amerikaanse luchtmacht. Dat meldt persbureau Reuters op basis van bronnen. Het gaat om Cloud One, waar onder meer data worden verzameld over radarsystemen en munitievoorraden op Amerikaanse luchtmachtbases.</p>
+        <p>Een aantal bronnen zegt dat het systeem niet meer naar behoren werkt, maar het is volgens Reuters nog onduidelijk hoe groot de impact is. Ook is niet bekend of de cybercriminelen data hebben gestolen.</p>
+        <p>De hack zou eerder deze maand zijn ontdekt bij een update van de software. Uit voorzorg zijn bepaalde activiteiten stilgelegd, zoals het migreren van applicaties naar de cloud.</p>
+        <h2>'Geen mededelingen over beveiligingsstatus'</h2>
+        <p>De Amerikaanse luchtmacht heeft de hack niet bevestigd. "We doen geen mededelingen over de beveiligingsstatus, kwetsbaarheden of operationele status van specifieke netwerken en systemen", staat in een verklaring aan Reuters.</p>
+        <p>Wel wil de luchtmacht kwijt dat er "voortdurend verstandige maatregelen worden genomen om informatie, systemen en operationele capaciteiten van het ministerie te beschermen". </p>
+        <h2>Niet eerste incident</h2>
+        <p>Het is niet het eerste recente cyberincident bij Amerikaanse overheidsdiensten. Zo waren er de afgelopen maanden hacks bij de inlichtingendiensten FBI en CIA.</p>
+        <p>Ook het ministerie van Defensie is vaker getroffen. In september werd bekend dat hackers gedurende negen maanden toegang hadden gehad tot persoonsgegevens van defensiepersoneel.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/2/D/U/B/7/i/kpMBtFKVeJBH1Pn9yrmzcKk9TAtX18dGkDFXZjD/0x2x4000x2250-1024x576.webp"/>
+      <pubDate>Fri, 27 Nov 2026 13:34:48 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2641242</guid>
+    </item>
+    <item>
+      <title><![CDATA[Rechter beslist over verbod op Meta-bril vanwege misbruik met stiekem filmen ]]></title>
+      <link>https://nos.nl/l/2641106</link>
+      <description><![CDATA[
+        <p>De Consumentenbond en de stichtingen Offlimits en The Firewall willen dat de camerabril van Meta verboden wordt. De drie organisaties pleitten daar vandaag voor in de rechtbank in Amsterdam. Meta, ook het bedrijf achter Facebook, Instagram en WhatsApp, verzet zich daartegen.</p>
+        <p>Meta heeft de bril gemaakt samen met EssilorLuxottica, het bedrijf achter onder meer Ray-Ban. Het montuur bevat een kleine camera. Een lampje gaat branden als de camera wordt gebruikt om te laten weten dat iemand een foto of video maakt. Maar volgens de organisaties die een verbod willen, is dat niet altijd duidelijk.</p>
+        <p>De camerabril kan gebruikt worden om mensen te filmen of te fotograferen zonder dat zij dat doorhebben, zegt de advocaat van Offlimits, een organisatie die strijdt tegen online grensoverschrijdend gedrag. Hij zegt de camerabril zelf op straat te hebben gedragen. "Ik voelde me een stiekeme gluurder, maar ik werd niet herkend als gluurder."</p>
+        <p>De organisaties wijzen ook op andere plekken waar stiekem beelden kunnen worden opgenomen: in kleedkamers, bij speeltuinen, op het strand en in de badkamer.</p>
+        <h2>Meta: 'Niet verantwoordelijk voor misbruik'</h2>
+        <p>Meta zegt dat de Meta-bril niet is ontworpen of wordt verkocht als stiekem-opnameapparaat. Het bedrijf zegt dat de bril bedoeld is voor normaal gebruik: zonder handen foto's maken, muziek luisteren, bellen en vragen stellen aan de AI-assistent.</p>
+        <p>Ook zegt het bedrijf dat het maatregelen heeft genomen om te voorkomen dat er opnames worden gemaakt als het lampje wordt afgedekt, bijvoorbeeld met een sticker. De eisers zeggen juist dat ook zonder sticker niet altijd duidelijk is dat het lampje brandt, bijvoorbeeld in zonlicht.</p>
+        <p>Volgens Meta kan het bedrijf niet verantwoordelijk worden gehouden van misbruik door "een kleine groep gebruikers". Het bedrijf wijst erop dat in deze zaak maar een paar meldingen bij Offlimits zijn ingediend die gingen over misbruik van de Meta-bril in Nederland, terwijl de Meta-brillen al ruim een jaar te koop zijn.</p>
+        <p>Offlimits zegt dat er voldoende bewijs is voor grootschalig misbruik, en verwees daarvoor naar een recent artikel in <a href="https://www.telegraaf.nl/lifestyle/tech/honderden-nederlandse-vrouwen-stiekem-gefilmd-met-camerabril-zelfs-creepshots-van-seksfeesten-op-grote-schaal-gedeeld/159830132.html">De Telegraaf</a>. Volgens de krant werden stiekem gemaakte beelden op onder meer het strand, festivals en supermarkten van honderden Nederlandse vrouwen in een Telegram-groep gedeeld.</p>
+        <p>Dat Offlimits daar geen meldingen van krijgt, is volgens de stichting logisch. "Veel slachtoffers weten juist niet dat ze zijn gefilmd, daarom kunnen zij dus ook geen melding maken."</p>
+        <h2>Kabinet en toezichthouder pleiten niet voor verbod</h2>
+        <p>Meta vindt ook dat de rechter in deze zaak niet kan beslissen over een verbod of niet. Volgens het bedrijf hoort dat oordeel thuis bij de politiek of de toezichthouder.</p>
+        <p>Na vragen van Tweede Kamerleden zei het kabinet in september niets te zien in een algemeen verbod voor camerabrillen. De Autoriteit Persoonsgegevens zei vorige week dat "simpelweg verbieden" geen oplossing is, maar is wel uiterst kritisch.</p>
+        <p>De toezichthouder raadt mensen af de bril te kopen en adviseert cafés of festivals om camerabrillen in huisregels te verbieden. De brillen zijn volgens de AP op dit moment "onveilig vanwege de risico's voor gebruikers en omstanders".</p>
+        <p>Het advies volgt onder meer op een incident vorig jaar op een festival in Rotterdam, toen een man werd betrapt die met een camerabril stiekem vrouwen bij de toiletten filmde.</p>
+        <p>De rechter doet uiterlijk op 24 december uitspraak.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/5/G/N/c/L/3/eoPXmquFjwJt6H2us1VUq8VrB8J6kJ3KahdSnEg/0x417x4000x2250-1024x576.webp"/>
+      <pubDate>Thu, 26 Nov 2026 14:20:13 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2641106</guid>
+    </item>
+    <item>
+      <title><![CDATA[Miljoen datacenters van Musk in de ruimte? 'Maak me zorgen of het veilig kan']]></title>
+      <link>https://nos.nl/l/2641100</link>
+      <description><![CDATA[
+        <p>De Amerikaanse autoriteiten hebben Elon Musk toestemming gegeven om met zijn bedrijf SpaceX een miljoen datacenters in de ruimte te brengen. Wetenschappers zetten echter grote vraagtekens bij de haalbaarheid en de veiligheid van het plan. "Dat je het kan doen, wil niet zeggen dat je het ook móet doen", waarschuwt satellietdeskundige Marco Langbroek van de TU Delft.</p>
+        <p>Communicatiewaakhond FCC had geen bezwaar tegen de plannen van SpaceX om Starmind op te zetten, een enorm satellietnetwerk van datacenters bedoeld voor AI-toepassingen op aarde. Volgens <a href="https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf">de afspraken</a> moet er voor 2033 ten minste één satelliet zijn gelanceerd, twee jaar later moeten dat er al 100.000 zijn. Voor eind 2040 moet alles operationeel zijn.</p>
+        <p>"Ik kan er met mijn hoofd niet bij", verzucht Langbroek. "Vanuit de veiligheid in de ruimte is het totaal onverstandig." Volgens hem gooit Musk de veiligheid van zo'n complex project "over de heg".</p>
+        <h2>Verkeersregelaar nodig</h2>
+        <p>Langbroek wijst erop dat de bestaande systemen al nauwelijks kunnen bijhouden waar precies alle satellieten vliegen. Dat zijn er naar schatting zo'n 17.000, waarvan er ongeveer 11.000 in de afgelopen paar jaar door Musks SpaceX zijn gelanceerd.</p>
+        <p>"We zien dat het huidige trackingnetwerk van het Amerikaanse leger het al met moeite kan bijhouden. Er worden minder vaak baanupdates gegeven en er treden vaker fouten op. Ook duurt het na lanceringen langer voordat een baan te zien is."</p>
+        <p>De kans op botsingen neemt daardoor toe. Er zouden zelfs kettingreacties kunnen ontstaan waarbij brokstukken van het ene apparaat weer een gevaar vormen voor het andere. "De moderne maatschappij is zo afhankelijk van satellieten dat als er iets misgaat in de ruimte, het ook heel grote gevolgen op aarde zal hebben."</p>
+        <h2>Veel weerstand</h2>
+        <p>Musk ziet Starmind als een oplossing voor het verzet tegen datacentra op aarde. Die vreten energie, slurpen koelwater en veroorzaken geluidsoverlast met hun constante gebrom. De tegenstand is groot: bij de recente verkiezingen in de VS stemden kiezers in 40 van 41 referenda voor strengere maatregelen.</p>
+        <p>Satellieten zouden die bezwaren wegnemen: in de ruimte hoort niemand het gebrom en stroom zouden de satellieten uit zonnepanelen krijgen. "Dit zal een enorme aanwinst zijn voor de VS en de wereld", beloofde Musk in reactie op het FCC-besluit.</p>
+        <p>De American Astronomical Society denkt daar anders over. De sterrenkundigen vrezen dat de nachtlucht zal oplichten met de talloze voorbijschietende satellieten. Dat gebeurt nu al door de minisatellietjes van Musks Starlink, die met het blote oog zichtbaar zijn. De nieuw voorgestelde satellieten zijn 30 bij 75 meter groot, ongeveer een kwart van de oppervlakte van het ISS.</p>
+        <h2>Invloed op klimaat</h2>
+        <p>Langbroek ziet nog een bezwaar: wat omhoog gaat, zal een keer ook weer neerkomen. "Bij de terugkeer in de dampkring van oude satellieten blijft materiaal achter in de bovenste atmosfeer. Dat is nu al merkbaar, aluminiumoxides die de ozonlaag aantasten. Los daarvan beïnvloedt het de temperatuurbalans in de atmosfeer. Dat heeft allerlei effecten op het klimaat en het weer. We weten daar nog weinig van af, maar hebben er wel grote zorgen over."</p>
+        <p>Van internationale regelgeving verwacht Langbroek weinig. "Als je dat wil regelen via bijvoorbeeld de VN, dan krijg je te maken met heel lange en trage procedures, terwijl dit in rap tempo doorgaat", stelt hij. "Je bent heel erg afhankelijk van het lancerende land, maar hier heeft de FCC gewoon een vergunning voor gegeven."</p>
+        <p>Wellicht dat praktische bezwaren nog een drempel zijn voor Musk: experts vragen zich af of datacenters hun warmte wel kwijt kunnen in de ruimte. Koeling is immers veel moeilijker in het isolerende vacuüm van de ruimte. Daar bestaat wel een techniek voor, maar die is op deze schaal nog nooit toegepast.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/5/D/A/t/Z/w/zhmrPuj7gGtHuEn7HWmJMG6TJSGewLhscQoUYEb/8x391x3984x2241-1024x576.webp"/>
+      <pubDate>Thu, 26 Nov 2026 12:49:27 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2641100</guid>
+    </item>
+    <item>
+      <title><![CDATA[AI-gebruik door bedrijven verdubbeld, inhaalslag bij mkb'ers]]></title>
+      <link>https://nos.nl/l/2641047</link>
+      <description><![CDATA[
+        <p>Het aantal bedrijven dat gebruikmaakt van kunstmatige intelligentie, oftewel AI, is in een jaar meer dan verdubbeld. 41 procent van de bedrijven maakt daar gebruik van. Een jaar eerder was dat nog 18 procent, meldt het Centraal Bureau voor de Statistiek (CBS).</p>
+        <p>Bij de grotere bedrijven is het gebruik van AI het hoogst, maar in het midden- en kleinbedrijf (mkb) is het gebruik het sterkst gegroeid. "Het lijkt erop dat de grote bedrijven bij nieuwe technologieën meteen de middelen en de mensen hebben om ermee aan de slag te gaan", legt CBS-onderzoeker Luuk Hovius uit.</p>
+        <p>"Nu we net een paar jaar verder zijn, lijken ook de kleine en middelgrote bedrijven het echt te gebruiken en te omarmen." Dat verklaart volgens Hovius waardoor die groei zo snel gaat.</p>
+        <p>AI wordt voornamelijk ingezet voor marketing of verkoop. Ook wordt het gebruikt voor de administratie van een bedrijf of voor bestuurszaken zoals de selectie van sollicitanten of het maken van de planning.</p>
+        <p>De toename van AI-gebruik is het sterkst bij boekhouding, controle en financieel beheer. Dat steeg van 17 procent in 2025 naar 30 procent dit jaar.</p>
+        <h2>AI in de horeca</h2>
+        <p>In de bouw en in de horeca wordt het minst gebruikgemaakt van AI. Maar het neemt in de horeca wel toe. "Daar wordt het voor verschillende dingen ingezet, denk bijvoorbeeld aan het maken van teksten voor sociale media, promotiemateriaal, maar ook voor het maken van roosters", zegt Hovius.</p>
+        <p>Het CBS heeft ook zzp'ers bevraagd hoe ze hiermee omgaan. Van hen gebruikt 60 procent weleens AI, vooral voor het opzoeken van informatie of het stellen van vragen.</p>
+        <p>Meer dan de helft van de bedrijven die één of meer AI-technologieën gebruiken, zegt dat het heeft geleid tot verhoging van de productiviteit. 30 procent zegt dat de inhoud van het werk is veranderd. Een kwart zegt dat AI-gebruik geen gevolgen heeft gehad voor het bedrijf.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/3/F/8/v/H/x/9y8P8k9dFVEiPzcxcpjcCRDtzNCWasEy2GQtanA/0x197x4000x2250-1024x576.webp"/>
+      <pubDate>Thu, 26 Nov 2026 06:53:10 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2641047</guid>
+    </item>
+    <item>
+      <title><![CDATA[Podcast De Dag: wat is de waarde van Jensen Huang?]]></title>
+      <link>https://nos.nl/l/2640979</link>
+      <description><![CDATA[
+        <p>Jensen Huang werd nog geen twee weken geleden weggestuurd bij chipbedrijf Nvidia, na onthullingen over meerdere affaires, waaronder met een vrouw die wordt verdacht van spionage voor China. Maar deze week keerde hij alweer terug als topman. Bij Nvidia werd hij met applaus ontvangen en de beurskoers van het Amerikaanse bedrijf schoot omhoog. Hoe kan één man zo belangrijk zijn voor een bedrijf?</p>
+        <h2>Luisteren?</h2>
+        <p>Deze aflevering van <em>De Dag</em> luister je via <a href="https://npo.nl/luister/podcasts/123-de-dag/148598">NPO Luister</a> en alle <a href="https://pod.link/1339219119/episode/V09fTk9TXzIwMzc1MjMw">andere podcastapps.</a><a href="https://pod.link/1339219119/episode/V09fTk9TXzIwMzc1NDQ5?t=1213"></a> Bevalt het? Vergeet je dan niet te abonneren.</p>
+        <p>In deze podcast bespreken we met AI-deskundige en geopolitiek onderzoeker Paul Verhagen wat Huang waard is. Volgens Verhagen leunt Nvidia voor een groot deel op de topman. "Jensen Huang wordt gezien als 'too big to fail'. Dat één persoon zo'n grote invloed heeft op de markt, laat zien hoe belangrijk hij is", en juist dat roept vragen op, volgens Verhagen.</p>
+        <h2>Trump</h2>
+        <p>Ook de bemoeienis van de Amerikaanse president bij de snelle terugkeer van Huang is opmerkelijk. Trump heeft persoonlijk gebeld met het bestuur van Nvidia. "Eigenlijk heeft hij beloofd dat hij de wetten niet gaat toepassen op Nvidia", zegt Verhagen.</p>
+        <p>Wat gebeurt er als economische belangen, politieke keuzes en de nationale veiligheid met elkaar verweven raken?</p>
+        <p>Reageren? Mail naar <a href="mailto:dedag@nos.nl">dedag@nos.nl</a>.</p>
+        <p>Presentatie en montage: Bart Tuinman<br /> Redactie: Judith Kutschenreuter<br /> Eindredactie: Rosanne Sies</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/3/2/H/6/G/6/8LHfxrvEoiiuME1bo9h3k1TwJMRMAraBzay4jGV/0x0x1920x1080-1024x576.webp"/>
+      <pubDate>Wed, 25 Nov 2026 15:31:27 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640979</guid>
+    </item>
+    <item>
+      <title><![CDATA[Nederlandse hackersgroep zelf gehackt, 'door autonome AI-agents']]></title>
+      <link>https://nos.nl/l/2640968</link>
+      <description><![CDATA[
+        <p>Aanvallers hebben met behulp van AI ingebroken bij DIVD, een Nederlands verband van ethische hackers. De aanvallers lieten AI-programma's waarschijnlijk autonoom inbreken op de systemen, die daardoor veel sneller konden werken dan mensen, stellen externe onderzoekers in een vandaag verschenen rapport.</p>
+        <p>Het in 2019 opgerichte DIVD speurt onder meer het internet af op zoek naar te hacken ict-systemen en doet zelf onderzoek naar kwetsbaarheden in software. De organisatie heeft dus ook zelf veel gevoelige informatie over onopgeloste beveiligingsproblemen op internet.</p>
+        <p>Een deel van die gevoelige informatie kwam ook in handen van de aanvallers. Volgens DIVD gaat het om een beperkte hoeveelheid, en vooral verouderde informatie. Ook werden ruim 4000 e-mailadressen buitgemaakt, zowel van DIVD-vrijwilligers als van mensen die met DIVD contact hebben gehad. De hackers bemachtigden ook 34 telefoonnummers en 3 huisadressen.</p>
+        <p>De impact had echter veel groter kunnen zijn, stelt Marieke Rijken van het hackerscollectief. Zo konden de aanvallers nu niet doorstoten naar de gevoeligste systemen van het collectief. "Dan hadden we een heel groot probleem gehad. De boodschap hiervan is dat je er rekening mee moet houden dat hackers toch wel binnenkomen." Beveiligingsmaatregelen zorgden ervoor dat hackers die eenmaal binnen waren, niet bij die gevoeligste systemen konden komen.</p>
+        <p>Tegelijkertijd ging niet alles goed: zo sloeg een systeem na een kwartier alarm toen de hackers al probeerden in te breken, maar het duurde zeven uur voordat er een mens van vlees en bloed naar keek. Ook was niet alle software bijgewerkt, wat de organisatie zelf "pijnlijk" noemt, omdat het collectief zelf altijd anderen oproept updates zo snel mogelijk te installeren.</p>
+        <h2>Non-stop</h2>
+        <p>De aanvallers gebruikten een programma dat specifiek is bedoeld om met AI in te breken op computersystemen, schrijven de onderzoekers van beveiligingsbedrijf Merlon Security. Zij werden ingehuurd om het incident te onderzoeken.</p>
+        <p>Door de snelheid waarmee de aanvallers tijdens het hacken 22 uur lang vrijwel non-stop werkten, en de manier waarop ze programmeerden, denken de onderzoekers dat de AI autonoom werkte. Dat betekent dat er geen mensen aan de knoppen zaten.</p>
+        <p>Hoewel er er geen sluitend bewijs is dat er inderdaad autonome AI-agents aan het werk waren, twijfelt Earth Grob van beveiligingsbedrijf Merlon er niet aan. "Menselijke hackers gedragen zich niet zo", zegt Grob.</p>
+        <p>Het gaat daarbij waarschijnlijk niet om "op hol geslagen" agents, zoals eerder gebeurde bij interne tests van OpenAI, maar om agents die door een mens met dit doel op pad werden gestuurd.</p>
+        <p>"Dat hiervoor AI wordt gebruikt, is op zichzelf niet zorgelijk", zegt Marieke Rijken van het hackerscollectief. "Maar door AI wordt de drempel wel een stuk lager om misbruik te maken van alles waar we de afgelopen jaren voor hebben gewaarschuwd."</p>
+        <p>De aanvallers gebruikten een softwaretool die specifiek werd ontwikkeld om met behulp van AI hackaanvallen uit te voeren, en die ook werd <a href="https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/">gebruikt</a> bij aanvallen op Zuid-Koreaanse financiële instellingen.</p>
+        <h2>Geavanceerd</h2>
+        <p>Tegelijkertijd was de aanval volgens de onderzoekers niet erg geavanceerd. Weliswaar gebruikte de aanvallers twee beveiligingsgaten in door DIVD gebruikte software, wat relatief zeldzaam is, maar de aanvallers probeerden nauwelijks om onopgemerkt te blijven, schoten met hagel en verstoorden soms hun eigen hackpogingen.</p>
+        <p>De meeste instellingen maken rapporten naar hackincidenten niet openbaar. DIVD wil naar eigen zeggen het goede voorbeeld geven. "We zouden graag zien dat dat vaker gebeurt na incidenten, want daar kan iedereen weer van leren. We hebben alleen elkaar, dus hoe meer er wordt gedeeld, hoe beter." Ook het IP-adres van de aanvaller wordt daarom gedeeld met de buitenwereld.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/2/7/a/A/c/H/podRc5aTcm7dX5yj453jnJFcCJ25cMWuhW4PK8B/506x724x3488x1962-1024x576.webp"/>
+      <pubDate>Wed, 25 Nov 2026 13:37:02 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640968</guid>
+    </item>
+    <item>
+      <title><![CDATA[Huawei in VS schuldig bevonden aan diefstal van bedrijfsgeheimen]]></title>
+      <link>https://nos.nl/l/2640907</link>
+      <description><![CDATA[
+        <p>Het Chinese technologiebedrijf Huawei is door een Amerikaanse jury schuldig bevonden aan het samenzweren voor het stelen van bedrijfsgeheimen, bankfraude en het omzeilen van Amerikaanse sancties. Van de ernstigste aanklacht - het runnen van een criminele organisatie - werd het bedrijf echter vrijgesproken.</p>
+        <p>Het bedrijf werd ervan beschuldigd banken te hebben misleid over bedrijfsactiviteiten in Iran en bedrijfsgeheimen van Amerikaanse ondernemingen te hebben gestolen. In 2018 werd Meng Wanzhou, de Chinese topvrouw van Huawei, opgepakt in Canada op last van de Verenigde Staten vanwege schending van het Amerikaanse handelsembargo met Iran.</p>
+        <h2>Deal</h2>
+        <p>Ze zat drie jaar vast in Canada. Wanzhou <a href="https://nos.nl/artikel/2399130-huawei-topvrouw-verlaat-canada-na-deal-met-justitie-china-laat-canadezen-vrij">sloot een deal</a> met de Amerikaanse aanklager, waarna ze terug mocht keren naar China. De zaak tegen Huawei als bedrijf bleef echter wel bestaan. Het proces tegen het bedrijf bij de federale rechtbank in Brooklyn in de stad New York duurde ruim twee maanden. Het Amerikaanse Openbaar Ministerie riep meer dan zestig getuigen op en de advocaten van Huawei lieten nog eens vijftien getuigen aan het woord.</p>
+        <p>Welke straf het Chinese bedrijf krijgt, is nog onbekend. Een rechter gaat dat op 14 september van volgend jaar bekendmaken. Het bedrijf kan in theorie financiële straffen en terugvorderingen opgelegd krijgen die in de miljarden dollars lopen.</p>
+        <h2>Boycot</h2>
+        <p>Sinds 2018 mochten Amerikaanse overheidsinstanties al geen apparatuur of diensten van Huawei aanschaffen en het bedrijf mag sinds 2019 geen vitale onderdelen meer leveren aan Amerikaanse communicatienetwerken. Ook in <a href="https://nos.nl/artikel/2381672-fd-huawei-bevestigt-verbod-om-mee-te-werken-aan-vitale-onderdelen-5g-netwerk">andere westerse landen</a> mogen voor de belangrijkste delen van het telecommunicatienetwerk geen onderdelen van Huawei meer worden gebruikt. Volgens geheime diensten in westerse landen is het bedrijf een verlengstuk van de Chinese overheid.</p>
+        <p>In de rechtszaak in de VS ging het onder meer over diefstal. Zo zou het bedrijf volgens het Amerikaanse Openbaar Ministerie internetrouters hebben verkocht die broncodes bevatten van concurrenten. Ook zouden medewerkers onder meer foto's hebben gemaakt van bedrijfsgevoelige informatie. Volgens het OM werden hiermee onder meer de techbedrijven Cisco, Motorola en Fujitsu getroffen.</p>
+        <h2>Hoger beroep</h2>
+        <p>Huawei ontkent de aanklachten en zegt in hoger beroep te gaan. Volgens het bedrijf gaat het bij veel van de genoemde gevallen over geschillen over bedrijfsgeheimen die in de afgelopen twintig jaar niet via het strafrecht zijn afgehandeld, maar door civiele rechters. Ook ziet het bedrijf de vrijspraak voor het runnen van een criminele organisatie als een bevestiging dat het integer handelt.</p>
+        <p>De westerse gedeeltelijke boycots hebben het bedrijf nauwelijks geschaad. Het bedrijf is nog altijd in zo'n 170 landen actief en verkoopt nog steeds wereldwijd smartphones en telecomapparatuur. Het verlegde een deel van de aandacht naar de chipindustrie. In China is het bedrijf inmiddels een geduchte concurrent geworden voor Nvidia. Bij Huawei werken wereldwijd ruim 200.000 mensen.</p>
+        <p>Het komt weinig voor dat een groot buitenlands concern in de Verenigde Staten door de regering voor de rechter wordt gedaagd. In de meeste gevallen eindigen deze zaken met een schikking voordat de zaak daadwerkelijk begint.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/2/7/1/E/D/K/si193UFqWo3UnBimU4BaqLJoxTFVXYn8epPfwTM/60x247x3792x2133-1024x576.webp"/>
+      <pubDate>Wed, 25 Nov 2026 01:48:05 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640907</guid>
+    </item>
+    <item>
+      <title><![CDATA[Maker GTA VI: recordomzet na eerste verkoopdag van 3,8 miljard dollar ]]></title>
+      <link>https://nos.nl/l/2640349</link>
+      <description><![CDATA[
+        <p>De ontwikkelaar van GTA VI zegt dat het spel na de eerste verkoopdag een recordomzet heeft gehaald van 3,79 miljard dollar (3,46 miljard euro). Volgens Rockstar Games is daarmee een record gevestigd bij de verkoop van een nieuw computerspel.</p>
+        <p>Het bedrijf baseert het cijfer op wereldwijde schattingen tot en met donderdag, de dag waarop de populaire game werd uitgebracht. Al voor de officiële lancering waren volgens Rockstar 32,5 miljoen spellen verkocht.</p>
+        <p><em>Over de hele wereld werd afgeteld naar de lancering van de game:</em></p>
+        <p>De standaardversie van de game kost in Nederland 80 euro. Het spel kan worden gespeeld op de PlayStation 5 van Sony en de Xbox Series van Microsoft.</p>
+        <p>GTA VI is de opvolger van GTA V. Het heeft <a href="https://nos.nl/artikel/2640017-gta-vi-verschijnt-na-13-jaar-hoe-de-game-reeks-de-wereld-veroverde">dertien jaar geduurd</a> voordat er een nieuwe versie kwam.</p>
+        <p>In het spel staat criminaliteit centraal, maar spelers kunnen ook vrij rondlopen of rondrijden en de gigantische spelwereld verkennen, relaties aangaan of gewoon naar de sportschool gaan.</p>
+        <p>Het verhaal van GTA VI draait om het koppel Lucia en Jason, dat vooral op zoek is naar een beter leven door middel van misdaad. De game speelt zich af in Vice City, een fictieve versie van Miami.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/7/C/B/t/6/p/NxezPd9Lymd9keCEZMd4tLJkh3rhAfh8GUiQASm/8x105x3984x2241-1024x576.webp"/>
+      <pubDate>Fri, 20 Nov 2026 22:28:47 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640349</guid>
+    </item>
+    <item>
+      <title><![CDATA[Recordbeursgang voor AI-bedrijf Anthropic, koers stijgt meteen met een derde]]></title>
+      <link>https://nos.nl/l/2640176</link>
+      <description><![CDATA[
+        <p>Het aandeel van AI-bedrijf Anthropic is de eerste uren na de beursgang flink in waarde gestegen. De openingskoers van het bedrijf achter AI-model Claude stond rond 17.45 uur Nederlandse tijd op 111 dollar. Dat is ruim een derde hoger dan de introductieprijs.</p>
+        <p>Anthropic haalt met de beursgang 81 miljard dollar (zo'n 74 miljard euro) op. Een aantal zittende investeerders, waaronder Nvidia, Google en Microsoft, legt nog eens 26 miljard dollar in. Daarmee overtreft het de beursgang van SpaceX, tot vandaag de grootste beursgang ooit.</p>
+        <h2>Veel belangstelling</h2>
+        <p>Het bedrijf kreeg vanmiddag om 15.30 uur Nederlandse tijd een notering aan de Nasdaq, de Amerikaanse beurs waar in de belangrijkste techbedrijven wordt gehandeld. Het duurt meestal even voordat er bij nieuwe aandelen een koers bekend is.</p>
+        <p>In totaal kwamen er 980 miljoen aandelen beschikbaar. De belangstelling was groot. Een week van tevoren was de beursgang volgens persbureau Bloomberg al zes keer overtekend.</p>
+        <p>Door de grote vraag werd de introductieprijs, de prijs waarvoor een aandeel in eerste instantie wordt verkocht, woensdag nog verhoogd naar 83 dollar. Eerder werd die prijs ergens tussen de 70 en 78 dollar geschat.</p>
+        <h2>Optimisme</h2>
+        <p>In aanloop naar de beursgang ging het regelmatig over de risico's. In de prospectus, de papieren die een bedrijf moet inleveren voor een beursgang, waarschuwde Anthropic bijvoorbeeld voor de gevaren van AI. Ook draait het bedrijf flink verlies en heeft het een miljardenschuld.</p>
+        <p>Toch lijkt het er niet op dat beleggers zich daardoor hebben laten afschrikken. De beurs in New York begon vandaag met winst. Vooral de tech- en chipaandelen deden het goed in afwachting van de openingskoers van Anthropic.</p>
+        <p><em>In deze video gaan we verder in op het risico van die torenhoge verwachtingen: </em></p>
+        <p>De beursgang van Anthropic komt in onrustige tijden in de AI-sector. Na het vertrek van <a href="https://nos.nl/artikel/2639176-topman-huang-van-chipbedrijf-nvidia-vertrekt-per-direct-vanwege-affaires">Nvidia-topman</a> Jensen Huang daalde de beurskoers van de chipfabrikant flink. Ook de aandelen van <a href="https://nos.nl/artikel/2638178-techaandelen-krijgen-flinke-klappen-amerikaanse-nasdaq-zo-n-5-procent-omlaag">AI-bedrijven</a> zakten de afgelopen tijd.</p>
+        <p>Na de winst van de Democraten tijdens de tussentijdse verkiezingen in de Verenigde Staten leken beleggers zich zorgen te maken of ze de enorme AI-investering wel kunnen terugverdienen.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/1/3/C/w/y/P/cXEuZMiryg7rzpyS7m2TJ9mTiHSXrrY5GZDQjqP/8x40x3984x2241-1024x576.webp"/>
+      <pubDate>Thu, 19 Nov 2026 17:52:36 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640176</guid>
+    </item>
+    <item>
+      <title><![CDATA[Podcast De Dag: van haar tot wolken, de details in GTA VI]]></title>
+      <link>https://nos.nl/l/2640161</link>
+      <description><![CDATA[
+        <p>13 jaar lang is erop gewacht: een nieuwe <em>Grand Theft Auto</em>. En sinds middernacht is <em>GTA VI </em>ook in ons land te spelen. Mensen hebben vrij gevraagd, zijn opgebleven om het meteen te spelen, de reviews zijn al direct lovend en het geld stroomt binnen bij ontwikkelaar Rockstar. Worden de enorme verwachtingen die er zijn ook ingelost?</p>
+        <h2>Luister hier:</h2>
+        <p>Deze aflevering van <em>De Dag</em> luister je via <a href="https://npo.nl/luister/podcasts/123-de-dag/">NPO Luister</a> en alle <a href="https://pod.link/1339219119/">andere podcastapps.</a> Bevalt het? Vergeet je dan niet te abonneren.</p>
+        <p>Met René Glas, universitair docent game research aan de Universiteit Utrecht, werpen we een eerste blik op de gloednieuwe game. De details zijn heel indrukwekkend volgens Glas. Hoe haar beweegt en wolken boven je hangen is ongekend. Maar ontwikkelaar Rockstar heeft ook een unieke positie: met een enorm budget en heel veel tijd zetten ze een game neer die al bijna dertig jaar de toon zet in de gamewereld.</p>
+        <p>Reageren: mail naar <a href="mailto:dedag@nos.nl">dedag@nos.nl</a></p>
+        <p>Presentatie &amp; montage: Marco Geijtenbeek</p>
+        <p>Redactie: IJsbrand Terpstra</p>
+        <p>Eindredactie: Judith van de Hulsbeek</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/7/H/5/U/n/v/aEhudpGY18ER8g36WUDRWBTk9bNL3MHK2M73phw/8x4x1904x1071-1024x576.webp"/>
+      <pubDate>Thu, 19 Nov 2026 15:14:32 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640161</guid>
+    </item>
+    <item>
+      <title><![CDATA[Deelfietsplatform lekte fietstochten van gebruikers, ook van Arriva-klanten]]></title>
+      <link>https://nos.nl/l/2640147</link>
+      <description><![CDATA[
+        <p>Een deelfietsplatform dat door onder meer Arriva wordt gebruikt, was slecht beveiligd en lekte daardoor locaties en andere details van gebruikers. Dat blijkt uit onderzoek van de NOS.</p>
+        <p>Arriva gebruikt de app voor het aanbieden van deelfietsen in Limburg. Ook wordt de app gebruikt door kleinere fietsverhuurders en bedrijven die hun medewerkers deelfietsen aanbieden.</p>
+        <p>Van alle gebruikers van het zogenoemde Xbike-platform waren naast het e-mailadres ook details van de fietsritten te zien, zoals het begin- en eindpunt van de rit. Die informatie werd door de navigatiemodule van de fiets aangeleverd.</p>
+        <h2>Gevoelig</h2>
+        <p>Hoewel details zoals naam of betaalgegevens niet inzichtelijk waren, kan de combinatie van een e-mailadres en een locatie toch gevoelig zijn; zo zou iemands thuisadres kunnen worden achterhaald, en op welke tijdstippen iemand thuis is. Ook zouden medewerkers van gevoelige bedrijven of overheidsinstellingen kunnen worden geïdentificeerd.</p>
+        <p>Het lek bestond sinds februari 2023. De app is op aandringen van Arriva uit voorzorg offline gehaald. Xbike heeft een datalekmelding gedaan bij de Autoriteit Persoonsgegevens, bevestigt die instantie.</p>
+        <p>De deelfietsapp heeft bijna 130.000 gebruikers met minimaal één rit, van wie ruim 40.000 bij Arriva, laten woordvoerders van de twee bedrijven weten. Klanten die nooit een rit hebben gemaakt, zijn niet getroffen.</p>
+        <h2>Misbruik</h2>
+        <p>Een ethisch hacker vond het beveiligingsprobleem en benaderde de NOS. Naast het datalek onderzocht de hacker, die anoniem wil blijven, ook de mogelijkheid om fietsen te ontgrendelen zonder te betalen. Zo konden dus gratis fietsritten worden gemaakt. Volgens de Arriva-woordvoerder lijkt het er op dat dat inderdaad technisch mogelijk was.</p>
+        <p>Misbruik van het lek kan niet worden uitgesloten, zegt een Arriva-woordvoerder. De ontwikkelaars van de app proberen te achterhalen of te zien is wie welke data heeft opgevraagd, maar de kans is klein dat dit tot februari 2023 te achterhalen is.</p>
+        <p>De ethisch hacker die de NOS informeerde, downloadde de bewuste data, om de omvang van het lek te kunnen inschatten. "Al was ik dat vooraf niet per se van plan, maar voor ik het wist had ik alle data al", zegt de hacker. Xbike merkte dat niet op, totdat de NOS het bedrijf inlichtte. Inmiddels heeft hij de data verwijderd.</p>
+        <h2>Geen controle</h2>
+        <p>Het probleem werd veroorzaakt door gebrekkige toegangscontrole. Technisch waren alle gebruikers gerechtigd om persoonsgegevens van andere gebruikers op te vragen. Veiligheidsmaatregelen om dat te voorkomen, zijn per abuis uitgeschakeld, laat Arriva weten; hoe dat kon gebeuren, wordt nog onderzocht.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/5/G/t/h/d/K/PGfPT7k4ZivU3iGYN1jMhiLxiWnqbBWY6N6CARf/8x59x3984x2241-1024x576.webp"/>
+      <pubDate>Thu, 19 Nov 2026 13:02:55 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640147</guid>
+    </item>
+    <item>
+      <title><![CDATA[Autoriteit Persoonsgegevens: 'AI-camerabrillen brengen veiligheid in gevaar']]></title>
+      <link>https://nos.nl/l/2640119</link>
+      <description><![CDATA[
+        <p>AI-camerabrillen brengen de veiligheid van gebruikers en omstanders in gevaar. Dat concludeert de Autoriteit Persoonsgegevens (AP) na onderzoek. De privacywaakhond raadt de aankoop van AI-brillen af.</p>
+        <p>De AP <a href="https://nos.nl/artikel/2632006-privacywaakhond-waarschuwt-beelden-van-camerabril-delen-mag-niet-zomaar">waarschuwde eerder</a> al dat het filmen van omstanders met zo'n bril vrijwel altijd verboden is, maar nu blijkt dat risico's niet alleen over privacy gaan.</p>
+        <h2>Ernstige gevolgen</h2>
+        <p>Twee van de zes onderzochte brillen werden uitgebreid getest in nagebootste praktijksituaties waarin de veiligheid van mensen een belangrijke rol speelde. Tijdens een nagebootste noodsituatie waarin reanimatieadvies werd gevraagd, beweerde een van de brillen meerdere keren dat er al een ambulance onderweg was, terwijl er geen hulpdiensten waren ingeschakeld.</p>
+        <p>De AP noemt geen merknamen van de onderzochte brillen en AI-modellen. De autoriteit zegt wel dat ze in Nederland te koop zijn, uit verschillende werelddelen komen en dat de prijzen variëren van minder dan 100 euro tot meer dan 500. Volgens de AP maakt het niet zoveel uit om welke merken het gaat, omdat op iedere bril wel wat aan te merken is.</p>
+        <h2>'Leven op het spel'</h2>
+        <p>"Een bril die je ongemerkt filmt, is al zorgelijk. Een bril die je ook nog eens verkeerd adviseert wanneer iemands leven op het spel staat, gaat een stap te ver", zegt Monique Verdier, vicevoorzitter van de AP.</p>
+        <p>Het was bekend dat AI-modellen foute antwoorden kunnen geven. Maar dat gebeurt dus ook met een bril die je de hele dag kan dragen.</p>
+        <p>Ook bij de bescherming van minderjarigen maakten de AI-camerabrillen fouten met mogelijk zeer ernstige gevolgen. Zo gaf een bril datingadvies aan een volwassene die aangaf interesse te hebben in een minderjarige.</p>
+        <p>Bij een andere test werden veiligheidswaarschuwingen bij speelgoed voor jonge kinderen niet opgevolgd. Ook bij het lezen van medicijnbijsluiters en het interpreteren van waarschuwingen voor extreem weer maakten de brillen fouten.</p>
+        <h2>Wat is een AI-camerabril?</h2>
+        <p>Een AI-camerabril is een bril met een camera die AI-functionaliteiten bevat en geïntegreerde sensoren, zoals een microfoon. De bril is gekoppeld aan de smartphone van de gebruiker en vanaf daar aan een AI-model.</p>
+        <p>Met de camera en microfoon in de bril kan de gebruiker opnames maken, die aan het AI-model kunnen worden doorgegeven. De brildrager kan het AI-model meestal aansturen via spraak en het antwoord van het AI-model krijgen via de ingebouwde speaker.</p>
+        <p>Sommige brillen hebben ook een displayfunctie, waardoor tekst op de brillenglazen kan worden geprojecteerd.</p>
+        <p>De AP bekeek voor dit onderzoek onder andere naar het ontwerp en de documentatie van de brillen en hoe ze functioneren in specifieke veiligheidsscenario's.</p>
+        <p>De AP wil dat de Nederlandse en Europese politiek de onderzoeksresultaten meenemen bij beslissingen of AI-camerabrillen wel of niet verboden moeten worden.</p>
+        <p>"Het is van belang dat we collectief werken aan bewustwording, weerbaarheid en ethisch besef", zegt Verdier.</p>
+        <p>Daarnaast adviseert de AP eigenaren en beheerders van locaties het dragen en gebruiken van camerabrillen in hun huisregels te verbieden.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/1/3/j/S/5/T/VCUyRfX985b2KvXScw8cQ2JjPpTe1wFGNWoLbsq/8x212x3984x2241-1024x576.webp"/>
+      <pubDate>Thu, 19 Nov 2026 09:45:37 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640119</guid>
+    </item>
+    <item>
+      <title><![CDATA[18/11 in Nieuwsuur: Zorgen over extreemrechts in de Kamer • Criminelen hebben schuld bij staat • GTA komt uit]]></title>
+      <link>https://nos.nl/l/2640022</link>
+      <description><![CDATA[
+        <h2>FVD gebruikt het vaakst extreemrechtse termen</h2>
+        <p>Het woord 'remigratie' wordt steeds vaker uitgesproken in het parlement. De afgelopen tien jaar kwam het 115 keer voorbij, waarvan 96 keer sinds 2024: 53 keer zeiden Kamerleden van FVD het, 19 keer waren het PVV'ers. Ook het woord 'omvolking' is het vaakst uitgesproken door FVD'ers.</p>
+        <p>Volgens veiligheidsdiensten AIVD en NCTV beïnvloeden rechts-extremistische groepen de Nederlandse samenleving met dit soort verhullende woorden, om zo acceptabeler over te komen. We spreken erover met historicus <strong>Robin te Slaa</strong>, die een boek schreef over het gedachtegoed van FVD.</p>
+        <h2>1,2 miljard tegoed van criminelen en daders</h2>
+        <p>Het Centraal Justitieel Incassobureau (CJIB) kampt met een enorme openstaande rekening. De uitvoeringsinstantie van het ministerie van Justitie en Veiligheid krijgt nog ruim 1,2 miljard euro van mensen die veroordeeld zijn voor strafbare feiten.</p>
+        <p>"Een groot bedrag", erkent CJIB-directeur Johan Bac aan <em>Nieuwsuur</em>. Het kost zijn organisatie veel moeite al het geld te verhalen bij de juiste personen.</p>
+        <h2>GTA komt uit</h2>
+        <p>Gamefans wachten er al lang op, maar nu komt dan eindelijk Grand Theft Auto (GTA) VI uit. Het zesde deel uit de reeks belooft financieel gezien de grootste game ooit te worden. Ruim 6500 mensen werkten aan de ontwikkeling van het spel en dat kostte naar verluidt ruim 1,5 miljard euro.</p>
+        <p>Wat maakt GTA zo populair? En is het spel niet te (vrouw)onvriendelijk?</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/3/7/c/5/4/i/jsBT21oNaf1BZMW2t3qCsgZEXArQgzKdWYsYKBZ/8x211x3984x2241-1024x576.webp"/>
+      <pubDate>Wed, 18 Nov 2026 14:53:02 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2640022</guid>
+    </item>
+    <item>
+      <title><![CDATA[Kleine en middelgrote bedrijven hebben de basis van cybersecurity niet op orde]]></title>
+      <link>https://nos.nl/l/2639736</link>
+      <description><![CDATA[
+        <p>Kleine en middelgrote bedrijven (mkb'ers) lopen een wezenlijk risico slachtoffer te worden van een cyberaanval. Daarvoor waarschuwt de Nationaal Coördinator Terrorisme en Veiligheid (NCTV). Volgens de veiligheidsdienst ontbreken vaak eenvoudige basismaatregelen van cybersecurity. Het gaat om maatregelen die bedrijven soms eenvoudig kunnen nemen.</p>
+        <p>Zo gebruikt 5 procent van het mkb geen antivirussoftware, volgens het Centraal Bureau voor de Statistiek (CBS). Bedrijven werken soms ook met zwakke wachtwoorden: 17 procent van het mkb heeft geen afspraken om dat te voorkomen.</p>
+        <p>Ook ontbreekt vaak een extra beveilingslaag bij het inloggen. Bijvoorbeeld dat een medewerker naast een wachtwoord een extra toegangscode moet invullen. In de cybersecuritywereld heet dit MFA: <em>multifactorauthenticatie</em>. Deze beveiliging maakt een hack veel moeilijker. Toch past 18 procent van de mkb'ers de maatregel niet toe.</p>
+        <p>"De meeste hacks zijn niet de spannende cyberaanvallen die je in films ziet", zegt Martine Groen. Zij doet aan de Hogeschool Utrecht onderzoek naar cybersecurity bij het mkb. "Meestal komt het door stommiteiten, zoals een makkelijk te raden wachtwoord."</p>
+        <h2>Onvoldoende aandacht voor beveiliging: 'Gevaarlijke cocktail'</h2>
+        <p>Hoe het mis kan gaan, weten ze bij Royal Dirkzwager. Dit bedrijf monitort scheepvaart voor onder meer havens. In maart 2023 werd het bedrijf digitaal gegijzeld: alles op de computerservers werd op slot gezet. Een criminele groep eiste losgeld om de bestanden weer toegankelijk te maken.</p>
+        <p>"Dat was een gevaarlijke situatie", zegt Nicolas Maes, hoofd IT bij het bedrijf. "We houden bijvoorbeeld ook het scheepverkeer rond boorplatformen in de gaten, zodat daar geen schepen varen die daar niet mogen zijn. Door de aanval verloren we het zicht op veertig boorplatformen. We moesten er helikopters naartoe sturen om ze te bewaken."</p>
+        <p>De aanval had waarschijnlijk voorkomen kunnen worden als Royal Dirkzwager een aantal basisbeveiligingsmaatregelen had genomen, denkt Maes. "Vlak daarvoor verhuisden we al onze bestanden, computerprogramma's en IT-omgeving naar externe computerservers", vertelt hij. Zo kunnen medewerkers altijd via het internet toegang krijgen tot bedrijfsinformatie.</p>
+        <p>Die omgeving was niet goed beveiligd. "Er was geen limiet op het aantal inlogpogingen dat iemand kon doen", zegt Maes. Daardoor kon een hacker net zo lang wachtwoorden proberen tot het met het juiste wachtwoord lukte.</p>
+        <p>Ook had het bedrijf geen MFA-beveiliging, zegt Maes. "Ik schaam me een beetje als ik dat zeg, want dat was een gevaarlijke cocktail. We hebben bij die verhuizing onvoldoende aandacht gegeven aan de IT-beveiliging. Het zijn een paar kleine maatregelen waarvan we nu zeggen: hadden we die toen maar genomen."</p>
+        <h2>'Groot en structureel probleem'</h2>
+        <p>Het ontbreken van die basismaatregelen is een structureel probleem, waarschuwt de NCTV. De veiligheidsdienst ziet bijvoorbeeld ook dat bedrijven hun bedrijfsnetwerk niet actief monitoren, zodat ze indringers kunnen betrappen. "Je wil dat er een alarm afgaat als er een aanvaller binnenkomt", zegt Vaisha Bernard van beveiligingsbedrijf Eye Security. "Daarom moet je een soort camerasysteem op je netwerk installeren."</p>
+        <p>Toch doet 37 procent van de mkb'ers dat niet. Een ongeveer net zo grote groep houdt geen bestanden bij over hoe computernetwerken of -systemen gebruikt worden. Daardoor kan na een cyberaanval geen onderzoek plaatsvinden naar waar een hacker allemaal toegang toe had.</p>
+        <p>"In de media gaat veel aandacht uit naar grote aanvallen van bekende bedrijven", zegt Harm Teunis van beveiligingsbedrijf ESET. "Wat je niet hoort, zijn al die mkb'ers die jaarlijks slachtoffer zijn van een cyberaanval en gegevens van medewerkers of klanten worden gestolen."</p>
+        <p>"Kleine bedrijven geven vaak minder geld uit aan cybersecurity. Ondernemers zijn bang dat het een grote hap uit hun omzet kost. Ook gelden voor grote bedrijven strenge eisen. Voor veel mkb'ers is dat niet zo."</p>
+        <h2>'Mkb stelt cybersecurity vaak uit'</h2>
+        <p>Grote bedrijven hebben vaak specialisten of hele afdelingen die zich bezighouden met cybersecurity, zegt onderzoeker Groen van de Hogeschool Utrecht. "Dat kan in het mkb niet. Die kennis ontbreekt vaak. Ondernemers vinden cybersecurity echt wel belangrijk. Maar ze hebben het altijd druk, dus het wordt vaak uitgesteld."</p>
+        <p>Daarom vindt ze dat mkb'ers meer ondersteuning moeten krijgen, bijvoorbeeld van brancheverenigingen. Als die veel dingen uitzoekt voor bedrijven in hun sector, hoeven ondernemers dat niet zelf te doen. Zo kunnen mkb'ers heel concrete adviezen krijgen om hun cybersecurity te verbeteren."</p>
+        <p>De cyberaanval op Royal Dirkzwager was voor het bedrijf een leerzame ervaring, zegt Maes. "Die basismaatregelen hebben we daarna wel genomen", zegt hij. "Mijn advies aan andere bedrijven: regel dit nu. En niet als het te laat is."</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/3/E/b/e/7/8/z4nYdQiirA398TirgiWv57zVGcNBjytd88AkpPt/265x201x3728x2097-1024x576.webp"/>
+      <pubDate>Mon, 16 Nov 2026 17:07:45 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639736</guid>
+    </item>
+    <item>
+      <title><![CDATA[15/11 in Nieuwsuur: Nog geen uitkomst crisisoverleg • Vliegtuigen raken gps-signaal kwijt • Anthropic naar de beurs • Hoe leer je het vak als thuiswerker?]]></title>
+      <link>https://nos.nl/l/2639606</link>
+      <description><![CDATA[
+        <h2>Nog geen uitkomst crisisoverleg</h2>
+        <p>D66, VVD en CDA zijn er nog niet uit en gaan morgen verder praten op het Catshuis. Dat laat de Rijksvoorlichtingsdienst weten. Het waren intensieve maar goede gesprekken, zo luidt de mededeling.</p>
+        <p>We bespreken het laatste nieuws met politiek verslaggever <strong>Arjan Noorlander</strong>.</p>
+        <h2>Vliegtuigen raken gps-signaal kwijt</h2>
+        <p>Zeven vliegtuigen hebben afgelopen maandag aan de luchtverkeersleiding gemeld dat hun gps-signaal is verstoord. Volgens het ministerie van Infrastructuur en Waterstaat is de veiligheid niet in het geding geweest.</p>
+        <p>De Rijksinspectie Digitale Infrastructuur onderzoekt de verstoring. Het is "aannemelijk" dat de verstoring opzettelijk is gebeurd, zegt een woordvoerder van de luchtverkeersleiding tegen <a href="https://www.nrc.nl/nieuws/2026/11/15/gps-signaal-van-tientallen-vliegtuigen-bij-schiphol-verstoord-mogelijk-vanaf-een-schip-op-de-noordzee-a4941397">NRC</a>. </p>
+        <h2>Anthropic naar de beurs</h2>
+        <p>AI-bedrijf Anthropic gaat naar de beurs. Dat gebeurt naar verwachting komende week. Niet alleen op de financiële markten wordt met spanning meegekeken, ook binnen de techwereld. De beursgang is namelijk de ultieme test voor de AI-sector.</p>
+        <p>Als beleggers te weinig vertrouwen hebben in Anthropic, kunnen de gevolgen groot zijn. Econoom <strong>Mathijs Bouman</strong> legt uit waarom.</p>
+        <h2>Hoe leer je het vak als thuiswerker?</h2>
+        <p>Het sentiment rond thuiswerken lijkt te veranderen: werknemers zijn nog steeds enthousiast, terwijl werkgevers hun personeel toch graag vaker op kantoor willen zien.</p>
+        <p>Maar hoe is het als je jong bent en het vak nog moeten leren, terwijl je collega's thuis achter hun laptop zitten? Hoe word je ingewerkt als je elkaar nauwelijks ziet? We gaan langs bij een bedrijf in Hoofddorp waar de norm is dat alle werknemers vijf dagen op kantoor zijn.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/3/9/F/x/C/a/vNjh3s817zxY1VwDpKbPEm5gxEqtyhaMoKfDKTL/1x538x3520x1980-1024x576.webp"/>
+      <pubDate>Sun, 15 Nov 2026 16:46:30 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639606</guid>
+    </item>
+    <item>
+      <title><![CDATA[Meerdere Nederlandse sites verspreidden malware via advertenties]]></title>
+      <link>https://nos.nl/l/2639562</link>
+      <description><![CDATA[
+        <p>Niet alleen voetbalsite <a href="https://nos.nl/artikel/2639519-kwaadaardige-code-verspreid-via-reclame-op-voetbalsite-vi-gegevens-buitgemaakt">VI</a>, ook andere Nederlandse sites blijken via advertenties een kwaadaardige code te hebben verspreid onder gebruikers. Ook onder meer websites GeenStijl en De Dagelijkse Standaard, Autoblog.nl, techplatform Bright en wetenschapssite Scientias melden gedupeerd te zijn. "Serieus slecht nieuws", <a href="https://www.geenstijl.nl/5193093/belangrijke-veiligheidwaarschuwing-bezoekers-geenstijlnl">noemt GeenStijl het</a>.</p>
+        <p>In totaal waarschuwen zeker veertien Nederlandse sites en één Belgische hun bezoekers voor de gevolgen van de tekortkoming in de beveiliging. Ook sportsites als Bicycling en Runner's World en lifestyletitels Men's Health en Women's Health waarschuwen gebruikers, net als BabyBytes, VoetbalPrimeur en VoetbalNieuws.</p>
+        <p>Het gaat om schadelijke software die derden via het advertentiesysteem van de sites bij gebruikers konden installeren. Volgens Geenstijl kon de code gegevens over websitebezoeken verzamelen, zonder dat bezoekers daarvoor iets hadden aangeklikt. De sites melden dat reclamebureau NextDay het veiligheidslek inmiddels heeft gedicht.</p>
+        <h2>Oude iPhones</h2>
+        <p>Het gevaar treft gebruikers die tussen 1 en 3 november of op 11 november de sites bezochten met een oudere iPhone of zonder de laatste update. "Heeft u na 11 maart 2026 en vóór uw bezoek nog een update uitgevoerd, dan liep u door deze code naar verwachting geen verder risico", stelt de waarschuwingstekst.</p>
+        <p>Bij mensen die wel zijn getroffen bestaat de kans dat er persoonlijke gegevens zijn buitgemaakt. Zo hebben de hackers mogelijk toegang gehad tot berichten, foto's, contacten en opgeslagen wachtwoorden. Ook zullen zij hebben kunnen zien wat de IP-adressen waren van bezoekers, welke pagina's zij bezochten, waar ze vandaan kwamen en telefooninformatie als taalinstellingen en het besturingssysteem.</p>
+        <p>Volgens de sites is duidelijk dat er gegevens zijn doorgestuurd naar de cybercriminelen. Het valt echter niet per individuele gebruiker vast te stellen of de kwaadaardige code daadwerkelijk is geladen en welke gegevens er dan zijn doorgestuurd. Ook is niet bekend of er inderdaad individuele telefoons zijn overgenomen.</p>
+        <h2>Updaten, wachtwoorden aanpassen</h2>
+        <p>Gebruikers die mogelijk slachtoffer zijn geworden, wordt geadviseerd onmiddellijk de software van hun toestel bij te werken. Daarmee wordt de kwetsbaarheid verkleind, maar wordt schade van eerdere aanvallen niet ongedaan gemaakt.</p>
+        <p>Daarom is het ook raadzaam wachtwoorden van bijvoorbeeld mail, Apple-account en bankrekening te veranderen. Cryptotegoeden zouden kunnen worden overgemaakt naar een nieuw account.</p>
+        <p>Het is aan te raden de wijzigingen door te voeren vanaf een apparaat dat zeker niet gehackt is. Gebruikers moeten ook oppassen met berichten die ze de komende tijd krijgen waarin om meer informatie wordt gevraagd. Die zouden afkomstig kunnen zijn van de daders.</p>
+        <h2>Android geen probleem</h2>
+        <p>Advertentiebedrijf NextDay zegt op de eigen site actief te zijn voor ruim 150 websites met in totaal 12 miljoen bezoekers per maand. Het is niet duidelijk hoeveel van die sites zijn geraakt door de hack. Ook is niet bekend hoeveel gebruikers precies zijn getroffen.</p>
+        <p>Android-telefoons, iPads en andere computers lopen geen gevaar door de malware.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/4/2/L/V/C/7/n1RN36qvtoLPUhfeowa4br17JUaitJavydqeNoE/0x0x4000x2250-1024x576.webp"/>
+      <pubDate>Sun, 15 Nov 2026 11:36:36 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639562</guid>
+    </item>
+    <item>
+      <title><![CDATA[Wereldwijde storing Microsoft na anderhalve dag opgelost]]></title>
+      <link>https://nos.nl/l/2639435</link>
+      <description><![CDATA[
+        <p>Microsoft zegt dat de wereldwijde storing bij diverse 365-apps voorbij is. Sinds donderdagmiddag hadden miljoenen gebruikers onder meer problemen bij het lezen en versturen van mails via Outlook en het vergaderen via Teams.</p>
+        <p>Na anderhalve dag is de storing volgens het Amerikaanse techbedrijf nu eindelijk helemaal verholpen. Daarmee zouden ook alle e-mails die waren blijven hangen, verstuurd en ontvangen moeten zijn, zegt Microsoft. Het is een van de langste storingen in de geschiedenis van het bedrijf.</p>
+        <p>Wat de oorzaak was, is nog altijd niet bekendgemaakt. Gisteren liet het bedrijf weten dat in een foutenrapportage te doen, wanneer de storing helemaal verholpen zou zijn. Waarschijnlijk zal dat ergens in de komende dagen gebeuren.</p>
+        <h2>Tientallen landen getroffen</h2>
+        <p>Wat Microsoft gisteren wel al liet weten, was dat er nadrukkelijk geen sprake was van een hack maar van problemen bij servers. Er ontstond ineens een "verhoogde belasting", waardoor "een aantal servers onverwacht niet beschikbaar was". Het herstel van de servers nam veel tijd in beslag. Gisteravond bood Microsoft <a href="https://nos.nl/artikel/2639353-microsoft-biedt-excuses-aan-na-urenlange-storing-bij-onder-meer-outlook">excuses</a> aan voor de problemen.</p>
+        <p>De storing leidde in meer dan zeventig landen vooral tot communicatie- en productiviteitsproblemen, bij onder meer bedrijven en overheidsinstellingen. Analisten zeiden gisteren te verwachten dat de schade wereldwijd waarschijnlijk in de miljarden zal lopen, omdat bedrijven niet zoals gebruikelijk konden functioneren. Vooral Azië en Europa hadden er veel last van, omdat de storing grote delen van de werkdag duurde.</p>
+        <p>Wat betreft Nederland werden de meeste meldingen van problemen gisteren rond 09.00 uur gedaan, aan het begin van de werkdag. Vanaf het begin van de middag begonnen de meldingen flink af te nemen en konden veel mensen weer inloggen op Microsoft-diensten. Ruim 430 miljoen mensen maken wereldwijd gebruik van Microsoft 365, waarin ook Office-apps als Word en Excel zitten.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/1/D/S/o/q/v/y1vq7Mw9qkgRf7jc9jzM3AzC26r8jLaXJaA111R/8x46x3984x2241-1024x576.webp"/>
+      <pubDate>Sat, 14 Nov 2026 08:45:04 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639435</guid>
+    </item>
+    <item>
+      <title><![CDATA[Microsoft biedt excuses aan na urenlange storing bij onder meer Outlook]]></title>
+      <link>https://nos.nl/l/2639353</link>
+      <description><![CDATA[
+        <p>Microsoft heeft zijn excuses aangeboden voor de grote storing die sinds gisteren aan de gang was.</p>
+        <p>Het spijt ons enorm dat deze storing onze klanten en partners heeft getroffen. We weten dat ze erop vertrouwen dat onze diensten werken en we nemen die verantwoordelijkheid uiterst serieus", stelt de techgigant.</p>
+        <p>De wereldwijde storing is aan het afnemen, meldt het bedrijf. Door de storing konden miljoenen gebruikers geen e-mails ontvangen en versturen en was online vergaderen via Teams ook soms niet mogelijk. Ook was AI-assistent Copilot getroffen.</p>
+        <p>De storing begon gistermiddag rond 17.00 uur. Het hoogtepunt van de storingsmeldingen in Nederland lag volgens de website Allestoringen <a href="https://nos.nl/artikel/2639244-wereldwijde-storing-treft-microsoft-miljoenen-gebruikers-de-dupe">vanochtend</a> rond 09.00 uur. Vandaag rond 12.30 uur begonnen de meldingen flink af te nemen.</p>
+        <p>Volgens het bedrijf waren serverproblemen de oorzaak en was er geen sprake van een hack. De techgigant geeft geen verdere details, maar heeft het over een "verhoogde belasting" waardoor "een aantal servers onverwacht niet beschikbaar was".</p>
+        <h2>Rechtbanken</h2>
+        <p>In ruim zeventig landen werd melding gedaan van problemen.</p>
+        <p>In Nederland waren onder meer rechtbanken niet per mail te bereiken. Ook gemeenten, waaronder Leeuwarden en Barneveld, meldden problemen te hebben met e-mails. Met software-updates begonnen de problemen in de loop van de dag af te nemen.</p>
+        <p>In een aantal Canadese ziekenhuizen ging de communicatie moeizamer. Zo konden bij meerdere ziekenhuizen alleen telefonisch patiëntenafspraken worden ingepland of afgezegd, meldt <a href="https://www.cbc.ca/news/world/livestory/microsoft-outage-outlook-teams-copilot-9.7420354?id=9.7420354.17910">CBC News</a>.</p>
+        <p>De Britse politie riep mensen op te bellen in plaats van online een formulier in te vullen. Ook overheidsdiensten in onder meer Japan, Singapore en India ondervonden problemen.</p>
+        <h2>'Microsoft 364'</h2>
+        <p>Omdat diensten van Microsofts abonnementsservice Microsoft 365 werden getroffen, grapten veel gebruikers op sociale media dat de service beter Microsoft 364 kon heten, omdat ze onder meer Outlook en Teams al een dag niet of slecht konden bereiken.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/6/E/G/h/8/H/AessBQtkBVSGQnryXVoho7wzazYHeEXzBBayeHP/8x212x3984x2241-1024x576.webp"/>
+      <pubDate>Fri, 13 Nov 2026 18:18:34 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639353</guid>
+    </item>
+    <item>
+      <title><![CDATA[Ook in Nederland veel problemen door wereldwijde storing Microsoft, 'geen hack']]></title>
+      <link>https://nos.nl/l/2639277</link>
+      <description><![CDATA[
+        <p>De urenlange wereldwijde storing bij Microsoft leidt ook in Nederland tot problemen, nu de werkdag is begonnen. Sinds gistermiddag 17.15 uur is er hinder bij verschillende diensten van Microsoft 365 zoals Outlook en Teams, waardoor mensen moeilijk of niet bij hun e-mails kunnen en soms ook niet online kunnen vergaderen.</p>
+        <p>Daarnaast is de kalender soms niet beschikbaar en hebben sommige mensen problemen met thuiswerken. Dat komt doordat de Authenticator het niet doet, waarmee mensen op afstand moeten inloggen.</p>
+        <p>In Nederland zijn er duizenden meldingen gedaan op Allestoringen.nl, met een piek om 09.00 uur, het begin van de werkdag. Een groot deel van de overheid en het bedrijfsleven leunt op Microsoft.</p>
+        <h2>Problemen bij gemeenten en provincies</h2>
+        <p>Diverse gemeenten waaronder Leeuwarden, Barneveld en Krimpen aan den IJssel zien problemen. Die laatste gemeente laat weten dat mensen wel producten of diensten via de gemeentewebsite kunnen aanvragen, maar daar voorlopig geen bevestigingsmail van krijgen.</p>
+        <p>De provincies Groningen en Noord-Holland laten weten minder goed bereikbaar te zijn. Ook de <a href="https://www.rechtspraak.nl/organisatie-en-contact/organisatie/raad-voor-de-rechtspraak/nieuws/2026/11/impact-storing-microsoft-365">rechtbanken</a> kunnen geen mails ontvangen of versturen, maar zijn wel te bellen. Diverse regionale omroepen laten aan hun publiek weten voorlopig slechter bereikbaar te zijn. De Rijksoverheid heeft vooralsnog niets gecommuniceerd over de storing.</p>
+        <p>In meer dan zeventig andere landen wordt melding gedaan van problemen als gevolg van de storing. Zo roept de Britse politie mensen op om te bellen in plaats een online formulier in te vullen. In Australië melden de geheime dienst en politiedienst dat ze last hebben van haperend mailverkeer. Verder ondervinden de Japanse overheid, Singaporese overheidsdiensten en veel Indiase bedrijven hinder.</p>
+        <p>Wereldwijd zijn er meer dan 430 miljoen gebruikers van Microsoft 365, een abonnement waarin Office-apps als Word, Excel en Powerpoint zitten.</p>
+        <h2>Geen hack, oorzaak niet bekend</h2>
+        <p>De oorzaak van de problemen is niet gedeeld door Microsoft. Dat gebeurt pas als de storing is opgelost. Het gaat in elk geval niet om een cyberincident, zegt het techbedrijf. Volgens Microsoft is sprake van "verhoogde belasting" en is "een aantal servers onverwacht niet beschikbaar, waardoor de resterende infrastructuur onder druk komt te staan". Het is ingewikkeld om de servercapaciteit weer volledig te herstellen als die is weggevallen.</p>
+        <p>Microsoft werkt intussen hard aan een oplossing. Vannacht zag het er nog niet goed uit: pogingen om de systemen te herstarten hadden nog niet het gewenste effect. Rond 10.30 uur sprak Microsoft van "vroege tekenen van stabilisatie", maar dat onder meer Outlook, Teams en AI-dienst Copilot nog altijd niet zoals gewoonlijk functioneren.</p>
+        <p>Ook kondigde Microsoft aan een aanpassing te hebben gedaan in wat de <em>e-mail timeout</em> wordt genoemd. Om ervoor te zorgen dat e-mails niet verloren gaan, worden ze pas weggegooid als die 48 uur lang niet bezorgd kunnen worden. Dat geldt overigens niet voor mailservers van derden (zoals Gmail) die hun mails bij Outlook-adressen proberen af te leveren.</p>
+        <p>Het is ook niet bekend wanneer de storing verholpen zal zijn. Analisten verwachten dat de problemen bedrijven wereldwijd miljarden dollars kunnen kosten, omdat er productiviteitsproblemen zijn ontstaan door het ontbreken van Outlook en Teams.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/5/D/9/6/G/c/Zikh6Kj8GAFZkDMvQQPXho67k4gfLQHztxpdht9/8x354x3984x2241-1024x576.webp"/>
+      <pubDate>Fri, 13 Nov 2026 10:41:33 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639277</guid>
+    </item>
+    <item>
+      <title><![CDATA[Opgestapte Nvidia-topman moet getuigen voor Senaat om affaires]]></title>
+      <link>https://nos.nl/l/2639261</link>
+      <description><![CDATA[
+        <p>Jensen Huang, voormalig topman van chipgigant Nvidia, is opgeroepen om te getuigen voor een Amerikaanse Senaatscommissie. Huang stapte <a href="https://nos.nl/artikel/2639176-topman-huang-van-chipbedrijf-nvidia-vertrekt-per-direct-vanwege-affaires">gisteren</a> op na een nieuwe onthulling over een buitenechtelijke relatie.</p>
+        <p>The New York Times schreef dat Huang een affaire had gehad met een directe medewerker binnen Nvidia. Persbureau Reuters berichtte daarna op basis van twee ingewijden dat er sprake was van een derde affaire, wederom met een werknemer van Nvidia.</p>
+        <p><a href="https://nos.nl/artikel/2638649-nvidia-start-onderzoek-naar-spionnen-affaire-ceo-topman-erkent-vreemdgaan">Vorige week</a> werd Huangs eerste affaire bekend, die hij ook toegaf. Hierbij ging het volgens diverse media om zijn naamgenoot Alice Huang, die ervan wordt verdacht voor China te spioneren.</p>
+        <p>Over de verhoudingen tussen deze Chinese zakenvrouw en de Chinese overheid lijkt binnen de Amerikaanse inlichtingendiensten twijfel te bestaan. Vorige week meldden bronnen bij de diensten tegen Amerikaanse media dat er bewijs is dat ze als spion werkte. Andere bronnen spreken dat nu <a href="https://edition.cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia">tegen CNN</a> tegen.</p>
+        <p>Volgens CNN doet de FBI al minstens een jaar onderzoek naar de affaire met de vermeende spion. Zij is de voormalige leidinggevende van het Singaporese bedrijf Megaspeed, een belangrijke afnemer van Nvidia-chips.</p>
+        <h2>Senaatscommissie</h2>
+        <p>Oud-CEO Huang is opgeroepen om zich te verantwoorden tegenover de Senaatscommissie voor Bankzaken. Een van de senatoren, de Republikein<strong> </strong>Tim Scott, heeft Huang verzocht om zich op 3 december vrijwillig te melden. Als dat niet gebeurt kan hij worden gedagvaard. Dan moet hij verplicht getuigen. "Het Amerikaanse volk verdient antwoorden", zegt Scott op X.</p>
+        <p>De Verenigde Staten maken zich zorgen over de mogelijkheid dat geavanceerde chips in Chinese handen komen, waardoor China zijn leger sneller zou kunnen<strong> </strong>moderniseren en AI-modellen beter zou kunnen ontwikkelen. Met onder meer exportbeperkingen probeert de VS dat al jaren te voorkomen. Nvidia speelt met zijn chips een belangrijke rol in de wereldwijde AI-race.</p>
+        <p>Ook commissies van het Huis van Afgevaardigden willen met de voormalig topman in gesprek over zijn affaires. Dat zou achter gesloten deuren gebeuren. De commissies houden zich bezig met inlichtingen in het buitenland, waaronder China.</p>
+        <h2>Minister in de schijnwerpers</h2>
+        <p>De Amerikaanse minister Lutnick van Handel is eveneens opgeroepen om te getuigen voor de Senaatscommissie. Zijn handelen wordt onderzocht vanwege de export van AI-chips van Nvidia naar China. Anonieme functionarissen binnen de regering-Trump meldden aan Amerikaanse media dat Lutnick pogingen heeft tegengehouden om de exportbeperkingen op AI-chips naar China aan te scherpen.</p>
+        <p>Volgens een woordvoerder van zijn ministerie zal Lutnick op eigen initiatief voor de commissie verschijnen.</p>
+        <h2>Wat is Nvidia?</h2>
+        <p>Het Amerikaanse technologiebedrijf Nvidia is een van de belangrijkste spelers op het gebied van kunstmatige intelligentie. Het bedrijf ontwerpt geavanceerde chips, die onder meer worden gebruikt om AI-systemen te ontwikkelen. Doordat de vraag naar deze chips enorm is gestegen, is Nvidia uitgegroeid tot een van de waardevolste bedrijven ter wereld.</p>
+        <p>De afgelopen vijf dagen verloor Nvidia 550 miljard dollar (ruim 497 miljard euro) op de Amerikaanse beurs. Gisteren leverde Nvidia ruim 4 procent in, na eerder op de dag op een veel groter koersverlies te hebben gestaan.</p>
+        <p>Beleggers hebben vragen over de mogelijke impact van Huangs vertrek bij Nvidia op de ontwikkeling van de technologie. De oud-topman was het gezicht van Nvidia en werd door sommigen in de branche zelfs als belangrijker beschouwd dan Nvidia zelf.</p>]]></description>
+      <enclosure type="image/webp" url="https://images.cdn.nos.nl/1/H/j/4/x/F/mw1ADDz9bwAveao95CNe8DiucWGZrpXmFJuQK5x/8x190x3984x2241-1024x576.webp"/>
+      <pubDate>Fri, 13 Nov 2026 09:11:43 +0100</pubDate>
+      <guid isPermaLink="true">https://nos.nl/l/2639261</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Arctic Wolf</title>
+	<atom:link href="https://arcticwolf.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://arcticwolf.com/</link>
+	<description>The Leaders in Security Operations</description>
+	<lastBuildDate>Wed, 25 Nov 2026 23:02:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.5</generator>
+
+<image>
+	<url>https://arcticwolf.com/wp-content/uploads/2019/11/aw-favicon-rebrand-150x150.png</url>
+	<title>Arctic Wolf</title>
+	<link>https://arcticwolf.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Black Friday Cyber Threats — Part Two: Retailers</title>
+		<link>https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/</link>
+		
+		<dc:creator><![CDATA[Justin Moore]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2026 23:02:23 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=142212</guid>
+
+					<description><![CDATA[In Part One of our Black Friday Cyber Threats blog series, we examined how Black Friday creates opportunities for attackers to target consumers through fraud, impersonation, credential theft, and malware. Retailers experience many of those same threats at scale, while also contending with bot activity, business-logic abuse, operational disruption, and growing questions around AI-driven commerce. <a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/" class="more-link">...<span class="screen-reader-text">  Black Friday Cyber Threats — Part Two: Retailers</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Black Friday Cyber Threats — Part One: Consumers</title>
+		<link>https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/</link>
+		
+		<dc:creator><![CDATA[Justin Moore]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2026 22:43:53 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=142206</guid>
+
+					<description><![CDATA[For millions of consumers globally, Black Friday creates exactly the kind of environment cybercriminals look for when assessing their targets, which is urgency, high transaction volume, and people clicking links, tracking packages, and hunting for deals. Rather than introducing new threats, Black Friday amplifies four risk categories that security teams already contend with year-round: Fraud <a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/" class="more-link">...<span class="screen-reader-text">  Black Friday Cyber Threats — Part One: Consumers</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How SwarmView Provides Transparency Around AI-driven Investigations and Trustworthy Results</title>
+		<link>https://arcticwolf.com/resources/technical-videos/how-swarmview-provides-transparency-around-ai-driven-investigations-and-trustworthy-results/</link>
+		
+		<dc:creator><![CDATA[Arctic Wolf]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2026 16:17:03 +0000</pubDate>
+				<category><![CDATA[Technical Videos]]></category>
+		<category><![CDATA[Managed Detection and Response]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141782</guid>
+
+					<description><![CDATA[In this demo, we see how SwarmView gives you full visibility into the Swarm of Experts behind every investigation in our Aurora Agentic SOC. You&#8217;ll see which agents weighed in, how they reached their decisions, and when a human expert was engaged.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How Aurora Adaptive Threat Protection Detects and Stops ClickFix Attacks</title>
+		<link>https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/</link>
+		
+		<dc:creator><![CDATA[Arctic Wolf]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 22:03:44 +0000</pubDate>
+				<category><![CDATA[Technical Videos]]></category>
+		<category><![CDATA[Aurora Endpoint Security]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141700</guid>
+
+					<description><![CDATA[ClickFix attacks trick users into running malicious commands themselves, creating a gray zone where activity looks legitimate and traditional security tools may not detect the threat. In this demo, see how Aurora Adaptive Threat Protection uses intent-based detection to identify and stop a ClickFix attack at execution, provides visibility through the Attack Map, and uses <a href="https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-stops-clickfix-attacks/" class="more-link">...<span class="screen-reader-text">  How Aurora Adaptive Threat Protection Detects and Stops ClickFix Attacks</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How Aurora Adaptive Threat Protection Detects, Stops, and Reverses Modern Attacks</title>
+		<link>https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-stops-and-reverses-modern-attacks/</link>
+		
+		<dc:creator><![CDATA[Arctic Wolf]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 21:00:38 +0000</pubDate>
+				<category><![CDATA[Technical Videos]]></category>
+		<category><![CDATA[Aurora Endpoint Security]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141686</guid>
+
+					<description><![CDATA[Aurora Adaptive Threat Protection helps security teams stop modern attacks that evade traditional endpoint defenses. Instead of relying on a single malicious event, Aurora Adaptive Threat Protection continuously tracks endpoint activity, connects related behaviors into a complete attack story, and disrupts attacks the moment malicious intent is detected.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AI Threat Detection</title>
+		<link>https://arcticwolf.com/resources/glossary-uk/what-is-ai-threat-detection/</link>
+		
+		<dc:creator><![CDATA[Arctic Wolf]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 17:52:11 +0000</pubDate>
+				<category><![CDATA[Glossary - UK]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141675</guid>
+
+					<description><![CDATA[AI threat detection is the use of artificial intelligence (AI), especially machine learning, to find signs of a cyber attack in security data. Instead of matching activity against known threats, it learns how users, devices, and systems normally behave and flags activity that breaks from that pattern. That helps security teams catch new attacks and <a href="https://arcticwolf.com/resources/glossary-uk/what-is-ai-threat-detection/" class="more-link">...<span class="screen-reader-text">  AI Threat Detection</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AI Threat Detection</title>
+		<link>https://arcticwolf.com/resources/glossary/ai-threat-detection/</link>
+		
+		<dc:creator><![CDATA[Arctic Wolf]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 17:44:37 +0000</pubDate>
+				<category><![CDATA[Glossary]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141663</guid>
+
+					<description><![CDATA[AI threat detection is the use of artificial intelligence (AI), especially machine learning, to find signs of a cyber attack in security data. Instead of matching activity against known threats, it learns how users, devices, and systems normally behave and flags activity that breaks from that pattern. That helps security teams catch new attacks and <a href="https://arcticwolf.com/resources/glossary/ai-threat-detection/" class="more-link">...<span class="screen-reader-text">  AI Threat Detection</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Human-in-the-Loop (HITL)</title>
+		<link>https://arcticwolf.com/resources/glossary/human-in-the-loop-hitl/</link>
+		
+		<dc:creator><![CDATA[Arctic Wolf]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 13:00:25 +0000</pubDate>
+				<category><![CDATA[Glossary]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=130377</guid>
+
+					<description><![CDATA[What Is Human-in-the-Loop (HITL) AI? Human-in-the-loop (HITL) AI refers to any artificial intelligence system or process that integrates meaningful human participation at critical stages of how the AI learns, makes decisions, or acts. Rather than allowing an AI model to operate entirely on its own, a HITL design keeps human expertise involved at defined points, <a href="https://arcticwolf.com/resources/glossary/human-in-the-loop-hitl/" class="more-link">...<span class="screen-reader-text">  Human-in-the-Loop (HITL)</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Incident Response at Machine Speed: What Black October&#8217;s Record Case Volume Reveals About Today&#8217;s Threat Landscape</title>
+		<link>https://arcticwolf.com/resources/blog/incident-response-at-machine-speed-what-black-octobers-record-case-volume-reveals-about-todays-threat-landscape/</link>
+		
+		<dc:creator><![CDATA[Kerri Shafer-Page]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2026 19:07:27 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141632</guid>
+
+					<description><![CDATA[The scale and severity of cybersecurity activity in October 2026 was unprecedented. Arctic Wolf Aurora Incident Response handled 78% more cases from organizations not protected by Arctic Wolf than the average month, and sophisticated network intrusion incidents, including ransomware, rose by 96%, accounting for nearly all of the growth. Attackers aren’t just more active. They’re <a href="https://arcticwolf.com/resources/blog/incident-response-at-machine-speed-what-black-octobers-record-case-volume-reveals-about-todays-threat-landscape/" class="more-link">...<span class="screen-reader-text">  Incident Response at Machine Speed: What Black October&#8217;s Record Case Volume Reveals About Today&#8217;s Threat Landscape</span></a>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AI-Driven Attacks Are Here. Five Steps CISOs Should Take Now</title>
+		<link>https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/</link>
+		
+		<dc:creator><![CDATA[Dan Schiappa]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2026 16:41:20 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://arcticwolf.com/?p=141599</guid>
+
+					<description><![CDATA[Earlier this year, Claude Mythos Preview showed the security community what a frontier AI model can do when it’s pointed at software, finding and linking vulnerabilities far faster than defenders had ever seen up to that point. Access to that model stayed tightly controlled, but ARTEX has recently removed that corporate barrier for attackers. This <a href="https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/" class="more-link">...<span class="screen-reader-text">  AI-Driven Attacks Are Here. Five Steps CISOs Should Take Now</span></a>]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

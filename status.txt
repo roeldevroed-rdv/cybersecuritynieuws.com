@@ -1,0 +1,17 @@
+OK    NU.nl: 26312 bytes
+OK    NU.nl Tech: 25765 bytes
+OK    NOS: 65553 bytes
+OK    NOS Tech: 67865 bytes
+OK    Tweakers: 40447 bytes
+OK    NCSC: 40116 bytes
+OK    Computable: 66391 bytes
+OK    Arctic Wolf: 11546 bytes
+OK    CrowdStrike: 5290 bytes
+OK    SentinelOne: 21172 bytes
+OK    Palo Alto Networks: 116510 bytes
+OK    Check Point: 28119 bytes
+OK    ESET: 70283 bytes
+OK    Fortinet: 38361 bytes
+OK    Microsoft Security: 379157 bytes
+OK    Rapid7: 400077 bytes
+OK    HPE Newsroom: 45398 bytes
