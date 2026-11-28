@@ -4,7 +4,7 @@
 
 - Opener (±4 s): logo, rubriek, korte kop met blauw gemarkeerde woorden, eigen nieuwstune (tikkende puls + akkoordslagen).
 - Ondertiteling in huisstijl (wit op merkblauw), getimed op de pauzes in de spraak: elke zin uit
-  script.txt (één regel of zin per spraakblok) hoort bij één spraakblok. Klopt het aantal niet, dan wordt per tekenaantal verdeeld.
+  script.txt (één regel of zin per spraakblok) hoort bij één spraakblok; binnen een regel kun je met ' | ' deelzinnen scheiden die op kortere pauzes worden getimed. Klopt het aantal niet, dan wordt per tekenaantal verdeeld.
 - Logo linksboven; naambalk met de presentator (PRESENTATOR) in de eerste seconden. AI-vermelding staat in het bijschrift en via het AI-label van Instagram (niet in beeld).
 - Afsluiter (±3,5 s): slotakkoorden van de tune, logo, "Lees het hele artikel op cybersecuritynieuws.com", "Volg @cybersecuritynieuws".
 Een eventueel watermerk van de videodienst blijft zichtbaar (wordt niet afgedekt).
@@ -33,8 +33,8 @@ WIT = (255, 255, 255)
 
 # ---------- timing ----------
 
-def speech_blocks(video: Path) -> list[tuple[float, float]]:
-    out = subprocess.run(["ffmpeg", "-i", str(video), "-af", "silencedetect=noise=-35dB:d=0.35", "-f", "null", "-"],
+def speech_blocks(video: Path, pauze: float = 0.35, noise: int = -35) -> list[tuple[float, float]]:
+    out = subprocess.run(["ffmpeg", "-i", str(video), "-af", f"silencedetect=noise={noise}dB:d={pauze}", "-f", "null", "-"],
                          capture_output=True, text=True).stderr
     dur = float(re.search(r"Duration: (\d+):(\d+):([\d.]+)", out).group(3)) + \
         60 * float(re.search(r"Duration: (\d+):(\d+)", out).group(2))
@@ -98,6 +98,7 @@ def subtitle_png(text: str, path: Path) -> None:
     img.save(path)
 
 
+PAUZE, NOISE = 0.35, -35  # aan te passen met --pauze 0.15 (fijnere zinsdelen)
 PRESENTATOR = "Sophie Carter"  # vaste (fictieve) AI-presentator van CyberSecurityNieuws
 
 
@@ -350,12 +351,26 @@ def build(video: Path, slug: str, script: str, out: Path) -> None:
     from tools.instagram import _article
     a = _article(slug)
     a.setdefault("exploited", bool(a.get("kev")))
-    blocks = speech_blocks(video)
+    blocks = speech_blocks(video, PAUZE, NOISE)
     cues = []
     lines = [l.strip() for l in script.splitlines() if l.strip()]
     units = lines if len(lines) == len(blocks) else sentences(script)
     print(f"{len(blocks)} spraakblokken, {len(units)} zinnen/regels" + ("" if len(units) == len(blocks) else " -> verdeeld naar lengte"))
+    fine = None
+    aligned = []
     for s, e, sent in align(units, blocks):
+        parts_ = [x.strip() for x in sent.split("|") if x.strip()]
+        if len(parts_) > 1:  # regel met " | ": deelzinnen op fijnere pauzes binnen dit spraakblok
+            fine = fine or speech_blocks(video, 0.15, -32)
+            sub = [(a, b) for a, b in fine if a >= s - 0.05 and b <= e + 0.05]
+            if len(sub) == len(parts_):
+                aligned += [(a, b, t) for (a, b), t in zip(sub, parts_)]
+                continue
+            print(f"  ! {len(sub)} fijne blokken voor {len(parts_)} deelzinnen: verdeeld naar lengte")
+            aligned += align(parts_, [(s, e)])
+            continue
+        aligned.append((s, e, sent))
+    for s, e, sent in aligned:
         parts = chunks(sent)
         tot = sum(len(p) for p in parts)
         t = s
@@ -409,6 +424,10 @@ def main() -> None:
     args = [x for x in sys.argv[1:] if not x.startswith("--")]
     if len(args) < 3:
         sys.exit(__doc__)
+    global PAUZE, NOISE
+    if "--pauze" in sys.argv:
+        PAUZE, NOISE = float(sys.argv[sys.argv.index("--pauze") + 1]), -32
+        args = [a for a in args if a != sys.argv[sys.argv.index("--pauze") + 1]]
     video, slug, script = Path(args[0]), args[1], Path(args[2]).read_text(encoding="utf-8")
     out = Path(sys.argv[sys.argv.index("--uit") + 1]) if "--uit" in sys.argv else ROOT / "content" / "instagram" / slug / "reel.mp4"
     out.parent.mkdir(parents=True, exist_ok=True)
