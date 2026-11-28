@@ -362,6 +362,8 @@ def build(video: Path, slug: str, script: str, out: Path) -> None:
         for p in parts:
             d = (e - s) * len(p) / tot
             cues.append((t, t + d + 0.15, p)); t += d
+    # geen overlap: een ondertitel stopt zodra de volgende begint
+    cues = [(s0, min(e0, cues[i + 1][0] - 0.02) if i + 1 < len(cues) else e0, txt) for i, (s0, e0, txt) in enumerate(cues)]
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         o_secs, d_secs = 4.2, 3.6
