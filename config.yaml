@@ -4,6 +4,9 @@ site:
   domain: "cybersecuritynieuws.com"
   url: "https://cybersecuritynieuws.com"
   tagline: "Al het belangrijke cybersecuritynieuws op één plek"
+  social:                         # sociale kanalen (footer + sameAs in JSON-LD); leeg = niet tonen
+    instagram: "https://www.instagram.com/cybersecuritynieuws/"
+    linkedin: ""                  # LinkedIn-bedrijfspagina van CyberSecurityNieuws
   description: "Al het belangrijke cybersecuritynieuws op één plek: elke dag het laatste nieuws over kwetsbaarheden, cyberaanvallen, ransomware, datalekken en AI-security."
   language: "nl"
   # Laat leeg om het nieuwsbriefformulier te verbergen. Bijv. een Buttondown/Mailchimp form-action URL.

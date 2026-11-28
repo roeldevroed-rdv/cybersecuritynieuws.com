@@ -11,7 +11,7 @@
     {"@type": "NewsMediaOrganization", "@id": site.url ~ "/#org", "name": site.name, "url": site.url ~ "/",
      "logo": {"@type": "ImageObject", "url": site.url ~ "/static/logo-512.png", "width": 512, "height": 512},
      "email": redactie.info_email, "publishingPrinciples": site.url ~ "/over/", "correctionsPolicy": site.url ~ "/redactie/#correcties",
-     "actionableFeedbackPolicy": site.url ~ "/contact/", "masthead": site.url ~ "/colofon/",
+     "actionableFeedbackPolicy": site.url ~ "/contact/", "masthead": site.url ~ "/colofon/", "sameAs": [site.social.instagram, site.social.linkedin]|select|list if site.social else [],
      "founder": ({"@type": "Person", "name": redactie.hoofdredacteur, "url": site.url ~ "/redactie/"} if redactie.hoofdredacteur else none)}
   ]
 }|tojson }}</script>{% endblock %}
