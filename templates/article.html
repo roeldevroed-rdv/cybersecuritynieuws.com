@@ -68,7 +68,7 @@
     <header class="article__head">
       <h1 class="article__title">{{ a.title }}</h1>
       <div class="article__meta small muted">
-        {% set air = redactie.ai_redacteur %}{% if air and a.type != "partner" %}<span class="byline"><img src="{{ air.foto }}" alt="{{ air.naam }}" width="24" height="24">Door <a href="/redactie/">{{ air.naam }}</a></span>{% else %}<span class="byline">{% if redactie.foto %}<img src="{{ redactie.foto }}" alt="{{ editor }}" width="24" height="24">{% endif %}Door <a href="/redactie/">{{ editor }}</a></span>{% endif %}
+        {% set air = redactie.ai_redacteur %}{% if air and a.type != "partner" %}<span class="byline"><img src="{{ air.foto }}?v={{ asset_v }}" alt="{{ air.naam }}" width="24" height="24">Door <a href="/redactie/">{{ air.naam }}</a></span>{% else %}<span class="byline">{% if redactie.foto %}<img src="{{ redactie.foto }}?v={{ asset_v }}" alt="{{ editor }}" width="24" height="24">{% endif %}Door <a href="/redactie/">{{ editor }}</a></span>{% endif %}
         <span aria-hidden="true">·</span> <time datetime="{{ a.published }}">{{ a.dt|nl_date(true) }}</time>
         {% if a.updated %}<span aria-hidden="true">·</span> <span class="updated">Bijgewerkt {{ a.updated_dt|nl_date(true) }}</span>{% endif %}
         <span aria-hidden="true">·</span> {{ a.reading_min }} min lezen

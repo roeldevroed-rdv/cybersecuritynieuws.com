@@ -15,7 +15,7 @@
   </header>
 
   <section class="person">
-    {% if redactie.foto %}<img class="person__photo" src="{{ redactie.foto }}" alt="{{ redactie.hoofdredacteur }}" width="160" height="160">
+    {% if redactie.foto %}<img class="person__photo" src="{{ redactie.foto }}?v={{ asset_v }}" alt="{{ redactie.hoofdredacteur }}" width="160" height="160">
     {% else %}<div class="person__avatar" aria-hidden="true">{{ (redactie.hoofdredacteur or site.name)[:1] }}</div>{% endif %}
     <div>
       <h2>{{ redactie.hoofdredacteur or ('Redactie ' ~ site.name) }}</h2>
@@ -28,7 +28,7 @@
   {% set air = redactie.ai_redacteur %}
   {% if air %}
   <section class="person">
-    <img class="person__photo" src="{{ air.foto }}" alt="{{ air.naam }}, AI-redacteur (met AI gemaakte afbeelding)" width="160" height="160">
+    <img class="person__photo" src="{{ air.foto }}?v={{ asset_v }}" alt="{{ air.naam }}, AI-redacteur (met AI gemaakte afbeelding)" width="160" height="160">
     <div>
       <h2>{{ air.naam }}</h2>
       <p class="muted">{{ air.rol }}</p>
