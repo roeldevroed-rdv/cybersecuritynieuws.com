@@ -29,7 +29,7 @@
   "keywords": a.keywords + a.all_labels,
   "mainEntityOfPage": site.url ~ a.url,
   "isBasedOn": a.sources|map(attribute="url")|list,
-  "author": ({"@type": "Person", "name": redactie.hoofdredacteur, "url": site.url ~ "/redactie/"} if redactie.hoofdredacteur else {"@type": "Organization", "name": site.name, "url": site.url ~ "/redactie/"}),
+  "author": {"@type": "Organization", "name": site.name, "url": site.url ~ "/redactie/"},
   "publisher": {"@type": "Organization", "name": site.name, "url": site.url,
                 "logo": {"@type": "ImageObject", "url": site.url ~ "/static/logo-512.png"}}
 }|tojson }}</script>
@@ -68,7 +68,7 @@
     <header class="article__head">
       <h1 class="article__title">{{ a.title }}</h1>
       <div class="article__meta small muted">
-        <span class="byline">{% if redactie.foto %}<img src="{{ redactie.foto }}" alt="{{ editor }}" width="24" height="24">{% endif %}Door <a href="/redactie/">{{ editor }}</a></span>
+        {% set air = redactie.ai_redacteur %}{% if air and a.type != "partner" %}<span class="byline"><img src="{{ air.foto }}" alt="{{ air.naam }}" width="24" height="24">Door <a href="/redactie/">{{ air.naam }}</a> <span class="tag tag--ai" title="Met AI geschreven, zie onder het artikel">AI-redacteur</span></span>{% else %}<span class="byline">{% if redactie.foto %}<img src="{{ redactie.foto }}" alt="{{ editor }}" width="24" height="24">{% endif %}Door <a href="/redactie/">{{ editor }}</a></span>{% endif %}
         <span aria-hidden="true">·</span> <time datetime="{{ a.published }}">{{ a.dt|nl_date(true) }}</time>
         {% if a.updated %}<span aria-hidden="true">·</span> <span class="updated">Bijgewerkt {{ a.updated_dt|nl_date(true) }}</span>{% endif %}
         <span aria-hidden="true">·</span> {{ a.reading_min }} min lezen

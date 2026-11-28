@@ -563,3 +563,6 @@ main { padding: 24px 0 64px; min-height: 60vh; }
   .masthead.menu-open .nav__inner > a:last-of-type { border-bottom: 1px solid var(--line); }
 }
 @media (max-width: 420px) { .masthead__tools { gap: 2px; } .masthead__tools .btn--small { padding: 7px 9px; } }
+
+.tag--ai { display:inline-block; font: 600 .68rem/1 var(--sans, system-ui); letter-spacing:.04em; text-transform:uppercase; padding:3px 6px; border-radius:4px; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); vertical-align: middle; margin-left: 4px; }
+.person h2 .tag--ai { font-size: .7rem; }
