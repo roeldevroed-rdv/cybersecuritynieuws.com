@@ -155,7 +155,7 @@ redactie:
     naam: "Milou Kristensen"
     rol: "AI-redacteur"
     foto: "/static/img/milou-kristensen.jpg"
-    bio: "Milou Kristensen is de AI-redacteur van CyberSecurityNieuws.com: geen echt persoon, maar de naam en het gezicht van ons AI-schrijfsysteem. Milou schrijft elke dag het nieuws op basis van betrouwbare bronnen, die altijd onder het artikel staan, en volgt daarbij de richtlijnen van de hoofdredactie. De foto is met AI gemaakt. Hoofdredacteur Roel de Vroed is eindverantwoordelijk voor alle inhoud."
+    bio: "Milou Kristensen is de AI-redacteur van CyberSecurityNieuws.com: geen echt persoon, maar de naam en het gezicht van ons AI-schrijfsysteem. Milou schrijft elke dag het nieuws op basis van betrouwbare bronnen, die altijd onder het artikel staan, en volgt daarbij de richtlijnen van de hoofdredactie. Haar beeld en stem zijn een AI-avatar (HeyGen). Hoofdredacteur Roel de Vroed is eindverantwoordelijk voor alle inhoud."
   email: "redactie@cybersecuritynieuws.com"   # tips en correcties
   info_email: "info@cybersecuritynieuws.com"  # algemene vragen, privacy, nieuwsbrief
   adverteren_email: "adverteren@cybersecuritynieuws.com"

@@ -83,7 +83,7 @@ Nederlandse bronnen (NU.nl, NOS, Tweakers, NCSC, Computable; AG Connect en Data 
 - Sociale kanalen: config site.social (instagram, linkedin) → footer (icoon + naam) en sameAs in NewsMediaOrganization JSON-LD.
 - Thema-attribuut heet `data-mode` (niet data-theme: botst met de Claude-artifactviewer).
 
-- AI-redacteur **Milou Kristensen** (28 nov 2026, akkoord eigenaar): fictieve persona voor de AI-geschreven artikelen, als AI vermeld via de AI-regel onder elk artikel en /redactie/ (byline 'Door Milou Kristensen' zonder label: besluit eigenaar 28 nov 2026, na advies om het label te houden; /redactie/ met AI-badge en uitleg 'geen echt persoon', foto met AI gemaakt: static/img/milou-kristensen.jpg). Config redactie.ai_redacteur. JSON-LD author = Organization (geen nep-Person). Nooit presenteren als menselijke redacteur of medeoprichter.
+- AI-redacteur **Milou Kristensen** (28 nov 2026, akkoord eigenaar): fictieve persona voor de AI-geschreven artikelen, als AI vermeld via de AI-regel onder elk artikel en /redactie/ (byline 'Door Milou Kristensen' zonder label: besluit eigenaar 28 nov 2026, na advies om het label te houden; /redactie/ met AI-badge en uitleg 'geen echt persoon', beeld = HeyGen-stockavatar "Maren" (vanaf 28 nov 2026): static/img/milou-kristensen.jpg). Config redactie.ai_redacteur. JSON-LD author = Organization (geen nep-Person). Nooit presenteren als menselijke redacteur of medeoprichter.
 - Eigenaar wil een eigen AI-avatar (presenteert nieuws in studio), bijv. HeyGen/Synthesia (betaald); altijd AI-label, nooit andermans gezicht/stem.
 
 ## Eventueel later
