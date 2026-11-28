@@ -5,7 +5,7 @@
 - Opener (±4 s): logo, rubriek, korte kop met blauw gemarkeerde woorden, eigen nieuwstune (tikkende puls + akkoordslagen).
 - Ondertiteling in huisstijl (wit op merkblauw), getimed op de pauzes in de spraak: elke zin uit
   script.txt (één regel of zin per spraakblok) hoort bij één spraakblok. Klopt het aantal niet, dan wordt per tekenaantal verdeeld.
-- Logo linksboven. AI-vermelding staat in het bijschrift en via het AI-label van Instagram (niet in beeld).
+- Logo linksboven; naambalk met de presentator (PRESENTATOR) in de eerste seconden. AI-vermelding staat in het bijschrift en via het AI-label van Instagram (niet in beeld).
 - Afsluiter (±3,5 s): slotakkoorden van de tune, logo, "Lees het hele artikel op cybersecuritynieuws.com", "Volg @cybersecuritynieuws".
 Een eventueel watermerk van de videodienst blijft zichtbaar (wordt niet afgedekt).
 Uitvoer: 1080x1920, 30 fps, AAC; standaard content/instagram/<slug>/reel.mp4.
@@ -95,6 +95,25 @@ def subtitle_png(text: str, path: Path) -> None:
         d.rounded_rectangle([x - 22, y, x + tw + 22, y + 74], radius=10, fill=BLUE + (235,))
         d.text((x, y + 5), l, font=f, fill=WIT)
         y += 84
+    img.save(path)
+
+
+PRESENTATOR = "Sophie Carter"  # vaste (fictieve) AI-presentator van CyberSecurityNieuws
+
+
+def naambalk_png(path: Path, naam: str = PRESENTATOR, sub: str = "CyberSecurityNieuws") -> None:
+    """Naambalk (lower third) zoals bij tv-nieuws: naam op merkblauw, kanaal eronder."""
+    f1, f2 = _font("Carlito-Bold.ttf", 52), _font("Carlito-Regular.ttf", 34)
+    probe = ImageDraw.Draw(Image.new("L", (1, 1)))
+    w1, w2 = probe.textlength(naam, font=f1), probe.textlength(sub, font=f2)
+    img = Image.new("RGBA", (W, 160), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    x = 60
+    d.rectangle([x, 10, x + w1 + 56, 84], fill=BLUE + (245,))
+    d.rectangle([x, 10, x + 10, 84], fill=WIT)
+    d.text((x + 32, 18), naam, font=f1, fill=WIT)
+    d.rectangle([x, 84, x + w2 + 56, 136], fill=(17, 19, 23, 230))
+    d.text((x + 32, 90), sub, font=f2, fill=(220, 226, 234))
     img.save(path)
 
 
@@ -355,15 +374,18 @@ def build(video: Path, slug: str, script: str, out: Path) -> None:
             p.stdin.close(); p.wait()
             (tune_open if kind == "open" else tune_close)(tmp / f"{kind}.wav", secs)
         label_png(tmp / "label.png")
+        naambalk_png(tmp / "naam.png")
         inputs, filt = ["-i", str(video), "-i", str(tmp / "label.png")], []
         filt.append(f"[0:v]scale={W}:{H}:flags=lanczos,fps={FPS},setsar=1[v0]")
         filt.append("[v0][1:v]overlay=0:0[v1]")
-        last = "v1"
+        inputs += ["-i", str(tmp / "naam.png")]
+        filt.append("[v1][2:v]overlay=0:1080:enable='between(t,0.4,4.4)'[v2]")
+        last = "v2"
         for i, (s, e, txt) in enumerate(cues):
             png = tmp / f"sub{i}.png"
             subtitle_png(txt, png)
             inputs += ["-i", str(png)]
-            filt.append(f"[{last}][{i + 2}:v]overlay=0:1290:enable='between(t,{s:.2f},{e:.2f})'[s{i}]")
+            filt.append(f"[{last}][{i + 3}:v]overlay=0:1290:enable='between(t,{s:.2f},{e:.2f})'[s{i}]")
             last = f"s{i}"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
                         "-map", f"[{last}]", "-map", "0:a", "-c:v", "libx264", "-crf", "19", "-pix_fmt", "yuv420p",
